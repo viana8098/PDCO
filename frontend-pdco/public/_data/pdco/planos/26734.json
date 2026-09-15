@@ -1,0 +1,833 @@
+{
+  "plano": {
+    "cd_planoacao": "26734",
+    "subtipo": "P.a. Pdco Estratégico  -transversal 2026",
+    "status": "Em Andamento",
+    "area_codigo": "80",
+    "area_nome": "2.2.3 Gente E Cultura Organizacional",
+    "responsavel": "Responsável 19",
+    "arquetipos_culturais": "Desenvolver E Aplicar Competências Críticas Que Impulsionem A Performance, Sustentem A Estratégia Institucional E Direcionem O Crescimento Das Carreiras.",
+    "resultados_esperados": "Alinhar Cultura E Estratégia, Fortalecer Performance, Dar Clareza Às Carreiras, Orientar Decisões De Desenvolvimento E Garantir Critérios Objetivos E Transparentes Em Toda A Jornada Do Colaborador. Mapa Estratégico Regional 2026-2028 (ano 3)",
+    "data_inicio": "2026-01-05",
+    "data_fim": "2026-12-31",
+    "execucao": 0.125,
+    "resumo_acoes": {
+      "total": 16,
+      "concluidas": 2,
+      "atrasadas": 1
+    }
+  },
+  "acoes": [
+    {
+      "cd_acao": "26987",
+      "nome": "Mapear Lacunas De Competências Por Área E Cargo, Com Base Nos Resultados Da Avaliação De Desempenho  E Estratégia.",
+      "status": "Planejado",
+      "prazo_inicial": "2026-09-01",
+      "prazo_final": "2026-11-30",
+      "responsavel": "Responsável 19"
+    },
+    {
+      "cd_acao": "26988",
+      "nome": "Atualizar Descrições De Cargos Para Garantir Coerência Entre Responsabilidades, Entregas E Competências Críticas.",
+      "status": "Concluído",
+      "prazo_inicial": "2026-01-05",
+      "prazo_final": "2026-04-30",
+      "responsavel": "Responsável 04"
+    },
+    {
+      "cd_acao": "26989",
+      "nome": "Ofertar Trilhas Formativas Segmentadas Por Nível De Carreira (operacional, Técnico, Especialista, Liderança).",
+      "status": "Planejado",
+      "prazo_inicial": "2026-09-01",
+      "prazo_final": "2026-12-31",
+      "responsavel": "Responsável 19"
+    },
+    {
+      "cd_acao": "26990",
+      "nome": "Incorporar Competências Nos Pdi’s Com Sugestões De Ações De Desenvolvimento E Práticas No Trabalho.",
+      "status": "Suspenso",
+      "prazo_inicial": "2026-09-25",
+      "prazo_final": "2026-09-27",
+      "responsavel": "Responsável 05"
+    },
+    {
+      "cd_acao": "26991",
+      "nome": "Monitorar Evolução Das Competências Críticas",
+      "status": "Planejado",
+      "prazo_inicial": "2026-04-13",
+      "prazo_final": "2026-12-18",
+      "responsavel": "Responsável 05"
+    },
+    {
+      "cd_acao": "30281",
+      "nome": "Desenvolver Competências Em I.a.",
+      "status": "Em Andamento",
+      "prazo_inicial": "2026-05-06",
+      "prazo_final": "2026-12-18",
+      "responsavel": "Responsável 19"
+    },
+    {
+      "cd_acao": "30972",
+      "nome": "Desenvolvimento De Materiais, Guias E Trilhas De Aprendizagem Baseadas Nas Lacunas De Competências.",
+      "status": "Em Andamento",
+      "prazo_inicial": "2026-06-05",
+      "prazo_final": "2026-12-18",
+      "responsavel": "Responsável 19"
+    },
+    {
+      "cd_acao": "30973",
+      "nome": "Identificação De Gaps De Competências Pós Aplicação Avaliação De Desempenho",
+      "status": "Suspenso",
+      "prazo_inicial": "2026-06-05",
+      "prazo_final": "2026-06-05",
+      "responsavel": "Responsável 19"
+    },
+    {
+      "cd_acao": "30974",
+      "nome": "Integração Das Competências Com Os Subsistemas De Gente E Cultura",
+      "status": "Em Andamento",
+      "prazo_inicial": "2026-06-21",
+      "prazo_final": "2026-12-31",
+      "responsavel": "Responsável 19"
+    },
+    {
+      "cd_acao": "30975",
+      "nome": "Mapear E Enfatizar As Competências Mais Críticas Para O Líder E  Que Irão Impactar Mais Significativamente No Negócio",
+      "status": "Planejado",
+      "prazo_inicial": "2026-06-15",
+      "prazo_final": "2026-11-30",
+      "responsavel": "Responsável 05"
+    },
+    {
+      "cd_acao": "30976",
+      "nome": "Avaliar Quantidade De Liderados Por Líder E Agente De Gestão E Propor Melhorias Nos Designs Das Áreas Com Foco Em Ampliação Da Performance",
+      "status": "Concluído",
+      "prazo_inicial": "2026-07-08",
+      "prazo_final": "2026-07-10",
+      "responsavel": "Responsável 05"
+    },
+    {
+      "cd_acao": "30977",
+      "nome": "Elevar A Qualidade Dos Pdis Por Meio Da Disponibilização De Um Assistente De Ia Aos Líderes, Apoiando A Elaboração Dos Planos E Fortalecendo A Análise Qualitativa E A Personalização Do Desenvolvimento Dos Colaboradores.",
+      "status": "Em Andamento",
+      "prazo_inicial": "2026-07-21",
+      "prazo_final": "2026-11-30",
+      "responsavel": "Responsável 05"
+    },
+    {
+      "cd_acao": "30978",
+      "nome": "Implantar Auditoria ( Projeto Piloto Lideres )  De Pdis E Check-ins De Acompanhamento.",
+      "status": "Planejado",
+      "prazo_inicial": "2026-09-01",
+      "prazo_final": "2026-12-19",
+      "responsavel": "Responsável 05"
+    },
+    {
+      "cd_acao": "30979",
+      "nome": "Reforçar Cultura De Protagonismo Com Consequência Reconhecer Colaboradores Que Evoluem E Líderes Que  Desenvolvem Equipes. Atuar Nos Casos De Baixa Aderência Com  Feedback Formal E Plano De Ação.",
+      "status": "Planejado",
+      "prazo_inicial": "2026-10-01",
+      "prazo_final": "2026-10-31",
+      "responsavel": "Responsável 05"
+    },
+    {
+      "cd_acao": "31004",
+      "nome": "Incorporar À Avaliação Dos Gestores Indicadores De Qualidade Dos Pdis, Frequência De Acompanhamento E Evolução Das Competências Das Equipes.",
+      "status": "Suspenso",
+      "prazo_inicial": "2026-09-01",
+      "prazo_final": "2026-10-30",
+      "responsavel": "Responsável 05"
+    },
+    {
+      "cd_acao": "31005",
+      "nome": "Monitorar A Evolução Do Desenvolvimento Das Equipes Através  Do Acompanhamento E Resultados Dos Pdis.",
+      "status": "Planejado",
+      "prazo_inicial": "2026-06-08",
+      "prazo_final": "2026-09-30",
+      "responsavel": "Responsável 05"
+    }
+  ],
+  "acompanhamento": [
+    {
+      "mes": 1,
+      "ano": 2026,
+      "mes_referencia": 1,
+      "registros": []
+    },
+    {
+      "mes": 2,
+      "ano": 2026,
+      "mes_referencia": 2,
+      "registros": []
+    },
+    {
+      "mes": 3,
+      "ano": 2026,
+      "mes_referencia": 3,
+      "registros": [
+        {
+          "texto": "Disseminado As Competências Para Todos Os Blocos De Atuação Promovendo A Clareza E Orientação Do Que É Esperado Por Cada Colaborador E Assim, Eles Conseguirem Realizar O Novo Ciclo Da Avaliação De Desempenho De Maneira Mais Assertiva E Assim, Posteriormente, Traçar O Acompanhamento Das Competências Críticas Que Precisam De Maior Desenvolvimento Das Equipes.",
+          "data": "2026-03-25",
+          "origem": "plano"
+        },
+        {
+          "texto": "No Momento Estamos Atuando Na Disseminação Das Competências Para Todos Os Profissionais Por Área De Atuação, Garantindo Maior Clareza Sobre Os Direcionadores De Desempenho E Desenvolvimento, Além Da Atualização Dos Descritivos De Cargos, Promovendo Alinhamento Entre Expectativas, Entregas E Competências Requeridas Para Cada Cargo.\r\npara As Lideranças, O Foco De Desenvolvimento Está Direcionado Para Competências Que Sustentam Uma Atuação Estratégica E De Alto Impacto:\r\npensamento Crítico, Estratégico E Sistêmico\r\nliderança Inspiradora\r\nintercooperação\r\nalém Disso, Serão Priorizadas As Competências Organizacionais Essenciais Para A Consistência Da Atuação:\r\ncomunicação Assertiva\r\natitude Eficiente\r\nfoco No Cliente\r\ncomplementarmente, O Desenvolvimento Também Contempla As Competências Técnicas, Garantindo Equilíbrio Entre Visão Estratégica, Comportamento E Capacidade De Execução.",
+          "data": "2026-03-26",
+          "origem": "plano"
+        },
+        {
+          "texto": "Disseminado As Competências Para Todos Os Blocos De Atuação Promovendo A Clareza E Orientação Do Que É Esperado Por Cada Colaborador E Assim, Eles Conseguirem Realizar O Novo Ciclo Da Avaliação De Desempenho De Maneira Mais Assertiva E Assim, Posteriormente, Traçar O Acompanhamento Das Competências Críticas Que Precisam De Maior Desenvolvimento Das Equipes.",
+          "data": "2026-03-25",
+          "origem": "plano"
+        },
+        {
+          "texto": "Iniciado Em Fevereiro/26, As Atualizações Dos Descritivos De Cargos Com As Competências  Comportamentais Especificas, Bem Como Nova Logo Do Sistema. Também Atualizados Atividades De Líderes Incluindo Nova Estratégia Da Empresa, Após Material Enviado Pelo Consultor Nori E Validado Com A Gerência E Diretora De Gestão Estratégica.",
+          "data": "2026-03-06",
+          "origem": "acao"
+        },
+        {
+          "texto": "Disseminado As Competências Para Todos Os Blocos De Atuação Promovendo A Clareza E Orientação Do Que É Esperado Por Cada Colaborador E Assim, Eles Conseguirem Realizar O Novo Ciclo Da Avaliação De Desempenho De Maneira Mais Assertiva E Assim, Posteriormente, Traçar O Acompanhamento Das Competências Críticas Que Precisam De Maior Desenvolvimento Das Equipes.",
+          "data": "2026-03-25",
+          "origem": "plano"
+        },
+        {
+          "texto": "No Momento Estamos Atuando Na Disseminação Das Competências Para Todos Os Profissionais Por Área De Atuação, Garantindo Maior Clareza Sobre Os Direcionadores De Desempenho E Desenvolvimento, Além Da Atualização Dos Descritivos De Cargos, Promovendo Alinhamento Entre Expectativas, Entregas E Competências Requeridas Para Cada Cargo.\r\npara As Lideranças, O Foco De Desenvolvimento Está Direcionado Para Competências Que Sustentam Uma Atuação Estratégica E De Alto Impacto:\r\npensamento Crítico, Estratégico E Sistêmico\r\nliderança Inspiradora\r\nintercooperação\r\nalém Disso, Serão Priorizadas As Competências Organizacionais Essenciais Para A Consistência Da Atuação:\r\ncomunicação Assertiva\r\natitude Eficiente\r\nfoco No Cliente\r\ncomplementarmente, O Desenvolvimento Também Contempla As Competências Técnicas, Garantindo Equilíbrio Entre Visão Estratégica, Comportamento E Capacidade De Execução.",
+          "data": "2026-03-26",
+          "origem": "plano"
+        },
+        {
+          "texto": "Iniciado Em Fevereiro/26, As Atualizações Dos Descritivos De Cargos Com As Competências  Comportamentais Especificas, Bem Como Nova Logo Do Sistema. Também Atualizados Atividades De Líderes Incluindo Nova Estratégia Da Empresa, Após Material Enviado Pelo Consultor Nori E Validado Com A Gerência E Diretora De Gestão Estratégica.",
+          "data": "2026-03-06",
+          "origem": "acao"
+        },
+        {
+          "texto": "No Momento Estamos Atuando Na Disseminação Das Competências Para Todos Os Profissionais Por Área De Atuação, Garantindo Maior Clareza Sobre Os Direcionadores De Desempenho E Desenvolvimento, Além Da Atualização Dos Descritivos De Cargos, Promovendo Alinhamento Entre Expectativas, Entregas E Competências Requeridas Para Cada Cargo.\r\npara As Lideranças, O Foco De Desenvolvimento Está Direcionado Para Competências Que Sustentam Uma Atuação Estratégica E De Alto Impacto:\r\npensamento Crítico, Estratégico E Sistêmico\r\nliderança Inspiradora\r\nintercooperação\r\nalém Disso, Serão Priorizadas As Competências Organizacionais Essenciais Para A Consistência Da Atuação:\r\ncomunicação Assertiva\r\natitude Eficiente\r\nfoco No Cliente\r\ncomplementarmente, O Desenvolvimento Também Contempla As Competências Técnicas, Garantindo Equilíbrio Entre Visão Estratégica, Comportamento E Capacidade De Execução.",
+          "data": "2026-03-26",
+          "origem": "plano"
+        },
+        {
+          "texto": "Iniciado Em Fevereiro/26, As Atualizações Dos Descritivos De Cargos Com As Competências  Comportamentais Especificas, Bem Como Nova Logo Do Sistema. Também Atualizados Atividades De Líderes Incluindo Nova Estratégia Da Empresa, Após Material Enviado Pelo Consultor Nori E Validado Com A Gerência E Diretora De Gestão Estratégica.",
+          "data": "2026-03-06",
+          "origem": "acao"
+        },
+        {
+          "texto": "Iniciado Em Fevereiro/26, As Atualizações Dos Descritivos De Cargos Com As Competências  Comportamentais Especificas, Bem Como Nova Logo Do Sistema. Também Atualizados Atividades De Líderes Incluindo Nova Estratégia Da Empresa, Após Material Enviado Pelo Consultor Nori E Validado Com A Gerência E Diretora De Gestão Estratégica.",
+          "data": "2026-03-06",
+          "origem": "acao"
+        },
+        {
+          "texto": "Iniciado Em Fevereiro/26, As Atualizações Dos Descritivos De Cargos Com As Competências  Comportamentais Especificas, Bem Como Nova Logo Do Sistema. Também Atualizados Atividades De Líderes Incluindo Nova Estratégia Da Empresa, Após Material Enviado Pelo Consultor Nori E Validado Com A Gerência E Diretora De Gestão Estratégica.",
+          "data": "2026-03-06",
+          "origem": "acao"
+        },
+        {
+          "texto": "Disseminado As Competências Para Todos Os Blocos De Atuação Promovendo A Clareza E Orientação Do Que É Esperado Por Cada Colaborador E Assim, Eles Conseguirem Realizar O Novo Ciclo Da Avaliação De Desempenho De Maneira Mais Assertiva E Assim, Posteriormente, Traçar O Acompanhamento Das Competências Críticas Que Precisam De Maior Desenvolvimento Das Equipes.",
+          "data": "2026-03-25",
+          "origem": "plano"
+        },
+        {
+          "texto": "No Momento Estamos Atuando Na Disseminação Das Competências Para Todos Os Profissionais Por Área De Atuação, Garantindo Maior Clareza Sobre Os Direcionadores De Desempenho E Desenvolvimento, Além Da Atualização Dos Descritivos De Cargos, Promovendo Alinhamento Entre Expectativas, Entregas E Competências Requeridas Para Cada Cargo.\r\npara As Lideranças, O Foco De Desenvolvimento Está Direcionado Para Competências Que Sustentam Uma Atuação Estratégica E De Alto Impacto:\r\npensamento Crítico, Estratégico E Sistêmico\r\nliderança Inspiradora\r\nintercooperação\r\nalém Disso, Serão Priorizadas As Competências Organizacionais Essenciais Para A Consistência Da Atuação:\r\ncomunicação Assertiva\r\natitude Eficiente\r\nfoco No Cliente\r\ncomplementarmente, O Desenvolvimento Também Contempla As Competências Técnicas, Garantindo Equilíbrio Entre Visão Estratégica, Comportamento E Capacidade De Execução.",
+          "data": "2026-03-26",
+          "origem": "plano"
+        },
+        {
+          "texto": "Disseminado As Competências Para Todos Os Blocos De Atuação Promovendo A Clareza E Orientação Do Que É Esperado Por Cada Colaborador E Assim, Eles Conseguirem Realizar O Novo Ciclo Da Avaliação De Desempenho De Maneira Mais Assertiva E Assim, Posteriormente, Traçar O Acompanhamento Das Competências Críticas Que Precisam De Maior Desenvolvimento Das Equipes.",
+          "data": "2026-03-25",
+          "origem": "plano"
+        },
+        {
+          "texto": "No Momento Estamos Atuando Na Disseminação Das Competências Para Todos Os Profissionais Por Área De Atuação, Garantindo Maior Clareza Sobre Os Direcionadores De Desempenho E Desenvolvimento, Além Da Atualização Dos Descritivos De Cargos, Promovendo Alinhamento Entre Expectativas, Entregas E Competências Requeridas Para Cada Cargo.\r\npara As Lideranças, O Foco De Desenvolvimento Está Direcionado Para Competências Que Sustentam Uma Atuação Estratégica E De Alto Impacto:\r\npensamento Crítico, Estratégico E Sistêmico\r\nliderança Inspiradora\r\nintercooperação\r\nalém Disso, Serão Priorizadas As Competências Organizacionais Essenciais Para A Consistência Da Atuação:\r\ncomunicação Assertiva\r\natitude Eficiente\r\nfoco No Cliente\r\ncomplementarmente, O Desenvolvimento Também Contempla As Competências Técnicas, Garantindo Equilíbrio Entre Visão Estratégica, Comportamento E Capacidade De Execução.",
+          "data": "2026-03-26",
+          "origem": "plano"
+        },
+        {
+          "texto": "Disseminado As Competências Para Todos Os Blocos De Atuação Promovendo A Clareza E Orientação Do Que É Esperado Por Cada Colaborador E Assim, Eles Conseguirem Realizar O Novo Ciclo Da Avaliação De Desempenho De Maneira Mais Assertiva E Assim, Posteriormente, Traçar O Acompanhamento Das Competências Críticas Que Precisam De Maior Desenvolvimento Das Equipes.",
+          "data": "2026-03-25",
+          "origem": "plano"
+        },
+        {
+          "texto": "No Momento Estamos Atuando Na Disseminação Das Competências Para Todos Os Profissionais Por Área De Atuação, Garantindo Maior Clareza Sobre Os Direcionadores De Desempenho E Desenvolvimento, Além Da Atualização Dos Descritivos De Cargos, Promovendo Alinhamento Entre Expectativas, Entregas E Competências Requeridas Para Cada Cargo.\r\npara As Lideranças, O Foco De Desenvolvimento Está Direcionado Para Competências Que Sustentam Uma Atuação Estratégica E De Alto Impacto:\r\npensamento Crítico, Estratégico E Sistêmico\r\nliderança Inspiradora\r\nintercooperação\r\nalém Disso, Serão Priorizadas As Competências Organizacionais Essenciais Para A Consistência Da Atuação:\r\ncomunicação Assertiva\r\natitude Eficiente\r\nfoco No Cliente\r\ncomplementarmente, O Desenvolvimento Também Contempla As Competências Técnicas, Garantindo Equilíbrio Entre Visão Estratégica, Comportamento E Capacidade De Execução.",
+          "data": "2026-03-26",
+          "origem": "plano"
+        },
+        {
+          "texto": "Disseminado As Competências Para Todos Os Blocos De Atuação Promovendo A Clareza E Orientação Do Que É Esperado Por Cada Colaborador E Assim, Eles Conseguirem Realizar O Novo Ciclo Da Avaliação De Desempenho De Maneira Mais Assertiva E Assim, Posteriormente, Traçar O Acompanhamento Das Competências Críticas Que Precisam De Maior Desenvolvimento Das Equipes.",
+          "data": "2026-03-25",
+          "origem": "plano"
+        },
+        {
+          "texto": "Disseminado As Competências Para Todos Os Blocos De Atuação Promovendo A Clareza E Orientação Do Que É Esperado Por Cada Colaborador E Assim, Eles Conseguirem Realizar O Novo Ciclo Da Avaliação De Desempenho De Maneira Mais Assertiva E Assim, Posteriormente, Traçar O Acompanhamento Das Competências Críticas Que Precisam De Maior Desenvolvimento Das Equipes.",
+          "data": "2026-03-25",
+          "origem": "plano"
+        },
+        {
+          "texto": "Disseminado As Competências Para Todos Os Blocos De Atuação Promovendo A Clareza E Orientação Do Que É Esperado Por Cada Colaborador E Assim, Eles Conseguirem Realizar O Novo Ciclo Da Avaliação De Desempenho De Maneira Mais Assertiva E Assim, Posteriormente, Traçar O Acompanhamento Das Competências Críticas Que Precisam De Maior Desenvolvimento Das Equipes.",
+          "data": "2026-03-25",
+          "origem": "plano"
+        },
+        {
+          "texto": "No Momento Estamos Atuando Na Disseminação Das Competências Para Todos Os Profissionais Por Área De Atuação, Garantindo Maior Clareza Sobre Os Direcionadores De Desempenho E Desenvolvimento, Além Da Atualização Dos Descritivos De Cargos, Promovendo Alinhamento Entre Expectativas, Entregas E Competências Requeridas Para Cada Cargo.\r\npara As Lideranças, O Foco De Desenvolvimento Está Direcionado Para Competências Que Sustentam Uma Atuação Estratégica E De Alto Impacto:\r\npensamento Crítico, Estratégico E Sistêmico\r\nliderança Inspiradora\r\nintercooperação\r\nalém Disso, Serão Priorizadas As Competências Organizacionais Essenciais Para A Consistência Da Atuação:\r\ncomunicação Assertiva\r\natitude Eficiente\r\nfoco No Cliente\r\ncomplementarmente, O Desenvolvimento Também Contempla As Competências Técnicas, Garantindo Equilíbrio Entre Visão Estratégica, Comportamento E Capacidade De Execução.",
+          "data": "2026-03-26",
+          "origem": "plano"
+        },
+        {
+          "texto": "No Momento Estamos Atuando Na Disseminação Das Competências Para Todos Os Profissionais Por Área De Atuação, Garantindo Maior Clareza Sobre Os Direcionadores De Desempenho E Desenvolvimento, Além Da Atualização Dos Descritivos De Cargos, Promovendo Alinhamento Entre Expectativas, Entregas E Competências Requeridas Para Cada Cargo.\r\npara As Lideranças, O Foco De Desenvolvimento Está Direcionado Para Competências Que Sustentam Uma Atuação Estratégica E De Alto Impacto:\r\npensamento Crítico, Estratégico E Sistêmico\r\nliderança Inspiradora\r\nintercooperação\r\nalém Disso, Serão Priorizadas As Competências Organizacionais Essenciais Para A Consistência Da Atuação:\r\ncomunicação Assertiva\r\natitude Eficiente\r\nfoco No Cliente\r\ncomplementarmente, O Desenvolvimento Também Contempla As Competências Técnicas, Garantindo Equilíbrio Entre Visão Estratégica, Comportamento E Capacidade De Execução.",
+          "data": "2026-03-26",
+          "origem": "plano"
+        },
+        {
+          "texto": "No Momento Estamos Atuando Na Disseminação Das Competências Para Todos Os Profissionais Por Área De Atuação, Garantindo Maior Clareza Sobre Os Direcionadores De Desempenho E Desenvolvimento, Além Da Atualização Dos Descritivos De Cargos, Promovendo Alinhamento Entre Expectativas, Entregas E Competências Requeridas Para Cada Cargo.\r\npara As Lideranças, O Foco De Desenvolvimento Está Direcionado Para Competências Que Sustentam Uma Atuação Estratégica E De Alto Impacto:\r\npensamento Crítico, Estratégico E Sistêmico\r\nliderança Inspiradora\r\nintercooperação\r\nalém Disso, Serão Priorizadas As Competências Organizacionais Essenciais Para A Consistência Da Atuação:\r\ncomunicação Assertiva\r\natitude Eficiente\r\nfoco No Cliente\r\ncomplementarmente, O Desenvolvimento Também Contempla As Competências Técnicas, Garantindo Equilíbrio Entre Visão Estratégica, Comportamento E Capacidade De Execução.",
+          "data": "2026-03-26",
+          "origem": "plano"
+        },
+        {
+          "texto": "Disseminado As Competências Para Todos Os Blocos De Atuação Promovendo A Clareza E Orientação Do Que É Esperado Por Cada Colaborador E Assim, Eles Conseguirem Realizar O Novo Ciclo Da Avaliação De Desempenho De Maneira Mais Assertiva E Assim, Posteriormente, Traçar O Acompanhamento Das Competências Críticas Que Precisam De Maior Desenvolvimento Das Equipes.",
+          "data": "2026-03-25",
+          "origem": "plano"
+        },
+        {
+          "texto": "Disseminado As Competências Para Todos Os Blocos De Atuação Promovendo A Clareza E Orientação Do Que É Esperado Por Cada Colaborador E Assim, Eles Conseguirem Realizar O Novo Ciclo Da Avaliação De Desempenho De Maneira Mais Assertiva E Assim, Posteriormente, Traçar O Acompanhamento Das Competências Críticas Que Precisam De Maior Desenvolvimento Das Equipes.",
+          "data": "2026-03-25",
+          "origem": "plano"
+        },
+        {
+          "texto": "No Momento Estamos Atuando Na Disseminação Das Competências Para Todos Os Profissionais Por Área De Atuação, Garantindo Maior Clareza Sobre Os Direcionadores De Desempenho E Desenvolvimento, Além Da Atualização Dos Descritivos De Cargos, Promovendo Alinhamento Entre Expectativas, Entregas E Competências Requeridas Para Cada Cargo.\r\npara As Lideranças, O Foco De Desenvolvimento Está Direcionado Para Competências Que Sustentam Uma Atuação Estratégica E De Alto Impacto:\r\npensamento Crítico, Estratégico E Sistêmico\r\nliderança Inspiradora\r\nintercooperação\r\nalém Disso, Serão Priorizadas As Competências Organizacionais Essenciais Para A Consistência Da Atuação:\r\ncomunicação Assertiva\r\natitude Eficiente\r\nfoco No Cliente\r\ncomplementarmente, O Desenvolvimento Também Contempla As Competências Técnicas, Garantindo Equilíbrio Entre Visão Estratégica, Comportamento E Capacidade De Execução.",
+          "data": "2026-03-26",
+          "origem": "plano"
+        },
+        {
+          "texto": "No Momento Estamos Atuando Na Disseminação Das Competências Para Todos Os Profissionais Por Área De Atuação, Garantindo Maior Clareza Sobre Os Direcionadores De Desempenho E Desenvolvimento, Além Da Atualização Dos Descritivos De Cargos, Promovendo Alinhamento Entre Expectativas, Entregas E Competências Requeridas Para Cada Cargo.\r\npara As Lideranças, O Foco De Desenvolvimento Está Direcionado Para Competências Que Sustentam Uma Atuação Estratégica E De Alto Impacto:\r\npensamento Crítico, Estratégico E Sistêmico\r\nliderança Inspiradora\r\nintercooperação\r\nalém Disso, Serão Priorizadas As Competências Organizacionais Essenciais Para A Consistência Da Atuação:\r\ncomunicação Assertiva\r\natitude Eficiente\r\nfoco No Cliente\r\ncomplementarmente, O Desenvolvimento Também Contempla As Competências Técnicas, Garantindo Equilíbrio Entre Visão Estratégica, Comportamento E Capacidade De Execução.",
+          "data": "2026-03-26",
+          "origem": "plano"
+        },
+        {
+          "texto": "Disseminado As Competências Para Todos Os Blocos De Atuação Promovendo A Clareza E Orientação Do Que É Esperado Por Cada Colaborador E Assim, Eles Conseguirem Realizar O Novo Ciclo Da Avaliação De Desempenho De Maneira Mais Assertiva E Assim, Posteriormente, Traçar O Acompanhamento Das Competências Críticas Que Precisam De Maior Desenvolvimento Das Equipes.",
+          "data": "2026-03-25",
+          "origem": "plano"
+        },
+        {
+          "texto": "No Momento Estamos Atuando Na Disseminação Das Competências Para Todos Os Profissionais Por Área De Atuação, Garantindo Maior Clareza Sobre Os Direcionadores De Desempenho E Desenvolvimento, Além Da Atualização Dos Descritivos De Cargos, Promovendo Alinhamento Entre Expectativas, Entregas E Competências Requeridas Para Cada Cargo.\r\npara As Lideranças, O Foco De Desenvolvimento Está Direcionado Para Competências Que Sustentam Uma Atuação Estratégica E De Alto Impacto:\r\npensamento Crítico, Estratégico E Sistêmico\r\nliderança Inspiradora\r\nintercooperação\r\nalém Disso, Serão Priorizadas As Competências Organizacionais Essenciais Para A Consistência Da Atuação:\r\ncomunicação Assertiva\r\natitude Eficiente\r\nfoco No Cliente\r\ncomplementarmente, O Desenvolvimento Também Contempla As Competências Técnicas, Garantindo Equilíbrio Entre Visão Estratégica, Comportamento E Capacidade De Execução.",
+          "data": "2026-03-26",
+          "origem": "plano"
+        },
+        {
+          "texto": "Disseminado As Competências Para Todos Os Blocos De Atuação Promovendo A Clareza E Orientação Do Que É Esperado Por Cada Colaborador E Assim, Eles Conseguirem Realizar O Novo Ciclo Da Avaliação De Desempenho De Maneira Mais Assertiva E Assim, Posteriormente, Traçar O Acompanhamento Das Competências Críticas Que Precisam De Maior Desenvolvimento Das Equipes.",
+          "data": "2026-03-25",
+          "origem": "plano"
+        },
+        {
+          "texto": "Disseminado As Competências Para Todos Os Blocos De Atuação Promovendo A Clareza E Orientação Do Que É Esperado Por Cada Colaborador E Assim, Eles Conseguirem Realizar O Novo Ciclo Da Avaliação De Desempenho De Maneira Mais Assertiva E Assim, Posteriormente, Traçar O Acompanhamento Das Competências Críticas Que Precisam De Maior Desenvolvimento Das Equipes.",
+          "data": "2026-03-25",
+          "origem": "plano"
+        },
+        {
+          "texto": "No Momento Estamos Atuando Na Disseminação Das Competências Para Todos Os Profissionais Por Área De Atuação, Garantindo Maior Clareza Sobre Os Direcionadores De Desempenho E Desenvolvimento, Além Da Atualização Dos Descritivos De Cargos, Promovendo Alinhamento Entre Expectativas, Entregas E Competências Requeridas Para Cada Cargo.\r\npara As Lideranças, O Foco De Desenvolvimento Está Direcionado Para Competências Que Sustentam Uma Atuação Estratégica E De Alto Impacto:\r\npensamento Crítico, Estratégico E Sistêmico\r\nliderança Inspiradora\r\nintercooperação\r\nalém Disso, Serão Priorizadas As Competências Organizacionais Essenciais Para A Consistência Da Atuação:\r\ncomunicação Assertiva\r\natitude Eficiente\r\nfoco No Cliente\r\ncomplementarmente, O Desenvolvimento Também Contempla As Competências Técnicas, Garantindo Equilíbrio Entre Visão Estratégica, Comportamento E Capacidade De Execução.",
+          "data": "2026-03-26",
+          "origem": "plano"
+        },
+        {
+          "texto": "No Momento Estamos Atuando Na Disseminação Das Competências Para Todos Os Profissionais Por Área De Atuação, Garantindo Maior Clareza Sobre Os Direcionadores De Desempenho E Desenvolvimento, Além Da Atualização Dos Descritivos De Cargos, Promovendo Alinhamento Entre Expectativas, Entregas E Competências Requeridas Para Cada Cargo.\r\npara As Lideranças, O Foco De Desenvolvimento Está Direcionado Para Competências Que Sustentam Uma Atuação Estratégica E De Alto Impacto:\r\npensamento Crítico, Estratégico E Sistêmico\r\nliderança Inspiradora\r\nintercooperação\r\nalém Disso, Serão Priorizadas As Competências Organizacionais Essenciais Para A Consistência Da Atuação:\r\ncomunicação Assertiva\r\natitude Eficiente\r\nfoco No Cliente\r\ncomplementarmente, O Desenvolvimento Também Contempla As Competências Técnicas, Garantindo Equilíbrio Entre Visão Estratégica, Comportamento E Capacidade De Execução.",
+          "data": "2026-03-26",
+          "origem": "plano"
+        },
+        {
+          "texto": "Disseminado As Competências Para Todos Os Blocos De Atuação Promovendo A Clareza E Orientação Do Que É Esperado Por Cada Colaborador E Assim, Eles Conseguirem Realizar O Novo Ciclo Da Avaliação De Desempenho De Maneira Mais Assertiva E Assim, Posteriormente, Traçar O Acompanhamento Das Competências Críticas Que Precisam De Maior Desenvolvimento Das Equipes.",
+          "data": "2026-03-25",
+          "origem": "plano"
+        },
+        {
+          "texto": "No Momento Estamos Atuando Na Disseminação Das Competências Para Todos Os Profissionais Por Área De Atuação, Garantindo Maior Clareza Sobre Os Direcionadores De Desempenho E Desenvolvimento, Além Da Atualização Dos Descritivos De Cargos, Promovendo Alinhamento Entre Expectativas, Entregas E Competências Requeridas Para Cada Cargo.\r\npara As Lideranças, O Foco De Desenvolvimento Está Direcionado Para Competências Que Sustentam Uma Atuação Estratégica E De Alto Impacto:\r\npensamento Crítico, Estratégico E Sistêmico\r\nliderança Inspiradora\r\nintercooperação\r\nalém Disso, Serão Priorizadas As Competências Organizacionais Essenciais Para A Consistência Da Atuação:\r\ncomunicação Assertiva\r\natitude Eficiente\r\nfoco No Cliente\r\ncomplementarmente, O Desenvolvimento Também Contempla As Competências Técnicas, Garantindo Equilíbrio Entre Visão Estratégica, Comportamento E Capacidade De Execução.",
+          "data": "2026-03-26",
+          "origem": "plano"
+        },
+        {
+          "texto": "Disseminado As Competências Para Todos Os Blocos De Atuação Promovendo A Clareza E Orientação Do Que É Esperado Por Cada Colaborador E Assim, Eles Conseguirem Realizar O Novo Ciclo Da Avaliação De Desempenho De Maneira Mais Assertiva E Assim, Posteriormente, Traçar O Acompanhamento Das Competências Críticas Que Precisam De Maior Desenvolvimento Das Equipes.",
+          "data": "2026-03-25",
+          "origem": "plano"
+        },
+        {
+          "texto": "No Momento Estamos Atuando Na Disseminação Das Competências Para Todos Os Profissionais Por Área De Atuação, Garantindo Maior Clareza Sobre Os Direcionadores De Desempenho E Desenvolvimento, Além Da Atualização Dos Descritivos De Cargos, Promovendo Alinhamento Entre Expectativas, Entregas E Competências Requeridas Para Cada Cargo.\r\npara As Lideranças, O Foco De Desenvolvimento Está Direcionado Para Competências Que Sustentam Uma Atuação Estratégica E De Alto Impacto:\r\npensamento Crítico, Estratégico E Sistêmico\r\nliderança Inspiradora\r\nintercooperação\r\nalém Disso, Serão Priorizadas As Competências Organizacionais Essenciais Para A Consistência Da Atuação:\r\ncomunicação Assertiva\r\natitude Eficiente\r\nfoco No Cliente\r\ncomplementarmente, O Desenvolvimento Também Contempla As Competências Técnicas, Garantindo Equilíbrio Entre Visão Estratégica, Comportamento E Capacidade De Execução.",
+          "data": "2026-03-26",
+          "origem": "plano"
+        },
+        {
+          "texto": "Disseminado As Competências Para Todos Os Blocos De Atuação Promovendo A Clareza E Orientação Do Que É Esperado Por Cada Colaborador E Assim, Eles Conseguirem Realizar O Novo Ciclo Da Avaliação De Desempenho De Maneira Mais Assertiva E Assim, Posteriormente, Traçar O Acompanhamento Das Competências Críticas Que Precisam De Maior Desenvolvimento Das Equipes.",
+          "data": "2026-03-25",
+          "origem": "plano"
+        },
+        {
+          "texto": "No Momento Estamos Atuando Na Disseminação Das Competências Para Todos Os Profissionais Por Área De Atuação, Garantindo Maior Clareza Sobre Os Direcionadores De Desempenho E Desenvolvimento, Além Da Atualização Dos Descritivos De Cargos, Promovendo Alinhamento Entre Expectativas, Entregas E Competências Requeridas Para Cada Cargo.\r\npara As Lideranças, O Foco De Desenvolvimento Está Direcionado Para Competências Que Sustentam Uma Atuação Estratégica E De Alto Impacto:\r\npensamento Crítico, Estratégico E Sistêmico\r\nliderança Inspiradora\r\nintercooperação\r\nalém Disso, Serão Priorizadas As Competências Organizacionais Essenciais Para A Consistência Da Atuação:\r\ncomunicação Assertiva\r\natitude Eficiente\r\nfoco No Cliente\r\ncomplementarmente, O Desenvolvimento Também Contempla As Competências Técnicas, Garantindo Equilíbrio Entre Visão Estratégica, Comportamento E Capacidade De Execução.",
+          "data": "2026-03-26",
+          "origem": "plano"
+        },
+        {
+          "texto": "Disseminado As Competências Para Todos Os Blocos De Atuação Promovendo A Clareza E Orientação Do Que É Esperado Por Cada Colaborador E Assim, Eles Conseguirem Realizar O Novo Ciclo Da Avaliação De Desempenho De Maneira Mais Assertiva E Assim, Posteriormente, Traçar O Acompanhamento Das Competências Críticas Que Precisam De Maior Desenvolvimento Das Equipes.",
+          "data": "2026-03-25",
+          "origem": "plano"
+        },
+        {
+          "texto": "No Momento Estamos Atuando Na Disseminação Das Competências Para Todos Os Profissionais Por Área De Atuação, Garantindo Maior Clareza Sobre Os Direcionadores De Desempenho E Desenvolvimento, Além Da Atualização Dos Descritivos De Cargos, Promovendo Alinhamento Entre Expectativas, Entregas E Competências Requeridas Para Cada Cargo.\r\npara As Lideranças, O Foco De Desenvolvimento Está Direcionado Para Competências Que Sustentam Uma Atuação Estratégica E De Alto Impacto:\r\npensamento Crítico, Estratégico E Sistêmico\r\nliderança Inspiradora\r\nintercooperação\r\nalém Disso, Serão Priorizadas As Competências Organizacionais Essenciais Para A Consistência Da Atuação:\r\ncomunicação Assertiva\r\natitude Eficiente\r\nfoco No Cliente\r\ncomplementarmente, O Desenvolvimento Também Contempla As Competências Técnicas, Garantindo Equilíbrio Entre Visão Estratégica, Comportamento E Capacidade De Execução.",
+          "data": "2026-03-26",
+          "origem": "plano"
+        },
+        {
+          "texto": "Disseminado As Competências Para Todos Os Blocos De Atuação Promovendo A Clareza E Orientação Do Que É Esperado Por Cada Colaborador E Assim, Eles Conseguirem Realizar O Novo Ciclo Da Avaliação De Desempenho De Maneira Mais Assertiva E Assim, Posteriormente, Traçar O Acompanhamento Das Competências Críticas Que Precisam De Maior Desenvolvimento Das Equipes.",
+          "data": "2026-03-25",
+          "origem": "plano"
+        },
+        {
+          "texto": "No Momento Estamos Atuando Na Disseminação Das Competências Para Todos Os Profissionais Por Área De Atuação, Garantindo Maior Clareza Sobre Os Direcionadores De Desempenho E Desenvolvimento, Além Da Atualização Dos Descritivos De Cargos, Promovendo Alinhamento Entre Expectativas, Entregas E Competências Requeridas Para Cada Cargo.\r\npara As Lideranças, O Foco De Desenvolvimento Está Direcionado Para Competências Que Sustentam Uma Atuação Estratégica E De Alto Impacto:\r\npensamento Crítico, Estratégico E Sistêmico\r\nliderança Inspiradora\r\nintercooperação\r\nalém Disso, Serão Priorizadas As Competências Organizacionais Essenciais Para A Consistência Da Atuação:\r\ncomunicação Assertiva\r\natitude Eficiente\r\nfoco No Cliente\r\ncomplementarmente, O Desenvolvimento Também Contempla As Competências Técnicas, Garantindo Equilíbrio Entre Visão Estratégica, Comportamento E Capacidade De Execução.",
+          "data": "2026-03-26",
+          "origem": "plano"
+        },
+        {
+          "texto": "Disseminado As Competências Para Todos Os Blocos De Atuação Promovendo A Clareza E Orientação Do Que É Esperado Por Cada Colaborador E Assim, Eles Conseguirem Realizar O Novo Ciclo Da Avaliação De Desempenho De Maneira Mais Assertiva E Assim, Posteriormente, Traçar O Acompanhamento Das Competências Críticas Que Precisam De Maior Desenvolvimento Das Equipes.",
+          "data": "2026-03-25",
+          "origem": "plano"
+        },
+        {
+          "texto": "No Momento Estamos Atuando Na Disseminação Das Competências Para Todos Os Profissionais Por Área De Atuação, Garantindo Maior Clareza Sobre Os Direcionadores De Desempenho E Desenvolvimento, Além Da Atualização Dos Descritivos De Cargos, Promovendo Alinhamento Entre Expectativas, Entregas E Competências Requeridas Para Cada Cargo.\r\npara As Lideranças, O Foco De Desenvolvimento Está Direcionado Para Competências Que Sustentam Uma Atuação Estratégica E De Alto Impacto:\r\npensamento Crítico, Estratégico E Sistêmico\r\nliderança Inspiradora\r\nintercooperação\r\nalém Disso, Serão Priorizadas As Competências Organizacionais Essenciais Para A Consistência Da Atuação:\r\ncomunicação Assertiva\r\natitude Eficiente\r\nfoco No Cliente\r\ncomplementarmente, O Desenvolvimento Também Contempla As Competências Técnicas, Garantindo Equilíbrio Entre Visão Estratégica, Comportamento E Capacidade De Execução.",
+          "data": "2026-03-26",
+          "origem": "plano"
+        },
+        {
+          "texto": "Disseminado As Competências Para Todos Os Blocos De Atuação Promovendo A Clareza E Orientação Do Que É Esperado Por Cada Colaborador E Assim, Eles Conseguirem Realizar O Novo Ciclo Da Avaliação De Desempenho De Maneira Mais Assertiva E Assim, Posteriormente, Traçar O Acompanhamento Das Competências Críticas Que Precisam De Maior Desenvolvimento Das Equipes.",
+          "data": "2026-03-25",
+          "origem": "plano"
+        },
+        {
+          "texto": "No Momento Estamos Atuando Na Disseminação Das Competências Para Todos Os Profissionais Por Área De Atuação, Garantindo Maior Clareza Sobre Os Direcionadores De Desempenho E Desenvolvimento, Além Da Atualização Dos Descritivos De Cargos, Promovendo Alinhamento Entre Expectativas, Entregas E Competências Requeridas Para Cada Cargo.\r\npara As Lideranças, O Foco De Desenvolvimento Está Direcionado Para Competências Que Sustentam Uma Atuação Estratégica E De Alto Impacto:\r\npensamento Crítico, Estratégico E Sistêmico\r\nliderança Inspiradora\r\nintercooperação\r\nalém Disso, Serão Priorizadas As Competências Organizacionais Essenciais Para A Consistência Da Atuação:\r\ncomunicação Assertiva\r\natitude Eficiente\r\nfoco No Cliente\r\ncomplementarmente, O Desenvolvimento Também Contempla As Competências Técnicas, Garantindo Equilíbrio Entre Visão Estratégica, Comportamento E Capacidade De Execução.",
+          "data": "2026-03-26",
+          "origem": "plano"
+        }
+      ]
+    },
+    {
+      "mes": 4,
+      "ano": 2026,
+      "mes_referencia": 4,
+      "registros": [
+        {
+          "texto": "O Plano De Desenvolvimento De Competências Críticas Está Estruturado Para Impulsionar A Performance Organizacional, Sustentar A Estratégia Institucional E Orientar A Evolução Das Carreiras, A Partir De Uma Abordagem Integrada Entre Diagnóstico, Estruturação E Desenvolvimento Contínuo.\r\n\r\naté O Momento, Foi Concluída A Etapa De Atualização Dos Descritivos De Cargos, Contemplando A Revisão Das Responsabilidades, Entregas E Competências Críticas, Além Da Validação Junto Às Lideranças E Alinhamento Com A Estratégia Organizacional. Essa Entrega Fortalece A Base De Gestão De Pessoas, Garantindo Maior Clareza E Coerência Entre Papéis E Expectativas.\r\n\r\nas Demais Ações Do Plano — Como Mapeamento De Lacunas, Estruturação De Trilhas Formativas, Incorporação De Competências Aos Pdis E Monitoramento Da Evolução — Serão Conduzidas De Forma Orientada Por Dados, A Partir Dos Resultados Da Avaliação De Desempenho, Que Fornecerá Insumos Estratégicos Para Priorização E Direcionamento Das Iniciativas.\r\n\r\ndessa Forma, O Plano Avança De Maneira Estruturada, Assegurando Consistência Na Base E Preparando O Terreno Para Ações Mais Assertivas E Alinhadas Às Necessidades Reais Do Negócio E Das Pessoas.",
+          "data": "2026-04-15",
+          "origem": "plano"
+        },
+        {
+          "texto": "Todos Os Descritivos Já Foram Atualizados E Agora Passa Por Uma Dupla Validação Do Pilar De Remuneração Para Ser Incluso No Portal Do Colaborador As Novas Versões.",
+          "data": "2026-04-15",
+          "origem": "acao"
+        },
+        {
+          "texto": "Todos Os Descritivos Já Foram Atualizados E Agora Passa Por Uma Dupla Validação Do Pilar De Remuneração Para Ser Incluso No Portal Do Colaborador As Novas Versões.",
+          "data": "2026-04-15",
+          "origem": "acao"
+        },
+        {
+          "texto": "Todos Os Descritivos Já Foram Atualizados E Agora Passa Por Uma Dupla Validação Do Pilar De Remuneração Para Ser Incluso No Portal Do Colaborador As Novas Versões.",
+          "data": "2026-04-15",
+          "origem": "acao"
+        },
+        {
+          "texto": "O Plano De Desenvolvimento De Competências Críticas Está Estruturado Para Impulsionar A Performance Organizacional, Sustentar A Estratégia Institucional E Orientar A Evolução Das Carreiras, A Partir De Uma Abordagem Integrada Entre Diagnóstico, Estruturação E Desenvolvimento Contínuo.\r\n\r\naté O Momento, Foi Concluída A Etapa De Atualização Dos Descritivos De Cargos, Contemplando A Revisão Das Responsabilidades, Entregas E Competências Críticas, Além Da Validação Junto Às Lideranças E Alinhamento Com A Estratégia Organizacional. Essa Entrega Fortalece A Base De Gestão De Pessoas, Garantindo Maior Clareza E Coerência Entre Papéis E Expectativas.\r\n\r\nas Demais Ações Do Plano — Como Mapeamento De Lacunas, Estruturação De Trilhas Formativas, Incorporação De Competências Aos Pdis E Monitoramento Da Evolução — Serão Conduzidas De Forma Orientada Por Dados, A Partir Dos Resultados Da Avaliação De Desempenho, Que Fornecerá Insumos Estratégicos Para Priorização E Direcionamento Das Iniciativas.\r\n\r\ndessa Forma, O Plano Avança De Maneira Estruturada, Assegurando Consistência Na Base E Preparando O Terreno Para Ações Mais Assertivas E Alinhadas Às Necessidades Reais Do Negócio E Das Pessoas.",
+          "data": "2026-04-15",
+          "origem": "plano"
+        },
+        {
+          "texto": "O Plano De Desenvolvimento De Competências Críticas Está Estruturado Para Impulsionar A Performance Organizacional, Sustentar A Estratégia Institucional E Orientar A Evolução Das Carreiras, A Partir De Uma Abordagem Integrada Entre Diagnóstico, Estruturação E Desenvolvimento Contínuo.\r\n\r\naté O Momento, Foi Concluída A Etapa De Atualização Dos Descritivos De Cargos, Contemplando A Revisão Das Responsabilidades, Entregas E Competências Críticas, Além Da Validação Junto Às Lideranças E Alinhamento Com A Estratégia Organizacional. Essa Entrega Fortalece A Base De Gestão De Pessoas, Garantindo Maior Clareza E Coerência Entre Papéis E Expectativas.\r\n\r\nas Demais Ações Do Plano — Como Mapeamento De Lacunas, Estruturação De Trilhas Formativas, Incorporação De Competências Aos Pdis E Monitoramento Da Evolução — Serão Conduzidas De Forma Orientada Por Dados, A Partir Dos Resultados Da Avaliação De Desempenho, Que Fornecerá Insumos Estratégicos Para Priorização E Direcionamento Das Iniciativas.\r\n\r\ndessa Forma, O Plano Avança De Maneira Estruturada, Assegurando Consistência Na Base E Preparando O Terreno Para Ações Mais Assertivas E Alinhadas Às Necessidades Reais Do Negócio E Das Pessoas.",
+          "data": "2026-04-15",
+          "origem": "plano"
+        },
+        {
+          "texto": "Todos Os Descritivos Já Foram Atualizados E Agora Passa Por Uma Dupla Validação Do Pilar De Remuneração Para Ser Incluso No Portal Do Colaborador As Novas Versões.",
+          "data": "2026-04-15",
+          "origem": "acao"
+        },
+        {
+          "texto": "Todos Os Descritivos Já Foram Atualizados E Agora Passa Por Uma Dupla Validação Do Pilar De Remuneração Para Ser Incluso No Portal Do Colaborador As Novas Versões.",
+          "data": "2026-04-15",
+          "origem": "acao"
+        },
+        {
+          "texto": "O Plano De Desenvolvimento De Competências Críticas Está Estruturado Para Impulsionar A Performance Organizacional, Sustentar A Estratégia Institucional E Orientar A Evolução Das Carreiras, A Partir De Uma Abordagem Integrada Entre Diagnóstico, Estruturação E Desenvolvimento Contínuo.\r\n\r\naté O Momento, Foi Concluída A Etapa De Atualização Dos Descritivos De Cargos, Contemplando A Revisão Das Responsabilidades, Entregas E Competências Críticas, Além Da Validação Junto Às Lideranças E Alinhamento Com A Estratégia Organizacional. Essa Entrega Fortalece A Base De Gestão De Pessoas, Garantindo Maior Clareza E Coerência Entre Papéis E Expectativas.\r\n\r\nas Demais Ações Do Plano — Como Mapeamento De Lacunas, Estruturação De Trilhas Formativas, Incorporação De Competências Aos Pdis E Monitoramento Da Evolução — Serão Conduzidas De Forma Orientada Por Dados, A Partir Dos Resultados Da Avaliação De Desempenho, Que Fornecerá Insumos Estratégicos Para Priorização E Direcionamento Das Iniciativas.\r\n\r\ndessa Forma, O Plano Avança De Maneira Estruturada, Assegurando Consistência Na Base E Preparando O Terreno Para Ações Mais Assertivas E Alinhadas Às Necessidades Reais Do Negócio E Das Pessoas.",
+          "data": "2026-04-15",
+          "origem": "plano"
+        },
+        {
+          "texto": "O Plano De Desenvolvimento De Competências Críticas Está Estruturado Para Impulsionar A Performance Organizacional, Sustentar A Estratégia Institucional E Orientar A Evolução Das Carreiras, A Partir De Uma Abordagem Integrada Entre Diagnóstico, Estruturação E Desenvolvimento Contínuo.\r\n\r\naté O Momento, Foi Concluída A Etapa De Atualização Dos Descritivos De Cargos, Contemplando A Revisão Das Responsabilidades, Entregas E Competências Críticas, Além Da Validação Junto Às Lideranças E Alinhamento Com A Estratégia Organizacional. Essa Entrega Fortalece A Base De Gestão De Pessoas, Garantindo Maior Clareza E Coerência Entre Papéis E Expectativas.\r\n\r\nas Demais Ações Do Plano — Como Mapeamento De Lacunas, Estruturação De Trilhas Formativas, Incorporação De Competências Aos Pdis E Monitoramento Da Evolução — Serão Conduzidas De Forma Orientada Por Dados, A Partir Dos Resultados Da Avaliação De Desempenho, Que Fornecerá Insumos Estratégicos Para Priorização E Direcionamento Das Iniciativas.\r\n\r\ndessa Forma, O Plano Avança De Maneira Estruturada, Assegurando Consistência Na Base E Preparando O Terreno Para Ações Mais Assertivas E Alinhadas Às Necessidades Reais Do Negócio E Das Pessoas.",
+          "data": "2026-04-15",
+          "origem": "plano"
+        },
+        {
+          "texto": "O Plano De Desenvolvimento De Competências Críticas Está Estruturado Para Impulsionar A Performance Organizacional, Sustentar A Estratégia Institucional E Orientar A Evolução Das Carreiras, A Partir De Uma Abordagem Integrada Entre Diagnóstico, Estruturação E Desenvolvimento Contínuo.\r\n\r\naté O Momento, Foi Concluída A Etapa De Atualização Dos Descritivos De Cargos, Contemplando A Revisão Das Responsabilidades, Entregas E Competências Críticas, Além Da Validação Junto Às Lideranças E Alinhamento Com A Estratégia Organizacional. Essa Entrega Fortalece A Base De Gestão De Pessoas, Garantindo Maior Clareza E Coerência Entre Papéis E Expectativas.\r\n\r\nas Demais Ações Do Plano — Como Mapeamento De Lacunas, Estruturação De Trilhas Formativas, Incorporação De Competências Aos Pdis E Monitoramento Da Evolução — Serão Conduzidas De Forma Orientada Por Dados, A Partir Dos Resultados Da Avaliação De Desempenho, Que Fornecerá Insumos Estratégicos Para Priorização E Direcionamento Das Iniciativas.\r\n\r\ndessa Forma, O Plano Avança De Maneira Estruturada, Assegurando Consistência Na Base E Preparando O Terreno Para Ações Mais Assertivas E Alinhadas Às Necessidades Reais Do Negócio E Das Pessoas.",
+          "data": "2026-04-15",
+          "origem": "plano"
+        },
+        {
+          "texto": "O Plano De Desenvolvimento De Competências Críticas Está Estruturado Para Impulsionar A Performance Organizacional, Sustentar A Estratégia Institucional E Orientar A Evolução Das Carreiras, A Partir De Uma Abordagem Integrada Entre Diagnóstico, Estruturação E Desenvolvimento Contínuo.\r\n\r\naté O Momento, Foi Concluída A Etapa De Atualização Dos Descritivos De Cargos, Contemplando A Revisão Das Responsabilidades, Entregas E Competências Críticas, Além Da Validação Junto Às Lideranças E Alinhamento Com A Estratégia Organizacional. Essa Entrega Fortalece A Base De Gestão De Pessoas, Garantindo Maior Clareza E Coerência Entre Papéis E Expectativas.\r\n\r\nas Demais Ações Do Plano — Como Mapeamento De Lacunas, Estruturação De Trilhas Formativas, Incorporação De Competências Aos Pdis E Monitoramento Da Evolução — Serão Conduzidas De Forma Orientada Por Dados, A Partir Dos Resultados Da Avaliação De Desempenho, Que Fornecerá Insumos Estratégicos Para Priorização E Direcionamento Das Iniciativas.\r\n\r\ndessa Forma, O Plano Avança De Maneira Estruturada, Assegurando Consistência Na Base E Preparando O Terreno Para Ações Mais Assertivas E Alinhadas Às Necessidades Reais Do Negócio E Das Pessoas.",
+          "data": "2026-04-15",
+          "origem": "plano"
+        },
+        {
+          "texto": "O Plano De Desenvolvimento De Competências Críticas Está Estruturado Para Impulsionar A Performance Organizacional, Sustentar A Estratégia Institucional E Orientar A Evolução Das Carreiras, A Partir De Uma Abordagem Integrada Entre Diagnóstico, Estruturação E Desenvolvimento Contínuo.\r\n\r\naté O Momento, Foi Concluída A Etapa De Atualização Dos Descritivos De Cargos, Contemplando A Revisão Das Responsabilidades, Entregas E Competências Críticas, Além Da Validação Junto Às Lideranças E Alinhamento Com A Estratégia Organizacional. Essa Entrega Fortalece A Base De Gestão De Pessoas, Garantindo Maior Clareza E Coerência Entre Papéis E Expectativas.\r\n\r\nas Demais Ações Do Plano — Como Mapeamento De Lacunas, Estruturação De Trilhas Formativas, Incorporação De Competências Aos Pdis E Monitoramento Da Evolução — Serão Conduzidas De Forma Orientada Por Dados, A Partir Dos Resultados Da Avaliação De Desempenho, Que Fornecerá Insumos Estratégicos Para Priorização E Direcionamento Das Iniciativas.\r\n\r\ndessa Forma, O Plano Avança De Maneira Estruturada, Assegurando Consistência Na Base E Preparando O Terreno Para Ações Mais Assertivas E Alinhadas Às Necessidades Reais Do Negócio E Das Pessoas.",
+          "data": "2026-04-15",
+          "origem": "plano"
+        },
+        {
+          "texto": "O Plano De Desenvolvimento De Competências Críticas Está Estruturado Para Impulsionar A Performance Organizacional, Sustentar A Estratégia Institucional E Orientar A Evolução Das Carreiras, A Partir De Uma Abordagem Integrada Entre Diagnóstico, Estruturação E Desenvolvimento Contínuo.\r\n\r\naté O Momento, Foi Concluída A Etapa De Atualização Dos Descritivos De Cargos, Contemplando A Revisão Das Responsabilidades, Entregas E Competências Críticas, Além Da Validação Junto Às Lideranças E Alinhamento Com A Estratégia Organizacional. Essa Entrega Fortalece A Base De Gestão De Pessoas, Garantindo Maior Clareza E Coerência Entre Papéis E Expectativas.\r\n\r\nas Demais Ações Do Plano — Como Mapeamento De Lacunas, Estruturação De Trilhas Formativas, Incorporação De Competências Aos Pdis E Monitoramento Da Evolução — Serão Conduzidas De Forma Orientada Por Dados, A Partir Dos Resultados Da Avaliação De Desempenho, Que Fornecerá Insumos Estratégicos Para Priorização E Direcionamento Das Iniciativas.\r\n\r\ndessa Forma, O Plano Avança De Maneira Estruturada, Assegurando Consistência Na Base E Preparando O Terreno Para Ações Mais Assertivas E Alinhadas Às Necessidades Reais Do Negócio E Das Pessoas.",
+          "data": "2026-04-15",
+          "origem": "plano"
+        },
+        {
+          "texto": "O Plano De Desenvolvimento De Competências Críticas Está Estruturado Para Impulsionar A Performance Organizacional, Sustentar A Estratégia Institucional E Orientar A Evolução Das Carreiras, A Partir De Uma Abordagem Integrada Entre Diagnóstico, Estruturação E Desenvolvimento Contínuo.\r\n\r\naté O Momento, Foi Concluída A Etapa De Atualização Dos Descritivos De Cargos, Contemplando A Revisão Das Responsabilidades, Entregas E Competências Críticas, Além Da Validação Junto Às Lideranças E Alinhamento Com A Estratégia Organizacional. Essa Entrega Fortalece A Base De Gestão De Pessoas, Garantindo Maior Clareza E Coerência Entre Papéis E Expectativas.\r\n\r\nas Demais Ações Do Plano — Como Mapeamento De Lacunas, Estruturação De Trilhas Formativas, Incorporação De Competências Aos Pdis E Monitoramento Da Evolução — Serão Conduzidas De Forma Orientada Por Dados, A Partir Dos Resultados Da Avaliação De Desempenho, Que Fornecerá Insumos Estratégicos Para Priorização E Direcionamento Das Iniciativas.\r\n\r\ndessa Forma, O Plano Avança De Maneira Estruturada, Assegurando Consistência Na Base E Preparando O Terreno Para Ações Mais Assertivas E Alinhadas Às Necessidades Reais Do Negócio E Das Pessoas.",
+          "data": "2026-04-15",
+          "origem": "plano"
+        },
+        {
+          "texto": "O Plano De Desenvolvimento De Competências Críticas Está Estruturado Para Impulsionar A Performance Organizacional, Sustentar A Estratégia Institucional E Orientar A Evolução Das Carreiras, A Partir De Uma Abordagem Integrada Entre Diagnóstico, Estruturação E Desenvolvimento Contínuo.\r\n\r\naté O Momento, Foi Concluída A Etapa De Atualização Dos Descritivos De Cargos, Contemplando A Revisão Das Responsabilidades, Entregas E Competências Críticas, Além Da Validação Junto Às Lideranças E Alinhamento Com A Estratégia Organizacional. Essa Entrega Fortalece A Base De Gestão De Pessoas, Garantindo Maior Clareza E Coerência Entre Papéis E Expectativas.\r\n\r\nas Demais Ações Do Plano — Como Mapeamento De Lacunas, Estruturação De Trilhas Formativas, Incorporação De Competências Aos Pdis E Monitoramento Da Evolução — Serão Conduzidas De Forma Orientada Por Dados, A Partir Dos Resultados Da Avaliação De Desempenho, Que Fornecerá Insumos Estratégicos Para Priorização E Direcionamento Das Iniciativas.\r\n\r\ndessa Forma, O Plano Avança De Maneira Estruturada, Assegurando Consistência Na Base E Preparando O Terreno Para Ações Mais Assertivas E Alinhadas Às Necessidades Reais Do Negócio E Das Pessoas.",
+          "data": "2026-04-15",
+          "origem": "plano"
+        },
+        {
+          "texto": "O Plano De Desenvolvimento De Competências Críticas Está Estruturado Para Impulsionar A Performance Organizacional, Sustentar A Estratégia Institucional E Orientar A Evolução Das Carreiras, A Partir De Uma Abordagem Integrada Entre Diagnóstico, Estruturação E Desenvolvimento Contínuo.\r\n\r\naté O Momento, Foi Concluída A Etapa De Atualização Dos Descritivos De Cargos, Contemplando A Revisão Das Responsabilidades, Entregas E Competências Críticas, Além Da Validação Junto Às Lideranças E Alinhamento Com A Estratégia Organizacional. Essa Entrega Fortalece A Base De Gestão De Pessoas, Garantindo Maior Clareza E Coerência Entre Papéis E Expectativas.\r\n\r\nas Demais Ações Do Plano — Como Mapeamento De Lacunas, Estruturação De Trilhas Formativas, Incorporação De Competências Aos Pdis E Monitoramento Da Evolução — Serão Conduzidas De Forma Orientada Por Dados, A Partir Dos Resultados Da Avaliação De Desempenho, Que Fornecerá Insumos Estratégicos Para Priorização E Direcionamento Das Iniciativas.\r\n\r\ndessa Forma, O Plano Avança De Maneira Estruturada, Assegurando Consistência Na Base E Preparando O Terreno Para Ações Mais Assertivas E Alinhadas Às Necessidades Reais Do Negócio E Das Pessoas.",
+          "data": "2026-04-15",
+          "origem": "plano"
+        },
+        {
+          "texto": "O Plano De Desenvolvimento De Competências Críticas Está Estruturado Para Impulsionar A Performance Organizacional, Sustentar A Estratégia Institucional E Orientar A Evolução Das Carreiras, A Partir De Uma Abordagem Integrada Entre Diagnóstico, Estruturação E Desenvolvimento Contínuo.\r\n\r\naté O Momento, Foi Concluída A Etapa De Atualização Dos Descritivos De Cargos, Contemplando A Revisão Das Responsabilidades, Entregas E Competências Críticas, Além Da Validação Junto Às Lideranças E Alinhamento Com A Estratégia Organizacional. Essa Entrega Fortalece A Base De Gestão De Pessoas, Garantindo Maior Clareza E Coerência Entre Papéis E Expectativas.\r\n\r\nas Demais Ações Do Plano — Como Mapeamento De Lacunas, Estruturação De Trilhas Formativas, Incorporação De Competências Aos Pdis E Monitoramento Da Evolução — Serão Conduzidas De Forma Orientada Por Dados, A Partir Dos Resultados Da Avaliação De Desempenho, Que Fornecerá Insumos Estratégicos Para Priorização E Direcionamento Das Iniciativas.\r\n\r\ndessa Forma, O Plano Avança De Maneira Estruturada, Assegurando Consistência Na Base E Preparando O Terreno Para Ações Mais Assertivas E Alinhadas Às Necessidades Reais Do Negócio E Das Pessoas.",
+          "data": "2026-04-15",
+          "origem": "plano"
+        },
+        {
+          "texto": "O Plano De Desenvolvimento De Competências Críticas Está Estruturado Para Impulsionar A Performance Organizacional, Sustentar A Estratégia Institucional E Orientar A Evolução Das Carreiras, A Partir De Uma Abordagem Integrada Entre Diagnóstico, Estruturação E Desenvolvimento Contínuo.\r\n\r\naté O Momento, Foi Concluída A Etapa De Atualização Dos Descritivos De Cargos, Contemplando A Revisão Das Responsabilidades, Entregas E Competências Críticas, Além Da Validação Junto Às Lideranças E Alinhamento Com A Estratégia Organizacional. Essa Entrega Fortalece A Base De Gestão De Pessoas, Garantindo Maior Clareza E Coerência Entre Papéis E Expectativas.\r\n\r\nas Demais Ações Do Plano — Como Mapeamento De Lacunas, Estruturação De Trilhas Formativas, Incorporação De Competências Aos Pdis E Monitoramento Da Evolução — Serão Conduzidas De Forma Orientada Por Dados, A Partir Dos Resultados Da Avaliação De Desempenho, Que Fornecerá Insumos Estratégicos Para Priorização E Direcionamento Das Iniciativas.\r\n\r\ndessa Forma, O Plano Avança De Maneira Estruturada, Assegurando Consistência Na Base E Preparando O Terreno Para Ações Mais Assertivas E Alinhadas Às Necessidades Reais Do Negócio E Das Pessoas.",
+          "data": "2026-04-15",
+          "origem": "plano"
+        },
+        {
+          "texto": "O Plano De Desenvolvimento De Competências Críticas Está Estruturado Para Impulsionar A Performance Organizacional, Sustentar A Estratégia Institucional E Orientar A Evolução Das Carreiras, A Partir De Uma Abordagem Integrada Entre Diagnóstico, Estruturação E Desenvolvimento Contínuo.\r\n\r\naté O Momento, Foi Concluída A Etapa De Atualização Dos Descritivos De Cargos, Contemplando A Revisão Das Responsabilidades, Entregas E Competências Críticas, Além Da Validação Junto Às Lideranças E Alinhamento Com A Estratégia Organizacional. Essa Entrega Fortalece A Base De Gestão De Pessoas, Garantindo Maior Clareza E Coerência Entre Papéis E Expectativas.\r\n\r\nas Demais Ações Do Plano — Como Mapeamento De Lacunas, Estruturação De Trilhas Formativas, Incorporação De Competências Aos Pdis E Monitoramento Da Evolução — Serão Conduzidas De Forma Orientada Por Dados, A Partir Dos Resultados Da Avaliação De Desempenho, Que Fornecerá Insumos Estratégicos Para Priorização E Direcionamento Das Iniciativas.\r\n\r\ndessa Forma, O Plano Avança De Maneira Estruturada, Assegurando Consistência Na Base E Preparando O Terreno Para Ações Mais Assertivas E Alinhadas Às Necessidades Reais Do Negócio E Das Pessoas.",
+          "data": "2026-04-15",
+          "origem": "plano"
+        },
+        {
+          "texto": "O Plano De Desenvolvimento De Competências Críticas Está Estruturado Para Impulsionar A Performance Organizacional, Sustentar A Estratégia Institucional E Orientar A Evolução Das Carreiras, A Partir De Uma Abordagem Integrada Entre Diagnóstico, Estruturação E Desenvolvimento Contínuo.\r\n\r\naté O Momento, Foi Concluída A Etapa De Atualização Dos Descritivos De Cargos, Contemplando A Revisão Das Responsabilidades, Entregas E Competências Críticas, Além Da Validação Junto Às Lideranças E Alinhamento Com A Estratégia Organizacional. Essa Entrega Fortalece A Base De Gestão De Pessoas, Garantindo Maior Clareza E Coerência Entre Papéis E Expectativas.\r\n\r\nas Demais Ações Do Plano — Como Mapeamento De Lacunas, Estruturação De Trilhas Formativas, Incorporação De Competências Aos Pdis E Monitoramento Da Evolução — Serão Conduzidas De Forma Orientada Por Dados, A Partir Dos Resultados Da Avaliação De Desempenho, Que Fornecerá Insumos Estratégicos Para Priorização E Direcionamento Das Iniciativas.\r\n\r\ndessa Forma, O Plano Avança De Maneira Estruturada, Assegurando Consistência Na Base E Preparando O Terreno Para Ações Mais Assertivas E Alinhadas Às Necessidades Reais Do Negócio E Das Pessoas.",
+          "data": "2026-04-15",
+          "origem": "plano"
+        },
+        {
+          "texto": "O Plano De Desenvolvimento De Competências Críticas Está Estruturado Para Impulsionar A Performance Organizacional, Sustentar A Estratégia Institucional E Orientar A Evolução Das Carreiras, A Partir De Uma Abordagem Integrada Entre Diagnóstico, Estruturação E Desenvolvimento Contínuo.\r\n\r\naté O Momento, Foi Concluída A Etapa De Atualização Dos Descritivos De Cargos, Contemplando A Revisão Das Responsabilidades, Entregas E Competências Críticas, Além Da Validação Junto Às Lideranças E Alinhamento Com A Estratégia Organizacional. Essa Entrega Fortalece A Base De Gestão De Pessoas, Garantindo Maior Clareza E Coerência Entre Papéis E Expectativas.\r\n\r\nas Demais Ações Do Plano — Como Mapeamento De Lacunas, Estruturação De Trilhas Formativas, Incorporação De Competências Aos Pdis E Monitoramento Da Evolução — Serão Conduzidas De Forma Orientada Por Dados, A Partir Dos Resultados Da Avaliação De Desempenho, Que Fornecerá Insumos Estratégicos Para Priorização E Direcionamento Das Iniciativas.\r\n\r\ndessa Forma, O Plano Avança De Maneira Estruturada, Assegurando Consistência Na Base E Preparando O Terreno Para Ações Mais Assertivas E Alinhadas Às Necessidades Reais Do Negócio E Das Pessoas.",
+          "data": "2026-04-15",
+          "origem": "plano"
+        },
+        {
+          "texto": "O Plano De Desenvolvimento De Competências Críticas Está Estruturado Para Impulsionar A Performance Organizacional, Sustentar A Estratégia Institucional E Orientar A Evolução Das Carreiras, A Partir De Uma Abordagem Integrada Entre Diagnóstico, Estruturação E Desenvolvimento Contínuo.\r\n\r\naté O Momento, Foi Concluída A Etapa De Atualização Dos Descritivos De Cargos, Contemplando A Revisão Das Responsabilidades, Entregas E Competências Críticas, Além Da Validação Junto Às Lideranças E Alinhamento Com A Estratégia Organizacional. Essa Entrega Fortalece A Base De Gestão De Pessoas, Garantindo Maior Clareza E Coerência Entre Papéis E Expectativas.\r\n\r\nas Demais Ações Do Plano — Como Mapeamento De Lacunas, Estruturação De Trilhas Formativas, Incorporação De Competências Aos Pdis E Monitoramento Da Evolução — Serão Conduzidas De Forma Orientada Por Dados, A Partir Dos Resultados Da Avaliação De Desempenho, Que Fornecerá Insumos Estratégicos Para Priorização E Direcionamento Das Iniciativas.\r\n\r\ndessa Forma, O Plano Avança De Maneira Estruturada, Assegurando Consistência Na Base E Preparando O Terreno Para Ações Mais Assertivas E Alinhadas Às Necessidades Reais Do Negócio E Das Pessoas.",
+          "data": "2026-04-15",
+          "origem": "plano"
+        },
+        {
+          "texto": "O Plano De Desenvolvimento De Competências Críticas Está Estruturado Para Impulsionar A Performance Organizacional, Sustentar A Estratégia Institucional E Orientar A Evolução Das Carreiras, A Partir De Uma Abordagem Integrada Entre Diagnóstico, Estruturação E Desenvolvimento Contínuo.\r\n\r\naté O Momento, Foi Concluída A Etapa De Atualização Dos Descritivos De Cargos, Contemplando A Revisão Das Responsabilidades, Entregas E Competências Críticas, Além Da Validação Junto Às Lideranças E Alinhamento Com A Estratégia Organizacional. Essa Entrega Fortalece A Base De Gestão De Pessoas, Garantindo Maior Clareza E Coerência Entre Papéis E Expectativas.\r\n\r\nas Demais Ações Do Plano — Como Mapeamento De Lacunas, Estruturação De Trilhas Formativas, Incorporação De Competências Aos Pdis E Monitoramento Da Evolução — Serão Conduzidas De Forma Orientada Por Dados, A Partir Dos Resultados Da Avaliação De Desempenho, Que Fornecerá Insumos Estratégicos Para Priorização E Direcionamento Das Iniciativas.\r\n\r\ndessa Forma, O Plano Avança De Maneira Estruturada, Assegurando Consistência Na Base E Preparando O Terreno Para Ações Mais Assertivas E Alinhadas Às Necessidades Reais Do Negócio E Das Pessoas.",
+          "data": "2026-04-15",
+          "origem": "plano"
+        },
+        {
+          "texto": "O Plano De Desenvolvimento De Competências Críticas Está Estruturado Para Impulsionar A Performance Organizacional, Sustentar A Estratégia Institucional E Orientar A Evolução Das Carreiras, A Partir De Uma Abordagem Integrada Entre Diagnóstico, Estruturação E Desenvolvimento Contínuo.\r\n\r\naté O Momento, Foi Concluída A Etapa De Atualização Dos Descritivos De Cargos, Contemplando A Revisão Das Responsabilidades, Entregas E Competências Críticas, Além Da Validação Junto Às Lideranças E Alinhamento Com A Estratégia Organizacional. Essa Entrega Fortalece A Base De Gestão De Pessoas, Garantindo Maior Clareza E Coerência Entre Papéis E Expectativas.\r\n\r\nas Demais Ações Do Plano — Como Mapeamento De Lacunas, Estruturação De Trilhas Formativas, Incorporação De Competências Aos Pdis E Monitoramento Da Evolução — Serão Conduzidas De Forma Orientada Por Dados, A Partir Dos Resultados Da Avaliação De Desempenho, Que Fornecerá Insumos Estratégicos Para Priorização E Direcionamento Das Iniciativas.\r\n\r\ndessa Forma, O Plano Avança De Maneira Estruturada, Assegurando Consistência Na Base E Preparando O Terreno Para Ações Mais Assertivas E Alinhadas Às Necessidades Reais Do Negócio E Das Pessoas.",
+          "data": "2026-04-15",
+          "origem": "plano"
+        },
+        {
+          "texto": "O Plano De Desenvolvimento De Competências Críticas Está Estruturado Para Impulsionar A Performance Organizacional, Sustentar A Estratégia Institucional E Orientar A Evolução Das Carreiras, A Partir De Uma Abordagem Integrada Entre Diagnóstico, Estruturação E Desenvolvimento Contínuo.\r\n\r\naté O Momento, Foi Concluída A Etapa De Atualização Dos Descritivos De Cargos, Contemplando A Revisão Das Responsabilidades, Entregas E Competências Críticas, Além Da Validação Junto Às Lideranças E Alinhamento Com A Estratégia Organizacional. Essa Entrega Fortalece A Base De Gestão De Pessoas, Garantindo Maior Clareza E Coerência Entre Papéis E Expectativas.\r\n\r\nas Demais Ações Do Plano — Como Mapeamento De Lacunas, Estruturação De Trilhas Formativas, Incorporação De Competências Aos Pdis E Monitoramento Da Evolução — Serão Conduzidas De Forma Orientada Por Dados, A Partir Dos Resultados Da Avaliação De Desempenho, Que Fornecerá Insumos Estratégicos Para Priorização E Direcionamento Das Iniciativas.\r\n\r\ndessa Forma, O Plano Avança De Maneira Estruturada, Assegurando Consistência Na Base E Preparando O Terreno Para Ações Mais Assertivas E Alinhadas Às Necessidades Reais Do Negócio E Das Pessoas.",
+          "data": "2026-04-15",
+          "origem": "plano"
+        }
+      ]
+    },
+    {
+      "mes": 5,
+      "ano": 2026,
+      "mes_referencia": 5,
+      "registros": []
+    },
+    {
+      "mes": 6,
+      "ano": 2026,
+      "mes_referencia": 6,
+      "registros": [
+        {
+          "texto": "Realizadas Reuniões De Alinhamento Com As Áreas De Tecnologias Digitais E Inovação Para Definição Das Ações De Desenvolvimento Em Ia. Elaborado Questionário De Diagnóstico Por Blocos De Atuação, Com Aplicação Prévia Para Levantamento Das Maiores Dores, E Depois Do Treinamento, Em 30 E 60 Dias Após Os Workshops, Visando Mensurar A Evolução E O Impacto Das Capacitações. Também Analisados Os Resultados Da Pesquisa Institucional De Governança, Que Apesar De Alguns Insights Trazidos, Estava Bem Genérico, Apesar De Nos Permitir Identificar O Perfil De Um Grupo Da Nossa Instituição. \r\nidentificada, Junto À Liderança De Tecnologia, Demanda Específica De Capacitação Em Ia Para A Própria Equipe. \r\nneste Momento, Aguardando Aprovação Do Modelo De Diagnóstico Pela Gerência De Gente E Cultura Para Implementação.",
+          "data": "2026-06-02",
+          "origem": "acao"
+        },
+        {
+          "texto": "Realizadas Reuniões De Alinhamento Com As Áreas De Tecnologias Digitais E Inovação Para Definição Das Ações De Desenvolvimento Em Ia. Elaborado Questionário De Diagnóstico Por Blocos De Atuação, Com Aplicação Prévia Para Levantamento Das Maiores Dores, E Depois Do Treinamento, Em 30 E 60 Dias Após Os Workshops, Visando Mensurar A Evolução E O Impacto Das Capacitações. Também Analisados Os Resultados Da Pesquisa Institucional De Governança, Que Apesar De Alguns Insights Trazidos, Estava Bem Genérico, Apesar De Nos Permitir Identificar O Perfil De Um Grupo Da Nossa Instituição. \r\nidentificada, Junto À Liderança De Tecnologia, Demanda Específica De Capacitação Em Ia Para A Própria Equipe. \r\nneste Momento, Aguardando Aprovação Do Modelo De Diagnóstico Pela Gerência De Gente E Cultura Para Implementação.",
+          "data": "2026-06-02",
+          "origem": "acao"
+        },
+        {
+          "texto": "Realizadas Reuniões De Alinhamento Com As Áreas De Tecnologias Digitais E Inovação Para Definição Das Ações De Desenvolvimento Em Ia. Elaborado Questionário De Diagnóstico Por Blocos De Atuação, Com Aplicação Prévia Para Levantamento Das Maiores Dores, E Depois Do Treinamento, Em 30 E 60 Dias Após Os Workshops, Visando Mensurar A Evolução E O Impacto Das Capacitações. Também Analisados Os Resultados Da Pesquisa Institucional De Governança, Que Apesar De Alguns Insights Trazidos, Estava Bem Genérico, Apesar De Nos Permitir Identificar O Perfil De Um Grupo Da Nossa Instituição. \r\nidentificada, Junto À Liderança De Tecnologia, Demanda Específica De Capacitação Em Ia Para A Própria Equipe. \r\nneste Momento, Aguardando Aprovação Do Modelo De Diagnóstico Pela Gerência De Gente E Cultura Para Implementação.",
+          "data": "2026-06-02",
+          "origem": "acao"
+        },
+        {
+          "texto": "Realizadas Reuniões De Alinhamento Com As Áreas De Tecnologias Digitais E Inovação Para Definição Das Ações De Desenvolvimento Em Ia. Elaborado Questionário De Diagnóstico Por Blocos De Atuação, Com Aplicação Prévia Para Levantamento Das Maiores Dores, E Depois Do Treinamento, Em 30 E 60 Dias Após Os Workshops, Visando Mensurar A Evolução E O Impacto Das Capacitações. Também Analisados Os Resultados Da Pesquisa Institucional De Governança, Que Apesar De Alguns Insights Trazidos, Estava Bem Genérico, Apesar De Nos Permitir Identificar O Perfil De Um Grupo Da Nossa Instituição. \r\nidentificada, Junto À Liderança De Tecnologia, Demanda Específica De Capacitação Em Ia Para A Própria Equipe. \r\nneste Momento, Aguardando Aprovação Do Modelo De Diagnóstico Pela Gerência De Gente E Cultura Para Implementação.",
+          "data": "2026-06-02",
+          "origem": "acao"
+        },
+        {
+          "texto": "Realizadas Reuniões De Alinhamento Com As Áreas De Tecnologias Digitais E Inovação Para Definição Das Ações De Desenvolvimento Em Ia. Elaborado Questionário De Diagnóstico Por Blocos De Atuação, Com Aplicação Prévia Para Levantamento Das Maiores Dores, E Depois Do Treinamento, Em 30 E 60 Dias Após Os Workshops, Visando Mensurar A Evolução E O Impacto Das Capacitações. Também Analisados Os Resultados Da Pesquisa Institucional De Governança, Que Apesar De Alguns Insights Trazidos, Estava Bem Genérico, Apesar De Nos Permitir Identificar O Perfil De Um Grupo Da Nossa Instituição. \r\nidentificada, Junto À Liderança De Tecnologia, Demanda Específica De Capacitação Em Ia Para A Própria Equipe. \r\nneste Momento, Aguardando Aprovação Do Modelo De Diagnóstico Pela Gerência De Gente E Cultura Para Implementação.",
+          "data": "2026-06-02",
+          "origem": "acao"
+        },
+        {
+          "texto": "Realizado Uma Lista De Possibilidades De Treinamentos Conforme Necessidade De Desenvolvimento De Gaps, Após A Avaliação De Desempenho. Este Material Será Divulgado Para Os Gestores Das Áreas Que Tiveram Pontuação Menor Nas Competências.",
+          "data": "2026-06-08",
+          "origem": "acao"
+        },
+        {
+          "texto": "Realizado Uma Lista De Possibilidades De Treinamentos Conforme Necessidade De Desenvolvimento De Gaps, Após A Avaliação De Desempenho. Este Material Será Divulgado Para Os Gestores Das Áreas Que Tiveram Pontuação Menor Nas Competências.",
+          "data": "2026-06-08",
+          "origem": "acao"
+        },
+        {
+          "texto": "Realizado Uma Lista De Possibilidades De Treinamentos Conforme Necessidade De Desenvolvimento De Gaps, Após A Avaliação De Desempenho. Este Material Será Divulgado Para Os Gestores Das Áreas Que Tiveram Pontuação Menor Nas Competências.",
+          "data": "2026-06-08",
+          "origem": "acao"
+        },
+        {
+          "texto": "Realizado Uma Lista De Possibilidades De Treinamentos Conforme Necessidade De Desenvolvimento De Gaps, Após A Avaliação De Desempenho. Este Material Será Divulgado Para Os Gestores Das Áreas Que Tiveram Pontuação Menor Nas Competências.",
+          "data": "2026-06-08",
+          "origem": "acao"
+        },
+        {
+          "texto": "Realizado Uma Lista De Possibilidades De Treinamentos Conforme Necessidade De Desenvolvimento De Gaps, Após A Avaliação De Desempenho. Este Material Será Divulgado Para Os Gestores Das Áreas Que Tiveram Pontuação Menor Nas Competências.",
+          "data": "2026-06-08",
+          "origem": "acao"
+        },
+        {
+          "texto": "Compartilhado Com O Pilar De Remuneração As Novas Competências E Ajustes De Cargos Para Os Blocos De Atuação Para Refinar Ainda Mais Se Estão Ok As Sugestões Feitas Para Seguir Com A Atualização De Descritivos De Cargos. 21/01/2026\r\natualizados Todos Os Descritivos De Cargos Com As Novas Competências, Bem Como Avaliação De Performance E Desempenho, Recrutamento E Seleção E Na Ferramenta Do Capacita+ Para Solicitação De Treinamentos. Em Andamento Demais Processos Da Área.29/04/2026 Às 12:07",
+          "data": "2026-06-08",
+          "origem": "acao"
+        },
+        {
+          "texto": "Compartilhado Com O Pilar De Remuneração As Novas Competências E Ajustes De Cargos Para Os Blocos De Atuação Para Refinar Ainda Mais Se Estão Ok As Sugestões Feitas Para Seguir Com A Atualização De Descritivos De Cargos. 21/01/2026\r\natualizados Todos Os Descritivos De Cargos Com As Novas Competências, Bem Como Avaliação De Performance E Desempenho, Recrutamento E Seleção E Na Ferramenta Do Capacita+ Para Solicitação De Treinamentos. Em Andamento Demais Processos Da Área.29/04/2026 Às 12:07",
+          "data": "2026-06-08",
+          "origem": "acao"
+        },
+        {
+          "texto": "Compartilhado Com O Pilar De Remuneração As Novas Competências E Ajustes De Cargos Para Os Blocos De Atuação Para Refinar Ainda Mais Se Estão Ok As Sugestões Feitas Para Seguir Com A Atualização De Descritivos De Cargos. 21/01/2026\r\natualizados Todos Os Descritivos De Cargos Com As Novas Competências, Bem Como Avaliação De Performance E Desempenho, Recrutamento E Seleção E Na Ferramenta Do Capacita+ Para Solicitação De Treinamentos. Em Andamento Demais Processos Da Área.29/04/2026 Às 12:07",
+          "data": "2026-06-08",
+          "origem": "acao"
+        },
+        {
+          "texto": "Compartilhado Com O Pilar De Remuneração As Novas Competências E Ajustes De Cargos Para Os Blocos De Atuação Para Refinar Ainda Mais Se Estão Ok As Sugestões Feitas Para Seguir Com A Atualização De Descritivos De Cargos. 21/01/2026\r\natualizados Todos Os Descritivos De Cargos Com As Novas Competências, Bem Como Avaliação De Performance E Desempenho, Recrutamento E Seleção E Na Ferramenta Do Capacita+ Para Solicitação De Treinamentos. Em Andamento Demais Processos Da Área.29/04/2026 Às 12:07",
+          "data": "2026-06-08",
+          "origem": "acao"
+        },
+        {
+          "texto": "Compartilhado Com O Pilar De Remuneração As Novas Competências E Ajustes De Cargos Para Os Blocos De Atuação Para Refinar Ainda Mais Se Estão Ok As Sugestões Feitas Para Seguir Com A Atualização De Descritivos De Cargos. 21/01/2026\r\natualizados Todos Os Descritivos De Cargos Com As Novas Competências, Bem Como Avaliação De Performance E Desempenho, Recrutamento E Seleção E Na Ferramenta Do Capacita+ Para Solicitação De Treinamentos. Em Andamento Demais Processos Da Área.29/04/2026 Às 12:07",
+          "data": "2026-06-08",
+          "origem": "acao"
+        },
+        {
+          "texto": "Realizando O Levantamento Da Quantidades De Agentes De Gestão Que Iram Realizar A Avaliação De Desempenho",
+          "data": "2026-06-06",
+          "origem": "acao"
+        },
+        {
+          "texto": "Realizando O Levantamento Da Quantidades De Agentes De Gestão Que Iram Realizar A Avaliação De Desempenho",
+          "data": "2026-06-06",
+          "origem": "acao"
+        },
+        {
+          "texto": "Realizando O Levantamento Da Quantidades De Agentes De Gestão Que Iram Realizar A Avaliação De Desempenho",
+          "data": "2026-06-06",
+          "origem": "acao"
+        },
+        {
+          "texto": "Realizando O Levantamento Da Quantidades De Agentes De Gestão Que Iram Realizar A Avaliação De Desempenho",
+          "data": "2026-06-06",
+          "origem": "acao"
+        },
+        {
+          "texto": "Realizando O Levantamento Da Quantidades De Agentes De Gestão Que Iram Realizar A Avaliação De Desempenho",
+          "data": "2026-06-06",
+          "origem": "acao"
+        }
+      ]
+    },
+    {
+      "mes": 7,
+      "ano": 2026,
+      "mes_referencia": 7,
+      "registros": [
+        {
+          "texto": "No Período, Foram Concluídas Entregas Estruturantes, Como A Atualização Dos Descritivos De Cargos Com Competências Críticas, E Avançou A Integração Dessas Competências Aos Subsistemas De Gente E Cultura. Também Foi Iniciado O Diagnóstico Institucional Sobre O Uso De Inteligência Artificial, Com Ampliação Do Público Respondente Para Líderes, Analistas E Consultores, Cujos Resultados Subsidiarão O Plano De Capacitação E A Formação De Multiplicadores Internos. Paralelamente, Está Em Desenvolvimento A Estruturação De Trilhas De Aprendizagem Baseadas Nos Gaps Identificados, Mantendo A Iniciativa Alinhada Ao Cronograma Previsto.",
+          "data": "2026-07-02",
+          "origem": "plano"
+        },
+        {
+          "texto": "No Período, Foram Concluídas Entregas Estruturantes, Como A Atualização Dos Descritivos De Cargos Com Competências Críticas, E Avançou A Integração Dessas Competências Aos Subsistemas De Gente E Cultura. Também Foi Iniciado O Diagnóstico Institucional Sobre O Uso De Inteligência Artificial, Com Ampliação Do Público Respondente Para Líderes, Analistas E Consultores, Cujos Resultados Subsidiarão O Plano De Capacitação E A Formação De Multiplicadores Internos. Paralelamente, Está Em Desenvolvimento A Estruturação De Trilhas De Aprendizagem Baseadas Nos Gaps Identificados, Mantendo A Iniciativa Alinhada Ao Cronograma Previsto.",
+          "data": "2026-07-02",
+          "origem": "plano"
+        },
+        {
+          "texto": "No Período, Foram Concluídas Entregas Estruturantes, Como A Atualização Dos Descritivos De Cargos Com Competências Críticas, E Avançou A Integração Dessas Competências Aos Subsistemas De Gente E Cultura. Também Foi Iniciado O Diagnóstico Institucional Sobre O Uso De Inteligência Artificial, Com Ampliação Do Público Respondente Para Líderes, Analistas E Consultores, Cujos Resultados Subsidiarão O Plano De Capacitação E A Formação De Multiplicadores Internos. Paralelamente, Está Em Desenvolvimento A Estruturação De Trilhas De Aprendizagem Baseadas Nos Gaps Identificados, Mantendo A Iniciativa Alinhada Ao Cronograma Previsto.",
+          "data": "2026-07-02",
+          "origem": "plano"
+        },
+        {
+          "texto": "No Período, Foram Concluídas Entregas Estruturantes, Como A Atualização Dos Descritivos De Cargos Com Competências Críticas, E Avançou A Integração Dessas Competências Aos Subsistemas De Gente E Cultura. Também Foi Iniciado O Diagnóstico Institucional Sobre O Uso De Inteligência Artificial, Com Ampliação Do Público Respondente Para Líderes, Analistas E Consultores, Cujos Resultados Subsidiarão O Plano De Capacitação E A Formação De Multiplicadores Internos. Paralelamente, Está Em Desenvolvimento A Estruturação De Trilhas De Aprendizagem Baseadas Nos Gaps Identificados, Mantendo A Iniciativa Alinhada Ao Cronograma Previsto.",
+          "data": "2026-07-02",
+          "origem": "plano"
+        },
+        {
+          "texto": "No Período, Foram Concluídas Entregas Estruturantes, Como A Atualização Dos Descritivos De Cargos Com Competências Críticas, E Avançou A Integração Dessas Competências Aos Subsistemas De Gente E Cultura. Também Foi Iniciado O Diagnóstico Institucional Sobre O Uso De Inteligência Artificial, Com Ampliação Do Público Respondente Para Líderes, Analistas E Consultores, Cujos Resultados Subsidiarão O Plano De Capacitação E A Formação De Multiplicadores Internos. Paralelamente, Está Em Desenvolvimento A Estruturação De Trilhas De Aprendizagem Baseadas Nos Gaps Identificados, Mantendo A Iniciativa Alinhada Ao Cronograma Previsto.",
+          "data": "2026-07-02",
+          "origem": "plano"
+        },
+        {
+          "texto": "No Período, Foram Concluídas Entregas Estruturantes, Como A Atualização Dos Descritivos De Cargos Com Competências Críticas, E Avançou A Integração Dessas Competências Aos Subsistemas De Gente E Cultura. Também Foi Iniciado O Diagnóstico Institucional Sobre O Uso De Inteligência Artificial, Com Ampliação Do Público Respondente Para Líderes, Analistas E Consultores, Cujos Resultados Subsidiarão O Plano De Capacitação E A Formação De Multiplicadores Internos. Paralelamente, Está Em Desenvolvimento A Estruturação De Trilhas De Aprendizagem Baseadas Nos Gaps Identificados, Mantendo A Iniciativa Alinhada Ao Cronograma Previsto.",
+          "data": "2026-07-02",
+          "origem": "plano"
+        },
+        {
+          "texto": "Foi Iniciado, Em 30/06/2026, O Diagnóstico Institucional Sobre O Uso De Inteligência Artificial, Com Período De Aplicação Até 10/07/2026. Nesta Edição, O Escopo De Respondentes São Líderes, Analistas E Foi Ampliado Para Contemplar Também, Consultores. Os Resultados Subsidiarão O Mapeamento Das Necessidades De Desenvolvimento De Competências Em Ia, A Definição De Ações De Capacitação E A Identificação De Profissionais Interessados Em Atuar Como Multiplicadores, Em Parceria Com As Áreas De Tecnologia Da Informação E Gente E Cultura.",
+          "data": "2026-07-02",
+          "origem": "acao"
+        },
+        {
+          "texto": "Foi Iniciado, Em 30/06/2026, O Diagnóstico Institucional Sobre O Uso De Inteligência Artificial, Com Período De Aplicação Até 10/07/2026. Nesta Edição, O Escopo De Respondentes São Líderes, Analistas E Foi Ampliado Para Contemplar Também, Consultores. Os Resultados Subsidiarão O Mapeamento Das Necessidades De Desenvolvimento De Competências Em Ia, A Definição De Ações De Capacitação E A Identificação De Profissionais Interessados Em Atuar Como Multiplicadores, Em Parceria Com As Áreas De Tecnologia Da Informação E Gente E Cultura.",
+          "data": "2026-07-02",
+          "origem": "acao"
+        },
+        {
+          "texto": "No Período, Foram Concluídas Entregas Estruturantes, Como A Atualização Dos Descritivos De Cargos Com Competências Críticas, E Avançou A Integração Dessas Competências Aos Subsistemas De Gente E Cultura. Também Foi Iniciado O Diagnóstico Institucional Sobre O Uso De Inteligência Artificial, Com Ampliação Do Público Respondente Para Líderes, Analistas E Consultores, Cujos Resultados Subsidiarão O Plano De Capacitação E A Formação De Multiplicadores Internos. Paralelamente, Está Em Desenvolvimento A Estruturação De Trilhas De Aprendizagem Baseadas Nos Gaps Identificados, Mantendo A Iniciativa Alinhada Ao Cronograma Previsto.",
+          "data": "2026-07-02",
+          "origem": "plano"
+        },
+        {
+          "texto": "Foi Iniciado, Em 30/06/2026, O Diagnóstico Institucional Sobre O Uso De Inteligência Artificial, Com Período De Aplicação Até 10/07/2026. Nesta Edição, O Escopo De Respondentes São Líderes, Analistas E Foi Ampliado Para Contemplar Também, Consultores. Os Resultados Subsidiarão O Mapeamento Das Necessidades De Desenvolvimento De Competências Em Ia, A Definição De Ações De Capacitação E A Identificação De Profissionais Interessados Em Atuar Como Multiplicadores, Em Parceria Com As Áreas De Tecnologia Da Informação E Gente E Cultura.",
+          "data": "2026-07-02",
+          "origem": "acao"
+        },
+        {
+          "texto": "No Período, Foram Concluídas Entregas Estruturantes, Como A Atualização Dos Descritivos De Cargos Com Competências Críticas, E Avançou A Integração Dessas Competências Aos Subsistemas De Gente E Cultura. Também Foi Iniciado O Diagnóstico Institucional Sobre O Uso De Inteligência Artificial, Com Ampliação Do Público Respondente Para Líderes, Analistas E Consultores, Cujos Resultados Subsidiarão O Plano De Capacitação E A Formação De Multiplicadores Internos. Paralelamente, Está Em Desenvolvimento A Estruturação De Trilhas De Aprendizagem Baseadas Nos Gaps Identificados, Mantendo A Iniciativa Alinhada Ao Cronograma Previsto.",
+          "data": "2026-07-02",
+          "origem": "plano"
+        },
+        {
+          "texto": "No Período, Foram Concluídas Entregas Estruturantes, Como A Atualização Dos Descritivos De Cargos Com Competências Críticas, E Avançou A Integração Dessas Competências Aos Subsistemas De Gente E Cultura. Também Foi Iniciado O Diagnóstico Institucional Sobre O Uso De Inteligência Artificial, Com Ampliação Do Público Respondente Para Líderes, Analistas E Consultores, Cujos Resultados Subsidiarão O Plano De Capacitação E A Formação De Multiplicadores Internos. Paralelamente, Está Em Desenvolvimento A Estruturação De Trilhas De Aprendizagem Baseadas Nos Gaps Identificados, Mantendo A Iniciativa Alinhada Ao Cronograma Previsto.",
+          "data": "2026-07-02",
+          "origem": "plano"
+        },
+        {
+          "texto": "Foi Iniciado, Em 30/06/2026, O Diagnóstico Institucional Sobre O Uso De Inteligência Artificial, Com Período De Aplicação Até 10/07/2026. Nesta Edição, O Escopo De Respondentes São Líderes, Analistas E Foi Ampliado Para Contemplar Também, Consultores. Os Resultados Subsidiarão O Mapeamento Das Necessidades De Desenvolvimento De Competências Em Ia, A Definição De Ações De Capacitação E A Identificação De Profissionais Interessados Em Atuar Como Multiplicadores, Em Parceria Com As Áreas De Tecnologia Da Informação E Gente E Cultura.",
+          "data": "2026-07-02",
+          "origem": "acao"
+        },
+        {
+          "texto": "Foi Iniciado, Em 30/06/2026, O Diagnóstico Institucional Sobre O Uso De Inteligência Artificial, Com Período De Aplicação Até 10/07/2026. Nesta Edição, O Escopo De Respondentes São Líderes, Analistas E Foi Ampliado Para Contemplar Também, Consultores. Os Resultados Subsidiarão O Mapeamento Das Necessidades De Desenvolvimento De Competências Em Ia, A Definição De Ações De Capacitação E A Identificação De Profissionais Interessados Em Atuar Como Multiplicadores, Em Parceria Com As Áreas De Tecnologia Da Informação E Gente E Cultura.",
+          "data": "2026-07-02",
+          "origem": "acao"
+        },
+        {
+          "texto": "Devido Alteração Da Data Da Avaliação De Desempenho E Reformulação Do Modelo Da Avaliação Deste Ciclo,  Não Foi Possível Desenvolver Na Totalidade Esta Ação. Em Contrapartida, Está Ocorrendo A Continuidade De Capacitações Com A Área Operacional Que Nas Competências Mais Baixas No Ciclo Anterior, Como Comunicação Assertiva, Mentalidade Intraempreendedora.",
+          "data": "2026-07-09",
+          "origem": "acao"
+        },
+        {
+          "texto": "Devido Alteração Da Data Da Avaliação De Desempenho E Reformulação Do Modelo Da Avaliação Deste Ciclo,  Não Foi Possível Desenvolver Na Totalidade Esta Ação. Em Contrapartida, Está Ocorrendo A Continuidade De Capacitações Com A Área Operacional Que Nas Competências Mais Baixas No Ciclo Anterior, Como Comunicação Assertiva, Mentalidade Intraempreendedora.",
+          "data": "2026-07-09",
+          "origem": "acao"
+        },
+        {
+          "texto": "No Período, Foram Concluídas Entregas Estruturantes, Como A Atualização Dos Descritivos De Cargos Com Competências Críticas, E Avançou A Integração Dessas Competências Aos Subsistemas De Gente E Cultura. Também Foi Iniciado O Diagnóstico Institucional Sobre O Uso De Inteligência Artificial, Com Ampliação Do Público Respondente Para Líderes, Analistas E Consultores, Cujos Resultados Subsidiarão O Plano De Capacitação E A Formação De Multiplicadores Internos. Paralelamente, Está Em Desenvolvimento A Estruturação De Trilhas De Aprendizagem Baseadas Nos Gaps Identificados, Mantendo A Iniciativa Alinhada Ao Cronograma Previsto.",
+          "data": "2026-07-02",
+          "origem": "plano"
+        },
+        {
+          "texto": "Devido Alteração Da Data Da Avaliação De Desempenho E Reformulação Do Modelo Da Avaliação Deste Ciclo,  Não Foi Possível Desenvolver Na Totalidade Esta Ação. Em Contrapartida, Está Ocorrendo A Continuidade De Capacitações Com A Área Operacional Que Nas Competências Mais Baixas No Ciclo Anterior, Como Comunicação Assertiva, Mentalidade Intraempreendedora.",
+          "data": "2026-07-09",
+          "origem": "acao"
+        },
+        {
+          "texto": "No Período, Foram Concluídas Entregas Estruturantes, Como A Atualização Dos Descritivos De Cargos Com Competências Críticas, E Avançou A Integração Dessas Competências Aos Subsistemas De Gente E Cultura. Também Foi Iniciado O Diagnóstico Institucional Sobre O Uso De Inteligência Artificial, Com Ampliação Do Público Respondente Para Líderes, Analistas E Consultores, Cujos Resultados Subsidiarão O Plano De Capacitação E A Formação De Multiplicadores Internos. Paralelamente, Está Em Desenvolvimento A Estruturação De Trilhas De Aprendizagem Baseadas Nos Gaps Identificados, Mantendo A Iniciativa Alinhada Ao Cronograma Previsto.",
+          "data": "2026-07-02",
+          "origem": "plano"
+        },
+        {
+          "texto": "Devido Alteração Da Data Da Avaliação De Desempenho E Reformulação Do Modelo Da Avaliação Deste Ciclo,  Não Foi Possível Desenvolver Na Totalidade Esta Ação. Em Contrapartida, Está Ocorrendo A Continuidade De Capacitações Com A Área Operacional Que Nas Competências Mais Baixas No Ciclo Anterior, Como Comunicação Assertiva, Mentalidade Intraempreendedora.",
+          "data": "2026-07-09",
+          "origem": "acao"
+        },
+        {
+          "texto": "Devido Alteração Da Data Da Avaliação De Desempenho E Reformulação Do Modelo Da Avaliação Deste Ciclo,  Não Foi Possível Desenvolver Na Totalidade Esta Ação. Em Contrapartida, Está Ocorrendo A Continuidade De Capacitações Com A Área Operacional Que Nas Competências Mais Baixas No Ciclo Anterior, Como Comunicação Assertiva, Mentalidade Intraempreendedora.",
+          "data": "2026-07-09",
+          "origem": "acao"
+        },
+        {
+          "texto": "No Período, Foram Concluídas Entregas Estruturantes, Como A Atualização Dos Descritivos De Cargos Com Competências Críticas, E Avançou A Integração Dessas Competências Aos Subsistemas De Gente E Cultura. Também Foi Iniciado O Diagnóstico Institucional Sobre O Uso De Inteligência Artificial, Com Ampliação Do Público Respondente Para Líderes, Analistas E Consultores, Cujos Resultados Subsidiarão O Plano De Capacitação E A Formação De Multiplicadores Internos. Paralelamente, Está Em Desenvolvimento A Estruturação De Trilhas De Aprendizagem Baseadas Nos Gaps Identificados, Mantendo A Iniciativa Alinhada Ao Cronograma Previsto.",
+          "data": "2026-07-02",
+          "origem": "plano"
+        },
+        {
+          "texto": "No Período, Foram Concluídas Entregas Estruturantes, Como A Atualização Dos Descritivos De Cargos Com Competências Críticas, E Avançou A Integração Dessas Competências Aos Subsistemas De Gente E Cultura. Também Foi Iniciado O Diagnóstico Institucional Sobre O Uso De Inteligência Artificial, Com Ampliação Do Público Respondente Para Líderes, Analistas E Consultores, Cujos Resultados Subsidiarão O Plano De Capacitação E A Formação De Multiplicadores Internos. Paralelamente, Está Em Desenvolvimento A Estruturação De Trilhas De Aprendizagem Baseadas Nos Gaps Identificados, Mantendo A Iniciativa Alinhada Ao Cronograma Previsto.",
+          "data": "2026-07-02",
+          "origem": "plano"
+        },
+        {
+          "texto": "No Período, Foram Concluídas Entregas Estruturantes, Como A Atualização Dos Descritivos De Cargos Com Competências Críticas, E Avançou A Integração Dessas Competências Aos Subsistemas De Gente E Cultura. Também Foi Iniciado O Diagnóstico Institucional Sobre O Uso De Inteligência Artificial, Com Ampliação Do Público Respondente Para Líderes, Analistas E Consultores, Cujos Resultados Subsidiarão O Plano De Capacitação E A Formação De Multiplicadores Internos. Paralelamente, Está Em Desenvolvimento A Estruturação De Trilhas De Aprendizagem Baseadas Nos Gaps Identificados, Mantendo A Iniciativa Alinhada Ao Cronograma Previsto.",
+          "data": "2026-07-02",
+          "origem": "plano"
+        },
+        {
+          "texto": "No Período, Foram Concluídas Entregas Estruturantes, Como A Atualização Dos Descritivos De Cargos Com Competências Críticas, E Avançou A Integração Dessas Competências Aos Subsistemas De Gente E Cultura. Também Foi Iniciado O Diagnóstico Institucional Sobre O Uso De Inteligência Artificial, Com Ampliação Do Público Respondente Para Líderes, Analistas E Consultores, Cujos Resultados Subsidiarão O Plano De Capacitação E A Formação De Multiplicadores Internos. Paralelamente, Está Em Desenvolvimento A Estruturação De Trilhas De Aprendizagem Baseadas Nos Gaps Identificados, Mantendo A Iniciativa Alinhada Ao Cronograma Previsto.",
+          "data": "2026-07-02",
+          "origem": "plano"
+        },
+        {
+          "texto": "No Período, Foram Concluídas Entregas Estruturantes, Como A Atualização Dos Descritivos De Cargos Com Competências Críticas, E Avançou A Integração Dessas Competências Aos Subsistemas De Gente E Cultura. Também Foi Iniciado O Diagnóstico Institucional Sobre O Uso De Inteligência Artificial, Com Ampliação Do Público Respondente Para Líderes, Analistas E Consultores, Cujos Resultados Subsidiarão O Plano De Capacitação E A Formação De Multiplicadores Internos. Paralelamente, Está Em Desenvolvimento A Estruturação De Trilhas De Aprendizagem Baseadas Nos Gaps Identificados, Mantendo A Iniciativa Alinhada Ao Cronograma Previsto.",
+          "data": "2026-07-02",
+          "origem": "plano"
+        },
+        {
+          "texto": "No Período, Foram Concluídas Entregas Estruturantes, Como A Atualização Dos Descritivos De Cargos Com Competências Críticas, E Avançou A Integração Dessas Competências Aos Subsistemas De Gente E Cultura. Também Foi Iniciado O Diagnóstico Institucional Sobre O Uso De Inteligência Artificial, Com Ampliação Do Público Respondente Para Líderes, Analistas E Consultores, Cujos Resultados Subsidiarão O Plano De Capacitação E A Formação De Multiplicadores Internos. Paralelamente, Está Em Desenvolvimento A Estruturação De Trilhas De Aprendizagem Baseadas Nos Gaps Identificados, Mantendo A Iniciativa Alinhada Ao Cronograma Previsto.",
+          "data": "2026-07-02",
+          "origem": "plano"
+        },
+        {
+          "texto": "No Período, Foram Concluídas Entregas Estruturantes, Como A Atualização Dos Descritivos De Cargos Com Competências Críticas, E Avançou A Integração Dessas Competências Aos Subsistemas De Gente E Cultura. Também Foi Iniciado O Diagnóstico Institucional Sobre O Uso De Inteligência Artificial, Com Ampliação Do Público Respondente Para Líderes, Analistas E Consultores, Cujos Resultados Subsidiarão O Plano De Capacitação E A Formação De Multiplicadores Internos. Paralelamente, Está Em Desenvolvimento A Estruturação De Trilhas De Aprendizagem Baseadas Nos Gaps Identificados, Mantendo A Iniciativa Alinhada Ao Cronograma Previsto.",
+          "data": "2026-07-02",
+          "origem": "plano"
+        },
+        {
+          "texto": "No Período, Foram Concluídas Entregas Estruturantes, Como A Atualização Dos Descritivos De Cargos Com Competências Críticas, E Avançou A Integração Dessas Competências Aos Subsistemas De Gente E Cultura. Também Foi Iniciado O Diagnóstico Institucional Sobre O Uso De Inteligência Artificial, Com Ampliação Do Público Respondente Para Líderes, Analistas E Consultores, Cujos Resultados Subsidiarão O Plano De Capacitação E A Formação De Multiplicadores Internos. Paralelamente, Está Em Desenvolvimento A Estruturação De Trilhas De Aprendizagem Baseadas Nos Gaps Identificados, Mantendo A Iniciativa Alinhada Ao Cronograma Previsto.",
+          "data": "2026-07-02",
+          "origem": "plano"
+        },
+        {
+          "texto": "No Período, Foram Concluídas Entregas Estruturantes, Como A Atualização Dos Descritivos De Cargos Com Competências Críticas, E Avançou A Integração Dessas Competências Aos Subsistemas De Gente E Cultura. Também Foi Iniciado O Diagnóstico Institucional Sobre O Uso De Inteligência Artificial, Com Ampliação Do Público Respondente Para Líderes, Analistas E Consultores, Cujos Resultados Subsidiarão O Plano De Capacitação E A Formação De Multiplicadores Internos. Paralelamente, Está Em Desenvolvimento A Estruturação De Trilhas De Aprendizagem Baseadas Nos Gaps Identificados, Mantendo A Iniciativa Alinhada Ao Cronograma Previsto.",
+          "data": "2026-07-02",
+          "origem": "plano"
+        },
+        {
+          "texto": "No Período, Foram Concluídas Entregas Estruturantes, Como A Atualização Dos Descritivos De Cargos Com Competências Críticas, E Avançou A Integração Dessas Competências Aos Subsistemas De Gente E Cultura. Também Foi Iniciado O Diagnóstico Institucional Sobre O Uso De Inteligência Artificial, Com Ampliação Do Público Respondente Para Líderes, Analistas E Consultores, Cujos Resultados Subsidiarão O Plano De Capacitação E A Formação De Multiplicadores Internos. Paralelamente, Está Em Desenvolvimento A Estruturação De Trilhas De Aprendizagem Baseadas Nos Gaps Identificados, Mantendo A Iniciativa Alinhada Ao Cronograma Previsto.",
+          "data": "2026-07-02",
+          "origem": "plano"
+        }
+      ]
+    },
+    {
+      "mes": 8,
+      "ano": 2026,
+      "mes_referencia": 8,
+      "registros": []
+    }
+  ],
+  "indicadores": [],
+  "registro": {
+    "pontos_criticos": null,
+    "fatores_sucesso": null,
+    "itens_fora_escopo": null,
+    "atualizado_por": null,
+    "atualizado_em": null
+  },
+  "pode_editar": false
+}

@@ -1,0 +1,170 @@
+{
+  "plano": {
+    "cd_planoacao": "30854",
+    "subtipo": "P.a. Pdco Estratégico  -transversal 2026",
+    "status": "Em Andamento",
+    "area_codigo": "25",
+    "area_nome": "2.2.1 Processos",
+    "responsavel": "Responsável 16",
+    "arquetipos_culturais": "Estabelecimento Do Programa De Auditoria De Processos Do Sesi Senai",
+    "resultados_esperados": "Garantir Conformidade, Qualidade E Melhoria Contínua Dos Processos Críticos, Assegurando A Aderência Aos Padrões Operacionais Definidos E Mitigar Riscos De Desvios",
+    "data_inicio": "2026-06-08",
+    "data_fim": "2026-12-18",
+    "execucao": 0.2857142857142857,
+    "resumo_acoes": {
+      "total": 7,
+      "concluidas": 2,
+      "atrasadas": 0
+    }
+  },
+  "acoes": [
+    {
+      "cd_acao": "30855",
+      "nome": "Definir Metodologia De Auditoria De Processos E Qualidade",
+      "status": "Concluído",
+      "prazo_inicial": "2026-02-01",
+      "prazo_final": "2026-03-13",
+      "responsavel": "Responsável 20"
+    },
+    {
+      "cd_acao": "30856",
+      "nome": "Implantar O Ciclo De Auditoria Metrologia",
+      "status": "Planejado",
+      "prazo_inicial": "2026-06-05",
+      "prazo_final": "2026-12-18",
+      "responsavel": "Responsável 20"
+    },
+    {
+      "cd_acao": "30858",
+      "nome": "Implantar O Ciclo De Auditoria Ona",
+      "status": "Planejado",
+      "prazo_inicial": "2026-02-01",
+      "prazo_final": "2026-12-04",
+      "responsavel": "Responsável 20"
+    },
+    {
+      "cd_acao": "31050",
+      "nome": "Desenvolver Instrumentos De Auditoria",
+      "status": "Em Andamento",
+      "prazo_inicial": "2026-06-08",
+      "prazo_final": "2026-09-30",
+      "responsavel": "Responsável 20"
+    },
+    {
+      "cd_acao": "31051",
+      "nome": "Definir Governança Do Programa",
+      "status": "Concluído",
+      "prazo_inicial": "2026-06-08",
+      "prazo_final": "2026-06-30",
+      "responsavel": "Responsável 20"
+    },
+    {
+      "cd_acao": "31052",
+      "nome": "Capacitar Auditores E Gestores",
+      "status": "Em Andamento",
+      "prazo_inicial": "2026-06-08",
+      "prazo_final": "2026-10-31",
+      "responsavel": "Responsável 20"
+    },
+    {
+      "cd_acao": "31053",
+      "nome": "Avaliar Indicadores De Auditorias",
+      "status": "Em Andamento",
+      "prazo_inicial": "2026-06-08",
+      "prazo_final": "2026-10-31",
+      "responsavel": "Responsável 20"
+    }
+  ],
+  "acompanhamento": [
+    {
+      "mes": 1,
+      "ano": 2026,
+      "mes_referencia": 6,
+      "registros": [
+        {
+          "texto": "O Manual De Auditorias E Os Formulários De Aplicação Foram Desenvolvidos E Estão Em Fase De Validação Da Aplicabilidade. Na Auditoria Interna Prevista Para Julho, Os Instrumentos Serão Aplicados Integralmente Para Avaliação Da Sua Efetividade. Havendo Necessidade De Ajustes, As Alterações Serão Realizadas Conforme O Fluxo De Gestão Documental Do Epa. Link Do Manual: Epa.link/dnwt",
+          "data": "2026-06-30",
+          "origem": "acao"
+        },
+        {
+          "texto": "Ação Concluída Conforme Documento Em Anexo.",
+          "data": "2026-06-30",
+          "origem": "acao"
+        }
+      ]
+    },
+    {
+      "mes": 2,
+      "ano": 2026,
+      "mes_referencia": 7,
+      "registros": []
+    },
+    {
+      "mes": 3,
+      "ano": 2026,
+      "mes_referencia": 8,
+      "registros": [
+        {
+          "texto": "Conforme Definido Na Reunião Setorial De Julho, A Ação Será Concluída Após A Aplicação E Validação Dos Formulários Nos Negócios De Saúde E Metrologia. A Auditoria Interna Da Saúde Tem Previsão De Conclusão Em 19/08/2026, Enquanto A Auditoria Interna De Metrologia Está Prevista Para Os Dias 24 E 25/09/2026. Após A Realização Das Auditorias, Serão Avaliados Os Resultados E Identificadas Eventuais Necessidades De Ajustes Nos Formulários.",
+          "data": "2026-08-10",
+          "origem": "acao"
+        },
+        {
+          "texto": "Após Avaliação, Constata-se Que Não Se Faz Necessária A Criação De Novos Indicadores Para Os Processos De Metrologia E Saúde (os Prioritários No Contexto De Certificações Atualmente) Uma Vez Que Os Negócios Já Possuem Indicadores Estratégicos Cadastrados No Epa Que Permitem Monitorar A Aderência Aos Requisitos Normativos Aplicáveis E Atendem Às Necessidades Das Auditorias Internas E Externas.\r\n\r\ndessa Forma, Ficam Mantidos Os Indicadores Atualmente Utilizados:\r\n\r\nsenai – Metrologia: Percentual De Atendimento Aos Requisitos Da Abnt Nbr Iso/iec 17025;\r\nsesi – Saúde: Percentual De Conformidade Técnica (ona 2).",
+          "data": "2026-08-10",
+          "origem": "acao"
+        }
+      ]
+    },
+    {
+      "mes": 4,
+      "ano": 2026,
+      "mes_referencia": 9,
+      "registros": [
+        {
+          "texto": "Considerando Que As Prioridades Institucionais Para O Movimento De Auditorias Estão Direcionadas Aos Requisitos Da Ona E Da Abnt Nbr Iso/iec 17025, Foram Realizadas Capacitações Com Os Auditores Internos Envolvidos Na Execução Das Auditorias, Contemplando Amanda Dué (metrologia), Mylena Gitai E Mayara Mendonça (saúde), Com Foco Na Aplicação Da Metodologia E Dos Criterios Estabelecidos No Manual De Auditorias.\r\nna Área Da Saúde, As Auditorias Estão Sendo Conduzidas Em Parceria Com Os Núcleos (consultoria Externa), Possibilitando A Aplicação Prática Da Metodologia E O Acompanhamento Dos Auditores Durante A Execução Das Auditorias.\r\n\r\npara A Metrologia, Foi Definido Que, Neste Momento, A Execucao Das Auditorias Ocorrerá De Forma Terceirizada. Dessa Forma, Não Foi Possível Realizar O Teste Prático Dos Auditores Internos Na Condição De Auditores, Permanecendo Sua Participação Como Observadores Em Momentos Praticos, Com O Objetivo De Promover A Familiarização Com A Metodologia E A Aplicação Dos Critérios.\r\n\r\na Ação Encontra-se, Portanto, Parcialmente Atendida, Com A Capacitação E Alinhamento Metodologico Realizados E A Aplicacao Prática Em Andamento Na Saúde. Para A Metrologia, A Formação Prática Dos Auditores Internos Deverá Ser Retomada Oportunamente, Conforme A Evolução Do Modelo De Execução Das Auditorias.",
+          "data": "2026-09-08",
+          "origem": "acao"
+        },
+        {
+          "texto": "Após A Reunião Setorial De Agosto, Foi Solicitada A Reabertura Da Ação Para Avaliar Os Indicadores Da Assessoria De Gestão Por Processos Relacionados Ao Movimento De Auditorias Internas, Considerando Que Os Indicadores Das Áreas Não Necessariamente Serão Suficientes Para Responder A Essa Necessidade.\r\ncomo Próximo Passo, Foi Solicitado Um Alinhamento Com Luciana, Com O Objetivo De Apresentar Essa Visão, Discutir A Abordagem Proposta E Alinhar As Expectativas Quanto À Ação. A Reunião Foi Solicitada Para 11/09/2026.",
+          "data": "2026-09-08",
+          "origem": "acao"
+        }
+      ]
+    },
+    {
+      "mes": 5,
+      "ano": 2026,
+      "mes_referencia": 10,
+      "registros": []
+    },
+    {
+      "mes": 6,
+      "ano": 2026,
+      "mes_referencia": 11,
+      "registros": []
+    },
+    {
+      "mes": 7,
+      "ano": 2026,
+      "mes_referencia": 12,
+      "registros": []
+    },
+    {
+      "mes": 8,
+      "ano": 2027,
+      "mes_referencia": 1,
+      "registros": []
+    }
+  ],
+  "indicadores": [],
+  "registro": {
+    "pontos_criticos": null,
+    "fatores_sucesso": null,
+    "itens_fora_escopo": null,
+    "atualizado_por": null,
+    "atualizado_em": null
+  },
+  "pode_editar": false
+}

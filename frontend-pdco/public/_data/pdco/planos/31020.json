@@ -1,0 +1,268 @@
+{
+  "plano": {
+    "cd_planoacao": "31020",
+    "subtipo": "P.a. Pdco Estratégico  -transversal 2026",
+    "status": "Em Andamento",
+    "area_codigo": "100",
+    "area_nome": "2.2.2 Estratégia Organizacional",
+    "responsavel": "Responsável 11",
+    "arquetipos_culturais": "Implantação Dos Critérios De Priorizações Das Iniciativas Estratégicas Com Foco Em Sustentabilidade",
+    "resultados_esperados": null,
+    "data_inicio": "2026-07-08",
+    "data_fim": "2026-08-19",
+    "execucao": 0.625,
+    "resumo_acoes": {
+      "total": 8,
+      "concluidas": 5,
+      "atrasadas": 3
+    }
+  },
+  "acoes": [
+    {
+      "cd_acao": "31021",
+      "nome": "Resgatar Os Critérios Estabelecidos Anteriormente (foco Em Sustentabilidade)",
+      "status": "Concluído",
+      "prazo_inicial": "2026-07-01",
+      "prazo_final": "2026-07-03",
+      "responsavel": "Responsável 11"
+    },
+    {
+      "cd_acao": "31022",
+      "nome": "Estruturar Formalização Dos Critérios Foco Em Sustentabilidade",
+      "status": "Concluído",
+      "prazo_inicial": "2026-07-06",
+      "prazo_final": "2026-07-10",
+      "responsavel": "Responsável 11"
+    },
+    {
+      "cd_acao": "31023",
+      "nome": "Validar Com Gerência/ Diretoria, Os Critérios Estruturados",
+      "status": "Concluído",
+      "prazo_inicial": "2026-07-13",
+      "prazo_final": "2026-07-17",
+      "responsavel": "Responsável 11"
+    },
+    {
+      "cd_acao": "31024",
+      "nome": "Aplicar Ajustes, Se Necessário",
+      "status": "Concluído",
+      "prazo_inicial": "2026-07-15",
+      "prazo_final": "2026-07-21",
+      "responsavel": "Responsável 11"
+    },
+    {
+      "cd_acao": "31025",
+      "nome": "Classificar As Iniciativas Estratégicas, Conforme Critérios Foco Em Sustentabilidade",
+      "status": "Em Andamento",
+      "prazo_inicial": "2026-07-22",
+      "prazo_final": "2026-07-31",
+      "responsavel": "Responsável 11"
+    },
+    {
+      "cd_acao": "31027",
+      "nome": "Validar As Classificações Com Os Responsáveis Pelas Iniciativas",
+      "status": "Planejado",
+      "prazo_inicial": "2026-08-03",
+      "prazo_final": "2026-08-14",
+      "responsavel": "Responsável 11"
+    },
+    {
+      "cd_acao": "31028",
+      "nome": "Incorporar Ícones Sinalizadores Nas Cerimônias (setorial/ Rtd/ Rac/estratégia Viva)",
+      "status": "Planejado",
+      "prazo_inicial": "2026-08-17",
+      "prazo_final": "2026-08-19",
+      "responsavel": "Responsável 11"
+    },
+    {
+      "cd_acao": "31029",
+      "nome": "Resgatar/reestruturar O Painel De Priorização Das  Iniciativas Estratégicas Com Foco Em Sustentabilidade",
+      "status": "Concluído",
+      "prazo_inicial": "2026-07-22",
+      "prazo_final": "2026-07-31",
+      "responsavel": "Responsável 23"
+    }
+  ],
+  "acompanhamento": [
+    {
+      "mes": 1,
+      "ano": 2026,
+      "mes_referencia": 7,
+      "registros": [
+        {
+          "texto": "O Painel Estruturado Anteriormente Foi Resgatado Junto Ao Observatório E Wellington Já Conferiu Que Ele Está Refletindo As Informações Do Epa, Conforme Parametrizado. No Momento, Estamos Aguardando A Ti Fazer A Publicação Nos Painéis Gerenciais Para Analisar Devidamente As Regras E Verificar/ Revisar As Regras. \r\nno Que Se Refere A Ferramenta Que O Time De Td Está Utilizando, Houve Uma Reunião E Ewerton Nascimento Apresentou As Telas  Fluxo De Utilização. Identificamos Que A Ferramenta Traz Insights Interessantes, Como Os Subcritérios Com Pesos, Porém, Para A Análise E Classificação De Planos Em Níveis Estratégicos E Dashboard Para Os Gestores, O Painel Anteriormente Estruturado É Mais Aderente.\r\n\r\nestamos Com Reunião Agenda, Para Que Até 10/07 Avancemos Com A Revisão Das Regras.",
+          "data": "2026-07-08",
+          "origem": "plano"
+        },
+        {
+          "texto": "O Painel Estruturado Anteriormente Foi Resgatado Junto Ao Observatório E Wellington Já Conferiu Que Ele Está Refletindo As Informações Do Epa, Conforme Parametrizado. No Momento, Estamos Aguardando A Ti Fazer A Publicação Nos Painéis Gerenciais Para Analisar Devidamente As Regras E Verificar/ Revisar As Regras. \r\nno Que Se Refere A Ferramenta Que O Time De Td Está Utilizando, Houve Uma Reunião E Ewerton Nascimento Apresentou As Telas  Fluxo De Utilização. Identificamos Que A Ferramenta Traz Insights Interessantes, Como Os Subcritérios Com Pesos, Porém, Para A Análise E Classificação De Planos Em Níveis Estratégicos E Dashboard Para Os Gestores, O Painel Anteriormente Estruturado É Mais Aderente.\r\n\r\nestamos Com Reunião Agenda, Para Que Até 10/07 Avancemos Com A Revisão Das Regras.",
+          "data": "2026-07-08",
+          "origem": "plano"
+        },
+        {
+          "texto": "O Painel Estruturado Anteriormente Foi Resgatado Junto Ao Observatório E Wellington Já Conferiu Que Ele Está Refletindo As Informações Do Epa, Conforme Parametrizado. No Momento, Estamos Aguardando A Ti Fazer A Publicação Nos Painéis Gerenciais Para Analisar Devidamente As Regras E Verificar/ Revisar As Regras. \r\nno Que Se Refere A Ferramenta Que O Time De Td Está Utilizando, Houve Uma Reunião E Ewerton Nascimento Apresentou As Telas  Fluxo De Utilização. Identificamos Que A Ferramenta Traz Insights Interessantes, Como Os Subcritérios Com Pesos, Porém, Para A Análise E Classificação De Planos Em Níveis Estratégicos E Dashboard Para Os Gestores, O Painel Anteriormente Estruturado É Mais Aderente.\r\n\r\nestamos Com Reunião Agenda, Para Que Até 10/07 Avancemos Com A Revisão Das Regras.",
+          "data": "2026-07-08",
+          "origem": "plano"
+        },
+        {
+          "texto": "O Painel Estruturado Anteriormente Foi Resgatado Junto Ao Observatório E Wellington Já Conferiu Que Ele Está Refletindo As Informações Do Epa, Conforme Parametrizado. No Momento, Estamos Aguardando A Ti Fazer A Publicação Nos Painéis Gerenciais Para Analisar Devidamente As Regras E Verificar/ Revisar As Regras. \r\nno Que Se Refere A Ferramenta Que O Time De Td Está Utilizando, Houve Uma Reunião E Ewerton Nascimento Apresentou As Telas  Fluxo De Utilização. Identificamos Que A Ferramenta Traz Insights Interessantes, Como Os Subcritérios Com Pesos, Porém, Para A Análise E Classificação De Planos Em Níveis Estratégicos E Dashboard Para Os Gestores, O Painel Anteriormente Estruturado É Mais Aderente.\r\n\r\nestamos Com Reunião Agenda, Para Que Até 10/07 Avancemos Com A Revisão Das Regras.",
+          "data": "2026-07-08",
+          "origem": "plano"
+        },
+        {
+          "texto": "O Painel Estruturado Anteriormente Foi Resgatado Junto Ao Observatório E Wellington Já Conferiu Que Ele Está Refletindo As Informações Do Epa, Conforme Parametrizado. No Momento, Estamos Aguardando A Ti Fazer A Publicação Nos Painéis Gerenciais Para Analisar Devidamente As Regras E Verificar/ Revisar As Regras. \r\nno Que Se Refere A Ferramenta Que O Time De Td Está Utilizando, Houve Uma Reunião E Ewerton Nascimento Apresentou As Telas  Fluxo De Utilização. Identificamos Que A Ferramenta Traz Insights Interessantes, Como Os Subcritérios Com Pesos, Porém, Para A Análise E Classificação De Planos Em Níveis Estratégicos E Dashboard Para Os Gestores, O Painel Anteriormente Estruturado É Mais Aderente.\r\n\r\nestamos Com Reunião Agenda, Para Que Até 10/07 Avancemos Com A Revisão Das Regras.",
+          "data": "2026-07-08",
+          "origem": "plano"
+        },
+        {
+          "texto": "O Painel Estruturado Anteriormente Foi Resgatado Junto Ao Observatório E Wellington Já Conferiu Que Ele Está Refletindo As Informações Do Epa, Conforme Parametrizado. No Momento, Estamos Aguardando A Ti Fazer A Publicação Nos Painéis Gerenciais Para Analisar Devidamente As Regras E Verificar/ Revisar As Regras. \r\nno Que Se Refere A Ferramenta Que O Time De Td Está Utilizando, Houve Uma Reunião E Ewerton Nascimento Apresentou As Telas  Fluxo De Utilização. Identificamos Que A Ferramenta Traz Insights Interessantes, Como Os Subcritérios Com Pesos, Porém, Para A Análise E Classificação De Planos Em Níveis Estratégicos E Dashboard Para Os Gestores, O Painel Anteriormente Estruturado É Mais Aderente.\r\n\r\nestamos Com Reunião Agenda, Para Que Até 10/07 Avancemos Com A Revisão Das Regras.",
+          "data": "2026-07-08",
+          "origem": "plano"
+        },
+        {
+          "texto": "O Painel Estruturado Anteriormente Foi Resgatado Junto Ao Observatório E Wellington Já Conferiu Que Ele Está Refletindo As Informações Do Epa, Conforme Parametrizado. No Momento, Estamos Aguardando A Ti Fazer A Publicação Nos Painéis Gerenciais Para Analisar Devidamente As Regras E Verificar/ Revisar As Regras. \r\nno Que Se Refere A Ferramenta Que O Time De Td Está Utilizando, Houve Uma Reunião E Ewerton Nascimento Apresentou As Telas  Fluxo De Utilização. Identificamos Que A Ferramenta Traz Insights Interessantes, Como Os Subcritérios Com Pesos, Porém, Para A Análise E Classificação De Planos Em Níveis Estratégicos E Dashboard Para Os Gestores, O Painel Anteriormente Estruturado É Mais Aderente.\r\n\r\nestamos Com Reunião Agenda, Para Que Até 10/07 Avancemos Com A Revisão Das Regras.",
+          "data": "2026-07-08",
+          "origem": "plano"
+        },
+        {
+          "texto": "O Painel Estruturado Anteriormente Foi Resgatado Junto Ao Observatório E Wellington Já Conferiu Que Ele Está Refletindo As Informações Do Epa, Conforme Parametrizado. No Momento, Estamos Aguardando A Ti Fazer A Publicação Nos Painéis Gerenciais Para Analisar Devidamente As Regras E Verificar/ Revisar As Regras. \r\nno Que Se Refere A Ferramenta Que O Time De Td Está Utilizando, Houve Uma Reunião E Ewerton Nascimento Apresentou As Telas  Fluxo De Utilização. Identificamos Que A Ferramenta Traz Insights Interessantes, Como Os Subcritérios Com Pesos, Porém, Para A Análise E Classificação De Planos Em Níveis Estratégicos E Dashboard Para Os Gestores, O Painel Anteriormente Estruturado É Mais Aderente.\r\n\r\nestamos Com Reunião Agenda, Para Que Até 10/07 Avancemos Com A Revisão Das Regras.",
+          "data": "2026-07-08",
+          "origem": "plano"
+        }
+      ]
+    },
+    {
+      "mes": 2,
+      "ano": 2026,
+      "mes_referencia": 8,
+      "registros": [
+        {
+          "texto": "No Dia 04/08, O Painel De Priorização Das Ações Foi Resgatado, Ajustado E Apresentado À Nathália (digest) E Foi Validado, Considerando A Inclusão De Um Critério De Projetos Obrigatórios. Quando O Projeto For Obrigatório, Ele Deverá Se Posicionar Na Matriz Como Tal, A Fim De Dar Clareza À Todos. Os Passos Seguintes É Atribuir Aos Planos De Ação, Os Critérios Da Sustentabilidade E Organizar As Informações Nas Cerimônias.",
+          "data": "2026-08-07",
+          "origem": "plano"
+        },
+        {
+          "texto": "No Dia 04/08, O Painel De Priorização Das Ações Foi Resgatado, Ajustado E Apresentado À Nathália (digest) E Foi Validado, Considerando A Inclusão De Um Critério De Projetos Obrigatórios. Quando O Projeto For Obrigatório, Ele Deverá Se Posicionar Na Matriz Como Tal, A Fim De Dar Clareza À Todos. Os Passos Seguintes É Atribuir Aos Planos De Ação, Os Critérios Da Sustentabilidade E Organizar As Informações Nas Cerimônias.",
+          "data": "2026-08-07",
+          "origem": "plano"
+        },
+        {
+          "texto": "No Dia 04/08, O Painel De Priorização Das Ações Foi Resgatado, Ajustado E Apresentado À Nathália (digest) E Foi Validado, Considerando A Inclusão De Um Critério De Projetos Obrigatórios. Quando O Projeto For Obrigatório, Ele Deverá Se Posicionar Na Matriz Como Tal, A Fim De Dar Clareza À Todos. Os Passos Seguintes É Atribuir Aos Planos De Ação, Os Critérios Da Sustentabilidade E Organizar As Informações Nas Cerimônias.",
+          "data": "2026-08-07",
+          "origem": "plano"
+        },
+        {
+          "texto": "No Dia 04/08, O Painel De Priorização Das Ações Foi Resgatado, Ajustado E Apresentado À Nathália (digest) E Foi Validado, Considerando A Inclusão De Um Critério De Projetos Obrigatórios. Quando O Projeto For Obrigatório, Ele Deverá Se Posicionar Na Matriz Como Tal, A Fim De Dar Clareza À Todos. Os Passos Seguintes É Atribuir Aos Planos De Ação, Os Critérios Da Sustentabilidade E Organizar As Informações Nas Cerimônias.",
+          "data": "2026-08-07",
+          "origem": "plano"
+        },
+        {
+          "texto": "No Dia 04/08, O Painel De Priorização Das Ações Foi Resgatado, Ajustado E Apresentado À Nathália (digest) E Foi Validado, Considerando A Inclusão De Um Critério De Projetos Obrigatórios. Quando O Projeto For Obrigatório, Ele Deverá Se Posicionar Na Matriz Como Tal, A Fim De Dar Clareza À Todos. Os Passos Seguintes É Atribuir Aos Planos De Ação, Os Critérios Da Sustentabilidade E Organizar As Informações Nas Cerimônias.",
+          "data": "2026-08-07",
+          "origem": "plano"
+        },
+        {
+          "texto": "No Dia 04/08, O Painel De Priorização Das Ações Foi Resgatado, Ajustado E Apresentado À Nathália (digest) E Foi Validado, Considerando A Inclusão De Um Critério De Projetos Obrigatórios. Quando O Projeto For Obrigatório, Ele Deverá Se Posicionar Na Matriz Como Tal, A Fim De Dar Clareza À Todos. Os Passos Seguintes É Atribuir Aos Planos De Ação, Os Critérios Da Sustentabilidade E Organizar As Informações Nas Cerimônias.",
+          "data": "2026-08-07",
+          "origem": "plano"
+        },
+        {
+          "texto": "No Dia 04/08, O Painel De Priorização Das Ações Foi Resgatado, Ajustado E Apresentado À Nathália (digest) E Foi Validado, Considerando A Inclusão De Um Critério De Projetos Obrigatórios. Quando O Projeto For Obrigatório, Ele Deverá Se Posicionar Na Matriz Como Tal, A Fim De Dar Clareza À Todos. Os Passos Seguintes É Atribuir Aos Planos De Ação, Os Critérios Da Sustentabilidade E Organizar As Informações Nas Cerimônias.",
+          "data": "2026-08-07",
+          "origem": "plano"
+        },
+        {
+          "texto": "No Dia 04/08, O Painel De Priorização Das Ações Foi Resgatado, Ajustado E Apresentado À Nathália (digest) E Foi Validado, Considerando A Inclusão De Um Critério De Projetos Obrigatórios. Quando O Projeto For Obrigatório, Ele Deverá Se Posicionar Na Matriz Como Tal, A Fim De Dar Clareza À Todos. Os Passos Seguintes É Atribuir Aos Planos De Ação, Os Critérios Da Sustentabilidade E Organizar As Informações Nas Cerimônias.",
+          "data": "2026-08-07",
+          "origem": "plano"
+        }
+      ]
+    },
+    {
+      "mes": 3,
+      "ano": 2026,
+      "mes_referencia": 9,
+      "registros": [
+        {
+          "texto": "O Painel De Priorização Foi Encaminhado Ao Observatório Para Adequação Ao Layout Institucional E Padronização Dos Filtros. Em Paralelo, Está Acontecendo A Validação Dos Novos Planos De Ação Estratégicos Que Foram Estruturados Após O Workshop. Assim Que Recebermos Os Planos Validados Será Feita A Classificação Com Os Critérios Da Sustentabilidade.",
+          "data": "2026-09-02",
+          "origem": "plano"
+        },
+        {
+          "texto": "O Painel De Priorização Foi Encaminhado Ao Observatório Para Adequação Ao Layout Institucional E Padronização Dos Filtros. Em Paralelo, Está Acontecendo A Validação Dos Novos Planos De Ação Estratégicos Que Foram Estruturados Após O Workshop. Assim Que Recebermos Os Planos Validados Será Feita A Classificação Com Os Critérios Da Sustentabilidade.",
+          "data": "2026-09-02",
+          "origem": "plano"
+        },
+        {
+          "texto": "O Painel De Priorização Foi Encaminhado Ao Observatório Para Adequação Ao Layout Institucional E Padronização Dos Filtros. Em Paralelo, Está Acontecendo A Validação Dos Novos Planos De Ação Estratégicos Que Foram Estruturados Após O Workshop. Assim Que Recebermos Os Planos Validados Será Feita A Classificação Com Os Critérios Da Sustentabilidade.",
+          "data": "2026-09-02",
+          "origem": "plano"
+        },
+        {
+          "texto": "O Painel De Priorização Foi Encaminhado Ao Observatório Para Adequação Ao Layout Institucional E Padronização Dos Filtros. Em Paralelo, Está Acontecendo A Validação Dos Novos Planos De Ação Estratégicos Que Foram Estruturados Após O Workshop. Assim Que Recebermos Os Planos Validados Será Feita A Classificação Com Os Critérios Da Sustentabilidade.",
+          "data": "2026-09-02",
+          "origem": "plano"
+        },
+        {
+          "texto": "O Painel De Priorização Foi Encaminhado Ao Observatório Para Adequação Ao Layout Institucional E Padronização Dos Filtros. Em Paralelo, Está Acontecendo A Validação Dos Novos Planos De Ação Estratégicos Que Foram Estruturados Após O Workshop. Assim Que Recebermos Os Planos Validados Será Feita A Classificação Com Os Critérios Da Sustentabilidade.",
+          "data": "2026-09-02",
+          "origem": "plano"
+        },
+        {
+          "texto": "O Painel De Priorização Foi Encaminhado Ao Observatório Para Adequação Ao Layout Institucional E Padronização Dos Filtros. Em Paralelo, Está Acontecendo A Validação Dos Novos Planos De Ação Estratégicos Que Foram Estruturados Após O Workshop. Assim Que Recebermos Os Planos Validados Será Feita A Classificação Com Os Critérios Da Sustentabilidade.",
+          "data": "2026-09-02",
+          "origem": "plano"
+        },
+        {
+          "texto": "O Painel De Priorização Foi Encaminhado Ao Observatório Para Adequação Ao Layout Institucional E Padronização Dos Filtros. Em Paralelo, Está Acontecendo A Validação Dos Novos Planos De Ação Estratégicos Que Foram Estruturados Após O Workshop. Assim Que Recebermos Os Planos Validados Será Feita A Classificação Com Os Critérios Da Sustentabilidade.",
+          "data": "2026-09-02",
+          "origem": "plano"
+        },
+        {
+          "texto": "O Painel De Priorização Foi Encaminhado Ao Observatório Para Adequação Ao Layout Institucional E Padronização Dos Filtros. Em Paralelo, Está Acontecendo A Validação Dos Novos Planos De Ação Estratégicos Que Foram Estruturados Após O Workshop. Assim Que Recebermos Os Planos Validados Será Feita A Classificação Com Os Critérios Da Sustentabilidade.",
+          "data": "2026-09-02",
+          "origem": "plano"
+        }
+      ]
+    },
+    {
+      "mes": 4,
+      "ano": 2026,
+      "mes_referencia": 10,
+      "registros": []
+    },
+    {
+      "mes": 5,
+      "ano": 2026,
+      "mes_referencia": 11,
+      "registros": []
+    },
+    {
+      "mes": 6,
+      "ano": 2026,
+      "mes_referencia": 12,
+      "registros": []
+    },
+    {
+      "mes": 7,
+      "ano": 2027,
+      "mes_referencia": 1,
+      "registros": []
+    },
+    {
+      "mes": 8,
+      "ano": 2027,
+      "mes_referencia": 2,
+      "registros": []
+    }
+  ],
+  "indicadores": [],
+  "registro": {
+    "pontos_criticos": null,
+    "fatores_sucesso": null,
+    "itens_fora_escopo": null,
+    "atualizado_por": null,
+    "atualizado_em": null
+  },
+  "pode_editar": false
+}

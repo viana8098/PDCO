@@ -1,0 +1,113 @@
+{
+  "plano": {
+    "cd_planoacao": "32714",
+    "subtipo": "P.a. Pdco Tático  - Área 2026",
+    "status": "Em Andamento",
+    "area_codigo": "31",
+    "area_nome": "2.3.2 Educação Profissional",
+    "responsavel": "Responsável 03",
+    "arquetipos_culturais": "Priorização Estratégica Por Impacto Em Resultado",
+    "resultados_esperados": "Os Planos De Ação Da Educação Profissional Concentram Esforço Em Aspectos Qualitativos E De Eficácia, Enquanto Indicadores Críticos — Sustentabilidade Financeira (meta Ep: -30,33%), Resultado Orçamentário E Custo — Têm Baixa Cobertura Tática. O Grupo Identificou \"visão De Retrovisor\" Como Padrão Recorrente. Este Ritual Vira A Chave Para O Prospectivo E Cria Cultura De Dono Do Resultado Financeiro.",
+    "data_inicio": "2026-07-01",
+    "data_fim": "2027-04-30",
+    "execucao": 0,
+    "resumo_acoes": {
+      "total": 4,
+      "concluidas": 0,
+      "atrasadas": 2
+    }
+  },
+  "acoes": [
+    {
+      "cd_acao": "32715",
+      "nome": "Mapear Todos Os Planos De Ação Da Gep E Classificar: (a) Impacto Direto Em Resultado Financeiro, (b) Impacto Indireto, (c) Sem Relação Com Indicadores Críticos. Descontinuar Ou Suspender Os De Tipo C.",
+      "status": "Em Andamento",
+      "prazo_inicial": "2026-07-01",
+      "prazo_final": "2026-07-30",
+      "responsavel": "Responsável 03"
+    },
+    {
+      "cd_acao": "32716",
+      "nome": "Criar Painel De 3 Indicadores Críticos (receita Executada, Gap Orçamentário, Custo Por Unidade). Definir Responsável Por Indicador Dentro Da Equipe. Incluir Resultado Orçamentário Como Pauta Fixa Nas Cerimônias.",
+      "status": "Em Andamento",
+      "prazo_inicial": "2026-07-01",
+      "prazo_final": "2026-08-31",
+      "responsavel": "Responsável 10"
+    },
+    {
+      "cd_acao": "32717",
+      "nome": "Ativar Ritual 'visão De Resultado' (45min) + Check-in Quinzenal De 15min. Monitorar Gap E Decisões De Repriorização Mensalmente.",
+      "status": "Em Andamento",
+      "prazo_inicial": "2026-09-09",
+      "prazo_final": "2027-04-16",
+      "responsavel": "Responsável 22"
+    },
+    {
+      "cd_acao": "32718",
+      "nome": "Medir Impacto: Evolução Do Resultado Orçamentário Ep, % De Planos Com Conexão A Indicadores Críticos, Percepção Da Equipe Sobre Clareza De Prioridade. Decidir Continuidade E Ajustes.",
+      "status": "Planejado",
+      "prazo_inicial": "2027-04-19",
+      "prazo_final": "2027-04-30",
+      "responsavel": "Responsável 03"
+    }
+  ],
+  "acompanhamento": [
+    {
+      "mes": 1,
+      "ano": 2026,
+      "mes_referencia": 6,
+      "registros": []
+    },
+    {
+      "mes": 2,
+      "ano": 2026,
+      "mes_referencia": 7,
+      "registros": []
+    },
+    {
+      "mes": 3,
+      "ano": 2026,
+      "mes_referencia": 8,
+      "registros": []
+    },
+    {
+      "mes": 4,
+      "ano": 2026,
+      "mes_referencia": 9,
+      "registros": []
+    },
+    {
+      "mes": 5,
+      "ano": 2026,
+      "mes_referencia": 10,
+      "registros": []
+    },
+    {
+      "mes": 6,
+      "ano": 2026,
+      "mes_referencia": 11,
+      "registros": []
+    },
+    {
+      "mes": 7,
+      "ano": 2026,
+      "mes_referencia": 12,
+      "registros": []
+    },
+    {
+      "mes": 8,
+      "ano": 2027,
+      "mes_referencia": 1,
+      "registros": []
+    }
+  ],
+  "indicadores": [],
+  "registro": {
+    "pontos_criticos": null,
+    "fatores_sucesso": null,
+    "itens_fora_escopo": null,
+    "atualizado_por": null,
+    "atualizado_em": null
+  },
+  "pode_editar": false
+}

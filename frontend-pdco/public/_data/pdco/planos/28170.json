@@ -1,0 +1,113 @@
+{
+  "plano": {
+    "cd_planoacao": "28170",
+    "subtipo": "P.a. Pdco Estratégico  -transversal 2026",
+    "status": "Planejado",
+    "area_codigo": "10",
+    "area_nome": "2.6 Diretoria Comercial E Marketing",
+    "responsavel": "Responsável 01",
+    "arquetipos_culturais": "Laboratório De Experiência Do Cliente - Labex",
+    "resultados_esperados": "Fomentar A Inovação Por Meio Do\r\nlaboratório De Experiência Do\r\ncliente.",
+    "data_inicio": "2027-01-01",
+    "data_fim": "2027-10-31",
+    "execucao": 0,
+    "resumo_acoes": {
+      "total": 4,
+      "concluidas": 0,
+      "atrasadas": 0
+    }
+  },
+  "acoes": [
+    {
+      "cd_acao": "28525",
+      "nome": "Modelo Conceitual",
+      "status": "Planejado",
+      "prazo_inicial": "2027-01-01",
+      "prazo_final": "2027-02-28",
+      "responsavel": "Responsável 01"
+    },
+    {
+      "cd_acao": "28526",
+      "nome": "Capacitação Inicial",
+      "status": "Planejado",
+      "prazo_inicial": "2027-03-01",
+      "prazo_final": "2027-04-30",
+      "responsavel": "Responsável 01"
+    },
+    {
+      "cd_acao": "28527",
+      "nome": "Estruturação Operacional",
+      "status": "Planejado",
+      "prazo_inicial": "2027-05-01",
+      "prazo_final": "2027-06-30",
+      "responsavel": "Responsável 01"
+    },
+    {
+      "cd_acao": "28528",
+      "nome": "Sprints De Inovação",
+      "status": "Planejado",
+      "prazo_inicial": "2027-07-01",
+      "prazo_final": "2027-10-31",
+      "responsavel": "Responsável 01"
+    }
+  ],
+  "acompanhamento": [
+    {
+      "mes": 1,
+      "ano": 2026,
+      "mes_referencia": 12,
+      "registros": []
+    },
+    {
+      "mes": 2,
+      "ano": 2027,
+      "mes_referencia": 1,
+      "registros": []
+    },
+    {
+      "mes": 3,
+      "ano": 2027,
+      "mes_referencia": 2,
+      "registros": []
+    },
+    {
+      "mes": 4,
+      "ano": 2027,
+      "mes_referencia": 3,
+      "registros": []
+    },
+    {
+      "mes": 5,
+      "ano": 2027,
+      "mes_referencia": 4,
+      "registros": []
+    },
+    {
+      "mes": 6,
+      "ano": 2027,
+      "mes_referencia": 5,
+      "registros": []
+    },
+    {
+      "mes": 7,
+      "ano": 2027,
+      "mes_referencia": 6,
+      "registros": []
+    },
+    {
+      "mes": 8,
+      "ano": 2027,
+      "mes_referencia": 7,
+      "registros": []
+    }
+  ],
+  "indicadores": [],
+  "registro": {
+    "pontos_criticos": null,
+    "fatores_sucesso": null,
+    "itens_fora_escopo": null,
+    "atualizado_por": null,
+    "atualizado_em": null
+  },
+  "pode_editar": false
+}

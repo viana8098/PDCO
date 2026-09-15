@@ -1,0 +1,557 @@
+{
+  "planos": [
+    {
+      "valor": "32031",
+      "rotulo": "1.3 Governança Corporativa — Estruturação Do Fluxo De Atendimento Interno Da Gegov"
+    },
+    {
+      "valor": "32592",
+      "rotulo": "2.1.1.3 Suprimentos — Pdco - Suprimentos | Implantar A Estratégia De Aquisições"
+    },
+    {
+      "valor": "32593",
+      "rotulo": "2.1.1.9 Gestão De Ativos — Pdco - Gestão De Ativos"
+    },
+    {
+      "valor": "30854",
+      "rotulo": "2.2.1 Processos — Estabelecimento Do Programa De Auditoria De Processos Do Sesi Senai"
+    },
+    {
+      "valor": "27152",
+      "rotulo": "2.2.1 Processos — Fortalecer A Cultura E A Governança De Gestão Por Processos"
+    },
+    {
+      "valor": "26736",
+      "rotulo": "2.2.2 Estratégia Organizacional — Aprimoramento Da Eficiência Dos Rituais De Gestão Considerando A Capacidade Par…"
+    },
+    {
+      "valor": "26735",
+      "rotulo": "2.2.2 Estratégia Organizacional — Implantação De Métricas De Desempenho (ppr) Por Área (corporativa)​"
+    },
+    {
+      "valor": "31020",
+      "rotulo": "2.2.2 Estratégia Organizacional — Implantação Dos Critérios De Priorizações Das Iniciativas Estratégicas Com Foco…"
+    },
+    {
+      "valor": "30953",
+      "rotulo": "2.2.3 Gente E Cultura Organizacional — Criar Ato Normativo De Reconhecimento E Responsabilização Profissional"
+    },
+    {
+      "valor": "26734",
+      "rotulo": "2.2.3 Gente E Cultura Organizacional — Desenvolver E Aplicar Competências Críticas Que Impulsionem A Performance, Sust…"
+    },
+    {
+      "valor": "26733",
+      "rotulo": "2.2.3 Gente E Cultura Organizacional — Desenvolvimento E Execução Do Plano Corporativo De Treinamentos De Líderes E Ag…"
+    },
+    {
+      "valor": "32259",
+      "rotulo": "2.2.3 Gente E Cultura Organizacional — Fortalecimento Dos Valores Na Prática"
+    },
+    {
+      "valor": "17155",
+      "rotulo": "2.2.3 Gente E Cultura Organizacional — Implantação Do Plano De Sucessão"
+    },
+    {
+      "valor": "32714",
+      "rotulo": "2.3.2 Educação Profissional — Priorização Estratégica Por Impacto Em Resultado"
+    },
+    {
+      "valor": "28170",
+      "rotulo": "2.6 Diretoria Comercial E Marketing — Laboratório De Experiência Do Cliente - Labex"
+    }
+  ],
+  "areas": [
+    {
+      "valor": "1.3 Governança Corporativa",
+      "rotulo": "1.3 Governança Corporativa"
+    },
+    {
+      "valor": "2.1.1.3 Suprimentos",
+      "rotulo": "2.1.1.3 Suprimentos"
+    },
+    {
+      "valor": "2.1.1.9 Gestão De Ativos",
+      "rotulo": "2.1.1.9 Gestão De Ativos"
+    },
+    {
+      "valor": "2.2.1 Processos",
+      "rotulo": "2.2.1 Processos"
+    },
+    {
+      "valor": "2.2.2 Estratégia Organizacional",
+      "rotulo": "2.2.2 Estratégia Organizacional"
+    },
+    {
+      "valor": "2.2.3 Gente E Cultura Organizacional",
+      "rotulo": "2.2.3 Gente E Cultura Organizacional"
+    },
+    {
+      "valor": "2.3.2 Educação Profissional",
+      "rotulo": "2.3.2 Educação Profissional"
+    },
+    {
+      "valor": "2.6 Diretoria Comercial E Marketing",
+      "rotulo": "2.6 Diretoria Comercial E Marketing"
+    }
+  ],
+  "acoes": [
+    {
+      "valor": "Acompanhar A Logística De Capacitação Líderes: Liderando Mudanças",
+      "rotulo": "Acompanhar A Logística De Capacitação Líderes: Liderando Mudanças"
+    },
+    {
+      "valor": "Acompanhar Logística De Capacitação Líderes: Liderança Baseada Em Valores + Lfr",
+      "rotulo": "Acompanhar Logística De Capacitação Líderes: Liderança Baseada Em Valores + Lfr"
+    },
+    {
+      "valor": "Acompanhar Logística De Capacitação Lideres: Liderando A Cultura",
+      "rotulo": "Acompanhar Logística De Capacitação Lideres: Liderando A Cultura"
+    },
+    {
+      "valor": "Acompanhar O Processo De Coaching Executivo Para Líderes Específicos, Garantindo O Desenvolvimento Contínuo De Suas Competências",
+      "rotulo": "Acompanhar O Processo De Coaching Executivo Para Líderes Específicos, Garantindo O Desenvolvimento Contínuo De Suas Competências"
+    },
+    {
+      "valor": "Alinhar Objetivos E Expectativas Iniciais Com A Alta Gestão (etapa 1 - Alinhamento Estratégico)",
+      "rotulo": "Alinhar Objetivos E Expectativas Iniciais Com A Alta Gestão (etapa 1 - Alinhamento Estratégico)"
+    },
+    {
+      "valor": "Analisar O Planejamento De Aquisições 2027",
+      "rotulo": "Analisar O Planejamento De Aquisições 2027"
+    },
+    {
+      "valor": "Analisar Todas As Sugestões E Editar O Ato Normativo",
+      "rotulo": "Analisar Todas As Sugestões E Editar O Ato Normativo"
+    },
+    {
+      "valor": "Aplicar Ajustes, Se Necessário",
+      "rotulo": "Aplicar Ajustes, Se Necessário"
+    },
+    {
+      "valor": "Aplicar Assesment Lfr  De Cultura Organizacional Em Líderes",
+      "rotulo": "Aplicar Assesment Lfr  De Cultura Organizacional Em Líderes"
+    },
+    {
+      "valor": "Aplicar Pesquisa De Percepção Com Participantes Chave (etapa 1 - Diagnóstico Estruturado)",
+      "rotulo": "Aplicar Pesquisa De Percepção Com Participantes Chave (etapa 1 - Diagnóstico Estruturado)"
+    },
+    {
+      "valor": "Apresentar À Diretoria Os Resultados E Conclusões Das Etapas De Mapeamento, Matriz De Criticidade E Diagnóstico Da Sucessão.",
+      "rotulo": "Apresentar À Diretoria Os Resultados E Conclusões Das Etapas De Mapeamento, Matriz De Criticidade E Diagnóstico Da Sucessão."
+    },
+    {
+      "valor": "Ativar Ritual 'visão De Resultado' (45min) + Check-in Quinzenal De 15min. Monitorar Gap E Decisões De Repriorização Mensalmente.",
+      "rotulo": "Ativar Ritual 'visão De Resultado' (45min) + Check-in Quinzenal De 15min. Monitorar Gap E Decisões De Repriorização Mensalmente."
+    },
+    {
+      "valor": "Atualizar Descrições De Cargos Para Garantir Coerência Entre Responsabilidades, Entregas E Competências Críticas.",
+      "rotulo": "Atualizar Descrições De Cargos Para Garantir Coerência Entre Responsabilidades, Entregas E Competências Críticas."
+    },
+    {
+      "valor": "Atualizar Documentação Dos Rituais Com As Melhorias Aplicadas (papéis, Objetivos E Cadência Para Cada Rito)  (etapa 2 - Proposição De Melhoria)",
+      "rotulo": "Atualizar Documentação Dos Rituais Com As Melhorias Aplicadas (papéis, Objetivos E Cadência Para Cada Rito)  (etapa 2 - Proposição De Melhoria)"
+    },
+    {
+      "valor": "Automatizar Indicadores Táticos",
+      "rotulo": "Automatizar Indicadores Táticos"
+    },
+    {
+      "valor": "Avaliar Indicadores De Auditorias",
+      "rotulo": "Avaliar Indicadores De Auditorias"
+    },
+    {
+      "valor": "Avaliar O Impacto Dos Treinamentos Na Performance, Comportamento E Resultados Das Equipes.",
+      "rotulo": "Avaliar O Impacto Dos Treinamentos Na Performance, Comportamento E Resultados Das Equipes."
+    },
+    {
+      "valor": "Avaliar Quantidade De Liderados Por Líder E Agente De Gestão E Propor Melhorias Nos Designs Das Áreas Com Foco Em Ampliação Da Performance",
+      "rotulo": "Avaliar Quantidade De Liderados Por Líder E Agente De Gestão E Propor Melhorias Nos Designs Das Áreas Com Foco Em Ampliação Da Performance"
+    },
+    {
+      "valor": "Capacitação Inicial",
+      "rotulo": "Capacitação Inicial"
+    },
+    {
+      "valor": "Capacitar Auditores E Gestores",
+      "rotulo": "Capacitar Auditores E Gestores"
+    },
+    {
+      "valor": "Capacitar E Monitorar Atores De Processo Na Metodologia De Mapeamento, Com Abordagens Práticas Que Ampliem A Qualidade E Agilidade Dos Mapeamentos",
+      "rotulo": "Capacitar E Monitorar Atores De Processo Na Metodologia De Mapeamento, Com Abordagens Práticas Que Ampliem A Qualidade E Agilidade Dos Mapeamentos"
+    },
+    {
+      "valor": "Classificar As Iniciativas Estratégicas, Conforme Critérios Foco Em Sustentabilidade",
+      "rotulo": "Classificar As Iniciativas Estratégicas, Conforme Critérios Foco Em Sustentabilidade"
+    },
+    {
+      "valor": "Comunicar E Apresentar O Plano De Sucessão Às Lideranças, Alinhando Conceitos, Papéis E Responsabilidades No Processo.",
+      "rotulo": "Comunicar E Apresentar O Plano De Sucessão Às Lideranças, Alinhando Conceitos, Papéis E Responsabilidades No Processo."
+    },
+    {
+      "valor": "Comunicar O Novo Modelo Para Toda A Organização (etapa 4 - Capacitação E Comunicação)",
+      "rotulo": "Comunicar O Novo Modelo Para Toda A Organização (etapa 4 - Capacitação E Comunicação)"
+    },
+    {
+      "valor": "Conduzir Workshop De Atualização Da Cadeia De Valor, Donos De Processo E Especialistas Junto As Áreas Corporativas",
+      "rotulo": "Conduzir Workshop De Atualização Da Cadeia De Valor, Donos De Processo E Especialistas Junto As Áreas Corporativas"
+    },
+    {
+      "valor": "Consolidar E Implantar O Plano Integrado De Aquisições",
+      "rotulo": "Consolidar E Implantar O Plano Integrado De Aquisições"
+    },
+    {
+      "valor": "Construir A Matriz De Sucessão Em Conjunto Com Os Gerentes Executivos, Consolidando Informações Sobre Cargos Críticos, Níveis De Prontidão, Riscos De Sucessão E Alternativas De Substituição.",
+      "rotulo": "Construir A Matriz De Sucessão Em Conjunto Com Os Gerentes Executivos, Consolidando Informações Sobre Cargos Críticos, Níveis De Prontidão, Riscos De Sucessão E Alternativas De Substituição."
+    },
+    {
+      "valor": "Construir E Levantar Os Dados Da Matriz De Sucessão Junto Aos Gerentes Executivos, Organizando Os Níveis De Prontidão, Riscos E Alternativas Para Cada Cargo Crítico.",
+      "rotulo": "Construir E Levantar Os Dados Da Matriz De Sucessão Junto Aos Gerentes Executivos, Organizando Os Níveis De Prontidão, Riscos E Alternativas Para Cada Cargo Crítico."
+    },
+    {
+      "valor": "Construir Matriz De Comportamentos Esperados Por Competência Organizacional, Associando Exemplos Observáveis De Comportamentos Desejados E Indesejados.",
+      "rotulo": "Construir Matriz De Comportamentos Esperados Por Competência Organizacional, Associando Exemplos Observáveis De Comportamentos Desejados E Indesejados."
+    },
+    {
+      "valor": "Construir O Perfil Estratégico De Consumo (histórico, Demanda, Análise Por Categoria)",
+      "rotulo": "Construir O Perfil Estratégico De Consumo (histórico, Demanda, Análise Por Categoria)"
+    },
+    {
+      "valor": "Construir Proposta De Cestas De Indicadores E Metas, Conectando Indicadores Estratégicos E Táticos Prioritários Para Cada Área Corporativa (etapa 2 - Estruturação Técnica Inicial)",
+      "rotulo": "Construir Proposta De Cestas De Indicadores E Metas, Conectando Indicadores Estratégicos E Táticos Prioritários Para Cada Área Corporativa (etapa 2 - Estruturação Técnica Inicial)"
+    },
+    {
+      "valor": "Criar Mecanismo De Acompanhamento Contínuo Avaliação Da Liderança",
+      "rotulo": "Criar Mecanismo De Acompanhamento Contínuo Avaliação Da Liderança"
+    },
+    {
+      "valor": "Criar O Modelo De Landpage Com O Modelo De Gestão Sesi E Senai Com Base Em 11 Pilares",
+      "rotulo": "Criar O Modelo De Landpage Com O Modelo De Gestão Sesi E Senai Com Base Em 11 Pilares"
+    },
+    {
+      "valor": "Criar Painel De 3 Indicadores Críticos (receita Executada, Gap Orçamentário, Custo Por Unidade). Definir Responsável Por Indicador Dentro Da Equipe. Incluir Resultado Orçamentário Como Pauta Fixa Nas Cerimônias.",
+      "rotulo": "Criar Painel De 3 Indicadores Críticos (receita Executada, Gap Orçamentário, Custo Por Unidade). Definir Responsável Por Indicador Dentro Da Equipe. Incluir Resultado Orçamentário Como Pauta Fixa Nas Cerimônias."
+    },
+    {
+      "valor": "Criar Ritual De Reforço Cultural",
+      "rotulo": "Criar Ritual De Reforço Cultural"
+    },
+    {
+      "valor": "Definição Dos Serviços Corporativos E Seus Respectivos Slas",
+      "rotulo": "Definição Dos Serviços Corporativos E Seus Respectivos Slas"
+    },
+    {
+      "valor": "Definir As Cestas Do Comercial Sesi E Senai",
+      "rotulo": "Definir As Cestas Do Comercial Sesi E Senai"
+    },
+    {
+      "valor": "Definir E Implantar Indicadores De Desempenho (ex: % De Líderes Capacitados; % De Áreas Aplicando O Modelo; % De Colaboradores Reconhecidos; % De Planos De Melhoria Implementados; Redução De Casos De Baixa Performance Recorrente; Evolução Do Índice De Meritocracia Na Pesquisa De Clima; Evolução Da Percepção De Justiça E Coerência Da Liderança.",
+      "rotulo": "Definir E Implantar Indicadores De Desempenho (ex: % De Líderes Capacitados; % De Áreas Aplicando O Modelo; % De Colaboradores Reconhecidos; % De Planos De Melhoria Implementados; Redução De Casos De Baixa Performance Recorrente; Evolução Do Índice De Meritocracia Na Pesquisa De Clima; Evolução Da Percepção De Justiça E Coerência Da Liderança."
+    },
+    {
+      "valor": "Definir E Implantar Indicadores E Marcos De Evolução Do Plano De Sucessão Para Monitorar A Maturidade Do Processo, A Preparação Dos Sucessores E Os Resultados Alcançados.",
+      "rotulo": "Definir E Implantar Indicadores E Marcos De Evolução Do Plano De Sucessão Para Monitorar A Maturidade Do Processo, A Preparação Dos Sucessores E Os Resultados Alcançados."
+    },
+    {
+      "valor": "Definir Estratégica De Contratação Das Categorias Prioritárias",
+      "rotulo": "Definir Estratégica De Contratação Das Categorias Prioritárias"
+    },
+    {
+      "valor": "Definir Governança Do Programa",
+      "rotulo": "Definir Governança Do Programa"
+    },
+    {
+      "valor": "Definir Indicadores E Evidências Objetivas Que Suportem Processos De Reconhecimento E Aplicação De Consequências.",
+      "rotulo": "Definir Indicadores E Evidências Objetivas Que Suportem Processos De Reconhecimento E Aplicação De Consequências."
+    },
+    {
+      "valor": "Definir Metodologia De Auditoria De Processos E Qualidade",
+      "rotulo": "Definir Metodologia De Auditoria De Processos E Qualidade"
+    },
+    {
+      "valor": "Definir Uma Matriz De Priorização Simples",
+      "rotulo": "Definir Uma Matriz De Priorização Simples"
+    },
+    {
+      "valor": "Desenvolver Competências Em I.a.",
+      "rotulo": "Desenvolver Competências Em I.a."
+    },
+    {
+      "valor": "Desenvolver Instrumentos De Auditoria",
+      "rotulo": "Desenvolver Instrumentos De Auditoria"
+    },
+    {
+      "valor": "Desenvolvimento De Materiais, Guias E Trilhas De Aprendizagem Baseadas Nas Lacunas De Competências.",
+      "rotulo": "Desenvolvimento De Materiais, Guias E Trilhas De Aprendizagem Baseadas Nas Lacunas De Competências."
+    },
+    {
+      "valor": "Divulgar O Fluxo De Solicitação E Os Prazos Mínimos Por Tipo De Demanda Para As Áreas Parceiras",
+      "rotulo": "Divulgar O Fluxo De Solicitação E Os Prazos Mínimos Por Tipo De Demanda Para As Áreas Parceiras"
+    },
+    {
+      "valor": "Divulgar O Modelo De Gestão Institucionalmente",
+      "rotulo": "Divulgar O Modelo De Gestão Institucionalmente"
+    },
+    {
+      "valor": "Documentar Objetivo, Frequência, Pautas E Participantes (etapa 1 - Diagnóstico Estruturado)",
+      "rotulo": "Documentar Objetivo, Frequência, Pautas E Participantes (etapa 1 - Diagnóstico Estruturado)"
+    },
+    {
+      "valor": "Elaboração E Disseminação Da Política De Governança De Processos",
+      "rotulo": "Elaboração E Disseminação Da Política De Governança De Processos"
+    },
+    {
+      "valor": "Elaborar Ato Normativo De Reconhecimento E Responsabilização Profissional",
+      "rotulo": "Elaborar Ato Normativo De Reconhecimento E Responsabilização Profissional"
+    },
+    {
+      "valor": "Elaborar E Apresentar A Proposta Inicial Do Plano De Sucessão Para Validação Da Diretoria.",
+      "rotulo": "Elaborar E Apresentar A Proposta Inicial Do Plano De Sucessão Para Validação Da Diretoria."
+    },
+    {
+      "valor": "Elaborar Os Planos De Desenvolvimento Individual (pdis) Dos Sucessores, Contemplando Ações Voltadas Ao Fechamento Das Lacunas Identificadas.",
+      "rotulo": "Elaborar Os Planos De Desenvolvimento Individual (pdis) Dos Sucessores, Contemplando Ações Voltadas Ao Fechamento Das Lacunas Identificadas."
+    },
+    {
+      "valor": "Elaborar, Publicar E Divulgar Internamente Um Documento De Sla Por Tipo De Demanda",
+      "rotulo": "Elaborar, Publicar E Divulgar Internamente Um Documento De Sla Por Tipo De Demanda"
+    },
+    {
+      "valor": "Elevar A Qualidade Dos Pdis Por Meio Da Disponibilização De Um Assistente De Ia Aos Líderes, Apoiando A Elaboração Dos Planos E Fortalecendo A Análise Qualitativa E A Personalização Do Desenvolvimento Dos Colaboradores.",
+      "rotulo": "Elevar A Qualidade Dos Pdis Por Meio Da Disponibilização De Um Assistente De Ia Aos Líderes, Apoiando A Elaboração Dos Planos E Fortalecendo A Análise Qualitativa E A Personalização Do Desenvolvimento Dos Colaboradores."
+    },
+    {
+      "valor": "Estruturação Operacional",
+      "rotulo": "Estruturação Operacional"
+    },
+    {
+      "valor": "Estruturar E Executar Plano De Comunicação De Forma A Fortalecer A Cultura De Gestão Por Processos (2026)",
+      "rotulo": "Estruturar E Executar Plano De Comunicação De Forma A Fortalecer A Cultura De Gestão Por Processos (2026)"
+    },
+    {
+      "valor": "Estruturar Formalização Dos Critérios Foco Em Sustentabilidade",
+      "rotulo": "Estruturar Formalização Dos Critérios Foco Em Sustentabilidade"
+    },
+    {
+      "valor": "Estruturar Modelo Inicial Para Validação Do Método, Áreas Consideradas, Regras E Demais Definições Necessárias  (etapa 1 - Alinhamento Estratégico)",
+      "rotulo": "Estruturar Modelo Inicial Para Validação Do Método, Áreas Consideradas, Regras E Demais Definições Necessárias  (etapa 1 - Alinhamento Estratégico)"
+    },
+    {
+      "valor": "Estruturar O Plano Corporativo De Treinamentos Por Nível De Liderança E Papel De Atuação Dos Agentes De Gestão",
+      "rotulo": "Estruturar O Plano Corporativo De Treinamentos Por Nível De Liderança E Papel De Atuação Dos Agentes De Gestão"
+    },
+    {
+      "valor": "Executar As Trilhas De Aprendizagem E Acompanhar A Evolução Dos Participantes.",
+      "rotulo": "Executar As Trilhas De Aprendizagem E Acompanhar A Evolução Dos Participantes."
+    },
+    {
+      "valor": "Executar E Acompanhar Renovações E Novas Licitações Priorizadas",
+      "rotulo": "Executar E Acompanhar Renovações E Novas Licitações Priorizadas"
+    },
+    {
+      "valor": "Fortalecer Cerimônia De Processos Destaque, Estabelecendo Novos Critérios Para A Avaliação",
+      "rotulo": "Fortalecer Cerimônia De Processos Destaque, Estabelecendo Novos Critérios Para A Avaliação"
+    },
+    {
+      "valor": "Garantir Comunicação Transparente Para Toda A Organização E  Capacitação De Lideranças Para Aplicação Consistente.",
+      "rotulo": "Garantir Comunicação Transparente Para Toda A Organização E  Capacitação De Lideranças Para Aplicação Consistente."
+    },
+    {
+      "valor": "Identificação De Gaps De Competências Pós Aplicação Avaliação De Desempenho",
+      "rotulo": "Identificação De Gaps De Competências Pós Aplicação Avaliação De Desempenho"
+    },
+    {
+      "valor": "Identificar E Priorizar As Competências Estratégicas A Serem Desenvolvidas Para Garantir A Sucessão Das Posições Críticas.",
+      "rotulo": "Identificar E Priorizar As Competências Estratégicas A Serem Desenvolvidas Para Garantir A Sucessão Das Posições Críticas."
+    },
+    {
+      "valor": "Identificar Gaps Críticos De Liderança Base: Diagnóstico Cultural + Avaliação De Desempenho+ Clima Organizacional. Foco Em:  Accountability, Feedback, Tomada De Decisão E Gestão De  Performance.",
+      "rotulo": "Identificar Gaps Críticos De Liderança Base: Diagnóstico Cultural + Avaliação De Desempenho+ Clima Organizacional. Foco Em:  Accountability, Feedback, Tomada De Decisão E Gestão De  Performance."
+    },
+    {
+      "valor": "Implantar Auditoria ( Projeto Piloto Lideres )  De Pdis E Check-ins De Acompanhamento.",
+      "rotulo": "Implantar Auditoria ( Projeto Piloto Lideres )  De Pdis E Check-ins De Acompanhamento."
+    },
+    {
+      "valor": "Implantar E Monitorar O Indicador Nps Dos Serviços Das Áreas Corporativas",
+      "rotulo": "Implantar E Monitorar O Indicador Nps Dos Serviços Das Áreas Corporativas"
+    },
+    {
+      "valor": "Implantar O Ciclo De Auditoria Metrologia",
+      "rotulo": "Implantar O Ciclo De Auditoria Metrologia"
+    },
+    {
+      "valor": "Implantar O Ciclo De Auditoria Ona",
+      "rotulo": "Implantar O Ciclo De Auditoria Ona"
+    },
+    {
+      "valor": "Implantar Plataforma De Gestão Estratégica Com Foco Em Processos",
+      "rotulo": "Implantar Plataforma De Gestão Estratégica Com Foco Em Processos"
+    },
+    {
+      "valor": "Implantar Um Quadro De Gestão De Demandas",
+      "rotulo": "Implantar Um Quadro De Gestão De Demandas"
+    },
+    {
+      "valor": "Incorporar À Avaliação Dos Gestores Indicadores De Qualidade Dos Pdis, Frequência De Acompanhamento E Evolução Das Competências Das Equipes.",
+      "rotulo": "Incorporar À Avaliação Dos Gestores Indicadores De Qualidade Dos Pdis, Frequência De Acompanhamento E Evolução Das Competências Das Equipes."
+    },
+    {
+      "valor": "Incorporar Competências Nos Pdi’s Com Sugestões De Ações De Desenvolvimento E Práticas No Trabalho.",
+      "rotulo": "Incorporar Competências Nos Pdi’s Com Sugestões De Ações De Desenvolvimento E Práticas No Trabalho."
+    },
+    {
+      "valor": "Incorporar Ícones Sinalizadores Nas Cerimônias (setorial/ Rtd/ Rac/estratégia Viva)",
+      "rotulo": "Incorporar Ícones Sinalizadores Nas Cerimônias (setorial/ Rtd/ Rac/estratégia Viva)"
+    },
+    {
+      "valor": "Incorporar Valores Na Avaliação De Desempenho, Feedback, Promoção E Desligamento.",
+      "rotulo": "Incorporar Valores Na Avaliação De Desempenho, Feedback, Promoção E Desligamento."
+    },
+    {
+      "valor": "Instituir O Comitê De Sucessão, Definindo Sua Composição, Responsabilidades E Calendário De Atuação.",
+      "rotulo": "Instituir O Comitê De Sucessão, Definindo Sua Composição, Responsabilidades E Calendário De Atuação."
+    },
+    {
+      "valor": "Integração Das Competências Com Os Subsistemas De Gente E Cultura",
+      "rotulo": "Integração Das Competências Com Os Subsistemas De Gente E Cultura"
+    },
+    {
+      "valor": "Integrar Os Critérios De Reconhecimento E Consequência Ao Ciclo Institucional De Gestão De Desempenho E Desenvolvimento De Pessoas.",
+      "rotulo": "Integrar Os Critérios De Reconhecimento E Consequência Ao Ciclo Institucional De Gestão De Desempenho E Desenvolvimento De Pessoas."
+    },
+    {
+      "valor": "Integrar Suprimentos Ao Planejamento Institucional",
+      "rotulo": "Integrar Suprimentos Ao Planejamento Institucional"
+    },
+    {
+      "valor": "Mapear As Oportunidades De Melhoria E Submeter Para Validação Da Proposta De Modelo (etapa 2 - Proposição De Melhoria)",
+      "rotulo": "Mapear As Oportunidades De Melhoria E Submeter Para Validação Da Proposta De Modelo (etapa 2 - Proposição De Melhoria)"
+    },
+    {
+      "valor": "Mapear E Enfatizar As Competências Mais Críticas Para O Líder E  Que Irão Impactar Mais Significativamente No Negócio",
+      "rotulo": "Mapear E Enfatizar As Competências Mais Críticas Para O Líder E  Que Irão Impactar Mais Significativamente No Negócio"
+    },
+    {
+      "valor": "Mapear Lacunas De Competências Por Área E Cargo, Com Base Nos Resultados Da Avaliação De Desempenho  E Estratégia.",
+      "rotulo": "Mapear Lacunas De Competências Por Área E Cargo, Com Base Nos Resultados Da Avaliação De Desempenho  E Estratégia."
+    },
+    {
+      "valor": "Mapear Todos Os Planos De Ação Da Gep E Classificar: (a) Impacto Direto Em Resultado Financeiro, (b) Impacto Indireto, (c) Sem Relação Com Indicadores Críticos. Descontinuar Ou Suspender Os De Tipo C.",
+      "rotulo": "Mapear Todos Os Planos De Ação Da Gep E Classificar: (a) Impacto Direto Em Resultado Financeiro, (b) Impacto Indireto, (c) Sem Relação Com Indicadores Críticos. Descontinuar Ou Suspender Os De Tipo C."
+    },
+    {
+      "valor": "Mapear Todos Os Rituais De Gestão Existentes (etapa 1 - Diagnóstico Estruturado)",
+      "rotulo": "Mapear Todos Os Rituais De Gestão Existentes (etapa 1 - Diagnóstico Estruturado)"
+    },
+    {
+      "valor": "Medir Impacto: Evolução Do Resultado Orçamentário Ep, % De Planos Com Conexão A Indicadores Críticos, Percepção Da Equipe Sobre Clareza De Prioridade. Decidir Continuidade E Ajustes.",
+      "rotulo": "Medir Impacto: Evolução Do Resultado Orçamentário Ep, % De Planos Com Conexão A Indicadores Críticos, Percepção Da Equipe Sobre Clareza De Prioridade. Decidir Continuidade E Ajustes."
+    },
+    {
+      "valor": "Modelo Conceitual",
+      "rotulo": "Modelo Conceitual"
+    },
+    {
+      "valor": "Monitorar A Evolução Do Desenvolvimento Das Equipes Através  Do Acompanhamento E Resultados Dos Pdis.",
+      "rotulo": "Monitorar A Evolução Do Desenvolvimento Das Equipes Através  Do Acompanhamento E Resultados Dos Pdis."
+    },
+    {
+      "valor": "Monitorar Evolução Das Competências Críticas",
+      "rotulo": "Monitorar Evolução Das Competências Críticas"
+    },
+    {
+      "valor": "Monitorar Evolução Das Competências Dos Participantes.",
+      "rotulo": "Monitorar Evolução Das Competências Dos Participantes."
+    },
+    {
+      "valor": "Monitorar Periodicamente A Evolução Dos Sucessores, Revisando Os Pdis E Atualizando A Matriz De Sucessão Conforme As Mudanças Organizacionais E As Decisões Do Comitê.",
+      "rotulo": "Monitorar Periodicamente A Evolução Dos Sucessores, Revisando Os Pdis E Atualizando A Matriz De Sucessão Conforme As Mudanças Organizacionais E As Decisões Do Comitê."
+    },
+    {
+      "valor": "Ofertar Trilhas Formativas Segmentadas Por Nível De Carreira (operacional, Técnico, Especialista, Liderança).",
+      "rotulo": "Ofertar Trilhas Formativas Segmentadas Por Nível De Carreira (operacional, Técnico, Especialista, Liderança)."
+    },
+    {
+      "valor": "Pactuar Composição Das Cestas Corporativas Para 2027 (etapa 4 - Estruturação Técnica Final)",
+      "rotulo": "Pactuar Composição Das Cestas Corporativas Para 2027 (etapa 4 - Estruturação Técnica Final)"
+    },
+    {
+      "valor": "Propor Ajustes Necessários  (etapa 3 - Simulação De Piloto)",
+      "rotulo": "Propor Ajustes Necessários  (etapa 3 - Simulação De Piloto)"
+    },
+    {
+      "valor": "Realizar Avaliação Do Diagnóstico (etapa 1 - Diagnóstico Estruturado)",
+      "rotulo": "Realizar Avaliação Do Diagnóstico (etapa 1 - Diagnóstico Estruturado)"
+    },
+    {
+      "valor": "Realizar Capacitação Junto A Consultoria Sobre Inovação E Processos",
+      "rotulo": "Realizar Capacitação Junto A Consultoria Sobre Inovação E Processos"
+    },
+    {
+      "valor": "Reforçar Cultura De Protagonismo Com Consequência Reconhecer Colaboradores Que Evoluem E Líderes Que  Desenvolvem Equipes. Atuar Nos Casos De Baixa Aderência Com  Feedback Formal E Plano De Ação.",
+      "rotulo": "Reforçar Cultura De Protagonismo Com Consequência Reconhecer Colaboradores Que Evoluem E Líderes Que  Desenvolvem Equipes. Atuar Nos Casos De Baixa Aderência Com  Feedback Formal E Plano De Ação."
+    },
+    {
+      "valor": "Resgatar Os Critérios Estabelecidos Anteriormente (foco Em Sustentabilidade)",
+      "rotulo": "Resgatar Os Critérios Estabelecidos Anteriormente (foco Em Sustentabilidade)"
+    },
+    {
+      "valor": "Resgatar/reestruturar O Painel De Priorização Das  Iniciativas Estratégicas Com Foco Em Sustentabilidade",
+      "rotulo": "Resgatar/reestruturar O Painel De Priorização Das  Iniciativas Estratégicas Com Foco Em Sustentabilidade"
+    },
+    {
+      "valor": "Revisar A Cerimônia Da Rac Potencializando A Avaliação De Desempenho, Riscos E Priorização De Melhorias.",
+      "rotulo": "Revisar A Cerimônia Da Rac Potencializando A Avaliação De Desempenho, Riscos E Priorização De Melhorias."
+    },
+    {
+      "valor": "Revisar As Competências Estratégicas Que Orientam O Desenvolvimento De Líderes E Agentes.",
+      "rotulo": "Revisar As Competências Estratégicas Que Orientam O Desenvolvimento De Líderes E Agentes."
+    },
+    {
+      "valor": "Revisar Manual E Formalizar Modelo Do Ppr Corporativo (etapa 5 - Governança E Validação)",
+      "rotulo": "Revisar Manual E Formalizar Modelo Do Ppr Corporativo (etapa 5 - Governança E Validação)"
+    },
+    {
+      "valor": "Sensibilizar Lideranças Sobre O Guia Dos Valores Na Prática",
+      "rotulo": "Sensibilizar Lideranças Sobre O Guia Dos Valores Na Prática"
+    },
+    {
+      "valor": "Simular Execução Do Modelo Inicial Das Cestas Corporativas (etapa 3 - Simulação De Piloto)",
+      "rotulo": "Simular Execução Do Modelo Inicial Das Cestas Corporativas (etapa 3 - Simulação De Piloto)"
+    },
+    {
+      "valor": "Sprints De Inovação",
+      "rotulo": "Sprints De Inovação"
+    },
+    {
+      "valor": "Submeter Para Análise Jurídica, Aprovação Da Diretoria Executiva E Publicação Por Meio De Ato Normativo Institucional.",
+      "rotulo": "Submeter Para Análise Jurídica, Aprovação Da Diretoria Executiva E Publicação Por Meio De Ato Normativo Institucional."
+    },
+    {
+      "valor": "Submeter Para Áreas Da Digest",
+      "rotulo": "Submeter Para Áreas Da Digest"
+    },
+    {
+      "valor": "Traduzir Valores Em Comportamentos - Construção Do Guia",
+      "rotulo": "Traduzir Valores Em Comportamentos - Construção Do Guia"
+    },
+    {
+      "valor": "Traduzir Valores Em Comportamentos - Validação Do Guia Com A Diretoria",
+      "rotulo": "Traduzir Valores Em Comportamentos - Validação Do Guia Com A Diretoria"
+    },
+    {
+      "valor": "Validar As Classificações Com Os Responsáveis Pelas Iniciativas",
+      "rotulo": "Validar As Classificações Com Os Responsáveis Pelas Iniciativas"
+    },
+    {
+      "valor": "Validar Com Gerência/ Diretoria, Os Critérios Estruturados",
+      "rotulo": "Validar Com Gerência/ Diretoria, Os Critérios Estruturados"
+    },
+    {
+      "valor": "Validar Modelo Inicial Com A Alta Gestão (etapa 2 - Estruturação Técnica Inicial)",
+      "rotulo": "Validar Modelo Inicial Com A Alta Gestão (etapa 2 - Estruturação Técnica Inicial)"
+    }
+  ],
+  "administrador": true
+}

@@ -1,0 +1,337 @@
+{
+  "plano": {
+    "cd_planoacao": "30953",
+    "subtipo": "P.a. Pdco Estratégico  -transversal 2026",
+    "status": "Em Andamento",
+    "area_codigo": "80",
+    "area_nome": "2.2.3 Gente E Cultura Organizacional",
+    "responsavel": "Responsável 15",
+    "arquetipos_culturais": "Criar Ato Normativo De Reconhecimento E Responsabilização Profissional",
+    "resultados_esperados": "Porque A Cultura Organizacional Se Fortalece Quando Os Comportamentos E Resultados Desejados São Reconhecidos De Forma Consistente E Os Desvios São Tratados De Maneira Justa E Transparente. A Política Cria Clareza Sobre O Que A Organização Valoriza, Aumenta O Engajamento, Fortalece A Responsabilização, Reduz Subjetividades Nas Decisões E Alinha As Pessoas À Estratégia E Aos Valores Institucionais.",
+    "data_inicio": "2026-06-25",
+    "data_fim": "2026-11-19",
+    "execucao": 0.4444444444444444,
+    "resumo_acoes": {
+      "total": 9,
+      "concluidas": 4,
+      "atrasadas": 2
+    }
+  },
+  "acoes": [
+    {
+      "cd_acao": "30954",
+      "nome": "Construir Matriz De Comportamentos Esperados Por Competência Organizacional, Associando Exemplos Observáveis De Comportamentos Desejados E Indesejados.",
+      "status": "Concluído",
+      "prazo_inicial": "2026-06-05",
+      "prazo_final": "2026-06-15",
+      "responsavel": "Responsável 15"
+    },
+    {
+      "cd_acao": "30956",
+      "nome": "Definir Indicadores E Evidências Objetivas Que Suportem Processos De Reconhecimento E Aplicação De Consequências.",
+      "status": "Concluído",
+      "prazo_inicial": "2026-06-16",
+      "prazo_final": "2026-06-30",
+      "responsavel": "Responsável 15"
+    },
+    {
+      "cd_acao": "30957",
+      "nome": "Elaborar Ato Normativo De Reconhecimento E Responsabilização Profissional",
+      "status": "Concluído",
+      "prazo_inicial": "2026-07-01",
+      "prazo_final": "2026-07-20",
+      "responsavel": "Responsável 15"
+    },
+    {
+      "cd_acao": "30958",
+      "nome": "Submeter Para Análise Jurídica, Aprovação Da Diretoria Executiva E Publicação Por Meio De Ato Normativo Institucional.",
+      "status": "Planejado",
+      "prazo_inicial": "2026-07-21",
+      "prazo_final": "2026-09-30",
+      "responsavel": "Responsável 15"
+    },
+    {
+      "cd_acao": "30959",
+      "nome": "Garantir Comunicação Transparente Para Toda A Organização E  Capacitação De Lideranças Para Aplicação Consistente.",
+      "status": "Planejado",
+      "prazo_inicial": "2026-08-01",
+      "prazo_final": "2026-10-31",
+      "responsavel": "Responsável 15"
+    },
+    {
+      "cd_acao": "30984",
+      "nome": "Integrar Os Critérios De Reconhecimento E Consequência Ao Ciclo Institucional De Gestão De Desempenho E Desenvolvimento De Pessoas.",
+      "status": "Suspenso",
+      "prazo_inicial": "2026-08-01",
+      "prazo_final": "2026-08-31",
+      "responsavel": "Responsável 15"
+    },
+    {
+      "cd_acao": "30985",
+      "nome": "Definir E Implantar Indicadores De Desempenho (ex: % De Líderes Capacitados; % De Áreas Aplicando O Modelo; % De Colaboradores Reconhecidos; % De Planos De Melhoria Implementados; Redução De Casos De Baixa Performance Recorrente; Evolução Do Índice De Meritocracia Na Pesquisa De Clima; Evolução Da Percepção De Justiça E Coerência Da Liderança.",
+      "status": "Planejado",
+      "prazo_inicial": "2026-08-15",
+      "prazo_final": "2026-11-19",
+      "responsavel": "Responsável 15"
+    },
+    {
+      "cd_acao": "32580",
+      "nome": "Submeter Para Áreas Da Digest",
+      "status": "Concluído",
+      "prazo_inicial": "2026-08-03",
+      "prazo_final": "2026-08-17",
+      "responsavel": "Responsável 15"
+    },
+    {
+      "cd_acao": "32583",
+      "nome": "Analisar Todas As Sugestões E Editar O Ato Normativo",
+      "status": "Em Andamento",
+      "prazo_inicial": "2026-08-13",
+      "prazo_final": "2026-08-17",
+      "responsavel": "Responsável 15"
+    }
+  ],
+  "acompanhamento": [
+    {
+      "mes": 1,
+      "ano": 2026,
+      "mes_referencia": 6,
+      "registros": [
+        {
+          "texto": "No Momento, Estão Sendo Identificados Os Comportamentos Relacionados Aos Valores E Às Competências Organizacionais, Com O Objetivo De Consolidar Referências Comportamentais Alinhadas À Cultura Da Instituição. Paralelamente, Estão Sendo Definidos Os Critérios Que Subsidiarão O Desenvolvimento Da Política De Gestão De Reconhecimento E Consequências, Garantindo Coerência, Transparência E Alinhamento Estratégico Às Práticas De Gestão De Pessoas.",
+          "data": "2026-06-06",
+          "origem": "plano"
+        },
+        {
+          "texto": "No Momento, Estão Sendo Identificados Os Comportamentos Relacionados Aos Valores E Às Competências Organizacionais, Com O Objetivo De Consolidar Referências Comportamentais Alinhadas À Cultura Da Instituição. Paralelamente, Estão Sendo Definidos Os Critérios Que Subsidiarão O Desenvolvimento Da Política De Gestão De Reconhecimento E Consequências, Garantindo Coerência, Transparência E Alinhamento Estratégico Às Práticas De Gestão De Pessoas.",
+          "data": "2026-06-06",
+          "origem": "plano"
+        },
+        {
+          "texto": "No Momento, Estão Sendo Identificados Os Comportamentos Relacionados Aos Valores E Às Competências Organizacionais, Com O Objetivo De Consolidar Referências Comportamentais Alinhadas À Cultura Da Instituição. Paralelamente, Estão Sendo Definidos Os Critérios Que Subsidiarão O Desenvolvimento Da Política De Gestão De Reconhecimento E Consequências, Garantindo Coerência, Transparência E Alinhamento Estratégico Às Práticas De Gestão De Pessoas.",
+          "data": "2026-06-06",
+          "origem": "plano"
+        },
+        {
+          "texto": "No Momento, Estão Sendo Identificados Os Comportamentos Relacionados Aos Valores E Às Competências Organizacionais, Com O Objetivo De Consolidar Referências Comportamentais Alinhadas À Cultura Da Instituição. Paralelamente, Estão Sendo Definidos Os Critérios Que Subsidiarão O Desenvolvimento Da Política De Gestão De Reconhecimento E Consequências, Garantindo Coerência, Transparência E Alinhamento Estratégico Às Práticas De Gestão De Pessoas.",
+          "data": "2026-06-06",
+          "origem": "plano"
+        },
+        {
+          "texto": "No Momento, Estão Sendo Identificados Os Comportamentos Relacionados Aos Valores E Às Competências Organizacionais, Com O Objetivo De Consolidar Referências Comportamentais Alinhadas À Cultura Da Instituição. Paralelamente, Estão Sendo Definidos Os Critérios Que Subsidiarão O Desenvolvimento Da Política De Gestão De Reconhecimento E Consequências, Garantindo Coerência, Transparência E Alinhamento Estratégico Às Práticas De Gestão De Pessoas.",
+          "data": "2026-06-06",
+          "origem": "plano"
+        },
+        {
+          "texto": "No Momento, Estão Sendo Identificados Os Comportamentos Relacionados Aos Valores E Às Competências Organizacionais, Com O Objetivo De Consolidar Referências Comportamentais Alinhadas À Cultura Da Instituição. Paralelamente, Estão Sendo Definidos Os Critérios Que Subsidiarão O Desenvolvimento Da Política De Gestão De Reconhecimento E Consequências, Garantindo Coerência, Transparência E Alinhamento Estratégico Às Práticas De Gestão De Pessoas.",
+          "data": "2026-06-06",
+          "origem": "plano"
+        },
+        {
+          "texto": "No Momento, Estão Sendo Identificados Os Comportamentos Relacionados Aos Valores E Às Competências Organizacionais, Com O Objetivo De Consolidar Referências Comportamentais Alinhadas À Cultura Da Instituição. Paralelamente, Estão Sendo Definidos Os Critérios Que Subsidiarão O Desenvolvimento Da Política De Gestão De Reconhecimento E Consequências, Garantindo Coerência, Transparência E Alinhamento Estratégico Às Práticas De Gestão De Pessoas.",
+          "data": "2026-06-06",
+          "origem": "plano"
+        },
+        {
+          "texto": "No Momento, Estão Sendo Identificados Os Comportamentos Relacionados Aos Valores E Às Competências Organizacionais, Com O Objetivo De Consolidar Referências Comportamentais Alinhadas À Cultura Da Instituição. Paralelamente, Estão Sendo Definidos Os Critérios Que Subsidiarão O Desenvolvimento Da Política De Gestão De Reconhecimento E Consequências, Garantindo Coerência, Transparência E Alinhamento Estratégico Às Práticas De Gestão De Pessoas.",
+          "data": "2026-06-06",
+          "origem": "plano"
+        },
+        {
+          "texto": "No Momento, Estão Sendo Identificados Os Comportamentos Relacionados Aos Valores E Às Competências Organizacionais, Com O Objetivo De Consolidar Referências Comportamentais Alinhadas À Cultura Da Instituição. Paralelamente, Estão Sendo Definidos Os Critérios Que Subsidiarão O Desenvolvimento Da Política De Gestão De Reconhecimento E Consequências, Garantindo Coerência, Transparência E Alinhamento Estratégico Às Práticas De Gestão De Pessoas.",
+          "data": "2026-06-06",
+          "origem": "plano"
+        }
+      ]
+    },
+    {
+      "mes": 2,
+      "ano": 2026,
+      "mes_referencia": 7,
+      "registros": [
+        {
+          "texto": "Em Construção: Politica De Reconhecimento E Consequência",
+          "data": "2026-07-13",
+          "origem": "plano"
+        },
+        {
+          "texto": "Em Construção: Politica De Reconhecimento E Consequência",
+          "data": "2026-07-13",
+          "origem": "plano"
+        },
+        {
+          "texto": "Em Construção: Politica De Reconhecimento E Consequência",
+          "data": "2026-07-13",
+          "origem": "plano"
+        },
+        {
+          "texto": "Em Construção: Politica De Reconhecimento E Consequência",
+          "data": "2026-07-13",
+          "origem": "plano"
+        },
+        {
+          "texto": "Em Construção: Politica De Reconhecimento E Consequência",
+          "data": "2026-07-13",
+          "origem": "plano"
+        },
+        {
+          "texto": "Em Construção: Politica De Reconhecimento E Consequência",
+          "data": "2026-07-13",
+          "origem": "plano"
+        },
+        {
+          "texto": "Em Construção: Politica De Reconhecimento E Consequência",
+          "data": "2026-07-13",
+          "origem": "plano"
+        },
+        {
+          "texto": "Em Construção: Politica De Reconhecimento E Consequência",
+          "data": "2026-07-13",
+          "origem": "plano"
+        },
+        {
+          "texto": "Em Construção: Politica De Reconhecimento E Consequência",
+          "data": "2026-07-13",
+          "origem": "plano"
+        }
+      ]
+    },
+    {
+      "mes": 3,
+      "ano": 2026,
+      "mes_referencia": 8,
+      "registros": [
+        {
+          "texto": "O Ato Normativo Foi Finalizado E Submetido Aos Profissionais Da Digest Para Revisão E Emissão De Considerações Técnicas. Concluída Essa Etapa, Será Encaminhado Para Apreciação E Validação Da Governança.",
+          "data": "2026-08-11",
+          "origem": "plano"
+        },
+        {
+          "texto": "O Ato Normativo Foi Finalizado E Submetido Aos Profissionais Da Digest Para Revisão E Emissão De Considerações Técnicas. Concluída Essa Etapa, Será Encaminhado Para Apreciação E Validação Da Governança.",
+          "data": "2026-08-11",
+          "origem": "plano"
+        },
+        {
+          "texto": "O Ato Normativo Foi Finalizado E Submetido Aos Profissionais Da Digest Para Revisão E Emissão De Considerações Técnicas. Concluída Essa Etapa, Será Encaminhado Para Apreciação E Validação Da Governança.",
+          "data": "2026-08-11",
+          "origem": "plano"
+        },
+        {
+          "texto": "O Ato Normativo Foi Finalizado E Submetido Aos Profissionais Da Digest Para Revisão E Emissão De Considerações Técnicas. Concluída Essa Etapa, Será Encaminhado Para Apreciação E Validação Da Governança.",
+          "data": "2026-08-11",
+          "origem": "plano"
+        },
+        {
+          "texto": "O Ato Normativo Foi Finalizado E Submetido Aos Profissionais Da Digest Para Revisão E Emissão De Considerações Técnicas. Concluída Essa Etapa, Será Encaminhado Para Apreciação E Validação Da Governança.",
+          "data": "2026-08-11",
+          "origem": "plano"
+        },
+        {
+          "texto": "O Ato Normativo Foi Finalizado E Submetido Aos Profissionais Da Digest Para Revisão E Emissão De Considerações Técnicas. Concluída Essa Etapa, Será Encaminhado Para Apreciação E Validação Da Governança.",
+          "data": "2026-08-11",
+          "origem": "plano"
+        },
+        {
+          "texto": "O Ato Normativo Foi Finalizado E Submetido Aos Profissionais Da Digest Para Revisão E Emissão De Considerações Técnicas. Concluída Essa Etapa, Será Encaminhado Para Apreciação E Validação Da Governança.",
+          "data": "2026-08-11",
+          "origem": "plano"
+        },
+        {
+          "texto": "O Ato Normativo Foi Finalizado E Submetido Aos Profissionais Da Digest Para Revisão E Emissão De Considerações Técnicas. Concluída Essa Etapa, Será Encaminhado Para Apreciação E Validação Da Governança.",
+          "data": "2026-08-11",
+          "origem": "plano"
+        },
+        {
+          "texto": "O Ato Normativo Foi Finalizado E Submetido Aos Profissionais Da Digest Para Revisão E Emissão De Considerações Técnicas. Concluída Essa Etapa, Será Encaminhado Para Apreciação E Validação Da Governança.",
+          "data": "2026-08-11",
+          "origem": "plano"
+        }
+      ]
+    },
+    {
+      "mes": 4,
+      "ano": 2026,
+      "mes_referencia": 9,
+      "registros": [
+        {
+          "texto": "A Digest Ainda Está Em Fase De Edição. As Áreas De Processos E Estratégia E Gente E Cultura Estão Trabalhando Em Conjunto Na Revisão E No Aprimoramento Do Conteúdo, Trazendo Exemplos Mais Práticos E Situações Do Dia A Dia.\r\n\r\na Proposta É Tornar O Ato Normativo Mais Claro, Próximo E Conectado À Realidade Das Pessoas, Facilitando A Compreensão E Mostrando, Na Prática, Como Os Temas Abordados Se Aplicam À Nossa Rotina.",
+          "data": "2026-09-11",
+          "origem": "plano"
+        },
+        {
+          "texto": "A Digest Ainda Está Em Fase De Edição. As Áreas De Processos E Estratégia E Gente E Cultura Estão Trabalhando Em Conjunto Na Revisão E No Aprimoramento Do Conteúdo, Trazendo Exemplos Mais Práticos E Situações Do Dia A Dia.\r\n\r\na Proposta É Tornar O Ato Normativo Mais Claro, Próximo E Conectado À Realidade Das Pessoas, Facilitando A Compreensão E Mostrando, Na Prática, Como Os Temas Abordados Se Aplicam À Nossa Rotina.",
+          "data": "2026-09-11",
+          "origem": "plano"
+        },
+        {
+          "texto": "A Digest Ainda Está Em Fase De Edição. As Áreas De Processos E Estratégia E Gente E Cultura Estão Trabalhando Em Conjunto Na Revisão E No Aprimoramento Do Conteúdo, Trazendo Exemplos Mais Práticos E Situações Do Dia A Dia.\r\n\r\na Proposta É Tornar O Ato Normativo Mais Claro, Próximo E Conectado À Realidade Das Pessoas, Facilitando A Compreensão E Mostrando, Na Prática, Como Os Temas Abordados Se Aplicam À Nossa Rotina.",
+          "data": "2026-09-11",
+          "origem": "plano"
+        },
+        {
+          "texto": "A Digest Ainda Está Em Fase De Edição. As Áreas De Processos E Estratégia E Gente E Cultura Estão Trabalhando Em Conjunto Na Revisão E No Aprimoramento Do Conteúdo, Trazendo Exemplos Mais Práticos E Situações Do Dia A Dia.\r\n\r\na Proposta É Tornar O Ato Normativo Mais Claro, Próximo E Conectado À Realidade Das Pessoas, Facilitando A Compreensão E Mostrando, Na Prática, Como Os Temas Abordados Se Aplicam À Nossa Rotina.",
+          "data": "2026-09-11",
+          "origem": "plano"
+        },
+        {
+          "texto": "A Digest Ainda Está Em Fase De Edição. As Áreas De Processos E Estratégia E Gente E Cultura Estão Trabalhando Em Conjunto Na Revisão E No Aprimoramento Do Conteúdo, Trazendo Exemplos Mais Práticos E Situações Do Dia A Dia.\r\n\r\na Proposta É Tornar O Ato Normativo Mais Claro, Próximo E Conectado À Realidade Das Pessoas, Facilitando A Compreensão E Mostrando, Na Prática, Como Os Temas Abordados Se Aplicam À Nossa Rotina.",
+          "data": "2026-09-11",
+          "origem": "plano"
+        },
+        {
+          "texto": "A Digest Ainda Está Em Fase De Edição. As Áreas De Processos E Estratégia E Gente E Cultura Estão Trabalhando Em Conjunto Na Revisão E No Aprimoramento Do Conteúdo, Trazendo Exemplos Mais Práticos E Situações Do Dia A Dia.\r\n\r\na Proposta É Tornar O Ato Normativo Mais Claro, Próximo E Conectado À Realidade Das Pessoas, Facilitando A Compreensão E Mostrando, Na Prática, Como Os Temas Abordados Se Aplicam À Nossa Rotina.",
+          "data": "2026-09-11",
+          "origem": "plano"
+        },
+        {
+          "texto": "A Digest Ainda Está Em Fase De Edição. As Áreas De Processos E Estratégia E Gente E Cultura Estão Trabalhando Em Conjunto Na Revisão E No Aprimoramento Do Conteúdo, Trazendo Exemplos Mais Práticos E Situações Do Dia A Dia.\r\n\r\na Proposta É Tornar O Ato Normativo Mais Claro, Próximo E Conectado À Realidade Das Pessoas, Facilitando A Compreensão E Mostrando, Na Prática, Como Os Temas Abordados Se Aplicam À Nossa Rotina.",
+          "data": "2026-09-11",
+          "origem": "plano"
+        },
+        {
+          "texto": "A Digest Ainda Está Em Fase De Edição. As Áreas De Processos E Estratégia E Gente E Cultura Estão Trabalhando Em Conjunto Na Revisão E No Aprimoramento Do Conteúdo, Trazendo Exemplos Mais Práticos E Situações Do Dia A Dia.\r\n\r\na Proposta É Tornar O Ato Normativo Mais Claro, Próximo E Conectado À Realidade Das Pessoas, Facilitando A Compreensão E Mostrando, Na Prática, Como Os Temas Abordados Se Aplicam À Nossa Rotina.",
+          "data": "2026-09-11",
+          "origem": "plano"
+        },
+        {
+          "texto": "A Digest Ainda Está Em Fase De Edição. As Áreas De Processos E Estratégia E Gente E Cultura Estão Trabalhando Em Conjunto Na Revisão E No Aprimoramento Do Conteúdo, Trazendo Exemplos Mais Práticos E Situações Do Dia A Dia.\r\n\r\na Proposta É Tornar O Ato Normativo Mais Claro, Próximo E Conectado À Realidade Das Pessoas, Facilitando A Compreensão E Mostrando, Na Prática, Como Os Temas Abordados Se Aplicam À Nossa Rotina.",
+          "data": "2026-09-11",
+          "origem": "plano"
+        }
+      ]
+    },
+    {
+      "mes": 5,
+      "ano": 2026,
+      "mes_referencia": 10,
+      "registros": []
+    },
+    {
+      "mes": 6,
+      "ano": 2026,
+      "mes_referencia": 11,
+      "registros": []
+    },
+    {
+      "mes": 7,
+      "ano": 2026,
+      "mes_referencia": 12,
+      "registros": []
+    },
+    {
+      "mes": 8,
+      "ano": 2027,
+      "mes_referencia": 1,
+      "registros": []
+    }
+  ],
+  "indicadores": [],
+  "registro": {
+    "pontos_criticos": null,
+    "fatores_sucesso": null,
+    "itens_fora_escopo": null,
+    "atualizado_por": null,
+    "atualizado_em": null
+  },
+  "pode_editar": false
+}

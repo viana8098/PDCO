@@ -1,0 +1,244 @@
+{
+  "plano": {
+    "cd_planoacao": "26736",
+    "subtipo": "P.a. Pdco Estratégico  -transversal 2026",
+    "status": "Em Andamento",
+    "area_codigo": "100",
+    "area_nome": "2.2.2 Estratégia Organizacional",
+    "responsavel": "Responsável 17",
+    "arquetipos_culturais": "Aprimoramento Da Eficiência Dos Rituais De Gestão Considerando A Capacidade Para A Tomada De Decisão​",
+    "resultados_esperados": "O Plano Visa Aprimorar Os Rituais De Gestão Da Organização, Por Meio Do Diagnóstico, Redesenho, Padronização E Implantação De Novas Diretrizes E Ferramentas, Para Tornar A Tomada De Decisão Mais Ágil, Estruturada, Efetiva E Alinhada Aos Objetivos Estratégicos Institucionais.",
+    "data_inicio": "2026-07-08",
+    "data_fim": "2026-12-18",
+    "execucao": 0.2857142857142857,
+    "resumo_acoes": {
+      "total": 7,
+      "concluidas": 2,
+      "atrasadas": 2
+    }
+  },
+  "acoes": [
+    {
+      "cd_acao": "26808",
+      "nome": "Mapear Todos Os Rituais De Gestão Existentes (etapa 1 - Diagnóstico Estruturado)",
+      "status": "Concluído",
+      "prazo_inicial": "2026-07-01",
+      "prazo_final": "2026-07-03",
+      "responsavel": "Responsável 11"
+    },
+    {
+      "cd_acao": "27185",
+      "nome": "Documentar Objetivo, Frequência, Pautas E Participantes (etapa 1 - Diagnóstico Estruturado)",
+      "status": "Concluído",
+      "prazo_inicial": "2026-07-06",
+      "prazo_final": "2026-07-10",
+      "responsavel": "Responsável 11"
+    },
+    {
+      "cd_acao": "27186",
+      "nome": "Aplicar Pesquisa De Percepção Com Participantes Chave (etapa 1 - Diagnóstico Estruturado)",
+      "status": "Em Andamento",
+      "prazo_inicial": "2026-07-14",
+      "prazo_final": "2026-08-20",
+      "responsavel": "Responsável 11"
+    },
+    {
+      "cd_acao": "27187",
+      "nome": "Realizar Avaliação Do Diagnóstico (etapa 1 - Diagnóstico Estruturado)",
+      "status": "Planejado",
+      "prazo_inicial": "2026-08-20",
+      "prazo_final": "2026-09-15",
+      "responsavel": "Responsável 11"
+    },
+    {
+      "cd_acao": "27190",
+      "nome": "Mapear As Oportunidades De Melhoria E Submeter Para Validação Da Proposta De Modelo (etapa 2 - Proposição De Melhoria)",
+      "status": "Planejado",
+      "prazo_inicial": "2026-09-15",
+      "prazo_final": "2026-10-20",
+      "responsavel": "Responsável 11"
+    },
+    {
+      "cd_acao": "27192",
+      "nome": "Atualizar Documentação Dos Rituais Com As Melhorias Aplicadas (papéis, Objetivos E Cadência Para Cada Rito)  (etapa 2 - Proposição De Melhoria)",
+      "status": "Planejado",
+      "prazo_inicial": "2026-10-20",
+      "prazo_final": "2026-10-20",
+      "responsavel": "Responsável 11"
+    },
+    {
+      "cd_acao": "27198",
+      "nome": "Comunicar O Novo Modelo Para Toda A Organização (etapa 4 - Capacitação E Comunicação)",
+      "status": "Planejado",
+      "prazo_inicial": "2026-12-01",
+      "prazo_final": "2026-12-18",
+      "responsavel": "Responsável 11"
+    }
+  ],
+  "acompanhamento": [
+    {
+      "mes": 1,
+      "ano": 2026,
+      "mes_referencia": 7,
+      "registros": [
+        {
+          "texto": "A Apresentação Das Cerimônias - Jornada Das Reuniões Institucionais - Foi Resgatada E Apresentam O Objetivo, Stakeholders, Periodicidade E Entregas. Ver Anexo.",
+          "data": "2026-07-08",
+          "origem": "plano"
+        },
+        {
+          "texto": "Em Alinhamento Com A Digest, Considerar Nas Revisões Das Cerimônias, Trazer Boas Práticas, Melhorias Para:\r\n- Redução Do Tempo Improdutivo Em Reuniões;\r\n- Maior Percentual De Deliberações Concluídas;\r\n- Menor Recorrência De Pautas;\r\n- Aumento Das Decisões Baseadas Em Evidências;\r\n- Clareza De Responsáveis E Prazos.",
+          "data": "2026-07-21",
+          "origem": "plano"
+        },
+        {
+          "texto": "A Apresentação Das Cerimônias - Jornada Das Reuniões Institucionais - Foi Resgatada E Apresentam O Objetivo, Stakeholders, Periodicidade E Entregas. Ver Anexo.",
+          "data": "2026-07-08",
+          "origem": "plano"
+        },
+        {
+          "texto": "Em Alinhamento Com A Digest, Considerar Nas Revisões Das Cerimônias, Trazer Boas Práticas, Melhorias Para:\r\n- Redução Do Tempo Improdutivo Em Reuniões;\r\n- Maior Percentual De Deliberações Concluídas;\r\n- Menor Recorrência De Pautas;\r\n- Aumento Das Decisões Baseadas Em Evidências;\r\n- Clareza De Responsáveis E Prazos.",
+          "data": "2026-07-21",
+          "origem": "plano"
+        },
+        {
+          "texto": "A Apresentação Das Cerimônias - Jornada Das Reuniões Institucionais - Foi Resgatada E Apresentam O Objetivo, Stakeholders, Periodicidade E Entregas. Ver Anexo.",
+          "data": "2026-07-08",
+          "origem": "plano"
+        },
+        {
+          "texto": "Em Alinhamento Com A Digest, Considerar Nas Revisões Das Cerimônias, Trazer Boas Práticas, Melhorias Para:\r\n- Redução Do Tempo Improdutivo Em Reuniões;\r\n- Maior Percentual De Deliberações Concluídas;\r\n- Menor Recorrência De Pautas;\r\n- Aumento Das Decisões Baseadas Em Evidências;\r\n- Clareza De Responsáveis E Prazos.",
+          "data": "2026-07-21",
+          "origem": "plano"
+        },
+        {
+          "texto": "A Apresentação Das Cerimônias - Jornada Das Reuniões Institucionais - Foi Resgatada E Apresentam O Objetivo, Stakeholders, Periodicidade E Entregas. Ver Anexo.",
+          "data": "2026-07-08",
+          "origem": "plano"
+        },
+        {
+          "texto": "Em Alinhamento Com A Digest, Considerar Nas Revisões Das Cerimônias, Trazer Boas Práticas, Melhorias Para:\r\n- Redução Do Tempo Improdutivo Em Reuniões;\r\n- Maior Percentual De Deliberações Concluídas;\r\n- Menor Recorrência De Pautas;\r\n- Aumento Das Decisões Baseadas Em Evidências;\r\n- Clareza De Responsáveis E Prazos.",
+          "data": "2026-07-21",
+          "origem": "plano"
+        },
+        {
+          "texto": "A Apresentação Das Cerimônias - Jornada Das Reuniões Institucionais - Foi Resgatada E Apresentam O Objetivo, Stakeholders, Periodicidade E Entregas. Ver Anexo.",
+          "data": "2026-07-08",
+          "origem": "plano"
+        },
+        {
+          "texto": "Em Alinhamento Com A Digest, Considerar Nas Revisões Das Cerimônias, Trazer Boas Práticas, Melhorias Para:\r\n- Redução Do Tempo Improdutivo Em Reuniões;\r\n- Maior Percentual De Deliberações Concluídas;\r\n- Menor Recorrência De Pautas;\r\n- Aumento Das Decisões Baseadas Em Evidências;\r\n- Clareza De Responsáveis E Prazos.",
+          "data": "2026-07-21",
+          "origem": "plano"
+        },
+        {
+          "texto": "A Apresentação Das Cerimônias - Jornada Das Reuniões Institucionais - Foi Resgatada E Apresentam O Objetivo, Stakeholders, Periodicidade E Entregas. Ver Anexo.",
+          "data": "2026-07-08",
+          "origem": "plano"
+        },
+        {
+          "texto": "Em Alinhamento Com A Digest, Considerar Nas Revisões Das Cerimônias, Trazer Boas Práticas, Melhorias Para:\r\n- Redução Do Tempo Improdutivo Em Reuniões;\r\n- Maior Percentual De Deliberações Concluídas;\r\n- Menor Recorrência De Pautas;\r\n- Aumento Das Decisões Baseadas Em Evidências;\r\n- Clareza De Responsáveis E Prazos.",
+          "data": "2026-07-21",
+          "origem": "plano"
+        },
+        {
+          "texto": "A Apresentação Das Cerimônias - Jornada Das Reuniões Institucionais - Foi Resgatada E Apresentam O Objetivo, Stakeholders, Periodicidade E Entregas. Ver Anexo.",
+          "data": "2026-07-08",
+          "origem": "plano"
+        },
+        {
+          "texto": "Em Alinhamento Com A Digest, Considerar Nas Revisões Das Cerimônias, Trazer Boas Práticas, Melhorias Para:\r\n- Redução Do Tempo Improdutivo Em Reuniões;\r\n- Maior Percentual De Deliberações Concluídas;\r\n- Menor Recorrência De Pautas;\r\n- Aumento Das Decisões Baseadas Em Evidências;\r\n- Clareza De Responsáveis E Prazos.",
+          "data": "2026-07-21",
+          "origem": "plano"
+        }
+      ]
+    },
+    {
+      "mes": 2,
+      "ano": 2026,
+      "mes_referencia": 8,
+      "registros": []
+    },
+    {
+      "mes": 3,
+      "ano": 2026,
+      "mes_referencia": 9,
+      "registros": [
+        {
+          "texto": "Foi Concluída A Análise Das Cerimônias De Gestão Atualmente Praticadas, Buscando Compreender Sua Finalidade, Dinâmica E Oportunidades De Aprimoramento. A Partir Dessa Análise, Foi Estruturado O Diagnóstico De Maturidade Das Cerimônias De Gestão, Com Perguntas Direcionadas Aos Principais Aspectos De Efetividade Dos Rituais. Para Ampliar A Qualidade Das Informações, Foram Desenvolvidos Formulários Personalizados Para Líderes E Times, Considerando As Diferentes Experiências E Perspectivas De Participação Nas Cerimônias.\r\nneste Momento, Estamos Na Etapa De Coleta Das Percepções, Com Os Formulários Disponíveis No Período De 31/08 A 09/09. Paralelamente, Está Sendo Realizada A Mobilização De Líderes E Equipes Para Estimular A Participação E Garantir Uma Visão Ampla Sobre O Funcionamento Atual Dos Rituais. Essa Escuta Será Fundamental Para Identificar Pontos Fortes, Oportunidades De Melhoria E Boas Práticas Que Subsidiarão As Próximas Etapas Do Aprimoramento.\r\n\r\n\r\nlink Forms Time&#128071;&#127995;:\r\nhttps://forms.cloud.microsoft/r/39sbbuyvgh\r\n\r\nlink Forms Líderes&#128071;&#127995;:\r\nhttps://forms.cloud.microsoft/r/4fzridufkk",
+          "data": "2026-09-02",
+          "origem": "plano"
+        },
+        {
+          "texto": "Foi Concluída A Análise Das Cerimônias De Gestão Atualmente Praticadas, Buscando Compreender Sua Finalidade, Dinâmica E Oportunidades De Aprimoramento. A Partir Dessa Análise, Foi Estruturado O Diagnóstico De Maturidade Das Cerimônias De Gestão, Com Perguntas Direcionadas Aos Principais Aspectos De Efetividade Dos Rituais. Para Ampliar A Qualidade Das Informações, Foram Desenvolvidos Formulários Personalizados Para Líderes E Times, Considerando As Diferentes Experiências E Perspectivas De Participação Nas Cerimônias.\r\nneste Momento, Estamos Na Etapa De Coleta Das Percepções, Com Os Formulários Disponíveis No Período De 31/08 A 09/09. Paralelamente, Está Sendo Realizada A Mobilização De Líderes E Equipes Para Estimular A Participação E Garantir Uma Visão Ampla Sobre O Funcionamento Atual Dos Rituais. Essa Escuta Será Fundamental Para Identificar Pontos Fortes, Oportunidades De Melhoria E Boas Práticas Que Subsidiarão As Próximas Etapas Do Aprimoramento.\r\n\r\n\r\nlink Forms Time&#128071;&#127995;:\r\nhttps://forms.cloud.microsoft/r/39sbbuyvgh\r\n\r\nlink Forms Líderes&#128071;&#127995;:\r\nhttps://forms.cloud.microsoft/r/4fzridufkk",
+          "data": "2026-09-02",
+          "origem": "plano"
+        },
+        {
+          "texto": "Foi Concluída A Análise Das Cerimônias De Gestão Atualmente Praticadas, Buscando Compreender Sua Finalidade, Dinâmica E Oportunidades De Aprimoramento. A Partir Dessa Análise, Foi Estruturado O Diagnóstico De Maturidade Das Cerimônias De Gestão, Com Perguntas Direcionadas Aos Principais Aspectos De Efetividade Dos Rituais. Para Ampliar A Qualidade Das Informações, Foram Desenvolvidos Formulários Personalizados Para Líderes E Times, Considerando As Diferentes Experiências E Perspectivas De Participação Nas Cerimônias.\r\nneste Momento, Estamos Na Etapa De Coleta Das Percepções, Com Os Formulários Disponíveis No Período De 31/08 A 09/09. Paralelamente, Está Sendo Realizada A Mobilização De Líderes E Equipes Para Estimular A Participação E Garantir Uma Visão Ampla Sobre O Funcionamento Atual Dos Rituais. Essa Escuta Será Fundamental Para Identificar Pontos Fortes, Oportunidades De Melhoria E Boas Práticas Que Subsidiarão As Próximas Etapas Do Aprimoramento.\r\n\r\n\r\nlink Forms Time&#128071;&#127995;:\r\nhttps://forms.cloud.microsoft/r/39sbbuyvgh\r\n\r\nlink Forms Líderes&#128071;&#127995;:\r\nhttps://forms.cloud.microsoft/r/4fzridufkk",
+          "data": "2026-09-02",
+          "origem": "plano"
+        },
+        {
+          "texto": "Foi Concluída A Análise Das Cerimônias De Gestão Atualmente Praticadas, Buscando Compreender Sua Finalidade, Dinâmica E Oportunidades De Aprimoramento. A Partir Dessa Análise, Foi Estruturado O Diagnóstico De Maturidade Das Cerimônias De Gestão, Com Perguntas Direcionadas Aos Principais Aspectos De Efetividade Dos Rituais. Para Ampliar A Qualidade Das Informações, Foram Desenvolvidos Formulários Personalizados Para Líderes E Times, Considerando As Diferentes Experiências E Perspectivas De Participação Nas Cerimônias.\r\nneste Momento, Estamos Na Etapa De Coleta Das Percepções, Com Os Formulários Disponíveis No Período De 31/08 A 09/09. Paralelamente, Está Sendo Realizada A Mobilização De Líderes E Equipes Para Estimular A Participação E Garantir Uma Visão Ampla Sobre O Funcionamento Atual Dos Rituais. Essa Escuta Será Fundamental Para Identificar Pontos Fortes, Oportunidades De Melhoria E Boas Práticas Que Subsidiarão As Próximas Etapas Do Aprimoramento.\r\n\r\n\r\nlink Forms Time&#128071;&#127995;:\r\nhttps://forms.cloud.microsoft/r/39sbbuyvgh\r\n\r\nlink Forms Líderes&#128071;&#127995;:\r\nhttps://forms.cloud.microsoft/r/4fzridufkk",
+          "data": "2026-09-02",
+          "origem": "plano"
+        },
+        {
+          "texto": "Foi Concluída A Análise Das Cerimônias De Gestão Atualmente Praticadas, Buscando Compreender Sua Finalidade, Dinâmica E Oportunidades De Aprimoramento. A Partir Dessa Análise, Foi Estruturado O Diagnóstico De Maturidade Das Cerimônias De Gestão, Com Perguntas Direcionadas Aos Principais Aspectos De Efetividade Dos Rituais. Para Ampliar A Qualidade Das Informações, Foram Desenvolvidos Formulários Personalizados Para Líderes E Times, Considerando As Diferentes Experiências E Perspectivas De Participação Nas Cerimônias.\r\nneste Momento, Estamos Na Etapa De Coleta Das Percepções, Com Os Formulários Disponíveis No Período De 31/08 A 09/09. Paralelamente, Está Sendo Realizada A Mobilização De Líderes E Equipes Para Estimular A Participação E Garantir Uma Visão Ampla Sobre O Funcionamento Atual Dos Rituais. Essa Escuta Será Fundamental Para Identificar Pontos Fortes, Oportunidades De Melhoria E Boas Práticas Que Subsidiarão As Próximas Etapas Do Aprimoramento.\r\n\r\n\r\nlink Forms Time&#128071;&#127995;:\r\nhttps://forms.cloud.microsoft/r/39sbbuyvgh\r\n\r\nlink Forms Líderes&#128071;&#127995;:\r\nhttps://forms.cloud.microsoft/r/4fzridufkk",
+          "data": "2026-09-02",
+          "origem": "plano"
+        },
+        {
+          "texto": "Foi Concluída A Análise Das Cerimônias De Gestão Atualmente Praticadas, Buscando Compreender Sua Finalidade, Dinâmica E Oportunidades De Aprimoramento. A Partir Dessa Análise, Foi Estruturado O Diagnóstico De Maturidade Das Cerimônias De Gestão, Com Perguntas Direcionadas Aos Principais Aspectos De Efetividade Dos Rituais. Para Ampliar A Qualidade Das Informações, Foram Desenvolvidos Formulários Personalizados Para Líderes E Times, Considerando As Diferentes Experiências E Perspectivas De Participação Nas Cerimônias.\r\nneste Momento, Estamos Na Etapa De Coleta Das Percepções, Com Os Formulários Disponíveis No Período De 31/08 A 09/09. Paralelamente, Está Sendo Realizada A Mobilização De Líderes E Equipes Para Estimular A Participação E Garantir Uma Visão Ampla Sobre O Funcionamento Atual Dos Rituais. Essa Escuta Será Fundamental Para Identificar Pontos Fortes, Oportunidades De Melhoria E Boas Práticas Que Subsidiarão As Próximas Etapas Do Aprimoramento.\r\n\r\n\r\nlink Forms Time&#128071;&#127995;:\r\nhttps://forms.cloud.microsoft/r/39sbbuyvgh\r\n\r\nlink Forms Líderes&#128071;&#127995;:\r\nhttps://forms.cloud.microsoft/r/4fzridufkk",
+          "data": "2026-09-02",
+          "origem": "plano"
+        },
+        {
+          "texto": "Foi Concluída A Análise Das Cerimônias De Gestão Atualmente Praticadas, Buscando Compreender Sua Finalidade, Dinâmica E Oportunidades De Aprimoramento. A Partir Dessa Análise, Foi Estruturado O Diagnóstico De Maturidade Das Cerimônias De Gestão, Com Perguntas Direcionadas Aos Principais Aspectos De Efetividade Dos Rituais. Para Ampliar A Qualidade Das Informações, Foram Desenvolvidos Formulários Personalizados Para Líderes E Times, Considerando As Diferentes Experiências E Perspectivas De Participação Nas Cerimônias.\r\nneste Momento, Estamos Na Etapa De Coleta Das Percepções, Com Os Formulários Disponíveis No Período De 31/08 A 09/09. Paralelamente, Está Sendo Realizada A Mobilização De Líderes E Equipes Para Estimular A Participação E Garantir Uma Visão Ampla Sobre O Funcionamento Atual Dos Rituais. Essa Escuta Será Fundamental Para Identificar Pontos Fortes, Oportunidades De Melhoria E Boas Práticas Que Subsidiarão As Próximas Etapas Do Aprimoramento.\r\n\r\n\r\nlink Forms Time&#128071;&#127995;:\r\nhttps://forms.cloud.microsoft/r/39sbbuyvgh\r\n\r\nlink Forms Líderes&#128071;&#127995;:\r\nhttps://forms.cloud.microsoft/r/4fzridufkk",
+          "data": "2026-09-02",
+          "origem": "plano"
+        }
+      ]
+    },
+    {
+      "mes": 4,
+      "ano": 2026,
+      "mes_referencia": 10,
+      "registros": []
+    },
+    {
+      "mes": 5,
+      "ano": 2026,
+      "mes_referencia": 11,
+      "registros": []
+    },
+    {
+      "mes": 6,
+      "ano": 2026,
+      "mes_referencia": 12,
+      "registros": []
+    },
+    {
+      "mes": 7,
+      "ano": 2027,
+      "mes_referencia": 1,
+      "registros": []
+    },
+    {
+      "mes": 8,
+      "ano": 2027,
+      "mes_referencia": 2,
+      "registros": []
+    }
+  ],
+  "indicadores": [],
+  "registro": {
+    "pontos_criticos": null,
+    "fatores_sucesso": null,
+    "itens_fora_escopo": null,
+    "atualizado_por": null,
+    "atualizado_em": null
+  },
+  "pode_editar": false
+}

@@ -4,6 +4,12 @@
  * backend-pdco LOCAL (que precisa estar rodando e conectado ao dw real,
  * `npm run start:dev` em backend-pdco/) e grava em public/_data/pdco/.
  *
+ * Anonimiza responsáveis: os nomes reais (formatados a partir do login do
+ * dw) nunca chegam a ser escritos em disco — cada nome único vira
+ * "Responsável NN", de forma estável (mesma pessoa = mesmo rótulo em todos
+ * os planos/ações), antes de qualquer gravação. `login_responsavel` (o
+ * login bruto) é descartado por completo do snapshot.
+ *
  * Não há área de administrador congelada aqui: o registro qualitativo já
  * vem sempre somente-leitura da API (ver backend-pdco/src/services/pdco.service.ts).
  *
@@ -41,6 +47,42 @@ function escreverJSON(caminho, dados) {
     fs.writeFileSync(caminho, JSON.stringify(dados, null, 2) + '\n', 'utf-8')
 }
 
+/** Monta nome-real -> "Responsável NN" (ordem alfabética, estável entre execuções). */
+function montarMapaAnonimizacao(planos, detalhes) {
+    const nomes = new Set()
+    for (const plano of planos) {
+        if (plano.responsavel) nomes.add(plano.responsavel.trim())
+    }
+    for (const detalhe of detalhes) {
+        for (const acao of detalhe.acoes) {
+            if (acao.responsavel) nomes.add(acao.responsavel.trim())
+        }
+    }
+
+    const ordenados = [...nomes].sort((a, b) => a.localeCompare(b))
+    const mapa = new Map()
+    ordenados.forEach((nome, indice) => mapa.set(nome, `Responsável ${String(indice + 1).padStart(2, '0')}`))
+    return mapa
+}
+
+function anonimizar(nome, mapa) {
+    if (!nome) return nome
+    return mapa.get(nome.trim()) ?? nome
+}
+
+function anonimizarPlano(plano, mapa) {
+    const { login_responsavel, ...resto } = plano
+    return { ...resto, responsavel: anonimizar(plano.responsavel, mapa) }
+}
+
+function anonimizarDetalhe(detalhe, mapa) {
+    return {
+        ...detalhe,
+        plano: anonimizarPlano(detalhe.plano, mapa),
+        acoes: detalhe.acoes.map((acao) => ({ ...acao, responsavel: anonimizar(acao.responsavel, mapa) })),
+    }
+}
+
 async function main() {
     console.log(`Lendo backend-pdco em ${BASE}...`)
 
@@ -51,12 +93,22 @@ async function main() {
     const planos = await getJSON(`${BASE}/api/pdco`)
     console.log(`${planos.length} plano(s) encontrados — buscando detalhe de cada um...`)
 
-    const planosComAcoes = []
+    const detalhesPorPlano = new Map()
     await mapaComConcorrencia(planos, CONCORRENCIA, async (plano) => {
         const detalhe = await getJSON(`${BASE}/api/pdco/${encodeURIComponent(plano.cd_planoacao)}`)
-        escreverJSON(path.join(OUT_DIR, 'planos', `${plano.cd_planoacao}.json`), detalhe)
-        planosComAcoes.push({ ...plano, acoes_nomes: detalhe.acoes.map((a) => a.nome).filter(Boolean) })
+        detalhesPorPlano.set(plano.cd_planoacao, detalhe)
     })
+
+    const detalhes = [...detalhesPorPlano.values()]
+    const mapaAnonimizacao = montarMapaAnonimizacao(planos, detalhes)
+    console.log(`Anonimizando ${mapaAnonimizacao.size} responsável(is) único(s)...`)
+
+    const planosComAcoes = []
+    for (const plano of planos) {
+        const detalhe = anonimizarDetalhe(detalhesPorPlano.get(plano.cd_planoacao), mapaAnonimizacao)
+        escreverJSON(path.join(OUT_DIR, 'planos', `${plano.cd_planoacao}.json`), detalhe)
+        planosComAcoes.push({ ...detalhe.plano, acoes_nomes: detalhe.acoes.map((a) => a.nome).filter(Boolean) })
+    }
 
     escreverJSON(path.join(OUT_DIR, 'planos.json'), planosComAcoes)
 

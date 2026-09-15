@@ -1,0 +1,80 @@
+{
+  "plano": {
+    "cd_planoacao": "32593",
+    "subtipo": "P.a. Pdco Tático  - Área 2026",
+    "status": "Planejado",
+    "area_codigo": "73",
+    "area_nome": "2.1.1.9 Gestão De Ativos",
+    "responsavel": "Responsável 18",
+    "arquetipos_culturais": "Pdco - Gestão De Ativos",
+    "resultados_esperados": null,
+    "data_inicio": "2026-08-03",
+    "data_fim": "2027-03-31",
+    "execucao": null,
+    "resumo_acoes": {
+      "total": 0,
+      "concluidas": 0,
+      "atrasadas": 0
+    }
+  },
+  "acoes": [],
+  "acompanhamento": [
+    {
+      "mes": 1,
+      "ano": 2026,
+      "mes_referencia": 8,
+      "registros": []
+    },
+    {
+      "mes": 2,
+      "ano": 2026,
+      "mes_referencia": 9,
+      "registros": []
+    },
+    {
+      "mes": 3,
+      "ano": 2026,
+      "mes_referencia": 10,
+      "registros": []
+    },
+    {
+      "mes": 4,
+      "ano": 2026,
+      "mes_referencia": 11,
+      "registros": []
+    },
+    {
+      "mes": 5,
+      "ano": 2026,
+      "mes_referencia": 12,
+      "registros": []
+    },
+    {
+      "mes": 6,
+      "ano": 2027,
+      "mes_referencia": 1,
+      "registros": []
+    },
+    {
+      "mes": 7,
+      "ano": 2027,
+      "mes_referencia": 2,
+      "registros": []
+    },
+    {
+      "mes": 8,
+      "ano": 2027,
+      "mes_referencia": 3,
+      "registros": []
+    }
+  ],
+  "indicadores": [],
+  "registro": {
+    "pontos_criticos": null,
+    "fatores_sucesso": null,
+    "itens_fora_escopo": null,
+    "atualizado_por": null,
+    "atualizado_em": null
+  },
+  "pode_editar": false
+}
