@@ -1,0 +1,17 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "backend-pdco",
+      "runtimeExecutable": "npm",
+      "runtimeArgs": ["--prefix", "backend-pdco", "run", "start:dev"],
+      "port": 8020
+    },
+    {
+      "name": "frontend-pdco",
+      "runtimeExecutable": "npm",
+      "runtimeArgs": ["--prefix", "frontend-pdco", "run", "dev"],
+      "port": 5175
+    }
+  ]
+}

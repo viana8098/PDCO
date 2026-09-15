@@ -1,0 +1,24 @@
+# Dependências e build
+node_modules/
+dist/
+build/
+.wrangler/
+
+# Variáveis de ambiente (contêm credenciais — nunca versionar)
+.env
+.env.local
+*.env
+
+# Logs
+*.log
+npm-debug.log*
+
+# Editor / SO
+.vscode/
+.idea/
+Thumbs.db
+.DS_Store
+
+# Claude Code (local/sessão)
+.claude/settings.local.json
+.claude/scheduled_tasks.lock

@@ -1,0 +1,1234 @@
+/*
+ * Painel de Cultura Organizacional — versão standalone. Paleta/tipografia
+ * portadas do protótipo de referência (dashboard executivo azul-marinho,
+ * chips RAG). Tudo escopado sob .pdco-app, sem Tailwind/Radix.
+ */
+
+html, body, #root {
+  height: 100%;
+  margin: 0;
+}
+
+@font-face {
+  font-family: 'Plus Jakarta Sans';
+  font-style: normal;
+  font-weight: 600 700;
+  font-display: swap;
+  src: url('https://fonts.gstatic.com/s/plusjakartasans/v8/LDIbaomQNQcsA88c7O9yZ4KMCoOg4IA6-91Sk7F0.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400 600;
+  font-display: swap;
+  src: url('https://fonts.gstatic.com/s/inter/v13/UcCO3FwrK3iLTeHuS_fvQtMwCp50KnMa1ZL7.woff2') format('woff2');
+}
+
+.pdco-app {
+  --bg: #172a49;
+  --surface: #1d3357;
+  --surface-2: #24406c;
+  --border: rgba(255, 255, 255, 0.12);
+  --text: #f8fafc;
+  --text-muted: #a9bcdd;
+  --accent: #a7d8ff;
+  --accent-soft: rgba(167, 216, 255, 0.15);
+  --tatico: #c4b5fd;
+  --tatico-soft: rgba(196, 181, 253, 0.15);
+  --green: #34d399;
+  --green-soft: rgba(52, 211, 153, 0.15);
+  --amarelo: #fbbf24;
+  --amarelo-soft: rgba(251, 191, 36, 0.15);
+  --red: #f87171;
+  --red-soft: rgba(248, 113, 113, 0.15);
+  --font-display: 'Plus Jakarta Sans', ui-sans-serif, system-ui, sans-serif;
+  --font-body: 'Inter', ui-sans-serif, system-ui, sans-serif;
+  --radius-pill: 999px;
+  --radius-card: 14px;
+  --radius-badge: 999px;
+  --radius-btn: 8px;
+
+  min-height: 100vh;
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--font-body);
+  -webkit-font-smoothing: antialiased;
+}
+
+.pdco-app .pdco-standalone-header {
+  padding: 20px 0 4px;
+}
+.pdco-app .pdco-standalone-brand {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 20px;
+  color: var(--text);
+}
+.pdco-app,
+.pdco-app * {
+  box-sizing: border-box;
+}
+.pdco-app :focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+  border-radius: 4px;
+}
+.pdco-app h1,
+.pdco-app h2,
+.pdco-app h3,
+.pdco-app .pdco-kicker {
+  font-family: var(--font-display);
+  letter-spacing: -0.02em;
+}
+
+.pdco-app .pdco-content {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 24px 24px 48px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* -------------------------------- Sub-nav --------------------------------- */
+.pdco-app .pdco-subnav {
+  display: flex;
+  gap: 6px;
+  flex-wrap: wrap;
+}
+.pdco-app .pdco-subnav-link {
+  padding: 8px 16px;
+  border-radius: var(--radius-pill);
+  font-size: 13px;
+  font-weight: 600;
+  color: rgba(255, 255, 255, 0.75);
+  text-decoration: none;
+  transition: background-color 0.15s ease, color 0.15s ease;
+}
+.pdco-app .pdco-subnav-link:hover {
+  background: rgba(255, 255, 255, 0.08);
+  color: var(--text);
+}
+.pdco-app .pdco-subnav-link.pdco-subnav-ativo {
+  background: var(--text);
+  color: #173155;
+}
+
+.pdco-app .pdco-page {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.pdco-app .pdco-page-head .pdco-page-title,
+.pdco-app .pdco-detail-title,
+.pdco-app .pdco-banner-title {
+  font-family: var(--font-display);
+  font-weight: 700;
+  color: var(--text);
+  margin: 0;
+}
+.pdco-app .pdco-page-title {
+  font-size: clamp(1.4rem, 2.4vw, 1.9rem);
+}
+.pdco-app .pdco-page-sub {
+  color: var(--text-muted);
+  font-size: 13.5px;
+  margin: 4px 0 0;
+}
+
+.pdco-app .pdco-voltar {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 12.5px;
+  color: var(--text-muted);
+  text-decoration: none;
+  width: fit-content;
+}
+.pdco-app .pdco-voltar:hover {
+  color: var(--text);
+}
+.pdco-app .pdco-inline-link {
+  color: var(--accent);
+  text-decoration: none;
+}
+.pdco-app .pdco-inline-link:hover {
+  text-decoration: underline;
+}
+
+/* -------------------------------- Filtros --------------------------------- */
+.pdco-app .pdco-filters-row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+.pdco-app .pdco-filter-pill {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: var(--surface-2);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-pill);
+  padding: 6px 14px;
+}
+.pdco-app .pdco-filter-pill label {
+  font-size: 12px;
+  color: var(--text-muted);
+  white-space: nowrap;
+}
+.pdco-app .pdco-filter-pill select {
+  background: transparent;
+  border: none;
+  color: var(--text);
+  font-size: 12px;
+  font-family: inherit;
+  cursor: pointer;
+  max-width: 220px;
+}
+.pdco-app .pdco-filter-pill select:disabled {
+  color: var(--text-muted);
+  cursor: default;
+}
+.pdco-app .pdco-filter-pill select option {
+  background: #172a49;
+  color: var(--text);
+}
+.pdco-app .pdco-admin-badge {
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.4px;
+  text-transform: uppercase;
+  color: var(--accent);
+  background: var(--accent-soft);
+  border-radius: var(--radius-pill);
+  padding: 6px 12px;
+}
+.pdco-app .pdco-toggle-group {
+  display: inline-flex;
+  border-radius: var(--radius-btn);
+  border: 1px solid var(--border);
+  background: var(--surface-2);
+  padding: 2px;
+  gap: 2px;
+}
+.pdco-app .pdco-toggle-group button {
+  border: none;
+  background: transparent;
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 12px;
+  font-weight: 500;
+  font-family: inherit;
+  border-radius: 6px;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+.pdco-app .pdco-toggle-group button.pdco-toggle-ativo {
+  background: rgba(255, 255, 255, 0.12);
+  color: var(--text);
+}
+
+/* -------------------------------- Avatares -------------------------------- */
+.pdco-app .pdco-avatar {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background: var(--text);
+  color: var(--bg);
+  font-size: 11px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: none;
+}
+
+/* --------------------------------- Painéis -------------------------------- */
+.pdco-app .pdco-panel {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-card);
+  overflow: hidden;
+}
+.pdco-app .pdco-panel-header {
+  padding: 22px 22px 14px;
+}
+.pdco-app .pdco-kicker {
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.55px;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  margin: 0 0 4px;
+}
+.pdco-app .pdco-eyebrow {
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  color: var(--text-muted);
+}
+.pdco-app .pdco-panel-title {
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--text);
+  margin: 0;
+}
+.pdco-app .pdco-panel-subtitle {
+  font-size: 12px;
+  color: var(--text-muted);
+  margin: 4px 0 0;
+}
+
+.pdco-app .pdco-section-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 12px;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+.pdco-app .pdco-section-title {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 17px;
+  color: var(--text);
+  margin: 0;
+}
+
+/* --------------------------------- Chips ----------------------------------- */
+.pdco-app .pdco-tipo-chip {
+  display: inline-flex;
+  align-items: center;
+  border-radius: var(--radius-pill);
+  padding: 2px 9px;
+  font-size: 10px;
+  font-weight: 600;
+}
+.pdco-app .pdco-tipo-estrategico {
+  background: var(--accent-soft);
+  color: var(--accent);
+}
+.pdco-app .pdco-tipo-tatico {
+  background: var(--tatico-soft);
+  color: var(--tatico);
+}
+
+.pdco-app .pdco-rag-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  border-radius: var(--radius-badge);
+  font-weight: 600;
+  white-space: nowrap;
+  border: 1px solid transparent;
+}
+.pdco-app .pdco-rag-badge-sm {
+  padding: 3px 10px;
+  font-size: 11px;
+}
+.pdco-app .pdco-rag-badge-md {
+  padding: 5px 12px;
+  font-size: 12.5px;
+}
+.pdco-app .pdco-rag-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  flex: none;
+}
+
+/* ---------------------------- Banner executivo ----------------------------- */
+.pdco-app .pdco-banner {
+  padding: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  flex-wrap: wrap;
+}
+.pdco-app .pdco-banner-title {
+  font-size: clamp(1.5rem, 2.6vw, 2.2rem);
+}
+.pdco-app .pdco-banner-sub {
+  color: var(--text-muted);
+  font-size: 13.5px;
+  margin: 6px 0 0;
+  max-width: 520px;
+}
+.pdco-app .pdco-banner-gauges-row {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.pdco-app .pdco-banner-divider {
+  width: 1px;
+  height: 64px;
+  background: var(--border);
+}
+
+/* --------------------------------- Gauge ------------------------------------ */
+.pdco-app .pdco-gauge {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+.pdco-app .pdco-gauge svg {
+  width: 100%;
+  height: 100%;
+}
+.pdco-app .pdco-gauge-value {
+  transition: stroke-dashoffset 0.6s ease;
+}
+.pdco-app .pdco-gauge-inner {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.pdco-app .pdco-gauge-pct {
+  font-family: var(--font-display);
+  font-weight: 700;
+  line-height: 1;
+}
+.pdco-app .pdco-gauge-label {
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 0.4px;
+  color: var(--text-muted);
+  margin-top: 3px;
+}
+
+/* --------------------------------- Cards de plano --------------------------- */
+.pdco-app .pdco-card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 16px;
+}
+.pdco-app .pdco-row-list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.pdco-app .pdco-plan-card,
+.pdco-app .pdco-plan-row {
+  position: relative;
+  display: flex;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-card);
+  background: var(--surface);
+  overflow: hidden;
+  text-decoration: none;
+  color: inherit;
+  transition: background-color 0.15s ease;
+}
+.pdco-app .pdco-plan-card:hover,
+.pdco-app .pdco-plan-row:hover {
+  background: var(--surface-2);
+}
+.pdco-app .pdco-plan-card-bar,
+.pdco-app .pdco-plan-row-bar {
+  width: 5px;
+  flex: none;
+}
+.pdco-app .pdco-plan-card-body {
+  padding: 16px;
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.pdco-app .pdco-plan-card-head {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 10px;
+}
+.pdco-app .pdco-plan-card-meta {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+.pdco-app .pdco-plan-card-title,
+.pdco-app .pdco-plan-row-title {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 14.5px;
+  color: var(--text);
+  margin: 0;
+  line-height: 1.35;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+.pdco-app .pdco-plan-card-progress-row {
+  display: flex;
+  justify-content: space-between;
+  font-size: 11px;
+  color: var(--text-muted);
+  margin-bottom: 4px;
+}
+.pdco-app .pdco-plan-card-pct {
+  font-weight: 700;
+  color: var(--text);
+}
+.pdco-app .pdco-progress-bar {
+  height: 6px;
+  border-radius: var(--radius-pill);
+  background: rgba(255, 255, 255, 0.1);
+  overflow: hidden;
+}
+.pdco-app .pdco-progress-bar-fill {
+  height: 100%;
+  border-radius: var(--radius-pill);
+  transition: width 0.5s ease;
+}
+.pdco-app .pdco-plan-card-foot {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 10px;
+  border-top: 1px solid var(--border);
+  font-size: 11.5px;
+  color: var(--text-muted);
+}
+.pdco-app .pdco-plan-card-atraso {
+  color: var(--red);
+  font-weight: 600;
+}
+
+.pdco-app .pdco-plan-row {
+  align-items: center;
+  padding: 10px 16px 10px 0;
+  gap: 14px;
+}
+.pdco-app .pdco-plan-row-main {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  padding-left: 14px;
+  min-width: 140px;
+}
+.pdco-app .pdco-plan-row-title {
+  -webkit-line-clamp: 1;
+  min-width: 0;
+  flex: 1;
+}
+.pdco-app .pdco-plan-row-progress {
+  width: 160px;
+  flex: none;
+}
+.pdco-app .pdco-plan-row-atraso {
+  font-size: 11px;
+  color: var(--red);
+  font-weight: 600;
+  flex: none;
+}
+
+/* ------------------------------ Detalhe do plano ---------------------------- */
+.pdco-app .pdco-detail-head {
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+.pdco-app .pdco-detail-head-top {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+.pdco-app .pdco-detail-head-info {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  min-width: 0;
+}
+.pdco-app .pdco-detail-title {
+  font-size: clamp(1.2rem, 2vw, 1.6rem);
+}
+.pdco-app .pdco-detail-meta-row {
+  display: flex;
+  gap: 14px;
+  flex-wrap: wrap;
+  font-size: 11.5px;
+  color: var(--text-muted);
+}
+.pdco-app .pdco-detail-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+@media (max-width: 900px) {
+  .pdco-app .pdco-detail-grid {
+    grid-template-columns: 1fr;
+  }
+}
+.pdco-app .pdco-rag-info {
+  border: 1px solid var(--border);
+  border-radius: var(--radius-card);
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.pdco-app .pdco-rag-info-title {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 13px;
+  margin: 0;
+  cursor: help;
+}
+.pdco-app .pdco-rag-motivos {
+  font-size: 11px;
+  color: var(--text-muted);
+  margin: 0;
+}
+.pdco-app .pdco-mini-stat-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px;
+}
+.pdco-app .pdco-mini-stat-grid-3 {
+  grid-template-columns: repeat(3, 1fr);
+}
+.pdco-app .pdco-mini-stat {
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 8px 10px;
+  background: rgba(255, 255, 255, 0.04);
+}
+.pdco-app .pdco-mini-stat-perigo {
+  border-color: rgba(248, 113, 113, 0.4);
+  background: var(--red-soft);
+}
+.pdco-app .pdco-mini-stat-label {
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 0.4px;
+  color: var(--text-muted);
+  margin: 0;
+}
+.pdco-app .pdco-mini-stat-valor {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 15px;
+  color: var(--text);
+  margin: 2px 0 0;
+}
+.pdco-app .pdco-mini-stat-perigo .pdco-mini-stat-valor {
+  color: var(--red);
+}
+
+/* ----------------------------- Timeline de previsão -------------------------- */
+.pdco-app .pdco-timeline-card {
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.pdco-app .pdco-timeline-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.pdco-app .pdco-timeline-alerta {
+  font-size: 10px;
+  font-weight: 600;
+  color: var(--red);
+}
+.pdco-app .pdco-timeline-scroll {
+  display: flex;
+  gap: 6px;
+  overflow-x: auto;
+  padding-bottom: 2px;
+}
+.pdco-app .pdco-timeline-cell {
+  min-width: 52px;
+  border-radius: 10px;
+  border: 1px solid var(--border);
+  padding: 8px 6px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  position: relative;
+  background: rgba(255, 255, 255, 0.03);
+}
+.pdco-app .pdco-timeline-mes {
+  font-size: 10px;
+  font-weight: 600;
+  color: var(--text-muted);
+}
+.pdco-app .pdco-timeline-total {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 16px;
+  color: var(--text);
+}
+.pdco-app .pdco-timeline-info {
+  border-color: rgba(167, 216, 255, 0.4);
+  background: var(--accent-soft);
+}
+.pdco-app .pdco-timeline-success {
+  border-color: rgba(52, 211, 153, 0.4);
+  background: var(--green-soft);
+}
+.pdco-app .pdco-timeline-danger {
+  border-color: rgba(248, 113, 113, 0.45);
+  background: var(--red-soft);
+}
+.pdco-app .pdco-timeline-atual {
+  position: absolute;
+  top: 4px;
+  right: 4px;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--amarelo);
+}
+
+/* -------------------------------- Ações ------------------------------------ */
+.pdco-app .pdco-tabela-acoes {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 13px;
+}
+.pdco-app .pdco-tabela-acoes th {
+  text-align: left;
+  padding: 8px 22px;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.4px;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  border-bottom: 1px solid var(--border);
+}
+.pdco-app .pdco-tabela-acoes td {
+  padding: 12px 22px;
+  border-bottom: 1px solid var(--border);
+  color: var(--text);
+  vertical-align: middle;
+}
+.pdco-app .pdco-tabela-acoes tbody tr:last-child td {
+  border-bottom: none;
+}
+.pdco-app .pdco-acao-link {
+  color: var(--text);
+  text-decoration: none;
+  font-weight: 500;
+}
+.pdco-app .pdco-acao-link:hover {
+  color: var(--accent);
+}
+.pdco-app .pdco-responsavel-cell {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  white-space: nowrap;
+}
+
+.pdco-app .pdco-status-chip {
+  display: inline-block;
+  padding: 4px 10px;
+  border-radius: var(--radius-badge);
+  font-size: 11px;
+  font-weight: 600;
+  white-space: nowrap;
+  background: rgba(255, 255, 255, 0.08);
+  color: var(--text-muted);
+}
+.pdco-app .pdco-status-concluido {
+  background: var(--green-soft);
+  color: var(--green);
+}
+.pdco-app .pdco-status-em-andamento {
+  background: var(--accent-soft);
+  color: var(--accent);
+}
+.pdco-app .pdco-status-atrasada,
+.pdco-app .pdco-status-cancelado {
+  background: var(--red-soft);
+  color: var(--red);
+}
+.pdco-app .pdco-status-suspenso {
+  background: var(--amarelo-soft);
+  color: var(--amarelo);
+}
+.pdco-app .pdco-status-planejado {
+  background: rgba(255, 255, 255, 0.08);
+  color: var(--text-muted);
+}
+
+/* ----------------------------- Cartões de texto ------------------------------ */
+.pdco-app .pdco-secondary-row,
+.pdco-app .pdco-tertiary-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+.pdco-app .pdco-tertiary-row.pdco-tertiary-single {
+  grid-template-columns: 1fr;
+}
+@media (max-width: 900px) {
+  .pdco-app .pdco-secondary-row,
+  .pdco-app .pdco-tertiary-row {
+    grid-template-columns: 1fr;
+  }
+}
+.pdco-app .pdco-text-panel {
+  padding: 22px;
+}
+.pdco-app .pdco-text-panel p {
+  margin: 0;
+  font-size: 13.5px;
+  line-height: 1.6;
+  color: var(--text-muted);
+}
+
+/* ------------------------- Acompanhamentos mensais (acordeão) ---------------- */
+.pdco-app .pdco-month-list {
+  display: flex;
+  flex-direction: column;
+  padding: 0 22px 22px;
+}
+.pdco-app .pdco-month-item {
+  border-top: 1px solid var(--border);
+}
+.pdco-app .pdco-month-item:first-child {
+  border-top: none;
+}
+.pdco-app .pdco-month-item-head {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px 4px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  text-align: left;
+  font-family: inherit;
+}
+.pdco-app .pdco-month-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--text-muted);
+  flex: none;
+}
+.pdco-app .pdco-month-com-registro .pdco-month-dot {
+  background: var(--accent);
+}
+.pdco-app .pdco-month-label {
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--text);
+  flex: 1;
+}
+.pdco-app .pdco-month-resumo {
+  font-size: 11px;
+  color: var(--text-muted);
+}
+.pdco-app .pdco-month-caret {
+  color: var(--text-muted);
+  transition: transform 0.15s ease;
+  font-size: 12px;
+}
+.pdco-app .pdco-month-caret-aberto {
+  transform: rotate(180deg);
+}
+.pdco-app .pdco-month-item-body {
+  padding: 0 4px 14px 22px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.pdco-app .pdco-month-evento {
+  font-size: 12.5px;
+  color: var(--text);
+  line-height: 1.5;
+  margin: 0;
+}
+.pdco-app .pdco-month-evento-data {
+  color: var(--text-muted);
+  font-size: 11px;
+}
+.pdco-app .pdco-month-vazio {
+  font-size: 12px;
+  color: var(--text-muted);
+  font-style: italic;
+  margin: 0;
+}
+
+/* ---------------------------- Indicadores (KR) ------------------------------- */
+.pdco-app .pdco-indicator-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  padding: 0 22px 22px;
+}
+@media (max-width: 600px) {
+  .pdco-app .pdco-indicator-grid {
+    grid-template-columns: 1fr;
+  }
+}
+.pdco-app .pdco-indicator-card {
+  background: var(--surface-2);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-card);
+  padding: 18px;
+}
+.pdco-app .pdco-indicator-card .pdco-kicker {
+  color: var(--accent);
+}
+.pdco-app .pdco-indicator-nome {
+  font-size: 13px;
+  color: var(--text);
+  margin: 4px 0 10px;
+}
+.pdco-app .pdco-indicator-valor {
+  font-size: 22px;
+  font-weight: 700;
+  font-family: var(--font-display);
+  color: var(--text);
+}
+.pdco-app .pdco-indicator-meta {
+  font-size: 12px;
+  color: var(--text-muted);
+}
+
+/* -------------------------- Registro qualitativo ------------------------------ */
+.pdco-app .pdco-registro {
+  padding: 22px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.pdco-app .pdco-registro-campo label {
+  display: block;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.4px;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  margin-bottom: 8px;
+}
+.pdco-app .pdco-registro-campo textarea {
+  width: 100%;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-btn);
+  padding: 10px 12px;
+  font-family: inherit;
+  font-size: 13px;
+  color: var(--text);
+  resize: vertical;
+}
+.pdco-app .pdco-registro-campo textarea::placeholder {
+  color: var(--text-muted);
+}
+.pdco-app .pdco-registro-campo textarea:disabled {
+  color: var(--text-muted);
+  cursor: not-allowed;
+}
+.pdco-app .pdco-registro-rodape {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+.pdco-app .pdco-save-button {
+  background: var(--text);
+  color: #172a49;
+  border: none;
+  border-radius: var(--radius-btn);
+  padding: 10px 16px;
+  font-size: 12px;
+  font-weight: 600;
+  font-family: inherit;
+  cursor: pointer;
+  transition: opacity 0.15s ease;
+}
+.pdco-app .pdco-save-button:hover {
+  opacity: 0.85;
+}
+.pdco-app .pdco-save-button:disabled {
+  opacity: 0.5;
+  cursor: default;
+}
+.pdco-app .pdco-registro-sucesso {
+  color: var(--green);
+  font-weight: 600;
+  font-size: 12.5px;
+}
+.pdco-app .pdco-registro-somente-leitura {
+  font-size: 12.5px;
+  color: var(--text-muted);
+  font-style: italic;
+}
+.pdco-app .pdco-registro-rodape-info {
+  font-size: 11.5px;
+  color: var(--text-muted);
+}
+
+/* --------------------------------- Diretoria ---------------------------------- */
+.pdco-app .pdco-stat-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px;
+}
+@media (min-width: 700px) {
+  .pdco-app .pdco-stat-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+.pdco-app .pdco-stat {
+  padding: 16px;
+}
+.pdco-app .pdco-stat-label {
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 0.4px;
+  color: var(--text-muted);
+  margin: 0;
+}
+.pdco-app .pdco-stat-valor {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 24px;
+  color: var(--text);
+  margin: 4px 0 0;
+}
+.pdco-app .pdco-rag-bar {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+  height: 8px;
+  border-radius: var(--radius-pill);
+  overflow: hidden;
+  background: rgba(255, 255, 255, 0.1);
+  margin-top: 10px;
+}
+.pdco-app .pdco-rag-bar span {
+  height: 100%;
+}
+.pdco-app .pdco-rag-legend {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 8px;
+  font-size: 10px;
+  font-weight: 600;
+}
+
+.pdco-app .pdco-area-list {
+  display: flex;
+  flex-direction: column;
+}
+.pdco-app .pdco-area-row {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 14px 22px;
+  border-top: 1px solid var(--border);
+  text-decoration: none;
+  color: inherit;
+  transition: background-color 0.15s ease;
+}
+.pdco-app .pdco-area-row:first-child {
+  border-top: none;
+}
+.pdco-app .pdco-area-row:hover {
+  background: var(--surface-2);
+}
+.pdco-app .pdco-area-row-main {
+  flex: 1;
+  min-width: 0;
+}
+.pdco-app .pdco-area-row-nome {
+  font-size: 13.5px;
+  font-weight: 600;
+  color: var(--text);
+  margin: 0;
+}
+.pdco-app .pdco-area-row-meta {
+  font-size: 11px;
+  color: var(--text-muted);
+  margin: 2px 0 0;
+}
+.pdco-app .pdco-area-row-rag {
+  display: flex;
+  gap: 10px;
+  font-size: 11px;
+  font-weight: 600;
+}
+.pdco-app .pdco-area-row-score {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 15px;
+  color: var(--text);
+  width: 32px;
+  text-align: right;
+}
+
+/* ---------------------------------- Evolução ----------------------------------- */
+.pdco-app .pdco-evo-compare {
+  padding: 20px 22px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.pdco-app .pdco-evo-select-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+.pdco-app .pdco-evo-selects {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 13px;
+  color: var(--text-muted);
+  font-weight: 600;
+}
+.pdco-app .pdco-evo-select {
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-btn);
+  color: var(--text);
+  font-family: inherit;
+  font-size: 13px;
+  padding: 7px 10px;
+  cursor: pointer;
+}
+.pdco-app .pdco-evo-select option {
+  background: #172a49;
+  color: var(--text);
+}
+.pdco-app .pdco-evo-diff-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+}
+@media (max-width: 700px) {
+  .pdco-app .pdco-evo-diff-grid {
+    grid-template-columns: 1fr;
+  }
+}
+.pdco-app .pdco-evo-diff-card {
+  border: 1px solid var(--border);
+  border-radius: var(--radius-card);
+  background: var(--surface-2);
+  padding: 14px 16px;
+}
+.pdco-app .pdco-evo-delta {
+  font-size: 11px;
+  font-weight: 600;
+  color: var(--text-muted);
+  margin: 6px 0 0;
+}
+.pdco-app .pdco-evo-delta-pos {
+  color: var(--green);
+}
+.pdco-app .pdco-evo-delta-neg {
+  color: var(--red);
+}
+.pdco-app .pdco-evo-timeline-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+.pdco-app .pdco-evo-tag-atual {
+  font-size: 9.5px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: var(--accent);
+}
+.pdco-app .pdco-evo-horizontal {
+  display: flex;
+  gap: 12px;
+  overflow-x: auto;
+  padding: 0 22px 22px;
+}
+.pdco-app .pdco-evo-mes-card {
+  min-width: 220px;
+  flex: none;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-card);
+  background: rgba(255, 255, 255, 0.03);
+  padding: 14px;
+}
+.pdco-app .pdco-evo-mes-card-atual {
+  border-color: rgba(167, 216, 255, 0.4);
+  background: var(--accent-soft);
+}
+.pdco-app .pdco-evo-mes-card-head {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  font-family: inherit;
+}
+.pdco-app .pdco-evo-mes-card-body {
+  margin-top: 10px;
+  padding-top: 10px;
+  border-top: 1px solid var(--border);
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+/* ---------------------------------- Acomp. da ação ------------------------------ */
+.pdco-app .pdco-acomp-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 0 22px 22px;
+}
+.pdco-app .pdco-acomp-item {
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 12px;
+}
+.pdco-app .pdco-acomp-item p {
+  margin: 0;
+  font-size: 13px;
+  color: var(--text);
+}
+.pdco-app .pdco-acomp-item-data {
+  font-size: 10.5px;
+  color: var(--text-muted);
+  margin-top: 6px !important;
+}
+
+/* ---------------------------------- Estados ------------------------------------- */
+.pdco-app .pdco-estado {
+  padding: 48px 24px;
+  text-align: center;
+  color: var(--text-muted);
+  font-size: 13.5px;
+}
+.pdco-app .pdco-estado.pdco-erro,
+.pdco-app .pdco-erro {
+  color: var(--red);
+}
+.pdco-app .pdco-vazio {
+  padding: 24px;
+  color: var(--text-muted);
+  font-size: 13px;
+  font-style: italic;
+}
