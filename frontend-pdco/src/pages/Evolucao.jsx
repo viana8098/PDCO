@@ -1,5 +1,6 @@
 import { useEffect, useMemo, useState } from 'react'
 import { useAsync } from '../lib/useAsync'
+import { SearchableSelect } from '../components/SearchableSelect'
 import { formatarData, indiceMesRelativo, tituloDoPlano } from '../lib/pdcoCalc'
 import { usePdco } from '../lib/PdcoContext'
 import { api } from '../lib/api'
@@ -20,17 +21,20 @@ function moda(lista) {
  * "Mês 3" aqui significa "o 3º mês de cada plano dentro do próprio ciclo",
  * então dá pra comparar plano com plano mesmo com datas de início diferentes.
  */
-function agregarPorMesRelativo(detalhes) {
+function agregarPorMesRelativo(detalhes, responsavelFiltro) {
     const meses = Array.from({ length: TOTAL_MESES }, (_, i) => ({ mes: i + 1, concluidas: 0, acompanhamentos: 0, atrasadas: 0, eventos: [] }))
     const hoje = new Date()
     const hojeIso = hoje.toISOString().slice(0, 10)
     const mesesAtuais = []
 
     for (const { plano, acoes, acompanhamento } of detalhes) {
+        // "Ciclo atual" é global — não muda com o filtro de responsável, senão o
+        // selo "atual" ficaria pulando de mês conforme o filtro escolhido.
         const idxAtual = indiceMesRelativo(plano.data_inicio, hojeIso)
         if (idxAtual !== null) mesesAtuais.push(Math.min(Math.max(idxAtual + 1, 1), TOTAL_MESES))
 
         for (const acao of acoes) {
+            if (responsavelFiltro && acao.responsavel !== responsavelFiltro) continue
             const idx = indiceMesRelativo(plano.data_inicio, acao.prazo_final)
             if (idx === null || idx < 0 || idx >= TOTAL_MESES) continue
             const bucket = meses[idx]
@@ -48,6 +52,8 @@ function agregarPorMesRelativo(detalhes) {
                 bucket.atrasadas++
             }
         }
+
+        if (responsavelFiltro && plano.responsavel !== responsavelFiltro) continue
 
         for (const quadrante of acompanhamento) {
             const bucket = meses[quadrante.mes - 1]
@@ -71,13 +77,14 @@ function agregarPorMesRelativo(detalhes) {
 }
 
 export default function Evolucao() {
-    const { user } = usePdco()
+    const { user, administrador } = usePdco()
     const planos = useAsync(() => api.planos(user), [user], !!user)
     const [detalhes, setDetalhes] = useState(null)
     const [horizontal, setHorizontal] = useState(false)
     const [abertos, setAbertos] = useState(() => new Set())
     const [mesA, setMesA] = useState(null)
     const [mesB, setMesB] = useState(null)
+    const [responsavelFiltro, setResponsavelFiltro] = useState('')
 
     useEffect(() => {
         if (!planos.dados) return
@@ -90,7 +97,25 @@ export default function Evolucao() {
         }
     }, [planos.dados, user])
 
-    const agregado = useMemo(() => (detalhes ? agregarPorMesRelativo(detalhes) : null), [detalhes])
+    // Lista de responsáveis pra filtrar — junta plano + ações, sem repetir.
+    // Só faz sentido pro administrador: é ele quem enxerga o conjunto todo de
+    // planos e precisa desse recorte pra não rolar o feed inteiro.
+    const responsaveis = useMemo(() => {
+        if (!detalhes) return []
+        const nomes = new Set()
+        for (const { plano, acoes } of detalhes) {
+            if (plano.responsavel) nomes.add(plano.responsavel)
+            for (const acao of acoes) if (acao.responsavel) nomes.add(acao.responsavel)
+        }
+        return [...nomes]
+            .sort((a, b) => a.localeCompare(b, 'pt-BR', { numeric: true }))
+            .map((nome) => ({ valor: nome, rotulo: nome }))
+    }, [detalhes])
+
+    const agregado = useMemo(
+        () => (detalhes ? agregarPorMesRelativo(detalhes, responsavelFiltro || null) : null),
+        [detalhes, responsavelFiltro],
+    )
 
     useEffect(() => {
         if (agregado && mesA === null) {
@@ -122,8 +147,25 @@ export default function Evolucao() {
         <div className="pdco-page">
             <div className="pdco-page-head">
                 <h1 className="pdco-page-title">Evolução Mensal</h1>
-                <p className="pdco-page-sub">O que evoluiu de um mês para o outro, ao longo do ciclo de {TOTAL_MESES} meses — combinando todos os planos que você acompanha.</p>
+                <p className="pdco-page-sub">
+                    O que evoluiu de um mês para o outro, ao longo do ciclo de {TOTAL_MESES} meses —{' '}
+                    {responsavelFiltro ? `planos e ações de ${responsavelFiltro}` : 'combinando todos os planos que você acompanha'}.
+                </p>
             </div>
+
+            {administrador && responsaveis.length > 0 && (
+                <div className="pdco-filters-row">
+                    <div className="pdco-filter-pill">
+                        <label>Responsável</label>
+                        <SearchableSelect
+                            value={responsavelFiltro}
+                            onChange={setResponsavelFiltro}
+                            options={responsaveis}
+                            todosLabel="Todos os responsáveis"
+                        />
+                    </div>
+                </div>
+            )}
 
             <section className="pdco-panel pdco-evo-compare">
                 <div className="pdco-evo-select-row">

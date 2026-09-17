@@ -35,7 +35,10 @@ export function SearchableSelect({ value, options, onChange, todosLabel, disable
         if (aberto) {
             setTermo('')
             setAtivo(0)
-            if (comBusca) setTimeout(() => buscaRef.current?.focus(), 0)
+            // preventScroll: sem isso, o foco no campo de busca faz o navegador
+            // rolar a página inteira na horizontal em telas estreitas (a barra de
+            // rolagem some, mas o body fica deslocado até o usuário rolar de volta).
+            if (comBusca) setTimeout(() => buscaRef.current?.focus({ preventScroll: true }), 0)
         }
     }, [aberto])
 
