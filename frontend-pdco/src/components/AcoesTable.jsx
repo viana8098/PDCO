@@ -44,15 +44,7 @@ export function AcoesTable({ acoes }) {
     }, [acoes, ordenacao])
 
     return (
-        <section className="pdco-panel pdco-actions-panel">
-            <div className="pdco-panel-header">
-                <p className="pdco-kicker">Detalhamento operacional</p>
-                <h2 className="pdco-panel-title">Ações do plano</h2>
-                <p className="pdco-panel-subtitle">
-                    {acoes.filter((a) => (a.status || '').toLowerCase().startsWith('conclu')).length} de {acoes.length} ações
-                </p>
-            </div>
-
+        <>
             {acoes.length ? (
                 <table className="pdco-tabela-acoes">
                     <thead>
@@ -108,6 +100,6 @@ export function AcoesTable({ acoes }) {
             ) : (
                 <p className="pdco-vazio">Nenhuma ação cadastrada para este plano.</p>
             )}
-        </section>
+        </>
     )
 }

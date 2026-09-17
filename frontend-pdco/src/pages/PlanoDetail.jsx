@@ -1,3 +1,4 @@
+import { useState } from 'react'
 import { Link, useParams } from 'react-router-dom'
 import { useAsync } from '../lib/useAsync'
 import { AcoesTable } from '../components/AcoesTable'
@@ -16,6 +17,7 @@ export default function PlanoDetail() {
     const { user } = usePdco()
     const { cdPlanoAcao } = useParams()
     const detalhe = useAsync(() => api.plano(user, cdPlanoAcao), [user, cdPlanoAcao], !!user && !!cdPlanoAcao)
+    const [aba, setAba] = useState('acoes')
 
     if (detalhe.erro) {
         return (
@@ -33,6 +35,12 @@ export default function PlanoDetail() {
     const rag = calcRag(plano, acompanhamento)
     const cor = RAG_COLOR[rag.nivel]
     const totalAcompanhamentos = acompanhamento.reduce((s, q) => s + q.registros.length, 0)
+
+    const abas = [
+        { chave: 'acoes', rotulo: 'Ações do plano', total: acoes.length },
+        { chave: 'acompanhamentos', rotulo: 'Acompanhamentos do plano', total: totalAcompanhamentos },
+        { chave: 'anexos', rotulo: 'Anexos de evidência', total: 0 },
+    ]
 
     return (
         <div className="pdco-page">
@@ -74,14 +82,33 @@ export default function PlanoDetail() {
                 </div>
             </section>
 
-            <AcoesTable acoes={acoes} />
+            <section className="pdco-panel">
+                <div className="pdco-plan-tabs">
+                    {abas.map((a) => (
+                        <button
+                            type="button"
+                            key={a.chave}
+                            className={`pdco-plan-tab ${aba === a.chave ? 'pdco-plan-tab-ativa' : ''}`}
+                            onClick={() => setAba(a.chave)}
+                        >
+                            {a.rotulo} ({a.total})
+                        </button>
+                    ))}
+                </div>
+
+                <div className="pdco-plan-tab-body">
+                    {aba === 'acoes' && <AcoesTable acoes={acoes} />}
+                    {aba === 'acompanhamentos' && <AcompanhamentoGrid quadrantes={acompanhamento} plano={plano} />}
+                    {aba === 'anexos' && (
+                        <p className="pdco-vazio">Nenhum anexo. As evidências são inseridas apenas no plano (não nas ações).</p>
+                    )}
+                </div>
+            </section>
 
             <div className="pdco-secondary-row">
                 <TextoPanel kicker="Leitura cultural" titulo="Arquétipos culturais" texto={plano.arquetipos_culturais} />
                 <TextoPanel kicker="Visão de futuro" titulo="Resultados esperados" texto={plano.resultados_esperados} />
             </div>
-
-            <AcompanhamentoGrid quadrantes={acompanhamento} plano={plano} acoes={acoes} />
 
             <div className={`pdco-tertiary-row ${indicadores.length ? '' : 'pdco-tertiary-single'}`}>
                 <RegistroQualitativoForm registro={registro} />
