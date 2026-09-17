@@ -3,6 +3,7 @@ import { useAsync } from '../lib/useAsync'
 import { ExecutiveBanner } from '../components/ExecutiveBanner'
 import { PlanCard } from '../components/PlanCard'
 import { PlanRow } from '../components/PlanRow'
+import { SearchableSelect } from '../components/SearchableSelect'
 import { pctConcluido } from '../lib/pdcoCalc'
 import { usePdco } from '../lib/PdcoContext'
 import { api } from '../lib/api'
@@ -49,26 +50,24 @@ export default function MinhaArea() {
             {administrador && (
                 <div className="pdco-filters-row">
                     <div className="pdco-filter-pill">
-                        <label htmlFor="pdco-area">Área</label>
-                        <select id="pdco-area" value={area} disabled={!filtros.dados} onChange={(e) => setArea(e.target.value)}>
-                            <option value="">Todas as áreas</option>
-                            {(filtros.dados?.areas ?? []).map((opcao) => (
-                                <option value={opcao.valor} key={opcao.valor}>
-                                    {opcao.rotulo}
-                                </option>
-                            ))}
-                        </select>
+                        <label>Área</label>
+                        <SearchableSelect
+                            value={area}
+                            onChange={setArea}
+                            options={filtros.dados?.areas ?? []}
+                            todosLabel="Todas as áreas"
+                            disabled={!filtros.dados}
+                        />
                     </div>
                     <div className="pdco-filter-pill">
-                        <label htmlFor="pdco-acao">Ação</label>
-                        <select id="pdco-acao" value={acao} disabled={!filtros.dados} onChange={(e) => setAcao(e.target.value)}>
-                            <option value="">Todas as ações</option>
-                            {(filtros.dados?.acoes ?? []).map((opcao) => (
-                                <option value={opcao.valor} key={opcao.valor}>
-                                    {opcao.rotulo}
-                                </option>
-                            ))}
-                        </select>
+                        <label>Ação</label>
+                        <SearchableSelect
+                            value={acao}
+                            onChange={setAcao}
+                            options={filtros.dados?.acoes ?? []}
+                            todosLabel="Todas as ações"
+                            disabled={!filtros.dados}
+                        />
                     </div>
                     <span className="pdco-admin-badge">Administrador</span>
                 </div>

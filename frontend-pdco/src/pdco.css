@@ -194,6 +194,102 @@ html, body, #root {
   background: #172a49;
   color: var(--text);
 }
+/* --------------------------- Combobox com busca ---------------------------- */
+.pdco-app .pdco-searchable {
+  position: relative;
+}
+.pdco-app .pdco-searchable-trigger {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  background: transparent;
+  border: none;
+  color: var(--text);
+  font-size: 12px;
+  font-family: inherit;
+  cursor: pointer;
+  padding: 0;
+  max-width: 220px;
+}
+.pdco-app .pdco-searchable-trigger:disabled {
+  color: var(--text-muted);
+  cursor: default;
+}
+.pdco-app .pdco-searchable-valor {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.pdco-app .pdco-searchable-caret {
+  font-size: 10px;
+  color: var(--text-muted);
+  transition: transform 0.15s ease;
+  flex: none;
+}
+.pdco-app .pdco-searchable-caret-aberto {
+  transform: rotate(180deg);
+}
+.pdco-app .pdco-searchable-painel {
+  position: absolute;
+  top: calc(100% + 8px);
+  left: 0;
+  z-index: 30;
+  width: max(260px, 100%);
+  background: #172a49;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-card);
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.35);
+  overflow: hidden;
+}
+.pdco-app .pdco-searchable-busca {
+  width: 100%;
+  box-sizing: border-box;
+  background: rgba(255, 255, 255, 0.06);
+  border: none;
+  border-bottom: 1px solid var(--border);
+  padding: 10px 12px;
+  font-size: 13px;
+  font-family: inherit;
+  color: var(--text);
+  outline: none;
+}
+.pdco-app .pdco-searchable-busca::placeholder {
+  color: var(--text-muted);
+}
+.pdco-app .pdco-searchable-lista {
+  list-style: none;
+  margin: 0;
+  padding: 4px;
+  max-height: 260px;
+  overflow-y: auto;
+}
+.pdco-app .pdco-searchable-item {
+  display: block;
+  width: 100%;
+  text-align: left;
+  background: none;
+  border: none;
+  color: var(--text);
+  font-size: 13px;
+  font-family: inherit;
+  padding: 8px 10px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+.pdco-app .pdco-searchable-item-ativo {
+  background: rgba(255, 255, 255, 0.08);
+}
+.pdco-app .pdco-searchable-item-selecionado {
+  color: var(--accent);
+  font-weight: 600;
+}
+.pdco-app .pdco-searchable-vazio {
+  padding: 14px 12px;
+  font-size: 12.5px;
+  color: var(--text-muted);
+  font-style: italic;
+}
+
 .pdco-app .pdco-admin-badge {
   font-size: 11px;
   font-weight: 600;
