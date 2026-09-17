@@ -982,6 +982,51 @@ html, body, #root {
   color: var(--text-muted);
   font-size: 11px;
 }
+.pdco-app .pdco-evento-linha {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+}
+.pdco-app .pdco-evento-icone {
+  flex: none;
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 1px;
+}
+.pdco-app .pdco-evento-acompanhamento .pdco-evento-icone {
+  background: var(--accent-soft);
+  color: var(--accent);
+}
+.pdco-app .pdco-evento-acao .pdco-evento-icone {
+  background: var(--green-soft);
+  color: var(--green);
+}
+.pdco-app .pdco-evento-corpo {
+  min-width: 0;
+  flex: 1;
+}
+.pdco-app .pdco-evento-titulo {
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--text);
+  margin: 0;
+}
+.pdco-app .pdco-evento-detalhe {
+  font-size: 12.5px;
+  color: var(--text-muted);
+  margin: 2px 0 0;
+  line-height: 1.5;
+}
+.pdco-app .pdco-evento-meta {
+  font-size: 11px;
+  color: var(--text-muted);
+  opacity: 0.8;
+  margin: 4px 0 0;
+}
 .pdco-app .pdco-month-vazio {
   font-size: 12px;
   color: var(--text-muted);

@@ -37,7 +37,13 @@ function agregarPorMesRelativo(detalhes) {
             const status = (acao.status || '').toLowerCase()
             if (status.startsWith('conclu')) {
                 bucket.concluidas++
-                bucket.eventos.push({ tipo: 'acao', titulo: acao.nome, detalhe: `Ação concluída · ${tituloDoPlano(plano)}`, data: acao.prazo_final })
+                bucket.eventos.push({
+                    tipo: 'acao',
+                    titulo: acao.nome,
+                    detalhe: `Ação concluída · ${tituloDoPlano(plano)}`,
+                    data: acao.prazo_final,
+                    responsavel: acao.responsavel,
+                })
             } else if (!status.startsWith('cancel') && acao.prazo_final && new Date(acao.prazo_final) < hoje) {
                 bucket.atrasadas++
             }
@@ -47,7 +53,15 @@ function agregarPorMesRelativo(detalhes) {
             const bucket = meses[quadrante.mes - 1]
             for (const registro of quadrante.registros) {
                 bucket.acompanhamentos++
-                bucket.eventos.push({ tipo: 'acompanhamento', titulo: tituloDoPlano(plano), detalhe: registro.texto, data: registro.data })
+                // O dw não guarda quem escreveu o acompanhamento — atribuído ao
+                // responsável do plano, a melhor aproximação disponível.
+                bucket.eventos.push({
+                    tipo: 'acompanhamento',
+                    titulo: tituloDoPlano(plano),
+                    detalhe: registro.texto,
+                    data: registro.data,
+                    responsavel: plano.responsavel,
+                })
             }
         }
     }
@@ -184,10 +198,7 @@ export default function Evolucao() {
                                         <div className="pdco-month-item-body">
                                             {!temAlgo && <p className="pdco-month-vazio">Sem movimentações.</p>}
                                             {m.eventos.map((evento, indice) => (
-                                                <p className="pdco-month-evento" key={indice}>
-                                                    {evento.detalhe}
-                                                    <span className="pdco-month-evento-data"> — {formatarData(evento.data)}</span>
-                                                </p>
+                                                <EventoLinha evento={evento} key={indice} />
                                             ))}
                                         </div>
                                     )}
@@ -197,6 +208,36 @@ export default function Evolucao() {
                     </div>
                 )}
             </section>
+        </div>
+    )
+}
+
+const ICONE = {
+    acompanhamento: (
+        <svg viewBox="0 0 20 20" width="15" height="15" fill="none" stroke="currentColor" strokeWidth="1.6">
+            <path d="M3 4.5h14a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1H8l-4 3v-3H3a1 1 0 0 1-1-1v-8a1 1 0 0 1 1-1Z" strokeLinejoin="round" />
+        </svg>
+    ),
+    acao: (
+        <svg viewBox="0 0 20 20" width="15" height="15" fill="none" stroke="currentColor" strokeWidth="1.6">
+            <circle cx="10" cy="10" r="7.25" />
+            <path d="M6.8 10.2l2.1 2.1 4.3-4.6" strokeLinecap="round" strokeLinejoin="round" />
+        </svg>
+    ),
+}
+
+function EventoLinha({ evento }) {
+    return (
+        <div className={`pdco-evento-linha pdco-evento-${evento.tipo}`}>
+            <span className="pdco-evento-icone">{ICONE[evento.tipo]}</span>
+            <div className="pdco-evento-corpo">
+                <p className="pdco-evento-titulo">{evento.titulo}</p>
+                <p className="pdco-evento-detalhe">{evento.detalhe}</p>
+                <p className="pdco-evento-meta">
+                    {formatarData(evento.data)}
+                    {evento.responsavel && ` · ${evento.responsavel}`}
+                </p>
+            </div>
         </div>
     )
 }
@@ -232,10 +273,7 @@ function MesCard({ mes, atual, aberto, onToggle }) {
                 <div className="pdco-evo-mes-card-body">
                     {mes.eventos.length === 0 && <p className="pdco-month-vazio">Sem movimentações.</p>}
                     {mes.eventos.map((evento, indice) => (
-                        <p className="pdco-month-evento" key={indice}>
-                            {evento.detalhe}
-                            <span className="pdco-month-evento-data"> — {formatarData(evento.data)}</span>
-                        </p>
+                        <EventoLinha evento={evento} key={indice} />
                     ))}
                 </div>
             )}
