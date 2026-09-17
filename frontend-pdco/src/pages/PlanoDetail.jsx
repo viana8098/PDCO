@@ -3,6 +3,7 @@ import { Link, useParams } from 'react-router-dom'
 import { useAsync } from '../lib/useAsync'
 import { AcoesTable } from '../components/AcoesTable'
 import { AcompanhamentoGrid } from '../components/AcompanhamentoGrid'
+import { AnexosTab } from '../components/AnexosTab'
 import { IndicadoresCard } from '../components/IndicadoresCard'
 import { PlanoTimeline } from '../components/PlanoTimeline'
 import { RagBadge } from '../components/RagBadge'
@@ -99,9 +100,7 @@ export default function PlanoDetail() {
                 <div className="pdco-plan-tab-body">
                     {aba === 'acoes' && <AcoesTable acoes={acoes} />}
                     {aba === 'acompanhamentos' && <AcompanhamentoGrid quadrantes={acompanhamento} plano={plano} />}
-                    {aba === 'anexos' && (
-                        <p className="pdco-vazio">Nenhum anexo. As evidências são inseridas apenas no plano (não nas ações).</p>
-                    )}
+                    {aba === 'anexos' && <AnexosTab />}
                 </div>
             </section>
 
