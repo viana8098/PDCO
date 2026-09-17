@@ -7,7 +7,6 @@ import { AnexosTab } from '../components/AnexosTab'
 import { IndicadoresCard } from '../components/IndicadoresCard'
 import { PlanoTimeline } from '../components/PlanoTimeline'
 import { RagBadge } from '../components/RagBadge'
-import { RegistroQualitativoForm } from '../components/RegistroQualitativoForm'
 import { TextoPanel } from '../components/TextoPanel'
 import { TipoChip } from '../components/TipoChip'
 import { calcRag, formatarData, tituloDoPlano, RAG_COLOR, RAG_LABEL } from '../lib/pdcoCalc'
@@ -32,7 +31,7 @@ export default function PlanoDetail() {
     }
     if (!detalhe.dados) return <div className="pdco-page pdco-estado">Carregando plano…</div>
 
-    const { plano, acoes, acompanhamento, indicadores, registro } = detalhe.dados
+    const { plano, acoes, acompanhamento, indicadores } = detalhe.dados
     const rag = calcRag(plano, acompanhamento)
     const cor = RAG_COLOR[rag.nivel]
     const totalAcompanhamentos = acompanhamento.reduce((s, q) => s + q.registros.length, 0)
@@ -105,14 +104,15 @@ export default function PlanoDetail() {
             </section>
 
             <div className="pdco-secondary-row">
-                <TextoPanel kicker="Leitura cultural" titulo="Arquétipos culturais" texto={plano.arquetipos_culturais} />
+                <TextoPanel kicker="Leitura cultural" titulo="Diagnóstico da Subcultura" texto={plano.arquetipos_culturais} />
                 <TextoPanel kicker="Visão de futuro" titulo="Resultados esperados" texto={plano.resultados_esperados} />
             </div>
 
-            <div className={`pdco-tertiary-row ${indicadores.length ? '' : 'pdco-tertiary-single'}`}>
-                <RegistroQualitativoForm registro={registro} />
-                {indicadores.length > 0 && <IndicadoresCard indicadores={indicadores} />}
-            </div>
+            {indicadores.length > 0 && (
+                <div className="pdco-tertiary-row pdco-tertiary-single">
+                    <IndicadoresCard indicadores={indicadores} />
+                </div>
+            )}
         </div>
     )
 }
