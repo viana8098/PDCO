@@ -19,12 +19,15 @@ export function PlanoTimeline({ acoes }) {
 
     const baldes = new Map()
     for (const acao of acoes) {
+        const status = (acao.status || '').toLowerCase()
+        // Cancelada não entra em lugar nenhum dessa conta — mesmo critério do
+        // resumo do back-end (calcularResumoAcoes): não é atraso nem pendência.
+        if (status.startsWith('cancel')) continue
         const chave = chaveDoMes(acao.prazo_final)
         if (chave === null) continue
         if (!baldes.has(chave)) baldes.set(chave, { total: 0, concluidas: 0, atrasadas: 0 })
         const balde = baldes.get(chave)
         balde.total++
-        const status = (acao.status || '').toLowerCase()
         if (status === 'concluído' || status === 'concluido') balde.concluidas++
         else if (chaveHoje > chave || (chaveHoje === chave && new Date(acao.prazo_final) < hoje)) balde.atrasadas++
     }
