@@ -1,6 +1,6 @@
 import { RAG_BG, RAG_COLOR, RAG_LABEL } from '../lib/pdcoCalc'
 
-// Badge "Verde/Amarelo/Vermelho · score" — resumo de saúde do plano.
+// Badge "Em dia/Atenção/Crítico · score" — resumo de saúde do plano.
 export function RagBadge({ nivel, score, size = 'sm' }) {
     return (
         <span

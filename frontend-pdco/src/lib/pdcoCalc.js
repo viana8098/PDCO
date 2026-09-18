@@ -4,7 +4,8 @@
 // extra, nenhum dado inventado.
 
 export const RAG_COLOR = { verde: '#34d399', amarelo: '#fbbf24', vermelho: '#f87171' }
-export const RAG_LABEL = { verde: 'Verde', amarelo: 'Amarelo', vermelho: 'Vermelho' }
+// Textos mostrados ao usuário. As chaves internas (verde/amarelo/vermelho) e os critérios do RAG não mudam.
+export const RAG_LABEL = { verde: 'Em dia', amarelo: 'Atenção', vermelho: 'Crítico' }
 export const RAG_BG = { verde: 'rgba(52,211,153,0.15)', amarelo: 'rgba(251,191,36,0.15)', vermelho: 'rgba(248,113,113,0.15)' }
 
 const DIA_MS = 24 * 60 * 60 * 1000

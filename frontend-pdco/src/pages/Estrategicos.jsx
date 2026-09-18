@@ -1,7 +1,7 @@
 import { useMemo, useState } from 'react'
 import { useAsync } from '../lib/useAsync'
 import { PlanCard } from '../components/PlanCard'
-import { calcRag, tipoResumido, RAG_COLOR } from '../lib/pdcoCalc'
+import { calcRag, tipoResumido, RAG_COLOR, RAG_LABEL } from '../lib/pdcoCalc'
 import { usePdco } from '../lib/PdcoContext'
 import { api } from '../lib/api'
 
@@ -60,9 +60,11 @@ export default function Estrategicos() {
             </div>
 
             <div className="pdco-rag-legend-row">
-                <span style={{ color: RAG_COLOR.verde }}>● {contagem.verde} verde</span>
-                <span style={{ color: RAG_COLOR.amarelo }}>● {contagem.amarelo} amarelo</span>
-                <span style={{ color: RAG_COLOR.vermelho }}>● {contagem.vermelho} vermelho</span>
+                {['verde', 'amarelo', 'vermelho'].map((k) => (
+                    <span key={k} style={{ color: RAG_COLOR[k] }}>
+                        ● {contagem[k]} {RAG_LABEL[k]}
+                    </span>
+                ))}
             </div>
 
             {filtrados.length === 0 ? (

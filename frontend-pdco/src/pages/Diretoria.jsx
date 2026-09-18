@@ -2,16 +2,14 @@ import { useMemo, useState } from 'react'
 import { Link, Navigate } from 'react-router-dom'
 import { useAsync } from '../lib/useAsync'
 import { SearchableSelect } from '../components/SearchableSelect'
-import { agruparPorArea, pctConcluido, tipoResumido, RAG_COLOR } from '../lib/pdcoCalc'
+import { agruparPorArea, pctConcluido, tipoResumido, RAG_COLOR, RAG_LABEL } from '../lib/pdcoCalc'
 import { usePdco } from '../lib/PdcoContext'
 import { api } from '../lib/api'
 
-const NIVEIS = [
-    { chave: 'todos', rotulo: 'Todos' },
-    { chave: 'verde', rotulo: 'Verde' },
-    { chave: 'amarelo', rotulo: 'Amarelo' },
-    { chave: 'vermelho', rotulo: 'Vermelho' },
-]
+const STATUS = ['verde', 'amarelo', 'vermelho']
+
+// Só o texto exibido muda (RAG_LABEL); as chaves e os critérios do RAG seguem os mesmos.
+const NIVEIS = [{ chave: 'todos', rotulo: 'Todos' }, ...STATUS.map((chave) => ({ chave, rotulo: RAG_LABEL[chave] }))]
 
 // Visão consolidada por área — só administrador (visão de leitura de todos
 // os planos, sem PIN: o acesso já foi resolvido pela API em /pdco/acesso).
@@ -76,21 +74,23 @@ export default function Diretoria() {
                 <Stat label="Total de ações" valor={totalAcoes} />
                 <Stat label="% ações concluídas" valor={`${pctAcoes}%`} />
                 <div className="pdco-panel pdco-stat pdco-stat-rag">
-                    <p className="pdco-stat-label">Distribuição RAG</p>
+                    <p className="pdco-stat-label">Distribuição por status</p>
                     <div className="pdco-rag-bar">
                         {totalPlanos > 0 &&
-                            [
-                                ['verde', contagem.verde],
-                                ['amarelo', contagem.amarelo],
-                                ['vermelho', contagem.vermelho],
-                            ].map(([k, v]) => v > 0 && (
-                                <span key={k} style={{ width: `${(v / totalPlanos) * 100}%`, backgroundColor: RAG_COLOR[k] }} />
+                            STATUS.map((k) => contagem[k] > 0 && (
+                                <span
+                                    key={k}
+                                    title={`${RAG_LABEL[k]}: ${contagem[k]}`}
+                                    style={{ width: `${(contagem[k] / totalPlanos) * 100}%`, backgroundColor: RAG_COLOR[k] }}
+                                />
                             ))}
                     </div>
                     <div className="pdco-rag-legend">
-                        <span style={{ color: RAG_COLOR.verde }}>V {contagem.verde}</span>
-                        <span style={{ color: RAG_COLOR.amarelo }}>A {contagem.amarelo}</span>
-                        <span style={{ color: RAG_COLOR.vermelho }}>R {contagem.vermelho}</span>
+                        {STATUS.map((k) => (
+                            <span key={k} style={{ color: RAG_COLOR[k] }}>
+                                ● {RAG_LABEL[k]} {contagem[k]}
+                            </span>
+                        ))}
                     </div>
                 </div>
             </div>
@@ -108,9 +108,16 @@ export default function Diretoria() {
                         <option value="Estratégico">Estratégico</option>
                     </select>
                 </div>
-                <div className="pdco-toggle-group">
+                <div className="pdco-toggle-group pdco-toggle-status" role="group" aria-label="Filtrar por status">
                     {NIVEIS.map((n) => (
-                        <button key={n.chave} type="button" className={nivel === n.chave ? 'pdco-toggle-ativo' : ''} onClick={() => setNivel(n.chave)}>
+                        <button
+                            key={n.chave}
+                            type="button"
+                            aria-pressed={nivel === n.chave}
+                            className={nivel === n.chave ? 'pdco-toggle-ativo' : ''}
+                            onClick={() => setNivel(n.chave)}
+                        >
+                            {n.chave !== 'todos' && <span className="pdco-toggle-dot" style={{ backgroundColor: RAG_COLOR[n.chave] }} />}
                             {n.rotulo}
                         </button>
                     ))}
