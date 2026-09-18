@@ -78,7 +78,7 @@ export default function PlanoDetail() {
                         </div>
                         <p className="pdco-rag-motivos">{rag.motivos.join(' · ')}</p>
                     </div>
-                    <PlanoTimeline plano={plano} acoes={acoes} />
+                    <PlanoTimeline acoes={acoes} />
                 </div>
             </section>
 

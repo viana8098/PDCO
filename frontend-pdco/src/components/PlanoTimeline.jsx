@@ -9,19 +9,18 @@ function chaveDoMes(iso) {
 
 // Previsão de conclusão por mês (calendário), a partir do prazo final de
 // cada ação — independente da janela de 8 meses relativa ao início do plano
-// (essa é a janela de acompanhamento, ver AcompanhamentoGrid).
-export function PlanoTimeline({ plano, acoes }) {
-    const inicio = chaveDoMes(plano.data_inicio) ?? Math.min(...acoes.map((a) => chaveDoMes(a.prazo_final)).filter(Boolean))
-    const fim = chaveDoMes(plano.data_fim) ?? Math.max(...acoes.map((a) => chaveDoMes(a.prazo_final)).filter(Boolean))
-    if (!Number.isFinite(inicio) || !Number.isFinite(fim) || fim < inicio) return null
-
+// (essa é a janela de acompanhamento, ver AcompanhamentoGrid). A janela vai
+// do primeiro ao último mês que realmente tem ação com prazo — não usa as
+// datas de início/fim do plano, que costumam ser mais largas que os prazos
+// reais e deixavam meses vazios sobrando nas pontas.
+export function PlanoTimeline({ acoes }) {
     const hoje = new Date()
     const chaveHoje = hoje.getFullYear() * 12 + hoje.getMonth()
 
     const baldes = new Map()
     for (const acao of acoes) {
         const chave = chaveDoMes(acao.prazo_final)
-        if (chave === null || chave < inicio || chave > fim) continue
+        if (chave === null) continue
         if (!baldes.has(chave)) baldes.set(chave, { total: 0, concluidas: 0, atrasadas: 0 })
         const balde = baldes.get(chave)
         balde.total++
@@ -29,6 +28,12 @@ export function PlanoTimeline({ plano, acoes }) {
         if (status === 'concluído' || status === 'concluido') balde.concluidas++
         else if (chaveHoje > chave || (chaveHoje === chave && new Date(acao.prazo_final) < hoje)) balde.atrasadas++
     }
+
+    if (baldes.size === 0) return null
+
+    const chavesComDados = [...baldes.keys()]
+    const inicio = Math.min(...chavesComDados)
+    const fim = Math.max(...chavesComDados)
 
     const totalAtrasadas = [...baldes.values()].reduce((s, b) => s + b.atrasadas, 0)
 
