@@ -8,7 +8,7 @@
     "responsavel": "Responsável 16",
     "arquetipos_culturais": "Estabelecimento Do Programa De Auditoria De Processos Do Sesi Senai",
     "resultados_esperados": "Garantir Conformidade, Qualidade E Melhoria Contínua Dos Processos Críticos, Assegurando A Aderência Aos Padrões Operacionais Definidos E Mitigar Riscos De Desvios",
-    "data_inicio": "2026-06-08",
+    "data_inicio": "2026-02-01",
     "data_fim": "2026-12-18",
     "execucao": 0.2857142857142857,
     "resumo_acoes": {
@@ -79,6 +79,36 @@
     {
       "mes": 1,
       "ano": 2026,
+      "mes_referencia": 1,
+      "registros": []
+    },
+    {
+      "mes": 2,
+      "ano": 2026,
+      "mes_referencia": 2,
+      "registros": []
+    },
+    {
+      "mes": 3,
+      "ano": 2026,
+      "mes_referencia": 3,
+      "registros": []
+    },
+    {
+      "mes": 4,
+      "ano": 2026,
+      "mes_referencia": 4,
+      "registros": []
+    },
+    {
+      "mes": 5,
+      "ano": 2026,
+      "mes_referencia": 5,
+      "registros": []
+    },
+    {
+      "mes": 6,
+      "ano": 2026,
       "mes_referencia": 6,
       "registros": [
         {
@@ -94,13 +124,13 @@
       ]
     },
     {
-      "mes": 2,
+      "mes": 7,
       "ano": 2026,
       "mes_referencia": 7,
       "registros": []
     },
     {
-      "mes": 3,
+      "mes": 8,
       "ano": 2026,
       "mes_referencia": 8,
       "registros": [
@@ -115,47 +145,6 @@
           "origem": "acao"
         }
       ]
-    },
-    {
-      "mes": 4,
-      "ano": 2026,
-      "mes_referencia": 9,
-      "registros": [
-        {
-          "texto": "Considerando Que As Prioridades Institucionais Para O Movimento De Auditorias Estão Direcionadas Aos Requisitos Da Ona E Da Abnt Nbr Iso/iec 17025, Foram Realizadas Capacitações Com Os Auditores Internos Envolvidos Na Execução Das Auditorias, Contemplando Amanda Dué (metrologia), Mylena Gitai E Mayara Mendonça (saúde), Com Foco Na Aplicação Da Metodologia E Dos Criterios Estabelecidos No Manual De Auditorias.\r\nna Área Da Saúde, As Auditorias Estão Sendo Conduzidas Em Parceria Com Os Núcleos (consultoria Externa), Possibilitando A Aplicação Prática Da Metodologia E O Acompanhamento Dos Auditores Durante A Execução Das Auditorias.\r\n\r\npara A Metrologia, Foi Definido Que, Neste Momento, A Execucao Das Auditorias Ocorrerá De Forma Terceirizada. Dessa Forma, Não Foi Possível Realizar O Teste Prático Dos Auditores Internos Na Condição De Auditores, Permanecendo Sua Participação Como Observadores Em Momentos Praticos, Com O Objetivo De Promover A Familiarização Com A Metodologia E A Aplicação Dos Critérios.\r\n\r\na Ação Encontra-se, Portanto, Parcialmente Atendida, Com A Capacitação E Alinhamento Metodologico Realizados E A Aplicacao Prática Em Andamento Na Saúde. Para A Metrologia, A Formação Prática Dos Auditores Internos Deverá Ser Retomada Oportunamente, Conforme A Evolução Do Modelo De Execução Das Auditorias.",
-          "data": "2026-09-08",
-          "origem": "acao"
-        },
-        {
-          "texto": "Após A Reunião Setorial De Agosto, Foi Solicitada A Reabertura Da Ação Para Avaliar Os Indicadores Da Assessoria De Gestão Por Processos Relacionados Ao Movimento De Auditorias Internas, Considerando Que Os Indicadores Das Áreas Não Necessariamente Serão Suficientes Para Responder A Essa Necessidade.\r\ncomo Próximo Passo, Foi Solicitado Um Alinhamento Com Luciana, Com O Objetivo De Apresentar Essa Visão, Discutir A Abordagem Proposta E Alinhar As Expectativas Quanto À Ação. A Reunião Foi Solicitada Para 11/09/2026.",
-          "data": "2026-09-08",
-          "origem": "acao"
-        }
-      ]
-    },
-    {
-      "mes": 5,
-      "ano": 2026,
-      "mes_referencia": 10,
-      "registros": []
-    },
-    {
-      "mes": 6,
-      "ano": 2026,
-      "mes_referencia": 11,
-      "registros": []
-    },
-    {
-      "mes": 7,
-      "ano": 2026,
-      "mes_referencia": 12,
-      "registros": []
-    },
-    {
-      "mes": 8,
-      "ano": 2027,
-      "mes_referencia": 1,
-      "registros": []
     }
   ],
   "indicadores": [],

@@ -207,7 +207,9 @@ function transformarPlano(linha: PlanoAcaoRow): PlanoPdco {
     login_responsavel: linha.ds_loginrquemplanoacao,
     arquetipos_culturais: linha.ds_oqueplanoacao,
     resultados_esperados: linha.ds_porqueplanoacao,
-    data_inicio: dataIso(linha.dt_inicioplanoacao ?? linha.dt_inicioprevistaplanoacao),
+    // Prioriza a data prevista: a real (dt_inicioplanoacao) às vezes vem de um
+    // cadastro antigo do EPA bem anterior ao ciclo atual de ações do plano.
+    data_inicio: dataIso(linha.dt_inicioprevistaplanoacao ?? linha.dt_inicioplanoacao),
     data_fim: dataIso(linha.dt_fimplanoacao ?? linha.dt_fimprevistaplanoacao),
     execucao: null,
     resumo_acoes: null,

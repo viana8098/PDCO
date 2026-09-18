@@ -8,7 +8,7 @@
     "responsavel": "Responsável 21",
     "arquetipos_culturais": "Estruturação Do Fluxo De Atendimento Interno Da Gegov",
     "resultados_esperados": "O Foco Central Deste Plano De Ação É Criar Previsibilidade, Transparência E Eficiência Operacional, Reduzindo O Atrito E O Desgaste Gerados Por Demandas Emergenciais E Desalinhamento De Expectativas Com Os Clientes Internos.",
-    "data_inicio": "2026-07-15",
+    "data_inicio": "2026-06-08",
     "data_fim": "2026-08-07",
     "execucao": 0.5,
     "resumo_acoes": {
@@ -55,6 +55,12 @@
     {
       "mes": 1,
       "ano": 2026,
+      "mes_referencia": 6,
+      "registros": []
+    },
+    {
+      "mes": 2,
+      "ano": 2026,
       "mes_referencia": 7,
       "registros": [
         {
@@ -70,45 +76,39 @@
       ]
     },
     {
-      "mes": 2,
+      "mes": 3,
       "ano": 2026,
       "mes_referencia": 8,
       "registros": []
     },
     {
-      "mes": 3,
+      "mes": 4,
       "ano": 2026,
       "mes_referencia": 9,
       "registros": []
     },
     {
-      "mes": 4,
+      "mes": 5,
       "ano": 2026,
       "mes_referencia": 10,
       "registros": []
     },
     {
-      "mes": 5,
+      "mes": 6,
       "ano": 2026,
       "mes_referencia": 11,
       "registros": []
     },
     {
-      "mes": 6,
+      "mes": 7,
       "ano": 2026,
       "mes_referencia": 12,
       "registros": []
     },
     {
-      "mes": 7,
-      "ano": 2027,
-      "mes_referencia": 1,
-      "registros": []
-    },
-    {
       "mes": 8,
       "ano": 2027,
-      "mes_referencia": 2,
+      "mes_referencia": 1,
       "registros": []
     }
   ],

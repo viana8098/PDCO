@@ -8,7 +8,7 @@
     "responsavel": "Responsável 17",
     "arquetipos_culturais": "Implantação De Métricas De Desempenho (ppr) Por Área (corporativa)​",
     "resultados_esperados": null,
-    "data_inicio": "2026-03-16",
+    "data_inicio": "2026-01-01",
     "data_fim": "2026-12-18",
     "execucao": 0.4444444444444444,
     "resumo_acoes": {
@@ -94,6 +94,24 @@
   "acompanhamento": [
     {
       "mes": 1,
+      "ano": 2025,
+      "mes_referencia": 12,
+      "registros": []
+    },
+    {
+      "mes": 2,
+      "ano": 2026,
+      "mes_referencia": 1,
+      "registros": []
+    },
+    {
+      "mes": 3,
+      "ano": 2026,
+      "mes_referencia": 2,
+      "registros": []
+    },
+    {
+      "mes": 4,
       "ano": 2026,
       "mes_referencia": 3,
       "registros": [
@@ -145,7 +163,7 @@
       ]
     },
     {
-      "mes": 2,
+      "mes": 5,
       "ano": 2026,
       "mes_referencia": 4,
       "registros": [
@@ -172,19 +190,19 @@
       ]
     },
     {
-      "mes": 3,
+      "mes": 6,
       "ano": 2026,
       "mes_referencia": 5,
       "registros": []
     },
     {
-      "mes": 4,
+      "mes": 7,
       "ano": 2026,
       "mes_referencia": 6,
       "registros": []
     },
     {
-      "mes": 5,
+      "mes": 8,
       "ano": 2026,
       "mes_referencia": 7,
       "registros": [
@@ -279,70 +297,6 @@
           "origem": "plano"
         }
       ]
-    },
-    {
-      "mes": 6,
-      "ano": 2026,
-      "mes_referencia": 8,
-      "registros": []
-    },
-    {
-      "mes": 7,
-      "ano": 2026,
-      "mes_referencia": 9,
-      "registros": [
-        {
-          "texto": "A Estrutura Da Cesta De Indicadores Para Avaliar O Desempenho Das Áreas Corporativas, Combinando Resultados Institucionais E Específicos De Cada Área  Foram Apresentadas À Digest. Todos Os Setores Utilizarão Os Mesmos Cinco Indicadores, Com Peso Sugerido De 20% Cada, Relacionados À Eficiência Orçamentária, Alcance Dos Indicadores Táticos, Satisfação Do Cliente Interno, Cumprimento De Prazos/sla E Regularização De Ocorrências.\r\npara O Colaborador Da Área Corporativa, A Bonificação Seria Composta Por 20% Da Cesta Sesi, 20% Da Cesta Senai E 60% Da Cesta Da Própria Área (sendo 30% Referente À Contribuição Ao Sesi E 30% Referente À Contribuição Ao Senai). As Metas, Pesos E Algumas Fórmulas Ainda Estão Em Fase De Definição E Validação.\r\n\r\nos Indicadores Foram Aprovados, E As Ações Agora São: A) Estruturar As Fichas Dos Indicadores; B) Estruturar A Metodologia Para O Indicador Índice De Satisfação Do Cliente Interno, Contando Com Um Gt Formado Por Estratégia - Processos - Governança.",
-          "data": "2026-09-02",
-          "origem": "plano"
-        },
-        {
-          "texto": "A Estrutura Da Cesta De Indicadores Para Avaliar O Desempenho Das Áreas Corporativas, Combinando Resultados Institucionais E Específicos De Cada Área  Foram Apresentadas À Digest. Todos Os Setores Utilizarão Os Mesmos Cinco Indicadores, Com Peso Sugerido De 20% Cada, Relacionados À Eficiência Orçamentária, Alcance Dos Indicadores Táticos, Satisfação Do Cliente Interno, Cumprimento De Prazos/sla E Regularização De Ocorrências.\r\npara O Colaborador Da Área Corporativa, A Bonificação Seria Composta Por 20% Da Cesta Sesi, 20% Da Cesta Senai E 60% Da Cesta Da Própria Área (sendo 30% Referente À Contribuição Ao Sesi E 30% Referente À Contribuição Ao Senai). As Metas, Pesos E Algumas Fórmulas Ainda Estão Em Fase De Definição E Validação.\r\n\r\nos Indicadores Foram Aprovados, E As Ações Agora São: A) Estruturar As Fichas Dos Indicadores; B) Estruturar A Metodologia Para O Indicador Índice De Satisfação Do Cliente Interno, Contando Com Um Gt Formado Por Estratégia - Processos - Governança.",
-          "data": "2026-09-02",
-          "origem": "plano"
-        },
-        {
-          "texto": "A Estrutura Da Cesta De Indicadores Para Avaliar O Desempenho Das Áreas Corporativas, Combinando Resultados Institucionais E Específicos De Cada Área  Foram Apresentadas À Digest. Todos Os Setores Utilizarão Os Mesmos Cinco Indicadores, Com Peso Sugerido De 20% Cada, Relacionados À Eficiência Orçamentária, Alcance Dos Indicadores Táticos, Satisfação Do Cliente Interno, Cumprimento De Prazos/sla E Regularização De Ocorrências.\r\npara O Colaborador Da Área Corporativa, A Bonificação Seria Composta Por 20% Da Cesta Sesi, 20% Da Cesta Senai E 60% Da Cesta Da Própria Área (sendo 30% Referente À Contribuição Ao Sesi E 30% Referente À Contribuição Ao Senai). As Metas, Pesos E Algumas Fórmulas Ainda Estão Em Fase De Definição E Validação.\r\n\r\nos Indicadores Foram Aprovados, E As Ações Agora São: A) Estruturar As Fichas Dos Indicadores; B) Estruturar A Metodologia Para O Indicador Índice De Satisfação Do Cliente Interno, Contando Com Um Gt Formado Por Estratégia - Processos - Governança.",
-          "data": "2026-09-02",
-          "origem": "plano"
-        },
-        {
-          "texto": "A Estrutura Da Cesta De Indicadores Para Avaliar O Desempenho Das Áreas Corporativas, Combinando Resultados Institucionais E Específicos De Cada Área  Foram Apresentadas À Digest. Todos Os Setores Utilizarão Os Mesmos Cinco Indicadores, Com Peso Sugerido De 20% Cada, Relacionados À Eficiência Orçamentária, Alcance Dos Indicadores Táticos, Satisfação Do Cliente Interno, Cumprimento De Prazos/sla E Regularização De Ocorrências.\r\npara O Colaborador Da Área Corporativa, A Bonificação Seria Composta Por 20% Da Cesta Sesi, 20% Da Cesta Senai E 60% Da Cesta Da Própria Área (sendo 30% Referente À Contribuição Ao Sesi E 30% Referente À Contribuição Ao Senai). As Metas, Pesos E Algumas Fórmulas Ainda Estão Em Fase De Definição E Validação.\r\n\r\nos Indicadores Foram Aprovados, E As Ações Agora São: A) Estruturar As Fichas Dos Indicadores; B) Estruturar A Metodologia Para O Indicador Índice De Satisfação Do Cliente Interno, Contando Com Um Gt Formado Por Estratégia - Processos - Governança.",
-          "data": "2026-09-02",
-          "origem": "plano"
-        },
-        {
-          "texto": "A Estrutura Da Cesta De Indicadores Para Avaliar O Desempenho Das Áreas Corporativas, Combinando Resultados Institucionais E Específicos De Cada Área  Foram Apresentadas À Digest. Todos Os Setores Utilizarão Os Mesmos Cinco Indicadores, Com Peso Sugerido De 20% Cada, Relacionados À Eficiência Orçamentária, Alcance Dos Indicadores Táticos, Satisfação Do Cliente Interno, Cumprimento De Prazos/sla E Regularização De Ocorrências.\r\npara O Colaborador Da Área Corporativa, A Bonificação Seria Composta Por 20% Da Cesta Sesi, 20% Da Cesta Senai E 60% Da Cesta Da Própria Área (sendo 30% Referente À Contribuição Ao Sesi E 30% Referente À Contribuição Ao Senai). As Metas, Pesos E Algumas Fórmulas Ainda Estão Em Fase De Definição E Validação.\r\n\r\nos Indicadores Foram Aprovados, E As Ações Agora São: A) Estruturar As Fichas Dos Indicadores; B) Estruturar A Metodologia Para O Indicador Índice De Satisfação Do Cliente Interno, Contando Com Um Gt Formado Por Estratégia - Processos - Governança.",
-          "data": "2026-09-02",
-          "origem": "plano"
-        },
-        {
-          "texto": "A Estrutura Da Cesta De Indicadores Para Avaliar O Desempenho Das Áreas Corporativas, Combinando Resultados Institucionais E Específicos De Cada Área  Foram Apresentadas À Digest. Todos Os Setores Utilizarão Os Mesmos Cinco Indicadores, Com Peso Sugerido De 20% Cada, Relacionados À Eficiência Orçamentária, Alcance Dos Indicadores Táticos, Satisfação Do Cliente Interno, Cumprimento De Prazos/sla E Regularização De Ocorrências.\r\npara O Colaborador Da Área Corporativa, A Bonificação Seria Composta Por 20% Da Cesta Sesi, 20% Da Cesta Senai E 60% Da Cesta Da Própria Área (sendo 30% Referente À Contribuição Ao Sesi E 30% Referente À Contribuição Ao Senai). As Metas, Pesos E Algumas Fórmulas Ainda Estão Em Fase De Definição E Validação.\r\n\r\nos Indicadores Foram Aprovados, E As Ações Agora São: A) Estruturar As Fichas Dos Indicadores; B) Estruturar A Metodologia Para O Indicador Índice De Satisfação Do Cliente Interno, Contando Com Um Gt Formado Por Estratégia - Processos - Governança.",
-          "data": "2026-09-02",
-          "origem": "plano"
-        },
-        {
-          "texto": "A Estrutura Da Cesta De Indicadores Para Avaliar O Desempenho Das Áreas Corporativas, Combinando Resultados Institucionais E Específicos De Cada Área  Foram Apresentadas À Digest. Todos Os Setores Utilizarão Os Mesmos Cinco Indicadores, Com Peso Sugerido De 20% Cada, Relacionados À Eficiência Orçamentária, Alcance Dos Indicadores Táticos, Satisfação Do Cliente Interno, Cumprimento De Prazos/sla E Regularização De Ocorrências.\r\npara O Colaborador Da Área Corporativa, A Bonificação Seria Composta Por 20% Da Cesta Sesi, 20% Da Cesta Senai E 60% Da Cesta Da Própria Área (sendo 30% Referente À Contribuição Ao Sesi E 30% Referente À Contribuição Ao Senai). As Metas, Pesos E Algumas Fórmulas Ainda Estão Em Fase De Definição E Validação.\r\n\r\nos Indicadores Foram Aprovados, E As Ações Agora São: A) Estruturar As Fichas Dos Indicadores; B) Estruturar A Metodologia Para O Indicador Índice De Satisfação Do Cliente Interno, Contando Com Um Gt Formado Por Estratégia - Processos - Governança.",
-          "data": "2026-09-02",
-          "origem": "plano"
-        },
-        {
-          "texto": "A Estrutura Da Cesta De Indicadores Para Avaliar O Desempenho Das Áreas Corporativas, Combinando Resultados Institucionais E Específicos De Cada Área  Foram Apresentadas À Digest. Todos Os Setores Utilizarão Os Mesmos Cinco Indicadores, Com Peso Sugerido De 20% Cada, Relacionados À Eficiência Orçamentária, Alcance Dos Indicadores Táticos, Satisfação Do Cliente Interno, Cumprimento De Prazos/sla E Regularização De Ocorrências.\r\npara O Colaborador Da Área Corporativa, A Bonificação Seria Composta Por 20% Da Cesta Sesi, 20% Da Cesta Senai E 60% Da Cesta Da Própria Área (sendo 30% Referente À Contribuição Ao Sesi E 30% Referente À Contribuição Ao Senai). As Metas, Pesos E Algumas Fórmulas Ainda Estão Em Fase De Definição E Validação.\r\n\r\nos Indicadores Foram Aprovados, E As Ações Agora São: A) Estruturar As Fichas Dos Indicadores; B) Estruturar A Metodologia Para O Indicador Índice De Satisfação Do Cliente Interno, Contando Com Um Gt Formado Por Estratégia - Processos - Governança.",
-          "data": "2026-09-02",
-          "origem": "plano"
-        },
-        {
-          "texto": "A Estrutura Da Cesta De Indicadores Para Avaliar O Desempenho Das Áreas Corporativas, Combinando Resultados Institucionais E Específicos De Cada Área  Foram Apresentadas À Digest. Todos Os Setores Utilizarão Os Mesmos Cinco Indicadores, Com Peso Sugerido De 20% Cada, Relacionados À Eficiência Orçamentária, Alcance Dos Indicadores Táticos, Satisfação Do Cliente Interno, Cumprimento De Prazos/sla E Regularização De Ocorrências.\r\npara O Colaborador Da Área Corporativa, A Bonificação Seria Composta Por 20% Da Cesta Sesi, 20% Da Cesta Senai E 60% Da Cesta Da Própria Área (sendo 30% Referente À Contribuição Ao Sesi E 30% Referente À Contribuição Ao Senai). As Metas, Pesos E Algumas Fórmulas Ainda Estão Em Fase De Definição E Validação.\r\n\r\nos Indicadores Foram Aprovados, E As Ações Agora São: A) Estruturar As Fichas Dos Indicadores; B) Estruturar A Metodologia Para O Indicador Índice De Satisfação Do Cliente Interno, Contando Com Um Gt Formado Por Estratégia - Processos - Governança.",
-          "data": "2026-09-02",
-          "origem": "plano"
-        }
-      ]
-    },
-    {
-      "mes": 8,
-      "ano": 2026,
-      "mes_referencia": 10,
-      "registros": []
     }
   ],
   "indicadores": [],

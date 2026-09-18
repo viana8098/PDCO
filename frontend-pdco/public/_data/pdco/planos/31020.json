@@ -8,7 +8,7 @@
     "responsavel": "Responsável 11",
     "arquetipos_culturais": "Implantação Dos Critérios De Priorizações Das Iniciativas Estratégicas Com Foco Em Sustentabilidade",
     "resultados_esperados": null,
-    "data_inicio": "2026-07-08",
+    "data_inicio": "2026-07-01",
     "data_fim": "2026-08-19",
     "execucao": 0.625,
     "resumo_acoes": {
@@ -87,6 +87,12 @@
     {
       "mes": 1,
       "ano": 2026,
+      "mes_referencia": 6,
+      "registros": []
+    },
+    {
+      "mes": 2,
+      "ano": 2026,
       "mes_referencia": 7,
       "registros": [
         {
@@ -132,7 +138,7 @@
       ]
     },
     {
-      "mes": 2,
+      "mes": 3,
       "ano": 2026,
       "mes_referencia": 8,
       "registros": [
@@ -179,7 +185,7 @@
       ]
     },
     {
-      "mes": 3,
+      "mes": 4,
       "ano": 2026,
       "mes_referencia": 9,
       "registros": [
@@ -226,33 +232,27 @@
       ]
     },
     {
-      "mes": 4,
+      "mes": 5,
       "ano": 2026,
       "mes_referencia": 10,
       "registros": []
     },
     {
-      "mes": 5,
+      "mes": 6,
       "ano": 2026,
       "mes_referencia": 11,
       "registros": []
     },
     {
-      "mes": 6,
+      "mes": 7,
       "ano": 2026,
       "mes_referencia": 12,
       "registros": []
     },
     {
-      "mes": 7,
-      "ano": 2027,
-      "mes_referencia": 1,
-      "registros": []
-    },
-    {
       "mes": 8,
       "ano": 2027,
-      "mes_referencia": 2,
+      "mes_referencia": 1,
       "registros": []
     }
   ],
