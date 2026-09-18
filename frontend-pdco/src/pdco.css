@@ -761,10 +761,14 @@ body {
 
 /* ----------------------------- Timeline de previsão -------------------------- */
 .pdco-app .pdco-timeline-card {
-  padding: 16px;
+  padding: 16px 16px 12px;
   display: flex;
   flex-direction: column;
   gap: 10px;
+  /* Item de grid: sem isso estica até a altura do card de estatísticas ao lado
+     e deixa um vazio grande abaixo dos meses. */
+  align-self: start;
+  min-width: 0;
 }
 .pdco-app .pdco-timeline-head {
   display: flex;
@@ -776,11 +780,97 @@ body {
   font-weight: 600;
   color: var(--red);
 }
+.pdco-app .pdco-timeline-viewport {
+  position: relative;
+}
 .pdco-app .pdco-timeline-scroll {
+  position: relative;
   display: flex;
   gap: 6px;
   overflow-x: auto;
-  padding-bottom: 2px;
+  padding: 3px 2px 12px;
+  user-select: none;
+  -webkit-user-select: none;
+  /* Não deixa o gesto horizontal do touchpad virar "voltar página" na ponta. */
+  overscroll-behavior-x: contain;
+}
+/* Barra de rolagem no estilo do painel: trilho discreto, thumb arredondado. */
+.pdco-app .pdco-timeline-scroll::-webkit-scrollbar {
+  height: 6px;
+}
+.pdco-app .pdco-timeline-scroll::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 999px;
+}
+.pdco-app .pdco-timeline-scroll::-webkit-scrollbar-thumb {
+  background: rgba(167, 216, 255, 0.28);
+  border-radius: 999px;
+  transition: background 0.15s ease;
+}
+.pdco-app .pdco-timeline-scroll::-webkit-scrollbar-thumb:hover {
+  background: rgba(167, 216, 255, 0.5);
+}
+@supports not selector(::-webkit-scrollbar) {
+  .pdco-app .pdco-timeline-scroll {
+    scrollbar-width: thin;
+    scrollbar-color: rgba(167, 216, 255, 0.3) rgba(255, 255, 255, 0.05);
+  }
+}
+.pdco-app .pdco-timeline-arrastando,
+.pdco-app .pdco-timeline-arrastando * {
+  cursor: grabbing !important;
+}
+/* Indicadores discretos de que há meses escondidos além das pontas. */
+.pdco-app .pdco-timeline-borda {
+  position: absolute;
+  top: 0;
+  bottom: 18px;
+  width: 34px;
+  display: flex;
+  align-items: center;
+  font-size: 22px;
+  line-height: 1;
+  color: var(--accent);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.2s ease;
+}
+.pdco-app .pdco-timeline-borda-esq {
+  left: 0;
+  justify-content: flex-start;
+  padding-left: 4px;
+  background: linear-gradient(to right, var(--surface) 30%, transparent);
+}
+.pdco-app .pdco-timeline-borda-dir {
+  right: 0;
+  justify-content: flex-end;
+  padding-right: 4px;
+  background: linear-gradient(to left, var(--surface) 30%, transparent);
+}
+.pdco-app .pdco-timeline-borda-ativa {
+  opacity: 0.85;
+}
+/* Virada de ano: linha vertical fina com o número do ano novo — não é um card. */
+.pdco-app .pdco-timeline-ano {
+  flex: none;
+  width: 26px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3px;
+}
+.pdco-app .pdco-timeline-ano-num {
+  font-size: 9.5px;
+  font-weight: 600;
+  letter-spacing: 0.4px;
+  line-height: 1;
+  color: rgba(167, 216, 255, 0.7);
+}
+.pdco-app .pdco-timeline-ano-linha {
+  flex: 1;
+  width: 1px;
+  min-height: 16px;
+  background: linear-gradient(to bottom, rgba(167, 216, 255, 0.4), rgba(167, 216, 255, 0.06));
 }
 .pdco-app .pdco-timeline-cell {
   min-width: 52px;
@@ -818,13 +908,87 @@ body {
   background: var(--red-soft);
 }
 .pdco-app .pdco-timeline-clicavel {
+  flex: none;
   font: inherit;
+  color: inherit;
   cursor: pointer;
-  transition: transform 0.1s ease, border-color 0.1s ease;
+  transition: transform 0.12s ease, border-color 0.12s ease, box-shadow 0.12s ease, background-color 0.12s ease;
 }
 .pdco-app .pdco-timeline-clicavel:hover {
-  border-color: rgba(248, 113, 113, 0.8);
+  border-color: rgba(167, 216, 255, 0.6);
   transform: translateY(-1px);
+}
+.pdco-app .pdco-timeline-danger.pdco-timeline-clicavel:hover {
+  border-color: rgba(248, 113, 113, 0.8);
+}
+.pdco-app .pdco-timeline-clicavel:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}
+/* Mês selecionado: borda mais firme, fundo levemente mais claro e um brilho
+   curto, sem mudar o tom (azul/verde/vermelho) do card. */
+.pdco-app .pdco-timeline-selecionado {
+  border-color: rgba(167, 216, 255, 0.85);
+  background-image: linear-gradient(rgba(167, 216, 255, 0.14), rgba(167, 216, 255, 0.14));
+  box-shadow: 0 0 0 1px rgba(167, 216, 255, 0.35), 0 4px 14px rgba(167, 216, 255, 0.16);
+}
+.pdco-app .pdco-timeline-selecionado .pdco-timeline-total {
+  color: #fff;
+  text-shadow: 0 0 10px rgba(167, 216, 255, 0.55);
+}
+.pdco-app .pdco-timeline-danger.pdco-timeline-selecionado {
+  border-color: rgba(248, 113, 113, 0.9);
+  box-shadow: 0 0 0 1px rgba(248, 113, 113, 0.4), 0 4px 14px rgba(248, 113, 113, 0.18);
+}
+.pdco-app .pdco-timeline-success.pdco-timeline-selecionado {
+  border-color: rgba(52, 211, 153, 0.85);
+  box-shadow: 0 0 0 1px rgba(52, 211, 153, 0.35), 0 4px 14px rgba(52, 211, 153, 0.16);
+}
+
+/* Cabeçalho do filtro de mês na tabela de ações */
+.pdco-app .pdco-acoes-filtro {
+  margin: 0 22px 12px;
+  padding: 10px 14px;
+  border: 1px solid rgba(167, 216, 255, 0.3);
+  background: var(--accent-soft);
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+.pdco-app .pdco-acoes-filtro-atraso {
+  border-color: rgba(248, 113, 113, 0.4);
+  background: var(--red-soft);
+}
+.pdco-app .pdco-acoes-filtro-textos {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+.pdco-app .pdco-acoes-filtro-titulo {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 13px;
+  color: var(--text);
+}
+.pdco-app .pdco-acoes-filtro-info {
+  font-size: 11.5px;
+  color: var(--text-muted);
+}
+.pdco-app .pdco-acoes-filtro-limpar {
+  background: none;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-pill);
+  color: var(--text);
+  font: inherit;
+  font-size: 11.5px;
+  padding: 5px 12px;
+  cursor: pointer;
+}
+.pdco-app .pdco-acoes-filtro-limpar:hover {
+  background: rgba(255, 255, 255, 0.08);
 }
 .pdco-app .pdco-timeline-atual {
   position: absolute;

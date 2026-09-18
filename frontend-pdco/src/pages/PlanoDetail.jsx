@@ -19,17 +19,17 @@ export default function PlanoDetail() {
     const { cdPlanoAcao } = useParams()
     const detalhe = useAsync(() => api.plano(user, cdPlanoAcao), [user, cdPlanoAcao], !!user && !!cdPlanoAcao)
     const [aba, setAba] = useState('acoes')
-    // Ações atrasadas destacadas ao clicar num mês da previsão — realça as
-    // linhas certas na aba "Ações do plano".
-    const [acoesDestacadas, setAcoesDestacadas] = useState(null)
+    // Mês escolhido na previsão de conclusão (chave ano*12+mês): filtra a tabela
+    // da aba "Ações do plano" e destaca as atrasadas daquele período.
+    const [mesSelecionado, setMesSelecionado] = useState(null)
     useEffect(() => {
         setAba('acoes')
-        setAcoesDestacadas(null)
+        setMesSelecionado(null)
     }, [cdPlanoAcao])
 
-    function verAtrasadasNaTabela(idsAtrasadas) {
-        setAba('acoes')
-        setAcoesDestacadas(idsAtrasadas)
+    function selecionarMes(chave) {
+        setMesSelecionado(chave)
+        if (chave !== null) setAba('acoes')
     }
 
     if (detalhe.erro) {
@@ -91,7 +91,7 @@ export default function PlanoDetail() {
                         </div>
                         <p className="pdco-rag-motivos">{rag.motivos.join(' · ')}</p>
                     </div>
-                    <PlanoTimeline acoes={acoes} onClicarAtrasadas={verAtrasadasNaTabela} />
+                    <PlanoTimeline key={cdPlanoAcao} acoes={acoes} mesSelecionado={mesSelecionado} onSelecionarMes={selecionarMes} />
                 </div>
             </section>
 
@@ -112,7 +112,7 @@ export default function PlanoDetail() {
                 </div>
 
                 <div className="pdco-plan-tab-body">
-                    {aba === 'acoes' && <AcoesTable acoes={acoes} idsDestacados={acoesDestacadas} />}
+                    {aba === 'acoes' && <AcoesTable acoes={acoes} mesFiltro={mesSelecionado} onLimparFiltro={() => setMesSelecionado(null)} />}
                     {aba === 'acompanhamentos' && <AcompanhamentoGrid quadrantes={acompanhamento} plano={plano} />}
                     {aba === 'anexos' && <AnexosTab />}
                 </div>

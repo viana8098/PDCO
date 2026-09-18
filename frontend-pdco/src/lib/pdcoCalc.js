@@ -129,6 +129,38 @@ export function indiceMesRelativo(dataInicioIso, alvoIso) {
   return (alvo.getFullYear() - inicio.getFullYear()) * 12 + (alvo.getMonth() - inicio.getMonth())
 }
 
+const MESES_LONGOS = ['Janeiro', 'Fevereiro', 'Março', 'Abril', 'Maio', 'Junho', 'Julho', 'Agosto', 'Setembro', 'Outubro', 'Novembro', 'Dezembro']
+
+/** Chave numérica do mês de calendário (ano*12 + mês) de uma data ISO (yyyy-mm-dd); null se não houver/for inválida. */
+export function chaveDoMes(iso) {
+  if (!iso) return null
+  const data = new Date(`${iso}T00:00:00`)
+  if (Number.isNaN(data.getTime())) return null
+  return data.getFullYear() * 12 + data.getMonth()
+}
+
+/** "Setembro/2026" a partir da chave do mês (ver chaveDoMes). */
+export function rotuloDaChave(chave) {
+  return `${MESES_LONGOS[((chave % 12) + 12) % 12]}/${Math.floor(chave / 12)}`
+}
+
+const semStatus = (acao) => (acao.status || '').trim().toLowerCase()
+
+export function acaoCancelada(acao) {
+  return semStatus(acao).startsWith('cancel')
+}
+
+export function acaoConcluida(acao) {
+  const status = semStatus(acao)
+  return status === 'concluído' || status === 'concluido'
+}
+
+/** Atrasada: nem concluída nem cancelada, com prazo final já vencido — mesmo critério do resumo do back-end. */
+export function acaoAtrasada(acao, hoje = new Date()) {
+  if (acaoCancelada(acao) || acaoConcluida(acao) || !acao.prazo_final) return false
+  return new Date(acao.prazo_final) < hoje
+}
+
 export function formatarData(iso) {
   if (!iso) return '—'
   const data = new Date(`${iso}T00:00:00`)

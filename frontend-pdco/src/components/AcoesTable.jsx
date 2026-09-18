@@ -1,7 +1,7 @@
 import { useEffect, useMemo, useRef, useState } from 'react'
 import { Link, useParams } from 'react-router-dom'
 import { iniciaisDoNome } from '../lib/iniciais'
-import { formatarData } from '../lib/pdcoCalc'
+import { acaoAtrasada, acaoCancelada, acaoConcluida, chaveDoMes, formatarData, rotuloDaChave } from '../lib/pdcoCalc'
 import { StatusPill } from './StatusPill'
 
 const COLUNAS = [
@@ -24,17 +24,36 @@ function comparar(a, b, coluna) {
     return String(va).localeCompare(String(vb), 'pt-BR', { sensitivity: 'base', numeric: true })
 }
 
-export function AcoesTable({ acoes, idsDestacados }) {
+// Com um mês filtrado, o que está atrasado vem primeiro; depois as pendentes,
+// as concluídas e, por último, as canceladas (só listadas, não contam).
+function pesoNoFiltro(acao, hoje) {
+    if (acaoCancelada(acao)) return 3
+    if (acaoConcluida(acao)) return 2
+    return acaoAtrasada(acao, hoje) ? 0 : 1
+}
+
+/**
+ * Tabela de ações do plano. `mesFiltro` (chave de ano*12+mês, vem da timeline
+ * de previsão) recorta a tabela pelo mês do prazo final e destaca as atrasadas.
+ */
+export function AcoesTable({ acoes, mesFiltro = null, onLimparFiltro }) {
     const { cdPlanoAcao } = useParams()
     // null = ordem original (como veio da API); senão { coluna, direcao: 1 | -1 }
     const [ordenacao, setOrdenacao] = useState(null)
-    const primeiraDestacadaRef = useRef(null)
+    const filtroRef = useRef(null)
+    const filtrando = mesFiltro !== null
+    const hoje = useMemo(() => new Date(), [])
 
+    // Trocar de mês na timeline não deve exigir rolar a página de volta: só
+    // rola se o cabeçalho do filtro estiver fora da tela.
     useEffect(() => {
-        if (idsDestacados?.length) {
-            primeiraDestacadaRef.current?.scrollIntoView({ behavior: 'smooth', block: 'center' })
+        const cabecalho = filtroRef.current
+        if (!cabecalho) return
+        const retangulo = cabecalho.getBoundingClientRect()
+        if (retangulo.top < 0 || retangulo.bottom > window.innerHeight) {
+            cabecalho.scrollIntoView({ behavior: 'smooth', block: 'center' })
         }
-    }, [idsDestacados])
+    }, [mesFiltro])
 
     function alternarOrdenacao(coluna) {
         setOrdenacao((atual) => {
@@ -44,18 +63,47 @@ export function AcoesTable({ acoes, idsDestacados }) {
         })
     }
 
-    const acoesOrdenadas = useMemo(() => {
-        if (!ordenacao) return acoes
-        const { coluna, direcao } = ordenacao
-        return [...acoes].sort((a, b) => direcao * comparar(a, b, coluna))
-    }, [acoes, ordenacao])
+    const linhas = useMemo(() => (filtrando ? acoes.filter((a) => chaveDoMes(a.prazo_final) === mesFiltro) : acoes), [acoes, mesFiltro, filtrando])
 
-    const destacados = useMemo(() => new Set(idsDestacados ?? []), [idsDestacados])
-    let jaMarcouPrimeira = false
+    const acoesOrdenadas = useMemo(() => {
+        if (ordenacao) {
+            const { coluna, direcao } = ordenacao
+            return [...linhas].sort((a, b) => direcao * comparar(a, b, coluna))
+        }
+        if (filtrando) return [...linhas].sort((a, b) => pesoNoFiltro(a, hoje) - pesoNoFiltro(b, hoje) || comparar(a, b, 'prazo_final'))
+        return linhas
+    }, [linhas, ordenacao, filtrando, hoje])
+
+    const resumo = useMemo(() => {
+        if (!filtrando) return null
+        const ativas = linhas.filter((a) => !acaoCancelada(a))
+        return {
+            ativas: ativas.length,
+            atrasadas: ativas.filter((a) => acaoAtrasada(a, hoje)).length,
+            canceladas: linhas.length - ativas.length,
+        }
+    }, [linhas, filtrando, hoje])
 
     return (
         <>
-            {acoes.length ? (
+            {filtrando && (
+                <div ref={filtroRef} className={`pdco-acoes-filtro ${resumo.atrasadas > 0 ? 'pdco-acoes-filtro-atraso' : ''}`}>
+                    <div className="pdco-acoes-filtro-textos">
+                        <span className="pdco-acoes-filtro-titulo">
+                            {resumo.atrasadas > 0 ? 'Atrasados' : 'Prazo em'} — {rotuloDaChave(mesFiltro)}
+                        </span>
+                        <span className="pdco-acoes-filtro-info">
+                            {resumo.ativas} ação(ões) no mês · {resumo.atrasadas} atrasada(s)
+                            {resumo.canceladas > 0 && ` · ${resumo.canceladas} cancelada(s), só listada(s)`}
+                        </span>
+                    </div>
+                    <button type="button" className="pdco-acoes-filtro-limpar" onClick={onLimparFiltro}>
+                        Limpar filtro ×
+                    </button>
+                </div>
+            )}
+
+            {linhas.length ? (
                 <table className="pdco-tabela-acoes">
                     <thead>
                         <tr>
@@ -78,16 +126,8 @@ export function AcoesTable({ acoes, idsDestacados }) {
                         </tr>
                     </thead>
                     <tbody>
-                        {acoesOrdenadas.map((acao) => {
-                            const destacada = destacados.has(acao.cd_acao)
-                            const ehPrimeiraDestacada = destacada && !jaMarcouPrimeira
-                            if (ehPrimeiraDestacada) jaMarcouPrimeira = true
-                            return (
-                            <tr
-                                key={acao.cd_acao}
-                                ref={ehPrimeiraDestacada ? primeiraDestacadaRef : null}
-                                className={destacada ? 'pdco-acao-destacada' : ''}
-                            >
+                        {acoesOrdenadas.map((acao) => (
+                            <tr key={acao.cd_acao} className={filtrando && acaoAtrasada(acao, hoje) ? 'pdco-acao-destacada' : ''}>
                                 <td>
                                     <Link
                                         className="pdco-acao-link"
@@ -112,12 +152,13 @@ export function AcoesTable({ acoes, idsDestacados }) {
                                     )}
                                 </td>
                             </tr>
-                            )
-                        })}
+                        ))}
                     </tbody>
                 </table>
             ) : (
-                <p className="pdco-vazio">Nenhuma ação cadastrada para este plano.</p>
+                <p className="pdco-vazio">
+                    {filtrando ? `Nenhuma ação com prazo em ${rotuloDaChave(mesFiltro)}.` : 'Nenhuma ação cadastrada para este plano.'}
+                </p>
             )}
         </>
     )
