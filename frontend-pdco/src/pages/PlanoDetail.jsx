@@ -4,11 +4,10 @@ import { useAsync } from '../lib/useAsync'
 import { AcoesTable } from '../components/AcoesTable'
 import { AcompanhamentoGrid } from '../components/AcompanhamentoGrid'
 import { AnexosTab } from '../components/AnexosTab'
-import { DiagnosticoSubcultura } from '../components/DiagnosticoSubcultura'
+import { CaixaRecolhivel } from '../components/CaixaRecolhivel'
 import { IndicadoresCard } from '../components/IndicadoresCard'
 import { PlanoTimeline } from '../components/PlanoTimeline'
 import { RagBadge } from '../components/RagBadge'
-import { TextoPanel } from '../components/TextoPanel'
 import { TipoChip } from '../components/TipoChip'
 import { calcRag, formatarData, tituloDoPlano, RAG_COLOR, RAG_LABEL } from '../lib/pdcoCalc'
 import { usePdco } from '../lib/PdcoContext'
@@ -96,8 +95,8 @@ export default function PlanoDetail() {
             </section>
 
             <div className="pdco-secondary-row">
-                <DiagnosticoSubcultura texto={null} />
-                <TextoPanel titulo="Resultados esperados" texto={plano.resultados_esperados} />
+                <CaixaRecolhivel titulo="Diagnóstico da Subcultura" texto={null} preservarQuebras />
+                <CaixaRecolhivel titulo="Resultados esperados" texto={plano.resultados_esperados} />
             </div>
 
             <section className="pdco-panel">

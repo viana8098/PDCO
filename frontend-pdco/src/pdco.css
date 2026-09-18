@@ -1202,16 +1202,6 @@ body {
     grid-template-columns: 1fr;
   }
 }
-.pdco-app .pdco-text-panel {
-  padding: 22px;
-}
-.pdco-app .pdco-text-panel p {
-  margin: 0;
-  font-size: 13.5px;
-  line-height: 1.6;
-  color: var(--text-muted);
-}
-
 /* ------------------------- Acompanhamentos mensais (acordeão) ---------------- */
 .pdco-app .pdco-month-list {
   display: flex;
@@ -1713,14 +1703,13 @@ body {
   color: var(--text);
 }
 
-/* Diagnóstico ao lado de Resultados esperados: cada caixa com a sua altura —
-   a do diagnóstico fica compacta quando fechada em vez de esticar. */
+/* Caixas recolhíveis lado a lado (Diagnóstico da Subcultura / Resultados
+   esperados): cada uma com a sua altura, então a que está fechada fica compacta
+   em vez de esticar até a altura da outra aberta. */
 .pdco-app .pdco-secondary-row {
   align-items: start;
 }
-
-/* Diagnóstico da Subcultura — caixa recolhível */
-.pdco-app .pdco-diagnostico-head {
+.pdco-app .pdco-recolhivel-head {
   width: 100%;
   display: flex;
   align-items: center;
@@ -1734,15 +1723,17 @@ body {
   text-align: left;
   cursor: pointer;
 }
-.pdco-app .pdco-diagnostico-head:disabled {
+.pdco-app .pdco-recolhivel-head:disabled {
   cursor: default;
 }
-.pdco-app .pdco-diagnostico-texto {
+.pdco-app .pdco-recolhivel-texto {
   margin: 0;
   padding: 0 22px 22px;
   font-size: 13.5px;
   line-height: 1.6;
   color: var(--text-muted);
+}
+.pdco-app .pdco-recolhivel-quebras {
   white-space: pre-line;
 }
 
