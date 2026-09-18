@@ -7,38 +7,53 @@ import { api } from '../lib/api'
 
 const TOTAL_MESES = 8
 
-function moda(lista) {
-    if (lista.length === 0) return 1
-    const contagem = new Map()
-    for (const v of lista) contagem.set(v, (contagem.get(v) ?? 0) + 1)
-    return [...contagem.entries()].sort((a, b) => b[1] - a[1])[0][0]
+const MESES_PT = ['jan', 'fev', 'mar', 'abr', 'mai', 'jun', 'jul', 'ago', 'set', 'out', 'nov', 'dez']
+
+/**
+ * Início do ciclo: o "Mês 1" é sempre o mês de início do plano iniciado mais
+ * recentemente (entre os que já começaram — plano com início futuro não conta).
+ * Datas ISO (yyyy-mm-dd) comparam certo como texto. Calculado sobre todos os
+ * planos, sem o filtro de área, pra numeração dos meses não mudar com o filtro.
+ */
+function inicioDoCiclo(detalhes, hojeIso) {
+    let maisRecente = null
+    for (const { plano } of detalhes) {
+        const inicio = plano.data_inicio
+        if (!inicio || inicio > hojeIso) continue
+        if (!maisRecente || inicio > maisRecente) maisRecente = inicio
+    }
+    return maisRecente
+}
+
+function rotuloDoMes(inicioCiclo) {
+    if (!inicioCiclo) return null
+    const [ano, mes] = inicioCiclo.split('-')
+    return `${MESES_PT[Number(mes) - 1]}/${ano}`
 }
 
 /**
- * Agrega ações e acompanhamentos de todos os planos visíveis pelo ÍNDICE
- * relativo do mês (1-8, ver AcompanhamentoGrid/domain montarJanelaAcompanhamento)
- * — não pelo mês de calendário, porque cada plano começa numa data diferente.
- * "Mês 3" aqui significa "o 3º mês de cada plano dentro do próprio ciclo",
- * então dá pra comparar plano com plano mesmo com datas de início diferentes.
+ * Agrega ações e acompanhamentos de todos os planos visíveis num calendário
+ * único de 8 meses: "Mês 1" é o mês de início do plano mais recente (ver
+ * inicioDoCiclo) e os meses seguintes contam a partir dele, valendo igual pra
+ * qualquer plano. O que aconteceu antes do Mês 1 fica de fora.
  */
 function agregarPorMesRelativo(detalhes, areaFiltro) {
     const meses = Array.from({ length: TOTAL_MESES }, (_, i) => ({ mes: i + 1, concluidas: 0, acompanhamentos: 0, atrasadas: 0, eventos: [] }))
     const hoje = new Date()
     const hojeIso = hoje.toISOString().slice(0, 10)
-    const mesesAtuais = []
+    const inicioCiclo = inicioDoCiclo(detalhes, hojeIso)
+    const idxAtual = inicioCiclo ? indiceMesRelativo(inicioCiclo, hojeIso) : null
+    const mesAtual = idxAtual === null ? 1 : Math.min(Math.max(idxAtual + 1, 1), TOTAL_MESES)
 
     for (const { plano, acoes, acompanhamento } of detalhes) {
-        // "Ciclo atual" é global — não muda com o filtro de área, senão o
-        // selo "atual" ficaria pulando de mês conforme o filtro escolhido.
-        const idxAtual = indiceMesRelativo(plano.data_inicio, hojeIso)
-        if (idxAtual !== null) mesesAtuais.push(Math.min(Math.max(idxAtual + 1, 1), TOTAL_MESES))
+        if (!inicioCiclo) break
 
         // Área é um atributo do plano — todas as ações e acompanhamentos dele
         // compartilham a mesma área, então o filtro é por plano.
         if (areaFiltro && (plano.area_codigo || plano.area_nome || 'sem-area') !== areaFiltro) continue
 
         for (const acao of acoes) {
-            const idx = indiceMesRelativo(plano.data_inicio, acao.prazo_final)
+            const idx = indiceMesRelativo(inicioCiclo, acao.prazo_final)
             if (idx === null || idx < 0 || idx >= TOTAL_MESES) continue
             const bucket = meses[idx]
             const status = (acao.status || '').toLowerCase()
@@ -56,25 +71,25 @@ function agregarPorMesRelativo(detalhes, areaFiltro) {
             }
         }
 
-        for (const quadrante of acompanhamento) {
-            const bucket = meses[quadrante.mes - 1]
-            for (const registro of quadrante.registros) {
-                bucket.acompanhamentos++
-                // O dw não guarda quem escreveu o acompanhamento — atribuído ao
-                // responsável do plano, a melhor aproximação disponível.
-                bucket.eventos.push({
-                    tipo: 'acompanhamento',
-                    titulo: tituloDoPlano(plano),
-                    detalhe: registro.texto,
-                    data: registro.data,
-                    responsavel: plano.responsavel,
-                })
-            }
+        for (const registro of acompanhamento.flatMap((q) => q.registros)) {
+            const idx = indiceMesRelativo(inicioCiclo, registro.data)
+            if (idx === null || idx < 0 || idx >= TOTAL_MESES) continue
+            const bucket = meses[idx]
+            bucket.acompanhamentos++
+            // O dw não guarda quem escreveu o acompanhamento — atribuído ao
+            // responsável do plano, a melhor aproximação disponível.
+            bucket.eventos.push({
+                tipo: 'acompanhamento',
+                titulo: tituloDoPlano(plano),
+                detalhe: registro.texto,
+                data: registro.data,
+                responsavel: plano.responsavel,
+            })
         }
     }
 
     meses.forEach((m) => m.eventos.sort((a, b) => (b.data || '').localeCompare(a.data || '')))
-    return { meses, mesAtual: moda(mesesAtuais) }
+    return { meses, mesAtual, inicioCiclo }
 }
 
 export default function Evolucao() {
@@ -149,7 +164,8 @@ export default function Evolucao() {
             <div className="pdco-page-head">
                 <h1 className="pdco-page-title">Evolução Mensal</h1>
                 <p className="pdco-page-sub">
-                    O que evoluiu de um mês para o outro, ao longo do ciclo de {TOTAL_MESES} meses —{' '}
+                    O que evoluiu de um mês para o outro, ao longo do ciclo de {TOTAL_MESES} meses
+                    {agregado.inicioCiclo && ` (Mês 1 = ${rotuloDoMes(agregado.inicioCiclo)}, início do plano mais recente)`} —{' '}
                     {areaFiltroRotulo ? `planos e ações da área ${areaFiltroRotulo}` : 'combinando todos os planos que você acompanha'}.
                 </p>
             </div>
