@@ -167,8 +167,22 @@ function agruparPlanosEAcoes(linhas: PlanoAcaoRow[]): Map<string, { plano: Plano
 
 function agruparAcompanhamentos(linhas: AcompanhamentoRow[]): Map<string, AcompanhamentoBruto[]> {
   const acompanhamentos = new Map<string, AcompanhamentoBruto[]>();
+  // A tabela do dw é larga (plano×ação×acompanhamento): o mesmo texto de
+  // acompanhamento vem repetido em várias linhas. Mantém só um por
+  // origem/ação/texto/dia.
+  const jaVistos = new Set<string>();
 
   const adicionar = (cdPlanoAcao: string, registro: AcompanhamentoBruto) => {
+    const chave = [
+      cdPlanoAcao,
+      registro.origem,
+      registro.cd_acao ?? '',
+      registro.texto.trim().replace(/\s+/g, ' ').toLowerCase(),
+      registro.data ? registro.data.toISOString().slice(0, 10) : '',
+    ].join('|');
+    if (jaVistos.has(chave)) return;
+    jaVistos.add(chave);
+
     const lista = acompanhamentos.get(cdPlanoAcao) ?? [];
     lista.push(registro);
     acompanhamentos.set(cdPlanoAcao, lista);

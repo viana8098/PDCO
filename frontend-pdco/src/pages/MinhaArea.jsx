@@ -18,10 +18,10 @@ export default function MinhaArea() {
     const { user, administrador, nome } = usePdco()
     const [view, setView] = useState('lista')
     const [area, setArea] = useState('')
-    const [acao, setAcao] = useState('')
+    const [planoFiltro, setPlanoFiltro] = useState('')
 
     const filtros = useAsync(() => api.filtros(user), [user], !!user)
-    const planos = useAsync(() => api.planos(user, { area, acao }), [user, area, acao], !!user)
+    const planos = useAsync(() => api.planos(user, { area, plano: planoFiltro }), [user, area, planoFiltro], !!user)
     // Só o admin precisa do total geral (pra comparar "filtrado" vs "empresa");
     // pro gestor comum a lista já vem restrita, os dois seriam iguais.
     const todosPlanos = useAsync(() => api.planos(user), [user], !!user && administrador)
@@ -60,12 +60,12 @@ export default function MinhaArea() {
                         />
                     </div>
                     <div className="pdco-filter-pill">
-                        <label>Ação</label>
+                        <label>Plano de ação</label>
                         <SearchableSelect
-                            value={acao}
-                            onChange={setAcao}
-                            options={filtros.dados?.acoes ?? []}
-                            todosLabel="Todas as ações"
+                            value={planoFiltro}
+                            onChange={setPlanoFiltro}
+                            options={filtros.dados?.planos ?? []}
+                            todosLabel="Todos os planos de ação"
                             disabled={!filtros.dados}
                         />
                     </div>

@@ -1,6 +1,7 @@
 import { useMemo, useState } from 'react'
 import { Link, Navigate } from 'react-router-dom'
 import { useAsync } from '../lib/useAsync'
+import { SearchableSelect } from '../components/SearchableSelect'
 import { agruparPorArea, pctConcluido, tipoResumido, RAG_COLOR } from '../lib/pdcoCalc'
 import { usePdco } from '../lib/PdcoContext'
 import { api } from '../lib/api'
@@ -18,13 +19,33 @@ export default function Diretoria() {
     const { user, administrador, carregando } = usePdco()
     const [tipo, setTipo] = useState('todos')
     const [nivel, setNivel] = useState('todos')
+    const [areaFiltro, setAreaFiltro] = useState('')
 
     const planos = useAsync(() => api.planos(user), [user], !!user && administrador)
 
+    const opcoesArea = useMemo(() => {
+        const mapa = new Map()
+        for (const p of planos.dados ?? []) {
+            const chave = p.area_codigo || p.area_nome || 'sem-area'
+            if (!mapa.has(chave)) mapa.set(chave, { valor: chave, rotulo: p.area_nome || 'Sem área' })
+        }
+        return [...mapa.values()].sort((a, b) => a.rotulo.localeCompare(b.rotulo, 'pt-BR', { numeric: true }))
+    }, [planos.dados])
+
+    // Escolher uma área recorta a tela toda (totais e lista); tipo/nível seguem
+    // filtrando só a lista "Visão por área", como antes.
+    const planosDaArea = useMemo(
+        () =>
+            areaFiltro
+                ? (planos.dados ?? []).filter((p) => (p.area_codigo || p.area_nome || 'sem-area') === areaFiltro)
+                : planos.dados ?? [],
+        [planos.dados, areaFiltro],
+    )
+
     const areas = useMemo(() => {
-        const lista = tipo === 'todos' ? planos.dados ?? [] : (planos.dados ?? []).filter((p) => tipoResumido(p.subtipo) === tipo)
+        const lista = tipo === 'todos' ? planosDaArea : planosDaArea.filter((p) => tipoResumido(p.subtipo) === tipo)
         return agruparPorArea(lista).filter((a) => nivel === 'todos' || a[nivel] > 0)
-    }, [planos.dados, tipo, nivel])
+    }, [planosDaArea, tipo, nivel])
 
     const contagem = { verde: 0, amarelo: 0, vermelho: 0 }
     areas.forEach((a) => {
@@ -39,9 +60,9 @@ export default function Diretoria() {
         return <div className="pdco-page">{planos.erro ? <p className="pdco-estado pdco-erro">{planos.erro}</p> : <p className="pdco-estado">Carregando…</p>}</div>
     }
 
-    const totalPlanos = planos.dados.length
-    const totalAcoes = planos.dados.reduce((s, p) => s + (p.resumo_acoes?.total ?? 0), 0)
-    const pctAcoes = pctConcluido(planos.dados)
+    const totalPlanos = planosDaArea.length
+    const totalAcoes = planosDaArea.reduce((s, p) => s + (p.resumo_acoes?.total ?? 0), 0)
+    const pctAcoes = pctConcluido(planosDaArea)
 
     return (
         <div className="pdco-page">
@@ -75,6 +96,10 @@ export default function Diretoria() {
             </div>
 
             <div className="pdco-filters-row">
+                <div className="pdco-filter-pill">
+                    <label>Área</label>
+                    <SearchableSelect value={areaFiltro} onChange={setAreaFiltro} options={opcoesArea} todosLabel="Todas as áreas" />
+                </div>
                 <div className="pdco-filter-pill">
                     <label htmlFor="dir-tipo">Tipo</label>
                     <select id="dir-tipo" value={tipo} onChange={(e) => setTipo(e.target.value)}>

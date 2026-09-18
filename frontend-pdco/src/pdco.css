@@ -1461,7 +1461,12 @@ body {
   padding: 0 22px 22px;
 }
 .pdco-app .pdco-evo-mes-card {
-  min-width: 220px;
+  /* Largura fixa (como no protótipo): sem ela, o card crescia até caber a
+     linha mais longa do acompanhamento e estourava o painel. */
+  width: 272px;
+  min-width: 272px;
+  box-sizing: border-box;
+  align-self: flex-start;
   flex: none;
   border: 1px solid var(--border);
   border-radius: var(--radius-card);
@@ -1531,4 +1536,70 @@ body {
   color: var(--text-muted);
   font-size: 13px;
   font-style: italic;
+}
+
+/* ------------------------- Ajustes do cliente (revisão) --------------------- */
+/* Dropdowns nativos no tema escuro: sem isso a lista de opções abre branca com
+   texto claro (ex.: "Mês" dos anexos) e só dá pra ler o item sob o mouse. */
+.pdco-app select {
+  color-scheme: dark;
+}
+.pdco-app select option {
+  background: #172a49;
+  color: var(--text);
+}
+
+.pdco-app .pdco-secondary-row.pdco-secondary-single {
+  grid-template-columns: 1fr;
+}
+
+/* Diagnóstico da Subcultura — caixa recolhível */
+.pdco-app .pdco-diagnostico-head {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 18px 22px;
+  background: none;
+  border: none;
+  color: inherit;
+  font-family: inherit;
+  text-align: left;
+  cursor: pointer;
+}
+.pdco-app .pdco-diagnostico-head:disabled {
+  cursor: default;
+}
+.pdco-app .pdco-diagnostico-titulos {
+  display: flex;
+  flex-direction: column;
+}
+.pdco-app .pdco-diagnostico-kicker {
+  display: block;
+}
+.pdco-app .pdco-diagnostico-texto {
+  margin: 0;
+  padding: 0 22px 20px;
+  font-size: 13.5px;
+  line-height: 1.6;
+  color: var(--text-muted);
+  white-space: pre-line;
+}
+
+/* Acompanhamentos do plano — tabela ordenável */
+.pdco-app .pdco-tabela-acomp .pdco-acomp-texto {
+  width: 55%;
+  line-height: 1.5;
+}
+
+/* Evolução horizontal — texto do card quebra e não passa de 3 linhas */
+.pdco-app .pdco-evo-mes-card-body .pdco-evento-corpo {
+  overflow-wrap: anywhere;
+}
+.pdco-app .pdco-evo-mes-card-body .pdco-evento-detalhe {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
 }

@@ -9,11 +9,12 @@ import type { AcaoPdco, AcompanhamentoBruto, QuadranteAcompanhamento, ResumoAcoe
 const STATUS_CONCLUIDO = 'concluído';
 const STATUS_CANCELADO = 'cancelado';
 
-/** Percentual de execução do plano: ações concluídas / total. Sem ações, null (não zero). */
+/** Percentual de execução do plano: concluídas / ações ativas (canceladas ficam fora). Sem ações ativas, null (não zero). */
 export function calcularExecucao(acoes: Pick<AcaoPdco, 'status'>[]): number | null {
-  if (acoes.length === 0) return null;
-  const concluidas = acoes.filter((acao) => normalizar(acao.status) === STATUS_CONCLUIDO).length;
-  return concluidas / acoes.length;
+  const ativas = acoes.filter((acao) => normalizar(acao.status) !== STATUS_CANCELADO);
+  if (ativas.length === 0) return null;
+  const concluidas = ativas.filter((acao) => normalizar(acao.status) === STATUS_CONCLUIDO).length;
+  return concluidas / ativas.length;
 }
 
 /** Resumo de ações para os cards de listagem (badge RAG no frontend). */

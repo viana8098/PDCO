@@ -4,6 +4,7 @@ import { useAsync } from '../lib/useAsync'
 import { AcoesTable } from '../components/AcoesTable'
 import { AcompanhamentoGrid } from '../components/AcompanhamentoGrid'
 import { AnexosTab } from '../components/AnexosTab'
+import { DiagnosticoSubcultura } from '../components/DiagnosticoSubcultura'
 import { IndicadoresCard } from '../components/IndicadoresCard'
 import { PlanoTimeline } from '../components/PlanoTimeline'
 import { RagBadge } from '../components/RagBadge'
@@ -94,6 +95,8 @@ export default function PlanoDetail() {
                 </div>
             </section>
 
+            <DiagnosticoSubcultura texto={null} />
+
             <section className="pdco-panel">
                 <div className="pdco-plan-tabs">
                     {abas.map((a) => (
@@ -115,8 +118,7 @@ export default function PlanoDetail() {
                 </div>
             </section>
 
-            <div className="pdco-secondary-row">
-                <TextoPanel kicker="Leitura cultural" titulo="Diagnóstico da Subcultura" texto={plano.arquetipos_culturais} />
+            <div className="pdco-secondary-row pdco-secondary-single">
                 <TextoPanel kicker="Visão de futuro" titulo="Resultados esperados" texto={plano.resultados_esperados} />
             </div>
 
