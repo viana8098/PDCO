@@ -817,6 +817,15 @@ body {
   border-color: rgba(248, 113, 113, 0.45);
   background: var(--red-soft);
 }
+.pdco-app .pdco-timeline-clicavel {
+  font: inherit;
+  cursor: pointer;
+  transition: transform 0.1s ease, border-color 0.1s ease;
+}
+.pdco-app .pdco-timeline-clicavel:hover {
+  border-color: rgba(248, 113, 113, 0.8);
+  transform: translateY(-1px);
+}
 .pdco-app .pdco-timeline-atual {
   position: absolute;
   top: 4px;
@@ -952,6 +961,19 @@ body {
 }
 .pdco-app .pdco-tabela-acoes tbody tr:last-child td {
   border-bottom: none;
+}
+.pdco-app .pdco-acao-destacada td {
+  background: var(--red-soft);
+  box-shadow: inset 3px 0 0 var(--red);
+  animation: pdco-acao-piscar 1.4s ease-in-out 2;
+}
+@keyframes pdco-acao-piscar {
+  0%, 100% {
+    background: var(--red-soft);
+  }
+  50% {
+    background: transparent;
+  }
 }
 .pdco-app .pdco-acao-link {
   color: var(--text);

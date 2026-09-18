@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import { Link, useParams } from 'react-router-dom'
 import { useAsync } from '../lib/useAsync'
 import { AcoesTable } from '../components/AcoesTable'
@@ -18,6 +18,18 @@ export default function PlanoDetail() {
     const { cdPlanoAcao } = useParams()
     const detalhe = useAsync(() => api.plano(user, cdPlanoAcao), [user, cdPlanoAcao], !!user && !!cdPlanoAcao)
     const [aba, setAba] = useState('acoes')
+    // Ações atrasadas destacadas ao clicar num mês da previsão — realça as
+    // linhas certas na aba "Ações do plano".
+    const [acoesDestacadas, setAcoesDestacadas] = useState(null)
+    useEffect(() => {
+        setAba('acoes')
+        setAcoesDestacadas(null)
+    }, [cdPlanoAcao])
+
+    function verAtrasadasNaTabela(idsAtrasadas) {
+        setAba('acoes')
+        setAcoesDestacadas(idsAtrasadas)
+    }
 
     if (detalhe.erro) {
         return (
@@ -78,7 +90,7 @@ export default function PlanoDetail() {
                         </div>
                         <p className="pdco-rag-motivos">{rag.motivos.join(' · ')}</p>
                     </div>
-                    <PlanoTimeline acoes={acoes} />
+                    <PlanoTimeline acoes={acoes} onClicarAtrasadas={verAtrasadasNaTabela} />
                 </div>
             </section>
 
@@ -97,7 +109,7 @@ export default function PlanoDetail() {
                 </div>
 
                 <div className="pdco-plan-tab-body">
-                    {aba === 'acoes' && <AcoesTable acoes={acoes} />}
+                    {aba === 'acoes' && <AcoesTable acoes={acoes} idsDestacados={acoesDestacadas} />}
                     {aba === 'acompanhamentos' && <AcompanhamentoGrid quadrantes={acompanhamento} plano={plano} />}
                     {aba === 'anexos' && <AnexosTab />}
                 </div>

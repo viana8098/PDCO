@@ -13,7 +13,7 @@ function chaveDoMes(iso) {
 // do primeiro ao último mês que realmente tem ação com prazo — não usa as
 // datas de início/fim do plano, que costumam ser mais largas que os prazos
 // reais e deixavam meses vazios sobrando nas pontas.
-export function PlanoTimeline({ acoes }) {
+export function PlanoTimeline({ acoes, onClicarAtrasadas }) {
     const hoje = new Date()
     const chaveHoje = hoje.getFullYear() * 12 + hoje.getMonth()
 
@@ -25,11 +25,14 @@ export function PlanoTimeline({ acoes }) {
         if (status.startsWith('cancel')) continue
         const chave = chaveDoMes(acao.prazo_final)
         if (chave === null) continue
-        if (!baldes.has(chave)) baldes.set(chave, { total: 0, concluidas: 0, atrasadas: 0 })
+        if (!baldes.has(chave)) baldes.set(chave, { total: 0, concluidas: 0, atrasadas: 0, idsAtrasadas: [] })
         const balde = baldes.get(chave)
         balde.total++
         if (status === 'concluído' || status === 'concluido') balde.concluidas++
-        else if (chaveHoje > chave || (chaveHoje === chave && new Date(acao.prazo_final) < hoje)) balde.atrasadas++
+        else if (chaveHoje > chave || (chaveHoje === chave && new Date(acao.prazo_final) < hoje)) {
+            balde.atrasadas++
+            balde.idsAtrasadas.push(acao.cd_acao)
+        }
     }
 
     if (baldes.size === 0) return null
@@ -51,7 +54,7 @@ export function PlanoTimeline({ acoes }) {
             </div>
             <div className="pdco-timeline-scroll">
                 {chaves.map((chave) => {
-                    const balde = baldes.get(chave) || { total: 0, concluidas: 0, atrasadas: 0 }
+                    const balde = baldes.get(chave) || { total: 0, concluidas: 0, atrasadas: 0, idsAtrasadas: [] }
                     let tom = 'muted'
                     if (balde.total > 0) {
                         if (balde.atrasadas > 0) tom = 'danger'
@@ -59,11 +62,29 @@ export function PlanoTimeline({ acoes }) {
                         else tom = 'info'
                     }
                     const atual = chave === chaveHoje
-                    return (
-                        <div key={chave} className={`pdco-timeline-cell pdco-timeline-${tom}`}>
+                    const conteudo = (
+                        <>
                             {atual && <span className="pdco-timeline-atual" title="Mês atual" />}
                             <span className="pdco-timeline-mes">{MESES[((chave % 12) + 12) % 12]}</span>
                             <span className="pdco-timeline-total">{balde.total > 0 ? balde.total : '–'}</span>
+                        </>
+                    )
+                    if (tom === 'danger' && onClicarAtrasadas) {
+                        return (
+                            <button
+                                type="button"
+                                key={chave}
+                                className={`pdco-timeline-cell pdco-timeline-${tom} pdco-timeline-clicavel`}
+                                title="Ver ação(ões) atrasada(s) deste mês"
+                                onClick={() => onClicarAtrasadas(balde.idsAtrasadas)}
+                            >
+                                {conteudo}
+                            </button>
+                        )
+                    }
+                    return (
+                        <div key={chave} className={`pdco-timeline-cell pdco-timeline-${tom}`}>
+                            {conteudo}
                         </div>
                     )
                 })}

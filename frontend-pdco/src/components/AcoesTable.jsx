@@ -1,4 +1,4 @@
-import { useMemo, useState } from 'react'
+import { useEffect, useMemo, useRef, useState } from 'react'
 import { Link, useParams } from 'react-router-dom'
 import { iniciaisDoNome } from '../lib/iniciais'
 import { formatarData } from '../lib/pdcoCalc'
@@ -24,10 +24,17 @@ function comparar(a, b, coluna) {
     return String(va).localeCompare(String(vb), 'pt-BR', { sensitivity: 'base', numeric: true })
 }
 
-export function AcoesTable({ acoes }) {
+export function AcoesTable({ acoes, idsDestacados }) {
     const { cdPlanoAcao } = useParams()
     // null = ordem original (como veio da API); senão { coluna, direcao: 1 | -1 }
     const [ordenacao, setOrdenacao] = useState(null)
+    const primeiraDestacadaRef = useRef(null)
+
+    useEffect(() => {
+        if (idsDestacados?.length) {
+            primeiraDestacadaRef.current?.scrollIntoView({ behavior: 'smooth', block: 'center' })
+        }
+    }, [idsDestacados])
 
     function alternarOrdenacao(coluna) {
         setOrdenacao((atual) => {
@@ -42,6 +49,9 @@ export function AcoesTable({ acoes }) {
         const { coluna, direcao } = ordenacao
         return [...acoes].sort((a, b) => direcao * comparar(a, b, coluna))
     }, [acoes, ordenacao])
+
+    const destacados = useMemo(() => new Set(idsDestacados ?? []), [idsDestacados])
+    let jaMarcouPrimeira = false
 
     return (
         <>
@@ -68,8 +78,16 @@ export function AcoesTable({ acoes }) {
                         </tr>
                     </thead>
                     <tbody>
-                        {acoesOrdenadas.map((acao) => (
-                            <tr key={acao.cd_acao}>
+                        {acoesOrdenadas.map((acao) => {
+                            const destacada = destacados.has(acao.cd_acao)
+                            const ehPrimeiraDestacada = destacada && !jaMarcouPrimeira
+                            if (ehPrimeiraDestacada) jaMarcouPrimeira = true
+                            return (
+                            <tr
+                                key={acao.cd_acao}
+                                ref={ehPrimeiraDestacada ? primeiraDestacadaRef : null}
+                                className={destacada ? 'pdco-acao-destacada' : ''}
+                            >
                                 <td>
                                     <Link
                                         className="pdco-acao-link"
@@ -94,7 +112,8 @@ export function AcoesTable({ acoes }) {
                                     )}
                                 </td>
                             </tr>
-                        ))}
+                            )
+                        })}
                     </tbody>
                 </table>
             ) : (
