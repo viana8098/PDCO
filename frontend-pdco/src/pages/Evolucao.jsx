@@ -21,20 +21,23 @@ function moda(lista) {
  * "Mês 3" aqui significa "o 3º mês de cada plano dentro do próprio ciclo",
  * então dá pra comparar plano com plano mesmo com datas de início diferentes.
  */
-function agregarPorMesRelativo(detalhes, responsavelFiltro) {
+function agregarPorMesRelativo(detalhes, areaFiltro) {
     const meses = Array.from({ length: TOTAL_MESES }, (_, i) => ({ mes: i + 1, concluidas: 0, acompanhamentos: 0, atrasadas: 0, eventos: [] }))
     const hoje = new Date()
     const hojeIso = hoje.toISOString().slice(0, 10)
     const mesesAtuais = []
 
     for (const { plano, acoes, acompanhamento } of detalhes) {
-        // "Ciclo atual" é global — não muda com o filtro de responsável, senão o
+        // "Ciclo atual" é global — não muda com o filtro de área, senão o
         // selo "atual" ficaria pulando de mês conforme o filtro escolhido.
         const idxAtual = indiceMesRelativo(plano.data_inicio, hojeIso)
         if (idxAtual !== null) mesesAtuais.push(Math.min(Math.max(idxAtual + 1, 1), TOTAL_MESES))
 
+        // Área é um atributo do plano — todas as ações e acompanhamentos dele
+        // compartilham a mesma área, então o filtro é por plano.
+        if (areaFiltro && (plano.area_codigo || plano.area_nome || 'sem-area') !== areaFiltro) continue
+
         for (const acao of acoes) {
-            if (responsavelFiltro && acao.responsavel !== responsavelFiltro) continue
             const idx = indiceMesRelativo(plano.data_inicio, acao.prazo_final)
             if (idx === null || idx < 0 || idx >= TOTAL_MESES) continue
             const bucket = meses[idx]
@@ -52,8 +55,6 @@ function agregarPorMesRelativo(detalhes, responsavelFiltro) {
                 bucket.atrasadas++
             }
         }
-
-        if (responsavelFiltro && plano.responsavel !== responsavelFiltro) continue
 
         for (const quadrante of acompanhamento) {
             const bucket = meses[quadrante.mes - 1]
@@ -84,7 +85,7 @@ export default function Evolucao() {
     const [abertos, setAbertos] = useState(() => new Set())
     const [mesA, setMesA] = useState(null)
     const [mesB, setMesB] = useState(null)
-    const [responsavelFiltro, setResponsavelFiltro] = useState('')
+    const [areaFiltro, setAreaFiltro] = useState('')
 
     useEffect(() => {
         if (!planos.dados) return
@@ -97,24 +98,24 @@ export default function Evolucao() {
         }
     }, [planos.dados, user])
 
-    // Lista de responsáveis pra filtrar — junta plano + ações, sem repetir.
-    // Só faz sentido pro administrador: é ele quem enxerga o conjunto todo de
-    // planos e precisa desse recorte pra não rolar o feed inteiro.
-    const responsaveis = useMemo(() => {
-        if (!detalhes) return []
-        const nomes = new Set()
-        for (const { plano, acoes } of detalhes) {
-            if (plano.responsavel) nomes.add(plano.responsavel)
-            for (const acao of acoes) if (acao.responsavel) nomes.add(acao.responsavel)
+    // Lista de áreas pra filtrar, sem repetir. Só faz sentido pro
+    // administrador: é ele quem enxerga o conjunto todo de planos e precisa
+    // desse recorte pra não rolar o feed inteiro.
+    const areas = useMemo(() => {
+        if (!planos.dados) return []
+        const mapa = new Map()
+        for (const p of planos.dados) {
+            const chave = p.area_codigo || p.area_nome || 'sem-area'
+            if (!mapa.has(chave)) mapa.set(chave, { valor: chave, rotulo: p.area_nome || 'Sem área' })
         }
-        return [...nomes]
-            .sort((a, b) => a.localeCompare(b, 'pt-BR', { numeric: true }))
-            .map((nome) => ({ valor: nome, rotulo: nome }))
-    }, [detalhes])
+        return [...mapa.values()].sort((a, b) => a.rotulo.localeCompare(b.rotulo, 'pt-BR', { numeric: true }))
+    }, [planos.dados])
+
+    const areaFiltroRotulo = areas.find((a) => a.valor === areaFiltro)?.rotulo
 
     const agregado = useMemo(
-        () => (detalhes ? agregarPorMesRelativo(detalhes, responsavelFiltro || null) : null),
-        [detalhes, responsavelFiltro],
+        () => (detalhes ? agregarPorMesRelativo(detalhes, areaFiltro || null) : null),
+        [detalhes, areaFiltro],
     )
 
     useEffect(() => {
@@ -149,19 +150,19 @@ export default function Evolucao() {
                 <h1 className="pdco-page-title">Evolução Mensal</h1>
                 <p className="pdco-page-sub">
                     O que evoluiu de um mês para o outro, ao longo do ciclo de {TOTAL_MESES} meses —{' '}
-                    {responsavelFiltro ? `planos e ações de ${responsavelFiltro}` : 'combinando todos os planos que você acompanha'}.
+                    {areaFiltroRotulo ? `planos e ações da área ${areaFiltroRotulo}` : 'combinando todos os planos que você acompanha'}.
                 </p>
             </div>
 
-            {administrador && responsaveis.length > 0 && (
+            {administrador && areas.length > 0 && (
                 <div className="pdco-filters-row">
                     <div className="pdco-filter-pill">
-                        <label>Responsável</label>
+                        <label>Área</label>
                         <SearchableSelect
-                            value={responsavelFiltro}
-                            onChange={setResponsavelFiltro}
-                            options={responsaveis}
-                            todosLabel="Todos os responsáveis"
+                            value={areaFiltro}
+                            onChange={setAreaFiltro}
+                            options={areas}
+                            todosLabel="Todas as áreas"
                         />
                     </div>
                 </div>
