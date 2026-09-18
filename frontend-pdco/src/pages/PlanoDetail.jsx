@@ -95,7 +95,10 @@ export default function PlanoDetail() {
                 </div>
             </section>
 
-            <DiagnosticoSubcultura texto={null} />
+            <div className="pdco-secondary-row">
+                <DiagnosticoSubcultura texto={null} />
+                <TextoPanel titulo="Resultados esperados" texto={plano.resultados_esperados} />
+            </div>
 
             <section className="pdco-panel">
                 <div className="pdco-plan-tabs">
@@ -117,10 +120,6 @@ export default function PlanoDetail() {
                     {aba === 'anexos' && <AnexosTab />}
                 </div>
             </section>
-
-            <div className="pdco-secondary-row pdco-secondary-single">
-                <TextoPanel kicker="Visão de futuro" titulo="Resultados esperados" texto={plano.resultados_esperados} />
-            </div>
 
             {indicadores.length > 0 && (
                 <div className="pdco-tertiary-row pdco-tertiary-single">

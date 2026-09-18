@@ -17,10 +17,7 @@ export function DiagnosticoSubcultura({ texto }) {
                 aria-expanded={temTexto ? aberto : undefined}
                 onClick={() => setAberto((a) => !a)}
             >
-                <span className="pdco-diagnostico-titulos">
-                    <span className="pdco-kicker pdco-diagnostico-kicker">Leitura cultural</span>
-                    <span className="pdco-panel-title">Diagnóstico da Subcultura</span>
-                </span>
+                <span className="pdco-panel-title">Diagnóstico da Subcultura</span>
                 {temTexto && <span className={`pdco-month-caret ${aberto ? 'pdco-month-caret-aberto' : ''}`}>▾</span>}
             </button>
             {temTexto && aberto && <p className="pdco-diagnostico-texto">{texto}</p>}

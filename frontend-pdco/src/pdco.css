@@ -1713,8 +1713,10 @@ body {
   color: var(--text);
 }
 
-.pdco-app .pdco-secondary-row.pdco-secondary-single {
-  grid-template-columns: 1fr;
+/* Diagnóstico ao lado de Resultados esperados: cada caixa com a sua altura —
+   a do diagnóstico fica compacta quando fechada em vez de esticar. */
+.pdco-app .pdco-secondary-row {
+  align-items: start;
 }
 
 /* Diagnóstico da Subcultura — caixa recolhível */
@@ -1724,7 +1726,7 @@ body {
   align-items: center;
   justify-content: space-between;
   gap: 12px;
-  padding: 18px 22px;
+  padding: 22px;
   background: none;
   border: none;
   color: inherit;
@@ -1735,16 +1737,9 @@ body {
 .pdco-app .pdco-diagnostico-head:disabled {
   cursor: default;
 }
-.pdco-app .pdco-diagnostico-titulos {
-  display: flex;
-  flex-direction: column;
-}
-.pdco-app .pdco-diagnostico-kicker {
-  display: block;
-}
 .pdco-app .pdco-diagnostico-texto {
   margin: 0;
-  padding: 0 22px 20px;
+  padding: 0 22px 22px;
   font-size: 13.5px;
   line-height: 1.6;
   color: var(--text-muted);
