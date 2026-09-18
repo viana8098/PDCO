@@ -24,6 +24,7 @@
       "status": "Concluído",
       "prazo_inicial": "2026-08-26",
       "prazo_final": "2026-09-14",
+      "data_conclusao": "2026-09-04",
       "responsavel": "Responsável 18"
     },
     {
@@ -32,6 +33,7 @@
       "status": "Concluído",
       "prazo_inicial": "2026-09-01",
       "prazo_final": "2026-09-11",
+      "data_conclusao": "2026-09-14",
       "responsavel": "Responsável 18"
     },
     {
@@ -40,6 +42,7 @@
       "status": "Em Andamento",
       "prazo_inicial": "2026-09-14",
       "prazo_final": "2026-09-30",
+      "data_conclusao": null,
       "responsavel": "Responsável 18"
     },
     {
@@ -48,6 +51,7 @@
       "status": "Planejado",
       "prazo_inicial": "2026-09-25",
       "prazo_final": "2026-09-30",
+      "data_conclusao": null,
       "responsavel": "Responsável 18"
     },
     {
@@ -56,6 +60,7 @@
       "status": "Planejado",
       "prazo_inicial": "2026-10-01",
       "prazo_final": "2026-11-30",
+      "data_conclusao": null,
       "responsavel": "Responsável 18"
     },
     {
@@ -64,6 +69,7 @@
       "status": "Planejado",
       "prazo_inicial": "2026-12-01",
       "prazo_final": "2026-12-18",
+      "data_conclusao": null,
       "responsavel": "Responsável 18"
     }
   ],
@@ -141,6 +147,38 @@
       "ano": 2027,
       "mes_referencia": 3,
       "registros": []
+    }
+  ],
+  "registros_acompanhamento": [
+    {
+      "texto": "No Mês De Agosto De 2026, Suprimentos Participou Das Rodadas De Planejamento Institucional Junto Às Unidades E Negócios Do Sesi E Senai, Promovendo Maior Integração Entre As Necessidades Futuras E O Planejamento Das Aquisições. Como Resultado, A Área Recebeu O Planejamento De Consumo E Insumos Previsto Para 2027, Contemplando Sesi, Senai E Ambiente Compartilhado. A Base Recebida Passou A Constituir Insumo Para Análise Das Categorias E Antecipação Das Estratégias De Contratação.",
+      "data": "2026-09-14",
+      "origem": "acao",
+      "cd_acao": "32595"
+    },
+    {
+      "texto": "A Partir Do Planejamento De Consumo E Insumos Do Sesi E Senai Para 2027, Suprimentos Realizou Análise Inicial Das Necessidades Previstas, Cruzando Os Itens Planejados Com A Cobertura Existente Por Registros De Preços. O Estudo Possibilitou Identificar Quantitativos, Exposição Sem Cobertura E Categorias Prioritárias Para Atuação Da Equipe. Os Resultados Foram Apresentados Na Reunião Setorial De Suprimentos De 11/09/2026, Quando Também Foi Realizada A Dinâmica Pdco “meu Compromisso De 30 Dias”, Desdobrando O Planejamento Para As Carteiras E Estimulando A Atuação Antecipada Dos Compradores Sobre As Categorias Sob Sua Responsabilidade. Ação Concluída, Servindo O Diagnóstico Como Base Para As Próximas Etapas Do Plano De Ação.",
+      "data": "2026-09-14",
+      "origem": "acao",
+      "cd_acao": "32730"
+    },
+    {
+      "texto": "Iniciada A Etapa De Aprofundamento Das Análises Por Categoria. A Partir Das Necessidades Previstas Para 2027, Os Compradores Avaliarão Suas Respectivas Carteiras Considerando Histórico De Consumo Dos Últimos 12 Meses, Recorrência, Criticidade, Cobertura Contratual E Comportamento Da Demanda. A Análise Contemplará Também Itens Efetivamente Consumidos No Período Histórico Que \"não Constaram No Planejamento 2027\", Buscando Identificar Possíveis Lacunas E Ampliar A Efetividade Das Futuras Estratégias De Contratação E Da Cobertura Por Registros De Preços.",
+      "data": "2026-09-14",
+      "origem": "acao",
+      "cd_acao": "32731"
+    },
+    {
+      "texto": "A Execução Desta Ação Está Programada Após A Consolidação Do Perfil Estratégico De Consumo E Definição Das Estratégias Das Categorias Prioritárias. Serão Estruturadas E Acompanhadas As Renovações De Arp E Novas Licitações Definidas Como Prioritárias, Observando Responsáveis, Capacidade Operacional, Prazos E Criticidade Das Demandas. O Acompanhamento Buscará Antecipar As Contratações Necessárias Para 2027, Ampliar A Cobertura Contratual E Reduzir A Exposição A Compras Pontuais, Urgências E Riscos De Desabastecimento.",
+      "data": "2026-09-14",
+      "origem": "acao",
+      "cd_acao": "32733"
+    },
+    {
+      "texto": "A Consolidação Do Plano Integrado De Aquisições Está Prevista Como Etapa Final Do Ciclo, Reunindo Os Resultados Das Análises Das Categorias, Estratégias De Contratação Definidas, Processos Priorizados, Responsáveis, Cronogramas E Indicadores De Acompanhamento. O Plano Deverá Formalizar A Governança E A Rotina De Monitoramento Das Aquisições, Fortalecendo A Integração Entre Planejamento Institucional E Atuação De Suprimentos E Estabelecendo Um Modelo Contínuo De Antecipação Das Necessidades.",
+      "data": "2026-09-14",
+      "origem": "acao",
+      "cd_acao": "32734"
     }
   ],
   "indicadores": [],

@@ -24,6 +24,7 @@
       "status": "Em Andamento",
       "prazo_inicial": "2026-07-01",
       "prazo_final": "2026-07-30",
+      "data_conclusao": null,
       "responsavel": "Responsável 03"
     },
     {
@@ -32,6 +33,7 @@
       "status": "Em Andamento",
       "prazo_inicial": "2026-07-01",
       "prazo_final": "2026-08-31",
+      "data_conclusao": null,
       "responsavel": "Responsável 10"
     },
     {
@@ -40,6 +42,7 @@
       "status": "Em Andamento",
       "prazo_inicial": "2026-09-09",
       "prazo_final": "2027-04-16",
+      "data_conclusao": null,
       "responsavel": "Responsável 22"
     },
     {
@@ -48,6 +51,7 @@
       "status": "Planejado",
       "prazo_inicial": "2027-04-19",
       "prazo_final": "2027-04-30",
+      "data_conclusao": null,
       "responsavel": "Responsável 03"
     }
   ],
@@ -101,6 +105,7 @@
       "registros": []
     }
   ],
+  "registros_acompanhamento": [],
   "indicadores": [],
   "registro": {
     "pontos_criticos": null,

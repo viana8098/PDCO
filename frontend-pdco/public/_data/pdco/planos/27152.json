@@ -24,6 +24,7 @@
       "status": "Em Andamento",
       "prazo_inicial": "2026-01-05",
       "prazo_final": "2026-12-22",
+      "data_conclusao": null,
       "responsavel": "Responsável 08"
     },
     {
@@ -32,6 +33,7 @@
       "status": "Em Andamento",
       "prazo_inicial": "2026-01-05",
       "prazo_final": "2026-12-18",
+      "data_conclusao": null,
       "responsavel": "Responsável 13"
     },
     {
@@ -40,6 +42,7 @@
       "status": "Planejado",
       "prazo_inicial": "2027-01-01",
       "prazo_final": "2027-06-30",
+      "data_conclusao": null,
       "responsavel": "Responsável 13"
     },
     {
@@ -48,6 +51,7 @@
       "status": "Concluído",
       "prazo_inicial": "2026-01-05",
       "prazo_final": "2026-12-22",
+      "data_conclusao": "2026-03-17",
       "responsavel": "Responsável 07"
     },
     {
@@ -56,6 +60,7 @@
       "status": "Concluído",
       "prazo_inicial": "2026-01-05",
       "prazo_final": "2026-05-15",
+      "data_conclusao": "2026-05-14",
       "responsavel": "Responsável 16"
     },
     {
@@ -64,6 +69,7 @@
       "status": "Em Andamento",
       "prazo_inicial": "2026-06-05",
       "prazo_final": "2026-08-31",
+      "data_conclusao": null,
       "responsavel": "Responsável 16"
     },
     {
@@ -72,6 +78,7 @@
       "status": "Em Andamento",
       "prazo_inicial": "2026-06-05",
       "prazo_final": "2026-09-11",
+      "data_conclusao": null,
       "responsavel": "Responsável 13"
     },
     {
@@ -80,6 +87,7 @@
       "status": "Em Andamento",
       "prazo_inicial": "2026-06-08",
       "prazo_final": "2026-11-30",
+      "data_conclusao": null,
       "responsavel": "Responsável 07"
     },
     {
@@ -88,6 +96,7 @@
       "status": "Em Andamento",
       "prazo_inicial": "2026-07-01",
       "prazo_final": "2026-10-31",
+      "data_conclusao": null,
       "responsavel": "Responsável 20"
     },
     {
@@ -96,6 +105,7 @@
       "status": "Planejado",
       "prazo_inicial": "2026-09-01",
       "prazo_final": "2026-11-30",
+      "data_conclusao": null,
       "responsavel": "Responsável 16"
     },
     {
@@ -104,6 +114,7 @@
       "status": "Planejado",
       "prazo_inicial": "2026-08-03",
       "prazo_final": "2026-12-18",
+      "data_conclusao": null,
       "responsavel": "Responsável 13"
     }
   ],
@@ -312,6 +323,248 @@
           "origem": "acao"
         }
       ]
+    }
+  ],
+  "registros_acompanhamento": [
+    {
+      "texto": "Mapear O Público-alvo E Definir O Plano De Comunicação Para Esses Nichos Conforme As Demandas Da Área De Processos. (16/01/2026)",
+      "data": "2026-01-06",
+      "origem": "acao",
+      "cd_acao": "27153"
+    },
+    {
+      "texto": "Estudar O Manual De Processos E Pops Para A Estruturação Da Proposta Do Plano De Treinamento Junto Aos Atores De Processos (16/01/2026). Disseminar Junto Aos Outros Analistas De Processos Do Escritório Os Documentos Revisados.(23/01/26). Estruturar Material De Disseminação Do Conteúdo Junto Aos Atores De Processos E Interlocutores, Para Isso Atulizar A Lista De Participantes(30/01/26).  A Disseminação Está Prevista Para Fevereiro A Partir Do Dia (05/02/26).",
+      "data": "2026-01-06",
+      "origem": "acao",
+      "cd_acao": "27162"
+    },
+    {
+      "texto": "Realizar Estudo Para Identificação Do Modelo De Maturidade Que A Instituição Irá Adotar.(30/01/2026). Articular Com A Dheka As Agendas De Mentoria Para Os Processos Premiados Em 2025. (09/01/26).",
+      "data": "2026-01-07",
+      "origem": "acao",
+      "cd_acao": "27154"
+    },
+    {
+      "texto": "Fazer Articulação Com O Observatório Para Entender Qual O Prazo Para Atendimento Da Demanda .(16/01/26)",
+      "data": "2026-01-07",
+      "origem": "acao",
+      "cd_acao": "27161"
+    },
+    {
+      "texto": "O Cronograma, As Temáticas A Serem Trabalhadas E A Lista De Participantes Já Foram Definidos. No Momento, Aguardamos A Aprovação Da Liderança",
+      "data": "2026-01-14",
+      "origem": "acao",
+      "cd_acao": "27162"
+    },
+    {
+      "texto": "O Treinamento Na Metodologia De Mapeamento De Processos Foi Iniciado E Encontra-se Em Andamento. Atualmente, Estamos No Terceiro Encontro, Com A Conclusão Deste Primeiro Ciclo Prevista Para O Mês De Março, Contemplando Abordagens Práticas Voltadas À Ampliação Da Qualidade E Da Agilidade Dos Mapeamentos.",
+      "data": "2026-02-12",
+      "origem": "acao",
+      "cd_acao": "27162"
+    },
+    {
+      "texto": "Foi Apresentado A Equipe De Comunicação Com As Temáticas De Processos, E Será Enviado Conteúdo Sobre As Pípulas De Processos. Colacar Como Demanda A Comunicação Do Setor.",
+      "data": "2026-02-13",
+      "origem": "acao",
+      "cd_acao": "27153"
+    },
+    {
+      "texto": "Foi Alinhado Que A Setorial Será Elaborada Par Os Negócios De Forma A Posteriormente Trabalhar Com O Modelo De Apresentação Da Rac.",
+      "data": "2026-02-13",
+      "origem": "acao",
+      "cd_acao": "27161"
+    },
+    {
+      "texto": "O Treinamento Está Previsto A Ser Realizado Dia 23/04/26 E Para Isso Será Necessário Verificar Junto A Dheka O Conteúdo Do Curso, E Analisar O Contrato Para Avaliação Do Número De Participantes.",
+      "data": "2026-02-13",
+      "origem": "acao",
+      "cd_acao": "27273"
+    },
+    {
+      "texto": "A Primeira Ação De Comunicação Sobre O Treinamento De Gestão Por Processos Foi Divulgada No Giro. No Entanto, Ainda É Necessário Comunicar O Detalhamento Dos Próximos Treinamentos, Uma Vez Que A Temática Do Treinamento Realizado Pela Dheka Auditoria Ainda Estava Em Aberto. Bem Como Alinhar As Próximas Comunicação Dos Treinamentos Relacionados A Melhoria Contínua, Informação Documentada, Gestão Documental E Inovação.",
+      "data": "2026-03-11",
+      "origem": "acao",
+      "cd_acao": "27153"
+    },
+    {
+      "texto": "Relatório Detalhado De Conclusão E Avaliação De Treinamento.",
+      "data": "2026-03-17",
+      "origem": "acao",
+      "cd_acao": "27162"
+    },
+    {
+      "texto": "O Plano De Fortalecimento Da Cultura De Gestão Por Processos Avança No 1º Trimestre De 2026 Com Foco Em Transformação Digital Via Ia. A Mineração De Processos Está Em Fase De Planejamento, Aguardando Análise De Proposta Da Consultoria Para Estruturação Do Projeto. O Protagonismo Atual É Das Ias De Processos, Com Ferramentas De Documentação E Criação De Atas Já Funcionais, Além De Testes Avançados Para Suporte Ao Mapeamento (as Is/to Be). Na Frente De Capacitação, Alcançamos 80% De Participação, Permitindo Que Os Interlocutores Treinados Iniciem A Abertura De Novas Frentes De Mapeamento Institucional. Como Ponto Crítico, A Implantação Da Plataforma De Gestão (automação Da Rac) Exige Repactuação De Prazo, Pois Depende De Requisitos De Automação Ainda Não Definidos Pelo Observatório. As Demais Ações De Comunicação, Manual De Auditoria E Modelo De Maturidade Seguem Conforme O Cronograma.",
+      "data": "2026-03-25",
+      "origem": "plano",
+      "cd_acao": null
+    },
+    {
+      "texto": "Nos Dias 22 E 23 De Abril, 40  Colaboradores Do Sesi/senai Al Participaram Do Treinamento Inovação Em Processos: Conectando Tecnologia E Experiência Humana No Bpm, Realizado Na Casa Da Indústria. Ele Foi Ministrado Pela Especialista Em Bpm Andréa Magalhães, Que É Ceo E Sócia-fundadora Da Dheka.\r\n\r\nmais Do Que Um Treinamento Técnico, O Encontro Trouxe Uma Reflexão Importante: Todos, Em Alguma Medida, Atuam Com Processos No Seu Dia A Dia — Seja Tomando Decisões, Executando Atividades Ou Interagindo Com Diferentes Áreas.\r\n\r\na Partir Dessa Perspectiva, Os Participantes Foram Convidados A Ampliar O Olhar Sobre Os Processos, Entendendo Seu Papel Como Motores De Inovação E Adaptação Em Um Cenário De Constantes Mudanças.\r\n\r\ndurante A Capacitação, Foram Explorados Temas Como Evolução Do Bpm, Inovação Em Processos, Novos Modelos Organizacionais, Tecnologias Emergentes (como Inteligência Artificial E Mineração De Processos) E A Importância Da Experiência Humana Na Construção De Processos Mais Eficientes E Significativos.\r\n\r\ncom Abordagem Prática E Interativa, O Treinamento Proporcionou Momentos De Troca, Aplicação De Conceitos E Reflexão Sobre Como Conectar Tecnologia, Pessoas E Estratégia No Dia A Dia.\r\n\r\na Iniciativa Reforça O Compromisso Institucional Com O Fortalecimento Da Cultura Orientada A Processos, Estimulando Uma Atuação Mais Integrada, Inovadora E Alinhada Aos Desafios Futuros.",
+      "data": "2026-05-14",
+      "origem": "acao",
+      "cd_acao": "27273"
+    },
+    {
+      "texto": "No Último Mês, Foram Concluídas As Comunicações Relacionadas Ao Treinamento De Inovação Em Processos, “conectando Tecnologia E Experiência Humana No Bpm”, Bem Como A Homologação Do Processo De Contratos Na Ferramenta Solução 360°, Com O Objetivo De Comunicar Aos Colaboradores As Mudanças Implementadas No Processo.\r\n\r\ntambém Foi Realizado O Comunicado Referente Ao Movimento De Recolhimento E Triagem Das Documentações Do Sesi E Senai.\r\n\r\ncomo Próximos Passos, Será Realizado O Alinhamento Com A Equipe De Comunicação Para Construção E Divulgação Dos Materiais Das Pílulas De Gestão Por Processos, Visando A Disponibilização Das Trilhas De Aprendizagem De Forma Mensal.",
+      "data": "2026-05-15",
+      "origem": "acao",
+      "cd_acao": "27153"
+    },
+    {
+      "texto": "No Ciclo Atual, O Plano De Fortalecimento Da Cultura De Gestão Por Processos Apresenta Um Amadurecimento Significativo Em Suas Diversas Frentes De Atuação. Na Vertente De Tecnologia E Inovação, Consolidamos A Operação Da Ferramenta Inner Ia, Que Agora Atua Como Suporte Técnico Recorrente Para A Padronização De Documentos E Análise De Riscos,  Elevando A Eficiência Produtiva Do Escritório, Além Da Criação De Assistentes Para Desenvolvimento De Fluxos As Is E To Be Que Estão Em Avaliação Pela Consultoria Da Dheka, Que Dará Um Retorno Sobre A Qualidade Desses Agentes Em 20/05. Complementarmente, A Frente De Mineração De Processos Avançou Para A Versão V4 De Seu Planejamento, Concentrando Esforços Na Execução Técnica De Um Projeto Piloto No Fluxo De Vendas, Utilizando A Solução 360° E O Power Automate Para Extração De Logs E Diagnóstico De Gargalos. No Pilar De Desenvolvimento Humano, Concluímos Com Sucesso O Treinamento De \"inovação Em Processos\", Atingindo A Marca De 40 Colaboradores Capacitados Junto À Consultoria Da Dheka. No Âmbito Da Sistemática De Auditorias De Processos E Qualidade, Foi Desenvolvido O Manual De Auditoria De Processos, Que Está Sendo Validado Junto Com Os Negócios, Além Da Estruturação Da Ferramenta De Monitoramento Dessas Auditorias. Quanto À Plataforma De Gestão Estratégica, Foi Demandado Ao Observatório A Automatização Das Reuniões Setoriais Com Base Nas Informações Do Epa, Que Servirá De Base Para Automatização Das Racs. Com Isso, Será Necessário Prorrogar A Ação Até O Mês De Dezembro De 2026.",
+      "data": "2026-05-15",
+      "origem": "plano",
+      "cd_acao": null
+    },
+    {
+      "texto": "Prazo Repactuado Para O Dia 31 De Dezembro De 2026, Conforme Alinhamento Realizado Pela Luciana Na Setorial De 14 De Maio.",
+      "data": "2026-05-18",
+      "origem": "acao",
+      "cd_acao": "27161"
+    },
+    {
+      "texto": "Já Foi Iniciado O Movimento Com A Área Administrativa E Financeira. Para A Próxima Agenda, Será Realizado Junto A Área Da Digest.",
+      "data": "2026-06-08",
+      "origem": "acao",
+      "cd_acao": "30920"
+    },
+    {
+      "texto": "Prazo Repactuado Para 30/06/2027, Visto Que Ainda Existem Prioridades A Serem Desenvolvidas Pelo Observatório E Ainda Não Possuem Estimativa De Data Para Início Da Execução Dessa Demanda. Ponto De Atenção, Pois Essa Ação É Referente Ao Peg.",
+      "data": "2026-06-17",
+      "origem": "acao",
+      "cd_acao": "27161"
+    },
+    {
+      "texto": "Foi Realizado O Estudo Para Definir A Metodologia De Apuração Dos Processos Destaque. Os Próximos Passos Serão Para Elaborar O Formalmente O Documento, Apresentar Para Área De Processos E Após Essa Validação (16/07), Realizar A Disseminação E Iniciar A Apuração.\r\nem Paralelo, Iniciamos A Definição Da Medição Do Indicador Estratégico De Maturidade Dos Processos Institucionais, Se Baseando Em Partes, Na Metodologia Dos Processos Destaque.",
+      "data": "2026-06-30",
+      "origem": "acao",
+      "cd_acao": "27154"
+    },
+    {
+      "texto": "Foi Iniciada A Revisão Da Rac, De Acordo Com A Elaboração Do Relatório Executivo. \r\napós Isso, Com A Nova Definição Do Planejamento Estratégico, Serão Revistos Participantes E Formato.",
+      "data": "2026-07-06",
+      "origem": "acao",
+      "cd_acao": "30925"
+    },
+    {
+      "texto": "Com O Objetivo De Destravar As Comunicações Previstas No Planejamento, Foi Elaborada Uma Proposta Contendo O Cronograma E Os Respectivos Períodos De Divulgação. O Material Foi Apresentado À Equipe De Comunicação Corporativa Para Alinhamento E Viabilização Da Execução Das Ações Ao Longo Do Segundo Semestre.\r\n\r\ncomo Resultado Desse Alinhamento, Foram Definidas As Seguintes Prioridades De Comunicação:\r\n\r\ngestão Por Processos – Posicionamento Do Escritório De Processos E Divulgação De Conteúdos Em Formato De Pílulas Sobre Gestão Por Processos;\r\nprocessos Em Destaque – Divulgação De Iniciativas, Resultados E Boas Práticas Relacionadas Aos Processos Institucionais;\r\ncertificações – Comunicação Das Certificações, Acreditações E Demais Reconhecimentos Institucionais.",
+      "data": "2026-07-07",
+      "origem": "acao",
+      "cd_acao": "27153"
+    },
+    {
+      "texto": "No Ciclo Atual, O Plano De Fortalecimento Da Cultura De Gestão Por Processos Apresenta Novos Desdobramentos Estratégicos E Operacionais Nas Suas Frentes De Atuação. No Pilar De Comunicação E Cultura, Em Alinhamento Com A Equipe De Comunicação Corporativa, Foi Estruturada A Proposta Do Cronograma E Períodos De Divulgação Para O Segundo Semestre, Definindo Como Prioridades O Posicionamento Do Escritório De Processos (via Pílulas De Conteúdo), A Divulgação De Iniciativas No \"processos Em Destaque\" E A Comunicação De Certificações Institucionais.\r\n\r\nna Vertente De Governança E Melhores Práticas, Avançamos Com O Estudo Metodológico Para Apuração Dos \"processos Destaque\" E Com A Estruturação Do Indicador Estratégico De Maturidade Dos Processos Institucionais, Cuja Validação Interna Está Prevista Para 16/07, Permitindo O Início Da Disseminação E Apuração. Complementarmente, Iniciamos A Revisão Da Cerimônia Da Rac Com Foco Na Elaboração Do Relatório Executivo, Com Previsão De Ajuste De Participantes E Formato Frente Às Novas Diretrizes Do Planejamento Estratégico.\r\n\r\nno Âmbito De Alinhamento Organizacional, Foi Iniciado O Movimento De Condução Do Workshop De Atualização Da Cadeia De Valor, Donos De Processo E Especialistas Junto Às Áreas Administrativa E Financeira, Tendo Como Próximo Passo A Extensão Da Agenda Para A Digest. Por Fim, Como Ponto De Atenção E Tecnologia, A Implantação Da Plataforma De Gestão Estratégica (referente Ao Peg) Teve Seu Prazo Repactuado Para 30/06/2027, Em Decorrência De Prioridades Em Desenvolvimento Pelo Observatório Que Impactam A Estimativa De Início Da Execução.",
+      "data": "2026-07-08",
+      "origem": "plano",
+      "cd_acao": null
+    },
+    {
+      "texto": "Em Relação Às Ações De Comunicação Para O Segundo Semestre, Aguardamos O Envio Do Plano De Comunicação Completo. No Primeiro Envio, Recebemos Apenas O Cronograma De Vídeos Da Temática Inicial, E Não A Proposta Global. Para Alinhar Esses Pontos, Realizamos Uma Reunião Na Última Sexta-feira, Dia 07/08, Na Qual Definimos O Escopo E A Ordem Lógica Das Abordagens. Com Esse Alinhamento, A Equipe De Comunicação Poderá Estruturar A Estratégia Final, Contemplando Vídeos, Pílulas De Conteúdo E Demais Formatos.",
+      "data": "2026-08-10",
+      "origem": "acao",
+      "cd_acao": "27153"
+    },
+    {
+      "texto": "Após A Validação Da Metodologia E Formato Que Será Realizada A Apuração Dos Processos Destaque Estamos Na Etapa De Prototipagem Da Ferramenta Que Nos Auxiliará Na Aplicação Da Avaliação E Cálculo Dos Resultados. Em Paralelo, Está Sendo Realizada A Estruturação Do Edital Para Posteriormente Comunicar.",
+      "data": "2026-08-10",
+      "origem": "acao",
+      "cd_acao": "27154"
+    },
+    {
+      "texto": "Foi Elaborada Uma Proposta De Novo Formato Para Rac Para Que Tenhamos: Maior Objetividade, Melhor Qualidade Da Análise, Maior Participação Da Diretoria, Decisões Mais Rápidas, Menor Repetição De Pautas, \r\nmaior Disciplina Na Gestão Dos Indicadores, Maior Rastreabilidade E Maior Responsabilização.\r\ndentro Dessa Nova Proposta, Foram Solicitados Alguns Ajustes, Para Contemplarmos Projetos Críticos, Implantações, Etc., Que Estão Sendo Estruturados.",
+      "data": "2026-08-10",
+      "origem": "acao",
+      "cd_acao": "30925"
+    },
+    {
+      "texto": "Após O Pop De Elaboração Do Nível De Serviço, Foi Criado Um Manual De Governança De Serviço E Dois Formulários De Apoio (identificação Do Serviço E Ficha Do Acordo De Nível De Serviço). Na Reunião De Validação Do Dia 10/08, Discutiu-se Os Critérios E O Nível De Aprofundamento Dos Formulários, Ficando Definido Incorporar Os Ajustes E Executar Um Piloto Com Os Serviços Da Área De Processos, Com Apresentação Dos Resultados Prevista Até 12/08.",
+      "data": "2026-08-10",
+      "origem": "acao",
+      "cd_acao": "31071"
+    },
+    {
+      "texto": "Recebemos A Devolutiva De Atualização De Portfólio Das Áreas Da Digest E Administrativo, Com Atualização De Responsabilidades E Propostas De Ajuste No Portfólio. No Dia 11/08, Faremos O Workshop Junto A Área Do Financeiro Do Csc.\r\nos Materiais Recebidos Estão Sendo Atualizados No Portfólio Sesi Senai E As Considerações De Ajuste Do Portfólio A Nível De Processos E Subprocessos Estão Sendo Avaliadas Junto Aos Analistas Responsáveis E As Áreas.",
+      "data": "2026-08-11",
+      "origem": "acao",
+      "cd_acao": "30920"
+    },
+    {
+      "texto": "Realizamos O Alinhamento Com A Consultoria Sobre A Proposta Inicial Das Instâncias De Governança E Novos Papéis. O Andamento Da Ação, Prevista Para 31/08, Aguarda A Devolutiva Do Documento Consolidado Pela Consultora. Em Paralelo, O Escritório De Processos Está Mapeando Os Fóruns Corporativos E Avaliando Um Possível Sombreamento Entre O Novo Comitê De Governança E As Pautas Do Novo Modelo De Reunião De Análise Crítica (rac), Garantindo Que Não Haja Duplicidade Antes Da Validação Final Do Modelo Junto À Diretoria.",
+      "data": "2026-08-11",
+      "origem": "acao",
+      "cd_acao": "31070"
+    },
+    {
+      "texto": "Plano De Comunicação (2º Semestre): Após Alinhamento De Escopo Em 07/08, A Equipe De Comunicação Finaliza A Proposta Global (vídeos, Pílulas E Comunicados), Expandindo A Versão Inicial. Será Realizado Reunião Entre A Semana 17 A 21/08 Com Equipe De Marketing Para Alinhamento Geral.\r\n\r\nprocesso De Demandas Avulsas: O Escritório De Processos Irá Desenvolver Uma Rotina Interna De Captação Interna De Demandas Para Comunicar A Instituição (movimentos Da Área) De Forma Mensal.",
+      "data": "2026-08-12",
+      "origem": "acao",
+      "cd_acao": "27153"
+    },
+    {
+      "texto": "No Ciclo Atual, O Plano De Fortalecimento Da Cultura E Governança De Gestão Por Processos Seguiu Avançando Em Suas Principais Frentes Estruturantes. No Pilar De Governança E Melhores Práticas, Realizamos O Alinhamento Da Proposta Inicial Da Política De Governança Junto À Consultoria (aguardando A Devolutiva Do Documento Consolidado) E Iniciamos O Mapeamento De Fóruns Corporativos Para Avaliar Possíveis Sombreamentos Com O Novo Formato Da Rac. Esta, Por Sua Vez, Teve Sua Nova Proposta De Formato Elaborada — Visando Maior Objetividade, Responsabilização E Participação Da Diretoria —, E Encontra-se Em Fase De Ajustes Para Contemplar Projetos Críticos E Implantações. Adicionalmente, Avançamos Na Definição Dos Serviços Corporativos E Slas Com A Criação Do Manual De Governança De Serviço E O Alinhamento Para Execução De Um Piloto Interno Com Os Serviços Da Área De Processos. No Âmbito Do Alinhamento Organizacional, Seguimos Com O Workshop De Atualização Da Cadeia De Valor, Englobando A Recepção E Avaliação Das Devolutivas (digest E Administrativo), A Atualização Dos Materiais No Portfólio Sesi Senai E A Realização Da Agenda Com O Setor Financeiro Do Csc (11/08). Por Fim, Na Vertente De Comunicação E Cultura, Definimos O Escopo E A Lógica Das Abordagens Do Plano De Comunicação Em Reunião (07/08) Com A Equipe Corporativa, Que Agora Estrutura A Estratégia Final Para O Semestre. De Forma Complementar, Após A Validação Metodológica Da Avaliação Dos Processos Destaque, Iniciamos A Prototipagem Da Ferramenta De Cálculo De Resultados E A Estruturação Do Edital Da Cerimônia.",
+      "data": "2026-08-13",
+      "origem": "plano",
+      "cd_acao": null
+    },
+    {
+      "texto": "Foram Alinhadas Algumas Comunicações Pontuais, Em Paralelo À Estruturação Das Campanhas. Entre Os Próximos Materiais Previstos Estão Conteúdos Sobre O Nível 3 De Maturidade Do Escritório De Processos E Sobre Informação Documentada. Esse Movimento Tem Como Objetivo Ampliar A Disseminação Da Pauta De Gestão Por Processos, Fortalecendo O Conhecimento E O Engajamento Das Áreas.\r\nparalelamente, Ainda Aguardamos A Definição De Como Será Realizado O Atendimento Às Demandas De Comunicação Da Área, Buscando Estabelecer Uma Conexão Mais Clara Com Os Pilares E A Nova Organização.",
+      "data": "2026-09-08",
+      "origem": "acao",
+      "cd_acao": "27153"
+    },
+    {
+      "texto": "Foi Realizada A Apresentação Da Metodologia Proposta Para A Mentoria Da Dheka, Que Foi Aprovada Com Algumas Considerações. A Principal Observação Refere-se À Abrangência Da Avaliação De Todos Os Processos Da Instituição, Uma Vez Que Essa Abordagem Não Se Mostra Viável Diante Da Capacidade De Análise Disponível. Em Função Disso, Estamos Finalizando A Estruturação Do Edital, Considerando Os Ajustes Necessários Para Adequação Ao Cenário Apresentado.\r\nadicionalmente, A Construção Da Ferramenta Encontra-se Temporariamente Impedida. Desde 24/07, A Plataforma De Desenvolvimento Base44 Está Suspensa Devido À Impossibilidade De Processamento Do Pagamento, Ocasionada Pelo Comprometimento Do Cartão Corporativo.",
+      "data": "2026-09-08",
+      "origem": "acao",
+      "cd_acao": "27154"
+    },
+    {
+      "texto": "Ainda Sem Avanços Na Pauta, Visto Que Foram Priorizadas Outras Pautas Pelo Observatório: Automatização Da Setorial, Automatização Da Cesta Do Gestor E Ppr.  Ponto De Atenção, Pois Essa Ação É Referente Ao Peg E Ainda Não Temos Previsão De Início.",
+      "data": "2026-09-08",
+      "origem": "acao",
+      "cd_acao": "27161"
+    },
+    {
+      "texto": "Para O Novo Formato Da Rac, Estão Sendo Consideradas A Politica De Governança De Processos E A Nova Pesquisa De Avaliações Das Cerimônias. Dessa Forma, Teremos O Modelo Final Para Aplicar No Próximo Ciclo Das Racs No Final De Outubro.",
+      "data": "2026-09-08",
+      "origem": "acao",
+      "cd_acao": "30925"
+    },
+    {
+      "texto": "Foi Realizado, Em 04/09/2026, Workshop Piloto Com A Digest Para Aplicação Da Metodologia De Governança Dos Serviços Corporativos E Definição Dos Respectivos Slas. A Partir Do Preenchimento Realizado Durante O Piloto, Será Dada Continuidade À Elaboração E Estruturação Das Fichas De Serviço. A Aplicação Também Permitiu Identificar Aprendizados E Oportunidades De Melhoria, Que Serão Considerados No Aprimoramento Da Metodologia Antes De Sua Disseminação Institucional.\r\n\r\npróximos Passos:\r\n\r\naté 15/09: Envio, Pelas Áreas Da Digest, Das Fichas Preenchidas No Forms;\r\napós O Recebimento: Estruturação Das Fichas No Layout De Teste, Pela Assessoria De Gestão Por Processos;\r\nna Sequência: Validação Das Fichas Pelos Gestores Dos Serviços;\r\napós Validação: Publicação Das Fichas No Fluxo Do Epa, Conforme As Etapas Previstas Na Metodologia De Governança Dos Serviços Corporativos.",
+      "data": "2026-09-08",
+      "origem": "acao",
+      "cd_acao": "31071"
+    },
+    {
+      "texto": "Esta Ação Será Desenvolvida Em Parceria Com A Área De Estratégia Organizacional, Que Já Estruturou Uma Ferramenta Com Evolução Prevista Em Três Versões. A Primeira Versão Contempla O Carregamento Dos Resultados E Acompanhamentos Em Formato De Carga De Dados. A Segunda Prevê A Utilização De Inteligência Artificial Para Potencializar As Análises E Apoiar A Tomada De Decisão. Já A Terceira Versão Tem Como Objetivo Automatizar Os Cálculos, O Tratamento Dos Dados E A Captação Dos Resultados.\r\n\r\npara Viabilizar A Implementação, Serão Realizados Treinamentos Internos Entre As Equipes Envolvidas, Com O Objetivo De Validar A Ferramenta E Alinhar Sua Utilização. Após Essa Etapa, Será Elaborado Um Cronograma De Trabalho Para Mapear As Bases De Dados Utilizadas, Revisar Os Critérios De Cálculo E Promover Os Refinamentos Necessários Para Garantir Maior Confiabilidade E Eficiência Do Processo.",
+      "data": "2026-09-08",
+      "origem": "acao",
+      "cd_acao": "31215"
+    },
+    {
+      "texto": "Avançamos Com A Atualização Das Áreas Da Digest, Csc E Ssi. Os Materiais Recebidos Estão Sendo Atualizados No Portfólio Sesi Senai E As Considerações De Ajuste Do Portfólio A Nível De Processos E Subprocessos Estão Sendo Avaliadas Junto Aos Analistas Responsáveis E As Áreas.\r\ncom Essa Atualização, Iniciamos O Desenvolvimento E Identificação Dos Serviços De Acordo Com O Portfólio E Com O Sla Das Áreas.",
+      "data": "2026-09-09",
+      "origem": "acao",
+      "cd_acao": "30920"
+    },
+    {
+      "texto": "Reunião Para Continuidade Precisou Ser Reagendada, Foi Solicitado Repactuação Da Data De Entrega Dessa Ação.",
+      "data": "2026-09-09",
+      "origem": "acao",
+      "cd_acao": "31070"
+    },
+    {
+      "texto": "No Ciclo Atual, O Plano De Fortalecimento Da Cultura De Gestão Por Processos Dá Continuidade Às Suas Frentes Estratégicas. Em Comunicação E Cultura, Mantêm-se As Prioridades De Posicionamento Do Escritório De Processos E Divulgação Das Iniciativas. Na Vertente De Governança E Melhores Práticas, Avançam Os Critérios Da Premiação 'processos Destaque' E A Estruturação Do Indicador De Maturidade, Além Da Revisão Metodológica Da Cerimônia Da Rac. No Âmbito De Tecnologia E Gestão, A Entrega Da Plataforma De Gestão Estratégica Com Foco Em Processos (vinculada Ao Peg) Permanece Como Ponto De Atenção Em Andamento: Embora A Modelagem Esteja Aprovada, A Execução Técnica Depende De Capacidade Do Observatório — Atualmente Concentrado Em Outras Automatizações Corporativas Prioritárias —, Demandando A Repactuação Do Cronograma De Entrega E Alinhamento De Capacidade Para Início Do Desenvolvimento.",
+      "data": "2026-09-14",
+      "origem": "plano",
+      "cd_acao": null
+    },
+    {
+      "texto": "Ação Repactuada Para Viabilizar A Apresentação E Conclusão Da Proposta De Política E Comitê De Processos. Em Seguida, Será Submetida À Governança Corporativa Para Os Trâmites De Aprovação.",
+      "data": "2026-09-14",
+      "origem": "acao",
+      "cd_acao": "31070"
     }
   ],
   "indicadores": [],

@@ -24,6 +24,7 @@
       "status": "Concluído",
       "prazo_inicial": "2026-07-01",
       "prazo_final": "2026-07-03",
+      "data_conclusao": "2026-07-08",
       "responsavel": "Responsável 11"
     },
     {
@@ -32,6 +33,7 @@
       "status": "Concluído",
       "prazo_inicial": "2026-07-06",
       "prazo_final": "2026-07-10",
+      "data_conclusao": "2026-08-07",
       "responsavel": "Responsável 11"
     },
     {
@@ -40,6 +42,7 @@
       "status": "Concluído",
       "prazo_inicial": "2026-07-13",
       "prazo_final": "2026-07-17",
+      "data_conclusao": "2026-08-07",
       "responsavel": "Responsável 11"
     },
     {
@@ -48,6 +51,7 @@
       "status": "Concluído",
       "prazo_inicial": "2026-07-15",
       "prazo_final": "2026-07-21",
+      "data_conclusao": "2026-08-07",
       "responsavel": "Responsável 11"
     },
     {
@@ -56,6 +60,7 @@
       "status": "Em Andamento",
       "prazo_inicial": "2026-07-22",
       "prazo_final": "2026-07-31",
+      "data_conclusao": null,
       "responsavel": "Responsável 11"
     },
     {
@@ -64,6 +69,7 @@
       "status": "Planejado",
       "prazo_inicial": "2026-08-03",
       "prazo_final": "2026-08-14",
+      "data_conclusao": null,
       "responsavel": "Responsável 11"
     },
     {
@@ -72,6 +78,7 @@
       "status": "Planejado",
       "prazo_inicial": "2026-08-17",
       "prazo_final": "2026-08-19",
+      "data_conclusao": null,
       "responsavel": "Responsável 11"
     },
     {
@@ -80,6 +87,7 @@
       "status": "Concluído",
       "prazo_inicial": "2026-07-22",
       "prazo_final": "2026-07-31",
+      "data_conclusao": "2026-08-10",
       "responsavel": "Responsável 23"
     }
   ],
@@ -149,6 +157,26 @@
       "ano": 2027,
       "mes_referencia": 1,
       "registros": []
+    }
+  ],
+  "registros_acompanhamento": [
+    {
+      "texto": "O Painel Estruturado Anteriormente Foi Resgatado Junto Ao Observatório E Wellington Já Conferiu Que Ele Está Refletindo As Informações Do Epa, Conforme Parametrizado. No Momento, Estamos Aguardando A Ti Fazer A Publicação Nos Painéis Gerenciais Para Analisar Devidamente As Regras E Verificar/ Revisar As Regras. \r\nno Que Se Refere A Ferramenta Que O Time De Td Está Utilizando, Houve Uma Reunião E Ewerton Nascimento Apresentou As Telas  Fluxo De Utilização. Identificamos Que A Ferramenta Traz Insights Interessantes, Como Os Subcritérios Com Pesos, Porém, Para A Análise E Classificação De Planos Em Níveis Estratégicos E Dashboard Para Os Gestores, O Painel Anteriormente Estruturado É Mais Aderente.\r\n\r\nestamos Com Reunião Agenda, Para Que Até 10/07 Avancemos Com A Revisão Das Regras.",
+      "data": "2026-07-08",
+      "origem": "plano",
+      "cd_acao": null
+    },
+    {
+      "texto": "No Dia 04/08, O Painel De Priorização Das Ações Foi Resgatado, Ajustado E Apresentado À Nathália (digest) E Foi Validado, Considerando A Inclusão De Um Critério De Projetos Obrigatórios. Quando O Projeto For Obrigatório, Ele Deverá Se Posicionar Na Matriz Como Tal, A Fim De Dar Clareza À Todos. Os Passos Seguintes É Atribuir Aos Planos De Ação, Os Critérios Da Sustentabilidade E Organizar As Informações Nas Cerimônias.",
+      "data": "2026-08-07",
+      "origem": "plano",
+      "cd_acao": null
+    },
+    {
+      "texto": "O Painel De Priorização Foi Encaminhado Ao Observatório Para Adequação Ao Layout Institucional E Padronização Dos Filtros. Em Paralelo, Está Acontecendo A Validação Dos Novos Planos De Ação Estratégicos Que Foram Estruturados Após O Workshop. Assim Que Recebermos Os Planos Validados Será Feita A Classificação Com Os Critérios Da Sustentabilidade.",
+      "data": "2026-09-02",
+      "origem": "plano",
+      "cd_acao": null
     }
   ],
   "indicadores": [],

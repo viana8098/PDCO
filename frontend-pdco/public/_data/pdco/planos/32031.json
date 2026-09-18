@@ -24,6 +24,7 @@
       "status": "Concluído",
       "prazo_inicial": "2026-06-15",
       "prazo_final": "2026-07-05",
+      "data_conclusao": "2026-07-15",
       "responsavel": "Responsável 06"
     },
     {
@@ -32,6 +33,7 @@
       "status": "Concluído",
       "prazo_inicial": "2026-06-08",
       "prazo_final": "2026-07-05",
+      "data_conclusao": "2026-07-15",
       "responsavel": "Responsável 14"
     },
     {
@@ -40,6 +42,7 @@
       "status": "Em Andamento",
       "prazo_inicial": "2026-07-13",
       "prazo_final": "2026-07-17",
+      "data_conclusao": null,
       "responsavel": "Responsável 21"
     },
     {
@@ -48,6 +51,7 @@
       "status": "Em Andamento",
       "prazo_inicial": "2026-07-20",
       "prazo_final": "2026-08-07",
+      "data_conclusao": null,
       "responsavel": "Responsável 14"
     }
   ],
@@ -110,6 +114,20 @@
       "ano": 2027,
       "mes_referencia": 1,
       "registros": []
+    }
+  ],
+  "registros_acompanhamento": [
+    {
+      "texto": "Etapa Realizada Com Sucesso. Os Prazos De Entraga Das Solicitações Consideraram A Realidade Da Governança E A Necessidade Dos Clientes Internos.",
+      "data": "2026-07-15",
+      "origem": "acao",
+      "cd_acao": "32032"
+    },
+    {
+      "texto": "A Ferramenta Escolhida Foi O List Da Microsoft. Em Anexo A Evidência.",
+      "data": "2026-07-15",
+      "origem": "acao",
+      "cd_acao": "32033"
     }
   ],
   "indicadores": [],

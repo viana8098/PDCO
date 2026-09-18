@@ -24,6 +24,7 @@
       "status": "Concluído",
       "prazo_inicial": "2026-06-05",
       "prazo_final": "2026-06-15",
+      "data_conclusao": "2026-06-25",
       "responsavel": "Responsável 15"
     },
     {
@@ -32,6 +33,7 @@
       "status": "Concluído",
       "prazo_inicial": "2026-06-16",
       "prazo_final": "2026-06-30",
+      "data_conclusao": "2026-06-25",
       "responsavel": "Responsável 15"
     },
     {
@@ -40,6 +42,7 @@
       "status": "Concluído",
       "prazo_inicial": "2026-07-01",
       "prazo_final": "2026-07-20",
+      "data_conclusao": "2026-08-11",
       "responsavel": "Responsável 15"
     },
     {
@@ -48,6 +51,7 @@
       "status": "Planejado",
       "prazo_inicial": "2026-07-21",
       "prazo_final": "2026-09-30",
+      "data_conclusao": null,
       "responsavel": "Responsável 15"
     },
     {
@@ -56,6 +60,7 @@
       "status": "Planejado",
       "prazo_inicial": "2026-08-01",
       "prazo_final": "2026-10-31",
+      "data_conclusao": null,
       "responsavel": "Responsável 15"
     },
     {
@@ -64,6 +69,7 @@
       "status": "Suspenso",
       "prazo_inicial": "2026-08-01",
       "prazo_final": "2026-08-31",
+      "data_conclusao": null,
       "responsavel": "Responsável 15"
     },
     {
@@ -72,6 +78,7 @@
       "status": "Planejado",
       "prazo_inicial": "2026-08-15",
       "prazo_final": "2026-11-19",
+      "data_conclusao": null,
       "responsavel": "Responsável 15"
     },
     {
@@ -80,6 +87,7 @@
       "status": "Concluído",
       "prazo_inicial": "2026-08-03",
       "prazo_final": "2026-08-17",
+      "data_conclusao": "2026-08-26",
       "responsavel": "Responsável 15"
     },
     {
@@ -88,6 +96,7 @@
       "status": "Em Andamento",
       "prazo_inicial": "2026-08-13",
       "prazo_final": "2026-08-17",
+      "data_conclusao": null,
       "responsavel": "Responsável 15"
     }
   ],
@@ -163,6 +172,32 @@
       "ano": 2027,
       "mes_referencia": 1,
       "registros": []
+    }
+  ],
+  "registros_acompanhamento": [
+    {
+      "texto": "No Momento, Estão Sendo Identificados Os Comportamentos Relacionados Aos Valores E Às Competências Organizacionais, Com O Objetivo De Consolidar Referências Comportamentais Alinhadas À Cultura Da Instituição. Paralelamente, Estão Sendo Definidos Os Critérios Que Subsidiarão O Desenvolvimento Da Política De Gestão De Reconhecimento E Consequências, Garantindo Coerência, Transparência E Alinhamento Estratégico Às Práticas De Gestão De Pessoas.",
+      "data": "2026-06-06",
+      "origem": "plano",
+      "cd_acao": null
+    },
+    {
+      "texto": "Em Construção: Politica De Reconhecimento E Consequência",
+      "data": "2026-07-13",
+      "origem": "plano",
+      "cd_acao": null
+    },
+    {
+      "texto": "O Ato Normativo Foi Finalizado E Submetido Aos Profissionais Da Digest Para Revisão E Emissão De Considerações Técnicas. Concluída Essa Etapa, Será Encaminhado Para Apreciação E Validação Da Governança.",
+      "data": "2026-08-11",
+      "origem": "plano",
+      "cd_acao": null
+    },
+    {
+      "texto": "A Digest Ainda Está Em Fase De Edição. As Áreas De Processos E Estratégia E Gente E Cultura Estão Trabalhando Em Conjunto Na Revisão E No Aprimoramento Do Conteúdo, Trazendo Exemplos Mais Práticos E Situações Do Dia A Dia.\r\n\r\na Proposta É Tornar O Ato Normativo Mais Claro, Próximo E Conectado À Realidade Das Pessoas, Facilitando A Compreensão E Mostrando, Na Prática, Como Os Temas Abordados Se Aplicam À Nossa Rotina.",
+      "data": "2026-09-11",
+      "origem": "plano",
+      "cd_acao": null
     }
   ],
   "indicadores": [],

@@ -47,6 +47,8 @@ export interface AcaoPdco {
   status: string;
   prazo_inicial: string | null;
   prazo_final: string | null;
+  /** Data real de conclusão (`dt_fimrealacao` do dw) — só existe para ações concluídas. */
+  data_conclusao: string | null;
   responsavel: string | null;
 }
 
@@ -61,6 +63,11 @@ export interface RegistroAcompanhamento {
   texto: string;
   data: string;
   origem: 'plano' | 'acao';
+}
+
+/** Registro de acompanhamento sem a janela de 8 meses — inclui a ação de origem, quando houver. */
+export interface RegistroAcompanhamentoPlano extends RegistroAcompanhamento {
+  cd_acao: string | null;
 }
 
 export interface QuadranteAcompanhamento {
@@ -89,6 +96,8 @@ export interface DetalhePlanoPdco {
   plano: PlanoPdco;
   acoes: AcaoPdco[];
   acompanhamento: QuadranteAcompanhamento[];
+  /** Todos os acompanhamentos do plano (sem recorte de janela) — base da página Evolução Mensal. */
+  registros_acompanhamento: RegistroAcompanhamentoPlano[];
   indicadores: IndicadorPdco[];
   registro: RegistroQualitativo;
   /** Sempre false — sem backend real, "Salvar registros" não persiste (ver frontend-pdco). */

@@ -24,6 +24,7 @@
       "status": "Planejado",
       "prazo_inicial": "2026-08-10",
       "prazo_final": "2026-11-14",
+      "data_conclusao": null,
       "responsavel": "Responsável 04"
     },
     {
@@ -32,6 +33,7 @@
       "status": "Concluído",
       "prazo_inicial": "2026-05-04",
       "prazo_final": "2026-05-18",
+      "data_conclusao": "2025-07-22",
       "responsavel": "Responsável 04"
     },
     {
@@ -40,6 +42,7 @@
       "status": "Concluído",
       "prazo_inicial": "2026-05-27",
       "prazo_final": "2026-06-15",
+      "data_conclusao": "2026-08-10",
       "responsavel": "Responsável 04"
     },
     {
@@ -48,6 +51,7 @@
       "status": "Cancelado",
       "prazo_inicial": "2026-05-27",
       "prazo_final": "2026-06-30",
+      "data_conclusao": null,
       "responsavel": "Responsável 04"
     },
     {
@@ -56,6 +60,7 @@
       "status": "Concluído",
       "prazo_inicial": "2026-09-01",
       "prazo_final": "2026-11-30",
+      "data_conclusao": "2026-11-30",
       "responsavel": "Responsável 04"
     },
     {
@@ -64,6 +69,7 @@
       "status": "Planejado",
       "prazo_inicial": "2026-05-15",
       "prazo_final": "2026-12-20",
+      "data_conclusao": null,
       "responsavel": "Responsável 04"
     },
     {
@@ -72,6 +78,7 @@
       "status": "Planejado",
       "prazo_inicial": "2026-08-03",
       "prazo_final": "2026-09-07",
+      "data_conclusao": null,
       "responsavel": "Responsável 04"
     },
     {
@@ -80,6 +87,7 @@
       "status": "Planejado",
       "prazo_inicial": "2026-08-25",
       "prazo_final": "2026-09-27",
+      "data_conclusao": null,
       "responsavel": "Responsável 04"
     },
     {
@@ -88,6 +96,7 @@
       "status": "Planejado",
       "prazo_inicial": "2026-08-28",
       "prazo_final": "2026-10-14",
+      "data_conclusao": null,
       "responsavel": "Responsável 04"
     },
     {
@@ -96,6 +105,7 @@
       "status": "Planejado",
       "prazo_inicial": "2026-06-08",
       "prazo_final": "2026-12-20",
+      "data_conclusao": null,
       "responsavel": "Responsável 04"
     }
   ],
@@ -182,6 +192,104 @@
       "ano": 2026,
       "mes_referencia": 12,
       "registros": []
+    }
+  ],
+  "registros_acompanhamento": [
+    {
+      "texto": "Ainda Não Iniciamos As Ações.",
+      "data": "2024-05-21",
+      "origem": "plano",
+      "cd_acao": null
+    },
+    {
+      "texto": "Já Identificamos Os Cargos Mais Critico Para Trabalhar Sucessão (diretoria/ Gerentes De Negócio) E No Momento Estamos Com Várias Metodologias De Desenvolvimento Comportamental. A Partir De 2025 Iremos Buscar Empresas Especializadas Em Sucessão Para Darmos Inicio Com Projeto Piloto.",
+      "data": "2024-09-11",
+      "origem": "plano",
+      "cd_acao": null
+    },
+    {
+      "texto": "Já Identificamos Os Cargos Mais Critico Para Trabalhar Sucessão (diretoria/ Gerentes De Negócio) E No Momento Estamos Com Várias Metodologias De Desenvolvimento Comportamental. A Partir De 2025 Iremos Buscar Empresas Especializadas Em Sucessão Para Darmos Inicio Com Projeto Piloto.",
+      "data": "2024-11-07",
+      "origem": "plano",
+      "cd_acao": null
+    },
+    {
+      "texto": "Plano De Sucessão Ainda Não Foi Iniciado, Segue Pendente A Validação Junto A Diretoria Para Seu Prosseguimento.",
+      "data": "2025-04-23",
+      "origem": "plano",
+      "cd_acao": null
+    },
+    {
+      "texto": "Material Esta Pronto, E Foi Apresentado No Ultimo Dia 18/06 E Validado Pela Diretoria.",
+      "data": "2025-06-26",
+      "origem": "plano",
+      "cd_acao": null
+    },
+    {
+      "texto": "Etapas Em Construção.",
+      "data": "2025-08-21",
+      "origem": "plano",
+      "cd_acao": null
+    },
+    {
+      "texto": "Devido A Algumas Ações Estratégicas Estarem Em Andamento, Bem Como Pelo Momento De Revisão De Custos Que A Empresa Se Encontra, Repactuamos Essa Atividade Para Meados De 2026.",
+      "data": "2025-10-06",
+      "origem": "acao",
+      "cd_acao": "22253"
+    },
+    {
+      "texto": "O Programa De Sucessão, Inicialmente Previsto Para 2025, Foi Reprogramado Em Razão Da Priorização De Outras Iniciativas Estratégicas E Da Adequação À Capacidade De Recursos No Período, Com Retomada Prevista Para O Exercício Atual.",
+      "data": "2026-01-27",
+      "origem": "plano",
+      "cd_acao": null
+    },
+    {
+      "texto": "A Implantação Do Plano De Sucessão Ainda Não Foi Iniciada, Em Função Da Priorização De Outras Demandas Da Área.",
+      "data": "2026-03-24",
+      "origem": "plano",
+      "cd_acao": null
+    },
+    {
+      "texto": "Retomada As Atividades De Sucessão, Com Reavaliação Das Entregas Realizadas E Definição De Novos Direcionamentos E Próximos Passos.",
+      "data": "2026-04-13",
+      "origem": "plano",
+      "cd_acao": null
+    },
+    {
+      "texto": "Projeto Retomado, Atualmente Na Fase De Construção Da Matriz De Criticidade. Estão Sendo Realizados Encontros Com Os Gerentes Executivos Para Alinhamento Sobre O Plano E Levantamento Da Percepção De Criticidade Das Posições E Respectivos Potenciais Sucessores.",
+      "data": "2026-05-25",
+      "origem": "plano",
+      "cd_acao": null
+    },
+    {
+      "texto": "Atualmente, Faltam Apenas Alguns Gerentes Para Conclusão Desta Etapa. Após A Finalização Da Matriz De Criticidade, Será Possível Consolidar Os Resultados E Avançar Para As Próximas Fases Do Projeto, Que Envolvem A Validação Dos Cargos Críticos, Análise Dos Riscos De Sucessão, Definição Das Estratégias De Desenvolvimento E Construção Dos Planos De Sucessão Para As Posições Priorizadas.",
+      "data": "2026-06-12",
+      "origem": "plano",
+      "cd_acao": null
+    },
+    {
+      "texto": "Devido A Desencontro De Agenda, Faltam Apenas Dois Gerentes Para Conclusão Desta Etapa. Após A Finalização Da Matriz De Criticidade, Será Possível Consolidar Os Resultados E Avançar Para As Próximas Fases Do Projeto, Que Envolvem A Validação Dos Cargos Críticos, Análise Dos Riscos De Sucessão, Definição Das Estratégias De Desenvolvimento E Construção Dos Planos De Sucessão Para As Posições Priorizadas.",
+      "data": "2026-07-02",
+      "origem": "plano",
+      "cd_acao": null
+    },
+    {
+      "texto": "Concluída A Etapa De Preenchimento Da Matriz De Criticidade, Estamos Consolidando E Analisando Os Dados Para Identificar Posições Críticas, Gaps De Sucessão, Riscos De Continuidade E Oportunidades De Desenvolvimento. A Partir Desse Diagnóstico, Serão Definidas As Prioridades E As Próximas Etapas De Implantação Do Programa.",
+      "data": "2026-08-05",
+      "origem": "plano",
+      "cd_acao": null
+    },
+    {
+      "texto": "As Etapas De Mapeamento Dos Cargos E Talentos, Elaboração Da Matriz De Criticidade E Diagnóstico Da Sucessão Já Foram Concluídas. Os Resultados, Análises E Principais Conclusões Serão Apresentados Inicialmente À Diretora De Gestão Estratégica Para Validação E Alinhamento Das Recomendações. Na Sequência, O Material Será Submetido À Reunião De Diretoria Para Conhecimento, Discussão E Deliberação Quanto Aos Próximos Passos Do Processo De Sucessão Organizacional.",
+      "data": "2026-08-11",
+      "origem": "plano",
+      "cd_acao": null
+    },
+    {
+      "texto": "Realizamos Apresentação À Diretoria De Estratégia Cos Dados Compilados Da Matriz De Criticidade, Contemplando A Consolidação Das Análises Realizadas. Como Próximo Passo, Será Elaborada Uma Apresentação Executiva Com Os Principais Pontos Identificados, Incluindo Oportunidades, Pontos De Atenção E Informações Relevantes Para Posterior Apresentação E Alinhamento Com Os Demais Diretores.",
+      "data": "2026-09-03",
+      "origem": "plano",
+      "cd_acao": null
     }
   ],
   "indicadores": [],

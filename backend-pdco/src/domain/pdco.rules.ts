@@ -4,7 +4,13 @@
  * escopo por usuário (planoVisivelParaUsuario/usuarioPodeEditarPlano): esta
  * versão não tem login, sempre mostra todos os planos.
  */
-import type { AcaoPdco, AcompanhamentoBruto, QuadranteAcompanhamento, ResumoAcoesPdco } from '../schemas';
+import type {
+  AcaoPdco,
+  AcompanhamentoBruto,
+  QuadranteAcompanhamento,
+  RegistroAcompanhamentoPlano,
+  ResumoAcoesPdco,
+} from '../schemas';
 
 const STATUS_CONCLUIDO = 'concluído';
 const STATUS_CANCELADO = 'cancelado';
@@ -60,6 +66,24 @@ export function montarJanelaAcompanhamento(
   }
 
   return quadrantes;
+}
+
+/**
+ * Todos os acompanhamentos datados do plano, em ordem cronológica e sem o
+ * recorte da janela de 8 meses (que descarta o que veio antes do início do
+ * plano ou depois do mês 8). Alimenta a página Evolução Mensal, que compara
+ * meses de calendário e não pode perder registros.
+ */
+export function listarRegistrosAcompanhamento(acompanhamentos: AcompanhamentoBruto[]): RegistroAcompanhamentoPlano[] {
+  return acompanhamentos
+    .filter((acompanhamento) => acompanhamento.data)
+    .map((acompanhamento) => ({
+      texto: acompanhamento.texto,
+      data: acompanhamento.data!.toISOString().slice(0, 10),
+      origem: acompanhamento.origem,
+      cd_acao: acompanhamento.cd_acao,
+    }))
+    .sort((a, b) => a.data.localeCompare(b.data));
 }
 
 function diferencaEmMeses(inicio: Date, data: Date): number {

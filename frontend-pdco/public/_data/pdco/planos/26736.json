@@ -24,6 +24,7 @@
       "status": "Concluído",
       "prazo_inicial": "2026-07-01",
       "prazo_final": "2026-07-03",
+      "data_conclusao": "2026-07-08",
       "responsavel": "Responsável 11"
     },
     {
@@ -32,6 +33,7 @@
       "status": "Concluído",
       "prazo_inicial": "2026-07-06",
       "prazo_final": "2026-07-10",
+      "data_conclusao": "2026-07-08",
       "responsavel": "Responsável 11"
     },
     {
@@ -40,6 +42,7 @@
       "status": "Em Andamento",
       "prazo_inicial": "2026-07-14",
       "prazo_final": "2026-08-20",
+      "data_conclusao": null,
       "responsavel": "Responsável 11"
     },
     {
@@ -48,6 +51,7 @@
       "status": "Planejado",
       "prazo_inicial": "2026-08-20",
       "prazo_final": "2026-09-15",
+      "data_conclusao": null,
       "responsavel": "Responsável 11"
     },
     {
@@ -56,6 +60,7 @@
       "status": "Planejado",
       "prazo_inicial": "2026-09-15",
       "prazo_final": "2026-10-20",
+      "data_conclusao": null,
       "responsavel": "Responsável 11"
     },
     {
@@ -64,6 +69,7 @@
       "status": "Planejado",
       "prazo_inicial": "2026-10-20",
       "prazo_final": "2026-10-20",
+      "data_conclusao": null,
       "responsavel": "Responsável 11"
     },
     {
@@ -72,6 +78,7 @@
       "status": "Planejado",
       "prazo_inicial": "2026-12-01",
       "prazo_final": "2026-12-18",
+      "data_conclusao": null,
       "responsavel": "Responsável 11"
     }
   ],
@@ -140,6 +147,38 @@
       "ano": 2027,
       "mes_referencia": 1,
       "registros": []
+    }
+  ],
+  "registros_acompanhamento": [
+    {
+      "texto": "O Plano Visa Aprimorar Os Rituais De Gestão Da Organização, Por Meio Do Diagnóstico, Redesenho, Padronização E Implantação De Novas Diretrizes E Ferramentas, Para Tornar A Tomada De Decisão Mais Ágil, Estruturada, Efetiva E Alinhada Aos Objetivos Estratégicos Institucionais.\r\n\r\nas Ações Estão Previstas Para Iniciar Em Abril/2026.",
+      "data": "2026-03-24",
+      "origem": "plano",
+      "cd_acao": null
+    },
+    {
+      "texto": "Considerando O Diagnóstico De Cultura E As Etapas Que Vem Sendo Estruturados Na Organização, Ficou Alinhado Com Mariana Souto Que Esse Plano Precisa Seguir Em Paralelo Com As Ações De Cultura, A Fim De Viabilizar A Concretização Das Transformações Necessárias Para A Cultura.\r\ne-book Das Cerimônias Institucionais Existente Anexado.",
+      "data": "2026-04-13",
+      "origem": "plano",
+      "cd_acao": null
+    },
+    {
+      "texto": "A Apresentação Das Cerimônias - Jornada Das Reuniões Institucionais - Foi Resgatada E Apresentam O Objetivo, Stakeholders, Periodicidade E Entregas. Ver Anexo.",
+      "data": "2026-07-08",
+      "origem": "plano",
+      "cd_acao": null
+    },
+    {
+      "texto": "Em Alinhamento Com A Digest, Considerar Nas Revisões Das Cerimônias, Trazer Boas Práticas, Melhorias Para:\r\n- Redução Do Tempo Improdutivo Em Reuniões;\r\n- Maior Percentual De Deliberações Concluídas;\r\n- Menor Recorrência De Pautas;\r\n- Aumento Das Decisões Baseadas Em Evidências;\r\n- Clareza De Responsáveis E Prazos.",
+      "data": "2026-07-21",
+      "origem": "plano",
+      "cd_acao": null
+    },
+    {
+      "texto": "Foi Concluída A Análise Das Cerimônias De Gestão Atualmente Praticadas, Buscando Compreender Sua Finalidade, Dinâmica E Oportunidades De Aprimoramento. A Partir Dessa Análise, Foi Estruturado O Diagnóstico De Maturidade Das Cerimônias De Gestão, Com Perguntas Direcionadas Aos Principais Aspectos De Efetividade Dos Rituais. Para Ampliar A Qualidade Das Informações, Foram Desenvolvidos Formulários Personalizados Para Líderes E Times, Considerando As Diferentes Experiências E Perspectivas De Participação Nas Cerimônias.\r\nneste Momento, Estamos Na Etapa De Coleta Das Percepções, Com Os Formulários Disponíveis No Período De 31/08 A 09/09. Paralelamente, Está Sendo Realizada A Mobilização De Líderes E Equipes Para Estimular A Participação E Garantir Uma Visão Ampla Sobre O Funcionamento Atual Dos Rituais. Essa Escuta Será Fundamental Para Identificar Pontos Fortes, Oportunidades De Melhoria E Boas Práticas Que Subsidiarão As Próximas Etapas Do Aprimoramento.\r\n\r\n\r\nlink Forms Time&#128071;&#127995;:\r\nhttps://forms.cloud.microsoft/r/39sbbuyvgh\r\n\r\nlink Forms Líderes&#128071;&#127995;:\r\nhttps://forms.cloud.microsoft/r/4fzridufkk",
+      "data": "2026-09-02",
+      "origem": "plano",
+      "cd_acao": null
     }
   ],
   "indicadores": [],

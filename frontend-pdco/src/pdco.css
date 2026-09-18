@@ -1291,61 +1291,6 @@ body {
   flex-direction: column;
   gap: 8px;
 }
-.pdco-app .pdco-month-evento {
-  font-size: 12.5px;
-  color: var(--text);
-  line-height: 1.5;
-  margin: 0;
-}
-.pdco-app .pdco-month-evento-data {
-  color: var(--text-muted);
-  font-size: 11px;
-}
-.pdco-app .pdco-evento-linha {
-  display: flex;
-  align-items: flex-start;
-  gap: 10px;
-}
-.pdco-app .pdco-evento-icone {
-  flex: none;
-  width: 26px;
-  height: 26px;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-top: 1px;
-}
-.pdco-app .pdco-evento-acompanhamento .pdco-evento-icone {
-  background: var(--accent-soft);
-  color: var(--accent);
-}
-.pdco-app .pdco-evento-acao .pdco-evento-icone {
-  background: var(--green-soft);
-  color: var(--green);
-}
-.pdco-app .pdco-evento-corpo {
-  min-width: 0;
-  flex: 1;
-}
-.pdco-app .pdco-evento-titulo {
-  font-size: 13px;
-  font-weight: 600;
-  color: var(--text);
-  margin: 0;
-}
-.pdco-app .pdco-evento-detalhe {
-  font-size: 12.5px;
-  color: var(--text-muted);
-  margin: 2px 0 0;
-  line-height: 1.5;
-}
-.pdco-app .pdco-evento-meta {
-  font-size: 11px;
-  color: var(--text-muted);
-  opacity: 0.8;
-  margin: 4px 0 0;
-}
 .pdco-app .pdco-month-vazio {
   font-size: 12px;
   color: var(--text-muted);
@@ -1611,24 +1556,6 @@ body {
     grid-template-columns: 1fr;
   }
 }
-.pdco-app .pdco-evo-diff-card {
-  border: 1px solid var(--border);
-  border-radius: var(--radius-card);
-  background: var(--surface-2);
-  padding: 14px 16px;
-}
-.pdco-app .pdco-evo-delta {
-  font-size: 11px;
-  font-weight: 600;
-  color: var(--text-muted);
-  margin: 6px 0 0;
-}
-.pdco-app .pdco-evo-delta-pos {
-  color: var(--green);
-}
-.pdco-app .pdco-evo-delta-neg {
-  color: var(--red);
-}
 .pdco-app .pdco-evo-timeline-header {
   display: flex;
   align-items: center;
@@ -1641,48 +1568,6 @@ body {
   font-weight: 700;
   text-transform: uppercase;
   color: var(--accent);
-}
-.pdco-app .pdco-evo-horizontal {
-  display: flex;
-  gap: 12px;
-  overflow-x: auto;
-  padding: 0 22px 22px;
-}
-.pdco-app .pdco-evo-mes-card {
-  /* Largura fixa (como no protótipo): sem ela, o card crescia até caber a
-     linha mais longa do acompanhamento e estourava o painel. */
-  width: 272px;
-  min-width: 272px;
-  box-sizing: border-box;
-  align-self: flex-start;
-  flex: none;
-  border: 1px solid var(--border);
-  border-radius: var(--radius-card);
-  background: rgba(255, 255, 255, 0.03);
-  padding: 14px;
-}
-.pdco-app .pdco-evo-mes-card-atual {
-  border-color: rgba(167, 216, 255, 0.4);
-  background: var(--accent-soft);
-}
-.pdco-app .pdco-evo-mes-card-head {
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  background: none;
-  border: none;
-  cursor: pointer;
-  padding: 0;
-  font-family: inherit;
-}
-.pdco-app .pdco-evo-mes-card-body {
-  margin-top: 10px;
-  padding-top: 10px;
-  border-top: 1px solid var(--border);
-  display: flex;
-  flex-direction: column;
-  gap: 8px;
 }
 
 /* ---------------------------------- Acomp. da ação ------------------------------ */
@@ -1777,13 +1662,566 @@ body {
   line-height: 1.5;
 }
 
-/* Evolução horizontal — texto do card quebra e não passa de 3 linhas */
-.pdco-app .pdco-evo-mes-card-body .pdco-evento-corpo {
+/* ------------------------- Evolução Mensal (redesenho) ------------------------- */
+.pdco-app .pdco-evo-selects {
+  flex-wrap: wrap;
+}
+.pdco-app .pdco-evo-selects label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.pdco-app .pdco-evo-nota {
+  margin: -4px 0 0;
+  font-size: 12px;
+  line-height: 1.5;
+  color: var(--text-muted);
+}
+
+/* Cartões comparativos (cada um é um botão-filtro) */
+.pdco-app .pdco-evo-diff-card {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
+  text-align: left;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-card);
+  background: var(--surface-2);
+  color: inherit;
+  font-family: inherit;
+  padding: 14px 16px;
+  cursor: pointer;
+  transition: border-color 0.15s ease, background-color 0.15s ease;
+}
+.pdco-app .pdco-evo-diff-card:hover {
+  border-color: rgba(167, 216, 255, 0.45);
+  background: #29477a;
+}
+.pdco-app .pdco-evo-diff-card-ativo,
+.pdco-app .pdco-evo-diff-card-ativo:hover {
+  border-color: var(--accent);
+  background: rgba(167, 216, 255, 0.14);
+  box-shadow: inset 0 0 0 1px var(--accent);
+}
+.pdco-app .pdco-evo-diff-card .pdco-stat-label,
+.pdco-app .pdco-evo-diff-card .pdco-stat-valor {
+  display: block;
+}
+.pdco-app .pdco-evo-diff-card .pdco-stat-valor {
+  font-size: 32px;
+  line-height: 1.1;
+}
+.pdco-app .pdco-evo-diff-comparacao {
+  margin-top: 8px;
+  font-size: 12px;
+  color: var(--text-muted);
+}
+.pdco-app .pdco-evo-delta {
+  margin-top: 4px;
+  font-size: 12.5px;
+  font-weight: 700;
+  color: var(--text-muted);
+}
+.pdco-app .pdco-evo-delta-bom {
+  color: var(--green);
+}
+.pdco-app .pdco-evo-delta-ruim {
+  color: var(--red);
+}
+.pdco-app .pdco-evo-delta-atencao {
+  color: var(--amarelo);
+}
+.pdco-app .pdco-evo-delta-info {
+  color: var(--accent);
+}
+.pdco-app .pdco-evo-diff-dica {
+  margin-top: 10px;
+  font-size: 10.5px;
+  color: var(--text-muted);
+  opacity: 0.75;
+}
+
+/* Faixa de resumo executivo */
+.pdco-app .pdco-evo-faixa {
+  border: 1px solid var(--border);
+  border-radius: var(--radius-card);
+  background: rgba(255, 255, 255, 0.03);
+  padding: 12px 16px 14px;
+}
+.pdco-app .pdco-evo-faixa .pdco-kicker {
+  margin-bottom: 8px;
+}
+.pdco-app .pdco-evo-faixa-corpo {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px 14px;
+}
+.pdco-app .pdco-evo-faixa-titulo {
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--text);
+}
+.pdco-app .pdco-evo-faixa-itens {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.pdco-app .pdco-evo-chip {
+  --chip: var(--text-muted);
+  --chip-soft: rgba(255, 255, 255, 0.08);
+  border: 1px solid transparent;
+  border-radius: var(--radius-pill);
+  background: var(--chip-soft);
+  color: var(--chip);
+  font-family: inherit;
+  font-size: 12.5px;
+  font-weight: 600;
+  padding: 5px 12px;
+  cursor: pointer;
+  transition: border-color 0.15s ease, background-color 0.15s ease;
+}
+.pdco-app .pdco-evo-chip-bom {
+  --chip: var(--green);
+  --chip-soft: var(--green-soft);
+}
+.pdco-app .pdco-evo-chip-ruim {
+  --chip: var(--red);
+  --chip-soft: var(--red-soft);
+}
+.pdco-app .pdco-evo-chip-info {
+  --chip: var(--accent);
+  --chip-soft: var(--accent-soft);
+}
+.pdco-app .pdco-evo-chip:hover {
+  border-color: var(--chip);
+}
+.pdco-app .pdco-evo-chip-zero {
+  opacity: 0.6;
+}
+.pdco-app .pdco-evo-chip-ativo {
+  border-color: var(--chip);
+  box-shadow: inset 0 0 0 1px var(--chip);
+  opacity: 1;
+}
+
+/* Gráfico compacto dos meses do ciclo */
+.pdco-app .pdco-evo-graf {
+  padding: 0 22px 20px;
+}
+.pdco-app .pdco-evo-graf-legenda {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px 16px;
+  margin: 0 0 8px;
+  padding: 0;
+  list-style: none;
+  font-size: 11.5px;
+  color: var(--text-muted);
+}
+.pdco-app .pdco-evo-graf-legenda li {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+.pdco-app .pdco-evo-graf-marca {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-radius: 3px;
+  flex: none;
+}
+.pdco-app .pdco-evo-graf-concluidas {
+  background: var(--green);
+}
+.pdco-app .pdco-evo-graf-atrasadas {
+  background: var(--red);
+}
+.pdco-app .pdco-evo-graf-acompanhamentos {
+  background: var(--accent);
+}
+.pdco-app .pdco-evo-graf-area {
+  display: grid;
+  grid-template-columns: repeat(8, minmax(0, 1fr));
+  gap: 4px;
+}
+.pdco-app .pdco-evo-graf-col {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  padding: 20px 2px 8px;
+  border: 1px solid transparent;
+  border-radius: 10px;
+  background: none;
+  color: inherit;
+  font-family: inherit;
+  cursor: pointer;
+  transition: background-color 0.15s ease, border-color 0.15s ease;
+}
+.pdco-app .pdco-evo-graf-col:hover:not(:disabled) {
+  background: rgba(255, 255, 255, 0.06);
+}
+.pdco-app .pdco-evo-graf-col-sel,
+.pdco-app .pdco-evo-graf-col-sel:hover:not(:disabled) {
+  background: var(--accent-soft);
+  border-color: rgba(167, 216, 255, 0.55);
+}
+.pdco-app .pdco-evo-graf-col-comp {
+  border-color: rgba(167, 216, 255, 0.3);
+  border-style: dashed;
+}
+.pdco-app .pdco-evo-graf-col-futuro {
+  opacity: 0.4;
+  cursor: default;
+}
+.pdco-app .pdco-evo-graf-col-virada::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: -3px;
+  border-left: 1px dashed rgba(255, 255, 255, 0.35);
+}
+.pdco-app .pdco-evo-graf-ano {
+  position: absolute;
+  top: 3px;
+  left: 6px;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  color: var(--text-muted);
+}
+.pdco-app .pdco-evo-graf-barras {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  gap: 3px;
+  height: 150px;
+  padding: 16px 2px 0;
+  border-bottom: 1px solid var(--border);
+}
+.pdco-app .pdco-evo-graf-barra-box {
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  flex: 1;
+  max-width: 24px;
+  height: 100%;
+}
+.pdco-app .pdco-evo-graf-barra {
+  width: 100%;
+  height: var(--h, 0%);
+  border-radius: 3px 3px 0 0;
+}
+.pdco-app .pdco-evo-graf-valor {
+  position: absolute;
+  bottom: calc(var(--h, 0%) + 2px);
+  font-size: 10.5px;
+  font-weight: 600;
+  color: var(--text-muted);
+}
+.pdco-app .pdco-evo-graf-mes {
+  margin-top: 6px;
+  text-align: center;
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--text);
+}
+.pdco-app .pdco-evo-graf-mes small {
+  display: block;
+  font-size: 10px;
+  font-weight: 500;
+  color: var(--text-muted);
+}
+.pdco-app .pdco-evo-graf-tip {
+  display: none;
+  position: absolute;
+  top: 30px;
+  left: 50%;
+  z-index: 5;
+  transform: translateX(-50%);
+  flex-direction: column;
+  gap: 3px;
+  padding: 8px 10px;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  background: #0f1e38;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.35);
+  font-size: 11.5px;
+  text-align: left;
+  color: var(--text);
+  white-space: nowrap;
+  pointer-events: none;
+}
+.pdco-app .pdco-evo-graf-tip-esq .pdco-evo-graf-tip {
+  left: 0;
+  transform: none;
+}
+.pdco-app .pdco-evo-graf-tip-dir .pdco-evo-graf-tip {
+  left: auto;
+  right: 0;
+  transform: none;
+}
+.pdco-app .pdco-evo-graf-tip .pdco-evo-graf-marca {
+  margin-right: 6px;
+  vertical-align: -1px;
+}
+.pdco-app .pdco-evo-graf-col:hover .pdco-evo-graf-tip,
+.pdco-app .pdco-evo-graf-col:focus-visible .pdco-evo-graf-tip {
+  display: flex;
+}
+@media (max-width: 640px) {
+  .pdco-app .pdco-evo-graf {
+    padding: 0 12px 16px;
+  }
+  .pdco-app .pdco-evo-graf-valor,
+  .pdco-app .pdco-evo-graf-mes small {
+    display: none;
+  }
+  .pdco-app .pdco-evo-graf-barras {
+    height: 110px;
+    gap: 2px;
+  }
+}
+
+/* Mudanças do período */
+.pdco-app .pdco-evo-filtro-ativo {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px 14px;
+  margin: 0 22px 16px;
+  padding: 8px 12px;
+  border-radius: 8px;
+  background: var(--accent-soft);
+  font-size: 12.5px;
+}
+.pdco-app .pdco-evo-filtro-ativo button,
+.pdco-app .pdco-evo-item-toggle {
+  padding: 2px 0;
+  border: none;
+  background: none;
+  color: var(--accent);
+  font-family: inherit;
+  font-size: 12px;
+  font-weight: 600;
+  cursor: pointer;
+}
+.pdco-app .pdco-evo-filtro-ativo button:hover,
+.pdco-app .pdco-evo-item-toggle:hover {
+  text-decoration: underline;
+}
+.pdco-app .pdco-evo-mudancas {
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+  padding: 0 22px 22px;
+}
+.pdco-app .pdco-evo-grupo-titulo {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin: 0 0 10px;
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--text);
+}
+.pdco-app .pdco-evo-grupo-n {
+  padding: 1px 8px;
+  border-radius: var(--radius-pill);
+  background: rgba(255, 255, 255, 0.1);
+  font-size: 11px;
+  color: var(--text-muted);
+}
+.pdco-app .pdco-evo-lista {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(min(100%, 300px), 1fr));
+  gap: 10px;
+}
+.pdco-app .pdco-evo-mais {
+  margin-top: 10px;
+  padding: 6px 12px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-btn);
+  background: rgba(255, 255, 255, 0.06);
+  color: var(--text);
+  font-family: inherit;
+  font-size: 12px;
+  font-weight: 600;
+  cursor: pointer;
+}
+.pdco-app .pdco-evo-mais:hover {
+  background: rgba(255, 255, 255, 0.11);
+}
+.pdco-app .pdco-evo-mais:first-child {
+  margin-top: 0;
+}
+.pdco-app .pdco-evo-ano {
+  margin-top: 6px;
+  padding: 10px 4px 2px;
+  border-top: 1px dashed var(--border);
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.6px;
+  color: var(--accent);
+}
+.pdco-app .pdco-month-item-head:disabled {
+  opacity: 0.5;
+  cursor: default;
+}
+
+/* Item de mudança (badge + título + descrição + detalhes) */
+.pdco-app .pdco-evo-item {
+  --tom: var(--text-muted);
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  min-width: 0;
+  padding: 12px 14px;
+  border: 1px solid var(--border);
+  border-left: 3px solid var(--tom);
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.03);
+}
+.pdco-app .pdco-evo-item-concluida,
+.pdco-app .pdco-evo-item-concluida_antes {
+  --tom: var(--green);
+}
+.pdco-app .pdco-evo-item-novo_atraso,
+.pdco-app .pdco-evo-item-continua_atrasada {
+  --tom: var(--red);
+}
+.pdco-app .pdco-evo-item-acompanhamento {
+  --tom: var(--accent);
+}
+.pdco-app .pdco-evo-item-anexo {
+  --tom: var(--tatico);
+}
+.pdco-app .pdco-evo-item-topo {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 4px 10px;
+}
+.pdco-app .pdco-evo-badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+}
+.pdco-app .pdco-evo-badge {
+  --b: var(--text-muted);
+  --b-soft: rgba(255, 255, 255, 0.1);
+  padding: 2px 8px;
+  border-radius: var(--radius-pill);
+  background: var(--b-soft);
+  color: var(--b);
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+.pdco-app .pdco-evo-badge-concluida,
+.pdco-app .pdco-evo-badge-concluida_antes {
+  --b: var(--green);
+  --b-soft: var(--green-soft);
+}
+.pdco-app .pdco-evo-badge-novo_atraso,
+.pdco-app .pdco-evo-badge-continua_atrasada {
+  --b: var(--red);
+  --b-soft: var(--red-soft);
+}
+.pdco-app .pdco-evo-badge-regularizada {
+  --b: #5eead4;
+  --b-soft: rgba(94, 234, 212, 0.15);
+}
+.pdco-app .pdco-evo-badge-acompanhamento {
+  --b: var(--accent);
+  --b-soft: var(--accent-soft);
+}
+.pdco-app .pdco-evo-badge-anexo {
+  --b: var(--tatico);
+  --b-soft: var(--tatico-soft);
+}
+.pdco-app .pdco-evo-item-data {
+  font-size: 11px;
+  color: var(--text-muted);
+}
+.pdco-app .pdco-evo-item-titulo {
+  margin: 0;
+  font-size: 13px;
+  font-weight: 600;
+  line-height: 1.4;
+  color: var(--text);
   overflow-wrap: anywhere;
 }
-.pdco-app .pdco-evo-mes-card-body .pdco-evento-detalhe {
+.pdco-app .pdco-evo-item-desc {
+  margin: 0;
+  font-size: 12.5px;
+  line-height: 1.5;
+  color: var(--text-muted);
+  overflow-wrap: anywhere;
+}
+.pdco-app .pdco-evo-item-desc-curta {
   display: -webkit-box;
-  -webkit-line-clamp: 3;
+  -webkit-line-clamp: 2;
   -webkit-box-orient: vertical;
   overflow: hidden;
+}
+.pdco-app .pdco-evo-item-rodape {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  margin-top: 2px;
+  font-size: 11px;
+  color: var(--text-muted);
+}
+.pdco-app .pdco-evo-item-resp {
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.pdco-app .pdco-evo-item-toggle {
+  flex: none;
+}
+.pdco-app .pdco-evo-item-detalhes {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 8px 12px;
+  margin: 4px 0 0;
+  padding-top: 10px;
+  border-top: 1px solid var(--border);
+}
+.pdco-app .pdco-evo-item-detalhes dt {
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 0.4px;
+  text-transform: uppercase;
+  color: var(--text-muted);
+}
+.pdco-app .pdco-evo-item-detalhes dd {
+  margin: 1px 0 0;
+  font-size: 12px;
+  color: var(--text);
+  overflow-wrap: anywhere;
+}
+@media (max-width: 520px) {
+  .pdco-app .pdco-evo-item-detalhes {
+    grid-template-columns: 1fr;
+  }
+  .pdco-app .pdco-evo-mudancas {
+    padding: 0 12px 16px;
+  }
+  .pdco-app .pdco-evo-filtro-ativo {
+    margin: 0 12px 14px;
+  }
 }

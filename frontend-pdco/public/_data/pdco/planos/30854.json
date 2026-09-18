@@ -24,6 +24,7 @@
       "status": "Concluído",
       "prazo_inicial": "2026-02-01",
       "prazo_final": "2026-03-13",
+      "data_conclusao": "2026-06-08",
       "responsavel": "Responsável 20"
     },
     {
@@ -32,6 +33,7 @@
       "status": "Planejado",
       "prazo_inicial": "2026-06-05",
       "prazo_final": "2026-12-18",
+      "data_conclusao": null,
       "responsavel": "Responsável 20"
     },
     {
@@ -40,6 +42,7 @@
       "status": "Planejado",
       "prazo_inicial": "2026-02-01",
       "prazo_final": "2026-12-04",
+      "data_conclusao": null,
       "responsavel": "Responsável 20"
     },
     {
@@ -48,6 +51,7 @@
       "status": "Em Andamento",
       "prazo_inicial": "2026-06-08",
       "prazo_final": "2026-09-30",
+      "data_conclusao": null,
       "responsavel": "Responsável 20"
     },
     {
@@ -56,6 +60,7 @@
       "status": "Concluído",
       "prazo_inicial": "2026-06-08",
       "prazo_final": "2026-06-30",
+      "data_conclusao": "2026-06-30",
       "responsavel": "Responsável 20"
     },
     {
@@ -64,6 +69,7 @@
       "status": "Em Andamento",
       "prazo_inicial": "2026-06-08",
       "prazo_final": "2026-10-31",
+      "data_conclusao": null,
       "responsavel": "Responsável 20"
     },
     {
@@ -72,6 +78,7 @@
       "status": "Em Andamento",
       "prazo_inicial": "2026-06-08",
       "prazo_final": "2026-10-31",
+      "data_conclusao": null,
       "responsavel": "Responsável 20"
     }
   ],
@@ -145,6 +152,44 @@
           "origem": "acao"
         }
       ]
+    }
+  ],
+  "registros_acompanhamento": [
+    {
+      "texto": "O Manual De Auditorias E Os Formulários De Aplicação Foram Desenvolvidos E Estão Em Fase De Validação Da Aplicabilidade. Na Auditoria Interna Prevista Para Julho, Os Instrumentos Serão Aplicados Integralmente Para Avaliação Da Sua Efetividade. Havendo Necessidade De Ajustes, As Alterações Serão Realizadas Conforme O Fluxo De Gestão Documental Do Epa. Link Do Manual: Epa.link/dnwt",
+      "data": "2026-06-30",
+      "origem": "acao",
+      "cd_acao": "31050"
+    },
+    {
+      "texto": "Ação Concluída Conforme Documento Em Anexo.",
+      "data": "2026-06-30",
+      "origem": "acao",
+      "cd_acao": "31051"
+    },
+    {
+      "texto": "Conforme Definido Na Reunião Setorial De Julho, A Ação Será Concluída Após A Aplicação E Validação Dos Formulários Nos Negócios De Saúde E Metrologia. A Auditoria Interna Da Saúde Tem Previsão De Conclusão Em 19/08/2026, Enquanto A Auditoria Interna De Metrologia Está Prevista Para Os Dias 24 E 25/09/2026. Após A Realização Das Auditorias, Serão Avaliados Os Resultados E Identificadas Eventuais Necessidades De Ajustes Nos Formulários.",
+      "data": "2026-08-10",
+      "origem": "acao",
+      "cd_acao": "31050"
+    },
+    {
+      "texto": "Após Avaliação, Constata-se Que Não Se Faz Necessária A Criação De Novos Indicadores Para Os Processos De Metrologia E Saúde (os Prioritários No Contexto De Certificações Atualmente) Uma Vez Que Os Negócios Já Possuem Indicadores Estratégicos Cadastrados No Epa Que Permitem Monitorar A Aderência Aos Requisitos Normativos Aplicáveis E Atendem Às Necessidades Das Auditorias Internas E Externas.\r\n\r\ndessa Forma, Ficam Mantidos Os Indicadores Atualmente Utilizados:\r\n\r\nsenai – Metrologia: Percentual De Atendimento Aos Requisitos Da Abnt Nbr Iso/iec 17025;\r\nsesi – Saúde: Percentual De Conformidade Técnica (ona 2).",
+      "data": "2026-08-10",
+      "origem": "acao",
+      "cd_acao": "31053"
+    },
+    {
+      "texto": "Considerando Que As Prioridades Institucionais Para O Movimento De Auditorias Estão Direcionadas Aos Requisitos Da Ona E Da Abnt Nbr Iso/iec 17025, Foram Realizadas Capacitações Com Os Auditores Internos Envolvidos Na Execução Das Auditorias, Contemplando Amanda Dué (metrologia), Mylena Gitai E Mayara Mendonça (saúde), Com Foco Na Aplicação Da Metodologia E Dos Criterios Estabelecidos No Manual De Auditorias.\r\nna Área Da Saúde, As Auditorias Estão Sendo Conduzidas Em Parceria Com Os Núcleos (consultoria Externa), Possibilitando A Aplicação Prática Da Metodologia E O Acompanhamento Dos Auditores Durante A Execução Das Auditorias.\r\n\r\npara A Metrologia, Foi Definido Que, Neste Momento, A Execucao Das Auditorias Ocorrerá De Forma Terceirizada. Dessa Forma, Não Foi Possível Realizar O Teste Prático Dos Auditores Internos Na Condição De Auditores, Permanecendo Sua Participação Como Observadores Em Momentos Praticos, Com O Objetivo De Promover A Familiarização Com A Metodologia E A Aplicação Dos Critérios.\r\n\r\na Ação Encontra-se, Portanto, Parcialmente Atendida, Com A Capacitação E Alinhamento Metodologico Realizados E A Aplicacao Prática Em Andamento Na Saúde. Para A Metrologia, A Formação Prática Dos Auditores Internos Deverá Ser Retomada Oportunamente, Conforme A Evolução Do Modelo De Execução Das Auditorias.",
+      "data": "2026-09-08",
+      "origem": "acao",
+      "cd_acao": "31052"
+    },
+    {
+      "texto": "Após A Reunião Setorial De Agosto, Foi Solicitada A Reabertura Da Ação Para Avaliar Os Indicadores Da Assessoria De Gestão Por Processos Relacionados Ao Movimento De Auditorias Internas, Considerando Que Os Indicadores Das Áreas Não Necessariamente Serão Suficientes Para Responder A Essa Necessidade.\r\ncomo Próximo Passo, Foi Solicitado Um Alinhamento Com Luciana, Com O Objetivo De Apresentar Essa Visão, Discutir A Abordagem Proposta E Alinhar As Expectativas Quanto À Ação. A Reunião Foi Solicitada Para 11/09/2026.",
+      "data": "2026-09-08",
+      "origem": "acao",
+      "cd_acao": "31053"
     }
   ],
   "indicadores": [],

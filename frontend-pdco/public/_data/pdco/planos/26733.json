@@ -24,6 +24,7 @@
       "status": "Concluído",
       "prazo_inicial": "2026-01-05",
       "prazo_final": "2026-02-27",
+      "data_conclusao": "2026-02-02",
       "responsavel": "Responsável 19"
     },
     {
@@ -32,6 +33,7 @@
       "status": "Em Andamento",
       "prazo_inicial": "2026-07-01",
       "prazo_final": "2026-08-31",
+      "data_conclusao": null,
       "responsavel": "Responsável 19"
     },
     {
@@ -40,6 +42,7 @@
       "status": "Planejado",
       "prazo_inicial": "2026-06-09",
       "prazo_final": "2026-12-18",
+      "data_conclusao": null,
       "responsavel": "Responsável 19"
     },
     {
@@ -48,6 +51,7 @@
       "status": "Suspenso",
       "prazo_inicial": "2026-07-01",
       "prazo_final": "2026-12-18",
+      "data_conclusao": null,
       "responsavel": "Responsável 19"
     },
     {
@@ -56,6 +60,7 @@
       "status": "Planejado",
       "prazo_inicial": "2026-10-01",
       "prazo_final": "2026-11-30",
+      "data_conclusao": null,
       "responsavel": "Responsável 05"
     },
     {
@@ -64,6 +69,7 @@
       "status": "Concluído",
       "prazo_inicial": "2026-08-31",
       "prazo_final": "2026-08-31",
+      "data_conclusao": "2026-08-31",
       "responsavel": "Responsável 12"
     },
     {
@@ -72,6 +78,7 @@
       "status": "Planejado",
       "prazo_inicial": "2026-08-01",
       "prazo_final": "2026-08-31",
+      "data_conclusao": null,
       "responsavel": "Responsável 02"
     },
     {
@@ -80,6 +87,7 @@
       "status": "Planejado",
       "prazo_inicial": "2026-09-01",
       "prazo_final": "2026-09-30",
+      "data_conclusao": null,
       "responsavel": "Responsável 15"
     },
     {
@@ -88,6 +96,7 @@
       "status": "Planejado",
       "prazo_inicial": "2026-06-05",
       "prazo_final": "2026-12-18",
+      "data_conclusao": null,
       "responsavel": "Responsável 19"
     },
     {
@@ -96,6 +105,7 @@
       "status": "Em Andamento",
       "prazo_inicial": "2026-08-10",
       "prazo_final": "2026-12-18",
+      "data_conclusao": null,
       "responsavel": "Responsável 09"
     },
     {
@@ -104,6 +114,7 @@
       "status": "Cancelado",
       "prazo_inicial": "2026-10-01",
       "prazo_final": "2026-10-15",
+      "data_conclusao": null,
       "responsavel": "Responsável 19"
     },
     {
@@ -112,6 +123,7 @@
       "status": "Em Andamento",
       "prazo_inicial": "2026-10-12",
       "prazo_final": "2026-10-12",
+      "data_conclusao": null,
       "responsavel": "Responsável 12"
     },
     {
@@ -120,6 +132,7 @@
       "status": "Em Andamento",
       "prazo_inicial": "2026-10-12",
       "prazo_final": "2026-10-12",
+      "data_conclusao": null,
       "responsavel": "Responsável 12"
     },
     {
@@ -128,6 +141,7 @@
       "status": "Em Andamento",
       "prazo_inicial": "2026-10-12",
       "prazo_final": "2026-12-12",
+      "data_conclusao": null,
       "responsavel": "Responsável 12"
     }
   ],
@@ -271,6 +285,116 @@
           "origem": "acao"
         }
       ]
+    }
+  ],
+  "registros_acompanhamento": [
+    {
+      "texto": "Revisado Todas As Competências Com O Apoio De Líderes, Agentes De Gestão E Demais Colaboradores, Além Da Gerência E Diretoria De Gestão Estratégica.",
+      "data": "2026-01-26",
+      "origem": "acao",
+      "cd_acao": "26946"
+    },
+    {
+      "texto": "O Processo De Coaching Executivo Para Líderes Encontra-se Em Execução, Com Um Total De 9 Participantes. Destes, Alguns Já Estão Em Andamento, Enquanto Outros Estão Em Fase Inicial. O Acompanhamento Vem Sendo Conduzido De Forma Contínua, Visando O Fortalecimento Das Competências De Liderança E O Desenvolvimento Profissional Alinhado Às Diretrizes Institucionais.",
+      "data": "2026-03-24",
+      "origem": "acao",
+      "cd_acao": "28672"
+    },
+    {
+      "texto": "Disseminado As Competências Para Todos Os Blocos De Atuação Promovendo A Clareza E Orientação Do Que É Esperado Por Cada Colaborador E Assim, Eles Conseguirem Realizar O Novo Ciclo Da Avaliação De Desempenho De Maneira Mais Assertiva E Assim, Posteriormente, Traçar O Acompanhamento Das Competências Críticas Que Precisam De Maior Desenvolvimento Das Equipes.",
+      "data": "2026-03-25",
+      "origem": "plano",
+      "cd_acao": null
+    },
+    {
+      "texto": "O Plano Corporativo De Treinamento De Líderes E Agentes De Gestão Está Estruturado Com Base Nas Competências Estratégicas E Organizado Em Duas Frentes Principais:\r\ndesenvolvimento Individualizado: Ações Personalizadas Para Líderes, A Partir Do Pdi E Necessidades Específicas, Por Meio De Mentoria, Coaching E Intervenções Customizadas, Com Foco Em Performance E Desafios Reais.\r\nações Coletivas:\r\n-fortalecimento Da Cultura Organizacional: Iniciativas Coletivas Para Líderes E Agentes De Gestão, Promovendo Alinhamento De Acordo Com As Práticas Estabelecidas A Partir Do Diagnóstico De Cultura Organizacional.\r\n-gestão Orientada A Dados\r\n- Ética Em Foco\r\nassim, O Plano Integra Desenvolvimento Individual E Coletivo, Fortalecendo A Consistência Da Atuação E Impulsionando Os Resultados Organizacionais.",
+      "data": "2026-03-26",
+      "origem": "plano",
+      "cd_acao": null
+    },
+    {
+      "texto": "Encontra-se Em Execução, Com Um Total De 8 Participantes. O Acompanhamento Vem Sendo Conduzido De Forma Contínua, Visando O Fortalecimento Das Competências De Liderança E O Desenvolvimento Profissional.",
+      "data": "2026-04-13",
+      "origem": "acao",
+      "cd_acao": "28672"
+    },
+    {
+      "texto": "O Plano Corporativo De Treinamento Por Nível De Liderança E Papel De Atuação Dos Agentes De Gestão Será Estruturado De Forma Modular E Adaptativa, Considerando As Competências Estratégicas Organizacionais E As Especificidades De Cada Público. Sua Implementação Ocorrerá De Maneira Orientada Por Evidências, A Partir Dos Resultados Da Avaliação De Desempenho E Das Diretrizes Da Consultoria De Transformação Cultural.\r\n\r\na Proposta Contempla:\r\n\r\ndesenvolvimento Direcionado Por Perfil E Maturidade:\r\nas Trilhas De Desenvolvimento Serão Definidas Conforme O Nível De Liderança E O Papel Dos Agentes De Gestão, Assegurando Aderência Às Demandas Reais Do Negócio E Aos Desafios De Cada Atuação.\r\n\r\ncustomização Conforme Diagnóstico Organizacional:\r\nas Ações Formativas Serão Priorizadas E Ajustadas De Acordo Com Necessidades Específicas Identificadas, Garantindo Maior Assertividade E Impacto No Desenvolvimento Das Competências Críticas.\r\n\r\nintegração Com A Estratégia De Cultura E Performance:\r\no Plano Será Continuamente Revisitado Para Incorporar Recomendações Da Consultoria De Transformação Cultural, Promovendo Alinhamento Entre Comportamento, Cultura E Resultados.\r\n\r\nassim, A Estrutura Proposta Assegura Flexibilidade E Precisão Na Oferta De Desenvolvimento, Potencializando A Efetividade Das Ações E Fortalecendo A Atuação Estratégica Das Lideranças E Dos Agentes De Gestão.",
+      "data": "2026-04-15",
+      "origem": "plano",
+      "cd_acao": null
+    },
+    {
+      "texto": "O Processo De Coaching Executivo Para Líderes Encontra-se Em Execução, Com Um Total De 4 Participantes.",
+      "data": "2026-05-13",
+      "origem": "acao",
+      "cd_acao": "28672"
+    },
+    {
+      "texto": "O Processo De Coaching Executivo Para Líderes Encontra-se Em Andamento, Contemplando Atualmente Quatro Participantes. Até O Momento, Ainda Não Houve A Indicação Para Novas Sessões.",
+      "data": "2026-06-03",
+      "origem": "acao",
+      "cd_acao": "28672"
+    },
+    {
+      "texto": "Com A Entrada De Novos Agentes De Gestão Será Desenvolvido Uma Trilha De Desenvolvimento Especifica Para Eles, Com Temas Transversais Como Gente E Cultura: Clima E Cultura, Aplicação De Ferramentas Institucionais (1:1, Feedback, Avaliação De Desempenho E Pdi), Monitoramento Da Estratégia (indicadores), Processos, Uso De Dados. Outros Temas A Definir.",
+      "data": "2026-06-19",
+      "origem": "acao",
+      "cd_acao": "26947"
+    },
+    {
+      "texto": "O Processo De Coaching Executivo Para Líderes Encontra-se Em Andamento, Contemplando Atualmente 3 Participantes. Até O Momento, Ainda Não Houve A Indicação Para Novas Sessões.",
+      "data": "2026-07-03",
+      "origem": "acao",
+      "cd_acao": "28672"
+    },
+    {
+      "texto": "Foi Concluída A Revisão Das Competências Estratégicas Que Orientarão O Desenvolvimento De Líderes E Agentes De Gestão, Estruturando As Bases Do Plano Corporativo De Treinamentos. Paralelamente, Está Em Andamento A Definição Da Trilha Por Nível De Liderança E Papel De Atuação, Com Arquitetura Modular, Alinhada Aos Diagnósticos Organizacionais, Às Competências Estratégicas E Às Diretrizes Da Consultoria De Cultura. O Processo De Coaching Executivo Segue Em Execução, Com Líderes Sendo Acompanhados E Evolução Gradual Do Número De Participantes. As Próximas Etapas Concentram-se Na Implementação Das Capacitações Previstas, Aplicação Dos Diagnósticos (lfr E Demais Instrumentos), Consolidação Das Trilhas De Aprendizagem E Estabelecimento Dos Mecanismos De Acompanhamento Da Evolução E Avaliação De Impacto No Desenvolvimento Das Lideranças.",
+      "data": "2026-07-09",
+      "origem": "plano",
+      "cd_acao": null
+    },
+    {
+      "texto": "Estruturado Novo Treinamento De Onboarding Para Novos Agentes De Gestão E Em Paralelo, Feito Um Modelo Diagnóstico Para Atualizar As Demandas De Capacitação Dos Agentes Em Formato De Autoavaliação E Avaliação Do Gestor - Ambos  Foram Para Validação Da Gerência De Gente E Cultura. Após Esta Etapa Será Definida As Trilhas De Capacitação Conforme Necessidades Atuais E Estabelecido Calendário. Para Os Líderes, Será Trabalho O Pdl Focado Em Cultura, Liderança De Mudanças E Os Pontos Trazidos Após Aplicação Da Ferramenta Lfr Que Será Aplicada Pela Consultoria Taigéta. No Entanto, Sem Previsão Exata De Aplicação Para Confirmar As Datas De Capacitação.",
+      "data": "2026-07-09",
+      "origem": "acao",
+      "cd_acao": "26947"
+    },
+    {
+      "texto": "O Processo De Coaching Executivo Para Líderes Encontra-se Em Pausa, Sem Novas Sessões Previstas No Momento. Todos Os Ciclos De Coaching Iniciados Foram Concluídos, Não Havendo Líderes Com Processos Em Andamento.",
+      "data": "2026-07-20",
+      "origem": "acao",
+      "cd_acao": "28672"
+    },
+    {
+      "texto": "O Plano Corporativo De Desenvolvimento Dos Agentes De Gestão Foi Estruturado E Validado Com A Gerência, Considerando Os Diferentes Níveis De Liderança E Papéis De Atuação No Programa.\r\n\r\npara Os Novos Agentes De Gestão, Será Realizada A Jornada De Integração, Contemplando Os Temas Gente E Cultura, Estratégia E Processos E Governança, Com O Objetivo De Promover Alinhamento Conceitual E De Atuação Com Os Demais Integrantes Do Grupo.\r\n\r\nna Sequência, Todos Os Agentes Participarão De Ações De Desenvolvimento Voltadas Ao Fortalecimento Da Atuação No Programa, Com Foco Em Cultura E Gestão Da Mudança, Apoiando Os Processos De Transformação Interna, E Em Inteligência Artificial (ia), Direcionada À Aplicação De Novas Ferramentas E Práticas Para Melhoria Da Performance.\r\npara As Lideranças, Serão Trabalhadas Temáticas Correlatas, Porém Com Maior Nível De Aprofundamento E Robustez, Considerando Seu Papel Na Condução Das Equipes, Na Gestão Das Mudanças E No Alcance Dos Resultados Organizacionais.",
+      "data": "2026-08-11",
+      "origem": "acao",
+      "cd_acao": "26947"
+    },
+    {
+      "texto": "O Processo De Coaching Executivo Para Líderes Encontra-se Em Pausa, Sem Novas Sessões Previstas No Momento. Todos Os Ciclos De Coaching Iniciados Foram Concluídos, Não Havendo Líderes Com Processos Em Andamento.\r\nestamos Com Um Saldo De 5 Sessões Pagas Referente Ao Contrato De 2025. \r\ntermos Um Novo Contrato Vigente Para Ser Utilizado Até Dia 10.02.2027.",
+      "data": "2026-08-26",
+      "origem": "acao",
+      "cd_acao": "28672"
+    },
+    {
+      "texto": "As Etapas Preparatórias Do Treinamento Já Foram Concluídas, Garantindo As Condições Logísticas E Operacionais Necessárias Para Sua Realização.",
+      "data": "2026-08-26",
+      "origem": "acao",
+      "cd_acao": "30969"
+    },
+    {
+      "texto": "As Etapas Preparatórias Do Treinamento Já Foram Concluídas, Garantindo As Condições Logísticas E Operacionais Necessárias Para Sua Realização.",
+      "data": "2026-08-26",
+      "origem": "acao",
+      "cd_acao": "30970"
+    },
+    {
+      "texto": "O Plano Corporativo De Desenvolvimento Dos Agentes De Gestão Segue Em Execução Conforme Planejamento. Para Os Novos Agentes De Gestão, A Jornada De Integração Já Foi Iniciada, Com As Capacitações De Gente E Cultura Realizadas Em 31/08 E 10/09, E As Próximas Etapas Previstas Para 14/09, Com Estratégia E Processos, E 17/09, Com Governança. Para As Lideranças, Já Foi Realizada A Parte 1 Do Pdl, Com O Tema “liderando A Cultura”. As Capacitações Em Inteligência Artificial (ia), Destinadas Aos Agentes De Gestão E Líderes, Ainda Estão Em Fase De Programação, Aguardando Definição Da Área De Tecnologias Digitais, De Acordo Com As Necessidades Identificadas.",
+      "data": "2026-09-11",
+      "origem": "acao",
+      "cd_acao": "26947"
     }
   ],
   "indicadores": [],

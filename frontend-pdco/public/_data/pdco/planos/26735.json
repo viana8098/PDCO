@@ -24,6 +24,7 @@
       "status": "Concluído",
       "prazo_inicial": "2026-04-13",
       "prazo_final": "2026-04-30",
+      "data_conclusao": "2026-05-07",
       "responsavel": "Responsável 11"
     },
     {
@@ -32,6 +33,7 @@
       "status": "Concluído",
       "prazo_inicial": "2026-05-04",
       "prazo_final": "2026-06-30",
+      "data_conclusao": "2026-07-08",
       "responsavel": "Responsável 11"
     },
     {
@@ -40,6 +42,7 @@
       "status": "Concluído",
       "prazo_inicial": "2026-08-11",
       "prazo_final": "2026-09-20",
+      "data_conclusao": "2026-09-02",
       "responsavel": "Responsável 11"
     },
     {
@@ -48,6 +51,7 @@
       "status": "Em Andamento",
       "prazo_inicial": "2026-09-20",
       "prazo_final": "2026-10-20",
+      "data_conclusao": null,
       "responsavel": "Responsável 11"
     },
     {
@@ -56,6 +60,7 @@
       "status": "Planejado",
       "prazo_inicial": "2026-10-20",
       "prazo_final": "2026-11-20",
+      "data_conclusao": null,
       "responsavel": "Responsável 11"
     },
     {
@@ -64,6 +69,7 @@
       "status": "Planejado",
       "prazo_inicial": "2026-11-20",
       "prazo_final": "2026-12-10",
+      "data_conclusao": null,
       "responsavel": "Responsável 11"
     },
     {
@@ -72,6 +78,7 @@
       "status": "Planejado",
       "prazo_inicial": "2026-12-10",
       "prazo_final": "2026-12-18",
+      "data_conclusao": null,
       "responsavel": "Responsável 11"
     },
     {
@@ -80,6 +87,7 @@
       "status": "Planejado",
       "prazo_inicial": "2026-11-03",
       "prazo_final": "2026-12-18",
+      "data_conclusao": null,
       "responsavel": "Responsável 11"
     },
     {
@@ -88,6 +96,7 @@
       "status": "Concluído",
       "prazo_inicial": "2026-01-01",
       "prazo_final": "2026-01-29",
+      "data_conclusao": "2026-03-16",
       "responsavel": "Responsável 17"
     }
   ],
@@ -162,6 +171,38 @@
           "origem": "plano"
         }
       ]
+    }
+  ],
+  "registros_acompanhamento": [
+    {
+      "texto": "O Plano Está Em Andamento E Já Apresenta Uma Ação Concluída, Que Foi A Definição Das Cestas Do Comercial Sesi E Senai. As Próximas Etapas Previstas Envolvem O Alinhamento Com A Alta Gestão, A Estruturação E Validação Do Modelo Inicial, A Construção Das Cestas De Indicadores E Metas Para As Áreas Corporativas, Além Das Simulações, Ajustes, Formalização E Publicação Final Do Modelo. Em Síntese, O Plano Já Teve Um Avanço Concreto, Mas Ainda Está Em Fase Inicial De Execução Das Demais Ações.",
+      "data": "2026-03-24",
+      "origem": "plano",
+      "cd_acao": null
+    },
+    {
+      "texto": "Conforme Orientação Da Digest, Atuaremos Na Estruturação Das Propostas Das Cestas Corporativas, Sendo:\r\n\r\npresidência: 03 Cestas \r\n\r\ngovernança\r\nobservatório\r\nsustentabilidade Industrial \r\n\r\n\r\ndsc: 02 Cestas \r\ngerência Financeira \r\ngerência Administrativa\r\n\r\n\r\ndigest: 04 Cestas\r\nprocessos\r\nestratégia Organizacional\r\ngente E Cultura\r\ntecnologias Digitais",
+      "data": "2026-04-08",
+      "origem": "acao",
+      "cd_acao": "27174"
+    },
+    {
+      "texto": "Esse Plano Foi Alinhado Em Maio Às Ações Do Movimento De Cultura Que Vem Sendo Realizado Na Instituição. Diante Disso, O Prazo Para Conclusão Dos Pdcos (planos De Desenvolvimento Da Cultura Organizacional), Com A Consultoria Taigéta É Neste Mês De Julho. Iremos Aguardar Essa Conclusão, Visto Que A Atividade Também Inclui A Validação Dos Krs Estruturados.",
+      "data": "2026-07-08",
+      "origem": "plano",
+      "cd_acao": null
+    },
+    {
+      "texto": "Em Alinhamento Com A Digest, Os Seguintes Indicadores Precisam Compor As Cestas: \r\n- Sla (time De Processos Contribuirá Para Essa Mensuração);\r\n- Nps (time De P&c Podem Contribuir Para Essa Mensuração);\r\n- % De Execução Orçamentária (time De P.o Contribuirá Para Essa Mensuração);\r\n- Um Mensurador Que Espelhe A Performance Da Área No Que Se Correlacione Ao Impacto Da Folha De Pessoal (time De P.o Contribuirá Para Essa Mensuração);",
+      "data": "2026-07-21",
+      "origem": "plano",
+      "cd_acao": null
+    },
+    {
+      "texto": "A Estrutura Da Cesta De Indicadores Para Avaliar O Desempenho Das Áreas Corporativas, Combinando Resultados Institucionais E Específicos De Cada Área  Foram Apresentadas À Digest. Todos Os Setores Utilizarão Os Mesmos Cinco Indicadores, Com Peso Sugerido De 20% Cada, Relacionados À Eficiência Orçamentária, Alcance Dos Indicadores Táticos, Satisfação Do Cliente Interno, Cumprimento De Prazos/sla E Regularização De Ocorrências.\r\npara O Colaborador Da Área Corporativa, A Bonificação Seria Composta Por 20% Da Cesta Sesi, 20% Da Cesta Senai E 60% Da Cesta Da Própria Área (sendo 30% Referente À Contribuição Ao Sesi E 30% Referente À Contribuição Ao Senai). As Metas, Pesos E Algumas Fórmulas Ainda Estão Em Fase De Definição E Validação.\r\n\r\nos Indicadores Foram Aprovados, E As Ações Agora São: A) Estruturar As Fichas Dos Indicadores; B) Estruturar A Metodologia Para O Indicador Índice De Satisfação Do Cliente Interno, Contando Com Um Gt Formado Por Estratégia - Processos - Governança.",
+      "data": "2026-09-02",
+      "origem": "plano",
+      "cd_acao": null
     }
   ],
   "indicadores": [],

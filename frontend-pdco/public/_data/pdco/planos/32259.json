@@ -24,6 +24,7 @@
       "status": "Em Andamento",
       "prazo_inicial": "2026-06-15",
       "prazo_final": "2026-10-29",
+      "data_conclusao": null,
       "responsavel": "Responsável 09"
     },
     {
@@ -32,6 +33,7 @@
       "status": "Cancelado",
       "prazo_inicial": "2026-08-05",
       "prazo_final": "2026-10-29",
+      "data_conclusao": null,
       "responsavel": "Responsável 05"
     },
     {
@@ -40,6 +42,7 @@
       "status": "Planejado",
       "prazo_inicial": "2026-08-05",
       "prazo_final": "2026-10-29",
+      "data_conclusao": null,
       "responsavel": "Responsável 09"
     },
     {
@@ -48,6 +51,7 @@
       "status": "Planejado",
       "prazo_inicial": "2026-08-05",
       "prazo_final": "2026-12-18",
+      "data_conclusao": null,
       "responsavel": "Responsável 19"
     },
     {
@@ -56,6 +60,7 @@
       "status": "Em Andamento",
       "prazo_inicial": "2026-08-11",
       "prazo_final": "2026-10-29",
+      "data_conclusao": null,
       "responsavel": "Responsável 09"
     }
   ],
@@ -129,6 +134,32 @@
       "ano": 2027,
       "mes_referencia": 1,
       "registros": []
+    }
+  ],
+  "registros_acompanhamento": [
+    {
+      "texto": "Atualmente Estamos Trabalhando Em Um Material Guia De Valores Na Prática, Onde Trazemos Comportamentos Esperados E Comportamentos Inaceitáveis Para Cada Valor Organizacional.",
+      "data": "2026-08-05",
+      "origem": "plano",
+      "cd_acao": null
+    },
+    {
+      "texto": "Com Base No Plano De Ação Transversal De Cultura, Estamos Estruturando O Plano Pavimentador — Guia Da Cultura, Que Servirá Como Referência Para A Implementação De Novos Ritos, Práticas E Treinamentos Relacionados À Cultura Organizacional. Para Garantir Uma Construção Mais Consistente E Assertiva, Estamos Realizando Benchmarkings E Alinhamentos Estratégicos Com A Consultoria, Buscando Incorporar Boas Práticas E Adequá-las À Nossa Realidade Organizacional.",
+      "data": "2026-08-13",
+      "origem": "plano",
+      "cd_acao": null
+    },
+    {
+      "texto": "Em Acompanhamento À Ação Valores Na Prática, Seguimos Aguardando A Conclusão Do Guia De Valores, Atualmente Em Construção. A Finalização Desse Material É Necessária Para Avançarmos Com As Próximas Etapas Previstas Na Ação.",
+      "data": "2026-08-24",
+      "origem": "acao",
+      "cd_acao": "32263"
+    },
+    {
+      "texto": "Os Treinamentos Voltados À Cultura Organizacional Terão Como Foco O Fortalecimento E A Consolidação Dos Comportamentos Desejados Na Instituição. Como Parte Dessa Iniciativa, Iniciamos O Treinamento “liderando A Cultura”, Direcionado A Todas As Camadas De Liderança, Reforçando O Papel Dos Líderes Como Agentes De Transformação Cultural.\r\n\r\nem Relação Ao Guia De Cultura, Estamos Avaliando, Em Conjunto Com A Consultoria, A Viabilidade De Sua Construção Neste Momento Ou A Possibilidade De Incorporá-la Ao Próximo Ciclo Do Programa.",
+      "data": "2026-09-09",
+      "origem": "plano",
+      "cd_acao": null
     }
   ],
   "indicadores": [],

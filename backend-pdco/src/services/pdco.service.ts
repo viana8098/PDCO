@@ -5,7 +5,12 @@
  * (equivalente ao que o módulo original chama de "administrador").
  */
 import { Inject, Injectable, NotFoundException } from '@nestjs/common';
-import { calcularExecucao, calcularResumoAcoes, montarJanelaAcompanhamento } from '../domain/pdco.rules';
+import {
+  calcularExecucao,
+  calcularResumoAcoes,
+  listarRegistrosAcompanhamento,
+  montarJanelaAcompanhamento,
+} from '../domain/pdco.rules';
 import { PLANO_REPOSITORY, type Cache, type PlanoRepository } from '../repositories/types';
 import type { DetalhePlanoPdco, FiltrosPdco, OpcaoFiltro, PlanoPdco } from '../schemas';
 
@@ -70,6 +75,7 @@ export class PdcoService {
       plano: { ...plano, execucao: calcularExecucao(acoes), resumo_acoes: calcularResumoAcoes(acoes) },
       acoes,
       acompanhamento: montarJanelaAcompanhamento(dataInicio, acompanhamentosBrutos),
+      registros_acompanhamento: listarRegistrosAcompanhamento(acompanhamentosBrutos),
       // Indicadores/KR: best-effort no módulo original (sem chave confirmada com o dw) — sempre vazio aqui também.
       indicadores: [],
       // Sem backend real no deploy estático: registro qualitativo é sempre somente-leitura.

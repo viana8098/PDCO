@@ -237,6 +237,7 @@ function transformarAcao(linha: PlanoAcaoRow): AcaoPdco {
     status: linha.st_acao ?? '',
     prazo_inicial: dataIso(linha.dt_inicioprevistaacao ?? linha.dt_iniciorealacao),
     prazo_final: dataIso(linha.dt_fimprevistaacao ?? linha.dt_fimrealacao),
+    data_conclusao: dataIso(linha.dt_fimrealacao),
     responsavel: formatarNomeDoLogin(linha.ds_loginrquemacao),
   };
 }
