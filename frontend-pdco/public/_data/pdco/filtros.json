@@ -5,6 +5,10 @@
       "rotulo": "1.3 Governança Corporativa — Estruturação Do Fluxo De Atendimento Interno Da Gegov"
     },
     {
+      "valor": "32768",
+      "rotulo": "1.4 Observatório Da Indústria — Pdco - Observatório"
+    },
+    {
       "valor": "32592",
       "rotulo": "2.1.1.3 Suprimentos — Pdco - Suprimentos | Implantar A Estratégia De Aquisições"
     },
@@ -65,6 +69,10 @@
     {
       "valor": "1.3 Governança Corporativa",
       "rotulo": "1.3 Governança Corporativa"
+    },
+    {
+      "valor": "1.4 Observatório Da Indústria",
+      "rotulo": "1.4 Observatório Da Indústria"
     },
     {
       "valor": "2.1.1.3 Suprimentos",
@@ -469,12 +477,20 @@
       "rotulo": "Monitorar Periodicamente A Evolução Dos Sucessores, Revisando Os Pdis E Atualizando A Matriz De Sucessão Conforme As Mudanças Organizacionais E As Decisões Do Comitê."
     },
     {
+      "valor": "Novo Modelo De Gestão Por Entregas Do Observatório",
+      "rotulo": "Novo Modelo De Gestão Por Entregas Do Observatório"
+    },
+    {
       "valor": "Ofertar Trilhas Formativas Segmentadas Por Nível De Carreira (operacional, Técnico, Especialista, Liderança).",
       "rotulo": "Ofertar Trilhas Formativas Segmentadas Por Nível De Carreira (operacional, Técnico, Especialista, Liderança)."
     },
     {
       "valor": "Pactuar Composição Das Cestas Corporativas Para 2027 (etapa 4 - Estruturação Técnica Final)",
       "rotulo": "Pactuar Composição Das Cestas Corporativas Para 2027 (etapa 4 - Estruturação Técnica Final)"
+    },
+    {
+      "valor": "Padrão Mínimo De Comunicação E Documentação Técnica",
+      "rotulo": "Padrão Mínimo De Comunicação E Documentação Técnica"
     },
     {
       "valor": "Propor Ajustes Necessários  (etapa 3 - Simulação De Piloto)",

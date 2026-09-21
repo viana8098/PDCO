@@ -10,21 +10,21 @@
     "resultados_esperados": "Os Planos De Ação Da Educação Profissional Concentram Esforço Em Aspectos Qualitativos E De Eficácia, Enquanto Indicadores Críticos — Sustentabilidade Financeira (meta Ep: -30,33%), Resultado Orçamentário E Custo — Têm Baixa Cobertura Tática. O Grupo Identificou \"visão De Retrovisor\" Como Padrão Recorrente. Este Ritual Vira A Chave Para O Prospectivo E Cria Cultura De Dono Do Resultado Financeiro.",
     "data_inicio": "2026-07-01",
     "data_fim": "2027-04-30",
-    "execucao": 0,
+    "execucao": 0.25,
     "resumo_acoes": {
       "total": 4,
-      "concluidas": 0,
-      "atrasadas": 2
+      "concluidas": 1,
+      "atrasadas": 1
     }
   },
   "acoes": [
     {
       "cd_acao": "32715",
       "nome": "Mapear Todos Os Planos De Ação Da Gep E Classificar: (a) Impacto Direto Em Resultado Financeiro, (b) Impacto Indireto, (c) Sem Relação Com Indicadores Críticos. Descontinuar Ou Suspender Os De Tipo C.",
-      "status": "Em Andamento",
+      "status": "Concluído",
       "prazo_inicial": "2026-07-01",
       "prazo_final": "2026-07-30",
-      "data_conclusao": null,
+      "data_conclusao": "2026-09-18",
       "responsavel": "Responsável 03"
     },
     {
@@ -43,7 +43,7 @@
       "prazo_inicial": "2026-09-09",
       "prazo_final": "2027-04-16",
       "data_conclusao": null,
-      "responsavel": "Responsável 22"
+      "responsavel": "Responsável 23"
     },
     {
       "cd_acao": "32718",
@@ -78,7 +78,13 @@
       "mes": 4,
       "ano": 2026,
       "mes_referencia": 9,
-      "registros": []
+      "registros": [
+        {
+          "texto": "Concluímos A Atividade De Priorização E Saímos De 14 Planos (estratégicos E Táticos) Para 8 Planos.",
+          "data": "2026-09-18",
+          "origem": "acao"
+        }
+      ]
     },
     {
       "mes": 5,
@@ -105,7 +111,14 @@
       "registros": []
     }
   ],
-  "registros_acompanhamento": [],
+  "registros_acompanhamento": [
+    {
+      "texto": "Concluímos A Atividade De Priorização E Saímos De 14 Planos (estratégicos E Táticos) Para 8 Planos.",
+      "data": "2026-09-18",
+      "origem": "acao",
+      "cd_acao": "32715"
+    }
+  ],
   "indicadores": [],
   "registro": {
     "pontos_criticos": null,

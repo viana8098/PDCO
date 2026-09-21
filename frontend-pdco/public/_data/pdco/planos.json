@@ -5,7 +5,7 @@
     "status": "Em Andamento",
     "area_codigo": "4",
     "area_nome": "1.3 Governança Corporativa",
-    "responsavel": "Responsável 21",
+    "responsavel": "Responsável 22",
     "arquetipos_culturais": "Estruturação Do Fluxo De Atendimento Interno Da Gegov",
     "resultados_esperados": "O Foco Central Deste Plano De Ação É Criar Previsibilidade, Transparência E Eficiência Operacional, Reduzindo O Atrito E O Desgaste Gerados Por Demandas Emergenciais E Desalinhamento De Expectativas Com Os Clientes Internos.",
     "data_inicio": "2026-06-08",
@@ -21,6 +21,28 @@
       "Implantar Um Quadro De Gestão De Demandas",
       "Definir Uma Matriz De Priorização Simples",
       "Divulgar O Fluxo De Solicitação E Os Prazos Mínimos Por Tipo De Demanda Para As Áreas Parceiras"
+    ]
+  },
+  {
+    "cd_planoacao": "32768",
+    "subtipo": "P.a. Pdco Tático  - Área 2026",
+    "status": "Planejado",
+    "area_codigo": "70",
+    "area_nome": "1.4 Observatório Da Indústria",
+    "responsavel": "Responsável 19",
+    "arquetipos_culturais": "Pdco - Observatório",
+    "resultados_esperados": "Aprimorar A Gestão Das Entregas Do Observatório, Promovendo Maior Agilidade, Organização, Rastreabilidade E Continuidade Das Atividades.",
+    "data_inicio": "2026-07-01",
+    "data_fim": "2026-09-30",
+    "execucao": 0,
+    "resumo_acoes": {
+      "total": 2,
+      "concluidas": 0,
+      "atrasadas": 0
+    },
+    "acoes_nomes": [
+      "Padrão Mínimo De Comunicação E Documentação Técnica",
+      "Novo Modelo De Gestão Por Entregas Do Observatório"
     ]
   },
   {
@@ -246,7 +268,7 @@
     "status": "Em Andamento",
     "area_codigo": "80",
     "area_nome": "2.2.3 Gente E Cultura Organizacional",
-    "responsavel": "Responsável 19",
+    "responsavel": "Responsável 20",
     "arquetipos_culturais": "Desenvolvimento E Execução Do Plano Corporativo De Treinamentos De Líderes E Agentes Com Base Nas Competências Estratégicas",
     "resultados_esperados": "Fortalecer Comportamentos E Práticas Essenciais À Estratégia, Garantir Alinhamento Cultural E Aumento Da Performance Das Equipes, Além De Sustentar A Evolução Da Liderança E Preparar Agentes Como Multiplicadores Institucionais.\r\nmapa Estratégico Regional 2026-2028 (ano 3)",
     "data_inicio": "2026-01-05",
@@ -280,7 +302,7 @@
     "status": "Em Andamento",
     "area_codigo": "80",
     "area_nome": "2.2.3 Gente E Cultura Organizacional",
-    "responsavel": "Responsável 19",
+    "responsavel": "Responsável 20",
     "arquetipos_culturais": "Desenvolver E Aplicar Competências Críticas Que Impulsionem A Performance, Sustentem A Estratégia Institucional E Direcionem O Crescimento Das Carreiras.",
     "resultados_esperados": "Alinhar Cultura E Estratégia, Fortalecer Performance, Dar Clareza Às Carreiras, Orientar Decisões De Desenvolvimento E Garantir Critérios Objetivos E Transparentes Em Toda A Jornada Do Colaborador. Mapa Estratégico Regional 2026-2028 (ano 3)",
     "data_inicio": "2026-01-05",
@@ -375,11 +397,11 @@
     "resultados_esperados": "Os Planos De Ação Da Educação Profissional Concentram Esforço Em Aspectos Qualitativos E De Eficácia, Enquanto Indicadores Críticos — Sustentabilidade Financeira (meta Ep: -30,33%), Resultado Orçamentário E Custo — Têm Baixa Cobertura Tática. O Grupo Identificou \"visão De Retrovisor\" Como Padrão Recorrente. Este Ritual Vira A Chave Para O Prospectivo E Cria Cultura De Dono Do Resultado Financeiro.",
     "data_inicio": "2026-07-01",
     "data_fim": "2027-04-30",
-    "execucao": 0,
+    "execucao": 0.25,
     "resumo_acoes": {
       "total": 4,
-      "concluidas": 0,
-      "atrasadas": 2
+      "concluidas": 1,
+      "atrasadas": 1
     },
     "acoes_nomes": [
       "Mapear Todos Os Planos De Ação Da Gep E Classificar: (a) Impacto Direto Em Resultado Financeiro, (b) Impacto Indireto, (c) Sem Relação Com Indicadores Críticos. Descontinuar Ou Suspender Os De Tipo C.",

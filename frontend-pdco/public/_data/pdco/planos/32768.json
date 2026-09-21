@@ -1,0 +1,100 @@
+{
+  "plano": {
+    "cd_planoacao": "32768",
+    "subtipo": "P.a. Pdco Tático  - Área 2026",
+    "status": "Planejado",
+    "area_codigo": "70",
+    "area_nome": "1.4 Observatório Da Indústria",
+    "responsavel": "Responsável 19",
+    "arquetipos_culturais": "Pdco - Observatório",
+    "resultados_esperados": "Aprimorar A Gestão Das Entregas Do Observatório, Promovendo Maior Agilidade, Organização, Rastreabilidade E Continuidade Das Atividades.",
+    "data_inicio": "2026-07-01",
+    "data_fim": "2026-09-30",
+    "execucao": 0,
+    "resumo_acoes": {
+      "total": 2,
+      "concluidas": 0,
+      "atrasadas": 0
+    }
+  },
+  "acoes": [
+    {
+      "cd_acao": "32769",
+      "nome": "Padrão Mínimo De Comunicação E Documentação Técnica",
+      "status": "Planejado",
+      "prazo_inicial": "2026-07-01",
+      "prazo_final": "2026-09-30",
+      "data_conclusao": null,
+      "responsavel": "Responsável 19"
+    },
+    {
+      "cd_acao": "32770",
+      "nome": "Novo Modelo De Gestão Por Entregas Do Observatório",
+      "status": "Planejado",
+      "prazo_inicial": "2026-07-01",
+      "prazo_final": "2026-09-30",
+      "data_conclusao": null,
+      "responsavel": "Responsável 19"
+    }
+  ],
+  "acompanhamento": [
+    {
+      "mes": 1,
+      "ano": 2026,
+      "mes_referencia": 6,
+      "registros": []
+    },
+    {
+      "mes": 2,
+      "ano": 2026,
+      "mes_referencia": 7,
+      "registros": []
+    },
+    {
+      "mes": 3,
+      "ano": 2026,
+      "mes_referencia": 8,
+      "registros": []
+    },
+    {
+      "mes": 4,
+      "ano": 2026,
+      "mes_referencia": 9,
+      "registros": []
+    },
+    {
+      "mes": 5,
+      "ano": 2026,
+      "mes_referencia": 10,
+      "registros": []
+    },
+    {
+      "mes": 6,
+      "ano": 2026,
+      "mes_referencia": 11,
+      "registros": []
+    },
+    {
+      "mes": 7,
+      "ano": 2026,
+      "mes_referencia": 12,
+      "registros": []
+    },
+    {
+      "mes": 8,
+      "ano": 2027,
+      "mes_referencia": 1,
+      "registros": []
+    }
+  ],
+  "registros_acompanhamento": [],
+  "indicadores": [],
+  "registro": {
+    "pontos_criticos": null,
+    "fatores_sucesso": null,
+    "itens_fora_escopo": null,
+    "atualizado_por": null,
+    "atualizado_em": null
+  },
+  "pode_editar": false
+}
