@@ -2,7 +2,9 @@ import { useMemo, useState } from 'react'
 import { Link, Navigate } from 'react-router-dom'
 import { useAsync } from '../lib/useAsync'
 import { SearchableSelect } from '../components/SearchableSelect'
+import { ContadorAnimado } from '../components/Animados'
 import { InfoStatus } from '../components/InfoStatus'
+import { estiloCascata } from '../lib/animacao'
 import { agruparPorArea, pctConcluido, tipoResumido, RAG_COLOR, RAG_LABEL } from '../lib/pdcoCalc'
 import { usePdco } from '../lib/PdcoContext'
 import { api } from '../lib/api'
@@ -73,7 +75,7 @@ export default function Diretoria() {
             <div className="pdco-stat-grid">
                 <Stat label="Total de planos" valor={totalPlanos} />
                 <Stat label="Total de ações" valor={totalAcoes} />
-                <Stat label="% ações concluídas" valor={`${pctAcoes}%`} />
+                <Stat label="% ações concluídas" valor={pctAcoes} sufixo="%" />
                 <div className="pdco-panel pdco-stat pdco-stat-rag">
                     <p className="pdco-stat-label">
                         Distribuição por status <InfoStatus />
@@ -91,7 +93,7 @@ export default function Diretoria() {
                     <div className="pdco-rag-legend">
                         {STATUS.map((k) => (
                             <span key={k} style={{ color: RAG_COLOR[k] }}>
-                                ● {RAG_LABEL[k]} {contagem[k]}
+                                ● {RAG_LABEL[k]} <ContadorAnimado valor={contagem[k]} />
                             </span>
                         ))}
                     </div>
@@ -132,9 +134,9 @@ export default function Diretoria() {
                     <h2 className="pdco-panel-title">Visão por área</h2>
                     <p className="pdco-panel-subtitle">Clique numa área para ver seus planos.</p>
                 </div>
-                <div className="pdco-area-list">
-                    {areas.map((a) => (
-                        <Link key={a.chave} to={`/area/${encodeURIComponent(a.chave)}`} className="pdco-area-row">
+                <div className="pdco-area-list" key={`${areaFiltro}|${tipo}|${nivel}`}>
+                    {areas.map((a, i) => (
+                        <Link key={a.chave} to={`/area/${encodeURIComponent(a.chave)}`} className="pdco-area-row" style={estiloCascata(i)}>
                             <div className="pdco-area-row-main">
                                 <p className="pdco-area-row-nome">{a.nome}</p>
                                 <p className="pdco-area-row-meta">{a.total} plano(s){a.atrasadas > 0 ? ` · ${a.atrasadas} ação(ões) em atraso` : ''}</p>
@@ -154,11 +156,13 @@ export default function Diretoria() {
     )
 }
 
-function Stat({ label, valor }) {
+function Stat({ label, valor, sufixo = '' }) {
     return (
         <div className="pdco-panel pdco-stat">
             <p className="pdco-stat-label">{label}</p>
-            <p className="pdco-stat-valor">{valor}</p>
+            <p className="pdco-stat-valor">
+                <ContadorAnimado valor={valor} sufixo={sufixo} duracao={900} atraso={200} />
+            </p>
         </div>
     )
 }

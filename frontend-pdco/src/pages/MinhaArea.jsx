@@ -1,5 +1,6 @@
-import { useEffect, useState } from 'react'
+import { useEffect, useRef, useState } from 'react'
 import { useAsync } from '../lib/useAsync'
+import { EsqueletoBanner, EsqueletoLista } from '../components/Animados'
 import { ExecutiveBanner } from '../components/ExecutiveBanner'
 import { PlanCard } from '../components/PlanCard'
 import { PlanRow } from '../components/PlanRow'
@@ -26,13 +27,33 @@ export default function MinhaArea() {
     // pro gestor comum a lista já vem restrita, os dois seriam iguais.
     const todosPlanos = useAsync(() => api.planos(user), [user], !!user && administrador)
 
+    // Recarregando por causa de um filtro: a lista atual (ainda na tela) esmaece; se a API demorar,
+    // esqueletos entram no lugar. Quando os dados novos chegam, a lista é remontada e entra em cascata.
+    const refazendo = planos.carregando && !!planos.dados
+    const [esqueleto, setEsqueleto] = useState(false)
+    useEffect(() => {
+        if (!refazendo) {
+            setEsqueleto(false)
+            return undefined
+        }
+        const t = setTimeout(() => setEsqueleto(true), 280)
+        return () => clearTimeout(t)
+    }, [refazendo])
+    // Chave da lista = versão dos dados: só muda quando chegam dados novos, não a cada re-render.
+    const versao = useRef({ dados: null, n: 0 })
+    if (versao.current.dados !== planos.dados) versao.current = { dados: planos.dados, n: versao.current.n + 1 }
+    const chaveLista = versao.current.n
+
     if (!planos.dados) {
         return (
             <div className="pdco-page">
-                {filtros.erro ? (
-                    <p className="pdco-estado pdco-erro">{filtros.erro}</p>
+                {filtros.erro || planos.erro ? (
+                    <p className="pdco-estado pdco-erro">{filtros.erro || planos.erro}</p>
                 ) : (
-                    <p className="pdco-estado">Carregando planos…</p>
+                    <>
+                        <EsqueletoBanner />
+                        <EsqueletoLista linhas={6} />
+                    </>
                 )}
             </div>
         )
@@ -94,21 +115,25 @@ export default function MinhaArea() {
                     </div>
                 </div>
 
-                {planos.dados.length === 0 ? (
-                    <p className="pdco-vazio">Nenhum plano de cultura organizacional encontrado para o seu usuário.</p>
-                ) : view === 'cards' ? (
-                    <div className="pdco-card-grid">
-                        {planos.dados.map((p) => (
-                            <PlanCard key={p.cd_planoacao} plano={p} />
-                        ))}
-                    </div>
-                ) : (
-                    <div className="pdco-row-list">
-                        {planos.dados.map((p) => (
-                            <PlanRow key={p.cd_planoacao} plano={p} />
-                        ))}
-                    </div>
-                )}
+                <div className={`pdco-lista-area ${refazendo ? 'pdco-lista-atualizando' : ''}`} aria-busy={refazendo}>
+                    {esqueleto ? (
+                        <EsqueletoLista linhas={Math.min(Math.max(planos.dados.length, 3), 8)} cards={view === 'cards'} />
+                    ) : planos.dados.length === 0 ? (
+                        <p className="pdco-vazio">Nenhum plano de cultura organizacional encontrado para o seu usuário.</p>
+                    ) : view === 'cards' ? (
+                        <div className="pdco-card-grid" key={chaveLista}>
+                            {planos.dados.map((p, i) => (
+                                <PlanCard key={p.cd_planoacao} plano={p} indice={i} />
+                            ))}
+                        </div>
+                    ) : (
+                        <div className="pdco-row-list" key={chaveLista}>
+                            {planos.dados.map((p, i) => (
+                                <PlanRow key={p.cd_planoacao} plano={p} indice={i} />
+                            ))}
+                        </div>
+                    )}
+                </div>
             </div>
         </div>
     )

@@ -50,6 +50,7 @@ export function EvolucaoGrafico({ meses, selecionado, comparado, temAnexos, onSe
                             type="button"
                             key={m.mes}
                             className={classes}
+                            style={{ '--i': i }}
                             disabled={m.futuro}
                             aria-pressed={m.mes === selecionado}
                             aria-label={rotuloAria}

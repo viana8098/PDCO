@@ -1,3 +1,4 @@
+import { ContadorAnimado } from './Animados'
 import { montarCards, montarFaixa } from '../lib/evolucao'
 
 /** Cartões comparativos (concluídas, acompanhamentos, atrasadas e, no app corporativo, anexos): cada um é um filtro (clicar de novo limpa). */
@@ -14,7 +15,9 @@ export function EvolucaoCards({ comp, foco, onFoco }) {
                     onClick={() => onFoco(foco === c.id ? null : c.id)}
                 >
                     <span className="pdco-stat-label">{c.rotulo}</span>
-                    <span className="pdco-stat-valor">{c.valor}</span>
+                    <span className="pdco-stat-valor">
+                        <ContadorAnimado valor={c.valor} duracao={800} atraso={200} />
+                    </span>
                     <span className="pdco-evo-diff-comparacao">{c.comparacao}</span>
                     <span className={`pdco-evo-delta pdco-evo-delta-${c.variacao.tom}`}>
                         <span aria-hidden="true">{c.variacao.seta}</span> {c.variacao.texto}

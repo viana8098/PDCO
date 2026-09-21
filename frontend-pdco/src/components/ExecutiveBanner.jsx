@@ -1,3 +1,4 @@
+import { ContadorAnimado } from './Animados'
 import { CultureGauge } from './CultureGauge'
 
 /**
@@ -12,7 +13,7 @@ export function ExecutiveBanner({ titulo, totalPlanos, metricas }) {
             <div className="pdco-banner-text">
                 <h1 className="pdco-banner-title">{titulo}</h1>
                 <p className="pdco-banner-sub">
-                    Acompanhamento dos planos de desenvolvimento da cultura organizacional — {totalPlanos} plano(s) em
+                    Acompanhamento dos planos de desenvolvimento da cultura organizacional — <ContadorAnimado valor={totalPlanos} atraso={260} duracao={800} /> plano(s) em
                     andamento.
                 </p>
             </div>

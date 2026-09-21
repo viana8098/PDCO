@@ -1,6 +1,7 @@
 import { useMemo, useState } from 'react'
 import { useAsync } from '../lib/useAsync'
 import { PlanCard } from '../components/PlanCard'
+import { ContadorAnimado } from '../components/Animados'
 import { InfoStatus } from '../components/InfoStatus'
 import { calcRag, tipoResumido, RAG_COLOR, RAG_LABEL } from '../lib/pdcoCalc'
 import { usePdco } from '../lib/PdcoContext'
@@ -63,7 +64,7 @@ export default function Estrategicos() {
             <div className="pdco-rag-legend-row">
                 {['verde', 'amarelo', 'vermelho'].map((k) => (
                     <span key={k} style={{ color: RAG_COLOR[k] }}>
-                        ● {contagem[k]} {RAG_LABEL[k]}
+                        ● <ContadorAnimado valor={contagem[k]} /> {RAG_LABEL[k]}
                     </span>
                 ))}
                 <InfoStatus />
@@ -72,9 +73,9 @@ export default function Estrategicos() {
             {filtrados.length === 0 ? (
                 <p className="pdco-vazio">Nenhum plano estratégico nesta área.</p>
             ) : (
-                <div className="pdco-card-grid">
-                    {filtrados.map((p) => (
-                        <PlanCard key={p.cd_planoacao} plano={p} />
+                <div className="pdco-card-grid" key={areaFiltro}>
+                    {filtrados.map((p, i) => (
+                        <PlanCard key={p.cd_planoacao} plano={p} indice={i} />
                     ))}
                 </div>
             )}

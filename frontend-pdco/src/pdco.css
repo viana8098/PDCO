@@ -551,7 +551,7 @@ body {
   height: 100%;
 }
 .pdco-app .pdco-gauge-value {
-  transition: stroke-dashoffset 0.6s ease;
+  /* O arco é movido quadro a quadro pela animação (lib/animacao.js): sem transition aqui, pra não brigar com ela. */
 }
 .pdco-app .pdco-gauge-inner {
   position: absolute;
@@ -595,11 +595,17 @@ body {
   overflow: hidden;
   text-decoration: none;
   color: inherit;
-  transition: background-color 0.15s ease;
+  box-shadow: 0 1px 0 rgba(255, 255, 255, 0.03) inset;
+  transition: background-color 0.18s ease, border-color 0.18s ease, transform 0.18s ease, box-shadow 0.18s ease;
 }
 .pdco-app .pdco-plan-card:hover,
-.pdco-app .pdco-plan-row:hover {
+.pdco-app .pdco-plan-row:hover,
+.pdco-app .pdco-plan-card:focus-visible,
+.pdco-app .pdco-plan-row:focus-visible {
   background: var(--surface-2);
+  border-color: rgba(167, 216, 255, 0.34);
+  transform: translateY(-1px);
+  box-shadow: 0 8px 20px -12px rgba(0, 0, 0, 0.6);
 }
 .pdco-app .pdco-plan-card-bar,
 .pdco-app .pdco-plan-row-bar {
@@ -653,13 +659,37 @@ body {
 .pdco-app .pdco-progress-bar {
   height: 6px;
   border-radius: var(--radius-pill);
-  background: rgba(255, 255, 255, 0.1);
+  background: rgba(255, 255, 255, 0.07);
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.25);
   overflow: hidden;
 }
 .pdco-app .pdco-progress-bar-fill {
+  position: relative;
+  width: 100%;
   height: 100%;
   border-radius: var(--radius-pill);
-  transition: width 0.5s ease;
+  /* Leve brilho ao longo do preenchimento; a cor semântica (status) segue vindo do estilo inline. */
+  background-image: linear-gradient(90deg, rgba(255, 255, 255, 0) 35%, rgba(255, 255, 255, 0.22));
+}
+/* Brilho na ponta: só enquanto a barra cresce, some ao chegar no valor final. */
+.pdco-app .pdco-progress-bar-fill::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 26px;
+  border-radius: inherit;
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.7));
+  opacity: 0;
+  transition: opacity 0.45s ease;
+}
+.pdco-app .pdco-barra-crescendo {
+  will-change: transform;
+}
+.pdco-app .pdco-barra-crescendo::after {
+  opacity: 0.85;
+  transition: opacity 0.1s ease;
 }
 .pdco-app .pdco-plan-card-foot {
   display: flex;
@@ -1457,6 +1487,7 @@ body {
 }
 .pdco-app .pdco-rag-bar span {
   height: 100%;
+  transition: width 0.45s cubic-bezier(0.22, 0.61, 0.36, 1);
 }
 .pdco-app .pdco-rag-legend {
   display: flex;
@@ -1481,13 +1512,15 @@ body {
   border-top: 1px solid var(--border);
   text-decoration: none;
   color: inherit;
-  transition: background-color 0.15s ease;
+  transition: background-color 0.18s ease, transform 0.18s ease;
 }
 .pdco-app .pdco-area-row:first-child {
   border-top: none;
 }
-.pdco-app .pdco-area-row:hover {
+.pdco-app .pdco-area-row:hover,
+.pdco-app .pdco-area-row:focus-visible {
   background: var(--surface-2);
+  transform: translateY(-1px);
 }
 .pdco-app .pdco-area-row-main {
   flex: 1;
@@ -2375,4 +2408,251 @@ body {
   padding-top: 6px;
   border-top: 1px solid;
   color: var(--text);
+}
+
+/* ================================================================================
+   Movimento e profundidade
+   Entrada em sequência (~1,8 s na 1ª tela da sessão; depois vira "rapida", ver
+   lib/animacao.js): container -> título -> arcos/contadores -> filtros -> planos em
+   cascata -> barras. Só o que comunica evolução se move (arcos, barras, números, cards
+   e troca de filtro). Nada disso bloqueia a interação. prefers-reduced-motion no fim.
+   ================================================================================ */
+.pdco-app {
+  --ent-dur: 380ms;
+  --ent-passo: 36ms;
+  --ent-lista: 520ms;
+  --ent-banner: 80ms;
+  --ent-filtros: 420ms;
+  --ease-saida: cubic-bezier(0.22, 0.61, 0.36, 1);
+  /* profundidade sutil: brilho frio no topo, sem virar vidro fosco */
+  background: radial-gradient(1100px 460px at 50% -8%, rgba(96, 146, 214, 0.13), transparent 62%), var(--bg);
+}
+.pdco-app[data-entrada='rapida'] {
+  --ent-dur: 240ms;
+  --ent-passo: 14ms;
+  --ent-lista: 40ms;
+  --ent-banner: 0ms;
+  --ent-filtros: 30ms;
+}
+
+@keyframes pdco-aparecer {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes pdco-subir {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@keyframes pdco-revelar-x {
+  from {
+    clip-path: inset(0 100% 0 0 round 999px);
+  }
+  to {
+    clip-path: inset(0 0 0 0 round 999px);
+  }
+}
+@keyframes pdco-crescer-y {
+  from {
+    transform: scaleY(0);
+  }
+  to {
+    transform: scaleY(1);
+  }
+}
+@keyframes pdco-brilho-arco {
+  0% {
+    filter: drop-shadow(0 0 0 transparent);
+  }
+  45% {
+    filter: drop-shadow(0 0 6px var(--brilho, currentColor));
+  }
+  100% {
+    filter: drop-shadow(0 0 0 transparent);
+  }
+}
+@keyframes pdco-esq-varredura {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(100%);
+  }
+}
+
+/* "backwards": segura o estado inicial durante o atraso e, ao terminar, devolve o controle ao CSS normal
+   (assim o hover — transform/borda — continua funcionando nos cards depois da entrada). */
+.pdco-app .pdco-page {
+  animation: pdco-aparecer 260ms ease-out backwards;
+}
+.pdco-app .pdco-banner-text,
+.pdco-app .pdco-page-head {
+  animation: pdco-subir var(--ent-dur) var(--ease-saida) var(--ent-banner) backwards;
+}
+.pdco-app .pdco-banner-gauges {
+  animation: pdco-aparecer 320ms ease-out 200ms backwards;
+}
+.pdco-app .pdco-filters-row,
+.pdco-app .pdco-section-head,
+.pdco-app .pdco-rag-legend-row {
+  animation: pdco-subir var(--ent-dur) var(--ease-saida) var(--ent-filtros) backwards;
+}
+.pdco-app .pdco-stat-grid > * {
+  animation: pdco-subir var(--ent-dur) var(--ease-saida) calc(var(--ent-banner) + 120ms) backwards;
+}
+.pdco-app .pdco-plan-card,
+.pdco-app .pdco-plan-row,
+.pdco-app .pdco-area-row {
+  animation: pdco-subir var(--ent-dur) var(--ease-saida) calc(var(--ent-lista) + var(--i, 0) * var(--ent-passo)) backwards;
+}
+.pdco-app .pdco-rag-bar {
+  animation: pdco-revelar-x 750ms var(--ease-saida) 380ms backwards;
+}
+.pdco-app .pdco-evo-graf-barra {
+  transform-origin: bottom;
+  transition: height 0.45s var(--ease-saida);
+  animation: pdco-crescer-y 600ms var(--ease-saida) calc(320ms + var(--i, 0) * 45ms) backwards;
+}
+.pdco-app .pdco-searchable-painel {
+  animation: pdco-subir 160ms var(--ease-saida) backwards;
+}
+
+/* Arco: um brilho discreto passa uma vez quando o desenho termina. */
+.pdco-app .pdco-gauge-brilho {
+  animation: pdco-brilho-arco 900ms ease-out 1;
+}
+
+/* Filtro trocando: a lista atual esmaece enquanto a API responde (e ganha esqueletos se demorar). */
+.pdco-app .pdco-lista-area {
+  transition: opacity 0.2s ease;
+}
+.pdco-app .pdco-lista-atualizando {
+  opacity: 0.4;
+  pointer-events: none;
+}
+
+/* ------------------------------ Esqueletos (carregando) ------------------------------ */
+.pdco-app .pdco-esq {
+  position: relative;
+  overflow: hidden;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-card);
+  background: var(--surface);
+}
+.pdco-app .pdco-esq::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.06), transparent);
+  transform: translateX(-100%);
+  animation: pdco-esq-varredura 1.6s ease-in-out infinite;
+}
+.pdco-app .pdco-esq-linha {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  min-height: 56px;
+  padding: 12px 16px;
+}
+.pdco-app .pdco-esq-card {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  min-height: 150px;
+  padding: 16px;
+}
+.pdco-app .pdco-esq-bloco {
+  display: block;
+  height: 10px;
+  border-radius: 6px;
+  background: rgba(255, 255, 255, 0.08);
+}
+.pdco-app .pdco-esq-titulo {
+  flex: 1;
+  height: 12px;
+}
+.pdco-app .pdco-esq-barra {
+  height: 6px;
+  border-radius: 999px;
+}
+.pdco-app .pdco-esq-painel {
+  overflow: hidden;
+}
+.pdco-app .pdco-esq-painel .pdco-esq-texto {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.pdco-app .pdco-esq-arcos {
+  display: flex;
+  gap: 20px;
+}
+.pdco-app .pdco-esq-arco {
+  width: 108px;
+  height: 108px;
+  border-radius: 50%;
+  background: transparent;
+  border: 10px solid rgba(255, 255, 255, 0.08);
+}
+
+/* --------------------------- Microinterações e profundidade --------------------------- */
+.pdco-app .pdco-panel {
+  box-shadow: 0 1px 0 rgba(255, 255, 255, 0.04) inset, 0 12px 30px -22px rgba(0, 0, 0, 0.65);
+}
+.pdco-app .pdco-banner {
+  background: linear-gradient(135deg, var(--surface) 0%, #21396a 100%);
+}
+.pdco-app .pdco-subnav-link {
+  transition: background-color 0.18s ease, color 0.18s ease, transform 0.18s ease, box-shadow 0.18s ease;
+}
+.pdco-app .pdco-subnav-link:hover {
+  transform: translateY(-1px);
+}
+.pdco-app .pdco-subnav-link.pdco-subnav-ativo {
+  box-shadow: 0 6px 16px -8px rgba(0, 0, 0, 0.5);
+}
+.pdco-app .pdco-filter-pill {
+  transition: border-color 0.18s ease, background-color 0.18s ease;
+}
+.pdco-app .pdco-filter-pill:hover,
+.pdco-app .pdco-filter-pill:focus-within {
+  border-color: rgba(167, 216, 255, 0.34);
+}
+.pdco-app .pdco-toggle-group button {
+  transition: background-color 0.18s ease, color 0.18s ease;
+}
+.pdco-app .pdco-rag-badge {
+  transition: filter 0.18s ease, box-shadow 0.18s ease;
+}
+.pdco-app .pdco-rag-wrap:hover .pdco-rag-badge {
+  filter: brightness(1.18);
+  box-shadow: 0 0 0 1px currentColor;
+}
+.pdco-app .pdco-evo-diff-card,
+.pdco-app .pdco-evo-chip {
+  transition: border-color 0.18s ease, background-color 0.18s ease, transform 0.18s ease;
+}
+.pdco-app .pdco-evo-diff-card:hover {
+  transform: translateY(-1px);
+}
+
+/* Quem pede menos movimento no sistema operacional vê tudo pronto: sem animação nem transição.
+   (Os números e as barras já nascem no valor final — ver lib/animacao.js.) */
+@media (prefers-reduced-motion: reduce) {
+  .pdco-app *,
+  .pdco-app *::before,
+  .pdco-app *::after {
+    animation: none !important;
+    transition: none !important;
+    scroll-behavior: auto !important;
+  }
 }

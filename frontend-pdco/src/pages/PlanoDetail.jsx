@@ -4,6 +4,7 @@ import { useAsync } from '../lib/useAsync'
 import { AcoesTable } from '../components/AcoesTable'
 import { AcompanhamentoGrid } from '../components/AcompanhamentoGrid'
 import { AnexosTab } from '../components/AnexosTab'
+import { ContadorAnimado } from '../components/Animados'
 import { CaixaRecolhivel } from '../components/CaixaRecolhivel'
 import { IndicadoresCard } from '../components/IndicadoresCard'
 import { PlanoTimeline } from '../components/PlanoTimeline'
@@ -83,9 +84,9 @@ export default function PlanoDetail() {
                             Status automático: {RAG_LABEL[rag.nivel]} · score {rag.score}/100
                         </p>
                         <div className="pdco-mini-stat-grid">
-                            <MiniStat label="Concluídas" valor={`${rag.concluidas}/${rag.total}`} />
+                            <MiniStat label="Concluídas" valor={rag.concluidas} total={rag.total} />
                             <MiniStat label="Atrasadas" valor={rag.atrasadas} perigo={rag.atrasadas > 0} />
-                            <MiniStat label="Execução" valor={plano.execucao === null ? '—' : `${Math.round(plano.execucao * 100)}%`} />
+                            <MiniStat label="Execução" valor={plano.execucao === null ? '—' : Math.round(plano.execucao * 100)} sufixo="%" />
                             <MiniStat label="Acompanh." valor={totalAcompanhamentos} />
                         </div>
                         <p className="pdco-rag-motivos">{rag.motivos.join(' · ')}</p>
@@ -129,11 +130,14 @@ export default function PlanoDetail() {
     )
 }
 
-function MiniStat({ label, valor, perigo }) {
+function MiniStat({ label, valor, total, sufixo = '', perigo }) {
     return (
         <div className={`pdco-mini-stat ${perigo ? 'pdco-mini-stat-perigo' : ''}`}>
             <p className="pdco-mini-stat-label">{label}</p>
-            <p className="pdco-mini-stat-valor">{valor}</p>
+            <p className="pdco-mini-stat-valor">
+                {typeof valor === 'number' ? <ContadorAnimado valor={valor} sufixo={sufixo} duracao={800} atraso={200} /> : valor}
+                {total !== undefined && `/${total}`}
+            </p>
         </div>
     )
 }

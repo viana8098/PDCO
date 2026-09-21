@@ -55,14 +55,14 @@ export default function AreaDetail() {
                     <p className="pdco-vazio">Nenhum plano cadastrado para esta área.</p>
                 ) : view === 'cards' ? (
                     <div className="pdco-card-grid">
-                        {planosArea.map((p) => (
-                            <PlanCard key={p.cd_planoacao} plano={p} />
+                        {planosArea.map((p, i) => (
+                            <PlanCard key={p.cd_planoacao} plano={p} indice={i} />
                         ))}
                     </div>
                 ) : (
                     <div className="pdco-row-list">
-                        {planosArea.map((p) => (
-                            <PlanRow key={p.cd_planoacao} plano={p} />
+                        {planosArea.map((p, i) => (
+                            <PlanRow key={p.cd_planoacao} plano={p} indice={i} />
                         ))}
                     </div>
                 )}
