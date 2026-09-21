@@ -79,18 +79,18 @@ export function calcRag(plano, quadrantesAcompanhamento) {
   if (total === 0) {
     score -= P.semAcoes
     motivos.push('Plano sem ações cadastradas')
-    execucao('Plano sem ações cadastradas', -P.semAcoes)
+    execucao('Sem ações cadastradas', -P.semAcoes)
   } else if (pct >= RAG_REGRA.execucaoBoa) {
     motivos.push(`${pctTxt}% das ações concluídas`)
-    execucao(`${concluidas} de ${total} ações concluídas (${pctTxt}%) — 80% ou mais`, 0)
+    execucao(`${concluidas} de ${total} ações concluídas (${pctTxt}%)`, 0)
   } else if (pct >= RAG_REGRA.execucaoParcial) {
     score -= P.execucaoParcial
     motivos.push(`${pctTxt}% das ações concluídas (parcial)`)
-    execucao(`${concluidas} de ${total} ações concluídas (${pctTxt}%) — de 40% a 79%`, -P.execucaoParcial)
+    execucao(`${concluidas} de ${total} ações concluídas (${pctTxt}%)`, -P.execucaoParcial)
   } else {
     score -= P.execucaoBaixa
     motivos.push(`Apenas ${pctTxt}% das ações concluídas`)
-    execucao(`${concluidas} de ${total} ações concluídas (${pctTxt}%) — menos de 40%`, -P.execucaoBaixa)
+    execucao(`${concluidas} de ${total} ações concluídas (${pctTxt}%)`, -P.execucaoBaixa)
   }
 
   if (atrasadas > 0) {
@@ -100,7 +100,7 @@ export function calcRag(plano, quadrantesAcompanhamento) {
     criterios.push({
       chave: 'atrasos',
       titulo: 'Ações atrasadas',
-      situacao: `${atrasadas} ${atrasadas === 1 ? 'ação atrasada' : 'ações atrasadas'} (−${P.porAtraso} por ação, no máximo −${P.maxAtrasos})`,
+      situacao: `${atrasadas} ${atrasadas === 1 ? 'ação atrasada' : 'ações atrasadas'}`,
       pontos: -perda,
     })
   } else {
@@ -113,17 +113,17 @@ export function calcRag(plano, quadrantesAcompanhamento) {
     if (acompanhamentos.total === 0) {
       score -= P.semAcompanhamento
       motivos.push('Sem acompanhamentos registrados')
-      acompanhamento('Nenhum acompanhamento registrado', -P.semAcompanhamento)
+      acompanhamento('Nenhum registro', -P.semAcompanhamento)
     } else {
       const dias = (Date.now() - new Date(acompanhamentos.ultimo).getTime()) / DIA_MS
       const quando = dias < 1 ? 'hoje' : `há ${pluralDias(Math.floor(dias))}`
       if (dias > RAG_REGRA.diasAcompanhamentoRecente) {
         score -= P.acompanhamentoAntigo
         motivos.push('Sem acompanhamento recente (>60 dias)')
-        acompanhamento(`Último acompanhamento ${quando} — mais de ${RAG_REGRA.diasAcompanhamentoRecente} dias sem registro`, -P.acompanhamentoAntigo)
+        acompanhamento(`Último registro ${quando}`, -P.acompanhamentoAntigo)
       } else {
         motivos.push('Acompanhamento recente registrado')
-        acompanhamento(`Último acompanhamento ${quando} — dentro de ${RAG_REGRA.diasAcompanhamentoRecente} dias`, 0)
+        acompanhamento(`Último registro ${quando}`, 0)
       }
     }
   }

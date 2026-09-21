@@ -2676,3 +2676,48 @@ body {
   padding-top: 8px;
   border-top: 1px solid var(--border);
 }
+
+/* Regra do status em tabela (critério · situação · pontos). */
+.pdco-app .pdco-info-tabela {
+  width: 100%;
+  margin: 2px 0 8px;
+  border-collapse: collapse;
+  line-height: 1.35;
+}
+.pdco-app .pdco-info-tabela th,
+.pdco-app .pdco-info-tabela td {
+  padding: 1.5px 0;
+  text-align: left;
+  vertical-align: top;
+  font-weight: 400;
+}
+.pdco-app .pdco-info-tabela th {
+  width: 42%;
+  padding-right: 10px;
+  font-weight: 700;
+  color: var(--text);
+}
+.pdco-app .pdco-info-tabela th small {
+  display: block;
+  font-size: 10.5px;
+  font-weight: 400;
+  color: var(--text-muted);
+}
+.pdco-app .pdco-info-tabela td:last-child {
+  width: 34px;
+  text-align: right;
+  font-weight: 700;
+  font-variant-numeric: tabular-nums;
+  color: var(--text);
+}
+.pdco-app .pdco-info-tabela tr.pdco-info-grupo > * {
+  padding-top: 4px;
+  border-top: 1px solid var(--border);
+}
+.pdco-app .pdco-info-tabela tr.pdco-info-grupo:first-child > * {
+  padding-top: 1.5px;
+  border-top: 0;
+}
+.pdco-app .pdco-info-balao p.pdco-info-subtitulo {
+  margin: 0 0 5px;
+}

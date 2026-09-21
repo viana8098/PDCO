@@ -30,7 +30,11 @@ export function InfoTooltip({ rotulo, estreito = false, children }) {
         const b = balaoRef.current.getBoundingClientRect()
         const left = Math.min(Math.max(i.right - b.width, margem), window.innerWidth - b.width - margem)
         let top = i.bottom + margem
-        if (top + b.height > window.innerHeight - margem && i.top - margem - b.height > margem) top = i.top - margem - b.height
+        if (top + b.height > window.innerHeight - margem) {
+            // Sem espaço embaixo: sobe; se em cima também não couber, encosta na borda da tela (o balão ignora o mouse, então não atrapalha o "i").
+            const acima = i.top - margem - b.height
+            top = acima > margem ? acima : Math.max(margem, window.innerHeight - b.height - margem)
+        }
         setPos({ left, top })
     }, [aberto])
 

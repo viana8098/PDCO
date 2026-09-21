@@ -22,21 +22,57 @@ export function InfoStatus({ rag }) {
             <p>
                 Todo plano começa com <strong>{RAG_BASE} pontos</strong> e perde pontos por:
             </p>
-            <ul className="pdco-info-regras">
-                <li>
-                    <strong>Execução das ações</strong> (concluídas ÷ total): {pct(RAG_REGRA.execucaoBoa)} ou mais <b>0</b> · de{' '}
-                    {pct(RAG_REGRA.execucaoParcial)} a {pct(RAG_REGRA.execucaoBoa - 0.01)} <b>{pontos(P.execucaoParcial)}</b> · menos de{' '}
-                    {pct(RAG_REGRA.execucaoParcial)} <b>{pontos(P.execucaoBaixa)}</b> · sem ações <b>{pontos(P.semAcoes)}</b>
-                </li>
-                <li>
-                    <strong>Ações atrasadas</strong> (prazo vencido e não concluídas): <b>{pontos(P.porAtraso)}</b> por ação, no máximo{' '}
-                    <b>{pontos(P.maxAtrasos)}</b>
-                </li>
-                <li>
-                    <strong>Acompanhamento</strong>: último registro há até {RAG_REGRA.diasAcompanhamentoRecente} dias <b>0</b> · há mais
-                    de {RAG_REGRA.diasAcompanhamentoRecente} dias <b>{pontos(P.acompanhamentoAntigo)}</b> · nenhum <b>{pontos(P.semAcompanhamento)}</b>
-                </li>
-            </ul>
+            <table className="pdco-info-tabela">
+                <tbody>
+                    <tr className="pdco-info-grupo">
+                        <th rowSpan={4} scope="rowgroup">
+                            Execução das ações
+                            <small>concluídas ÷ total</small>
+                        </th>
+                        <td>{pct(RAG_REGRA.execucaoBoa)} ou mais</td>
+                        <td>0</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            {pct(RAG_REGRA.execucaoParcial)} a {pct(RAG_REGRA.execucaoBoa - 0.01)}
+                        </td>
+                        <td>{pontos(P.execucaoParcial)}</td>
+                    </tr>
+                    <tr>
+                        <td>menos de {pct(RAG_REGRA.execucaoParcial)}</td>
+                        <td>{pontos(P.execucaoBaixa)}</td>
+                    </tr>
+                    <tr>
+                        <td>plano sem ações</td>
+                        <td>{pontos(P.semAcoes)}</td>
+                    </tr>
+                    <tr className="pdco-info-grupo">
+                        <th scope="row">
+                            Ações atrasadas
+                            <small>não concluídas no prazo</small>
+                        </th>
+                        <td>por ação (máx. {pontos(P.maxAtrasos)})</td>
+                        <td>{pontos(P.porAtraso)}</td>
+                    </tr>
+                    <tr className="pdco-info-grupo">
+                        <th rowSpan={3} scope="rowgroup">
+                            Acompanhamento
+                            <small>último registro</small>
+                        </th>
+                        <td>há até {RAG_REGRA.diasAcompanhamentoRecente} dias</td>
+                        <td>0</td>
+                    </tr>
+                    <tr>
+                        <td>há mais de {RAG_REGRA.diasAcompanhamentoRecente} dias</td>
+                        <td>{pontos(P.acompanhamentoAntigo)}</td>
+                    </tr>
+                    <tr>
+                        <td>nenhum registro</td>
+                        <td>{pontos(P.semAcompanhamento)}</td>
+                    </tr>
+                </tbody>
+            </table>
+            <p className="pdco-info-subtitulo">Status conforme os pontos restantes:</p>
             <ul className="pdco-info-niveis">
                 {NIVEIS.map((k) => (
                     <li key={k}>
