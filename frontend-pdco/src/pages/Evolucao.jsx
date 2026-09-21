@@ -162,6 +162,7 @@ export default function Evolucao() {
                         meses={analise.meses}
                         selecionado={para}
                         comparado={comp.mesmo ? null : de}
+                        temAnexos={analise.temAnexos}
                         onSelecionar={(mes) => selecionarPeriodo(Math.max(1, mes - 1), mes)}
                     />
                 </section>
@@ -240,7 +241,7 @@ export default function Evolucao() {
                                                 {m.atual && <span className="pdco-evo-tag-atual"> atual</span>}
                                             </span>
                                             <span className="pdco-month-resumo">
-                                                {met ? `${met.concluidas} concl. · ${met.novosAtrasos} novos atrasos · ${met.acompanhamentos} acomp.` : 'Ainda não iniciado'}
+                                                {met ? `${met.concluidas} concl. · ${met.novosAtrasos} novos atrasos · ${met.acompanhamentos} acomp.${comp.temAnexos ? ` · ${met.anexos} ${met.anexos === 1 ? 'anexo' : 'anexos'}` : ''}` : 'Ainda não iniciado'}
                                             </span>
                                             <span className={`pdco-month-caret ${aberto ? 'pdco-month-caret-aberto' : ''}`}>▾</span>
                                         </button>

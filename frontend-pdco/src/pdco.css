@@ -2225,3 +2225,28 @@ body {
     margin: 0 12px 14px;
   }
 }
+
+/* Anexos (só no app corporativo): 4º cartão, série do gráfico e chip */
+.pdco-app .pdco-evo-diff-grid-4 {
+  grid-template-columns: repeat(4, 1fr);
+}
+@media (max-width: 1000px) {
+  .pdco-app .pdco-evo-diff-grid-4 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 700px) {
+  .pdco-app .pdco-evo-diff-grid-4 {
+    grid-template-columns: 1fr;
+  }
+}
+.pdco-app .pdco-evo-delta-anexo {
+  color: var(--tatico);
+}
+.pdco-app .pdco-evo-chip-anexo {
+  --chip: var(--tatico);
+  --chip-soft: var(--tatico-soft);
+}
+.pdco-app .pdco-evo-graf-anexos {
+  background: var(--tatico);
+}

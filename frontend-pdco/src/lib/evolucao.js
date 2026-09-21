@@ -277,7 +277,7 @@ function itemAnexo(plano, anexo) {
     id: `anexo:${plano.cd_planoacao}:${anexo.cd_anexo}`,
     tipo: 'anexo',
     tags: ['anexo'],
-    badges: [badge('anexo', 'Evidência')],
+    badges: [badge('anexo', 'Anexo')],
     titulo: anexo.nome_arquivo,
     descricao: `Evidência anexada ao plano ${tituloDoPlano(plano)}.`,
     data: anexo.data,
@@ -370,7 +370,9 @@ export function analisarCiclo(detalhes, ciclo, areaFiltro, hojeIso) {
     return { ...mes, ...avaliado, eventos }
   })
   const temDados = univ.acoes.length + univ.registros.length + univ.anexos.length > 0
-  return { univ, meses, temDados, hojeIso }
+  // Só o app corporativo tem anexos (banco próprio): a API do standalone nem manda o campo.
+  const temAnexos = detalhes.some((detalhe) => Array.isArray(detalhe.anexos))
+  return { univ, meses, temDados, temAnexos, hojeIso }
 }
 
 /**
@@ -399,6 +401,7 @@ export function compararMeses(analise, ciclo, de, para) {
     para: { mes: B.mes, chave: B.chave, rotulo: B.rotulo, atual: B.atual, refIso: B.refIso },
     mesmo,
     adjacente,
+    temAnexos: analise.temAnexos,
     metricas: { de: A.metricas, para: B.metricas },
     ev,
     totais: {
@@ -424,7 +427,7 @@ export const FOCOS = {
   atrasadas: { rotulo: 'Ações atrasadas', grupos: ['novos_atrasos', 'continuam_atrasadas'], tags: ['novo_atraso', 'continua_atrasada'] },
   regularizados: { rotulo: 'Atrasos regularizados', grupos: ['regularizados'], tags: ['regularizada'] },
   acompanhamentos: { rotulo: 'Acompanhamentos', grupos: ['acompanhamentos'], tags: ['acompanhamento'] },
-  anexos: { rotulo: 'Evidências anexadas', grupos: ['anexos'], tags: ['anexo'] },
+  anexos: { rotulo: 'Anexos', grupos: ['anexos'], tags: ['anexo'] },
 }
 
 export function itemNoFoco(item, foco) {
@@ -439,7 +442,7 @@ export function montarGrupos(comp, foco) {
     { id: 'novos_atrasos', titulo: 'Novos atrasos', itens: ev.novosAtrasos },
     { id: 'regularizados', titulo: 'Atrasos resolvidos', itens: ev.concluidas.filter(ehRegularizada) },
     { id: 'acompanhamentos', titulo: 'Novos acompanhamentos', itens: ev.acompanhamentos },
-    { id: 'anexos', titulo: 'Evidências anexadas', itens: ev.anexos },
+    { id: 'anexos', titulo: 'Anexos', itens: ev.anexos },
     { id: 'continuam_atrasadas', titulo: 'Continuam atrasadas', itens: ev.semAlteracao.filter((i) => i.tags.includes('continua_atrasada')), soComFoco: true },
     { id: 'sem_alteracao', titulo: 'Sem alteração', itens: ev.semAlteracao, recolhido: true },
   ]
@@ -466,6 +469,7 @@ export function montarCards(comp) {
   const dConcluidas = metricas.para.concluidas - metricas.de.concluidas
   const dAcomp = metricas.para.acompanhamentos - metricas.de.acompanhamentos
   const dAtrasadas = metricas.para.atrasadas - metricas.de.atrasadas
+  const dAnexos = metricas.para.anexos - metricas.de.anexos
 
   // Atrasos: variação do estoque = novos − regularizados (identidade exata, ver compararMeses).
   // Só chama de "novos atrasos" quando não houve regularização no mesmo intervalo.
@@ -481,7 +485,7 @@ export function montarCards(comp) {
     }
   } else atrasos = { seta: '→', texto: 'Sem variação', tom: 'neutro' }
 
-  return [
+  const cards = [
     {
       id: 'concluidas',
       rotulo: 'Ações concluídas',
@@ -514,6 +518,22 @@ export function montarCards(comp) {
       variacao: atrasos,
     },
   ]
+
+  if (comp.temAnexos) {
+    cards.push({
+      id: 'anexos',
+      rotulo: 'Anexos',
+      valor: metricas.para.anexos,
+      comparacao: ligacao(metricas.de.anexos, metricas.para.anexos),
+      variacao: variacao(dAnexos, {
+        mais: (n) => `${plural(n, 'anexo')} a mais`,
+        menos: (n) => `${plural(n, 'anexo')} a menos`,
+        tomSobe: 'anexo',
+        tomDesce: 'anexo',
+      }),
+    })
+  }
+  return cards
 }
 
 /** Faixa "Resumo de Set/2026 — 2 ações concluídas · …": cada item vira filtro. */
@@ -527,6 +547,6 @@ export function montarFaixa(comp) {
     { foco: 'acompanhamentos', valor: totais.acompanhamentos, texto: plural(totais.acompanhamentos, 'novo acompanhamento', 'novos acompanhamentos'), tom: 'info' },
     { foco: 'regularizados', valor: totais.regularizados, texto: plural(totais.regularizados, 'atraso regularizado', 'atrasos regularizados'), tom: 'bom' },
   ]
-  if (totais.anexos > 0) itens.push({ foco: 'anexos', valor: totais.anexos, texto: plural(totais.anexos, 'evidência anexada', 'evidências anexadas'), tom: 'neutro' })
+  if (comp.temAnexos) itens.push({ foco: 'anexos', valor: totais.anexos, texto: plural(totais.anexos, 'anexo'), tom: 'anexo' })
   return { titulo, itens }
 }

@@ -1,8 +1,10 @@
-const SERIES = [
+const SERIES_BASE = [
     { chave: 'concluidas', rotulo: 'Concluídas' },
     { chave: 'atrasadas', rotulo: 'Atrasadas' },
     { chave: 'acompanhamentos', rotulo: 'Acompanhamentos' },
 ]
+// Só o app corporativo tem anexos — a série entra junto com o cartão.
+const SERIE_ANEXOS = { chave: 'anexos', rotulo: 'Anexos' }
 
 /**
  * Gráfico compacto dos meses do ciclo (barras agrupadas em HTML/CSS, sem
@@ -11,7 +13,8 @@ const SERIES = [
  * como período (comparado com o anterior). Os números aparecem sobre as barras e
  * no balão de hover/foco, então nada depende só de cor.
  */
-export function EvolucaoGrafico({ meses, selecionado, comparado, onSelecionar }) {
+export function EvolucaoGrafico({ meses, selecionado, comparado, temAnexos, onSelecionar }) {
+    const SERIES = temAnexos ? [...SERIES_BASE, SERIE_ANEXOS] : SERIES_BASE
     const maximo = Math.max(1, ...meses.flatMap((m) => (m.metricas ? SERIES.map((s) => m.metricas[s.chave]) : [0])))
 
     return (
@@ -40,7 +43,7 @@ export function EvolucaoGrafico({ meses, selecionado, comparado, onSelecionar })
                         .join(' ')
                     const met = m.metricas
                     const rotuloAria = met
-                        ? `${m.rotulo}, Mês ${m.mes}: ${met.concluidas} concluídas, ${met.atrasadas} atrasadas, ${met.acompanhamentos} acompanhamentos`
+                        ? `${m.rotulo}, Mês ${m.mes}: ${met.concluidas} concluídas, ${met.atrasadas} atrasadas, ${met.acompanhamentos} acompanhamentos${temAnexos ? `, ${met.anexos} ${met.anexos === 1 ? 'anexo' : 'anexos'}` : ''}`
                         : `${m.rotulo}, Mês ${m.mes}: ainda não iniciado`
                     return (
                         <button

@@ -1,10 +1,10 @@
 import { montarCards, montarFaixa } from '../lib/evolucao'
 
-/** Os 3 cartões comparativos: cada um é um filtro (clicar de novo limpa). */
+/** Cartões comparativos (concluídas, acompanhamentos, atrasadas e, no app corporativo, anexos): cada um é um filtro (clicar de novo limpa). */
 export function EvolucaoCards({ comp, foco, onFoco }) {
     const cards = montarCards(comp)
     return (
-        <div className="pdco-evo-diff-grid">
+        <div className={`pdco-evo-diff-grid ${cards.length > 3 ? 'pdco-evo-diff-grid-4' : ''}`}>
             {cards.map((c) => (
                 <button
                     type="button"
