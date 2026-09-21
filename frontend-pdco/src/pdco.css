@@ -519,6 +519,15 @@ body {
   margin: 6px 0 0;
   max-width: 520px;
 }
+/* Rótulo "Conclusão de ações" centralizado sobre o conjunto dos arcos (1 ou 2 medidores). */
+.pdco-app .pdco-banner-gauges {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.pdco-app .pdco-banner-gauges .pdco-kicker {
+  text-align: center;
+}
 .pdco-app .pdco-banner-gauges-row {
   display: flex;
   align-items: center;
