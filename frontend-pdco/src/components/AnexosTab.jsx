@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import { InfoAnexos } from './InfoAnexos'
 
 const MESES = [1, 2, 3, 4, 5, 6, 7, 8]
 
@@ -30,9 +31,12 @@ export function AnexosTab() {
                             ))}
                         </select>
                     </label>
-                    <button type="button" className="pdco-save-button" onClick={() => setAviso(true)}>
-                        Anexar evidência
-                    </button>
+                    <span className="pdco-anexos-acao">
+                        <button type="button" className="pdco-save-button" onClick={() => setAviso(true)}>
+                            Anexar evidência
+                        </button>
+                        <InfoAnexos />
+                    </span>
                 </div>
             </div>
 
