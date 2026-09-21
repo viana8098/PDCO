@@ -1,10 +1,11 @@
-import { useMemo, useState } from 'react'
+import { useMemo } from 'react'
 import { Link, Navigate, useParams } from 'react-router-dom'
 import { useAsync } from '../lib/useAsync'
 import { ExecutiveBanner } from '../components/ExecutiveBanner'
 import { PlanCard } from '../components/PlanCard'
 import { PlanRow } from '../components/PlanRow'
 import { pctConcluido } from '../lib/pdcoCalc'
+import { useFiltroPersistente } from '../lib/filtrosPersistentes'
 import { usePdco } from '../lib/PdcoContext'
 import { api } from '../lib/api'
 
@@ -12,7 +13,8 @@ import { api } from '../lib/api'
 export default function AreaDetail() {
     const { user, administrador, carregando } = usePdco()
     const { areaChave } = useParams()
-    const [view, setView] = useState('lista')
+    // Cards/Lista: mesma preferência da Minha Área (lib/filtrosPersistentes.js).
+    const [view, setView] = useFiltroPersistente('visao-planos', 'lista')
 
     const planos = useAsync(() => api.planos(user), [user], !!user && administrador)
 

@@ -1,4 +1,4 @@
-import { useMemo, useState } from 'react'
+import { useMemo } from 'react'
 import { Link, Navigate } from 'react-router-dom'
 import { useAsync } from '../lib/useAsync'
 import { SearchableSelect } from '../components/SearchableSelect'
@@ -6,6 +6,7 @@ import { ContadorAnimado } from '../components/Animados'
 import { InfoStatus } from '../components/InfoStatus'
 import { estiloCascata } from '../lib/animacao'
 import { agruparPorArea, pctConcluido, tipoResumido, RAG_COLOR, RAG_LABEL } from '../lib/pdcoCalc'
+import { useFiltroPersistente } from '../lib/filtrosPersistentes'
 import { usePdco } from '../lib/PdcoContext'
 import { api } from '../lib/api'
 
@@ -18,9 +19,11 @@ const NIVEIS = [{ chave: 'todos', rotulo: 'Todos' }, ...STATUS.map((chave) => ({
 // os planos, sem PIN: o acesso já foi resolvido pela API em /pdco/acesso).
 export default function Diretoria() {
     const { user, administrador, carregando } = usePdco()
-    const [tipo, setTipo] = useState('todos')
-    const [nivel, setNivel] = useState('todos')
-    const [areaFiltro, setAreaFiltro] = useState('')
+    // Filtros que sobrevivem à navegação (lib/filtrosPersistentes.js). A área é compartilhada com as outras telas
+    // pelo NOME dela; aqui ela é identificada pela chave (código da área), então converte nos dois sentidos.
+    const [tipo, setTipo] = useFiltroPersistente('diretoria:tipo', 'todos')
+    const [nivel, setNivel] = useFiltroPersistente('diretoria:nivel', 'todos')
+    const [areaNome, setAreaNome] = useFiltroPersistente('area', '')
 
     const planos = useAsync(() => api.planos(user), [user], !!user && administrador)
 
@@ -32,6 +35,9 @@ export default function Diretoria() {
         }
         return [...mapa.values()].sort((a, b) => a.rotulo.localeCompare(b.rotulo, 'pt-BR', { numeric: true }))
     }, [planos.dados])
+
+    const areaFiltro = opcoesArea.find((o) => o.rotulo === areaNome)?.valor ?? ''
+    const setAreaFiltro = (chave) => setAreaNome(opcoesArea.find((o) => o.valor === chave)?.rotulo ?? '')
 
     // Escolher uma área recorta a tela toda (totais e lista); tipo/nível seguem
     // filtrando só a lista "Visão por área", como antes.

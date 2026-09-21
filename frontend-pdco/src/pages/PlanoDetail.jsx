@@ -1,4 +1,3 @@
-import { useEffect, useState } from 'react'
 import { Link, useParams } from 'react-router-dom'
 import { useAsync } from '../lib/useAsync'
 import { AcoesTable } from '../components/AcoesTable'
@@ -11,6 +10,7 @@ import { PlanoTimeline } from '../components/PlanoTimeline'
 import { RagBadge } from '../components/RagBadge'
 import { TipoChip } from '../components/TipoChip'
 import { calcRag, formatarData, tituloDoPlano, RAG_COLOR, RAG_LABEL } from '../lib/pdcoCalc'
+import { useFiltroPersistente } from '../lib/filtrosPersistentes'
 import { usePdco } from '../lib/PdcoContext'
 import { api } from '../lib/api'
 
@@ -18,14 +18,11 @@ export default function PlanoDetail() {
     const { user } = usePdco()
     const { cdPlanoAcao } = useParams()
     const detalhe = useAsync(() => api.plano(user, cdPlanoAcao), [user, cdPlanoAcao], !!user && !!cdPlanoAcao)
-    const [aba, setAba] = useState('acoes')
+    // A aba e o mês escolhidos ficam guardados POR PLANO (lib/filtrosPersistentes.js): ao voltar de uma ação, o plano abre como estava.
+    const [aba, setAba] = useFiltroPersistente(`plano:${cdPlanoAcao}:aba`, 'acoes')
     // Mês escolhido na previsão de conclusão (chave ano*12+mês): filtra a tabela
     // da aba "Ações do plano" e destaca as atrasadas daquele período.
-    const [mesSelecionado, setMesSelecionado] = useState(null)
-    useEffect(() => {
-        setAba('acoes')
-        setMesSelecionado(null)
-    }, [cdPlanoAcao])
+    const [mesSelecionado, setMesSelecionado] = useFiltroPersistente(`plano:${cdPlanoAcao}:mes`, null)
 
     function selecionarMes(chave) {
         setMesSelecionado(chave)

@@ -5,6 +5,7 @@ import { EvolucaoCards, EvolucaoFaixa } from '../components/EvolucaoResumo'
 import { EvolucaoGrafico } from '../components/EvolucaoGrafico'
 import { EvolucaoItem } from '../components/EvolucaoItem'
 import { analisarCiclo, compararMeses, dataCurta, FOCOS, hojeLocalIso, itemNoFoco, montarCiclo, montarGrupos, TOTAL_MESES } from '../lib/evolucao'
+import { useFiltroPersistente } from '../lib/filtrosPersistentes'
 import { usePdco } from '../lib/PdcoContext'
 import { api } from '../lib/api'
 
@@ -16,11 +17,12 @@ export default function Evolucao() {
     const { user, administrador } = usePdco()
     const planos = useAsync(() => api.planos(user), [user], !!user)
     const [detalhes, setDetalhes] = useState(null)
-    const [areaFiltro, setAreaFiltro] = useState('')
+    // Filtros que sobrevivem à navegação (lib/filtrosPersistentes.js). A área é compartilhada com as outras telas pelo NOME.
+    const [areaNome, setAreaNome] = useFiltroPersistente('area', '')
     // Escolha crua dos dois seletores (null = padrão: mês atual vs. anterior); a ordem é normalizada abaixo.
-    const [escolha, setEscolha] = useState(null)
-    const [foco, setFoco] = useState(null)
-    const [modo, setModo] = useState('resumo')
+    const [escolha, setEscolha] = useFiltroPersistente('evolucao:periodo', null)
+    const [foco, setFoco] = useFiltroPersistente('evolucao:foco', null)
+    const [modo, setModo] = useFiltroPersistente('evolucao:modo', 'resumo')
     // Meses abertos na linha do tempo completa; null = só o mês final do período.
     const [abertos, setAbertos] = useState(null)
     const [mostrarSemAlteracao, setMostrarSemAlteracao] = useState(false)
@@ -48,6 +50,11 @@ export default function Evolucao() {
         }
         return [...mapa.values()].sort((a, b) => a.rotulo.localeCompare(b.rotulo, 'pt-BR', { numeric: true }))
     }, [planos.dados])
+
+    // Só vale com o filtro de área na tela; aqui a área é identificada pela chave (converte a partir do nome guardado).
+    const podeFiltrarArea = administrador
+    const areaFiltro = podeFiltrarArea ? (areas.find((o) => o.rotulo === areaNome)?.valor ?? '') : ''
+    const setAreaFiltro = (chave) => setAreaNome(areas.find((o) => o.valor === chave)?.rotulo ?? '')
 
     const hojeIso = useMemo(() => hojeLocalIso(), [])
     const ciclo = useMemo(() => (detalhes ? montarCiclo(detalhes, hojeIso) : null), [detalhes, hojeIso])

@@ -1,9 +1,10 @@
-import { useMemo, useState } from 'react'
+import { useMemo } from 'react'
 import { useAsync } from '../lib/useAsync'
 import { PlanCard } from '../components/PlanCard'
 import { ContadorAnimado } from '../components/Animados'
 import { InfoStatus } from '../components/InfoStatus'
 import { calcRag, tipoResumido, RAG_COLOR, RAG_LABEL } from '../lib/pdcoCalc'
+import { useFiltroPersistente } from '../lib/filtrosPersistentes'
 import { usePdco } from '../lib/PdcoContext'
 import { api } from '../lib/api'
 
@@ -11,7 +12,8 @@ import { api } from '../lib/api'
 export default function Estrategicos() {
     const { user } = usePdco()
     const planos = useAsync(() => api.planos(user), [user], !!user)
-    const [areaFiltro, setAreaFiltro] = useState('todas')
+    // A área é compartilhada com as outras telas (lib/filtrosPersistentes.js) pelo NOME; aqui é a chave da área.
+    const [areaNome, setAreaNome] = useFiltroPersistente('area', '')
 
     const estrategicos = useMemo(() => (planos.dados ?? []).filter((p) => tipoResumido(p.subtipo) === 'Estratégico'), [planos.dados])
 
@@ -24,6 +26,9 @@ export default function Estrategicos() {
         }
         return [...mapa.values()].sort((a, b) => a.nome.localeCompare(b.nome))
     }, [estrategicos])
+
+    const areaFiltro = areaNome ? (areas.find((a) => a.nome === areaNome)?.chave ?? 'todas') : 'todas'
+    const setAreaFiltro = (chave) => setAreaNome(chave === 'todas' ? '' : (areas.find((a) => a.chave === chave)?.nome ?? ''))
 
     const filtrados = areaFiltro === 'todas' ? estrategicos : estrategicos.filter((p) => (p.area_codigo || p.area_nome || 'sem-area') === areaFiltro)
 

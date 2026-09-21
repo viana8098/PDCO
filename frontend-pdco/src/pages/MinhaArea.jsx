@@ -6,6 +6,7 @@ import { PlanCard } from '../components/PlanCard'
 import { PlanRow } from '../components/PlanRow'
 import { SearchableSelect } from '../components/SearchableSelect'
 import { pctConcluido } from '../lib/pdcoCalc'
+import { useFiltroPersistente } from '../lib/filtrosPersistentes'
 import { usePdco } from '../lib/PdcoContext'
 import { api } from '../lib/api'
 
@@ -17,11 +18,22 @@ import { api } from '../lib/api'
  */
 export default function MinhaArea() {
     const { user, administrador, nome } = usePdco()
-    const [view, setView] = useState('lista')
-    const [area, setArea] = useState('')
-    const [planoFiltro, setPlanoFiltro] = useState('')
+    // Filtros que sobrevivem à navegação (lib/filtrosPersistentes.js). A área é compartilhada com as outras telas.
+    const [view, setView] = useFiltroPersistente('visao-planos', 'lista')
+    const [areaEscolhida, setArea] = useFiltroPersistente('area', '')
+    const [planoEscolhido, setPlanoFiltro] = useFiltroPersistente('minha-area:plano', '')
+    // Só vale com o filtro na tela: quem não tem o filtro não pode ficar com um recorte invisível vindo de outra tela.
+    const mostrarFiltros = administrador
+    const area = mostrarFiltros ? areaEscolhida : ''
+    const planoFiltro = mostrarFiltros ? planoEscolhido : ''
 
     const filtros = useAsync(() => api.filtros(user), [user], !!user)
+    // Valor guardado que não existe mais nas opções (ex.: o escopo mudou) volta pra "todas".
+    useEffect(() => {
+        if (!mostrarFiltros || !filtros.dados) return
+        if (areaEscolhida && !filtros.dados.areas.some((o) => o.valor === areaEscolhida)) setArea('')
+        if (planoEscolhido && !filtros.dados.planos.some((o) => o.valor === planoEscolhido)) setPlanoFiltro('')
+    }, [mostrarFiltros, filtros.dados, areaEscolhida, planoEscolhido, setArea, setPlanoFiltro])
     const planos = useAsync(() => api.planos(user, { area, plano: planoFiltro }), [user, area, planoFiltro], !!user)
     // Só o admin precisa do total geral (pra comparar "filtrado" vs "empresa");
     // pro gestor comum a lista já vem restrita, os dois seriam iguais.
