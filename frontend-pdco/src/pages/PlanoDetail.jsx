@@ -9,7 +9,7 @@ import { IndicadoresCard } from '../components/IndicadoresCard'
 import { PlanoTimeline } from '../components/PlanoTimeline'
 import { RagBadge } from '../components/RagBadge'
 import { TipoChip } from '../components/TipoChip'
-import { calcRag, formatarData, tituloDoPlano, RAG_COLOR, RAG_LABEL } from '../lib/pdcoCalc'
+import { calcRag, formatarData, tipoResumido, tituloDoPlano, RAG_COLOR, RAG_LABEL } from '../lib/pdcoCalc'
 import { useFiltroPersistente } from '../lib/filtrosPersistentes'
 import { usePdco } from '../lib/PdcoContext'
 import { api } from '../lib/api'
@@ -43,6 +43,8 @@ export default function PlanoDetail() {
 
     const { plano, acoes, acompanhamento, indicadores } = detalhe.dados
     const rag = calcRag(plano, acompanhamento)
+    // Planos estratégicos não exibem o Diagnóstico da Subcultura nem os Resultados esperados (só os táticos).
+    const ehEstrategico = tipoResumido(plano.subtipo) === 'Estratégico'
     const cor = RAG_COLOR[rag.nivel]
     const totalAcompanhamentos = acompanhamento.reduce((s, q) => s + q.registros.length, 0)
     // A aba lista só os acompanhamentos do plano (ds_acompanhamentoplanoacao): a contagem acompanha a tabela.
@@ -94,10 +96,12 @@ export default function PlanoDetail() {
                 </div>
             </section>
 
-            <div className="pdco-secondary-row">
-                <CaixaRecolhivel titulo="Diagnóstico da Subcultura" texto={null} preservarQuebras />
-                <CaixaRecolhivel titulo="Resultados esperados" texto={plano.resultados_esperados} />
-            </div>
+            {!ehEstrategico && (
+                <div className="pdco-secondary-row">
+                    <CaixaRecolhivel titulo="Diagnóstico da Subcultura" texto={null} preservarQuebras />
+                    <CaixaRecolhivel titulo="Resultados esperados" texto={plano.resultados_esperados} />
+                </div>
+            )}
 
             <section className="pdco-panel">
                 <div className="pdco-plan-tabs">
