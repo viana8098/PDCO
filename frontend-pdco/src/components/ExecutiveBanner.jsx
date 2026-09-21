@@ -21,7 +21,7 @@ export function ExecutiveBanner({ titulo, totalPlanos, metricas }) {
             <div className="pdco-banner-gauges">
                 <p className="pdco-kicker pdco-kicker-info">
                     Conclusão de ações
-                    <InfoConclusao />
+                    <InfoConclusao comEmpresa={metricas.empresa != null} />
                 </p>
                 <div className="pdco-banner-gauges-row">
                     <CultureGauge score={metricas.area} label={metricas.empresa == null ? 'Meus planos' : 'Esta área'} suffix="%" />

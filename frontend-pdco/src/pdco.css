@@ -2721,3 +2721,12 @@ body {
 .pdco-app .pdco-info-balao p.pdco-info-subtitulo {
   margin: 0 0 5px;
 }
+
+/* "i" da Conclusão de ações: escopo dos anéis em rótulo + valor. */
+.pdco-app .pdco-info-escopo li {
+  display: flex;
+  gap: 8px;
+}
+.pdco-app .pdco-info-escopo strong {
+  flex: 0 0 76px;
+}
