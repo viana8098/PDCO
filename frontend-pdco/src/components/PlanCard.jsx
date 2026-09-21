@@ -18,7 +18,7 @@ export function PlanCard({ plano }) {
                         <span className="pdco-eyebrow">{plano.area_nome || 'Sem área'}</span>
                         <TipoChip subtipo={plano.subtipo} />
                     </div>
-                    <RagBadge nivel={rag.nivel} score={rag.score} />
+                    <RagBadge nivel={rag.nivel} score={rag.score} rag={rag} />
                 </div>
 
                 <h3 className="pdco-plan-card-title">{tituloDoPlano(plano)}</h3>

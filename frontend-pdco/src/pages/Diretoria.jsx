@@ -2,7 +2,7 @@ import { useMemo, useState } from 'react'
 import { Link, Navigate } from 'react-router-dom'
 import { useAsync } from '../lib/useAsync'
 import { SearchableSelect } from '../components/SearchableSelect'
-import { RegraStatus } from '../components/RegraStatus'
+import { InfoStatus } from '../components/InfoStatus'
 import { agruparPorArea, pctConcluido, tipoResumido, RAG_COLOR, RAG_LABEL } from '../lib/pdcoCalc'
 import { usePdco } from '../lib/PdcoContext'
 import { api } from '../lib/api'
@@ -75,7 +75,9 @@ export default function Diretoria() {
                 <Stat label="Total de ações" valor={totalAcoes} />
                 <Stat label="% ações concluídas" valor={`${pctAcoes}%`} />
                 <div className="pdco-panel pdco-stat pdco-stat-rag">
-                    <p className="pdco-stat-label">Distribuição por status</p>
+                    <p className="pdco-stat-label">
+                        Distribuição por status <InfoStatus />
+                    </p>
                     <div className="pdco-rag-bar">
                         {totalPlanos > 0 &&
                             STATUS.map((k) => contagem[k] > 0 && (
@@ -95,8 +97,6 @@ export default function Diretoria() {
                     </div>
                 </div>
             </div>
-
-            <RegraStatus />
 
             <div className="pdco-filters-row">
                 <div className="pdco-filter-pill">

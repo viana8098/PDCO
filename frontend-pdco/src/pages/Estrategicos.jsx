@@ -1,7 +1,7 @@
 import { useMemo, useState } from 'react'
 import { useAsync } from '../lib/useAsync'
 import { PlanCard } from '../components/PlanCard'
-import { RegraStatus } from '../components/RegraStatus'
+import { InfoStatus } from '../components/InfoStatus'
 import { calcRag, tipoResumido, RAG_COLOR, RAG_LABEL } from '../lib/pdcoCalc'
 import { usePdco } from '../lib/PdcoContext'
 import { api } from '../lib/api'
@@ -66,9 +66,8 @@ export default function Estrategicos() {
                         ● {contagem[k]} {RAG_LABEL[k]}
                     </span>
                 ))}
+                <InfoStatus />
             </div>
-
-            <RegraStatus />
 
             {filtrados.length === 0 ? (
                 <p className="pdco-vazio">Nenhum plano estratégico nesta área.</p>

@@ -29,7 +29,7 @@ export function PlanRow({ plano }) {
                 </div>
             </div>
             {rag.atrasadas > 0 && <span className="pdco-plan-row-atraso">{rag.atrasadas} atras.</span>}
-            <RagBadge nivel={rag.nivel} score={rag.score} />
+            <RagBadge nivel={rag.nivel} score={rag.score} rag={rag} />
         </Link>
     )
 }

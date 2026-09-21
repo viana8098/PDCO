@@ -2251,155 +2251,119 @@ body {
   background: var(--tatico);
 }
 
-/* ------------------------ Regra do status (Em dia / Atenção / Crítico) ------------------------ */
-.pdco-app .pdco-regra {
-  border: 1px solid var(--border);
-  border-radius: var(--radius-card);
-  background: rgba(255, 255, 255, 0.03);
-}
-.pdco-app .pdco-regra summary {
-  display: flex;
+/* ------------------------ "i" de informação do status (tooltip com a regra) ------------------------ */
+.pdco-app .pdco-rag-wrap {
+  display: inline-flex;
   align-items: center;
-  gap: 8px;
-  padding: 10px 14px;
-  font-size: 12.5px;
-  font-weight: 600;
-  color: var(--accent);
-  cursor: pointer;
-  list-style: none;
+  gap: 6px;
 }
-.pdco-app .pdco-regra summary::-webkit-details-marker {
-  display: none;
-}
-.pdco-app .pdco-regra summary::before {
-  content: 'i';
+.pdco-app .pdco-info {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  width: 16px;
-  height: 16px;
-  border: 1.5px solid var(--accent);
+  flex: none;
+  width: 15px;
+  height: 15px;
+  border: 1px solid currentColor;
   border-radius: 50%;
+  color: var(--text-muted);
+  font-family: Georgia, 'Times New Roman', serif;
   font-size: 10px;
-  font-weight: 700;
   font-style: italic;
-  flex: none;
+  font-weight: 700;
+  line-height: 1;
+  letter-spacing: 0;
+  text-transform: none;
+  opacity: 0.7;
+  cursor: help;
+  transition: opacity 0.15s ease, color 0.15s ease;
 }
-.pdco-app .pdco-regra summary::after {
-  content: '▾';
-  margin-left: auto;
-  transition: transform 0.15s ease;
+.pdco-app .pdco-info:hover,
+.pdco-app .pdco-info:focus-visible {
+  color: var(--accent);
+  opacity: 1;
 }
-.pdco-app .pdco-regra[open] summary::after {
-  transform: rotate(180deg);
-}
-.pdco-app .pdco-regra-corpo {
-  display: flex;
-  flex-direction: column;
-  gap: 12px;
-  padding: 0 14px 14px;
-  font-size: 12.5px;
-  line-height: 1.5;
-  color: var(--text-muted);
-}
-.pdco-app .pdco-regra-corpo p {
-  margin: 0;
-}
-.pdco-app .pdco-regra-niveis {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 8px 20px;
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-.pdco-app .pdco-regra-niveis li {
-  display: flex;
-  align-items: center;
-  gap: 7px;
-  color: var(--text);
-}
-.pdco-app .pdco-regra-bolinha {
-  width: 9px;
-  height: 9px;
-  border-radius: 50%;
-  flex: none;
-}
-.pdco-app .pdco-regra-tabela {
-  width: 100%;
-  border-collapse: collapse;
-  font-size: 12px;
-}
-.pdco-app .pdco-regra-tabela th {
-  padding: 6px 8px;
-  border-bottom: 1px solid var(--border);
-  font-size: 10px;
-  font-weight: 600;
-  letter-spacing: 0.4px;
-  text-align: left;
-  text-transform: uppercase;
-  color: var(--text-muted);
-}
-.pdco-app .pdco-regra-tabela td {
-  padding: 7px 8px;
-  border-bottom: 1px solid var(--border);
-  vertical-align: top;
-  color: var(--text);
-}
-.pdco-app .pdco-regra-tabela td small {
-  display: block;
-  font-size: 11px;
-  font-weight: 400;
-  color: var(--text-muted);
-}
-.pdco-app .pdco-regra-tabela th:last-child,
-.pdco-app .pdco-regra-tabela td:last-child {
-  text-align: right;
-  white-space: nowrap;
-}
-.pdco-app .pdco-regra-pts-neg {
-  color: var(--red);
-}
-.pdco-app .pdco-regra-nota {
+.pdco-app .pdco-info-balao {
+  position: fixed;
+  z-index: 1000;
+  width: min(360px, calc(100vw - 16px));
+  padding: 12px 14px;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  background: #0f1e38;
+  box-shadow: 0 10px 28px rgba(0, 0, 0, 0.45);
+  font-family: var(--font-body);
   font-size: 11.5px;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 1.5;
+  letter-spacing: 0;
+  text-align: left;
+  text-transform: none;
+  color: var(--text-muted);
+  pointer-events: none;
 }
-.pdco-app .pdco-regra-passos {
-  margin-top: 4px;
-  padding-top: 12px;
-  border-top: 1px solid var(--border);
+.pdco-app .pdco-info-balao p {
+  margin: 0 0 6px;
 }
-.pdco-app .pdco-regra-titulo {
-  margin: 0 0 8px;
-  font-size: 11px;
-  font-weight: 600;
+.pdco-app .pdco-info-balao strong,
+.pdco-app .pdco-info-balao b {
+  color: var(--text);
+}
+.pdco-app .pdco-info-titulo {
+  font-size: 10.5px;
+  font-weight: 700;
   letter-spacing: 0.5px;
   text-transform: uppercase;
-  color: var(--text-muted);
+  color: var(--accent);
 }
-.pdco-app .pdco-regra-passos ul {
+.pdco-app .pdco-info-balao ul {
   display: flex;
   flex-direction: column;
-  gap: 6px;
-  margin: 0;
+  gap: 5px;
+  margin: 0 0 8px;
   padding: 0;
   list-style: none;
 }
-.pdco-app .pdco-regra-linha {
+.pdco-app .pdco-info-niveis {
+  flex-direction: row !important;
+  flex-wrap: wrap;
+  gap: 4px 14px !important;
+}
+.pdco-app .pdco-info-niveis li {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.pdco-app .pdco-info-bolinha {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  flex: none;
+}
+.pdco-app .pdco-info-plano {
+  margin-top: 4px;
+  padding-top: 10px;
+  border-top: 1px solid var(--border);
+}
+.pdco-app .pdco-info-plano ul {
+  margin-bottom: 0;
+}
+.pdco-app .pdco-info-plano li {
   display: flex;
   justify-content: space-between;
-  gap: 14px;
-  font-size: 12.5px;
-  line-height: 1.45;
-  color: var(--text);
+  gap: 12px;
 }
-.pdco-app .pdco-regra-pts {
+.pdco-app .pdco-info-plano li b {
   flex: none;
-  font-weight: 700;
   font-variant-numeric: tabular-nums;
 }
-.pdco-app .pdco-regra-total {
-  margin-top: 4px;
-  padding-top: 8px;
+.pdco-app .pdco-info-neg {
+  color: var(--red) !important;
+}
+.pdco-app .pdco-info-resultado {
+  margin-top: 2px;
+  padding-top: 6px;
   border-top: 1px solid;
-  font-weight: 600;
+  color: var(--text);
 }

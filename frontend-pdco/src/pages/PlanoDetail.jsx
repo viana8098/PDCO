@@ -8,7 +8,6 @@ import { CaixaRecolhivel } from '../components/CaixaRecolhivel'
 import { IndicadoresCard } from '../components/IndicadoresCard'
 import { PlanoTimeline } from '../components/PlanoTimeline'
 import { RagBadge } from '../components/RagBadge'
-import { ComoChegamos, RegraStatus } from '../components/RegraStatus'
 import { TipoChip } from '../components/TipoChip'
 import { calcRag, formatarData, tituloDoPlano, RAG_COLOR, RAG_LABEL } from '../lib/pdcoCalc'
 import { usePdco } from '../lib/PdcoContext'
@@ -75,7 +74,7 @@ export default function PlanoDetail() {
                             <span>Responsável: {plano.responsavel || '—'}</span>
                         </div>
                     </div>
-                    <RagBadge nivel={rag.nivel} score={rag.score} size="md" />
+                    <RagBadge nivel={rag.nivel} score={rag.score} size="md" rag={rag} />
                 </div>
 
                 <div className="pdco-detail-grid">
@@ -89,8 +88,7 @@ export default function PlanoDetail() {
                             <MiniStat label="Execução" valor={plano.execucao === null ? '—' : `${Math.round(plano.execucao * 100)}%`} />
                             <MiniStat label="Acompanh." valor={totalAcompanhamentos} />
                         </div>
-                        <ComoChegamos rag={rag} />
-                        <RegraStatus />
+                        <p className="pdco-rag-motivos">{rag.motivos.join(' · ')}</p>
                     </div>
                     <PlanoTimeline key={cdPlanoAcao} acoes={acoes} mesSelecionado={mesSelecionado} onSelecionarMes={selecionarMes} />
                 </div>

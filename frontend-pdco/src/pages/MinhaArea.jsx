@@ -1,7 +1,6 @@
 import { useEffect, useState } from 'react'
 import { useAsync } from '../lib/useAsync'
 import { ExecutiveBanner } from '../components/ExecutiveBanner'
-import { RegraStatus } from '../components/RegraStatus'
 import { PlanCard } from '../components/PlanCard'
 import { PlanRow } from '../components/PlanRow'
 import { SearchableSelect } from '../components/SearchableSelect'
@@ -47,8 +46,6 @@ export default function MinhaArea() {
     return (
         <div className="pdco-page">
             <ExecutiveBanner titulo={titulo} totalPlanos={planos.dados.length} metricas={metricas} />
-
-            <RegraStatus />
 
             {administrador && (
                 <div className="pdco-filters-row">
