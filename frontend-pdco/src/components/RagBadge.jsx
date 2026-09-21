@@ -1,10 +1,11 @@
-import { RAG_BG, RAG_COLOR, RAG_LABEL } from '../lib/pdcoCalc'
+import { RAG_BG, RAG_COLOR, RAG_FAIXA, RAG_LABEL } from '../lib/pdcoCalc'
 
 // Badge "Em dia/Atenção/Crítico · score" — resumo de saúde do plano.
 export function RagBadge({ nivel, score, size = 'sm' }) {
     return (
         <span
             className={`pdco-rag-badge pdco-rag-badge-${size}`}
+            title={typeof score === 'number' ? `${RAG_LABEL[nivel]}: ${score} de 100 pontos (${RAG_FAIXA[nivel]})` : RAG_LABEL[nivel]}
             style={{ backgroundColor: RAG_BG[nivel], color: RAG_COLOR[nivel], borderColor: RAG_COLOR[nivel] }}
         >
             <span className="pdco-rag-dot" style={{ backgroundColor: RAG_COLOR[nivel] }} />

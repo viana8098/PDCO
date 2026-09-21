@@ -10,6 +10,34 @@ export const RAG_BG = { verde: 'rgba(52,211,153,0.15)', amarelo: 'rgba(251,191,3
 
 const DIA_MS = 24 * 60 * 60 * 1000
 
+// ---------------------------------------------------------------------------
+// Regra do status (Em dia / Atenção / Crítico)
+// Todo plano parte de RAG_BASE pontos e perde pontos por execução baixa, ações
+// atrasadas e falta de acompanhamento. Estes valores são a ÚNICA fonte da regra:
+// o cálculo (calcRag) e a explicação mostrada ao usuário (RegraStatus) leem daqui.
+// As chaves internas (verde/amarelo/vermelho) não mudam; o texto vem de RAG_LABEL.
+// ---------------------------------------------------------------------------
+export const RAG_BASE = 100
+/** Score mínimo para cada nível: >= verde é Em dia; >= amarelo é Atenção; abaixo disso, Crítico. */
+export const RAG_LIMITES = { verde: 70, amarelo: 45 }
+export const RAG_FAIXA = { verde: '70 a 100 pontos', amarelo: '45 a 69 pontos', vermelho: 'menos de 45 pontos' }
+export const RAG_REGRA = {
+  execucaoBoa: 0.8, // >= 80% das ações concluídas: sem perda
+  execucaoParcial: 0.4, // de 40% a 79%: perda parcial; abaixo de 40%: perda maior
+  diasAcompanhamentoRecente: 60,
+  penalidades: {
+    semAcoes: 40,
+    execucaoParcial: 25,
+    execucaoBaixa: 50,
+    porAtraso: 10,
+    maxAtrasos: 30,
+    semAcompanhamento: 20,
+    acompanhamentoAntigo: 10,
+  },
+}
+
+const pluralDias = (n) => (n === 1 ? '1 dia' : `${n} dias`)
+
 /**
  * Quantidade e data do acompanhamento mais recente de um plano. A fonte é
  * `plano.resumo_acompanhamentos` (todos os registros; vem junto da listagem e
@@ -36,53 +64,76 @@ function resumoDeAcompanhamentos(plano, quadrantes) {
  */
 export function calcRag(plano, quadrantesAcompanhamento) {
   const motivos = []
-  let score = 100
+  // Passo a passo dos pontos (o que cada critério tirou), para explicar o status ao usuário.
+  const criterios = []
+  const P = RAG_REGRA.penalidades
+  let score = RAG_BASE
   const resumo = plano.resumo_acoes
   const total = resumo?.total ?? 0
   const concluidas = resumo?.concluidas ?? 0
   const atrasadas = resumo?.atrasadas ?? 0
   const pct = total > 0 ? concluidas / total : 0
+  const pctTxt = Math.round(pct * 100)
+  const execucao = (situacao, pontos) => criterios.push({ chave: 'execucao', titulo: 'Execução das ações', situacao, pontos })
 
   if (total === 0) {
-    score -= 40
+    score -= P.semAcoes
     motivos.push('Plano sem ações cadastradas')
-  } else if (pct >= 0.8) {
-    motivos.push(`${Math.round(pct * 100)}% das ações concluídas`)
-  } else if (pct >= 0.4) {
-    score -= 25
-    motivos.push(`${Math.round(pct * 100)}% das ações concluídas (parcial)`)
+    execucao('Plano sem ações cadastradas', -P.semAcoes)
+  } else if (pct >= RAG_REGRA.execucaoBoa) {
+    motivos.push(`${pctTxt}% das ações concluídas`)
+    execucao(`${concluidas} de ${total} ações concluídas (${pctTxt}%) — 80% ou mais`, 0)
+  } else if (pct >= RAG_REGRA.execucaoParcial) {
+    score -= P.execucaoParcial
+    motivos.push(`${pctTxt}% das ações concluídas (parcial)`)
+    execucao(`${concluidas} de ${total} ações concluídas (${pctTxt}%) — de 40% a 79%`, -P.execucaoParcial)
   } else {
-    score -= 50
-    motivos.push(`Apenas ${Math.round(pct * 100)}% das ações concluídas`)
+    score -= P.execucaoBaixa
+    motivos.push(`Apenas ${pctTxt}% das ações concluídas`)
+    execucao(`${concluidas} de ${total} ações concluídas (${pctTxt}%) — menos de 40%`, -P.execucaoBaixa)
   }
 
   if (atrasadas > 0) {
-    score -= Math.min(atrasadas * 10, 30)
+    const perda = Math.min(atrasadas * P.porAtraso, P.maxAtrasos)
+    score -= perda
     motivos.push(`${atrasadas} ação(ões) atrasada(s)`)
+    criterios.push({
+      chave: 'atrasos',
+      titulo: 'Ações atrasadas',
+      situacao: `${atrasadas} ${atrasadas === 1 ? 'ação atrasada' : 'ações atrasadas'} (−${P.porAtraso} por ação, no máximo −${P.maxAtrasos})`,
+      pontos: -perda,
+    })
+  } else {
+    criterios.push({ chave: 'atrasos', titulo: 'Ações atrasadas', situacao: 'Nenhuma ação atrasada', pontos: 0 })
   }
 
   const acompanhamentos = resumoDeAcompanhamentos(plano, quadrantesAcompanhamento)
   if (acompanhamentos) {
+    const acompanhamento = (situacao, pontos) => criterios.push({ chave: 'acompanhamento', titulo: 'Acompanhamento', situacao, pontos })
     if (acompanhamentos.total === 0) {
-      score -= 20
+      score -= P.semAcompanhamento
       motivos.push('Sem acompanhamentos registrados')
+      acompanhamento('Nenhum acompanhamento registrado', -P.semAcompanhamento)
     } else {
       const dias = (Date.now() - new Date(acompanhamentos.ultimo).getTime()) / DIA_MS
-      if (dias > 60) {
-        score -= 10
+      const quando = dias < 1 ? 'hoje' : `há ${pluralDias(Math.floor(dias))}`
+      if (dias > RAG_REGRA.diasAcompanhamentoRecente) {
+        score -= P.acompanhamentoAntigo
         motivos.push('Sem acompanhamento recente (>60 dias)')
+        acompanhamento(`Último acompanhamento ${quando} — mais de ${RAG_REGRA.diasAcompanhamentoRecente} dias sem registro`, -P.acompanhamentoAntigo)
       } else {
         motivos.push('Acompanhamento recente registrado')
+        acompanhamento(`Último acompanhamento ${quando} — dentro de ${RAG_REGRA.diasAcompanhamentoRecente} dias`, 0)
       }
     }
   }
 
-  score = Math.max(0, Math.min(100, Math.round(score)))
+  score = Math.max(0, Math.min(RAG_BASE, Math.round(score)))
   let nivel = 'vermelho'
-  if (score >= 70) nivel = 'verde'
-  else if (score >= 45) nivel = 'amarelo'
+  if (score >= RAG_LIMITES.verde) nivel = 'verde'
+  else if (score >= RAG_LIMITES.amarelo) nivel = 'amarelo'
 
-  return { nivel, score, motivos, pct: Math.round(pct * 100), concluidas, total, atrasadas }
+  return { nivel, score, motivos, criterios, pct: pctTxt, concluidas, total, atrasadas }
 }
 
 /** Agrupa a lista de planos (já no escopo do usuário) por área, com o rollup RAG de cada uma. */

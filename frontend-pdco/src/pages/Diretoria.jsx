@@ -2,6 +2,7 @@ import { useMemo, useState } from 'react'
 import { Link, Navigate } from 'react-router-dom'
 import { useAsync } from '../lib/useAsync'
 import { SearchableSelect } from '../components/SearchableSelect'
+import { RegraStatus } from '../components/RegraStatus'
 import { agruparPorArea, pctConcluido, tipoResumido, RAG_COLOR, RAG_LABEL } from '../lib/pdcoCalc'
 import { usePdco } from '../lib/PdcoContext'
 import { api } from '../lib/api'
@@ -94,6 +95,8 @@ export default function Diretoria() {
                     </div>
                 </div>
             </div>
+
+            <RegraStatus />
 
             <div className="pdco-filters-row">
                 <div className="pdco-filter-pill">
