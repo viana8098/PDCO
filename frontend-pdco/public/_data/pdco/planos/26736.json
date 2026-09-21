@@ -25,6 +25,7 @@
     {
       "cd_acao": "26808",
       "nome": "Mapear Todos Os Rituais De Gestão Existentes (etapa 1 - Diagnóstico Estruturado)",
+      "descricao": null,
       "status": "Concluído",
       "prazo_inicial": "2026-07-01",
       "prazo_final": "2026-07-03",
@@ -34,6 +35,7 @@
     {
       "cd_acao": "27185",
       "nome": "Documentar Objetivo, Frequência, Pautas E Participantes (etapa 1 - Diagnóstico Estruturado)",
+      "descricao": null,
       "status": "Concluído",
       "prazo_inicial": "2026-07-06",
       "prazo_final": "2026-07-10",
@@ -43,6 +45,7 @@
     {
       "cd_acao": "27186",
       "nome": "Aplicar Pesquisa De Percepção Com Participantes Chave (etapa 1 - Diagnóstico Estruturado)",
+      "descricao": null,
       "status": "Em Andamento",
       "prazo_inicial": "2026-07-14",
       "prazo_final": "2026-08-20",
@@ -52,6 +55,7 @@
     {
       "cd_acao": "27187",
       "nome": "Realizar Avaliação Do Diagnóstico (etapa 1 - Diagnóstico Estruturado)",
+      "descricao": null,
       "status": "Planejado",
       "prazo_inicial": "2026-08-20",
       "prazo_final": "2026-09-15",
@@ -61,6 +65,7 @@
     {
       "cd_acao": "27190",
       "nome": "Mapear As Oportunidades De Melhoria E Submeter Para Validação Da Proposta De Modelo (etapa 2 - Proposição De Melhoria)",
+      "descricao": null,
       "status": "Planejado",
       "prazo_inicial": "2026-09-15",
       "prazo_final": "2026-10-20",
@@ -70,6 +75,7 @@
     {
       "cd_acao": "27192",
       "nome": "Atualizar Documentação Dos Rituais Com As Melhorias Aplicadas (papéis, Objetivos E Cadência Para Cada Rito)  (etapa 2 - Proposição De Melhoria)",
+      "descricao": null,
       "status": "Planejado",
       "prazo_inicial": "2026-10-20",
       "prazo_final": "2026-10-20",
@@ -79,6 +85,7 @@
     {
       "cd_acao": "27198",
       "nome": "Comunicar O Novo Modelo Para Toda A Organização (etapa 4 - Capacitação E Comunicação)",
+      "descricao": null,
       "status": "Planejado",
       "prazo_inicial": "2026-12-01",
       "prazo_final": "2026-12-18",

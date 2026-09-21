@@ -26,6 +26,7 @@ interface PlanoAcaoRow {
   dt_fimprevistaplanoacao: Date | null;
   cd_acao: string | null;
   ds_oqueacao: string | null;
+  ds_porqueacao: string | null;
   st_acao: string | null;
   dt_inicioprevistaacao: Date | null;
   dt_fimprevistaacao: Date | null;
@@ -235,6 +236,8 @@ function transformarAcao(linha: PlanoAcaoRow): AcaoPdco {
   return {
     cd_acao: linha.cd_acao!,
     nome: linha.ds_oqueacao ?? '',
+    // Descrição da ação (`ds_porqueacao`) — vazia em boa parte das ações.
+    descricao: linha.ds_porqueacao?.trim() || null,
     status: linha.st_acao ?? '',
     prazo_inicial: dataIso(linha.dt_inicioprevistaacao ?? linha.dt_iniciorealacao),
     prazo_final: dataIso(linha.dt_fimprevistaacao ?? linha.dt_fimrealacao),

@@ -25,6 +25,7 @@
     {
       "cd_acao": "32715",
       "nome": "Mapear Todos Os Planos De Ação Da Gep E Classificar: (a) Impacto Direto Em Resultado Financeiro, (b) Impacto Indireto, (c) Sem Relação Com Indicadores Críticos. Descontinuar Ou Suspender Os De Tipo C.",
+      "descricao": null,
       "status": "Concluído",
       "prazo_inicial": "2026-07-01",
       "prazo_final": "2026-07-30",
@@ -34,6 +35,7 @@
     {
       "cd_acao": "32716",
       "nome": "Criar Painel De 3 Indicadores Críticos (receita Executada, Gap Orçamentário, Custo Por Unidade). Definir Responsável Por Indicador Dentro Da Equipe. Incluir Resultado Orçamentário Como Pauta Fixa Nas Cerimônias.",
+      "descricao": null,
       "status": "Em Andamento",
       "prazo_inicial": "2026-07-01",
       "prazo_final": "2026-08-31",
@@ -43,6 +45,7 @@
     {
       "cd_acao": "32717",
       "nome": "Ativar Ritual 'visão De Resultado' (45min) + Check-in Quinzenal De 15min. Monitorar Gap E Decisões De Repriorização Mensalmente.",
+      "descricao": null,
       "status": "Em Andamento",
       "prazo_inicial": "2026-09-09",
       "prazo_final": "2027-04-16",
@@ -52,6 +55,7 @@
     {
       "cd_acao": "32718",
       "nome": "Medir Impacto: Evolução Do Resultado Orçamentário Ep, % De Planos Com Conexão A Indicadores Críticos, Percepção Da Equipe Sobre Clareza De Prioridade. Decidir Continuidade E Ajustes.",
+      "descricao": null,
       "status": "Planejado",
       "prazo_inicial": "2027-04-19",
       "prazo_final": "2027-04-30",

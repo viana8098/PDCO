@@ -52,6 +52,8 @@ export interface PlanoPdco {
 export interface AcaoPdco {
   cd_acao: string;
   nome: string;
+  /** Descrição da ação (`ds_porqueacao` do dw); null quando não cadastrada. */
+  descricao: string | null;
   status: string;
   prazo_inicial: string | null;
   prazo_final: string | null;

@@ -25,6 +25,7 @@
     {
       "cd_acao": "26946",
       "nome": "Revisar As Competências Estratégicas Que Orientam O Desenvolvimento De Líderes E Agentes.",
+      "descricao": null,
       "status": "Concluído",
       "prazo_inicial": "2026-01-05",
       "prazo_final": "2026-02-27",
@@ -34,6 +35,7 @@
     {
       "cd_acao": "26947",
       "nome": "Estruturar O Plano Corporativo De Treinamentos Por Nível De Liderança E Papel De Atuação Dos Agentes De Gestão",
+      "descricao": null,
       "status": "Em Andamento",
       "prazo_inicial": "2026-07-01",
       "prazo_final": "2026-08-31",
@@ -43,6 +45,7 @@
     {
       "cd_acao": "26959",
       "nome": "Executar As Trilhas De Aprendizagem E Acompanhar A Evolução Dos Participantes.",
+      "descricao": null,
       "status": "Planejado",
       "prazo_inicial": "2026-06-09",
       "prazo_final": "2026-12-18",
@@ -52,6 +55,7 @@
     {
       "cd_acao": "26960",
       "nome": "Monitorar Evolução Das Competências Dos Participantes.",
+      "descricao": null,
       "status": "Suspenso",
       "prazo_inicial": "2026-07-01",
       "prazo_final": "2026-12-18",
@@ -61,6 +65,7 @@
     {
       "cd_acao": "27120",
       "nome": "Avaliar O Impacto Dos Treinamentos Na Performance, Comportamento E Resultados Das Equipes.",
+      "descricao": null,
       "status": "Planejado",
       "prazo_inicial": "2026-10-01",
       "prazo_final": "2026-11-30",
@@ -70,6 +75,7 @@
     {
       "cd_acao": "28672",
       "nome": "Acompanhar O Processo De Coaching Executivo Para Líderes Específicos, Garantindo O Desenvolvimento Contínuo De Suas Competências",
+      "descricao": null,
       "status": "Concluído",
       "prazo_inicial": "2026-08-31",
       "prazo_final": "2026-08-31",
@@ -79,6 +85,7 @@
     {
       "cd_acao": "28673",
       "nome": "Criar O Modelo De Landpage Com O Modelo De Gestão Sesi E Senai Com Base Em 11 Pilares",
+      "descricao": null,
       "status": "Planejado",
       "prazo_inicial": "2026-08-01",
       "prazo_final": "2026-08-31",
@@ -88,6 +95,7 @@
     {
       "cd_acao": "28675",
       "nome": "Divulgar O Modelo De Gestão Institucionalmente",
+      "descricao": null,
       "status": "Planejado",
       "prazo_inicial": "2026-09-01",
       "prazo_final": "2026-09-30",
@@ -97,6 +105,7 @@
     {
       "cd_acao": "30966",
       "nome": "Identificar Gaps Críticos De Liderança Base: Diagnóstico Cultural + Avaliação De Desempenho+ Clima Organizacional. Foco Em:  Accountability, Feedback, Tomada De Decisão E Gestão De  Performance.",
+      "descricao": null,
       "status": "Planejado",
       "prazo_inicial": "2026-06-05",
       "prazo_final": "2026-12-18",
@@ -106,6 +115,7 @@
     {
       "cd_acao": "30967",
       "nome": "Aplicar Assesment Lfr  De Cultura Organizacional Em Líderes",
+      "descricao": null,
       "status": "Em Andamento",
       "prazo_inicial": "2026-08-10",
       "prazo_final": "2026-12-18",
@@ -115,6 +125,7 @@
     {
       "cd_acao": "30968",
       "nome": "Criar Mecanismo De Acompanhamento Contínuo Avaliação Da Liderança",
+      "descricao": null,
       "status": "Cancelado",
       "prazo_inicial": "2026-10-01",
       "prazo_final": "2026-10-15",
@@ -124,6 +135,7 @@
     {
       "cd_acao": "30969",
       "nome": "Acompanhar A Logística De Capacitação Líderes: Liderando Mudanças",
+      "descricao": null,
       "status": "Em Andamento",
       "prazo_inicial": "2026-10-12",
       "prazo_final": "2026-10-12",
@@ -133,6 +145,7 @@
     {
       "cd_acao": "30970",
       "nome": "Acompanhar Logística De Capacitação Lideres: Liderando A Cultura",
+      "descricao": null,
       "status": "Em Andamento",
       "prazo_inicial": "2026-10-12",
       "prazo_final": "2026-10-12",
@@ -142,6 +155,7 @@
     {
       "cd_acao": "30971",
       "nome": "Acompanhar Logística De Capacitação Líderes: Liderança Baseada Em Valores + Lfr",
+      "descricao": null,
       "status": "Em Andamento",
       "prazo_inicial": "2026-10-12",
       "prazo_final": "2026-12-12",

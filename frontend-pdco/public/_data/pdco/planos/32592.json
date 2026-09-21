@@ -25,6 +25,7 @@
     {
       "cd_acao": "32595",
       "nome": "Integrar Suprimentos Ao Planejamento Institucional",
+      "descricao": "Integrar As Necessidades Previstas Pelo Sesi E Senai À Atuação De Suprimentos, Permitindo Antecipar Demandas, Organizar As Carteiras E Direcionar As Aquisições Com Base No Planejamento Institucional.",
       "status": "Concluído",
       "prazo_inicial": "2026-08-26",
       "prazo_final": "2026-09-14",
@@ -34,6 +35,7 @@
     {
       "cd_acao": "32730",
       "nome": "Analisar O Planejamento De Aquisições 2027",
+      "descricao": "Identificar Os Principais Gaps De Cobertura E Oportunidades De Atuação Antecipada, Direcionando Os Esforços De Suprimentos Para As Necessidades De Maior Impacto E Criticidade.",
       "status": "Concluído",
       "prazo_inicial": "2026-09-01",
       "prazo_final": "2026-09-11",
@@ -43,6 +45,7 @@
     {
       "cd_acao": "32731",
       "nome": "Construir O Perfil Estratégico De Consumo (histórico, Demanda, Análise Por Categoria)",
+      "descricao": "Conhecer O Comportamento Das Categorias Prioritárias Para Fundamentar As Decisões De Contratação E Identificar Oportunidades De Padronização, Consolidação De Demanda E Ganho De Eficiência.",
       "status": "Em Andamento",
       "prazo_inicial": "2026-09-14",
       "prazo_final": "2026-09-30",
@@ -52,6 +55,7 @@
     {
       "cd_acao": "32732",
       "nome": "Definir Estratégica De Contratação Das Categorias Prioritárias",
+      "descricao": "Definir A Solução De Contratação Mais Adequada Para Cada Categoria, Considerando O Perfil Da Demanda E Evitando Compras Pontuais, Urgências E Decisões Sem Planejamento.",
       "status": "Planejado",
       "prazo_inicial": "2026-09-25",
       "prazo_final": "2026-09-30",
@@ -61,6 +65,7 @@
     {
       "cd_acao": "32733",
       "nome": "Executar E Acompanhar Renovações E Novas Licitações Priorizadas",
+      "descricao": "Transformar As Estratégias Definidas Em Processos Efetivos De Contratação, Ampliando A Cobertura Das Necessidades Planejadas E Reduzindo Riscos De Compras Emergenciais E Desabastecimento.",
       "status": "Planejado",
       "prazo_inicial": "2026-10-01",
       "prazo_final": "2026-11-30",
@@ -70,6 +75,7 @@
     {
       "cd_acao": "32734",
       "nome": "Consolidar E Implantar O Plano Integrado De Aquisições",
+      "descricao": "Institucionalizar O Modelo De Suprimentos Estratégico, Assegurando Governança, Responsabilidades, Previsibilidade E Acompanhamento Contínuo Das Aquisições Planejadas.",
       "status": "Planejado",
       "prazo_inicial": "2026-12-01",
       "prazo_final": "2026-12-18",

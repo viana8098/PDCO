@@ -25,6 +25,7 @@
     {
       "cd_acao": "32769",
       "nome": "Padrão Mínimo De Comunicação E Documentação Técnica",
+      "descricao": "Garantir Maior Organização, Rastreabilidade E Continuidade Das Entregas, Reduzindo Perda De Informações E Dependência Do Conhecimento Individual.\r\n\r\nkr´s Impactados:\r\n\r\nalcançar 100% Dos Projetos E Demandas Relevantes Registrados No Template Padrão. \r\n\r\nmanter Pelo Menos 90% Dos Registros Ativos Atualizados Semanalmente. \r\n\r\ngarantir Que 100% Das Entregas De Bi, Dados, Estudos Ou Sistemas Tenham Regras De Negócio E Bases Utilizadas Documentadas. \r\n\r\nreduzir Em 30% As Ocorrências De Retrabalho Associadas À Falta De Documentação Ou Falha De Comunicação Técnica.",
       "status": "Planejado",
       "prazo_inicial": "2026-07-01",
       "prazo_final": "2026-09-30",
@@ -34,6 +35,7 @@
     {
       "cd_acao": "32770",
       "nome": "Novo Modelo De Gestão Por Entregas Do Observatório",
+      "descricao": "Tornar A Execução Das Demandas Mais Ágil E Orientada A Resultados, Reduzindo Etapas Desnecessárias E Melhorando O Cumprimento Dos Prazos.\r\n\r\nkr´s Impactados:\r\n\r\nreduzir O Tempo Médio De Execução De Demandas Internas. \r\naumentar O Percentual De Entregas Concluídas Dentro Do Prazo Acordado.",
       "status": "Planejado",
       "prazo_inicial": "2026-07-01",
       "prazo_final": "2026-09-30",

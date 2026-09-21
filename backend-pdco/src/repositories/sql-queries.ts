@@ -17,7 +17,7 @@ export const PLANOS_E_ACOES = `
       cd_unidadeplano, ds_unidadeplano,
       ds_loginrquemplanoacao,
       dt_inicioplanoacao, dt_fimplanoacao, dt_inicioprevistaplanoacao, dt_fimprevistaplanoacao,
-      cd_acao, ds_oqueacao, st_acao,
+      cd_acao, ds_oqueacao, ds_porqueacao, st_acao,
       dt_inicioprevistaacao, dt_fimprevistaacao, dt_iniciorealacao, dt_fimrealacao, ds_loginrquemacao
   FROM dw.fato_planejamento_planodeacao
   WHERE ${FILTRO_SUBTIPO_PDCO}

@@ -25,6 +25,7 @@
     {
       "cd_acao": "30855",
       "nome": "Definir Metodologia De Auditoria De Processos E Qualidade",
+      "descricao": "Padronizar As Avaliações De Conformidade, Garantindo Previsibilidade, Rastreabilidade E Rigor Técnico.",
       "status": "Concluído",
       "prazo_inicial": "2026-02-01",
       "prazo_final": "2026-03-13",
@@ -34,6 +35,7 @@
     {
       "cd_acao": "30856",
       "nome": "Implantar O Ciclo De Auditoria Metrologia",
+      "descricao": "Identificar Desvios Operacionais Preventivamente E Assegurar Que As Rotinas Executadas Sigam Os Fluxos Homologados.",
       "status": "Planejado",
       "prazo_inicial": "2026-06-05",
       "prazo_final": "2026-12-18",
@@ -43,6 +45,7 @@
     {
       "cd_acao": "30858",
       "nome": "Implantar O Ciclo De Auditoria Ona",
+      "descricao": "Garantir A Eliminação Da Causa Raiz Dos Problemas, Mitigando Riscos De Reincidência De Falhas Operacionais.",
       "status": "Planejado",
       "prazo_inicial": "2026-02-01",
       "prazo_final": "2026-12-04",
@@ -52,6 +55,7 @@
     {
       "cd_acao": "31050",
       "nome": "Desenvolver Instrumentos De Auditoria",
+      "descricao": null,
       "status": "Em Andamento",
       "prazo_inicial": "2026-06-08",
       "prazo_final": "2026-09-30",
@@ -61,6 +65,7 @@
     {
       "cd_acao": "31051",
       "nome": "Definir Governança Do Programa",
+      "descricao": null,
       "status": "Concluído",
       "prazo_inicial": "2026-06-08",
       "prazo_final": "2026-06-30",
@@ -70,6 +75,7 @@
     {
       "cd_acao": "31052",
       "nome": "Capacitar Auditores E Gestores",
+      "descricao": null,
       "status": "Em Andamento",
       "prazo_inicial": "2026-06-08",
       "prazo_final": "2026-10-31",
@@ -79,6 +85,7 @@
     {
       "cd_acao": "31053",
       "nome": "Avaliar Indicadores De Auditorias",
+      "descricao": null,
       "status": "Em Andamento",
       "prazo_inicial": "2026-06-08",
       "prazo_final": "2026-10-31",

@@ -2629,3 +2629,22 @@ body {
   font-size: 12px;
   color: var(--text-muted);
 }
+
+/* Descrição da ação (ds_porqueacao): entre "Pertence ao plano" e os cartões de responsável/prazos. */
+.pdco-app .pdco-acao-descricao {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+.pdco-app .pdco-acao-descricao-texto {
+  margin: 0;
+  font-size: 13.5px;
+  line-height: 1.6;
+  color: var(--text);
+  white-space: pre-line;
+  overflow-wrap: anywhere;
+}
+.pdco-app .pdco-acao-descricao-vazia {
+  color: var(--text-muted);
+  font-style: italic;
+}

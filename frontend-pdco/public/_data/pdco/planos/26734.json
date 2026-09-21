@@ -25,6 +25,7 @@
     {
       "cd_acao": "26987",
       "nome": "Mapear Lacunas De Competências Por Área E Cargo, Com Base Nos Resultados Da Avaliação De Desempenho  E Estratégia.",
+      "descricao": null,
       "status": "Planejado",
       "prazo_inicial": "2026-09-01",
       "prazo_final": "2026-11-30",
@@ -34,6 +35,7 @@
     {
       "cd_acao": "26988",
       "nome": "Atualizar Descrições De Cargos Para Garantir Coerência Entre Responsabilidades, Entregas E Competências Críticas.",
+      "descricao": null,
       "status": "Concluído",
       "prazo_inicial": "2026-01-05",
       "prazo_final": "2026-04-30",
@@ -43,6 +45,7 @@
     {
       "cd_acao": "26989",
       "nome": "Ofertar Trilhas Formativas Segmentadas Por Nível De Carreira (operacional, Técnico, Especialista, Liderança).",
+      "descricao": null,
       "status": "Planejado",
       "prazo_inicial": "2026-09-01",
       "prazo_final": "2026-12-31",
@@ -52,6 +55,7 @@
     {
       "cd_acao": "26990",
       "nome": "Incorporar Competências Nos Pdi’s Com Sugestões De Ações De Desenvolvimento E Práticas No Trabalho.",
+      "descricao": null,
       "status": "Suspenso",
       "prazo_inicial": "2026-09-25",
       "prazo_final": "2026-09-27",
@@ -61,6 +65,7 @@
     {
       "cd_acao": "26991",
       "nome": "Monitorar Evolução Das Competências Críticas",
+      "descricao": null,
       "status": "Planejado",
       "prazo_inicial": "2026-04-13",
       "prazo_final": "2026-12-18",
@@ -70,6 +75,7 @@
     {
       "cd_acao": "30281",
       "nome": "Desenvolver Competências Em I.a.",
+      "descricao": null,
       "status": "Em Andamento",
       "prazo_inicial": "2026-05-06",
       "prazo_final": "2026-12-18",
@@ -79,6 +85,7 @@
     {
       "cd_acao": "30972",
       "nome": "Desenvolvimento De Materiais, Guias E Trilhas De Aprendizagem Baseadas Nas Lacunas De Competências.",
+      "descricao": null,
       "status": "Em Andamento",
       "prazo_inicial": "2026-06-05",
       "prazo_final": "2026-12-18",
@@ -88,6 +95,7 @@
     {
       "cd_acao": "30973",
       "nome": "Identificação De Gaps De Competências Pós Aplicação Avaliação De Desempenho",
+      "descricao": null,
       "status": "Suspenso",
       "prazo_inicial": "2026-06-05",
       "prazo_final": "2026-06-05",
@@ -97,6 +105,7 @@
     {
       "cd_acao": "30974",
       "nome": "Integração Das Competências Com Os Subsistemas De Gente E Cultura",
+      "descricao": null,
       "status": "Em Andamento",
       "prazo_inicial": "2026-06-21",
       "prazo_final": "2026-12-31",
@@ -106,6 +115,7 @@
     {
       "cd_acao": "30975",
       "nome": "Mapear E Enfatizar As Competências Mais Críticas Para O Líder E  Que Irão Impactar Mais Significativamente No Negócio",
+      "descricao": null,
       "status": "Planejado",
       "prazo_inicial": "2026-06-15",
       "prazo_final": "2026-11-30",
@@ -115,6 +125,7 @@
     {
       "cd_acao": "30976",
       "nome": "Avaliar Quantidade De Liderados Por Líder E Agente De Gestão E Propor Melhorias Nos Designs Das Áreas Com Foco Em Ampliação Da Performance",
+      "descricao": null,
       "status": "Concluído",
       "prazo_inicial": "2026-07-08",
       "prazo_final": "2026-07-10",
@@ -124,6 +135,7 @@
     {
       "cd_acao": "30977",
       "nome": "Elevar A Qualidade Dos Pdis Por Meio Da Disponibilização De Um Assistente De Ia Aos Líderes, Apoiando A Elaboração Dos Planos E Fortalecendo A Análise Qualitativa E A Personalização Do Desenvolvimento Dos Colaboradores.",
+      "descricao": null,
       "status": "Em Andamento",
       "prazo_inicial": "2026-07-21",
       "prazo_final": "2026-11-30",
@@ -133,6 +145,7 @@
     {
       "cd_acao": "30978",
       "nome": "Implantar Auditoria ( Projeto Piloto Lideres )  De Pdis E Check-ins De Acompanhamento.",
+      "descricao": null,
       "status": "Planejado",
       "prazo_inicial": "2026-09-01",
       "prazo_final": "2026-12-19",
@@ -142,6 +155,7 @@
     {
       "cd_acao": "30979",
       "nome": "Reforçar Cultura De Protagonismo Com Consequência Reconhecer Colaboradores Que Evoluem E Líderes Que  Desenvolvem Equipes. Atuar Nos Casos De Baixa Aderência Com  Feedback Formal E Plano De Ação.",
+      "descricao": null,
       "status": "Planejado",
       "prazo_inicial": "2026-10-01",
       "prazo_final": "2026-10-31",
@@ -151,6 +165,7 @@
     {
       "cd_acao": "31004",
       "nome": "Incorporar À Avaliação Dos Gestores Indicadores De Qualidade Dos Pdis, Frequência De Acompanhamento E Evolução Das Competências Das Equipes.",
+      "descricao": null,
       "status": "Suspenso",
       "prazo_inicial": "2026-09-01",
       "prazo_final": "2026-10-30",
@@ -160,6 +175,7 @@
     {
       "cd_acao": "31005",
       "nome": "Monitorar A Evolução Do Desenvolvimento Das Equipes Através  Do Acompanhamento E Resultados Dos Pdis.",
+      "descricao": null,
       "status": "Planejado",
       "prazo_inicial": "2026-06-08",
       "prazo_final": "2026-09-30",

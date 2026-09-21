@@ -25,6 +25,7 @@
     {
       "cd_acao": "32032",
       "nome": "Elaborar, Publicar E Divulgar Internamente Um Documento De Sla Por Tipo De Demanda",
+      "descricao": null,
       "status": "Concluído",
       "prazo_inicial": "2026-06-15",
       "prazo_final": "2026-07-05",
@@ -34,6 +35,7 @@
     {
       "cd_acao": "32033",
       "nome": "Implantar Um Quadro De Gestão De Demandas",
+      "descricao": null,
       "status": "Concluído",
       "prazo_inicial": "2026-06-08",
       "prazo_final": "2026-07-05",
@@ -43,6 +45,7 @@
     {
       "cd_acao": "32034",
       "nome": "Definir Uma Matriz De Priorização Simples",
+      "descricao": null,
       "status": "Em Andamento",
       "prazo_inicial": "2026-07-13",
       "prazo_final": "2026-07-17",
@@ -52,6 +55,7 @@
     {
       "cd_acao": "32035",
       "nome": "Divulgar O Fluxo De Solicitação E Os Prazos Mínimos Por Tipo De Demanda Para As Áreas Parceiras",
+      "descricao": null,
       "status": "Em Andamento",
       "prazo_inicial": "2026-07-20",
       "prazo_final": "2026-08-07",

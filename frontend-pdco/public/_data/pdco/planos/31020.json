@@ -25,6 +25,7 @@
     {
       "cd_acao": "31021",
       "nome": "Resgatar Os Critérios Estabelecidos Anteriormente (foco Em Sustentabilidade)",
+      "descricao": null,
       "status": "Concluído",
       "prazo_inicial": "2026-07-01",
       "prazo_final": "2026-07-03",
@@ -34,6 +35,7 @@
     {
       "cd_acao": "31022",
       "nome": "Estruturar Formalização Dos Critérios Foco Em Sustentabilidade",
+      "descricao": null,
       "status": "Concluído",
       "prazo_inicial": "2026-07-06",
       "prazo_final": "2026-07-10",
@@ -43,6 +45,7 @@
     {
       "cd_acao": "31023",
       "nome": "Validar Com Gerência/ Diretoria, Os Critérios Estruturados",
+      "descricao": null,
       "status": "Concluído",
       "prazo_inicial": "2026-07-13",
       "prazo_final": "2026-07-17",
@@ -52,6 +55,7 @@
     {
       "cd_acao": "31024",
       "nome": "Aplicar Ajustes, Se Necessário",
+      "descricao": null,
       "status": "Concluído",
       "prazo_inicial": "2026-07-15",
       "prazo_final": "2026-07-21",
@@ -61,6 +65,7 @@
     {
       "cd_acao": "31025",
       "nome": "Classificar As Iniciativas Estratégicas, Conforme Critérios Foco Em Sustentabilidade",
+      "descricao": null,
       "status": "Em Andamento",
       "prazo_inicial": "2026-07-22",
       "prazo_final": "2026-07-31",
@@ -70,6 +75,7 @@
     {
       "cd_acao": "31027",
       "nome": "Validar As Classificações Com Os Responsáveis Pelas Iniciativas",
+      "descricao": null,
       "status": "Planejado",
       "prazo_inicial": "2026-08-03",
       "prazo_final": "2026-08-14",
@@ -79,6 +85,7 @@
     {
       "cd_acao": "31028",
       "nome": "Incorporar Ícones Sinalizadores Nas Cerimônias (setorial/ Rtd/ Rac/estratégia Viva)",
+      "descricao": null,
       "status": "Planejado",
       "prazo_inicial": "2026-08-17",
       "prazo_final": "2026-08-19",
@@ -88,6 +95,7 @@
     {
       "cd_acao": "31029",
       "nome": "Resgatar/reestruturar O Painel De Priorização Das  Iniciativas Estratégicas Com Foco Em Sustentabilidade",
+      "descricao": null,
       "status": "Concluído",
       "prazo_inicial": "2026-07-22",
       "prazo_final": "2026-07-31",

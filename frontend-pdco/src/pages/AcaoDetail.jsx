@@ -64,6 +64,13 @@ export default function AcaoDetail() {
                     <StatusPill status={acao.status} />
                 </div>
 
+                <div className="pdco-acao-descricao">
+                    <p className="pdco-mini-stat-label">Descrição da ação</p>
+                    <p className={`pdco-acao-descricao-texto ${acao.descricao ? '' : 'pdco-acao-descricao-vazia'}`}>
+                        {acao.descricao || 'Sem descrição cadastrada.'}
+                    </p>
+                </div>
+
                 <div className="pdco-mini-stat-grid pdco-mini-stat-grid-3">
                     <MiniStat label="Responsável" valor={acao.responsavel || '—'} />
                     <MiniStat label="Prazo inicial" valor={formatarData(acao.prazo_inicial)} />

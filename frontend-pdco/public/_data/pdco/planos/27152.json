@@ -25,6 +25,7 @@
     {
       "cd_acao": "27153",
       "nome": "Estruturar E Executar Plano De Comunicação De Forma A Fortalecer A Cultura De Gestão Por Processos (2026)",
+      "descricao": "Para Aperfeiçoar O Entendimento Dos Colaboradores Para A Pauta De Gestão Por Processos Nos Pilares De Mapeamento E Melhoria Contínua E Disseminação Dos Serviços Oferecidos Pelo Escritório.",
       "status": "Em Andamento",
       "prazo_inicial": "2026-01-05",
       "prazo_final": "2026-12-22",
@@ -34,6 +35,7 @@
     {
       "cd_acao": "27154",
       "nome": "Fortalecer Cerimônia De Processos Destaque, Estabelecendo Novos Critérios Para A Avaliação",
+      "descricao": "Para Evidenciar A Maturidade Da Gestão Dos Donos De Processo",
       "status": "Em Andamento",
       "prazo_inicial": "2026-01-05",
       "prazo_final": "2026-12-18",
@@ -43,6 +45,7 @@
     {
       "cd_acao": "27161",
       "nome": "Implantar Plataforma De Gestão Estratégica Com Foco Em Processos",
+      "descricao": "Analisar O Desempenho Dos Processos Com Base Em Indicadores, Planos De Ação, Ocorrências, Riscos E Reclamações, Considerando A Cadeia De Valor E O Processo Ponta A Ponta, Para A Reunião De Análise Crítica.",
       "status": "Planejado",
       "prazo_inicial": "2027-01-01",
       "prazo_final": "2027-06-30",
@@ -52,6 +55,7 @@
     {
       "cd_acao": "27162",
       "nome": "Capacitar E Monitorar Atores De Processo Na Metodologia De Mapeamento, Com Abordagens Práticas Que Ampliem A Qualidade E Agilidade Dos Mapeamentos",
+      "descricao": "Para Ampliar As Competências Dos Atores De Processo Com Técnicas De Mapeamento Para Aplicação Nas Suas Áreas",
       "status": "Concluído",
       "prazo_inicial": "2026-01-05",
       "prazo_final": "2026-12-22",
@@ -61,6 +65,7 @@
     {
       "cd_acao": "27273",
       "nome": "Realizar Capacitação Junto A Consultoria Sobre Inovação E Processos",
+      "descricao": "Garantir Uma Metodologia Bem Definida Entre As Áreas",
       "status": "Concluído",
       "prazo_inicial": "2026-01-05",
       "prazo_final": "2026-05-15",
@@ -70,6 +75,7 @@
     {
       "cd_acao": "30920",
       "nome": "Conduzir Workshop De Atualização Da Cadeia De Valor, Donos De Processo E Especialistas Junto As Áreas Corporativas",
+      "descricao": "Garantir O Desdobramento Prático Da Capacitação Executada, Revisitar As Estruturas Vigentes E Pactuar As Responsabilidades Sobre Os Processos",
       "status": "Em Andamento",
       "prazo_inicial": "2026-06-05",
       "prazo_final": "2026-08-31",
@@ -79,6 +85,7 @@
     {
       "cd_acao": "30925",
       "nome": "Revisar A Cerimônia Da Rac Potencializando A Avaliação De Desempenho, Riscos E Priorização De Melhorias.",
+      "descricao": null,
       "status": "Em Andamento",
       "prazo_inicial": "2026-06-05",
       "prazo_final": "2026-09-11",
@@ -88,6 +95,7 @@
     {
       "cd_acao": "31070",
       "nome": "Elaboração E Disseminação Da Política De Governança De Processos",
+      "descricao": null,
       "status": "Em Andamento",
       "prazo_inicial": "2026-06-08",
       "prazo_final": "2026-11-30",
@@ -97,6 +105,7 @@
     {
       "cd_acao": "31071",
       "nome": "Definição Dos Serviços Corporativos E Seus Respectivos Slas",
+      "descricao": null,
       "status": "Em Andamento",
       "prazo_inicial": "2026-07-01",
       "prazo_final": "2026-10-31",
@@ -106,6 +115,7 @@
     {
       "cd_acao": "31072",
       "nome": "Implantar E Monitorar O Indicador Nps Dos Serviços Das Áreas Corporativas",
+      "descricao": null,
       "status": "Planejado",
       "prazo_inicial": "2026-09-01",
       "prazo_final": "2026-11-30",
@@ -115,6 +125,7 @@
     {
       "cd_acao": "31215",
       "nome": "Automatizar Indicadores Táticos",
+      "descricao": null,
       "status": "Planejado",
       "prazo_inicial": "2026-08-03",
       "prazo_final": "2026-12-18",
