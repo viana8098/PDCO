@@ -424,7 +424,6 @@ export function compararMeses(analise, ciclo, de, para) {
 export const FOCOS = {
   concluidas: { rotulo: 'Ações concluídas', grupos: ['concluidas'], tags: ['concluida'] },
   novos_atrasos: { rotulo: 'Novos atrasos', grupos: ['novos_atrasos'], tags: ['novo_atraso'] },
-  atrasadas: { rotulo: 'Ações atrasadas', grupos: ['novos_atrasos', 'continuam_atrasadas'], tags: ['novo_atraso', 'continua_atrasada'] },
   regularizados: { rotulo: 'Atrasos regularizados', grupos: ['regularizados'], tags: ['regularizada'] },
   acompanhamentos: { rotulo: 'Acompanhamentos', grupos: ['acompanhamentos'], tags: ['acompanhamento'] },
   anexos: { rotulo: 'Anexos', grupos: ['anexos'], tags: ['anexo'] },
@@ -443,11 +442,10 @@ export function montarGrupos(comp, foco) {
     { id: 'regularizados', titulo: 'Atrasos resolvidos', itens: ev.concluidas.filter(ehRegularizada) },
     { id: 'acompanhamentos', titulo: 'Novos acompanhamentos', itens: ev.acompanhamentos },
     { id: 'anexos', titulo: 'Anexos', itens: ev.anexos },
-    { id: 'continuam_atrasadas', titulo: 'Continuam atrasadas', itens: ev.semAlteracao.filter((i) => i.tags.includes('continua_atrasada')), soComFoco: true },
     { id: 'sem_alteracao', titulo: 'Sem alteração', itens: ev.semAlteracao, recolhido: true },
   ]
   if (foco) return todos.filter((g) => FOCOS[foco].grupos.includes(g.id))
-  return todos.filter((g) => !g.soComFoco && (g.itens.length > 0 || g.id !== 'anexos'))
+  return todos.filter((g) => g.itens.length > 0 || g.id !== 'anexos')
 }
 
 // --------------------------------------------------------------------------
@@ -461,31 +459,20 @@ function variacao(delta, { mais, menos, tomSobe, tomDesce }) {
     : { seta: '↓', texto: menos(-delta), tom: tomDesce }
 }
 
-/** Os 3 cartões comparativos. `tom`: bom (verde) / ruim (vermelho) / atencao (âmbar) / info (azul) / neutro. */
+/**
+ * Os 3 cartões comparativos: ações concluídas, acompanhamentos e anexos. `tom`: bom (verde) / ruim
+ * (vermelho) / atencao (âmbar) / info (azul) / anexo (roxo) / neutro. O cartão de anexos sempre aparece;
+ * sem anexos no app (standalone) o valor é 0, igual à aba "Anexos de evidência (0)" do plano.
+ */
 export function montarCards(comp) {
-  const { de, para, adjacente, metricas, totais } = comp
+  const { de, para, adjacente, metricas } = comp
   const ligacao = (a, b) => (adjacente ? `${a} no mês anterior → ${b} neste mês` : `${a} em ${de.rotulo} → ${b} em ${para.rotulo}`)
 
   const dConcluidas = metricas.para.concluidas - metricas.de.concluidas
   const dAcomp = metricas.para.acompanhamentos - metricas.de.acompanhamentos
-  const dAtrasadas = metricas.para.atrasadas - metricas.de.atrasadas
   const dAnexos = metricas.para.anexos - metricas.de.anexos
 
-  // Atrasos: variação do estoque = novos − regularizados (identidade exata, ver compararMeses).
-  // Só chama de "novos atrasos" quando não houve regularização no mesmo intervalo.
-  let atrasos
-  const { novosAtrasos: novos, regularizados: reg } = totais
-  if (novos > 0 && reg === 0) atrasos = { seta: '↑', texto: plural(novos, 'novo atraso', 'novos atrasos'), tom: 'ruim' }
-  else if (novos === 0 && reg > 0) atrasos = { seta: '↓', texto: plural(reg, 'atraso regularizado', 'atrasos regularizados'), tom: 'bom' }
-  else if (novos > 0 && reg > 0) {
-    atrasos = {
-      seta: dAtrasadas > 0 ? '↑' : dAtrasadas < 0 ? '↓' : '→',
-      texto: `Saldo ${dAtrasadas > 0 ? '+' : ''}${dAtrasadas} (${plural(novos, 'novo')} · ${plural(reg, 'regularizado')})`,
-      tom: dAtrasadas > 0 ? 'ruim' : dAtrasadas < 0 ? 'bom' : 'neutro',
-    }
-  } else atrasos = { seta: '→', texto: 'Sem variação', tom: 'neutro' }
-
-  const cards = [
+  return [
     {
       id: 'concluidas',
       rotulo: 'Ações concluídas',
@@ -511,16 +498,6 @@ export function montarCards(comp) {
       }),
     },
     {
-      id: 'atrasadas',
-      rotulo: 'Ações atrasadas',
-      valor: metricas.para.atrasadas,
-      comparacao: ligacao(metricas.de.atrasadas, metricas.para.atrasadas),
-      variacao: atrasos,
-    },
-  ]
-
-  if (comp.temAnexos) {
-    cards.push({
       id: 'anexos',
       rotulo: 'Anexos',
       valor: metricas.para.anexos,
@@ -531,9 +508,8 @@ export function montarCards(comp) {
         tomSobe: 'anexo',
         tomDesce: 'anexo',
       }),
-    })
-  }
-  return cards
+    },
+  ]
 }
 
 /** Faixa "Resumo de Set/2026 — 2 ações concluídas · …": cada item vira filtro. */
