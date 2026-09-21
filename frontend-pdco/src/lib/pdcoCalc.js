@@ -11,13 +11,28 @@ export const RAG_BG = { verde: 'rgba(52,211,153,0.15)', amarelo: 'rgba(251,191,3
 const DIA_MS = 24 * 60 * 60 * 1000
 
 /**
+ * Quantidade e data do acompanhamento mais recente de um plano. A fonte é
+ * `plano.resumo_acompanhamentos` (todos os registros; vem junto da listagem e
+ * do detalhe — por isso o status é o mesmo nas duas telas). Só se a API for
+ * antiga e não mandar esse resumo é que usa os quadrantes do detalhe; sem
+ * nenhum dos dois, devolve null e o fator fica de fora.
+ */
+function resumoDeAcompanhamentos(plano, quadrantes) {
+  if (plano.resumo_acompanhamentos) return plano.resumo_acompanhamentos
+  if (!quadrantes) return null
+  const registros = quadrantes.flatMap((q) => q.registros)
+  const ultimo = registros.length ? registros.reduce((max, r) => (r.data > max ? r.data : max), registros[0].data) : null
+  return { total: registros.length, ultimo }
+}
+
+/**
  * Score de saúde do plano (0-100) a partir do que já foi carregado:
  * `plano.resumo_acoes` (total/concluídas/atrasadas, sempre disponível — vem
- * junto de `/api/pdco` e do detalhe) e, quando disponíveis, os quadrantes
- * de acompanhamento do detalhe (`registros[].data`) para o fator de
- * recência. Nas listagens (sem detalhe carregado), o fator de acompanhamento
- * fica de fora — o score é uma aproximação mais simples, só com execução e
- * atrasos.
+ * junto de `/api/pdco` e do detalhe) e `plano.resumo_acompanhamentos`
+ * (quantidade e data do último acompanhamento — também vem nas duas), então
+ * a listagem e o detalhe calculam exatamente o mesmo score. Só com uma API
+ * antiga, sem esse resumo, cai nos quadrantes de acompanhamento do detalhe
+ * (`registros[].data`); sem nenhum dos dois, o fator fica de fora.
  */
 export function calcRag(plano, quadrantesAcompanhamento) {
   const motivos = []
@@ -46,14 +61,13 @@ export function calcRag(plano, quadrantesAcompanhamento) {
     motivos.push(`${atrasadas} ação(ões) atrasada(s)`)
   }
 
-  if (quadrantesAcompanhamento) {
-    const registros = quadrantesAcompanhamento.flatMap((q) => q.registros)
-    if (registros.length === 0) {
+  const acompanhamentos = resumoDeAcompanhamentos(plano, quadrantesAcompanhamento)
+  if (acompanhamentos) {
+    if (acompanhamentos.total === 0) {
       score -= 20
       motivos.push('Sem acompanhamentos registrados')
     } else {
-      const maisRecente = registros.reduce((max, r) => (r.data > max ? r.data : max), registros[0].data)
-      const dias = (Date.now() - new Date(maisRecente).getTime()) / DIA_MS
+      const dias = (Date.now() - new Date(acompanhamentos.ultimo).getTime()) / DIA_MS
       if (dias > 60) {
         score -= 10
         motivos.push('Sem acompanhamento recente (>60 dias)')

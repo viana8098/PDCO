@@ -8,6 +8,7 @@ import { Inject, Injectable, NotFoundException } from '@nestjs/common';
 import {
   calcularExecucao,
   calcularResumoAcoes,
+  calcularResumoAcompanhamentos,
   listarRegistrosAcompanhamento,
   montarJanelaAcompanhamento,
 } from '../domain/pdco.rules';
@@ -54,7 +55,13 @@ export class PdcoService {
       if (filtro.area && plano.area_nome !== filtro.area) continue;
       if (filtro.acao && !acoes.some((acao) => acao.nome === filtro.acao)) continue;
 
-      planos.push({ ...plano, execucao: calcularExecucao(acoes), resumo_acoes: calcularResumoAcoes(acoes) });
+      const acompanhamentos = cache.acompanhamentos.get(plano.cd_planoacao) ?? [];
+      planos.push({
+        ...plano,
+        execucao: calcularExecucao(acoes),
+        resumo_acoes: calcularResumoAcoes(acoes),
+        resumo_acompanhamentos: calcularResumoAcompanhamentos(acompanhamentos),
+      });
     }
 
     return planos.sort((a, b) => (a.area_nome ?? '').localeCompare(b.area_nome ?? ''));
@@ -72,7 +79,12 @@ export class PdcoService {
     const dataInicio = plano.data_inicio ? new Date(plano.data_inicio) : null;
 
     return {
-      plano: { ...plano, execucao: calcularExecucao(acoes), resumo_acoes: calcularResumoAcoes(acoes) },
+      plano: {
+        ...plano,
+        execucao: calcularExecucao(acoes),
+        resumo_acoes: calcularResumoAcoes(acoes),
+        resumo_acompanhamentos: calcularResumoAcompanhamentos(acompanhamentosBrutos),
+      },
       acoes,
       acompanhamento: montarJanelaAcompanhamento(dataInicio, acompanhamentosBrutos),
       registros_acompanhamento: listarRegistrosAcompanhamento(acompanhamentosBrutos),

@@ -227,6 +227,7 @@ function transformarPlano(linha: PlanoAcaoRow): PlanoPdco {
     data_fim: dataIso(linha.dt_fimplanoacao ?? linha.dt_fimprevistaplanoacao),
     execucao: null,
     resumo_acoes: null,
+    resumo_acompanhamentos: null,
   };
 }
 

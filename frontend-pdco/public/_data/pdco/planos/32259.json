@@ -15,6 +15,10 @@
       "total": 4,
       "concluidas": 0,
       "atrasadas": 0
+    },
+    "resumo_acompanhamentos": {
+      "total": 4,
+      "ultimo": "2026-09-09"
     }
   },
   "acoes": [

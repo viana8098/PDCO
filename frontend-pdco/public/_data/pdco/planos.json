@@ -16,6 +16,10 @@
       "concluidas": 2,
       "atrasadas": 2
     },
+    "resumo_acompanhamentos": {
+      "total": 2,
+      "ultimo": "2026-07-15"
+    },
     "acoes_nomes": [
       "Elaborar, Publicar E Divulgar Internamente Um Documento De Sla Por Tipo De Demanda",
       "Implantar Um Quadro De Gestão De Demandas",
@@ -40,6 +44,10 @@
       "concluidas": 0,
       "atrasadas": 0
     },
+    "resumo_acompanhamentos": {
+      "total": 0,
+      "ultimo": null
+    },
     "acoes_nomes": [
       "Padrão Mínimo De Comunicação E Documentação Técnica",
       "Novo Modelo De Gestão Por Entregas Do Observatório"
@@ -61,6 +69,10 @@
       "total": 6,
       "concluidas": 2,
       "atrasadas": 0
+    },
+    "resumo_acompanhamentos": {
+      "total": 5,
+      "ultimo": "2026-09-14"
     },
     "acoes_nomes": [
       "Integrar Suprimentos Ao Planejamento Institucional",
@@ -88,6 +100,10 @@
       "concluidas": 0,
       "atrasadas": 0
     },
+    "resumo_acompanhamentos": {
+      "total": 0,
+      "ultimo": null
+    },
     "acoes_nomes": []
   },
   {
@@ -106,6 +122,10 @@
       "total": 11,
       "concluidas": 2,
       "atrasadas": 2
+    },
+    "resumo_acompanhamentos": {
+      "total": 40,
+      "ultimo": "2026-09-14"
     },
     "acoes_nomes": [
       "Estruturar E Executar Plano De Comunicação De Forma A Fortalecer A Cultura De Gestão Por Processos (2026)",
@@ -138,6 +158,10 @@
       "concluidas": 2,
       "atrasadas": 0
     },
+    "resumo_acompanhamentos": {
+      "total": 6,
+      "ultimo": "2026-09-08"
+    },
     "acoes_nomes": [
       "Definir Metodologia De Auditoria De Processos E Qualidade",
       "Implantar O Ciclo De Auditoria Metrologia",
@@ -164,6 +188,10 @@
       "total": 9,
       "concluidas": 4,
       "atrasadas": 0
+    },
+    "resumo_acompanhamentos": {
+      "total": 5,
+      "ultimo": "2026-09-02"
     },
     "acoes_nomes": [
       "Alinhar Objetivos E Expectativas Iniciais Com A Alta Gestão (etapa 1 - Alinhamento Estratégico)",
@@ -194,6 +222,10 @@
       "concluidas": 2,
       "atrasadas": 2
     },
+    "resumo_acompanhamentos": {
+      "total": 5,
+      "ultimo": "2026-09-02"
+    },
     "acoes_nomes": [
       "Mapear Todos Os Rituais De Gestão Existentes (etapa 1 - Diagnóstico Estruturado)",
       "Documentar Objetivo, Frequência, Pautas E Participantes (etapa 1 - Diagnóstico Estruturado)",
@@ -220,6 +252,10 @@
       "total": 8,
       "concluidas": 5,
       "atrasadas": 3
+    },
+    "resumo_acompanhamentos": {
+      "total": 3,
+      "ultimo": "2026-09-02"
     },
     "acoes_nomes": [
       "Resgatar Os Critérios Estabelecidos Anteriormente (foco Em Sustentabilidade)",
@@ -248,6 +284,10 @@
       "total": 9,
       "concluidas": 3,
       "atrasadas": 1
+    },
+    "resumo_acompanhamentos": {
+      "total": 16,
+      "ultimo": "2026-09-03"
     },
     "acoes_nomes": [
       "Identificar E Priorizar As Competências Estratégicas A Serem Desenvolvidas Para Garantir A Sucessão Das Posições Críticas.",
@@ -278,6 +318,10 @@
       "total": 13,
       "concluidas": 2,
       "atrasadas": 2
+    },
+    "resumo_acompanhamentos": {
+      "total": 18,
+      "ultimo": "2026-09-11"
     },
     "acoes_nomes": [
       "Revisar As Competências Estratégicas Que Orientam O Desenvolvimento De Líderes E Agentes.",
@@ -312,6 +356,10 @@
       "total": 16,
       "concluidas": 2,
       "atrasadas": 1
+    },
+    "resumo_acompanhamentos": {
+      "total": 15,
+      "ultimo": "2026-09-11"
     },
     "acoes_nomes": [
       "Mapear Lacunas De Competências Por Área E Cargo, Com Base Nos Resultados Da Avaliação De Desempenho  E Estratégia.",
@@ -349,6 +397,10 @@
       "concluidas": 4,
       "atrasadas": 2
     },
+    "resumo_acompanhamentos": {
+      "total": 4,
+      "ultimo": "2026-09-11"
+    },
     "acoes_nomes": [
       "Construir Matriz De Comportamentos Esperados Por Competência Organizacional, Associando Exemplos Observáveis De Comportamentos Desejados E Indesejados.",
       "Definir Indicadores E Evidências Objetivas Que Suportem Processos De Reconhecimento E Aplicação De Consequências.",
@@ -378,6 +430,10 @@
       "concluidas": 0,
       "atrasadas": 0
     },
+    "resumo_acompanhamentos": {
+      "total": 4,
+      "ultimo": "2026-09-09"
+    },
     "acoes_nomes": [
       "Traduzir Valores Em Comportamentos - Construção Do Guia",
       "Incorporar Valores Na Avaliação De Desempenho, Feedback, Promoção E Desligamento.",
@@ -403,6 +459,10 @@
       "concluidas": 1,
       "atrasadas": 1
     },
+    "resumo_acompanhamentos": {
+      "total": 1,
+      "ultimo": "2026-09-18"
+    },
     "acoes_nomes": [
       "Mapear Todos Os Planos De Ação Da Gep E Classificar: (a) Impacto Direto Em Resultado Financeiro, (b) Impacto Indireto, (c) Sem Relação Com Indicadores Críticos. Descontinuar Ou Suspender Os De Tipo C.",
       "Criar Painel De 3 Indicadores Críticos (receita Executada, Gap Orçamentário, Custo Por Unidade). Definir Responsável Por Indicador Dentro Da Equipe. Incluir Resultado Orçamentário Como Pauta Fixa Nas Cerimônias.",
@@ -426,6 +486,10 @@
       "total": 4,
       "concluidas": 0,
       "atrasadas": 0
+    },
+    "resumo_acompanhamentos": {
+      "total": 0,
+      "ultimo": null
     },
     "acoes_nomes": [
       "Modelo Conceitual",

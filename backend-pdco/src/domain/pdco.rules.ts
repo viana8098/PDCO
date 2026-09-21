@@ -10,6 +10,7 @@ import type {
   QuadranteAcompanhamento,
   RegistroAcompanhamentoPlano,
   ResumoAcoesPdco,
+  ResumoAcompanhamentosPdco,
 } from '../schemas';
 
 const STATUS_CONCLUIDO = 'concluído';
@@ -34,6 +35,24 @@ export function calcularResumoAcoes(acoes: Pick<AcaoPdco, 'status' | 'prazo_fina
   }).length;
 
   return { total: ativas.length, concluidas, atrasadas };
+}
+
+/**
+ * Resumo dos acompanhamentos de um plano (quantidade e data do mais recente),
+ * sem o recorte da janela de 8 meses. É a base do fator de acompanhamento do
+ * status (Em dia/Atenção/Crítico) — a listagem e o detalhe usam o mesmo número,
+ * então o status do plano não muda ao abri-lo.
+ */
+export function calcularResumoAcompanhamentos(acompanhamentos: AcompanhamentoBruto[]): ResumoAcompanhamentosPdco {
+  let total = 0;
+  let ultimo: string | null = null;
+  for (const acompanhamento of acompanhamentos) {
+    if (!acompanhamento.data) continue;
+    total++;
+    const iso = acompanhamento.data.toISOString().slice(0, 10);
+    if (!ultimo || iso > ultimo) ultimo = iso;
+  }
+  return { total, ultimo };
 }
 
 /** Janela de 8 meses de acompanhamento a partir do início do plano. */

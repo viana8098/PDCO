@@ -25,6 +25,13 @@ export interface ResumoAcoesPdco {
   atrasadas: number;
 }
 
+export interface ResumoAcompanhamentosPdco {
+  /** Quantidade de acompanhamentos datados do plano (plano + ações), em qualquer data. */
+  total: number;
+  /** Data (yyyy-mm-dd) do acompanhamento mais recente; null se não há nenhum. */
+  ultimo: string | null;
+}
+
 export interface PlanoPdco {
   cd_planoacao: string;
   subtipo: string;
@@ -39,6 +46,7 @@ export interface PlanoPdco {
   data_fim: string | null;
   execucao: number | null;
   resumo_acoes: ResumoAcoesPdco | null;
+  resumo_acompanhamentos: ResumoAcompanhamentosPdco | null;
 }
 
 export interface AcaoPdco {
