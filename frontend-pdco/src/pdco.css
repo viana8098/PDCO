@@ -1612,28 +1612,6 @@ body {
   color: var(--accent);
 }
 
-/* ---------------------------------- Acomp. da ação ------------------------------ */
-.pdco-app .pdco-acomp-list {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-  padding: 0 22px 22px;
-}
-.pdco-app .pdco-acomp-item {
-  border: 1px solid var(--border);
-  border-radius: 10px;
-  padding: 12px;
-}
-.pdco-app .pdco-acomp-item p {
-  margin: 0;
-  font-size: 13px;
-  color: var(--text);
-}
-.pdco-app .pdco-acomp-item-data {
-  font-size: 10.5px;
-  color: var(--text-muted);
-  margin-top: 6px !important;
-}
 
 /* ---------------------------------- Estados ------------------------------------- */
 .pdco-app .pdco-estado {

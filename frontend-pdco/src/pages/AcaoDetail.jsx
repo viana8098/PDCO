@@ -1,7 +1,8 @@
 import { Link, useParams } from 'react-router-dom'
 import { useAsync } from '../lib/useAsync'
+import { TabelaAcompanhamentos } from '../components/AcompanhamentoGrid'
 import { StatusPill } from '../components/StatusPill'
-import { formatarData } from '../lib/pdcoCalc'
+import { formatarData, indiceMesRelativo } from '../lib/pdcoCalc'
 import { usePdco } from '../lib/PdcoContext'
 import { api } from '../lib/api'
 
@@ -13,7 +14,7 @@ export default function AcaoDetail() {
     if (detalhe.erro) return <div className="pdco-page pdco-estado pdco-erro">{detalhe.erro}</div>
     if (!detalhe.dados) return <div className="pdco-page pdco-estado">Carregando ação…</div>
 
-    const { plano, acoes, acompanhamento } = detalhe.dados
+    const { plano, acoes, acompanhamento, registros_acompanhamento } = detalhe.dados
     const acao = acoes.find((a) => String(a.cd_acao) === String(cdAcao))
 
     if (!acao) {
@@ -27,9 +28,20 @@ export default function AcaoDetail() {
         )
     }
 
-    const acompanhamentosDaAcao = acompanhamento
-        .flatMap((q) => q.registros.map((r) => ({ ...r, mes: q.mes })))
-        .filter((r) => r.origem === 'acao')
+    // Acompanhamentos DESTA ação (ds_acompanhamentoacao). A lista completa do plano (`registros_acompanhamento`)
+    // traz o código da ação de cada registro, então dá pra filtrar de verdade. Só com uma API antiga, sem essa
+    // lista, cai na janela de 8 meses — que não tem o código — e mostra os das ações do plano todo.
+    const mesDoPlano = (data) => {
+        const i = indiceMesRelativo(plano.data_inicio, data)
+        return i === null || i < 0 ? null : i + 1
+    }
+    const acompanhamentosDaAcao = registros_acompanhamento
+        ? registros_acompanhamento
+              .filter((r) => r.origem === 'acao' && String(r.cd_acao) === String(cdAcao))
+              .map((r) => ({ ...r, mes: mesDoPlano(r.data), responsavel: acao.responsavel }))
+        : acompanhamento
+              .flatMap((q) => q.registros.map((r) => ({ ...r, mes: q.mes, responsavel: acao.responsavel })))
+              .filter((r) => r.origem === 'acao')
 
     return (
         <div className="pdco-page">
@@ -63,17 +75,7 @@ export default function AcaoDetail() {
                 <div className="pdco-panel-header">
                     <h2 className="pdco-panel-title">Acompanhamentos da ação ({acompanhamentosDaAcao.length})</h2>
                 </div>
-                <div className="pdco-acomp-list">
-                    {acompanhamentosDaAcao.length === 0 && <p className="pdco-vazio">Nenhum acompanhamento registrado para esta ação.</p>}
-                    {acompanhamentosDaAcao.map((r, indice) => (
-                        <div className="pdco-acomp-item" key={indice}>
-                            <p>{r.texto}</p>
-                            <p className="pdco-acomp-item-data">
-                                Mês {r.mes} · {formatarData(r.data)}
-                            </p>
-                        </div>
-                    ))}
-                </div>
+                <TabelaAcompanhamentos registros={acompanhamentosDaAcao} vazio="Nenhum acompanhamento registrado para esta ação." />
             </section>
         </div>
     )

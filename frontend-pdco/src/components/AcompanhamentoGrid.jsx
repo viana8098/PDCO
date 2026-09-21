@@ -21,28 +21,23 @@ function comparar(a, b, coluna) {
 }
 
 /**
- * Tabela (mais recente primeiro) dos acompanhamentos DO PLANO: o texto vem de
- * `ds_acompanhamentoplanoacao` do dw (registros com origem 'plano' em `acompanhamento`,
- * ver domain/pdco.rules.ts#montarJanelaAcompanhamento). Os acompanhamentos das ações
- * (`ds_acompanhamentoacao`) não entram aqui — aparecem na página de cada ação; quando o plano
- * tem, uma nota avisa quantos são. Colunas ordenáveis, no mesmo padrão da tabela de ações.
- * O dw não guarda quem escreveu o acompanhamento — o responsável é o do plano.
+ * Tabela de acompanhamentos em colunas (Acompanhamento / Mês / Responsável / Data), mais recente
+ * primeiro, com colunas ordenáveis — a mesma tabela para o plano e para a ação.
+ * `registros`: [{ texto, data (yyyy-mm-dd), mes (número do mês do plano ou null), responsavel }].
+ * O dw não guarda quem escreveu o acompanhamento — o responsável é o do plano (ou o da ação).
+ * `vazio` é o texto quando não há registros; `nota` (opcional) vai abaixo da tabela.
  */
-export function AcompanhamentoGrid({ quadrantes, plano }) {
+export function TabelaAcompanhamentos({ registros, vazio, nota }) {
     // null = ordem original (mais recente primeiro); senão { coluna, direcao: 1 | -1 }
     const [ordenacao, setOrdenacao] = useState(null)
 
-    const { registros, qtdAcoes } = useMemo(() => {
-        const todos = quadrantes.flatMap((q) => q.registros.map((r) => ({ ...r, mes: q.mes, responsavel: plano.responsavel })))
-        const doPlano = todos.filter((r) => r.origem === 'plano').sort((a, b) => (b.data || '').localeCompare(a.data || ''))
-        return { registros: doPlano, qtdAcoes: todos.length - doPlano.length }
-    }, [quadrantes, plano.responsavel])
+    const maisRecentesPrimeiro = useMemo(() => [...registros].sort((a, b) => (b.data || '').localeCompare(a.data || '')), [registros])
 
     const registrosOrdenados = useMemo(() => {
-        if (!ordenacao) return registros
+        if (!ordenacao) return maisRecentesPrimeiro
         const { coluna, direcao } = ordenacao
-        return [...registros].sort((a, b) => direcao * comparar(a, b, coluna))
-    }, [registros, ordenacao])
+        return [...maisRecentesPrimeiro].sort((a, b) => direcao * comparar(a, b, coluna))
+    }, [maisRecentesPrimeiro, ordenacao])
 
     function alternarOrdenacao(coluna) {
         setOrdenacao((atual) => {
@@ -52,15 +47,11 @@ export function AcompanhamentoGrid({ quadrantes, plano }) {
         })
     }
 
-    const plural = qtdAcoes === 1 ? '' : 's'
-    const notaAcoes =
-        qtdAcoes > 0 ? `O plano também tem ${qtdAcoes} acompanhamento${plural} registrado${plural} nas ações — veja na página de cada ação.` : null
-
     if (registros.length === 0) {
         return (
             <p className="pdco-vazio">
-                Nenhum acompanhamento do plano registrado.
-                {notaAcoes && ` ${notaAcoes}`}
+                {vazio}
+                {nota && ` ${nota}`}
             </p>
         )
     }
@@ -92,14 +83,34 @@ export function AcompanhamentoGrid({ quadrantes, plano }) {
                     {registrosOrdenados.map((registro, indice) => (
                         <tr key={indice}>
                             <td className="pdco-acomp-texto">{registro.texto}</td>
-                            <td>Mês {registro.mes}</td>
+                            <td>{registro.mes ? `Mês ${registro.mes}` : '—'}</td>
                             <td>{registro.responsavel || '—'}</td>
                             <td>{formatarData(registro.data)}</td>
                         </tr>
                     ))}
                 </tbody>
             </table>
-            {notaAcoes && <p className="pdco-acomp-nota">{notaAcoes}</p>}
+            {nota && <p className="pdco-acomp-nota">{nota}</p>}
         </>
     )
+}
+
+/**
+ * Aba "Acompanhamentos do plano": o texto vem de `ds_acompanhamentoplanoacao` do dw (registros com
+ * origem 'plano' em `acompanhamento`, ver domain/pdco.rules.ts#montarJanelaAcompanhamento). Os
+ * acompanhamentos das ações (`ds_acompanhamentoacao`) não entram aqui — aparecem na página de cada
+ * ação; quando o plano tem, uma nota avisa quantos são.
+ */
+export function AcompanhamentoGrid({ quadrantes, plano }) {
+    const { registros, qtdAcoes } = useMemo(() => {
+        const todos = quadrantes.flatMap((q) => q.registros.map((r) => ({ ...r, mes: q.mes, responsavel: plano.responsavel })))
+        const doPlano = todos.filter((r) => r.origem === 'plano')
+        return { registros: doPlano, qtdAcoes: todos.length - doPlano.length }
+    }, [quadrantes, plano.responsavel])
+
+    const plural = qtdAcoes === 1 ? '' : 's'
+    const nota =
+        qtdAcoes > 0 ? `O plano também tem ${qtdAcoes} acompanhamento${plural} registrado${plural} nas ações — veja na página de cada ação.` : null
+
+    return <TabelaAcompanhamentos registros={registros} vazio="Nenhum acompanhamento do plano registrado." nota={nota} />
 }
