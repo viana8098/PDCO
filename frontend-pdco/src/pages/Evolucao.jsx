@@ -170,8 +170,11 @@ export default function Evolucao() {
             <section className="pdco-panel">
                 <div className="pdco-panel-header pdco-evo-timeline-header">
                     <div>
-                        <p className="pdco-kicker">Mudanças do período</p>
-                        <h2 className="pdco-panel-title">O que mudou · {periodoTexto}</h2>
+                        <p className="pdco-kicker">{modo === 'resumo' ? 'Mudanças do período' : 'Linha do tempo completa'}</p>
+                        <h2 className="pdco-panel-title">{modo === 'resumo' ? `O que mudou · ${periodoTexto}` : 'Todos os meses do ciclo'}</h2>
+                        <p className="pdco-panel-subtitle">
+                            {modo === 'resumo' ? 'Só o que mudou entre os dois meses escolhidos.' : 'Tudo o que aconteceu em cada mês do ciclo, do Mês 1 ao Mês 8.'}
+                        </p>
                     </div>
                     <div className="pdco-toggle-group" role="group" aria-label="Nível de detalhe">
                         <button type="button" className={modo === 'resumo' ? 'pdco-toggle-ativo' : ''} aria-pressed={modo === 'resumo'} onClick={() => setModo('resumo')}>
@@ -194,39 +197,33 @@ export default function Evolucao() {
                     </div>
                 )}
 
-                <div className="pdco-evo-mudancas">
-                    {!foco && totalMudancas === 0 && <p className="pdco-vazio">Nenhuma mudança registrada entre {periodoTexto}.</p>}
-                    {grupos.map((g) => {
-                        if (g.recolhido) {
+                {modo === 'resumo' ? (
+                    <div className="pdco-evo-mudancas">
+                        {!foco && totalMudancas === 0 && <p className="pdco-vazio">Nenhuma mudança registrada entre {periodoTexto}.</p>}
+                        {grupos.map((g) => {
+                            if (g.recolhido) {
+                                return (
+                                    <div className="pdco-evo-grupo" key={g.id}>
+                                        <button type="button" className="pdco-evo-mais" aria-expanded={mostrarSemAlteracao} onClick={() => setMostrarSemAlteracao((v) => !v)}>
+                                            {mostrarSemAlteracao ? 'Ocultar' : 'Mostrar'} ações sem alteração ({g.itens.length})
+                                        </button>
+                                        {mostrarSemAlteracao && <GrupoLista itens={g.itens} limite={LIMITE_BLOCO} />}
+                                    </div>
+                                )
+                            }
+                            // Sem nenhuma mudança, a mensagem acima basta — não repete quatro blocos vazios.
+                            if (!foco && totalMudancas === 0) return null
                             return (
                                 <div className="pdco-evo-grupo" key={g.id}>
-                                    <button type="button" className="pdco-evo-mais" aria-expanded={mostrarSemAlteracao} onClick={() => setMostrarSemAlteracao((v) => !v)}>
-                                        {mostrarSemAlteracao ? 'Ocultar' : 'Mostrar'} ações sem alteração ({g.itens.length})
-                                    </button>
-                                    {mostrarSemAlteracao && <GrupoLista itens={g.itens} limite={LIMITE_BLOCO} />}
+                                    <h3 className="pdco-evo-grupo-titulo">
+                                        {g.titulo} <span className="pdco-evo-grupo-n">{g.itens.length}</span>
+                                    </h3>
+                                    {g.itens.length === 0 ? <p className="pdco-month-vazio">Nada nesta categoria no período.</p> : <GrupoLista itens={g.itens} limite={LIMITE_BLOCO} />}
                                 </div>
                             )
-                        }
-                        // Sem nenhuma mudança, a mensagem acima basta — não repete quatro blocos vazios.
-                        if (!foco && totalMudancas === 0) return null
-                        return (
-                            <div className="pdco-evo-grupo" key={g.id}>
-                                <h3 className="pdco-evo-grupo-titulo">
-                                    {g.titulo} <span className="pdco-evo-grupo-n">{g.itens.length}</span>
-                                </h3>
-                                {g.itens.length === 0 ? <p className="pdco-month-vazio">Nada nesta categoria no período.</p> : <GrupoLista itens={g.itens} limite={LIMITE_BLOCO} />}
-                            </div>
-                        )
-                    })}
-                </div>
-            </section>
-
-            {modo === 'detalhado' && (
-                <section className="pdco-panel">
-                    <div className="pdco-panel-header">
-                        <p className="pdco-kicker">Linha do tempo completa</p>
-                        <h2 className="pdco-panel-title">Todos os meses do ciclo</h2>
+                        })}
                     </div>
+                ) : (
                     <div className="pdco-month-list">
                         {analise.meses.map((m, i) => {
                             const aberto = abertosAtuais.has(m.mes)
@@ -258,8 +255,8 @@ export default function Evolucao() {
                             )
                         })}
                     </div>
-                </section>
-            )}
+                )}
+            </section>
         </div>
     )
 }
