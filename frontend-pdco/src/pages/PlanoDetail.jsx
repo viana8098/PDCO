@@ -13,6 +13,7 @@ import { calcRag, formatarData, tipoResumido, tituloDoPlano, RAG_COLOR, RAG_LABE
 import { useFiltroPersistente } from '../lib/filtrosPersistentes'
 import { usePdco } from '../lib/PdcoContext'
 import { api } from '../lib/api'
+import { obterRcfDaArea } from '../lib/rcfPorArea'
 
 export default function PlanoDetail() {
     const { user } = usePdco()
@@ -42,6 +43,7 @@ export default function PlanoDetail() {
     if (!detalhe.dados) return <div className="pdco-page pdco-estado">Carregando plano…</div>
 
     const { plano, acoes, acompanhamento, indicadores } = detalhe.dados
+    const rcfArea = obterRcfDaArea(plano.area_nome)
     const rag = calcRag(plano, acompanhamento)
     // Planos estratégicos não exibem o Diagnóstico da Subcultura nem os Resultados esperados (só os táticos).
     const ehEstrategico = tipoResumido(plano.subtipo) === 'Estratégico'
@@ -98,7 +100,7 @@ export default function PlanoDetail() {
 
             {!ehEstrategico && (
                 <div className="pdco-secondary-row">
-                    <CaixaRecolhivel titulo="Diagnóstico da Subcultura" texto={null} preservarQuebras />
+                    <CaixaRecolhivel titulo="Diagnóstico da Subcultura" texto={rcfArea} preservarQuebras />
                     <CaixaRecolhivel titulo="Resultados esperados" texto={plano.resultados_esperados} />
                 </div>
             )}
