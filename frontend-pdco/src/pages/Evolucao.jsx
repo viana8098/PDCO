@@ -86,7 +86,6 @@ export default function Evolucao() {
         })
     }
 
-    const mesesSelecionaveis = ciclo.meses.filter((m) => !m.futuro)
     const abertosAtuais = abertos ?? new Set([para])
     const grupos = montarGrupos(comp, foco)
     const totalMudancas = comp.totais.concluidas + comp.totais.novosAtrasos + comp.totais.acompanhamentos + comp.totais.anexos
@@ -114,9 +113,10 @@ export default function Evolucao() {
                         <label>
                             De
                             <select className="pdco-evo-select" value={de} onChange={(e) => selecionarPeriodo(Number(e.target.value), para)}>
-                                {mesesSelecionaveis.map((m) => (
-                                    <option key={m.mes} value={m.mes}>
+                                {ciclo.meses.map((m) => (
+                                    <option key={m.mes} value={m.mes} disabled={m.futuro}>
                                         {m.rotulo} · Mês {m.mes}
+                                        {m.futuro ? ' (ainda não iniciado)' : ''}
                                     </option>
                                 ))}
                             </select>
@@ -125,9 +125,10 @@ export default function Evolucao() {
                         <label>
                             Para
                             <select className="pdco-evo-select" value={para} onChange={(e) => selecionarPeriodo(de, Number(e.target.value))}>
-                                {mesesSelecionaveis.map((m) => (
-                                    <option key={m.mes} value={m.mes}>
+                                {ciclo.meses.map((m) => (
+                                    <option key={m.mes} value={m.mes} disabled={m.futuro}>
                                         {m.rotulo} · Mês {m.mes}
+                                        {m.futuro ? ' (ainda não iniciado)' : ''}
                                     </option>
                                 ))}
                             </select>

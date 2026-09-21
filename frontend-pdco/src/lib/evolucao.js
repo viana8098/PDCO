@@ -476,7 +476,7 @@ export function montarCards(comp) {
   else if (novos > 0 && reg > 0) {
     atrasos = {
       seta: dAtrasadas > 0 ? '↑' : dAtrasadas < 0 ? '↓' : '→',
-      texto: `Saldo ${dAtrasadas > 0 ? '+' : ''}${dAtrasadas} (${novos} novos · ${reg} regularizados)`,
+      texto: `Saldo ${dAtrasadas > 0 ? '+' : ''}${dAtrasadas} (${plural(novos, 'novo')} · ${plural(reg, 'regularizado')})`,
       tom: dAtrasadas > 0 ? 'ruim' : dAtrasadas < 0 ? 'bom' : 'neutro',
     }
   } else atrasos = { seta: '→', texto: 'Sem variação', tom: 'neutro' }
