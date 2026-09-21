@@ -1,7 +1,10 @@
 import { useRef, useState } from 'react'
 import { movimentoReduzido, useValorAnimado } from '../lib/animacao'
+import { nivelDaConclusao } from '../lib/pdcoCalc'
 
 const STROKE = 10
+// Cor do anel por nível; a faixa de cada nível (CONCLUSAO_LIMITES) fica em lib/pdcoCalc.js e é a mesma do "i" (InfoConclusao).
+const COR_ARCO = { verde: 'var(--green)', amarelo: '#fbbf24', vermelho: 'var(--red)' }
 
 // Anel de progresso circular genérico (SVG puro) — usado no banner executivo
 // para "sua área" vs "empresa" e reaproveitável em qualquer % 0-100.
@@ -15,7 +18,7 @@ export function CultureGauge({ score = 0, size = 108, label = '', suffix = '', a
     const raio = (size - STROKE - 4) / 2
     const circunferencia = 2 * Math.PI * raio
     const pct = Math.max(0, Math.min(100, score))
-    const cor = pct >= 70 ? 'var(--green)' : pct >= 45 ? '#fbbf24' : 'var(--red)'
+    const cor = COR_ARCO[nivelDaConclusao(pct)]
     const offsetDe = (v) => circunferencia * (1 - v / 100)
 
     const arco = useRef(null)

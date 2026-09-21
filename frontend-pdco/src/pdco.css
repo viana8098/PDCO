@@ -2658,3 +2658,21 @@ body {
   align-items: center;
   gap: 8px;
 }
+
+/* "i" da Conclusão de ações: rótulo com o ícone ao lado; faixas de cor no balão. */
+.pdco-app .pdco-kicker-info {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+}
+.pdco-app .pdco-info-faixas li {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+.pdco-app .pdco-info-balao p.pdco-info-nota {
+  margin: 8px 0 0;
+  padding-top: 8px;
+  border-top: 1px solid var(--border);
+}

@@ -167,6 +167,23 @@ export function tipoResumido(subtipo) {
   return null
 }
 
+// ---------------------------------------------------------------------------
+// Cores dos anéis de "Conclusão de ações" (banner). Não é o status do plano (RAG_*): aqui a faixa é o
+// percentual de ações concluídas. Única fonte: o anel (CultureGauge) e o "i" (InfoConclusao) leem daqui.
+// ---------------------------------------------------------------------------
+/** Percentual mínimo para cada nível: >= verde é Em dia; >= amarelo é Atenção; abaixo disso, Crítico. */
+export const CONCLUSAO_LIMITES = { verde: 70, amarelo: 45 }
+export const CONCLUSAO_FAIXA = {
+  verde: `${CONCLUSAO_LIMITES.verde}% a 100%`,
+  amarelo: `${CONCLUSAO_LIMITES.amarelo}% a ${CONCLUSAO_LIMITES.verde - 1}%`,
+  vermelho: `menos de ${CONCLUSAO_LIMITES.amarelo}%`,
+}
+export function nivelDaConclusao(pct) {
+  if (pct >= CONCLUSAO_LIMITES.verde) return 'verde'
+  if (pct >= CONCLUSAO_LIMITES.amarelo) return 'amarelo'
+  return 'vermelho'
+}
+
 /** % de ações concluídas (ponderado) numa lista de planos — usado nos medidores do banner executivo. */
 export function pctConcluido(planos) {
   const total = planos.reduce((s, p) => s + (p.resumo_acoes?.total ?? 0), 0)

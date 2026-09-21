@@ -1,5 +1,6 @@
 import { ContadorAnimado } from './Animados'
 import { CultureGauge } from './CultureGauge'
+import { InfoConclusao } from './InfoConclusao'
 
 /**
  * Banner de topo das páginas de listagem — título do contexto + medidor(es)
@@ -18,7 +19,10 @@ export function ExecutiveBanner({ titulo, totalPlanos, metricas }) {
                 </p>
             </div>
             <div className="pdco-banner-gauges">
-                <p className="pdco-kicker">Conclusão de ações</p>
+                <p className="pdco-kicker pdco-kicker-info">
+                    Conclusão de ações
+                    <InfoConclusao />
+                </p>
                 <div className="pdco-banner-gauges-row">
                     <CultureGauge score={metricas.area} label={metricas.empresa == null ? 'Meus planos' : 'Esta área'} suffix="%" />
                     {metricas.empresa != null && (
