@@ -2648,3 +2648,13 @@ body {
   color: var(--text-muted);
   font-style: italic;
 }
+
+/* "i" dos anexos: balão mais compacto e o ícone centralizado na altura do botão. */
+.pdco-app .pdco-info-balao-estreito {
+  width: min(300px, calc(100vw - 16px));
+}
+.pdco-app .pdco-anexos-acao {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
