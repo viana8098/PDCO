@@ -21,22 +21,22 @@ function comparar(a, b, coluna) {
 }
 
 /**
- * Tabela (mais recente primeiro) dos acompanhamentos do dw — plano + ações,
- * já juntados em `acompanhamento` (ver domain/pdco.rules.ts#montarJanelaAcompanhamento).
- * Colunas ordenáveis, no mesmo padrão da tabela de ações. O dw não guarda quem
- * escreveu o acompanhamento — o responsável é o do plano.
+ * Tabela (mais recente primeiro) dos acompanhamentos DO PLANO: o texto vem de
+ * `ds_acompanhamentoplanoacao` do dw (registros com origem 'plano' em `acompanhamento`,
+ * ver domain/pdco.rules.ts#montarJanelaAcompanhamento). Os acompanhamentos das ações
+ * (`ds_acompanhamentoacao`) não entram aqui — aparecem na página de cada ação; quando o plano
+ * tem, uma nota avisa quantos são. Colunas ordenáveis, no mesmo padrão da tabela de ações.
+ * O dw não guarda quem escreveu o acompanhamento — o responsável é o do plano.
  */
 export function AcompanhamentoGrid({ quadrantes, plano }) {
     // null = ordem original (mais recente primeiro); senão { coluna, direcao: 1 | -1 }
     const [ordenacao, setOrdenacao] = useState(null)
 
-    const registros = useMemo(
-        () =>
-            quadrantes
-                .flatMap((q) => q.registros.map((r) => ({ ...r, mes: q.mes, responsavel: plano.responsavel })))
-                .sort((a, b) => (b.data || '').localeCompare(a.data || '')),
-        [quadrantes, plano.responsavel],
-    )
+    const { registros, qtdAcoes } = useMemo(() => {
+        const todos = quadrantes.flatMap((q) => q.registros.map((r) => ({ ...r, mes: q.mes, responsavel: plano.responsavel })))
+        const doPlano = todos.filter((r) => r.origem === 'plano').sort((a, b) => (b.data || '').localeCompare(a.data || ''))
+        return { registros: doPlano, qtdAcoes: todos.length - doPlano.length }
+    }, [quadrantes, plano.responsavel])
 
     const registrosOrdenados = useMemo(() => {
         if (!ordenacao) return registros
@@ -52,42 +52,54 @@ export function AcompanhamentoGrid({ quadrantes, plano }) {
         })
     }
 
+    const plural = qtdAcoes === 1 ? '' : 's'
+    const notaAcoes =
+        qtdAcoes > 0 ? `O plano também tem ${qtdAcoes} acompanhamento${plural} registrado${plural} nas ações — veja na página de cada ação.` : null
+
     if (registros.length === 0) {
-        return <p className="pdco-vazio">Nenhum acompanhamento registrado para este plano.</p>
+        return (
+            <p className="pdco-vazio">
+                Nenhum acompanhamento do plano registrado.
+                {notaAcoes && ` ${notaAcoes}`}
+            </p>
+        )
     }
 
     return (
-        <table className="pdco-tabela-acoes pdco-tabela-acomp">
-            <thead>
-                <tr>
-                    {COLUNAS.map((col) => {
-                        const ativa = ordenacao?.coluna === col.chave
-                        return (
-                            <th key={col.chave}>
-                                <button
-                                    type="button"
-                                    className={`pdco-th-ordenavel ${ativa ? 'pdco-th-ativa' : ''}`}
-                                    onClick={() => alternarOrdenacao(col.chave)}
-                                    title="Ordenar"
-                                >
-                                    {col.rotulo}
-                                    <span className="pdco-th-seta">{ativa ? (ordenacao.direcao === 1 ? '▲' : '▼') : '↕'}</span>
-                                </button>
-                            </th>
-                        )
-                    })}
-                </tr>
-            </thead>
-            <tbody>
-                {registrosOrdenados.map((registro, indice) => (
-                    <tr key={indice}>
-                        <td className="pdco-acomp-texto">{registro.texto}</td>
-                        <td>Mês {registro.mes}</td>
-                        <td>{registro.responsavel || '—'}</td>
-                        <td>{formatarData(registro.data)}</td>
+        <>
+            <table className="pdco-tabela-acoes pdco-tabela-acomp">
+                <thead>
+                    <tr>
+                        {COLUNAS.map((col) => {
+                            const ativa = ordenacao?.coluna === col.chave
+                            return (
+                                <th key={col.chave}>
+                                    <button
+                                        type="button"
+                                        className={`pdco-th-ordenavel ${ativa ? 'pdco-th-ativa' : ''}`}
+                                        onClick={() => alternarOrdenacao(col.chave)}
+                                        title="Ordenar"
+                                    >
+                                        {col.rotulo}
+                                        <span className="pdco-th-seta">{ativa ? (ordenacao.direcao === 1 ? '▲' : '▼') : '↕'}</span>
+                                    </button>
+                                </th>
+                            )
+                        })}
                     </tr>
-                ))}
-            </tbody>
-        </table>
+                </thead>
+                <tbody>
+                    {registrosOrdenados.map((registro, indice) => (
+                        <tr key={indice}>
+                            <td className="pdco-acomp-texto">{registro.texto}</td>
+                            <td>Mês {registro.mes}</td>
+                            <td>{registro.responsavel || '—'}</td>
+                            <td>{formatarData(registro.data)}</td>
+                        </tr>
+                    ))}
+                </tbody>
+            </table>
+            {notaAcoes && <p className="pdco-acomp-nota">{notaAcoes}</p>}
+        </>
     )
 }

@@ -48,10 +48,12 @@ export default function PlanoDetail() {
     const rag = calcRag(plano, acompanhamento)
     const cor = RAG_COLOR[rag.nivel]
     const totalAcompanhamentos = acompanhamento.reduce((s, q) => s + q.registros.length, 0)
+    // A aba lista só os acompanhamentos do plano (ds_acompanhamentoplanoacao): a contagem acompanha a tabela.
+    const totalAcompanhamentosDoPlano = acompanhamento.reduce((s, q) => s + q.registros.filter((r) => r.origem === 'plano').length, 0)
 
     const abas = [
         { chave: 'acoes', rotulo: 'Ações do plano', total: acoes.length },
-        { chave: 'acompanhamentos', rotulo: 'Acompanhamentos do plano', total: totalAcompanhamentos },
+        { chave: 'acompanhamentos', rotulo: 'Acompanhamentos do plano', total: totalAcompanhamentosDoPlano },
         { chave: 'anexos', rotulo: 'Anexos de evidência', total: 0 },
     ]
 

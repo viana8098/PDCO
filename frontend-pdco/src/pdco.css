@@ -2656,3 +2656,11 @@ body {
     scroll-behavior: auto !important;
   }
 }
+
+/* Nota da tabela de acompanhamentos: quando o plano também tem registros nas ações. */
+.pdco-app .pdco-acomp-nota {
+  margin: 0;
+  padding: 12px 22px 18px;
+  font-size: 12px;
+  color: var(--text-muted);
+}
