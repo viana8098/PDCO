@@ -1,0 +1,189 @@
+{
+  "plano": {
+    "cd_planoacao": "32584",
+    "subtipo": "P.a. Pdco Tático  - Área 2026",
+    "status": "Em Andamento",
+    "area_codigo": "80",
+    "area_nome": "2.2.3 Gente E Cultura Organizacional",
+    "responsavel": "Responsável 15",
+    "arquetipos_culturais": "Pdco Da Área De Gente E Cultura Organizacional",
+    "resultados_esperados": "Fortalecer O Protagonismo Da Equipe De Gente E Cultura, Ampliando Sua Atuação Estratégica, Consultiva E Integrada Ao Negócio. O Plano Busca Aumentar A Compreensão Dos Desafios E Prioridades Das Áreas, Promover Maior Antecipação Das Necessidades E Conectar As Soluções De Gente E Cultura Aos Resultados Organizacionais.",
+    "data_inicio": "2026-08-26",
+    "data_fim": "2027-03-31",
+    "execucao": 0.3333333333333333,
+    "resumo_acoes": {
+      "total": 9,
+      "concluidas": 3,
+      "atrasadas": 0
+    },
+    "resumo_acompanhamentos": {
+      "total": 1,
+      "ultimo": "2026-09-10"
+    }
+  },
+  "acoes": [
+    {
+      "cd_acao": "32586",
+      "nome": "Realizar Imersão De Conhecimento Nos Negócios",
+      "descricao": null,
+      "status": "Planejado",
+      "prazo_inicial": "2026-10-26",
+      "prazo_final": "2026-12-15",
+      "data_conclusao": null,
+      "responsavel": "Responsável 04"
+    },
+    {
+      "cd_acao": "32587",
+      "nome": "Integrar Pilares Gco – Visão Estratégica 360° Do Negócio",
+      "descricao": null,
+      "status": "Planejado",
+      "prazo_inicial": "2026-08-26",
+      "prazo_final": "2027-03-31",
+      "data_conclusao": null,
+      "responsavel": "Responsável 20"
+    },
+    {
+      "cd_acao": "32588",
+      "nome": "Estruturar Novo Modelo De Atuação De Gente E Cultura: Especialistas De Pilares + Bp",
+      "descricao": null,
+      "status": "Concluído",
+      "prazo_inicial": "2026-08-26",
+      "prazo_final": "2026-08-30",
+      "data_conclusao": "2026-09-21",
+      "responsavel": "Responsável 15"
+    },
+    {
+      "cd_acao": "32777",
+      "nome": "Validar Modelo/orçamento De Pessoal Com A Diretoria De Gestão Estratégica",
+      "descricao": null,
+      "status": "Concluído",
+      "prazo_inicial": "2026-08-30",
+      "prazo_final": "2026-09-01",
+      "data_conclusao": "2026-09-21",
+      "responsavel": "Responsável 15"
+    },
+    {
+      "cd_acao": "32778",
+      "nome": "Apresentar Novo Modelo Para A Equipe- Novo Design Organizacional Gente E Cultura Organizacional",
+      "descricao": null,
+      "status": "Concluído",
+      "prazo_inicial": "2026-09-14",
+      "prazo_final": "2026-09-14",
+      "data_conclusao": "2026-09-21",
+      "responsavel": "Responsável 15"
+    },
+    {
+      "cd_acao": "32779",
+      "nome": "Definir Desenvolvimento (capacitações) Dos Profissionais Que Atuarão Como Bp E People Analytics",
+      "descricao": null,
+      "status": "Em Andamento",
+      "prazo_inicial": "2026-09-14",
+      "prazo_final": "2026-10-15",
+      "data_conclusao": null,
+      "responsavel": "Responsável 15"
+    },
+    {
+      "cd_acao": "32780",
+      "nome": "Definir E Alinhar Com Os Profissionais Modelo De Atuação Bp",
+      "descricao": null,
+      "status": "Planejado",
+      "prazo_inicial": "2026-09-30",
+      "prazo_final": "2026-10-20",
+      "data_conclusao": null,
+      "responsavel": "Responsável 15"
+    },
+    {
+      "cd_acao": "32781",
+      "nome": "Realizar Reunião De Alinhamento Com A Diretoria Do Negócio/ Líderes Sobre O Modelo Proposto",
+      "descricao": null,
+      "status": "Planejado",
+      "prazo_inicial": "2026-09-21",
+      "prazo_final": "2027-03-31",
+      "data_conclusao": null,
+      "responsavel": "Responsável 15"
+    },
+    {
+      "cd_acao": "32782",
+      "nome": "Iniciar O Modelo Proposto E Acompanhar Resultado/ Ganhos Para O Negócio E Empresa",
+      "descricao": null,
+      "status": "Planejado",
+      "prazo_inicial": "2026-12-01",
+      "prazo_final": "2027-03-31",
+      "data_conclusao": null,
+      "responsavel": "Responsável 15"
+    }
+  ],
+  "acompanhamento": [
+    {
+      "mes": 1,
+      "ano": 2026,
+      "mes_referencia": 8,
+      "registros": []
+    },
+    {
+      "mes": 2,
+      "ano": 2026,
+      "mes_referencia": 9,
+      "registros": [
+        {
+          "texto": "Teste De Implantação.",
+          "data": "2026-09-10",
+          "origem": "plano"
+        }
+      ]
+    },
+    {
+      "mes": 3,
+      "ano": 2026,
+      "mes_referencia": 10,
+      "registros": []
+    },
+    {
+      "mes": 4,
+      "ano": 2026,
+      "mes_referencia": 11,
+      "registros": []
+    },
+    {
+      "mes": 5,
+      "ano": 2026,
+      "mes_referencia": 12,
+      "registros": []
+    },
+    {
+      "mes": 6,
+      "ano": 2027,
+      "mes_referencia": 1,
+      "registros": []
+    },
+    {
+      "mes": 7,
+      "ano": 2027,
+      "mes_referencia": 2,
+      "registros": []
+    },
+    {
+      "mes": 8,
+      "ano": 2027,
+      "mes_referencia": 3,
+      "registros": []
+    }
+  ],
+  "registros_acompanhamento": [
+    {
+      "texto": "Teste De Implantação.",
+      "data": "2026-09-10",
+      "origem": "plano",
+      "cd_acao": null
+    }
+  ],
+  "indicadores": [],
+  "registro": {
+    "pontos_criticos": null,
+    "fatores_sucesso": null,
+    "itens_fora_escopo": null,
+    "atualizado_por": null,
+    "atualizado_em": null
+  },
+  "pode_editar": false
+}

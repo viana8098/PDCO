@@ -57,6 +57,10 @@
       "rotulo": "2.2.3 Gente E Cultura Organizacional — Implantação Do Plano De Sucessão"
     },
     {
+      "valor": "32584",
+      "rotulo": "2.2.3 Gente E Cultura Organizacional — Pdco Da Área De Gente E Cultura Organizacional"
+    },
+    {
       "valor": "32714",
       "rotulo": "2.3.2 Educação Profissional — Priorização Estratégica Por Impacto Em Resultado"
     },
@@ -147,6 +151,10 @@
     {
       "valor": "Apresentar À Diretoria Os Resultados E Conclusões Das Etapas De Mapeamento, Matriz De Criticidade E Diagnóstico Da Sucessão.",
       "rotulo": "Apresentar À Diretoria Os Resultados E Conclusões Das Etapas De Mapeamento, Matriz De Criticidade E Diagnóstico Da Sucessão."
+    },
+    {
+      "valor": "Apresentar Novo Modelo Para A Equipe- Novo Design Organizacional Gente E Cultura Organizacional",
+      "rotulo": "Apresentar Novo Modelo Para A Equipe- Novo Design Organizacional Gente E Cultura Organizacional"
     },
     {
       "valor": "Ativar Ritual 'visão De Resultado' (45min) + Check-in Quinzenal De 15min. Monitorar Gap E Decisões De Repriorização Mensalmente.",
@@ -253,6 +261,14 @@
       "rotulo": "Definir As Cestas Do Comercial Sesi E Senai"
     },
     {
+      "valor": "Definir Desenvolvimento (capacitações) Dos Profissionais Que Atuarão Como Bp E People Analytics",
+      "rotulo": "Definir Desenvolvimento (capacitações) Dos Profissionais Que Atuarão Como Bp E People Analytics"
+    },
+    {
+      "valor": "Definir E Alinhar Com Os Profissionais Modelo De Atuação Bp",
+      "rotulo": "Definir E Alinhar Com Os Profissionais Modelo De Atuação Bp"
+    },
+    {
       "valor": "Definir E Implantar Indicadores De Desempenho (ex: % De Líderes Capacitados; % De Áreas Aplicando O Modelo; % De Colaboradores Reconhecidos; % De Planos De Melhoria Implementados; Redução De Casos De Baixa Performance Recorrente; Evolução Do Índice De Meritocracia Na Pesquisa De Clima; Evolução Da Percepção De Justiça E Coerência Da Liderança.",
       "rotulo": "Definir E Implantar Indicadores De Desempenho (ex: % De Líderes Capacitados; % De Áreas Aplicando O Modelo; % De Colaboradores Reconhecidos; % De Planos De Melhoria Implementados; Redução De Casos De Baixa Performance Recorrente; Evolução Do Índice De Meritocracia Na Pesquisa De Clima; Evolução Da Percepção De Justiça E Coerência Da Liderança."
     },
@@ -345,6 +361,10 @@
       "rotulo": "Estruturar Modelo Inicial Para Validação Do Método, Áreas Consideradas, Regras E Demais Definições Necessárias  (etapa 1 - Alinhamento Estratégico)"
     },
     {
+      "valor": "Estruturar Novo Modelo De Atuação De Gente E Cultura: Especialistas De Pilares + Bp",
+      "rotulo": "Estruturar Novo Modelo De Atuação De Gente E Cultura: Especialistas De Pilares + Bp"
+    },
+    {
       "valor": "Estruturar O Plano Corporativo De Treinamentos Por Nível De Liderança E Papel De Atuação Dos Agentes De Gestão",
       "rotulo": "Estruturar O Plano Corporativo De Treinamentos Por Nível De Liderança E Papel De Atuação Dos Agentes De Gestão"
     },
@@ -417,6 +437,10 @@
       "rotulo": "Incorporar Valores Na Avaliação De Desempenho, Feedback, Promoção E Desligamento."
     },
     {
+      "valor": "Iniciar O Modelo Proposto E Acompanhar Resultado/ Ganhos Para O Negócio E Empresa",
+      "rotulo": "Iniciar O Modelo Proposto E Acompanhar Resultado/ Ganhos Para O Negócio E Empresa"
+    },
+    {
       "valor": "Instituir O Comitê De Sucessão, Definindo Sua Composição, Responsabilidades E Calendário De Atuação.",
       "rotulo": "Instituir O Comitê De Sucessão, Definindo Sua Composição, Responsabilidades E Calendário De Atuação."
     },
@@ -427,6 +451,10 @@
     {
       "valor": "Integrar Os Critérios De Reconhecimento E Consequência Ao Ciclo Institucional De Gestão De Desempenho E Desenvolvimento De Pessoas.",
       "rotulo": "Integrar Os Critérios De Reconhecimento E Consequência Ao Ciclo Institucional De Gestão De Desempenho E Desenvolvimento De Pessoas."
+    },
+    {
+      "valor": "Integrar Pilares Gco – Visão Estratégica 360° Do Negócio",
+      "rotulo": "Integrar Pilares Gco – Visão Estratégica 360° Do Negócio"
     },
     {
       "valor": "Integrar Suprimentos Ao Planejamento Institucional",
@@ -505,6 +533,14 @@
       "rotulo": "Realizar Capacitação Junto A Consultoria Sobre Inovação E Processos"
     },
     {
+      "valor": "Realizar Imersão De Conhecimento Nos Negócios",
+      "rotulo": "Realizar Imersão De Conhecimento Nos Negócios"
+    },
+    {
+      "valor": "Realizar Reunião De Alinhamento Com A Diretoria Do Negócio/ Líderes Sobre O Modelo Proposto",
+      "rotulo": "Realizar Reunião De Alinhamento Com A Diretoria Do Negócio/ Líderes Sobre O Modelo Proposto"
+    },
+    {
       "valor": "Reforçar Cultura De Protagonismo Com Consequência Reconhecer Colaboradores Que Evoluem E Líderes Que  Desenvolvem Equipes. Atuar Nos Casos De Baixa Aderência Com  Feedback Formal E Plano De Ação.",
       "rotulo": "Reforçar Cultura De Protagonismo Com Consequência Reconhecer Colaboradores Que Evoluem E Líderes Que  Desenvolvem Equipes. Atuar Nos Casos De Baixa Aderência Com  Feedback Formal E Plano De Ação."
     },
@@ -567,6 +603,10 @@
     {
       "valor": "Validar Modelo Inicial Com A Alta Gestão (etapa 2 - Estruturação Técnica Inicial)",
       "rotulo": "Validar Modelo Inicial Com A Alta Gestão (etapa 2 - Estruturação Técnica Inicial)"
+    },
+    {
+      "valor": "Validar Modelo/orçamento De Pessoal Com A Diretoria De Gestão Estratégica",
+      "rotulo": "Validar Modelo/orçamento De Pessoal Com A Diretoria De Gestão Estratégica"
     }
   ],
   "administrador": true

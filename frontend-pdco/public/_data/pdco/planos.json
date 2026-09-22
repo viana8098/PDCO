@@ -30,7 +30,7 @@
   {
     "cd_planoacao": "32768",
     "subtipo": "P.a. Pdco Tático  - Área 2026",
-    "status": "Planejado",
+    "status": "Em Andamento",
     "area_codigo": "70",
     "area_nome": "1.4 Observatório Da Indústria",
     "responsavel": "Responsável 19",
@@ -38,15 +38,15 @@
     "resultados_esperados": "Aprimorar A Gestão Das Entregas Do Observatório, Promovendo Maior Agilidade, Organização, Rastreabilidade E Continuidade Das Atividades.",
     "data_inicio": "2026-07-01",
     "data_fim": "2026-09-30",
-    "execucao": 0,
+    "execucao": 0.5,
     "resumo_acoes": {
       "total": 2,
-      "concluidas": 0,
+      "concluidas": 1,
       "atrasadas": 0
     },
     "resumo_acompanhamentos": {
-      "total": 0,
-      "ultimo": null
+      "total": 1,
+      "ultimo": "2026-09-21"
     },
     "acoes_nomes": [
       "Padrão Mínimo De Comunicação E Documentação Técnica",
@@ -440,6 +440,39 @@
       "Criar Ritual De Reforço Cultural",
       "Sensibilizar Lideranças Sobre O Guia Dos Valores Na Prática",
       "Traduzir Valores Em Comportamentos - Validação Do Guia Com A Diretoria"
+    ]
+  },
+  {
+    "cd_planoacao": "32584",
+    "subtipo": "P.a. Pdco Tático  - Área 2026",
+    "status": "Em Andamento",
+    "area_codigo": "80",
+    "area_nome": "2.2.3 Gente E Cultura Organizacional",
+    "responsavel": "Responsável 15",
+    "arquetipos_culturais": "Pdco Da Área De Gente E Cultura Organizacional",
+    "resultados_esperados": "Fortalecer O Protagonismo Da Equipe De Gente E Cultura, Ampliando Sua Atuação Estratégica, Consultiva E Integrada Ao Negócio. O Plano Busca Aumentar A Compreensão Dos Desafios E Prioridades Das Áreas, Promover Maior Antecipação Das Necessidades E Conectar As Soluções De Gente E Cultura Aos Resultados Organizacionais.",
+    "data_inicio": "2026-08-26",
+    "data_fim": "2027-03-31",
+    "execucao": 0.3333333333333333,
+    "resumo_acoes": {
+      "total": 9,
+      "concluidas": 3,
+      "atrasadas": 0
+    },
+    "resumo_acompanhamentos": {
+      "total": 1,
+      "ultimo": "2026-09-10"
+    },
+    "acoes_nomes": [
+      "Realizar Imersão De Conhecimento Nos Negócios",
+      "Integrar Pilares Gco – Visão Estratégica 360° Do Negócio",
+      "Estruturar Novo Modelo De Atuação De Gente E Cultura: Especialistas De Pilares + Bp",
+      "Validar Modelo/orçamento De Pessoal Com A Diretoria De Gestão Estratégica",
+      "Apresentar Novo Modelo Para A Equipe- Novo Design Organizacional Gente E Cultura Organizacional",
+      "Definir Desenvolvimento (capacitações) Dos Profissionais Que Atuarão Como Bp E People Analytics",
+      "Definir E Alinhar Com Os Profissionais Modelo De Atuação Bp",
+      "Realizar Reunião De Alinhamento Com A Diretoria Do Negócio/ Líderes Sobre O Modelo Proposto",
+      "Iniciar O Modelo Proposto E Acompanhar Resultado/ Ganhos Para O Negócio E Empresa"
     ]
   },
   {

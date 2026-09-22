@@ -2,7 +2,7 @@
   "plano": {
     "cd_planoacao": "32768",
     "subtipo": "P.a. Pdco Tático  - Área 2026",
-    "status": "Planejado",
+    "status": "Em Andamento",
     "area_codigo": "70",
     "area_nome": "1.4 Observatório Da Indústria",
     "responsavel": "Responsável 19",
@@ -10,15 +10,15 @@
     "resultados_esperados": "Aprimorar A Gestão Das Entregas Do Observatório, Promovendo Maior Agilidade, Organização, Rastreabilidade E Continuidade Das Atividades.",
     "data_inicio": "2026-07-01",
     "data_fim": "2026-09-30",
-    "execucao": 0,
+    "execucao": 0.5,
     "resumo_acoes": {
       "total": 2,
-      "concluidas": 0,
+      "concluidas": 1,
       "atrasadas": 0
     },
     "resumo_acompanhamentos": {
-      "total": 0,
-      "ultimo": null
+      "total": 1,
+      "ultimo": "2026-09-21"
     }
   },
   "acoes": [
@@ -26,10 +26,10 @@
       "cd_acao": "32769",
       "nome": "Padrão Mínimo De Comunicação E Documentação Técnica",
       "descricao": "Garantir Maior Organização, Rastreabilidade E Continuidade Das Entregas, Reduzindo Perda De Informações E Dependência Do Conhecimento Individual.\r\n\r\nkr´s Impactados:\r\n\r\nalcançar 100% Dos Projetos E Demandas Relevantes Registrados No Template Padrão. \r\n\r\nmanter Pelo Menos 90% Dos Registros Ativos Atualizados Semanalmente. \r\n\r\ngarantir Que 100% Das Entregas De Bi, Dados, Estudos Ou Sistemas Tenham Regras De Negócio E Bases Utilizadas Documentadas. \r\n\r\nreduzir Em 30% As Ocorrências De Retrabalho Associadas À Falta De Documentação Ou Falha De Comunicação Técnica.",
-      "status": "Planejado",
+      "status": "Concluído",
       "prazo_inicial": "2026-07-01",
       "prazo_final": "2026-09-30",
-      "data_conclusao": null,
+      "data_conclusao": "2026-09-21",
       "responsavel": "Responsável 19"
     },
     {
@@ -66,7 +66,13 @@
       "mes": 4,
       "ano": 2026,
       "mes_referencia": 9,
-      "registros": []
+      "registros": [
+        {
+          "texto": "A Ação Foi Concluída Com A Elaboração Do Padrão Mínimo De Comunicação E Documentação De Projetos, Estabelecendo Diretrizes Para Organização, Registro E Acompanhamento Dos Projetos Do Observatório. O Documento Define Um Fluxo Mínimo Desde A Criação Da Feature No Azure Devops E Elaboração Dos Requisitos Até A Definição De Responsáveis, Canais De Comunicação, Refinamento, Planejamento Das Atividades E Registro Das Decisões Relevantes, Buscando Ampliar A Rastreabilidade, Reduzir Perdas De Informação E Garantir Maior Continuidade E Alinhamento Na Execução Dos Projetos.",
+          "data": "2026-09-21",
+          "origem": "acao"
+        }
+      ]
     },
     {
       "mes": 5,
@@ -93,7 +99,14 @@
       "registros": []
     }
   ],
-  "registros_acompanhamento": [],
+  "registros_acompanhamento": [
+    {
+      "texto": "A Ação Foi Concluída Com A Elaboração Do Padrão Mínimo De Comunicação E Documentação De Projetos, Estabelecendo Diretrizes Para Organização, Registro E Acompanhamento Dos Projetos Do Observatório. O Documento Define Um Fluxo Mínimo Desde A Criação Da Feature No Azure Devops E Elaboração Dos Requisitos Até A Definição De Responsáveis, Canais De Comunicação, Refinamento, Planejamento Das Atividades E Registro Das Decisões Relevantes, Buscando Ampliar A Rastreabilidade, Reduzir Perdas De Informação E Garantir Maior Continuidade E Alinhamento Na Execução Dos Projetos.",
+      "data": "2026-09-21",
+      "origem": "acao",
+      "cd_acao": "32769"
+    }
+  ],
   "indicadores": [],
   "registro": {
     "pontos_criticos": null,
