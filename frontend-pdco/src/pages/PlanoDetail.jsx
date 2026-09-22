@@ -2,7 +2,6 @@ import { Link, useParams } from 'react-router-dom'
 import { useAsync } from '../lib/useAsync'
 import { AcoesTable } from '../components/AcoesTable'
 import { AcompanhamentoGrid } from '../components/AcompanhamentoGrid'
-import { AnexosTab } from '../components/AnexosTab'
 import { ContadorAnimado } from '../components/Animados'
 import { CaixaRecolhivel } from '../components/CaixaRecolhivel'
 import { IndicadoresCard } from '../components/IndicadoresCard'
@@ -55,7 +54,6 @@ export default function PlanoDetail() {
     const abas = [
         { chave: 'acoes', rotulo: 'Ações do plano', total: acoes.length },
         { chave: 'acompanhamentos', rotulo: 'Acompanhamentos do plano', total: totalAcompanhamentosDoPlano },
-        { chave: 'anexos', rotulo: 'Anexos de evidência', total: 0 },
     ]
 
     return (
@@ -122,7 +120,6 @@ export default function PlanoDetail() {
                 <div className="pdco-plan-tab-body">
                     {aba === 'acoes' && <AcoesTable acoes={acoes} mesFiltro={mesSelecionado} onLimparFiltro={() => setMesSelecionado(null)} />}
                     {aba === 'acompanhamentos' && <AcompanhamentoGrid quadrantes={acompanhamento} plano={plano} />}
-                    {aba === 'anexos' && <AnexosTab />}
                 </div>
             </section>
 

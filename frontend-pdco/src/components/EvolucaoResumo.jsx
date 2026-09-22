@@ -1,7 +1,7 @@
 import { ContadorAnimado } from './Animados'
 import { montarCards, montarFaixa } from '../lib/evolucao'
 
-/** Cartões comparativos (concluídas, acompanhamentos e anexos): cada um é um filtro (clicar de novo limpa). */
+/** Cartões comparativos (concluídas, acompanhamentos e atrasadas): cada um é um filtro (clicar de novo limpa). */
 export function EvolucaoCards({ comp, foco, onFoco }) {
     const cards = montarCards(comp)
     return (

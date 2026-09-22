@@ -1,4 +1,4 @@
-# Painel de Cultura Organizacional (PDCO)
+# Painel de Cultura e Movimento (PDCO)
 
 Versão web independente do módulo PDCO da Plataforma de Gestão Estratégica —
 mesmo padrão do PPR e do PRESIDENTE: **sem backend em produção**. O backend

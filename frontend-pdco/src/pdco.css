@@ -1,5 +1,5 @@
 /*
- * Painel de Cultura Organizacional — versão standalone. Paleta/tipografia
+ * Painel de Cultura e Movimento — versão standalone. Paleta/tipografia
  * portadas do protótipo de referência (dashboard executivo azul-marinho,
  * chips RAG). Tudo escopado sob .pdco-app, sem Tailwind/Radix.
  */
@@ -1100,53 +1100,6 @@ body {
   padding-top: 16px;
 }
 
-/* ------------------------------ Anexos (aba) --------------------------------- */
-.pdco-app .pdco-anexos-tab {
-  padding: 0 22px 22px;
-}
-.pdco-app .pdco-anexos-topo {
-  display: flex;
-  align-items: flex-start;
-  justify-content: space-between;
-  gap: 16px;
-  flex-wrap: wrap;
-}
-.pdco-app .pdco-anexos-controles {
-  display: flex;
-  align-items: flex-end;
-  gap: 10px;
-  flex: none;
-}
-.pdco-app .pdco-anexos-mes-label {
-  display: flex;
-  flex-direction: column;
-  gap: 4px;
-  font-size: 11px;
-  color: var(--text-muted);
-  text-transform: uppercase;
-  letter-spacing: 0.4px;
-}
-.pdco-app .pdco-anexos-mes-label select {
-  background: rgba(255, 255, 255, 0.06);
-  border: 1px solid var(--border);
-  border-radius: var(--radius-btn);
-  color: var(--text);
-  font-family: inherit;
-  font-size: 13px;
-  padding: 7px 10px;
-  text-transform: none;
-  letter-spacing: normal;
-}
-.pdco-app .pdco-anexos-aviso {
-  margin-top: 14px;
-  font-size: 12.5px;
-  color: var(--amarelo);
-  background: var(--amarelo-soft);
-  border: 1px solid rgba(251, 191, 36, 0.4);
-  border-radius: var(--radius-btn);
-  padding: 10px 12px;
-}
-
 .pdco-app .pdco-tabela-acoes {
   width: 100%;
   border-collapse: collapse;
@@ -1633,7 +1586,7 @@ body {
 
 /* ------------------------- Ajustes do cliente (revisão) --------------------- */
 /* Dropdowns nativos no tema escuro: sem isso a lista de opções abre branca com
-   texto claro (ex.: "Mês" dos anexos) e só dá pra ler o item sob o mouse. */
+   texto claro e só dá pra ler o item sob o mouse. */
 .pdco-app select {
   color-scheme: dark;
 }
@@ -2246,10 +2199,7 @@ body {
   }
 }
 
-/* Anexos: cartão, série do gráfico (só onde há anexos) e chip */
-.pdco-app .pdco-evo-delta-anexo {
-  color: var(--tatico);
-}
+/* Anexos: série do gráfico (só onde há anexos) e chip */
 .pdco-app .pdco-evo-chip-anexo {
   --chip: var(--tatico);
   --chip-soft: var(--tatico-soft);
@@ -2649,14 +2599,9 @@ body {
   font-style: italic;
 }
 
-/* "i" dos anexos: balão mais compacto e o ícone centralizado na altura do botão. */
+/* Balão compacto do InfoTooltip (prop `estreito`), pra avisos curtos. */
 .pdco-app .pdco-info-balao-estreito {
   width: min(300px, calc(100vw - 16px));
-}
-.pdco-app .pdco-anexos-acao {
-  display: inline-flex;
-  align-items: center;
-  gap: 8px;
 }
 
 /* "i" da Conclusão de ações: rótulo com o ícone ao lado; faixas de cor no balão. */
