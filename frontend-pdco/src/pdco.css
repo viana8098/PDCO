@@ -1400,6 +1400,122 @@ body {
   color: var(--text-muted);
 }
 
+/* ------------------------------- Comitê da Cultura ----------------------------- */
+.pdco-app .pdco-input-data {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-btn);
+  padding: 9px 12px;
+  font-family: inherit;
+  font-size: 13px;
+  color: var(--text);
+  color-scheme: dark;
+}
+/* Checklist da Efetividade do Comitê: uma linha por critério, pergunta + 3 opções exclusivas (toggle-group). */
+.pdco-app .pdco-checklist {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: 8px;
+}
+.pdco-app .pdco-checklist-linha {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  flex-wrap: wrap;
+  padding: 12px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-btn);
+  background: rgba(255, 255, 255, 0.03);
+}
+.pdco-app .pdco-checklist-pergunta {
+  flex: 1 1 320px;
+  font-size: 13px;
+  color: var(--text);
+  line-height: 1.4;
+}
+.pdco-app .pdco-checklist-pergunta b {
+  color: var(--text-muted);
+  font-weight: 600;
+}
+.pdco-app .pdco-checklist-linha .pdco-toggle-group {
+  flex: none;
+}
+/* Histórico: um cartão por comitê, mais recente primeiro. */
+.pdco-app .pdco-comite-historico {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 0 22px 22px;
+}
+.pdco-app .pdco-comite-item {
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 14px 16px;
+}
+.pdco-app .pdco-comite-item-cabeca {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 8px;
+}
+.pdco-app .pdco-comite-item-data {
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--text);
+}
+.pdco-app .pdco-comite-item-status {
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.4px;
+  text-transform: uppercase;
+  padding: 3px 10px;
+  border-radius: var(--radius-badge);
+}
+.pdco-app .pdco-comite-item-ocorreu {
+  background: var(--green-soft);
+  color: var(--green);
+}
+.pdco-app .pdco-comite-item-nao-ocorreu {
+  background: var(--red-soft);
+  color: var(--red);
+}
+.pdco-app .pdco-comite-item-texto {
+  margin: 0 0 8px;
+  font-size: 13px;
+  color: var(--text);
+  line-height: 1.5;
+}
+.pdco-app .pdco-comite-item-quebras {
+  white-space: pre-line;
+}
+.pdco-app .pdco-comite-item-texto b {
+  color: var(--text-muted);
+  font-weight: 600;
+}
+.pdco-app .pdco-comite-item-checklist {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  margin: 0 0 8px;
+  padding: 0;
+  list-style: none;
+}
+.pdco-app .pdco-comite-item-checklist li {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  font-size: 12.5px;
+  color: var(--text-muted);
+}
+.pdco-app .pdco-comite-item-checklist b {
+  flex: none;
+  color: var(--text);
+  font-weight: 600;
+}
+
 /* --------------------------------- Diretoria ---------------------------------- */
 .pdco-app .pdco-stat-grid {
   display: grid;
