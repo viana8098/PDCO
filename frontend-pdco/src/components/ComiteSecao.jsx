@@ -1,9 +1,5 @@
-import { Navigate } from 'react-router-dom'
-import { useAsync } from '../lib/useAsync'
-import { SearchableSelect } from '../components/SearchableSelect'
+import { SearchableSelect } from './SearchableSelect'
 import { useFiltroPersistente } from '../lib/filtrosPersistentes'
-import { usePdco } from '../lib/PdcoContext'
-import { api } from '../lib/api'
 import { COMITE_AMOSTRA } from '../lib/comiteAmostra'
 
 const CRITERIOS = [
@@ -21,28 +17,20 @@ const RESPOSTAS = [
 const ROTULO_RESPOSTA = Object.fromEntries(RESPOSTAS.map((r) => [r.valor, r.rotulo]))
 
 /**
- * Comitê da Cultura — versão standalone, só leitura. O registro de verdade
- * (data, motivo, considerações, checklist) fica no banco próprio do app
- * corporativo, que exige login de administrador; este deploy é estático e
- * público, sem backend pra sustentar essa escrita. Esta tela mostra uma
- * AMOSTRA fictícia (lib/comiteAmostra.js) só pra visualizar o layout — nunca
- * dado real de comitê.
+ * Conteúdo da seção "Comitê" dentro de Minha Área — versão standalone, só
+ * leitura. O registro de verdade (data, motivo, considerações, checklist)
+ * fica no banco próprio do app corporativo, que exige login de
+ * administrador; este deploy é estático e público, sem backend pra
+ * sustentar essa escrita. Mostra uma AMOSTRA fictícia
+ * (lib/comiteAmostra.js) só pra visualizar o layout — nunca dado real.
  */
-export default function Comite() {
-    const { user, administrador, carregando } = usePdco()
+export function ComiteSecao({ opcoesArea, carregandoFiltros }) {
     const [areaNome, setAreaNome] = useFiltroPersistente('comite:area', '')
 
-    const filtros = useAsync(() => api.filtros(user), [user], !!user && administrador)
-    const opcoesArea = filtros.dados?.areas ?? []
-
-    if (carregando) return <div className="pdco-page pdco-estado">Carregando…</div>
-    if (!administrador) return <Navigate to="/" replace />
-
     return (
-        <div className="pdco-page">
-            <div className="pdco-page-head">
-                <h1 className="pdco-page-title">Comitê da Cultura</h1>
-                <p className="pdco-page-sub">Registro dos encontros mensais de cada área com a consultoria.</p>
+        <div className="pdco-comite-secao">
+            <div className="pdco-section-head">
+                <h2 className="pdco-section-title">Comitê da Cultura</h2>
             </div>
 
             <div className="pdco-filters-row">
@@ -53,7 +41,7 @@ export default function Comite() {
                         onChange={setAreaNome}
                         options={opcoesArea}
                         todosLabel="Selecione uma área"
-                        disabled={!filtros.dados}
+                        disabled={carregandoFiltros}
                     />
                 </div>
             </div>

@@ -2,7 +2,6 @@ import { HashRouter, NavLink, Route, Routes } from 'react-router-dom'
 import { PdcoProvider } from './lib/PdcoContext'
 import AcaoDetail from './pages/AcaoDetail'
 import AreaDetail from './pages/AreaDetail'
-import Comite from './pages/Comite'
 import Diretoria from './pages/Diretoria'
 import Estrategicos from './pages/Estrategicos'
 import Evolucao from './pages/Evolucao'
@@ -37,20 +36,11 @@ const ICONE_NAV = {
             <path d="M3 8h14M7 2.5v3M13 2.5v3" strokeLinecap="round" />
         </svg>
     ),
-    comite: (
-        <svg viewBox="0 0 20 20" width="15" height="15" fill="none" stroke="currentColor" strokeWidth="1.6">
-            <circle cx="6.5" cy="6" r="2.2" />
-            <path d="M2.5 16c0-2.4 1.8-4 4-4s4 1.6 4 4" strokeLinecap="round" />
-            <circle cx="14" cy="6" r="2" />
-            <path d="M11.6 8.2c1.2.3 2.8 1.3 2.9 3.8" strokeLinecap="round" />
-        </svg>
-    ),
 }
 
 const NAV = [
     { to: '/', label: 'Minha Área', icone: 'area', fim: true },
     { to: '/diretoria', label: 'Diretoria', icone: 'diretoria' },
-    { to: '/comite', label: 'Comitê', icone: 'comite' },
     { to: '/estrategicos', label: 'Estratégicos', icone: 'estrategicos' },
     { to: '/evolucao', label: 'Evolução', icone: 'evolucao' },
 ]
@@ -88,7 +78,6 @@ export default function App() {
                         <Routes>
                             <Route index element={<MinhaArea />} />
                             <Route path="diretoria" element={<Diretoria />} />
-                            <Route path="comite" element={<Comite />} />
                             <Route path="estrategicos" element={<Estrategicos />} />
                             <Route path="area/:areaChave" element={<AreaDetail />} />
                             <Route path="evolucao" element={<Evolucao />} />

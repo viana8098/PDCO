@@ -1401,6 +1401,12 @@ body {
 }
 
 /* ------------------------------- Comitê da Cultura ----------------------------- */
+/* Alternado com "Todos os planos" via toggle em Minha Área — mesmo espaçamento vertical do pdco-page. */
+.pdco-app .pdco-comite-secao {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
 .pdco-app .pdco-input-data {
   background: rgba(255, 255, 255, 0.05);
   border: 1px solid var(--border);

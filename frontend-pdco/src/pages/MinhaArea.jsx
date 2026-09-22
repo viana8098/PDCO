@@ -1,6 +1,7 @@
 import { useEffect, useRef, useState } from 'react'
 import { useAsync } from '../lib/useAsync'
 import { EsqueletoBanner, EsqueletoLista } from '../components/Animados'
+import { ComiteSecao } from '../components/ComiteSecao'
 import { ExecutiveBanner } from '../components/ExecutiveBanner'
 import { PlanCard } from '../components/PlanCard'
 import { PlanRow } from '../components/PlanRow'
@@ -20,6 +21,8 @@ export default function MinhaArea() {
     const { user, administrador, nome } = usePdco()
     // Filtros que sobrevivem à navegação (lib/filtrosPersistentes.js). A área é compartilhada com as outras telas.
     const [view, setView] = useFiltroPersistente('visao-planos', 'lista')
+    // Planos (lista de sempre) ou Comitê — ver toggle abaixo.
+    const [secao, setSecao] = useFiltroPersistente('minha-area:secao', 'planos')
     const [areaEscolhida, setArea] = useFiltroPersistente('area', '')
     const [planoEscolhido, setPlanoFiltro] = useFiltroPersistente('minha-area:plano', '')
     // Só vale com o filtro na tela: quem não tem o filtro não pode ficar com um recorte invisível vindo de outra tela.
@@ -71,6 +74,8 @@ export default function MinhaArea() {
         )
     }
 
+    // Só administrador alterna pra Comitê — quem não é fica preso em "planos", mesmo com um valor antigo persistido.
+    const secaoAtiva = administrador ? secao : 'planos'
     const titulo = administrador ? 'Visão consolidada' : nome ? `Planos de ${nome.split(' ')[0]}` : 'Meus planos'
     const metricas = administrador
         ? { area: pctConcluido(planos.dados), empresa: pctConcluido(todosPlanos.dados ?? planos.dados) }
@@ -82,71 +87,87 @@ export default function MinhaArea() {
 
             {administrador && (
                 <div className="pdco-filters-row">
-                    <div className="pdco-filter-pill">
-                        <label>Área</label>
-                        <SearchableSelect
-                            value={area}
-                            onChange={setArea}
-                            options={filtros.dados?.areas ?? []}
-                            todosLabel="Todas as áreas"
-                            disabled={!filtros.dados}
-                        />
-                    </div>
-                    <div className="pdco-filter-pill">
-                        <label>Plano de ação</label>
-                        <SearchableSelect
-                            value={planoFiltro}
-                            onChange={setPlanoFiltro}
-                            options={filtros.dados?.planos ?? []}
-                            todosLabel="Todos os planos de ação"
-                            disabled={!filtros.dados}
-                        />
-                    </div>
+                    {secaoAtiva === 'planos' && (
+                        <>
+                            <div className="pdco-filter-pill">
+                                <label>Área</label>
+                                <SearchableSelect
+                                    value={area}
+                                    onChange={setArea}
+                                    options={filtros.dados?.areas ?? []}
+                                    todosLabel="Todas as áreas"
+                                    disabled={!filtros.dados}
+                                />
+                            </div>
+                            <div className="pdco-filter-pill">
+                                <label>Plano de ação</label>
+                                <SearchableSelect
+                                    value={planoFiltro}
+                                    onChange={setPlanoFiltro}
+                                    options={filtros.dados?.planos ?? []}
+                                    todosLabel="Todos os planos de ação"
+                                    disabled={!filtros.dados}
+                                />
+                            </div>
+                        </>
+                    )}
                     <span className="pdco-admin-badge">Administrador</span>
+                    <div className="pdco-toggle-group">
+                        <button type="button" className={secaoAtiva === 'planos' ? 'pdco-toggle-ativo' : ''} onClick={() => setSecao('planos')}>
+                            Planos
+                        </button>
+                        <button type="button" className={secaoAtiva === 'comite' ? 'pdco-toggle-ativo' : ''} onClick={() => setSecao('comite')}>
+                            Comitê
+                        </button>
+                    </div>
                 </div>
             )}
 
-            <div className="pdco-section">
-                <div className="pdco-section-head">
-                    <h2 className="pdco-section-title">{administrador ? 'Todos os planos' : 'Meus planos'}</h2>
-                    <div className="pdco-toggle-group">
-                        <button
-                            type="button"
-                            className={view === 'cards' ? 'pdco-toggle-ativo' : ''}
-                            onClick={() => setView('cards')}
-                        >
-                            Cards
-                        </button>
-                        <button
-                            type="button"
-                            className={view === 'lista' ? 'pdco-toggle-ativo' : ''}
-                            onClick={() => setView('lista')}
-                        >
-                            Lista
-                        </button>
+            {secaoAtiva === 'comite' ? (
+                <ComiteSecao opcoesArea={filtros.dados?.areas ?? []} carregandoFiltros={!filtros.dados} />
+            ) : (
+                <div className="pdco-section">
+                    <div className="pdco-section-head">
+                        <h2 className="pdco-section-title">{administrador ? 'Todos os planos' : 'Meus planos'}</h2>
+                        <div className="pdco-toggle-group">
+                            <button
+                                type="button"
+                                className={view === 'cards' ? 'pdco-toggle-ativo' : ''}
+                                onClick={() => setView('cards')}
+                            >
+                                Cards
+                            </button>
+                            <button
+                                type="button"
+                                className={view === 'lista' ? 'pdco-toggle-ativo' : ''}
+                                onClick={() => setView('lista')}
+                            >
+                                Lista
+                            </button>
+                        </div>
+                    </div>
+
+                    <div className={`pdco-lista-area ${refazendo ? 'pdco-lista-atualizando' : ''}`} aria-busy={refazendo}>
+                        {esqueleto ? (
+                            <EsqueletoLista linhas={Math.min(Math.max(planos.dados.length, 3), 8)} cards={view === 'cards'} />
+                        ) : planos.dados.length === 0 ? (
+                            <p className="pdco-vazio">Nenhum plano de cultura organizacional encontrado para o seu usuário.</p>
+                        ) : view === 'cards' ? (
+                            <div className="pdco-card-grid" key={chaveLista}>
+                                {planos.dados.map((p, i) => (
+                                    <PlanCard key={p.cd_planoacao} plano={p} indice={i} />
+                                ))}
+                            </div>
+                        ) : (
+                            <div className="pdco-row-list" key={chaveLista}>
+                                {planos.dados.map((p, i) => (
+                                    <PlanRow key={p.cd_planoacao} plano={p} indice={i} />
+                                ))}
+                            </div>
+                        )}
                     </div>
                 </div>
-
-                <div className={`pdco-lista-area ${refazendo ? 'pdco-lista-atualizando' : ''}`} aria-busy={refazendo}>
-                    {esqueleto ? (
-                        <EsqueletoLista linhas={Math.min(Math.max(planos.dados.length, 3), 8)} cards={view === 'cards'} />
-                    ) : planos.dados.length === 0 ? (
-                        <p className="pdco-vazio">Nenhum plano de cultura organizacional encontrado para o seu usuário.</p>
-                    ) : view === 'cards' ? (
-                        <div className="pdco-card-grid" key={chaveLista}>
-                            {planos.dados.map((p, i) => (
-                                <PlanCard key={p.cd_planoacao} plano={p} indice={i} />
-                            ))}
-                        </div>
-                    ) : (
-                        <div className="pdco-row-list" key={chaveLista}>
-                            {planos.dados.map((p, i) => (
-                                <PlanRow key={p.cd_planoacao} plano={p} indice={i} />
-                            ))}
-                        </div>
-                    )}
-                </div>
-            </div>
+            )}
         </div>
     )
 }
