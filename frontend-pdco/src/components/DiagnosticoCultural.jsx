@@ -12,6 +12,10 @@ const CRITERIOS = [
     { chave: 'inovacao', rotulo: 'Inovação', cor: 'var(--forca-inovacao)' },
 ]
 
+// Ordem das fatias na pizza (sentido horário a partir do topo) — a mesma do material de
+// referência da consultoria. Não é a ordem da legenda acima (essa segue CRITERIOS).
+const ORDEM_ARCOS = ['mercado', 'inovacao', 'relacionamento', 'regra']
+
 /** Ponto no anel (cx=cy=70) a `raio` px do centro, no ângulo `graus` (0° = topo, sentido horário). */
 function pontoNoAnel(graus, raio) {
     const rad = ((graus - 90) * Math.PI) / 180
@@ -31,9 +35,11 @@ export function DiagnosticoCultural({ dados }) {
     const [destaque, setDestaque] = useState(null)
     const fatias = CRITERIOS.map((c) => ({ ...c, valor: dados.forcas[c.chave] ?? 0 }))
     const total = fatias.reduce((soma, f) => soma + f.valor, 0) || 1
+    const fatiasPorChave = Object.fromEntries(fatias.map((f) => [f.chave, f]))
+    const fatiasArco = ORDEM_ARCOS.map((chave) => fatiasPorChave[chave])
 
     let acumuladoGraus = 0
-    const arcos = fatias.map((f, indice) => {
+    const arcos = fatiasArco.map((f, indice) => {
         const graus = (f.valor / total) * 360
         const comprimento = (f.valor / total) * CIRCUNFERENCIA
         const arco = {

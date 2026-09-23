@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState } from 'react'
+import { useEffect, useMemo, useRef, useState } from 'react'
 import { useAsync } from '../lib/useAsync'
 import { EsqueletoBanner, EsqueletoLista } from '../components/Animados'
 import { ComiteSecao } from '../components/ComiteSecao'
@@ -6,10 +6,13 @@ import { ExecutiveBanner } from '../components/ExecutiveBanner'
 import { PlanCard } from '../components/PlanCard'
 import { PlanRow } from '../components/PlanRow'
 import { SearchableSelect } from '../components/SearchableSelect'
-import { pctConcluido } from '../lib/pdcoCalc'
+import { pctConcluido, tipoResumido } from '../lib/pdcoCalc'
 import { useFiltroPersistente } from '../lib/filtrosPersistentes'
 import { usePdco } from '../lib/PdcoContext'
 import { api } from '../lib/api'
+
+// Estratégico tem espaço próprio (aba "Estratégicos"): aqui só Tático, pra não duplicar a visão.
+const semEstrategicos = (lista) => (lista ?? []).filter((p) => tipoResumido(p.subtipo) !== 'Estratégico')
 
 /**
  * Página inicial do PDCO. Gestor comum vê só os próprios planos (a API já
@@ -42,6 +45,11 @@ export default function MinhaArea() {
     // Só o admin precisa do total geral (pra comparar "filtrado" vs "empresa");
     // pro gestor comum a lista já vem restrita, os dois seriam iguais.
     const todosPlanos = useAsync(() => api.planos(user), [user], !!user && administrador)
+    const planosTaticos = useMemo(() => semEstrategicos(planos.dados), [planos.dados])
+    const todosPlanosTaticos = useMemo(
+        () => semEstrategicos(todosPlanos.dados ?? planos.dados),
+        [todosPlanos.dados, planos.dados],
+    )
 
     // Recarregando por causa de um filtro: a lista atual (ainda na tela) esmaece; se a API demorar,
     // esqueletos entram no lugar. Quando os dados novos chegam, a lista é remontada e entra em cascata.
@@ -78,12 +86,12 @@ export default function MinhaArea() {
     const secaoAtiva = secao
     const titulo = administrador ? 'Visão consolidada' : nome ? `Planos de ${nome.split(' ')[0]}` : 'Meus planos'
     const metricas = administrador
-        ? { area: pctConcluido(planos.dados), empresa: pctConcluido(todosPlanos.dados ?? planos.dados) }
-        : { area: pctConcluido(planos.dados) }
+        ? { area: pctConcluido(planosTaticos), empresa: pctConcluido(todosPlanosTaticos) }
+        : { area: pctConcluido(planosTaticos) }
 
     return (
         <div className="pdco-page">
-            <ExecutiveBanner titulo={titulo} totalPlanos={planos.dados.length} metricas={metricas} />
+            <ExecutiveBanner titulo={titulo} totalPlanos={planosTaticos.length} metricas={metricas} />
 
             <div className="pdco-filters-row">
                 {administrador && secaoAtiva === 'planos' && (
@@ -151,18 +159,18 @@ export default function MinhaArea() {
 
                     <div className={`pdco-lista-area ${refazendo ? 'pdco-lista-atualizando' : ''}`} aria-busy={refazendo}>
                         {esqueleto ? (
-                            <EsqueletoLista linhas={Math.min(Math.max(planos.dados.length, 3), 8)} cards={view === 'cards'} />
-                        ) : planos.dados.length === 0 ? (
+                            <EsqueletoLista linhas={Math.min(Math.max(planosTaticos.length, 3), 8)} cards={view === 'cards'} />
+                        ) : planosTaticos.length === 0 ? (
                             <p className="pdco-vazio">Nenhum plano de cultura organizacional encontrado para o seu usuário.</p>
                         ) : view === 'cards' ? (
                             <div className="pdco-card-grid" key={chaveLista}>
-                                {planos.dados.map((p, i) => (
+                                {planosTaticos.map((p, i) => (
                                     <PlanCard key={p.cd_planoacao} plano={p} indice={i} />
                                 ))}
                             </div>
                         ) : (
                             <div className="pdco-row-list" key={chaveLista}>
-                                {planos.dados.map((p, i) => (
+                                {planosTaticos.map((p, i) => (
                                     <PlanRow key={p.cd_planoacao} plano={p} indice={i} />
                                 ))}
                             </div>
