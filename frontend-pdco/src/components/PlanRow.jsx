@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom'
 import { ProgressoAcoes } from './Animados'
+import { EpaLink } from './EpaLink'
 import { RagBadge } from './RagBadge'
 import { TipoChip } from './TipoChip'
 import { estiloCascata } from '../lib/animacao'
@@ -25,6 +26,7 @@ export function PlanRow({ plano, indice = 0 }) {
             </div>
             {rag.atrasadas > 0 && <span className="pdco-plan-row-atraso">{rag.atrasadas} atras.</span>}
             <RagBadge nivel={rag.nivel} score={rag.score} rag={rag} />
+            <EpaLink codigo={plano.cd_planoacao} />
         </Link>
     )
 }

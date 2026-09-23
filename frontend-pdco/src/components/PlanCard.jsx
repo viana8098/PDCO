@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom'
 import { ProgressoAcoes } from './Animados'
+import { EpaLink } from './EpaLink'
 import { RagBadge } from './RagBadge'
 import { TipoChip } from './TipoChip'
 import { estiloCascata } from '../lib/animacao'
@@ -21,7 +22,10 @@ export function PlanCard({ plano, indice = 0 }) {
                         <span className="pdco-eyebrow">{plano.area_nome || 'Sem área'}</span>
                         <TipoChip subtipo={plano.subtipo} />
                     </div>
-                    <RagBadge nivel={rag.nivel} score={rag.score} rag={rag} />
+                    <div className="pdco-plan-card-tools">
+                        <RagBadge nivel={rag.nivel} score={rag.score} rag={rag} />
+                        <EpaLink codigo={plano.cd_planoacao} />
+                    </div>
                 </div>
 
                 <h3 className="pdco-plan-card-title">{tituloDoPlano(plano)}</h3>
