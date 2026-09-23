@@ -8,7 +8,8 @@ import { calcRag, tituloDoPlano, RAG_COLOR } from '../lib/pdcoCalc'
 
 // Card de plano — usado nas listagens (Minha Área, Diretoria, Área).
 // `indice` posiciona o card na cascata de entrada (e na da sua barra de progresso).
-export function PlanCard({ plano, indice = 0 }) {
+// `mostrarTipo` some numa lista que já é só de um tipo só (ex.: Minha Área, só Tático) — o chip vira ruído repetido.
+export function PlanCard({ plano, indice = 0, mostrarTipo = true }) {
     const rag = calcRag(plano)
     const cor = RAG_COLOR[rag.nivel]
     const pct = plano.execucao === null ? 0 : Math.round(plano.execucao * 100)
@@ -20,7 +21,7 @@ export function PlanCard({ plano, indice = 0 }) {
                 <div className="pdco-plan-card-head">
                     <div className="pdco-plan-card-meta">
                         <span className="pdco-eyebrow">{plano.area_nome || 'Sem área'}</span>
-                        <TipoChip subtipo={plano.subtipo} />
+                        {mostrarTipo && <TipoChip subtipo={plano.subtipo} />}
                     </div>
                     <div className="pdco-plan-card-tools">
                         <RagBadge nivel={rag.nivel} score={rag.score} rag={rag} />

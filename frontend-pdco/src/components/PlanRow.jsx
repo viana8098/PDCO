@@ -8,7 +8,8 @@ import { calcRag, tituloDoPlano, RAG_COLOR } from '../lib/pdcoCalc'
 
 // Linha de plano — variante compacta em lista (alternativa ao PlanCard).
 // `indice` posiciona a linha na cascata de entrada (e na da sua barra de progresso).
-export function PlanRow({ plano, indice = 0 }) {
+// `mostrarTipo` some numa lista que já é só de um tipo só (ex.: Minha Área, só Tático) — o chip vira ruído repetido.
+export function PlanRow({ plano, indice = 0, mostrarTipo = true }) {
     const rag = calcRag(plano)
     const cor = RAG_COLOR[rag.nivel]
     const pct = plano.execucao === null ? 0 : Math.round(plano.execucao * 100)
@@ -18,7 +19,7 @@ export function PlanRow({ plano, indice = 0 }) {
             <span className="pdco-plan-row-bar" style={{ backgroundColor: cor }} />
             <div className="pdco-plan-row-main">
                 <span className="pdco-eyebrow">{plano.area_nome || 'Sem área'}</span>
-                <TipoChip subtipo={plano.subtipo} />
+                {mostrarTipo && <TipoChip subtipo={plano.subtipo} />}
             </div>
             <h3 className="pdco-plan-row-title">{tituloDoPlano(plano)}</h3>
             <div className="pdco-plan-row-progress">

@@ -165,13 +165,13 @@ export default function MinhaArea() {
                         ) : view === 'cards' ? (
                             <div className="pdco-card-grid" key={chaveLista}>
                                 {planosTaticos.map((p, i) => (
-                                    <PlanCard key={p.cd_planoacao} plano={p} indice={i} />
+                                    <PlanCard key={p.cd_planoacao} plano={p} indice={i} mostrarTipo={false} />
                                 ))}
                             </div>
                         ) : (
                             <div className="pdco-row-list" key={chaveLista}>
                                 {planosTaticos.map((p, i) => (
-                                    <PlanRow key={p.cd_planoacao} plano={p} indice={i} />
+                                    <PlanRow key={p.cd_planoacao} plano={p} indice={i} mostrarTipo={false} />
                                 ))}
                             </div>
                         )}
