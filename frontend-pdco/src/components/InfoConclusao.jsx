@@ -1,5 +1,5 @@
 import { InfoTooltip } from './InfoTooltip'
-import { CONCLUSAO_FAIXA, RAG_COLOR, RAG_LABEL } from '../lib/pdcoCalc'
+import { CONCLUSAO_COR, CONCLUSAO_FAIXA, RAG_LABEL } from '../lib/pdcoCalc'
 
 const NIVEIS = ['verde', 'amarelo', 'vermelho']
 
@@ -41,9 +41,9 @@ export function InfoConclusao({ comEmpresa = true }) {
             <ul className="pdco-info-faixas">
                 {NIVEIS.map((k) => (
                     <li key={k}>
-                        <span className="pdco-info-bolinha" style={{ backgroundColor: RAG_COLOR[k] }} />
+                        <span className="pdco-info-bolinha" style={{ backgroundColor: CONCLUSAO_COR[k] }} />
                         <span>
-                            <strong style={{ color: RAG_COLOR[k] }}>{RAG_LABEL[k]}</strong> — {CONCLUSAO_FAIXA[k]}
+                            <strong style={{ color: CONCLUSAO_COR[k] }}>{RAG_LABEL[k]}</strong> — {CONCLUSAO_FAIXA[k]}
                         </span>
                     </li>
                 ))}

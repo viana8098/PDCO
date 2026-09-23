@@ -183,6 +183,10 @@ export function nivelDaConclusao(pct) {
   if (pct >= CONCLUSAO_LIMITES.amarelo) return 'amarelo'
   return 'vermelho'
 }
+// Cor de cada nível nos anéis (CultureGauge) e no "i" (InfoConclusao) — única fonte, os dois leem
+// daqui. "Crítico" aqui é cinza sutil, não vermelho: é o primeiro número que a pessoa vê ao abrir
+// o painel, e vermelho ali é alarmista demais. RAG_COLOR (status do plano) continua vermelho normal.
+export const CONCLUSAO_COR = { verde: RAG_COLOR.verde, amarelo: RAG_COLOR.amarelo, vermelho: 'var(--text-muted)' }
 
 /** % de ações concluídas (ponderado) numa lista de planos — usado nos medidores do banner executivo. */
 export function pctConcluido(planos) {
