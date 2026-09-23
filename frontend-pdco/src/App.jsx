@@ -46,7 +46,7 @@ const NAV = [
 ]
 
 /**
- * Painel de Cultura e Movimento — versão standalone (sem iDigital, sem
+ * Cultura em Movimento — versão standalone (sem iDigital, sem
  * escopo por gestor: sempre a visão consolidada). Deploy estático no
  * Cloudflare Pages, dados vindos de um snapshot gerado localmente contra o
  * dw real (ver scripts/gerar-snapshot.mjs) — mesmo padrão do PPR/PRESIDENTE.
@@ -58,7 +58,7 @@ export default function App() {
                 <div className="pdco-app">
                     <div className="pdco-content">
                         <header className="pdco-standalone-header">
-                            <span className="pdco-standalone-brand">Painel de Cultura e Movimento</span>
+                            <span className="pdco-standalone-brand">Cultura em Movimento</span>
                         </header>
 
                         <nav className="pdco-subnav">
