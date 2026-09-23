@@ -4,6 +4,7 @@ import { AcoesTable } from '../components/AcoesTable'
 import { AcompanhamentoGrid } from '../components/AcompanhamentoGrid'
 import { ContadorAnimado } from '../components/Animados'
 import { CaixaRecolhivel } from '../components/CaixaRecolhivel'
+import { DiagnosticoCultural } from '../components/DiagnosticoCultural'
 import { IndicadoresCard } from '../components/IndicadoresCard'
 import { PlanoTimeline } from '../components/PlanoTimeline'
 import { RagBadge } from '../components/RagBadge'
@@ -12,7 +13,7 @@ import { calcRag, formatarData, tipoResumido, tituloDoPlano, RAG_COLOR, RAG_LABE
 import { useFiltroPersistente } from '../lib/filtrosPersistentes'
 import { usePdco } from '../lib/PdcoContext'
 import { api } from '../lib/api'
-import { obterRcfDaArea } from '../lib/rcfPorArea'
+import { DIAGNOSTICO_CULTURA_ORGANIZACIONAL, obterRcfDaArea } from '../lib/rcfPorArea'
 
 export default function PlanoDetail() {
     const { user } = usePdco()
@@ -42,10 +43,12 @@ export default function PlanoDetail() {
     if (!detalhe.dados) return <div className="pdco-page pdco-estado">Carregando plano…</div>
 
     const { plano, acoes, acompanhamento, indicadores } = detalhe.dados
-    const rcfArea = obterRcfDaArea(plano.area_nome)
     const rag = calcRag(plano, acompanhamento)
-    // Planos estratégicos não exibem o Diagnóstico da Subcultura nem os Resultados esperados (só os táticos).
+    // Estratégico não tem área própria na planilha da consultoria (é transversal): usa o
+    // diagnóstico único da cultura organizacional. Tático usa o RCF da própria área.
     const ehEstrategico = tipoResumido(plano.subtipo) === 'Estratégico'
+    const diagnostico = ehEstrategico ? DIAGNOSTICO_CULTURA_ORGANIZACIONAL : obterRcfDaArea(plano.area_nome)
+    const tituloDiagnostico = ehEstrategico ? 'Diagnóstico da Cultura Organizacional' : 'Diagnóstico da Subcultura'
     const cor = RAG_COLOR[rag.nivel]
     const totalAcompanhamentos = acompanhamento.reduce((s, q) => s + q.registros.length, 0)
     // A aba lista só os acompanhamentos do plano (ds_acompanhamentoplanoacao): a contagem acompanha a tabela.
@@ -96,12 +99,10 @@ export default function PlanoDetail() {
                 </div>
             </section>
 
-            {!ehEstrategico && (
-                <div className="pdco-secondary-row">
-                    <CaixaRecolhivel titulo="Diagnóstico da Subcultura" texto={rcfArea} preservarQuebras />
-                    <CaixaRecolhivel titulo="Resultados esperados" texto={plano.resultados_esperados} />
-                </div>
-            )}
+            <div className="pdco-secondary-row">
+                <CaixaRecolhivel titulo={tituloDiagnostico}>{diagnostico && <DiagnosticoCultural dados={diagnostico} />}</CaixaRecolhivel>
+                <CaixaRecolhivel titulo="Resultados esperados" texto={plano.resultados_esperados} />
+            </div>
 
             <section className="pdco-panel">
                 <div className="pdco-plan-tabs">

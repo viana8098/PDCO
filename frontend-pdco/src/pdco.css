@@ -1779,6 +1779,92 @@ body {
 .pdco-app .pdco-recolhivel-quebras {
   white-space: pre-line;
 }
+.pdco-app .pdco-recolhivel-conteudo {
+  padding: 0 22px 22px;
+}
+
+/* Diagnóstico cultural (RCF da consultoria): pizza das Forças Culturais + lista da Taxa de contaminação. */
+.pdco-app .pdco-diagnostico {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.pdco-app .pdco-diagnostico-pizza-linha {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+.pdco-app .pdco-diagnostico-pizza {
+  flex: none;
+  width: 120px;
+  height: 120px;
+}
+.pdco-app .pdco-diagnostico-pizza svg {
+  width: 100%;
+  height: 100%;
+}
+.pdco-app .pdco-diagnostico-legenda {
+  flex: 1 1 160px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.pdco-app .pdco-diagnostico-legenda li {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 13px;
+  color: var(--text-muted);
+}
+.pdco-app .pdco-diagnostico-ponto {
+  flex: none;
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+}
+.pdco-app .pdco-diagnostico-legenda-rotulo {
+  flex: 1;
+}
+.pdco-app .pdco-diagnostico-legenda li b {
+  color: var(--text);
+  font-variant-numeric: tabular-nums;
+}
+.pdco-app .pdco-diagnostico-contaminacao {
+  padding-top: 14px;
+  border-top: 1px solid var(--border);
+}
+.pdco-app .pdco-diagnostico-contaminacao-titulo {
+  margin: 0 0 10px;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.4px;
+  text-transform: uppercase;
+  color: var(--text-muted);
+}
+.pdco-app .pdco-diagnostico-contaminacao-grade {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+.pdco-app .pdco-diagnostico-contaminacao-item {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 5px 10px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-pill);
+  font-size: 12px;
+  color: var(--text-muted);
+  background: rgba(255, 255, 255, 0.03);
+}
+.pdco-app .pdco-diagnostico-contaminacao-item b {
+  color: var(--text);
+  font-weight: 700;
+}
 
 /* Acompanhamentos do plano — tabela ordenável */
 .pdco-app .pdco-tabela-acomp .pdco-acomp-texto {
