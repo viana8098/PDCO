@@ -99,10 +99,14 @@ export default function PlanoDetail() {
                 </div>
             </section>
 
-            <div className="pdco-secondary-row">
+            {ehEstrategico ? (
                 <CaixaRecolhivel titulo={tituloDiagnostico}>{diagnostico && <DiagnosticoCultural dados={diagnostico} />}</CaixaRecolhivel>
-                <CaixaRecolhivel titulo="Resultados esperados" texto={plano.resultados_esperados} />
-            </div>
+            ) : (
+                <div className="pdco-secondary-row">
+                    <CaixaRecolhivel titulo={tituloDiagnostico}>{diagnostico && <DiagnosticoCultural dados={diagnostico} />}</CaixaRecolhivel>
+                    <CaixaRecolhivel titulo="Resultados esperados" texto={plano.resultados_esperados} />
+                </div>
+            )}
 
             <section className="pdco-panel">
                 <div className="pdco-plan-tabs">
