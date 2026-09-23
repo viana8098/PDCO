@@ -6,10 +6,10 @@ const ESPESSURA_ATIVA = 25
 const CIRCUNFERENCIA = 2 * Math.PI * RAIO
 
 const CRITERIOS = [
-    { chave: 'regra', rotulo: 'Regra', cor: 'var(--accent)' },
-    { chave: 'mercado', rotulo: 'Mercado', cor: 'var(--tatico)' },
-    { chave: 'relacionamento', rotulo: 'Relacionamento', cor: 'var(--green)' },
-    { chave: 'inovacao', rotulo: 'Inovação', cor: 'var(--amarelo)' },
+    { chave: 'regra', rotulo: 'Regra', cor: 'var(--forca-regra)' },
+    { chave: 'mercado', rotulo: 'Mercado', cor: 'var(--forca-mercado)' },
+    { chave: 'relacionamento', rotulo: 'Relacionamento', cor: 'var(--forca-relacionamento)' },
+    { chave: 'inovacao', rotulo: 'Inovação', cor: 'var(--forca-inovacao)' },
 ]
 
 /** Ponto no anel (cx=cy=70) a `raio` px do centro, no ângulo `graus` (0° = topo, sentido horário). */
