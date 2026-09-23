@@ -21,7 +21,8 @@ export default function MinhaArea() {
     const { user, administrador, nome } = usePdco()
     // Filtros que sobrevivem à navegação (lib/filtrosPersistentes.js). A área é compartilhada com as outras telas.
     const [view, setView] = useFiltroPersistente('visao-planos', 'lista')
-    // Planos (lista de sempre) ou Comitê — ver toggle abaixo.
+    // Planos (lista de sempre) ou Comitê — qualquer usuário autenticado alterna (o que cada
+    // um vê/edita dentro de Comitê depende do perfil, ver ComiteSecao).
     const [secao, setSecao] = useFiltroPersistente('minha-area:secao', 'planos')
     const [areaEscolhida, setArea] = useFiltroPersistente('area', '')
     const [planoEscolhido, setPlanoFiltro] = useFiltroPersistente('minha-area:plano', '')
@@ -74,8 +75,7 @@ export default function MinhaArea() {
         )
     }
 
-    // Só administrador alterna pra Comitê — quem não é fica preso em "planos", mesmo com um valor antigo persistido.
-    const secaoAtiva = administrador ? secao : 'planos'
+    const secaoAtiva = secao
     const titulo = administrador ? 'Visão consolidada' : nome ? `Planos de ${nome.split(' ')[0]}` : 'Meus planos'
     const metricas = administrador
         ? { area: pctConcluido(planos.dados), empresa: pctConcluido(todosPlanos.dados ?? planos.dados) }
@@ -85,46 +85,48 @@ export default function MinhaArea() {
         <div className="pdco-page">
             <ExecutiveBanner titulo={titulo} totalPlanos={planos.dados.length} metricas={metricas} />
 
-            {administrador && (
-                <div className="pdco-filters-row">
-                    {secaoAtiva === 'planos' && (
-                        <>
-                            <div className="pdco-filter-pill">
-                                <label>Área</label>
-                                <SearchableSelect
-                                    value={area}
-                                    onChange={setArea}
-                                    options={filtros.dados?.areas ?? []}
-                                    todosLabel="Todas as áreas"
-                                    disabled={!filtros.dados}
-                                />
-                            </div>
-                            <div className="pdco-filter-pill">
-                                <label>Plano de ação</label>
-                                <SearchableSelect
-                                    value={planoFiltro}
-                                    onChange={setPlanoFiltro}
-                                    options={filtros.dados?.planos ?? []}
-                                    todosLabel="Todos os planos de ação"
-                                    disabled={!filtros.dados}
-                                />
-                            </div>
-                        </>
-                    )}
-                    <span className="pdco-admin-badge">Administrador</span>
-                    <div className="pdco-toggle-group">
-                        <button type="button" className={secaoAtiva === 'planos' ? 'pdco-toggle-ativo' : ''} onClick={() => setSecao('planos')}>
-                            Planos
-                        </button>
-                        <button type="button" className={secaoAtiva === 'comite' ? 'pdco-toggle-ativo' : ''} onClick={() => setSecao('comite')}>
-                            Comitê
-                        </button>
-                    </div>
+            <div className="pdco-filters-row">
+                {administrador && secaoAtiva === 'planos' && (
+                    <>
+                        <div className="pdco-filter-pill">
+                            <label>Área</label>
+                            <SearchableSelect
+                                value={area}
+                                onChange={setArea}
+                                options={filtros.dados?.areas ?? []}
+                                todosLabel="Todas as áreas"
+                                disabled={!filtros.dados}
+                            />
+                        </div>
+                        <div className="pdco-filter-pill">
+                            <label>Plano de ação</label>
+                            <SearchableSelect
+                                value={planoFiltro}
+                                onChange={setPlanoFiltro}
+                                options={filtros.dados?.planos ?? []}
+                                todosLabel="Todos os planos de ação"
+                                disabled={!filtros.dados}
+                            />
+                        </div>
+                    </>
+                )}
+                {administrador && <span className="pdco-admin-badge">Administrador</span>}
+                <div className="pdco-toggle-group">
+                    <button type="button" className={secaoAtiva === 'planos' ? 'pdco-toggle-ativo' : ''} onClick={() => setSecao('planos')}>
+                        Planos
+                    </button>
+                    <button type="button" className={secaoAtiva === 'comite' ? 'pdco-toggle-ativo' : ''} onClick={() => setSecao('comite')}>
+                        Comitê
+                    </button>
                 </div>
-            )}
+            </div>
 
             {secaoAtiva === 'comite' ? (
-                <ComiteSecao opcoesArea={filtros.dados?.areas ?? []} carregandoFiltros={!filtros.dados} />
+                <ComiteSecao
+                    administrador={administrador}
+                    opcoesArea={filtros.dados?.areas ?? []}
+                    carregandoFiltros={!filtros.dados}
+                />
             ) : (
                 <div className="pdco-section">
                     <div className="pdco-section-head">

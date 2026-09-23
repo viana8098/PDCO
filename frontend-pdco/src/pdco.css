@@ -1421,6 +1421,17 @@ body {
 .pdco-app .pdco-comite-aviso-simulacao b {
   color: inherit;
 }
+/* Aviso pro "Responsável" (não administrador): sem formulário, só consulta. */
+.pdco-app .pdco-comite-aviso-leitura {
+  margin: 0;
+  padding: 12px 14px;
+  font-size: 12.5px;
+  line-height: 1.5;
+  color: var(--text-muted);
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-btn);
+}
 .pdco-app .pdco-input-data {
   background: rgba(255, 255, 255, 0.05);
   border: 1px solid var(--border);

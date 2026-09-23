@@ -25,13 +25,18 @@ const ROTULO_RESPOSTA = Object.fromEntries(RESPOSTAS.map((r) => [r.valor, r.rotu
  * validação do app corporativo), mas "Salvar" nunca fala com um servidor —
  * só guarda o registro na memória da aba (lib/comiteSimulacao.js), pra
  * testar o passo a passo sem comprometer nenhum dado real. Some ao
- * recarregar a página. O registro de verdade fica só no app corporativo,
- * com login de administrador e banco próprio.
+ * recarregar a página. O registro de verdade fica só no app corporativo.
+ * Mesma regra de perfil do app corporativo: só administrador vê o formulário
+ * de novo registro e o checklist no histórico — quem não é ("Responsável")
+ * só consulta data, se ocorreu e motivo/considerações. No standalone o
+ * contexto sempre marca `administrador: true`, então isso fica inerte por
+ * ora, mas a estrutura acompanha o app corporativo.
  */
-export function ComiteSecao({ opcoesArea, carregandoFiltros }) {
+export function ComiteSecao({ administrador, opcoesArea, carregandoFiltros }) {
     const [areaNome, setAreaNome] = useFiltroPersistente('comite:area', '')
     const simulados = useComitesSimulados(areaNome)
-    const historico = [...simulados, ...COMITE_AMOSTRA]
+    const historicoBruto = [...simulados, ...COMITE_AMOSTRA]
+    const historico = administrador ? historicoBruto : historicoBruto.map((c) => ({ ...c, checklist: null }))
 
     const [data, setData] = useState('')
     const [ocorreu, setOcorreu] = useState(null)
@@ -96,99 +101,107 @@ export function ComiteSecao({ opcoesArea, carregandoFiltros }) {
                 <p className="pdco-vazio">Escolha uma área para simular o registro de um comitê.</p>
             ) : (
                 <>
-                    <section className="pdco-panel">
-                        <div className="pdco-panel-header">
-                            <p className="pdco-kicker">Simular novo registro — {areaNome}</p>
-                            <h2 className="pdco-panel-title">Comitê da Cultura</h2>
-                        </div>
+                    {!administrador && (
+                        <p className="pdco-comite-aviso-leitura">
+                            Você vê o histórico dos comitês desta área. Só administradores registram um novo comitê.
+                        </p>
+                    )}
 
-                        <div className="pdco-registro">
-                            <div className="pdco-registro-campo">
-                                <label htmlFor="comite-data">Data do Comitê *</label>
-                                <input id="comite-data" type="date" className="pdco-input-data" value={data} onChange={(e) => setData(e.target.value)} />
+                    {administrador && (
+                        <section className="pdco-panel">
+                            <div className="pdco-panel-header">
+                                <p className="pdco-kicker">Simular novo registro — {areaNome}</p>
+                                <h2 className="pdco-panel-title">Comitê da Cultura</h2>
                             </div>
 
-                            <div className="pdco-registro-campo">
-                                <label id="comite-ocorreu-label">Ocorreu o comitê? *</label>
-                                <div className="pdco-toggle-group" role="radiogroup" aria-labelledby="comite-ocorreu-label">
-                                    <button
-                                        type="button"
-                                        role="radio"
-                                        aria-checked={ocorreu === true}
-                                        className={ocorreu === true ? 'pdco-toggle-ativo' : ''}
-                                        onClick={() => setOcorreu(true)}
-                                    >
-                                        Sim
-                                    </button>
-                                    <button
-                                        type="button"
-                                        role="radio"
-                                        aria-checked={ocorreu === false}
-                                        className={ocorreu === false ? 'pdco-toggle-ativo' : ''}
-                                        onClick={() => setOcorreu(false)}
-                                    >
-                                        Não
-                                    </button>
-                                </div>
-                            </div>
-
-                            {ocorreu === false && (
+                            <div className="pdco-registro">
                                 <div className="pdco-registro-campo">
-                                    <label htmlFor="comite-motivo">Motivo da não realização do comitê *</label>
-                                    <textarea id="comite-motivo" rows={3} value={motivo} onChange={(e) => setMotivo(e.target.value)} />
+                                    <label htmlFor="comite-data">Data do Comitê *</label>
+                                    <input id="comite-data" type="date" className="pdco-input-data" value={data} onChange={(e) => setData(e.target.value)} />
                                 </div>
-                            )}
 
-                            {ocorreu === true && (
-                                <>
-                                    <div className="pdco-registro-campo">
-                                        <label htmlFor="comite-consideracoes">Considerações sobre o momento (combinados e deliberações)</label>
-                                        <textarea
-                                            id="comite-consideracoes"
-                                            rows={5}
-                                            value={consideracoes}
-                                            onChange={(e) => setConsideracoes(e.target.value)}
-                                            placeholder="Observações, acordos, decisões, encaminhamentos, responsáveis e prazos discutidos no encontro."
-                                        />
+                                <div className="pdco-registro-campo">
+                                    <label id="comite-ocorreu-label">Ocorreu o comitê? *</label>
+                                    <div className="pdco-toggle-group" role="radiogroup" aria-labelledby="comite-ocorreu-label">
+                                        <button
+                                            type="button"
+                                            role="radio"
+                                            aria-checked={ocorreu === true}
+                                            className={ocorreu === true ? 'pdco-toggle-ativo' : ''}
+                                            onClick={() => setOcorreu(true)}
+                                        >
+                                            Sim
+                                        </button>
+                                        <button
+                                            type="button"
+                                            role="radio"
+                                            aria-checked={ocorreu === false}
+                                            className={ocorreu === false ? 'pdco-toggle-ativo' : ''}
+                                            onClick={() => setOcorreu(false)}
+                                        >
+                                            Não
+                                        </button>
                                     </div>
+                                </div>
 
+                                {ocorreu === false && (
                                     <div className="pdco-registro-campo">
-                                        <label>Checklist da Efetividade do Comitê da Cultura</label>
-                                        <div className="pdco-checklist">
-                                            {CRITERIOS.map((c, indice) => (
-                                                <div className="pdco-checklist-linha" key={c.chave}>
-                                                    <span className="pdco-checklist-pergunta">
-                                                        <b>{indice + 1}.</b> {c.texto}
-                                                    </span>
-                                                    <div className="pdco-toggle-group" role="radiogroup" aria-label={c.texto}>
-                                                        {RESPOSTAS.map((r) => (
-                                                            <button
-                                                                type="button"
-                                                                key={r.valor}
-                                                                role="radio"
-                                                                aria-checked={checklist[c.chave] === r.valor}
-                                                                className={checklist[c.chave] === r.valor ? 'pdco-toggle-ativo' : ''}
-                                                                onClick={() => setChecklist((atual) => ({ ...atual, [c.chave]: r.valor }))}
-                                                            >
-                                                                {r.rotulo}
-                                                            </button>
-                                                        ))}
-                                                    </div>
-                                                </div>
-                                            ))}
+                                        <label htmlFor="comite-motivo">Motivo da não realização do comitê *</label>
+                                        <textarea id="comite-motivo" rows={3} value={motivo} onChange={(e) => setMotivo(e.target.value)} />
+                                    </div>
+                                )}
+
+                                {ocorreu === true && (
+                                    <>
+                                        <div className="pdco-registro-campo">
+                                            <label htmlFor="comite-consideracoes">Considerações sobre o momento (combinados e deliberações)</label>
+                                            <textarea
+                                                id="comite-consideracoes"
+                                                rows={5}
+                                                value={consideracoes}
+                                                onChange={(e) => setConsideracoes(e.target.value)}
+                                                placeholder="Observações, acordos, decisões, encaminhamentos, responsáveis e prazos discutidos no encontro."
+                                            />
                                         </div>
-                                    </div>
-                                </>
-                            )}
 
-                            <div className="pdco-registro-rodape">
-                                <button type="button" className="pdco-save-button" disabled={!podeSalvar} onClick={handleSalvar}>
-                                    Salvar comitê (simulação)
-                                </button>
-                                {salvo && <span className="pdco-registro-sucesso">Registrado na simulação — veja no histórico abaixo.</span>}
+                                        <div className="pdco-registro-campo">
+                                            <label>Checklist da Efetividade do Comitê da Cultura</label>
+                                            <div className="pdco-checklist">
+                                                {CRITERIOS.map((c, indice) => (
+                                                    <div className="pdco-checklist-linha" key={c.chave}>
+                                                        <span className="pdco-checklist-pergunta">
+                                                            <b>{indice + 1}.</b> {c.texto}
+                                                        </span>
+                                                        <div className="pdco-toggle-group" role="radiogroup" aria-label={c.texto}>
+                                                            {RESPOSTAS.map((r) => (
+                                                                <button
+                                                                    type="button"
+                                                                    key={r.valor}
+                                                                    role="radio"
+                                                                    aria-checked={checklist[c.chave] === r.valor}
+                                                                    className={checklist[c.chave] === r.valor ? 'pdco-toggle-ativo' : ''}
+                                                                    onClick={() => setChecklist((atual) => ({ ...atual, [c.chave]: r.valor }))}
+                                                                >
+                                                                    {r.rotulo}
+                                                                </button>
+                                                            ))}
+                                                        </div>
+                                                    </div>
+                                                ))}
+                                            </div>
+                                        </div>
+                                    </>
+                                )}
+
+                                <div className="pdco-registro-rodape">
+                                    <button type="button" className="pdco-save-button" disabled={!podeSalvar} onClick={handleSalvar}>
+                                        Salvar comitê (simulação)
+                                    </button>
+                                    {salvo && <span className="pdco-registro-sucesso">Registrado na simulação — veja no histórico abaixo.</span>}
+                                </div>
                             </div>
-                        </div>
-                    </section>
+                        </section>
+                    )}
 
                     <section className="pdco-panel">
                         <div className="pdco-panel-header">
