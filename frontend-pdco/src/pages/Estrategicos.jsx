@@ -80,7 +80,7 @@ export default function Estrategicos() {
             ) : (
                 <div className="pdco-card-grid" key={areaFiltro}>
                     {filtrados.map((p, i) => (
-                        <PlanCard key={p.cd_planoacao} plano={p} indice={i} />
+                        <PlanCard key={p.cd_planoacao} plano={p} indice={i} mostrarTipo={false} />
                     ))}
                 </div>
             )}
