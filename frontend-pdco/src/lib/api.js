@@ -39,6 +39,16 @@ async function request(path, { params } = {}) {
 }
 
 export const api = {
+    /**
+     * Dia da última carga do dw (yyyy-mm-dd) por trás do snapshot. É um arquivo estático
+     * (public/_data/pdco/atualizacao.json), não uma rota — sem Function nem backend no ar.
+     */
+    atualizacao: async () => {
+        const response = await fetch('/_data/pdco/atualizacao.json', { headers: { Accept: 'application/json' } })
+        if (!response.ok) throw new Error(`Erro ${response.status}`)
+        return response.json()
+    },
+
     /** Valores dos filtros (Plano / Ação / Área). `_user` é mantido pra compatibilidade com o painel original — sem uso aqui. */
     filtros: (_user) => request('/filtros'),
 

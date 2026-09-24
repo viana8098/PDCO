@@ -13,7 +13,7 @@ import {
   montarJanelaAcompanhamento,
 } from '../domain/pdco.rules';
 import { PLANO_REPOSITORY, type Cache, type PlanoRepository } from '../repositories/types';
-import type { DetalhePlanoPdco, FiltrosPdco, OpcaoFiltro, PlanoPdco } from '../schemas';
+import type { AtualizacaoPdco, DetalhePlanoPdco, FiltrosPdco, OpcaoFiltro, PlanoPdco } from '../schemas';
 
 export interface FiltroPlanos {
   plano?: string | null;
@@ -26,6 +26,11 @@ export class PdcoService {
   @Inject(PLANO_REPOSITORY) private readonly repository: PlanoRepository;
 
   private cachePromise: Promise<Cache> | null = null;
+
+  /** Dia da última carga do dw por trás dos dados — gravado no snapshot como atualizacao.json. */
+  public async atualizacao(): Promise<AtualizacaoPdco> {
+    return { atualizado_em: (await this.obterCache()).atualizadoEm };
+  }
 
   public async filtros(): Promise<FiltrosPdco> {
     const cache = await this.obterCache();

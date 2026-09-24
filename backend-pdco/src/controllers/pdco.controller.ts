@@ -1,11 +1,17 @@
 /** Rotas do painel do PDCO. Baseado em controllers/presidente.controller.ts. */
 import { Controller, Get, Param, Query } from '@nestjs/common';
 import { PdcoService } from '../services/pdco.service';
-import type { DetalhePlanoPdco, FiltrosPdco, PlanoPdco } from '../schemas';
+import type { AtualizacaoPdco, DetalhePlanoPdco, FiltrosPdco, PlanoPdco } from '../schemas';
 
 @Controller('api/pdco')
 export class PdcoController {
   constructor(private readonly service: PdcoService) {}
+
+  /** Dia da última carga do dw (yyyy-mm-dd). Declarada antes de `:cdPlanoAcao` pra não ser tratada como código de plano. */
+  @Get('atualizacao')
+  atualizacao(): Promise<AtualizacaoPdco> {
+    return this.service.atualizacao();
+  }
 
   /** Valores dos filtros (Plano / Ação / Área). */
   @Get('filtros')

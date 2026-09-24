@@ -49,8 +49,13 @@ export class SqlRepository implements PlanoRepository {
   private pool: Promise<mssql.ConnectionPool> | null = null;
 
   public async carregarCache(): Promise<Cache> {
-    const linhasPlanos = await this.query<PlanoAcaoRow>(queries.PLANOS_E_ACOES);
+    const [linhasPlanos, cargas] = await Promise.all([
+      this.query<PlanoAcaoRow>(queries.PLANOS_E_ACOES),
+      // Só informativa: se falhar, o snapshot sai sem a data — nunca derruba a carga dos planos.
+      this.query<{ ultima_carga: Date | null }>(queries.ULTIMA_CARGA).catch(() => [] as Array<{ ultima_carga: Date | null }>),
+    ]);
     const planos = agruparPlanosEAcoes(linhasPlanos);
+    const atualizadoEm = dataIso(cargas[0]?.ultima_carga);
 
     const idsPlanos = [...planos.keys()];
     const linhasAcompanhamentos = idsPlanos.length
@@ -58,7 +63,7 @@ export class SqlRepository implements PlanoRepository {
       : [];
     const acompanhamentos = agruparAcompanhamentos(linhasAcompanhamentos);
 
-    return { planos, acompanhamentos };
+    return { planos, acompanhamentos, atualizadoEm };
   }
 
   private async conexao(): Promise<mssql.ConnectionPool> {

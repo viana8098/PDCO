@@ -11,6 +11,11 @@ export interface OpcaoFiltro {
   rotulo: string;
 }
 
+/** Dia (yyyy-mm-dd) da última carga do dw — nulo se não deu pra saber. */
+export interface AtualizacaoPdco {
+  atualizado_em: string | null;
+}
+
 export interface FiltrosPdco {
   planos: OpcaoFiltro[];
   acoes: OpcaoFiltro[];

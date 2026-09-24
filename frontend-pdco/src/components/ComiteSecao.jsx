@@ -36,13 +36,14 @@ export function ComiteSecao({ administrador, opcoesArea, carregandoFiltros }) {
     const [areaNome, setAreaNome] = useFiltroPersistente('comite:area', '')
     const simulados = useComitesSimulados(areaNome)
     const historicoBruto = [...simulados, ...COMITE_AMOSTRA]
-    const historico = administrador ? historicoBruto : historicoBruto.map((c) => ({ ...c, checklist: null }))
+    const historico = administrador ? historicoBruto : historicoBruto.map((c) => ({ ...c, checklist: null, diario_bordo: null }))
 
     const [data, setData] = useState('')
     const [ocorreu, setOcorreu] = useState(null)
     const [motivo, setMotivo] = useState('')
     const [consideracoes, setConsideracoes] = useState('')
     const [checklist, setChecklist] = useState(CHECKLIST_VAZIO)
+    const [diarioBordo, setDiarioBordo] = useState('')
     const [salvo, setSalvo] = useState(false)
 
     // Trocar de área limpa o formulário: evita "salvar" um rascunho de uma área na área errada.
@@ -52,6 +53,7 @@ export function ComiteSecao({ administrador, opcoesArea, carregandoFiltros }) {
         setMotivo('')
         setConsideracoes('')
         setChecklist(CHECKLIST_VAZIO)
+        setDiarioBordo('')
         setSalvo(false)
     }, [areaNome])
 
@@ -62,7 +64,7 @@ export function ComiteSecao({ administrador, opcoesArea, carregandoFiltros }) {
         const registro =
             ocorreu === false
                 ? { cd_comite: `sim-${Date.now()}`, data, ocorreu: false, motivo_nao_ocorreu: motivo, simulado: true }
-                : { cd_comite: `sim-${Date.now()}`, data, ocorreu: true, consideracoes, checklist, simulado: true }
+                : { cd_comite: `sim-${Date.now()}`, data, ocorreu: true, consideracoes, checklist, diario_bordo: diarioBordo.trim() || null, simulado: true }
         adicionarComiteSimulado(areaNome, registro)
         setSalvo(true)
         setData('')
@@ -70,6 +72,7 @@ export function ComiteSecao({ administrador, opcoesArea, carregandoFiltros }) {
         setMotivo('')
         setConsideracoes('')
         setChecklist(CHECKLIST_VAZIO)
+        setDiarioBordo('')
     }
 
     return (
@@ -190,6 +193,18 @@ export function ComiteSecao({ administrador, opcoesArea, carregandoFiltros }) {
                                                 ))}
                                             </div>
                                         </div>
+
+                                        <div className="pdco-registro-campo">
+                                            <label htmlFor="comite-diario-bordo">Diário de bordo</label>
+                                            <textarea
+                                                id="comite-diario-bordo"
+                                                rows={4}
+                                                value={diarioBordo}
+                                                onChange={(e) => setDiarioBordo(e.target.value)}
+                                                placeholder="Anotações livres do administrador sobre este comitê."
+                                            />
+                                            <span className="pdco-registro-dica">Campo restrito: só administradores veem o diário de bordo.</span>
+                                        </div>
                                     </>
                                 )}
 
@@ -266,6 +281,11 @@ function ComiteHistoricoItem({ comite }) {
                                 </li>
                             ))}
                         </ul>
+                    )}
+                    {comite.diario_bordo && (
+                        <p className="pdco-comite-item-texto pdco-comite-item-quebras pdco-comite-item-diario">
+                            <b>Diário de bordo:</b> {comite.diario_bordo}
+                        </p>
                     )}
                 </>
             )}

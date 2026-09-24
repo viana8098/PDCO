@@ -24,6 +24,13 @@ export const PLANOS_E_ACOES = `
     AND cd_planoacao IS NOT NULL
 `;
 
+/** Carimbo da última carga do dw (`dt_carga`) nos planos PDCO — a data de atualização do snapshot. */
+export const ULTIMA_CARGA = `
+  SELECT MAX(dt_carga) AS ultima_carga
+  FROM dw.fato_planejamento_planodeacao
+  WHERE ${FILTRO_SUBTIPO_PDCO}
+`;
+
 export const ACOMPANHAMENTOS = `
   SELECT DISTINCT
       cd_planoacao, cd_acao,

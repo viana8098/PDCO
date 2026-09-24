@@ -11,6 +11,7 @@ export const COMITE_AMOSTRA = [
         consideracoes:
             'Texto de exemplo: a área apresentou o andamento das ações do mês, discutiu prioridades para o próximo ciclo e definiu responsáveis pelas próximas entregas.',
         checklist: { lider: 'atendeu', equipe: 'atendeu', participacao: 'parcial', entregas: 'atendeu', evidencias: 'atendeu' },
+        diario_bordo: 'Texto de exemplo: anotação livre do administrador — pontos a acompanhar de perto no próximo comitê.',
     },
     {
         cd_comite: 'amostra-2',

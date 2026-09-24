@@ -1,4 +1,5 @@
 import { HashRouter, NavLink, Route, Routes } from 'react-router-dom'
+import { DataAtualizacao } from './components/DataAtualizacao'
 import { PdcoProvider } from './lib/PdcoContext'
 import AcaoDetail from './pages/AcaoDetail'
 import AreaDetail from './pages/AreaDetail'
@@ -73,6 +74,7 @@ export default function App() {
                                     {item.label}
                                 </NavLink>
                             ))}
+                            <DataAtualizacao />
                         </nav>
 
                         <Routes>

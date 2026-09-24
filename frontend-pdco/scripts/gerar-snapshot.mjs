@@ -90,6 +90,12 @@ async function main() {
     escreverJSON(path.join(OUT_DIR, 'filtros.json'), filtros)
     console.log(`filtros.json — ${filtros.planos.length} plano(s) no filtro`)
 
+    // Dia da última carga do dw (dt_carga) — o "Dados atualizados em" do painel. Se o backend não souber
+    // a data (atualizado_em nulo), o arquivo sai assim mesmo e o painel simplesmente não mostra o selo.
+    const atualizacao = await getJSON(`${BASE}/api/pdco/atualizacao`)
+    escreverJSON(path.join(OUT_DIR, 'atualizacao.json'), atualizacao)
+    console.log(`atualizacao.json — dados de ${atualizacao.atualizado_em ?? 'data desconhecida'}`)
+
     const planos = await getJSON(`${BASE}/api/pdco`)
     console.log(`${planos.length} plano(s) encontrados — buscando detalhe de cada um...`)
 
