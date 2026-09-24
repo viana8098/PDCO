@@ -5,16 +5,16 @@
     "status": "Em Andamento",
     "area_codigo": "80",
     "area_nome": "2.2.3 Gente E Cultura Organizacional",
-    "responsavel": "Responsável 04",
+    "responsavel": "Responsável 05",
     "arquetipos_culturais": "Implantação Do Plano De Sucessão",
     "resultados_esperados": "Assegurar A Sustentabilidade Da Instituição, Reduzir Riscos De Vacâncias, Fortalecer O Pipeline De Liderança, Promover Meritocracia E Garantir Preparação Antecipada De Profissionais-chave.",
     "data_inicio": "2026-05-04",
-    "data_fim": "2026-12-20",
-    "execucao": 0.3333333333333333,
+    "data_fim": "2027-12-17",
+    "execucao": 0.3,
     "resumo_acoes": {
-      "total": 9,
+      "total": 10,
       "concluidas": 3,
-      "atrasadas": 1
+      "atrasadas": 0
     },
     "resumo_acompanhamentos": {
       "total": 16,
@@ -27,10 +27,10 @@
       "nome": "Identificar E Priorizar As Competências Estratégicas A Serem Desenvolvidas Para Garantir A Sucessão Das Posições Críticas.",
       "descricao": null,
       "status": "Planejado",
-      "prazo_inicial": "2026-08-10",
-      "prazo_final": "2026-11-14",
+      "prazo_inicial": "2026-11-16",
+      "prazo_final": "2026-12-18",
       "data_conclusao": null,
-      "responsavel": "Responsável 04"
+      "responsavel": "Responsável 05"
     },
     {
       "cd_acao": "24788",
@@ -40,7 +40,7 @@
       "prazo_inicial": "2026-05-04",
       "prazo_final": "2026-05-18",
       "data_conclusao": "2025-07-22",
-      "responsavel": "Responsável 04"
+      "responsavel": "Responsável 05"
     },
     {
       "cd_acao": "26974",
@@ -50,7 +50,7 @@
       "prazo_inicial": "2026-05-27",
       "prazo_final": "2026-06-15",
       "data_conclusao": "2026-08-10",
-      "responsavel": "Responsável 04"
+      "responsavel": "Responsável 05"
     },
     {
       "cd_acao": "26975",
@@ -60,67 +60,77 @@
       "prazo_inicial": "2026-05-27",
       "prazo_final": "2026-06-30",
       "data_conclusao": null,
-      "responsavel": "Responsável 04"
+      "responsavel": "Responsável 05"
     },
     {
       "cd_acao": "26976",
-      "nome": "Elaborar Os Planos De Desenvolvimento Individual (pdis) Dos Sucessores, Contemplando Ações Voltadas Ao Fechamento Das Lacunas Identificadas.",
+      "nome": "Apresentar Material Consolidado Para Diretoria De Gestão Estratégica",
       "descricao": null,
       "status": "Concluído",
-      "prazo_inicial": "2026-09-01",
-      "prazo_final": "2026-11-30",
+      "prazo_inicial": "2026-08-24",
+      "prazo_final": "2026-08-24",
       "data_conclusao": "2026-11-30",
-      "responsavel": "Responsável 04"
+      "responsavel": "Responsável 05"
     },
     {
       "cd_acao": "26977",
       "nome": "Monitorar Periodicamente A Evolução Dos Sucessores, Revisando Os Pdis E Atualizando A Matriz De Sucessão Conforme As Mudanças Organizacionais E As Decisões Do Comitê.",
       "descricao": null,
       "status": "Planejado",
-      "prazo_inicial": "2026-05-15",
-      "prazo_final": "2026-12-20",
+      "prazo_inicial": "2027-03-01",
+      "prazo_final": "2027-12-17",
       "data_conclusao": null,
-      "responsavel": "Responsável 04"
+      "responsavel": "Responsável 05"
     },
     {
       "cd_acao": "30963",
       "nome": "Apresentar À Diretoria Os Resultados E Conclusões Das Etapas De Mapeamento, Matriz De Criticidade E Diagnóstico Da Sucessão.",
       "descricao": null,
       "status": "Planejado",
-      "prazo_inicial": "2026-08-03",
-      "prazo_final": "2026-09-07",
+      "prazo_inicial": "2026-11-03",
+      "prazo_final": "2026-11-13",
       "data_conclusao": null,
-      "responsavel": "Responsável 04"
+      "responsavel": "Responsável 05"
     },
     {
       "cd_acao": "30964",
       "nome": "Instituir O Comitê De Sucessão, Definindo Sua Composição, Responsabilidades E Calendário De Atuação.",
       "descricao": null,
       "status": "Planejado",
-      "prazo_inicial": "2026-08-25",
-      "prazo_final": "2026-09-27",
+      "prazo_inicial": "2027-01-04",
+      "prazo_final": "2027-01-29",
       "data_conclusao": null,
-      "responsavel": "Responsável 04"
+      "responsavel": "Responsável 05"
     },
     {
       "cd_acao": "30965",
       "nome": "Comunicar E Apresentar O Plano De Sucessão Às Lideranças, Alinhando Conceitos, Papéis E Responsabilidades No Processo.",
       "descricao": null,
       "status": "Planejado",
-      "prazo_inicial": "2026-08-28",
-      "prazo_final": "2026-10-14",
+      "prazo_inicial": "2027-03-01",
+      "prazo_final": "2027-03-12",
       "data_conclusao": null,
-      "responsavel": "Responsável 04"
+      "responsavel": "Responsável 05"
     },
     {
       "cd_acao": "31032",
       "nome": "Definir E Implantar Indicadores E Marcos De Evolução Do Plano De Sucessão Para Monitorar A Maturidade Do Processo, A Preparação Dos Sucessores E Os Resultados Alcançados.",
       "descricao": null,
       "status": "Planejado",
-      "prazo_inicial": "2026-06-08",
-      "prazo_final": "2026-12-20",
+      "prazo_inicial": "2027-03-01",
+      "prazo_final": "2027-12-17",
       "data_conclusao": null,
-      "responsavel": "Responsável 04"
+      "responsavel": "Responsável 05"
+    },
+    {
+      "cd_acao": "32796",
+      "nome": "Elaborar Os Planos De Desenvolvimento Individual (pdis) Dos Sucessores, Contemplando Ações Voltadas Ao Fechamento Das Lacunas Identificadas.",
+      "descricao": null,
+      "status": "Planejado",
+      "prazo_inicial": "2027-02-01",
+      "prazo_final": "2027-02-26",
+      "data_conclusao": null,
+      "responsavel": "Responsável 05"
     }
   ],
   "acompanhamento": [

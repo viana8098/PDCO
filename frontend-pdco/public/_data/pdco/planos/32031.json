@@ -5,7 +5,7 @@
     "status": "Em Andamento",
     "area_codigo": "4",
     "area_nome": "1.3 Governança Corporativa",
-    "responsavel": "Responsável 22",
+    "responsavel": "Responsável 31",
     "arquetipos_culturais": "Estruturação Do Fluxo De Atendimento Interno Da Gegov",
     "resultados_esperados": "O Foco Central Deste Plano De Ação É Criar Previsibilidade, Transparência E Eficiência Operacional, Reduzindo O Atrito E O Desgaste Gerados Por Demandas Emergenciais E Desalinhamento De Expectativas Com Os Clientes Internos.",
     "data_inicio": "2026-06-08",
@@ -30,7 +30,7 @@
       "prazo_inicial": "2026-06-15",
       "prazo_final": "2026-07-05",
       "data_conclusao": "2026-07-15",
-      "responsavel": "Responsável 06"
+      "responsavel": "Responsável 07"
     },
     {
       "cd_acao": "32033",
@@ -40,7 +40,7 @@
       "prazo_inicial": "2026-06-08",
       "prazo_final": "2026-07-05",
       "data_conclusao": "2026-07-15",
-      "responsavel": "Responsável 14"
+      "responsavel": "Responsável 20"
     },
     {
       "cd_acao": "32034",
@@ -50,7 +50,7 @@
       "prazo_inicial": "2026-07-13",
       "prazo_final": "2026-07-17",
       "data_conclusao": null,
-      "responsavel": "Responsável 22"
+      "responsavel": "Responsável 31"
     },
     {
       "cd_acao": "32035",
@@ -60,7 +60,7 @@
       "prazo_inicial": "2026-07-20",
       "prazo_final": "2026-08-07",
       "data_conclusao": null,
-      "responsavel": "Responsável 14"
+      "responsavel": "Responsável 20"
     }
   ],
   "acompanhamento": [

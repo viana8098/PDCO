@@ -13,6 +13,26 @@
       "rotulo": "2.1.1.3 Suprimentos — Pdco - Suprimentos | Implantar A Estratégia De Aquisições"
     },
     {
+      "valor": "32880",
+      "rotulo": "2.1.1.4 Contratação E Alienação — Mensurar Índices De Conformidade"
+    },
+    {
+      "valor": "32879",
+      "rotulo": "2.1.1.4 Contratação E Alienação — Visita Aos Clientes (etapa Bimestral)"
+    },
+    {
+      "valor": "32849",
+      "rotulo": "2.1.1.7 Engenharia — Pdco - Engenharia | Implantar Gestão Visual De Indicadores E Resultados"
+    },
+    {
+      "valor": "32851",
+      "rotulo": "2.1.1.7 Engenharia — Pdco - Engenharia | Realizar Capacitação Contínua Da Equipe (bim)"
+    },
+    {
+      "valor": "32788",
+      "rotulo": "2.1.1.8 Transporte — Pdco - Transportes"
+    },
+    {
       "valor": "32593",
       "rotulo": "2.1.1.9 Gestão De Ativos — Pdco - Gestão De Ativos"
     },
@@ -23,6 +43,10 @@
     {
       "valor": "27152",
       "rotulo": "2.2.1 Processos — Fortalecer A Cultura E A Governança De Gestão Por Processos"
+    },
+    {
+      "valor": "32876",
+      "rotulo": "2.2.1 Processos — Jornada De Autonomia E Accountability Da Área De Processos"
     },
     {
       "valor": "26736",
@@ -39,10 +63,6 @@
     {
       "valor": "30953",
       "rotulo": "2.2.3 Gente E Cultura Organizacional — Criar Ato Normativo De Reconhecimento E Responsabilização Profissional"
-    },
-    {
-      "valor": "26734",
-      "rotulo": "2.2.3 Gente E Cultura Organizacional — Desenvolver E Aplicar Competências Críticas Que Impulsionem A Performance, Sust…"
     },
     {
       "valor": "26733",
@@ -65,8 +85,16 @@
       "rotulo": "2.3.2 Educação Profissional — Priorização Estratégica Por Impacto Em Resultado"
     },
     {
+      "valor": "32783",
+      "rotulo": "2.5.1 Segurança E Saúde — Consolidar Os Pdcos De Todas As Frentes De Atuação Da Linha De Negócios De Ssi …"
+    },
+    {
       "valor": "28170",
       "rotulo": "2.6 Diretoria Comercial E Marketing — Laboratório De Experiência Do Cliente - Labex"
+    },
+    {
+      "valor": "32785",
+      "rotulo": "3.6 Unidade Senai Poço — Pa Pdco Tático - Poço 2026\r\nimplantar Modelo De Governança Dos Ambientes Educac…"
     }
   ],
   "areas": [
@@ -81,6 +109,18 @@
     {
       "valor": "2.1.1.3 Suprimentos",
       "rotulo": "2.1.1.3 Suprimentos"
+    },
+    {
+      "valor": "2.1.1.4 Contratação E Alienação",
+      "rotulo": "2.1.1.4 Contratação E Alienação"
+    },
+    {
+      "valor": "2.1.1.7 Engenharia",
+      "rotulo": "2.1.1.7 Engenharia"
+    },
+    {
+      "valor": "2.1.1.8 Transporte",
+      "rotulo": "2.1.1.8 Transporte"
     },
     {
       "valor": "2.1.1.9 Gestão De Ativos",
@@ -103,14 +143,30 @@
       "rotulo": "2.3.2 Educação Profissional"
     },
     {
+      "valor": "2.5.1 Segurança E Saúde",
+      "rotulo": "2.5.1 Segurança E Saúde"
+    },
+    {
       "valor": "2.6 Diretoria Comercial E Marketing",
       "rotulo": "2.6 Diretoria Comercial E Marketing"
+    },
+    {
+      "valor": "3.6 Unidade Senai Poço",
+      "rotulo": "3.6 Unidade Senai Poço"
     }
   ],
   "acoes": [
     {
       "valor": "Acompanhar A Logística De Capacitação Líderes: Liderando Mudanças",
       "rotulo": "Acompanhar A Logística De Capacitação Líderes: Liderando Mudanças"
+    },
+    {
+      "valor": "Acompanhar Assinatura Do Contrato Da Ferramenta Hefex De Gestão De Manutenção",
+      "rotulo": "Acompanhar Assinatura Do Contrato Da Ferramenta Hefex De Gestão De Manutenção"
+    },
+    {
+      "valor": "Acompanhar E Medir Aderência Da Metodologia Bim Nos Projetos",
+      "rotulo": "Acompanhar E Medir Aderência Da Metodologia Bim Nos Projetos"
     },
     {
       "valor": "Acompanhar Logística De Capacitação Líderes: Liderança Baseada Em Valores + Lfr",
@@ -133,8 +189,20 @@
       "rotulo": "Analisar O Planejamento De Aquisições 2027"
     },
     {
+      "valor": "Analisar Os Indicadores E Dados De Desempenho",
+      "rotulo": "Analisar Os Indicadores E Dados De Desempenho"
+    },
+    {
       "valor": "Analisar Todas As Sugestões E Editar O Ato Normativo",
       "rotulo": "Analisar Todas As Sugestões E Editar O Ato Normativo"
+    },
+    {
+      "valor": "Aplicação Do Guia- Sensibilizar Lideranças Sobre O Guia Dos Valores Na Prática",
+      "rotulo": "Aplicação Do Guia- Sensibilizar Lideranças Sobre O Guia Dos Valores Na Prática"
+    },
+    {
+      "valor": "Aplicar A Metodologia Bim Em Projeto Piloto",
+      "rotulo": "Aplicar A Metodologia Bim Em Projeto Piloto"
     },
     {
       "valor": "Aplicar Ajustes, Se Necessário",
@@ -153,16 +221,20 @@
       "rotulo": "Apresentar À Diretoria Os Resultados E Conclusões Das Etapas De Mapeamento, Matriz De Criticidade E Diagnóstico Da Sucessão."
     },
     {
+      "valor": "Apresentar Durante Visitas Às Unidades Operacionais Um Boletim Da Área De Transportes",
+      "rotulo": "Apresentar Durante Visitas Às Unidades Operacionais Um Boletim Da Área De Transportes"
+    },
+    {
+      "valor": "Apresentar Material Consolidado Para Diretoria De Gestão Estratégica",
+      "rotulo": "Apresentar Material Consolidado Para Diretoria De Gestão Estratégica"
+    },
+    {
       "valor": "Apresentar Novo Modelo Para A Equipe- Novo Design Organizacional Gente E Cultura Organizacional",
       "rotulo": "Apresentar Novo Modelo Para A Equipe- Novo Design Organizacional Gente E Cultura Organizacional"
     },
     {
       "valor": "Ativar Ritual 'visão De Resultado' (45min) + Check-in Quinzenal De 15min. Monitorar Gap E Decisões De Repriorização Mensalmente.",
       "rotulo": "Ativar Ritual 'visão De Resultado' (45min) + Check-in Quinzenal De 15min. Monitorar Gap E Decisões De Repriorização Mensalmente."
-    },
-    {
-      "valor": "Atualizar Descrições De Cargos Para Garantir Coerência Entre Responsabilidades, Entregas E Competências Críticas.",
-      "rotulo": "Atualizar Descrições De Cargos Para Garantir Coerência Entre Responsabilidades, Entregas E Competências Críticas."
     },
     {
       "valor": "Atualizar Documentação Dos Rituais Com As Melhorias Aplicadas (papéis, Objetivos E Cadência Para Cada Rito)  (etapa 2 - Proposição De Melhoria)",
@@ -181,10 +253,6 @@
       "rotulo": "Avaliar O Impacto Dos Treinamentos Na Performance, Comportamento E Resultados Das Equipes."
     },
     {
-      "valor": "Avaliar Quantidade De Liderados Por Líder E Agente De Gestão E Propor Melhorias Nos Designs Das Áreas Com Foco Em Ampliação Da Performance",
-      "rotulo": "Avaliar Quantidade De Liderados Por Líder E Agente De Gestão E Propor Melhorias Nos Designs Das Áreas Com Foco Em Ampliação Da Performance"
-    },
-    {
       "valor": "Capacitação Inicial",
       "rotulo": "Capacitação Inicial"
     },
@@ -197,8 +265,16 @@
       "rotulo": "Capacitar E Monitorar Atores De Processo Na Metodologia De Mapeamento, Com Abordagens Práticas Que Ampliem A Qualidade E Agilidade Dos Mapeamentos"
     },
     {
+      "valor": "Certificação De Maturidade Dos Processos (m1 → M4)",
+      "rotulo": "Certificação De Maturidade Dos Processos (m1 → M4)"
+    },
+    {
       "valor": "Classificar As Iniciativas Estratégicas, Conforme Critérios Foco Em Sustentabilidade",
       "rotulo": "Classificar As Iniciativas Estratégicas, Conforme Critérios Foco Em Sustentabilidade"
+    },
+    {
+      "valor": "Compartilhar Boas Práticas E Lições Aprendidas Após Projeto Piloto",
+      "rotulo": "Compartilhar Boas Práticas E Lições Aprendidas Após Projeto Piloto"
     },
     {
       "valor": "Comunicar E Apresentar O Plano De Sucessão Às Lideranças, Alinhando Conceitos, Papéis E Responsabilidades No Processo.",
@@ -215,6 +291,10 @@
     {
       "valor": "Consolidar E Implantar O Plano Integrado De Aquisições",
       "rotulo": "Consolidar E Implantar O Plano Integrado De Aquisições"
+    },
+    {
+      "valor": "Construção Do Guia - Traduzir Valores Em Comportamentos Esperados",
+      "rotulo": "Construção Do Guia - Traduzir Valores Em Comportamentos Esperados"
     },
     {
       "valor": "Construir A Matriz De Sucessão Em Conjunto Com Os Gerentes Executivos, Consolidando Informações Sobre Cargos Críticos, Níveis De Prontidão, Riscos De Sucessão E Alternativas De Substituição.",
@@ -237,6 +317,10 @@
       "rotulo": "Construir Proposta De Cestas De Indicadores E Metas, Conectando Indicadores Estratégicos E Táticos Prioritários Para Cada Área Corporativa (etapa 2 - Estruturação Técnica Inicial)"
     },
     {
+      "valor": "Criar Checklist De Entrega E Devolução Por Uso Com Registro De Ocorrências",
+      "rotulo": "Criar Checklist De Entrega E Devolução Por Uso Com Registro De Ocorrências"
+    },
+    {
       "valor": "Criar Mecanismo De Acompanhamento Contínuo Avaliação Da Liderança",
       "rotulo": "Criar Mecanismo De Acompanhamento Contínuo Avaliação Da Liderança"
     },
@@ -247,10 +331,6 @@
     {
       "valor": "Criar Painel De 3 Indicadores Críticos (receita Executada, Gap Orçamentário, Custo Por Unidade). Definir Responsável Por Indicador Dentro Da Equipe. Incluir Resultado Orçamentário Como Pauta Fixa Nas Cerimônias.",
       "rotulo": "Criar Painel De 3 Indicadores Críticos (receita Executada, Gap Orçamentário, Custo Por Unidade). Definir Responsável Por Indicador Dentro Da Equipe. Incluir Resultado Orçamentário Como Pauta Fixa Nas Cerimônias."
-    },
-    {
-      "valor": "Criar Ritual De Reforço Cultural",
-      "rotulo": "Criar Ritual De Reforço Cultural"
     },
     {
       "valor": "Definição Dos Serviços Corporativos E Seus Respectivos Slas",
@@ -289,6 +369,10 @@
       "rotulo": "Definir Indicadores E Evidências Objetivas Que Suportem Processos De Reconhecimento E Aplicação De Consequências."
     },
     {
+      "valor": "Definir Metodologia De Apuração Dos Indicadores",
+      "rotulo": "Definir Metodologia De Apuração Dos Indicadores"
+    },
+    {
       "valor": "Definir Metodologia De Auditoria De Processos E Qualidade",
       "rotulo": "Definir Metodologia De Auditoria De Processos E Qualidade"
     },
@@ -297,16 +381,8 @@
       "rotulo": "Definir Uma Matriz De Priorização Simples"
     },
     {
-      "valor": "Desenvolver Competências Em I.a.",
-      "rotulo": "Desenvolver Competências Em I.a."
-    },
-    {
       "valor": "Desenvolver Instrumentos De Auditoria",
       "rotulo": "Desenvolver Instrumentos De Auditoria"
-    },
-    {
-      "valor": "Desenvolvimento De Materiais, Guias E Trilhas De Aprendizagem Baseadas Nas Lacunas De Competências.",
-      "rotulo": "Desenvolvimento De Materiais, Guias E Trilhas De Aprendizagem Baseadas Nas Lacunas De Competências."
     },
     {
       "valor": "Divulgar O Fluxo De Solicitação E Os Prazos Mínimos Por Tipo De Demanda Para As Áreas Parceiras",
@@ -333,16 +409,16 @@
       "rotulo": "Elaborar E Apresentar A Proposta Inicial Do Plano De Sucessão Para Validação Da Diretoria."
     },
     {
+      "valor": "Elaborar E Revisar Documentos Orientadores Da Área De Transportes",
+      "rotulo": "Elaborar E Revisar Documentos Orientadores Da Área De Transportes"
+    },
+    {
       "valor": "Elaborar Os Planos De Desenvolvimento Individual (pdis) Dos Sucessores, Contemplando Ações Voltadas Ao Fechamento Das Lacunas Identificadas.",
       "rotulo": "Elaborar Os Planos De Desenvolvimento Individual (pdis) Dos Sucessores, Contemplando Ações Voltadas Ao Fechamento Das Lacunas Identificadas."
     },
     {
       "valor": "Elaborar, Publicar E Divulgar Internamente Um Documento De Sla Por Tipo De Demanda",
       "rotulo": "Elaborar, Publicar E Divulgar Internamente Um Documento De Sla Por Tipo De Demanda"
-    },
-    {
-      "valor": "Elevar A Qualidade Dos Pdis Por Meio Da Disponibilização De Um Assistente De Ia Aos Líderes, Apoiando A Elaboração Dos Planos E Fortalecendo A Análise Qualitativa E A Personalização Do Desenvolvimento Dos Colaboradores.",
-      "rotulo": "Elevar A Qualidade Dos Pdis Por Meio Da Disponibilização De Um Assistente De Ia Aos Líderes, Apoiando A Elaboração Dos Planos E Fortalecendo A Análise Qualitativa E A Personalização Do Desenvolvimento Dos Colaboradores."
     },
     {
       "valor": "Estruturação Operacional",
@@ -377,6 +453,14 @@
       "rotulo": "Executar E Acompanhar Renovações E Novas Licitações Priorizadas"
     },
     {
+      "valor": "Executar Trilhas De Desenvolvimento Dos Agentes De Gestão, Monitorando A Evolução Das Competências E A Aplicação Dos Aprendizados No Contexto De Atuação.",
+      "rotulo": "Executar Trilhas De Desenvolvimento Dos Agentes De Gestão, Monitorando A Evolução Das Competências E A Aplicação Dos Aprendizados No Contexto De Atuação."
+    },
+    {
+      "valor": "Formalização Da Missão Do Negócio Ssi E Implantação Da Matriz Raci Dos Macroprocessos Ssi X Unidades",
+      "rotulo": "Formalização Da Missão Do Negócio Ssi E Implantação Da Matriz Raci Dos Macroprocessos Ssi X Unidades"
+    },
+    {
       "valor": "Fortalecer Cerimônia De Processos Destaque, Estabelecendo Novos Critérios Para A Avaliação",
       "rotulo": "Fortalecer Cerimônia De Processos Destaque, Estabelecendo Novos Critérios Para A Avaliação"
     },
@@ -385,24 +469,40 @@
       "rotulo": "Garantir Comunicação Transparente Para Toda A Organização E  Capacitação De Lideranças Para Aplicação Consistente."
     },
     {
-      "valor": "Identificação De Gaps De Competências Pós Aplicação Avaliação De Desempenho",
-      "rotulo": "Identificação De Gaps De Competências Pós Aplicação Avaliação De Desempenho"
-    },
-    {
       "valor": "Identificar E Priorizar As Competências Estratégicas A Serem Desenvolvidas Para Garantir A Sucessão Das Posições Críticas.",
       "rotulo": "Identificar E Priorizar As Competências Estratégicas A Serem Desenvolvidas Para Garantir A Sucessão Das Posições Críticas."
     },
     {
-      "valor": "Identificar Gaps Críticos De Liderança Base: Diagnóstico Cultural + Avaliação De Desempenho+ Clima Organizacional. Foco Em:  Accountability, Feedback, Tomada De Decisão E Gestão De  Performance.",
-      "rotulo": "Identificar Gaps Críticos De Liderança Base: Diagnóstico Cultural + Avaliação De Desempenho+ Clima Organizacional. Foco Em:  Accountability, Feedback, Tomada De Decisão E Gestão De  Performance."
+      "valor": "Identificar Gaps Críticos De Liderança Base: Diagnóstico Cultural + Avaliação De Desempenho+ Clima Organizacional+ Cesta Do Gestor= Foco Em:  Accountability, Feedback, Tomada De Decisão E Gestão De  Performance.",
+      "rotulo": "Identificar Gaps Críticos De Liderança Base: Diagnóstico Cultural + Avaliação De Desempenho+ Clima Organizacional+ Cesta Do Gestor= Foco Em:  Accountability, Feedback, Tomada De Decisão E Gestão De  Performance."
     },
     {
-      "valor": "Implantar Auditoria ( Projeto Piloto Lideres )  De Pdis E Check-ins De Acompanhamento.",
-      "rotulo": "Implantar Auditoria ( Projeto Piloto Lideres )  De Pdis E Check-ins De Acompanhamento."
+      "valor": "Implantação Da Matriz De Maturidade Por Processo (m1, M2, M3 E M4)",
+      "rotulo": "Implantação Da Matriz De Maturidade Por Processo (m1, M2, M3 E M4)"
+    },
+    {
+      "valor": "Implantar A Governança Dos Ambientes Educacionais: Mapear Processos, Definir Responsáveis, Fluxo Formal, Padronizar Procedimentos",
+      "rotulo": "Implantar A Governança Dos Ambientes Educacionais: Mapear Processos, Definir Responsáveis, Fluxo Formal, Padronizar Procedimentos"
+    },
+    {
+      "valor": "Implantar Auditoria Operacional Semanal",
+      "rotulo": "Implantar Auditoria Operacional Semanal"
     },
     {
       "valor": "Implantar E Monitorar O Indicador Nps Dos Serviços Das Áreas Corporativas",
       "rotulo": "Implantar E Monitorar O Indicador Nps Dos Serviços Das Áreas Corporativas"
+    },
+    {
+      "valor": "Implantar Em Uma Unidade Operacional Piloto Da Ferramenta Hefex De Gestão De Manutenção",
+      "rotulo": "Implantar Em Uma Unidade Operacional Piloto Da Ferramenta Hefex De Gestão De Manutenção"
+    },
+    {
+      "valor": "Implantar Gestão À Vista Da Apuração De Indicadores E Resultados",
+      "rotulo": "Implantar Gestão À Vista Da Apuração De Indicadores E Resultados"
+    },
+    {
+      "valor": "Implantar Matriz De Autonomia E Pdi",
+      "rotulo": "Implantar Matriz De Autonomia E Pdi"
     },
     {
       "valor": "Implantar O Ciclo De Auditoria Metrologia",
@@ -421,14 +521,6 @@
       "rotulo": "Implantar Um Quadro De Gestão De Demandas"
     },
     {
-      "valor": "Incorporar À Avaliação Dos Gestores Indicadores De Qualidade Dos Pdis, Frequência De Acompanhamento E Evolução Das Competências Das Equipes.",
-      "rotulo": "Incorporar À Avaliação Dos Gestores Indicadores De Qualidade Dos Pdis, Frequência De Acompanhamento E Evolução Das Competências Das Equipes."
-    },
-    {
-      "valor": "Incorporar Competências Nos Pdi’s Com Sugestões De Ações De Desenvolvimento E Práticas No Trabalho.",
-      "rotulo": "Incorporar Competências Nos Pdi’s Com Sugestões De Ações De Desenvolvimento E Práticas No Trabalho."
-    },
-    {
       "valor": "Incorporar Ícones Sinalizadores Nas Cerimônias (setorial/ Rtd/ Rac/estratégia Viva)",
       "rotulo": "Incorporar Ícones Sinalizadores Nas Cerimônias (setorial/ Rtd/ Rac/estratégia Viva)"
     },
@@ -441,12 +533,12 @@
       "rotulo": "Iniciar O Modelo Proposto E Acompanhar Resultado/ Ganhos Para O Negócio E Empresa"
     },
     {
-      "valor": "Instituir O Comitê De Sucessão, Definindo Sua Composição, Responsabilidades E Calendário De Atuação.",
-      "rotulo": "Instituir O Comitê De Sucessão, Definindo Sua Composição, Responsabilidades E Calendário De Atuação."
+      "valor": "Iniciar Trâmites Para Contratação/renovação Da Ferramenta Hefex De Gestão De Manutenção",
+      "rotulo": "Iniciar Trâmites Para Contratação/renovação Da Ferramenta Hefex De Gestão De Manutenção"
     },
     {
-      "valor": "Integração Das Competências Com Os Subsistemas De Gente E Cultura",
-      "rotulo": "Integração Das Competências Com Os Subsistemas De Gente E Cultura"
+      "valor": "Instituir O Comitê De Sucessão, Definindo Sua Composição, Responsabilidades E Calendário De Atuação.",
+      "rotulo": "Instituir O Comitê De Sucessão, Definindo Sua Composição, Responsabilidades E Calendário De Atuação."
     },
     {
       "valor": "Integrar Os Critérios De Reconhecimento E Consequência Ao Ciclo Institucional De Gestão De Desempenho E Desenvolvimento De Pessoas.",
@@ -461,16 +553,16 @@
       "rotulo": "Integrar Suprimentos Ao Planejamento Institucional"
     },
     {
+      "valor": "Levantar Requisitos E Cotações De Ferramenta Bim",
+      "rotulo": "Levantar Requisitos E Cotações De Ferramenta Bim"
+    },
+    {
       "valor": "Mapear As Oportunidades De Melhoria E Submeter Para Validação Da Proposta De Modelo (etapa 2 - Proposição De Melhoria)",
       "rotulo": "Mapear As Oportunidades De Melhoria E Submeter Para Validação Da Proposta De Modelo (etapa 2 - Proposição De Melhoria)"
     },
     {
-      "valor": "Mapear E Enfatizar As Competências Mais Críticas Para O Líder E  Que Irão Impactar Mais Significativamente No Negócio",
-      "rotulo": "Mapear E Enfatizar As Competências Mais Críticas Para O Líder E  Que Irão Impactar Mais Significativamente No Negócio"
-    },
-    {
-      "valor": "Mapear Lacunas De Competências Por Área E Cargo, Com Base Nos Resultados Da Avaliação De Desempenho  E Estratégia.",
-      "rotulo": "Mapear Lacunas De Competências Por Área E Cargo, Com Base Nos Resultados Da Avaliação De Desempenho  E Estratégia."
+      "valor": "Mapear Perfis De Usuários Para Uso Da Ferramenta Bim",
+      "rotulo": "Mapear Perfis De Usuários Para Uso Da Ferramenta Bim"
     },
     {
       "valor": "Mapear Todos Os Planos De Ação Da Gep E Classificar: (a) Impacto Direto Em Resultado Financeiro, (b) Impacto Indireto, (c) Sem Relação Com Indicadores Críticos. Descontinuar Ou Suspender Os De Tipo C.",
@@ -489,14 +581,6 @@
       "rotulo": "Modelo Conceitual"
     },
     {
-      "valor": "Monitorar A Evolução Do Desenvolvimento Das Equipes Através  Do Acompanhamento E Resultados Dos Pdis.",
-      "rotulo": "Monitorar A Evolução Do Desenvolvimento Das Equipes Através  Do Acompanhamento E Resultados Dos Pdis."
-    },
-    {
-      "valor": "Monitorar Evolução Das Competências Críticas",
-      "rotulo": "Monitorar Evolução Das Competências Críticas"
-    },
-    {
       "valor": "Monitorar Evolução Das Competências Dos Participantes.",
       "rotulo": "Monitorar Evolução Das Competências Dos Participantes."
     },
@@ -507,10 +591,6 @@
     {
       "valor": "Novo Modelo De Gestão Por Entregas Do Observatório",
       "rotulo": "Novo Modelo De Gestão Por Entregas Do Observatório"
-    },
-    {
-      "valor": "Ofertar Trilhas Formativas Segmentadas Por Nível De Carreira (operacional, Técnico, Especialista, Liderança).",
-      "rotulo": "Ofertar Trilhas Formativas Segmentadas Por Nível De Carreira (operacional, Técnico, Especialista, Liderança)."
     },
     {
       "valor": "Pactuar Composição Das Cestas Corporativas Para 2027 (etapa 4 - Estruturação Técnica Final)",
@@ -525,6 +605,14 @@
       "rotulo": "Propor Ajustes Necessários  (etapa 3 - Simulação De Piloto)"
     },
     {
+      "valor": "Realizar 1ª Apuração Dos Indicadores De Cada Pilar",
+      "rotulo": "Realizar 1ª Apuração Dos Indicadores De Cada Pilar"
+    },
+    {
+      "valor": "Realizar 1ª Turma De Treinamento Em Metodologia Bim",
+      "rotulo": "Realizar 1ª Turma De Treinamento Em Metodologia Bim"
+    },
+    {
       "valor": "Realizar Avaliação Do Diagnóstico (etapa 1 - Diagnóstico Estruturado)",
       "rotulo": "Realizar Avaliação Do Diagnóstico (etapa 1 - Diagnóstico Estruturado)"
     },
@@ -533,16 +621,32 @@
       "rotulo": "Realizar Capacitação Junto A Consultoria Sobre Inovação E Processos"
     },
     {
+      "valor": "Realizar Contratação De Treinamento Em Metodologia Bim",
+      "rotulo": "Realizar Contratação De Treinamento Em Metodologia Bim"
+    },
+    {
+      "valor": "Realizar Entrevistas Com Responsáveis De Cada Pilar",
+      "rotulo": "Realizar Entrevistas Com Responsáveis De Cada Pilar"
+    },
+    {
       "valor": "Realizar Imersão De Conhecimento Nos Negócios",
       "rotulo": "Realizar Imersão De Conhecimento Nos Negócios"
+    },
+    {
+      "valor": "Realizar Processo De Contratação Da Ferramenta Bim",
+      "rotulo": "Realizar Processo De Contratação Da Ferramenta Bim"
     },
     {
       "valor": "Realizar Reunião De Alinhamento Com A Diretoria Do Negócio/ Líderes Sobre O Modelo Proposto",
       "rotulo": "Realizar Reunião De Alinhamento Com A Diretoria Do Negócio/ Líderes Sobre O Modelo Proposto"
     },
     {
-      "valor": "Reforçar Cultura De Protagonismo Com Consequência Reconhecer Colaboradores Que Evoluem E Líderes Que  Desenvolvem Equipes. Atuar Nos Casos De Baixa Aderência Com  Feedback Formal E Plano De Ação.",
-      "rotulo": "Reforçar Cultura De Protagonismo Com Consequência Reconhecer Colaboradores Que Evoluem E Líderes Que  Desenvolvem Equipes. Atuar Nos Casos De Baixa Aderência Com  Feedback Formal E Plano De Ação."
+      "valor": "Realizar Ritual Mensal De Acompanhamento Das Prioridades E Entregas",
+      "rotulo": "Realizar Ritual Mensal De Acompanhamento Das Prioridades E Entregas"
+    },
+    {
+      "valor": "Realizar Rollout Da Ferramenta Hefex De Gestão De Manutenção Em Todas As Unidades Operacionais Do Sesi E Do Senai",
+      "rotulo": "Realizar Rollout Da Ferramenta Hefex De Gestão De Manutenção Em Todas As Unidades Operacionais Do Sesi E Do Senai"
     },
     {
       "valor": "Resgatar Os Critérios Estabelecidos Anteriormente (foco Em Sustentabilidade)",
@@ -565,8 +669,16 @@
       "rotulo": "Revisar Manual E Formalizar Modelo Do Ppr Corporativo (etapa 5 - Governança E Validação)"
     },
     {
-      "valor": "Sensibilizar Lideranças Sobre O Guia Dos Valores Na Prática",
-      "rotulo": "Sensibilizar Lideranças Sobre O Guia Dos Valores Na Prática"
+      "valor": "Ritual Consultivo \"o Que Você Recomenda?\" Nas Interações Com As Unidades",
+      "rotulo": "Ritual Consultivo \"o Que Você Recomenda?\" Nas Interações Com As Unidades"
+    },
+    {
+      "valor": "Ritual Do Guia - Criar Ritual De Reforço Cultural",
+      "rotulo": "Ritual Do Guia - Criar Ritual De Reforço Cultural"
+    },
+    {
+      "valor": "Ritual Mensal De Avaliação De Maturidade Dos Processos",
+      "rotulo": "Ritual Mensal De Avaliação De Maturidade Dos Processos"
     },
     {
       "valor": "Simular Execução Do Modelo Inicial Das Cestas Corporativas (etapa 3 - Simulação De Piloto)",
@@ -577,20 +689,16 @@
       "rotulo": "Sprints De Inovação"
     },
     {
-      "valor": "Submeter Para Análise Jurídica, Aprovação Da Diretoria Executiva E Publicação Por Meio De Ato Normativo Institucional.",
-      "rotulo": "Submeter Para Análise Jurídica, Aprovação Da Diretoria Executiva E Publicação Por Meio De Ato Normativo Institucional."
+      "valor": "Submeter Para Análise Da Governança Corporativa",
+      "rotulo": "Submeter Para Análise Da Governança Corporativa"
     },
     {
       "valor": "Submeter Para Áreas Da Digest",
       "rotulo": "Submeter Para Áreas Da Digest"
     },
     {
-      "valor": "Traduzir Valores Em Comportamentos - Construção Do Guia",
-      "rotulo": "Traduzir Valores Em Comportamentos - Construção Do Guia"
-    },
-    {
-      "valor": "Traduzir Valores Em Comportamentos - Validação Do Guia Com A Diretoria",
-      "rotulo": "Traduzir Valores Em Comportamentos - Validação Do Guia Com A Diretoria"
+      "valor": "Validação Do Guia Com A Diretoria",
+      "rotulo": "Validação Do Guia Com A Diretoria"
     },
     {
       "valor": "Validar As Classificações Com Os Responsáveis Pelas Iniciativas",
@@ -607,6 +715,10 @@
     {
       "valor": "Validar Modelo/orçamento De Pessoal Com A Diretoria De Gestão Estratégica",
       "rotulo": "Validar Modelo/orçamento De Pessoal Com A Diretoria De Gestão Estratégica"
+    },
+    {
+      "valor": "Validar O Material Com  A Diretoria",
+      "rotulo": "Validar O Material Com  A Diretoria"
     }
   ],
   "administrador": true

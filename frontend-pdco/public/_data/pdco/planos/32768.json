@@ -5,7 +5,7 @@
     "status": "Em Andamento",
     "area_codigo": "70",
     "area_nome": "1.4 Observatório Da Indústria",
-    "responsavel": "Responsável 19",
+    "responsavel": "Responsável 27",
     "arquetipos_culturais": "Pdco - Observatório",
     "resultados_esperados": "Aprimorar A Gestão Das Entregas Do Observatório, Promovendo Maior Agilidade, Organização, Rastreabilidade E Continuidade Das Atividades.",
     "data_inicio": "2026-07-01",
@@ -30,7 +30,7 @@
       "prazo_inicial": "2026-07-01",
       "prazo_final": "2026-09-30",
       "data_conclusao": "2026-09-21",
-      "responsavel": "Responsável 19"
+      "responsavel": "Responsável 27"
     },
     {
       "cd_acao": "32770",
@@ -40,7 +40,7 @@
       "prazo_inicial": "2026-07-01",
       "prazo_final": "2026-09-30",
       "data_conclusao": null,
-      "responsavel": "Responsável 19"
+      "responsavel": "Responsável 27"
     }
   ],
   "acompanhamento": [

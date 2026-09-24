@@ -5,15 +5,15 @@
     "status": "Em Andamento",
     "area_codigo": "80",
     "area_nome": "2.2.3 Gente E Cultura Organizacional",
-    "responsavel": "Responsável 09",
+    "responsavel": "Responsável 10",
     "arquetipos_culturais": "Fortalecimento Dos Valores Na Prática",
     "resultados_esperados": "Para Transformar Os Valores Organizacionais Em Comportamentos Observáveis, Fortalecendo A Coerência Entre O Que A Organização Declara E O Que É Praticado Nas Decisões, Relações E Entregas Do Dia A Dia.",
     "data_inicio": "2026-06-15",
-    "data_fim": "2026-12-18",
-    "execucao": 0,
+    "data_fim": "2027-04-30",
+    "execucao": 0.25,
     "resumo_acoes": {
       "total": 4,
-      "concluidas": 0,
+      "concluidas": 1,
       "atrasadas": 0
     },
     "resumo_acompanhamentos": {
@@ -24,13 +24,13 @@
   "acoes": [
     {
       "cd_acao": "32260",
-      "nome": "Traduzir Valores Em Comportamentos - Construção Do Guia",
+      "nome": "Construção Do Guia - Traduzir Valores Em Comportamentos Esperados",
       "descricao": null,
-      "status": "Em Andamento",
+      "status": "Concluído",
       "prazo_inicial": "2026-06-15",
       "prazo_final": "2026-10-29",
-      "data_conclusao": null,
-      "responsavel": "Responsável 09"
+      "data_conclusao": "2026-09-23",
+      "responsavel": "Responsável 10"
     },
     {
       "cd_acao": "32261",
@@ -40,37 +40,37 @@
       "prazo_inicial": "2026-08-05",
       "prazo_final": "2026-10-29",
       "data_conclusao": null,
-      "responsavel": "Responsável 05"
+      "responsavel": "Responsável 06"
     },
     {
       "cd_acao": "32262",
-      "nome": "Criar Ritual De Reforço Cultural",
-      "descricao": null,
-      "status": "Planejado",
-      "prazo_inicial": "2026-08-05",
-      "prazo_final": "2026-10-29",
-      "data_conclusao": null,
-      "responsavel": "Responsável 09"
-    },
-    {
-      "cd_acao": "32263",
-      "nome": "Sensibilizar Lideranças Sobre O Guia Dos Valores Na Prática",
+      "nome": "Ritual Do Guia - Criar Ritual De Reforço Cultural",
       "descricao": null,
       "status": "Planejado",
       "prazo_inicial": "2026-08-05",
       "prazo_final": "2026-12-18",
       "data_conclusao": null,
-      "responsavel": "Responsável 20"
+      "responsavel": "Responsável 10"
+    },
+    {
+      "cd_acao": "32263",
+      "nome": "Aplicação Do Guia- Sensibilizar Lideranças Sobre O Guia Dos Valores Na Prática",
+      "descricao": null,
+      "status": "Planejado",
+      "prazo_inicial": "2026-08-05",
+      "prazo_final": "2027-04-30",
+      "data_conclusao": null,
+      "responsavel": "Responsável 29"
     },
     {
       "cd_acao": "32332",
-      "nome": "Traduzir Valores Em Comportamentos - Validação Do Guia Com A Diretoria",
+      "nome": "Validação Do Guia Com A Diretoria",
       "descricao": null,
       "status": "Em Andamento",
       "prazo_inicial": "2026-08-11",
       "prazo_final": "2026-10-29",
       "data_conclusao": null,
-      "responsavel": "Responsável 09"
+      "responsavel": "Responsável 10"
     }
   ],
   "acompanhamento": [

@@ -55,7 +55,7 @@ export class SqlRepository implements PlanoRepository {
       this.query<{ ultima_carga: Date | null }>(queries.ULTIMA_CARGA).catch(() => [] as Array<{ ultima_carga: Date | null }>),
     ]);
     const planos = agruparPlanosEAcoes(linhasPlanos);
-    const atualizadoEm = dataIso(cargas[0]?.ultima_carga);
+    const atualizadoEm = dataHoraDoBanco(cargas[0]?.ultima_carga);
 
     const idsPlanos = [...planos.keys()];
     const linhasAcompanhamentos = idsPlanos.length
@@ -264,4 +264,10 @@ function formatarNomeDoLogin(login: string | null | undefined): string | null {
 function dataIso(data: Date | null | undefined): string | null {
   if (!data) return null;
   return new Date(data).toISOString().slice(0, 10);
+}
+
+/** `dt_carga` é datetime sem fuso, lido como UTC: o ISO devolve os números do banco (yyyy-mm-ddTHH:mm:ss), sem converter fuso. */
+function dataHoraDoBanco(data: Date | null | undefined): string | null {
+  if (!data) return null;
+  return new Date(data).toISOString().slice(0, 19);
 }

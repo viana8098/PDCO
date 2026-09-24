@@ -27,7 +27,7 @@ export class PdcoService {
 
   private cachePromise: Promise<Cache> | null = null;
 
-  /** Dia da última carga do dw por trás dos dados — gravado no snapshot como atualizacao.json. */
+  /** Última carga (`dt_carga`) do dw por trás dos dados — gravada no snapshot como atualizacao.json. */
   public async atualizacao(): Promise<AtualizacaoPdco> {
     return { atualizado_em: (await this.obterCache()).atualizadoEm };
   }

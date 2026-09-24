@@ -1,0 +1,166 @@
+{
+  "plano": {
+    "cd_planoacao": "32849",
+    "subtipo": "P.a. Pdco Tático  - Área 2026",
+    "status": "Em Andamento",
+    "area_codigo": "17",
+    "area_nome": "2.1.1.7 Engenharia",
+    "responsavel": "Responsável 26",
+    "arquetipos_culturais": "Pdco - Engenharia | Implantar Gestão Visual De Indicadores E Resultados",
+    "resultados_esperados": "Qual Comportamentos Queremos? Queremos Pessoas Que Monitorem Seus Indicadores E Resultados.\r\n\r\ndar Visibilidade Aos Resultados Da Engenharia, Tornando Os Indicadores Acessíveis E Compreensíveis Para A Equipe E Para A Gestão, Permitindo Identificar Desvios Com Rapidez, Acompanhar A Evolução Dos Resultados E Orientar A Tomada De Decisão.",
+    "data_inicio": "2026-06-01",
+    "data_fim": "2026-12-31",
+    "execucao": 0.375,
+    "resumo_acoes": {
+      "total": 8,
+      "concluidas": 3,
+      "atrasadas": 1
+    },
+    "resumo_acompanhamentos": {
+      "total": 0,
+      "ultimo": null
+    }
+  },
+  "acoes": [
+    {
+      "cd_acao": "32850",
+      "nome": "Realizar Entrevistas Com Responsáveis De Cada Pilar",
+      "descricao": null,
+      "status": "Em Andamento",
+      "prazo_inicial": "2026-06-01",
+      "prazo_final": "2026-07-31",
+      "data_conclusao": null,
+      "responsavel": "Responsável 12"
+    },
+    {
+      "cd_acao": "32852",
+      "nome": "Iniciar Trâmites Para Contratação/renovação Da Ferramenta Hefex De Gestão De Manutenção",
+      "descricao": null,
+      "status": "Concluído",
+      "prazo_inicial": "2026-07-01",
+      "prazo_final": "2026-08-31",
+      "data_conclusao": "2026-09-23",
+      "responsavel": "Responsável 15"
+    },
+    {
+      "cd_acao": "32853",
+      "nome": "Acompanhar Assinatura Do Contrato Da Ferramenta Hefex De Gestão De Manutenção",
+      "descricao": null,
+      "status": "Concluído",
+      "prazo_inicial": "2026-09-01",
+      "prazo_final": "2026-09-15",
+      "data_conclusao": "2026-09-23",
+      "responsavel": "Responsável 15"
+    },
+    {
+      "cd_acao": "32854",
+      "nome": "Definir Metodologia De Apuração Dos Indicadores",
+      "descricao": null,
+      "status": "Em Andamento",
+      "prazo_inicial": "2026-09-18",
+      "prazo_final": "2026-09-28",
+      "data_conclusao": null,
+      "responsavel": "Responsável 26"
+    },
+    {
+      "cd_acao": "32855",
+      "nome": "Implantar Em Uma Unidade Operacional Piloto Da Ferramenta Hefex De Gestão De Manutenção",
+      "descricao": null,
+      "status": "Concluído",
+      "prazo_inicial": "2026-09-20",
+      "prazo_final": "2026-10-31",
+      "data_conclusao": "2026-09-23",
+      "responsavel": "Responsável 15"
+    },
+    {
+      "cd_acao": "32856",
+      "nome": "Realizar 1ª Apuração Dos Indicadores De Cada Pilar",
+      "descricao": null,
+      "status": "Planejado",
+      "prazo_inicial": "2026-10-01",
+      "prazo_final": "2026-10-01",
+      "data_conclusao": null,
+      "responsavel": "Responsável 12"
+    },
+    {
+      "cd_acao": "32857",
+      "nome": "Realizar Rollout Da Ferramenta Hefex De Gestão De Manutenção Em Todas As Unidades Operacionais Do Sesi E Do Senai",
+      "descricao": null,
+      "status": "Em Andamento",
+      "prazo_inicial": "2026-10-31",
+      "prazo_final": "2026-12-31",
+      "data_conclusao": null,
+      "responsavel": "Responsável 15"
+    },
+    {
+      "cd_acao": "32858",
+      "nome": "Implantar Gestão À Vista Da Apuração De Indicadores E Resultados",
+      "descricao": null,
+      "status": "Planejado",
+      "prazo_inicial": "2026-10-01",
+      "prazo_final": "2026-12-31",
+      "data_conclusao": null,
+      "responsavel": "Responsável 26"
+    }
+  ],
+  "acompanhamento": [
+    {
+      "mes": 1,
+      "ano": 2026,
+      "mes_referencia": 5,
+      "registros": []
+    },
+    {
+      "mes": 2,
+      "ano": 2026,
+      "mes_referencia": 6,
+      "registros": []
+    },
+    {
+      "mes": 3,
+      "ano": 2026,
+      "mes_referencia": 7,
+      "registros": []
+    },
+    {
+      "mes": 4,
+      "ano": 2026,
+      "mes_referencia": 8,
+      "registros": []
+    },
+    {
+      "mes": 5,
+      "ano": 2026,
+      "mes_referencia": 9,
+      "registros": []
+    },
+    {
+      "mes": 6,
+      "ano": 2026,
+      "mes_referencia": 10,
+      "registros": []
+    },
+    {
+      "mes": 7,
+      "ano": 2026,
+      "mes_referencia": 11,
+      "registros": []
+    },
+    {
+      "mes": 8,
+      "ano": 2026,
+      "mes_referencia": 12,
+      "registros": []
+    }
+  ],
+  "registros_acompanhamento": [],
+  "indicadores": [],
+  "registro": {
+    "pontos_criticos": null,
+    "fatores_sucesso": null,
+    "itens_fora_escopo": null,
+    "atualizado_por": null,
+    "atualizado_em": null
+  },
+  "pode_editar": false
+}

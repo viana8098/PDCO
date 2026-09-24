@@ -5,7 +5,7 @@
     "status": "Em Andamento",
     "area_codigo": "25",
     "area_nome": "2.2.1 Processos",
-    "responsavel": "Responsável 16",
+    "responsavel": "Responsável 22",
     "arquetipos_culturais": "Estabelecimento Do Programa De Auditoria De Processos Do Sesi Senai",
     "resultados_esperados": "Garantir Conformidade, Qualidade E Melhoria Contínua Dos Processos Críticos, Assegurando A Aderência Aos Padrões Operacionais Definidos E Mitigar Riscos De Desvios",
     "data_inicio": "2026-02-01",
@@ -30,7 +30,7 @@
       "prazo_inicial": "2026-02-01",
       "prazo_final": "2026-03-13",
       "data_conclusao": "2026-06-08",
-      "responsavel": "Responsável 21"
+      "responsavel": "Responsável 30"
     },
     {
       "cd_acao": "30856",
@@ -40,7 +40,7 @@
       "prazo_inicial": "2026-06-05",
       "prazo_final": "2026-12-18",
       "data_conclusao": null,
-      "responsavel": "Responsável 21"
+      "responsavel": "Responsável 30"
     },
     {
       "cd_acao": "30858",
@@ -50,7 +50,7 @@
       "prazo_inicial": "2026-02-01",
       "prazo_final": "2026-12-04",
       "data_conclusao": null,
-      "responsavel": "Responsável 21"
+      "responsavel": "Responsável 30"
     },
     {
       "cd_acao": "31050",
@@ -60,7 +60,7 @@
       "prazo_inicial": "2026-06-08",
       "prazo_final": "2026-09-30",
       "data_conclusao": null,
-      "responsavel": "Responsável 21"
+      "responsavel": "Responsável 30"
     },
     {
       "cd_acao": "31051",
@@ -70,7 +70,7 @@
       "prazo_inicial": "2026-06-08",
       "prazo_final": "2026-06-30",
       "data_conclusao": "2026-06-30",
-      "responsavel": "Responsável 21"
+      "responsavel": "Responsável 30"
     },
     {
       "cd_acao": "31052",
@@ -80,7 +80,7 @@
       "prazo_inicial": "2026-06-08",
       "prazo_final": "2026-10-31",
       "data_conclusao": null,
-      "responsavel": "Responsável 21"
+      "responsavel": "Responsável 30"
     },
     {
       "cd_acao": "31053",
@@ -90,7 +90,7 @@
       "prazo_inicial": "2026-06-08",
       "prazo_final": "2026-10-31",
       "data_conclusao": null,
-      "responsavel": "Responsável 21"
+      "responsavel": "Responsável 30"
     }
   ],
   "acompanhamento": [

@@ -5,20 +5,20 @@
     "status": "Em Andamento",
     "area_codigo": "80",
     "area_nome": "2.2.3 Gente E Cultura Organizacional",
-    "responsavel": "Responsável 15",
+    "responsavel": "Responsável 21",
     "arquetipos_culturais": "Criar Ato Normativo De Reconhecimento E Responsabilização Profissional",
     "resultados_esperados": "Porque A Cultura Organizacional Se Fortalece Quando Os Comportamentos E Resultados Desejados São Reconhecidos De Forma Consistente E Os Desvios São Tratados De Maneira Justa E Transparente. A Política Cria Clareza Sobre O Que A Organização Valoriza, Aumenta O Engajamento, Fortalece A Responsabilização, Reduz Subjetividades Nas Decisões E Alinha As Pessoas À Estratégia E Aos Valores Institucionais.",
     "data_inicio": "2026-06-05",
-    "data_fim": "2026-11-19",
-    "execucao": 0.4444444444444444,
+    "data_fim": "2027-02-26",
+    "execucao": 0.5,
     "resumo_acoes": {
-      "total": 9,
-      "concluidas": 4,
-      "atrasadas": 2
+      "total": 10,
+      "concluidas": 5,
+      "atrasadas": 1
     },
     "resumo_acompanhamentos": {
-      "total": 4,
-      "ultimo": "2026-09-11"
+      "total": 5,
+      "ultimo": "2026-09-22"
     }
   },
   "acoes": [
@@ -30,7 +30,7 @@
       "prazo_inicial": "2026-06-05",
       "prazo_final": "2026-06-15",
       "data_conclusao": "2026-06-25",
-      "responsavel": "Responsável 15"
+      "responsavel": "Responsável 21"
     },
     {
       "cd_acao": "30956",
@@ -40,7 +40,7 @@
       "prazo_inicial": "2026-06-16",
       "prazo_final": "2026-06-30",
       "data_conclusao": "2026-06-25",
-      "responsavel": "Responsável 15"
+      "responsavel": "Responsável 21"
     },
     {
       "cd_acao": "30957",
@@ -50,17 +50,17 @@
       "prazo_inicial": "2026-07-01",
       "prazo_final": "2026-07-20",
       "data_conclusao": "2026-08-11",
-      "responsavel": "Responsável 15"
+      "responsavel": "Responsável 21"
     },
     {
       "cd_acao": "30958",
-      "nome": "Submeter Para Análise Jurídica, Aprovação Da Diretoria Executiva E Publicação Por Meio De Ato Normativo Institucional.",
+      "nome": "Submeter Para Análise Da Governança Corporativa",
       "descricao": null,
-      "status": "Planejado",
+      "status": "Em Andamento",
       "prazo_inicial": "2026-07-21",
       "prazo_final": "2026-09-30",
       "data_conclusao": null,
-      "responsavel": "Responsável 15"
+      "responsavel": "Responsável 21"
     },
     {
       "cd_acao": "30959",
@@ -68,9 +68,9 @@
       "descricao": null,
       "status": "Planejado",
       "prazo_inicial": "2026-08-01",
-      "prazo_final": "2026-10-31",
+      "prazo_final": "2026-11-30",
       "data_conclusao": null,
-      "responsavel": "Responsável 15"
+      "responsavel": "Responsável 21"
     },
     {
       "cd_acao": "30984",
@@ -80,7 +80,7 @@
       "prazo_inicial": "2026-08-01",
       "prazo_final": "2026-08-31",
       "data_conclusao": null,
-      "responsavel": "Responsável 15"
+      "responsavel": "Responsável 21"
     },
     {
       "cd_acao": "30985",
@@ -88,9 +88,9 @@
       "descricao": null,
       "status": "Planejado",
       "prazo_inicial": "2026-08-15",
-      "prazo_final": "2026-11-19",
+      "prazo_final": "2027-02-26",
       "data_conclusao": null,
-      "responsavel": "Responsável 15"
+      "responsavel": "Responsável 21"
     },
     {
       "cd_acao": "32580",
@@ -100,17 +100,27 @@
       "prazo_inicial": "2026-08-03",
       "prazo_final": "2026-08-17",
       "data_conclusao": "2026-08-26",
-      "responsavel": "Responsável 15"
+      "responsavel": "Responsável 21"
     },
     {
       "cd_acao": "32583",
       "nome": "Analisar Todas As Sugestões E Editar O Ato Normativo",
       "descricao": null,
-      "status": "Em Andamento",
+      "status": "Concluído",
       "prazo_inicial": "2026-08-13",
       "prazo_final": "2026-08-17",
+      "data_conclusao": "2026-09-22",
+      "responsavel": "Responsável 21"
+    },
+    {
+      "cd_acao": "32822",
+      "nome": "Validar O Material Com  A Diretoria",
+      "descricao": null,
+      "status": "Planejado",
+      "prazo_inicial": "2026-10-01",
+      "prazo_final": "2026-10-30",
       "data_conclusao": null,
-      "responsavel": "Responsável 15"
+      "responsavel": "Responsável 21"
     }
   ],
   "acompanhamento": [
@@ -158,6 +168,11 @@
         {
           "texto": "A Digest Ainda Está Em Fase De Edição. As Áreas De Processos E Estratégia E Gente E Cultura Estão Trabalhando Em Conjunto Na Revisão E No Aprimoramento Do Conteúdo, Trazendo Exemplos Mais Práticos E Situações Do Dia A Dia.\r\n\r\na Proposta É Tornar O Ato Normativo Mais Claro, Próximo E Conectado À Realidade Das Pessoas, Facilitando A Compreensão E Mostrando, Na Prática, Como Os Temas Abordados Se Aplicam À Nossa Rotina.",
           "data": "2026-09-11",
+          "origem": "plano"
+        },
+        {
+          "texto": "O Material Já Passou Por Revisão E Validação Das Áreas Que Compõem A Digest E Também Foram Avaliados Pelo Consultor De Cultura, Louis, Que Validou A Proposta. Neste Momento, O Material Encontra-se Em Análise Pela Área De Governança, Para Avaliação Técnica E Contribuições Antes Da Etapa De Consolidação Final.",
+          "data": "2026-09-22",
           "origem": "plano"
         }
       ]
@@ -209,6 +224,12 @@
     {
       "texto": "A Digest Ainda Está Em Fase De Edição. As Áreas De Processos E Estratégia E Gente E Cultura Estão Trabalhando Em Conjunto Na Revisão E No Aprimoramento Do Conteúdo, Trazendo Exemplos Mais Práticos E Situações Do Dia A Dia.\r\n\r\na Proposta É Tornar O Ato Normativo Mais Claro, Próximo E Conectado À Realidade Das Pessoas, Facilitando A Compreensão E Mostrando, Na Prática, Como Os Temas Abordados Se Aplicam À Nossa Rotina.",
       "data": "2026-09-11",
+      "origem": "plano",
+      "cd_acao": null
+    },
+    {
+      "texto": "O Material Já Passou Por Revisão E Validação Das Áreas Que Compõem A Digest E Também Foram Avaliados Pelo Consultor De Cultura, Louis, Que Validou A Proposta. Neste Momento, O Material Encontra-se Em Análise Pela Área De Governança, Para Avaliação Técnica E Contribuições Antes Da Etapa De Consolidação Final.",
+      "data": "2026-09-22",
       "origem": "plano",
       "cd_acao": null
     }

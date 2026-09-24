@@ -5,7 +5,7 @@
     "status": "Em Andamento",
     "area_codigo": "100",
     "area_nome": "2.2.2 Estratégia Organizacional",
-    "responsavel": "Responsável 17",
+    "responsavel": "Responsável 23",
     "arquetipos_culturais": "Implantação De Métricas De Desempenho (ppr) Por Área (corporativa)​",
     "resultados_esperados": null,
     "data_inicio": "2026-01-01",
@@ -30,7 +30,7 @@
       "prazo_inicial": "2026-04-13",
       "prazo_final": "2026-04-30",
       "data_conclusao": "2026-05-07",
-      "responsavel": "Responsável 11"
+      "responsavel": "Responsável 13"
     },
     {
       "cd_acao": "27175",
@@ -40,7 +40,7 @@
       "prazo_inicial": "2026-05-04",
       "prazo_final": "2026-06-30",
       "data_conclusao": "2026-07-08",
-      "responsavel": "Responsável 11"
+      "responsavel": "Responsável 13"
     },
     {
       "cd_acao": "27176",
@@ -50,7 +50,7 @@
       "prazo_inicial": "2026-08-11",
       "prazo_final": "2026-09-20",
       "data_conclusao": "2026-09-02",
-      "responsavel": "Responsável 11"
+      "responsavel": "Responsável 13"
     },
     {
       "cd_acao": "27177",
@@ -60,7 +60,7 @@
       "prazo_inicial": "2026-09-20",
       "prazo_final": "2026-10-20",
       "data_conclusao": null,
-      "responsavel": "Responsável 11"
+      "responsavel": "Responsável 13"
     },
     {
       "cd_acao": "27178",
@@ -70,7 +70,7 @@
       "prazo_inicial": "2026-10-20",
       "prazo_final": "2026-11-20",
       "data_conclusao": null,
-      "responsavel": "Responsável 11"
+      "responsavel": "Responsável 13"
     },
     {
       "cd_acao": "27179",
@@ -80,7 +80,7 @@
       "prazo_inicial": "2026-11-20",
       "prazo_final": "2026-12-10",
       "data_conclusao": null,
-      "responsavel": "Responsável 11"
+      "responsavel": "Responsável 13"
     },
     {
       "cd_acao": "27181",
@@ -90,7 +90,7 @@
       "prazo_inicial": "2026-12-10",
       "prazo_final": "2026-12-18",
       "data_conclusao": null,
-      "responsavel": "Responsável 11"
+      "responsavel": "Responsável 13"
     },
     {
       "cd_acao": "27183",
@@ -100,7 +100,7 @@
       "prazo_inicial": "2026-11-03",
       "prazo_final": "2026-12-18",
       "data_conclusao": null,
-      "responsavel": "Responsável 11"
+      "responsavel": "Responsável 13"
     },
     {
       "cd_acao": "29500",
@@ -110,7 +110,7 @@
       "prazo_inicial": "2026-01-01",
       "prazo_final": "2026-01-29",
       "data_conclusao": "2026-03-16",
-      "responsavel": "Responsável 17"
+      "responsavel": "Responsável 23"
     }
   ],
   "acompanhamento": [

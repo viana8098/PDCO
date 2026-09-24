@@ -11,7 +11,7 @@ export interface OpcaoFiltro {
   rotulo: string;
 }
 
-/** Dia (yyyy-mm-dd) da última carga do dw — nulo se não deu pra saber. */
+/** Última carga do dw (`dt_carga`, yyyy-mm-ddTHH:mm:ss, horário do banco) — nulo se não deu pra saber. */
 export interface AtualizacaoPdco {
   atualizado_em: string | null;
 }

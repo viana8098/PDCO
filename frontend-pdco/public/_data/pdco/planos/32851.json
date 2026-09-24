@@ -1,0 +1,176 @@
+{
+  "plano": {
+    "cd_planoacao": "32851",
+    "subtipo": "P.a. Pdco Tático  - Área 2026",
+    "status": "Em Andamento",
+    "area_codigo": "17",
+    "area_nome": "2.1.1.7 Engenharia",
+    "responsavel": "Responsável 26",
+    "arquetipos_culturais": "Pdco - Engenharia | Realizar Capacitação Contínua Da Equipe (bim)",
+    "resultados_esperados": "Qual Comportamentos Queremos? Queremos Pessoas Que Tenham Melhor Percepção E Entendimento Dos Nossos Projetos.\r\n\r\ndesenvolver E Atualizar Continuamente As Competências Da Equipe Em Bim, Ampliando A Capacidade Técnica Para Aplicação Da Metodologia Nos Projetos E Promovendo Uma Cultura De Aprendizado Contínuo E Aplicação Prática Do Conhecimento.",
+    "data_inicio": "2026-06-01",
+    "data_fim": "2027-03-20",
+    "execucao": 0.1111111111111111,
+    "resumo_acoes": {
+      "total": 9,
+      "concluidas": 1,
+      "atrasadas": 1
+    },
+    "resumo_acompanhamentos": {
+      "total": 0,
+      "ultimo": null
+    }
+  },
+  "acoes": [
+    {
+      "cd_acao": "32859",
+      "nome": "Levantar Requisitos E Cotações De Ferramenta Bim",
+      "descricao": null,
+      "status": "Em Andamento",
+      "prazo_inicial": "2026-06-01",
+      "prazo_final": "2026-07-31",
+      "data_conclusao": null,
+      "responsavel": "Responsável 18"
+    },
+    {
+      "cd_acao": "32860",
+      "nome": "Realizar Processo De Contratação Da Ferramenta Bim",
+      "descricao": null,
+      "status": "Planejado",
+      "prazo_inicial": "2026-08-01",
+      "prazo_final": "2026-09-30",
+      "data_conclusao": null,
+      "responsavel": "Responsável 26"
+    },
+    {
+      "cd_acao": "32861",
+      "nome": "Mapear Perfis De Usuários Para Uso Da Ferramenta Bim",
+      "descricao": null,
+      "status": "Concluído",
+      "prazo_inicial": "2026-08-01",
+      "prazo_final": "2026-08-31",
+      "data_conclusao": "2026-09-23",
+      "responsavel": "Responsável 18"
+    },
+    {
+      "cd_acao": "32862",
+      "nome": "Realizar Contratação De Treinamento Em Metodologia Bim",
+      "descricao": null,
+      "status": "Em Andamento",
+      "prazo_inicial": "2026-08-01",
+      "prazo_final": "2026-09-30",
+      "data_conclusao": null,
+      "responsavel": "Responsável 18"
+    },
+    {
+      "cd_acao": "32863",
+      "nome": "Realizar 1ª Turma De Treinamento Em Metodologia Bim",
+      "descricao": null,
+      "status": "Planejado",
+      "prazo_inicial": "2026-10-01",
+      "prazo_final": "2026-10-31",
+      "data_conclusao": null,
+      "responsavel": "Responsável 18"
+    },
+    {
+      "cd_acao": "32864",
+      "nome": "Aplicar A Metodologia Bim Em Projeto Piloto",
+      "descricao": null,
+      "status": "Planejado",
+      "prazo_inicial": "2026-11-01",
+      "prazo_final": "2026-12-31",
+      "data_conclusao": null,
+      "responsavel": "Responsável 12"
+    },
+    {
+      "cd_acao": "32865",
+      "nome": "Compartilhar Boas Práticas E Lições Aprendidas Após Projeto Piloto",
+      "descricao": null,
+      "status": "Planejado",
+      "prazo_inicial": "2027-01-01",
+      "prazo_final": "2027-01-20",
+      "data_conclusao": null,
+      "responsavel": "Responsável 12"
+    },
+    {
+      "cd_acao": "32866",
+      "nome": "Realizar 1ª Turma De Treinamento Em Metodologia Bim",
+      "descricao": null,
+      "status": "Planejado",
+      "prazo_inicial": "2027-02-01",
+      "prazo_final": "2027-03-15",
+      "data_conclusao": null,
+      "responsavel": "Responsável 18"
+    },
+    {
+      "cd_acao": "32867",
+      "nome": "Acompanhar E Medir Aderência Da Metodologia Bim Nos Projetos",
+      "descricao": null,
+      "status": "Planejado",
+      "prazo_inicial": "2027-03-20",
+      "prazo_final": "2027-03-20",
+      "data_conclusao": null,
+      "responsavel": "Responsável 12"
+    }
+  ],
+  "acompanhamento": [
+    {
+      "mes": 1,
+      "ano": 2026,
+      "mes_referencia": 5,
+      "registros": []
+    },
+    {
+      "mes": 2,
+      "ano": 2026,
+      "mes_referencia": 6,
+      "registros": []
+    },
+    {
+      "mes": 3,
+      "ano": 2026,
+      "mes_referencia": 7,
+      "registros": []
+    },
+    {
+      "mes": 4,
+      "ano": 2026,
+      "mes_referencia": 8,
+      "registros": []
+    },
+    {
+      "mes": 5,
+      "ano": 2026,
+      "mes_referencia": 9,
+      "registros": []
+    },
+    {
+      "mes": 6,
+      "ano": 2026,
+      "mes_referencia": 10,
+      "registros": []
+    },
+    {
+      "mes": 7,
+      "ano": 2026,
+      "mes_referencia": 11,
+      "registros": []
+    },
+    {
+      "mes": 8,
+      "ano": 2026,
+      "mes_referencia": 12,
+      "registros": []
+    }
+  ],
+  "registros_acompanhamento": [],
+  "indicadores": [],
+  "registro": {
+    "pontos_criticos": null,
+    "fatores_sucesso": null,
+    "itens_fora_escopo": null,
+    "atualizado_por": null,
+    "atualizado_em": null
+  },
+  "pode_editar": false
+}

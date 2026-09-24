@@ -5,7 +5,7 @@
     "status": "Planejado",
     "area_codigo": "10",
     "area_nome": "2.6 Diretoria Comercial E Marketing",
-    "responsavel": "Responsável 01",
+    "responsavel": "Responsável 02",
     "arquetipos_culturais": "Laboratório De Experiência Do Cliente - Labex",
     "resultados_esperados": "Fomentar A Inovação Por Meio Do\r\nlaboratório De Experiência Do\r\ncliente.",
     "data_inicio": "2027-01-01",
@@ -30,7 +30,7 @@
       "prazo_inicial": "2027-01-01",
       "prazo_final": "2027-02-28",
       "data_conclusao": null,
-      "responsavel": "Responsável 01"
+      "responsavel": "Responsável 02"
     },
     {
       "cd_acao": "28526",
@@ -40,7 +40,7 @@
       "prazo_inicial": "2027-03-01",
       "prazo_final": "2027-04-30",
       "data_conclusao": null,
-      "responsavel": "Responsável 01"
+      "responsavel": "Responsável 02"
     },
     {
       "cd_acao": "28527",
@@ -50,7 +50,7 @@
       "prazo_inicial": "2027-05-01",
       "prazo_final": "2027-06-30",
       "data_conclusao": null,
-      "responsavel": "Responsável 01"
+      "responsavel": "Responsável 02"
     },
     {
       "cd_acao": "28528",
@@ -60,7 +60,7 @@
       "prazo_inicial": "2027-07-01",
       "prazo_final": "2027-10-31",
       "data_conclusao": null,
-      "responsavel": "Responsável 01"
+      "responsavel": "Responsável 02"
     }
   ],
   "acompanhamento": [

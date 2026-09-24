@@ -5,7 +5,7 @@
     "status": "Em Andamento",
     "area_codigo": "25",
     "area_nome": "2.2.1 Processos",
-    "responsavel": "Responsável 16",
+    "responsavel": "Responsável 22",
     "arquetipos_culturais": "Fortalecer A Cultura E A Governança De Gestão Por Processos",
     "resultados_esperados": "Alcançar Capilaridade Da Pauta De Gestão Por Processos De Forma Institucional, Garantindo Melhoria No Desempenho.\r\n\r\ngarantir A Sustentabilidade Da Gestão Por Processos, Descentralizar A Responsabilidade Para Especialistas/donos De Processos E Otimizar Os Acordos De Entrega.\r\nmapa Estratégico Regional 2026-2028 (ano 1)",
     "data_inicio": "2026-01-05",
@@ -14,11 +14,11 @@
     "resumo_acoes": {
       "total": 11,
       "concluidas": 2,
-      "atrasadas": 2
+      "atrasadas": 1
     },
     "resumo_acompanhamentos": {
-      "total": 40,
-      "ultimo": "2026-09-14"
+      "total": 41,
+      "ultimo": "2026-09-23"
     }
   },
   "acoes": [
@@ -30,7 +30,7 @@
       "prazo_inicial": "2026-01-05",
       "prazo_final": "2026-12-22",
       "data_conclusao": null,
-      "responsavel": "Responsável 08"
+      "responsavel": "Responsável 09"
     },
     {
       "cd_acao": "27154",
@@ -40,7 +40,7 @@
       "prazo_inicial": "2026-01-05",
       "prazo_final": "2026-12-18",
       "data_conclusao": null,
-      "responsavel": "Responsável 13"
+      "responsavel": "Responsável 19"
     },
     {
       "cd_acao": "27161",
@@ -50,7 +50,7 @@
       "prazo_inicial": "2027-01-01",
       "prazo_final": "2027-06-30",
       "data_conclusao": null,
-      "responsavel": "Responsável 13"
+      "responsavel": "Responsável 19"
     },
     {
       "cd_acao": "27162",
@@ -60,7 +60,7 @@
       "prazo_inicial": "2026-01-05",
       "prazo_final": "2026-12-22",
       "data_conclusao": "2026-03-17",
-      "responsavel": "Responsável 07"
+      "responsavel": "Responsável 08"
     },
     {
       "cd_acao": "27273",
@@ -70,7 +70,7 @@
       "prazo_inicial": "2026-01-05",
       "prazo_final": "2026-05-15",
       "data_conclusao": "2026-05-14",
-      "responsavel": "Responsável 16"
+      "responsavel": "Responsável 22"
     },
     {
       "cd_acao": "30920",
@@ -78,9 +78,9 @@
       "descricao": "Garantir O Desdobramento Prático Da Capacitação Executada, Revisitar As Estruturas Vigentes E Pactuar As Responsabilidades Sobre Os Processos",
       "status": "Em Andamento",
       "prazo_inicial": "2026-06-05",
-      "prazo_final": "2026-08-31",
+      "prazo_final": "2026-11-30",
       "data_conclusao": null,
-      "responsavel": "Responsável 16"
+      "responsavel": "Responsável 22"
     },
     {
       "cd_acao": "30925",
@@ -90,7 +90,7 @@
       "prazo_inicial": "2026-06-05",
       "prazo_final": "2026-09-11",
       "data_conclusao": null,
-      "responsavel": "Responsável 13"
+      "responsavel": "Responsável 19"
     },
     {
       "cd_acao": "31070",
@@ -100,7 +100,7 @@
       "prazo_inicial": "2026-06-08",
       "prazo_final": "2026-11-30",
       "data_conclusao": null,
-      "responsavel": "Responsável 07"
+      "responsavel": "Responsável 08"
     },
     {
       "cd_acao": "31071",
@@ -108,9 +108,9 @@
       "descricao": null,
       "status": "Em Andamento",
       "prazo_inicial": "2026-07-01",
-      "prazo_final": "2026-10-31",
+      "prazo_final": "2026-12-18",
       "data_conclusao": null,
-      "responsavel": "Responsável 21"
+      "responsavel": "Responsável 30"
     },
     {
       "cd_acao": "31072",
@@ -120,7 +120,7 @@
       "prazo_inicial": "2026-09-01",
       "prazo_final": "2026-11-30",
       "data_conclusao": null,
-      "responsavel": "Responsável 16"
+      "responsavel": "Responsável 22"
     },
     {
       "cd_acao": "31215",
@@ -130,7 +130,7 @@
       "prazo_inicial": "2026-08-03",
       "prazo_final": "2026-12-18",
       "data_conclusao": null,
-      "responsavel": "Responsável 13"
+      "responsavel": "Responsável 19"
     }
   ],
   "acompanhamento": [
@@ -580,6 +580,12 @@
       "data": "2026-09-14",
       "origem": "acao",
       "cd_acao": "31070"
+    },
+    {
+      "texto": "Considerando O Novo Direcionamento Institucional, O Prazo De Conclusão Da Iniciativa Foi Revisado Para Dezembro/2026, Possibilitando A Expansão Da Metodologia Para As Áreas De Csc, Governança, Observatório E Jurídico. Até O Momento, Foram Realizados:\r\nrevisão Dos Aprendizados E Oportunidades Identificadas No Piloto;\r\naperfeiçoamento Da Metodologia De Governança De Serviços Corporativos;\r\nconsolidação Da Proposta De Estrutura Das Fichas De Serviço;\r\ndesenvolvimento Do Processo De Curadoria E Classificação Da Maturidade Dos Serviços;\r\nestruturação Do Modelo De Parecer Para Devolutiva Aos Gestores;\r\nplanejamento Da Disponibilização Dos Artefatos Na Athena E No Epa.\r\n\r\ncomo Próximos Passos Estão Previstos:\r\n\r\nconclusão Da Publicação Dos Modelos E Formulários Nos Sistemas Corporativos;\r\naplicação Da Metodologia Nas Áreas Priorizadas;\r\nanálise E Validação Das Fichas Junto Aos Gestores;\r\npublicação Dos Serviços Aprovados No Epa;\r\npriorização, Pelos Gestores, Dos Serviços Críticos Para Acompanhamento;\r\nestruturação Dos Respectivos Slas E Indicadores;\r\nformalização De, No Mínimo, Três Serviços Críticos Com Indicadores Passíveis De Monitoramento E Aderentes Às Necessidades De Acompanhamento Institucional.\r\n\r\no Projeto Permanece Em Andamento E Alinhado Ao Objetivo De Consolidar A Governança De Serviços Corporativos, Criando As Bases Para Gestão, Monitoramento E Evolução Dos Serviços Institucionais.",
+      "data": "2026-09-23",
+      "origem": "acao",
+      "cd_acao": "31071"
     }
   ],
   "indicadores": [],

@@ -1,0 +1,129 @@
+{
+  "plano": {
+    "cd_planoacao": "32788",
+    "subtipo": "P.a. Pdco Tático  - Área 2026",
+    "status": "Em Andamento",
+    "area_codigo": "15",
+    "area_nome": "2.1.1.8 Transporte",
+    "responsavel": "Responsável 33",
+    "arquetipos_culturais": "Pdco - Transportes",
+    "resultados_esperados": "Para Reduzir Dúvidas, Interpretações Divergentes, Retrabalho E Dependência De Orientações Individuais, Promovendo Maior Padronização E Eficiência. Também Busca Fortalecer A Cultura De Planejamento Das Solicitações, Reduzindo Remanejamentos, Alterações De Rotas, Custos Adicionais, Demandas Emergenciais E Riscos De Indisponibilidade De Recursos.",
+    "data_inicio": "2026-07-01",
+    "data_fim": "2027-04-30",
+    "execucao": 0,
+    "resumo_acoes": {
+      "total": 3,
+      "concluidas": 0,
+      "atrasadas": 0
+    },
+    "resumo_acompanhamentos": {
+      "total": 1,
+      "ultimo": "2026-09-23"
+    }
+  },
+  "acoes": [
+    {
+      "cd_acao": "32791",
+      "nome": "Elaborar E Revisar Documentos Orientadores Da Área De Transportes",
+      "descricao": "Para Garantir Clareza E Padronização Na Execução Dos Processos, Reduzir Dúvidas, Interpretações Divergentes E Retrabalho, Diminuir A Dependência De Orientações Individuais E Proporcionar Maior Eficiência E Previsibilidade No Atendimento Às Demandas De Transporte.",
+      "status": "Em Andamento",
+      "prazo_inicial": "2026-07-01",
+      "prazo_final": "2026-10-30",
+      "data_conclusao": null,
+      "responsavel": "Responsável 33"
+    },
+    {
+      "cd_acao": "32793",
+      "nome": "Analisar Os Indicadores E Dados De Desempenho",
+      "descricao": "Para Fortalecer A Cultura De Planejamento E Previsibilidade Das Demandas, Reduzir Solicitações Fora Do Prazo E, Consequentemente, Diminuir Remanejamentos, Alterações De Rotas, Soluções Emergenciais, Custos Adicionais E Riscos De Indisponibilidade De Recursos.",
+      "status": "Planejado",
+      "prazo_inicial": "2026-11-01",
+      "prazo_final": "2027-04-30",
+      "data_conclusao": null,
+      "responsavel": "Responsável 33"
+    },
+    {
+      "cd_acao": "32794",
+      "nome": "Apresentar Durante Visitas Às Unidades Operacionais Um Boletim Da Área De Transportes",
+      "descricao": "Para Ampliar A Visibilidade Institucional Sobre A Atuação Da Área De Transportes, Promover Transparência Sobre Os Resultados, Fortalecer O Alinhamento Com As Lideranças E Estimular O Compromisso Das Áreas Demandantes Com Os Comportamentos Que Impactam Os Serviços De Transporte.",
+      "status": "Planejado",
+      "prazo_inicial": "2026-11-01",
+      "prazo_final": "2027-03-11",
+      "data_conclusao": null,
+      "responsavel": "Responsável 33"
+    }
+  ],
+  "acompanhamento": [
+    {
+      "mes": 1,
+      "ano": 2026,
+      "mes_referencia": 6,
+      "registros": []
+    },
+    {
+      "mes": 2,
+      "ano": 2026,
+      "mes_referencia": 7,
+      "registros": []
+    },
+    {
+      "mes": 3,
+      "ano": 2026,
+      "mes_referencia": 8,
+      "registros": []
+    },
+    {
+      "mes": 4,
+      "ano": 2026,
+      "mes_referencia": 9,
+      "registros": [
+        {
+          "texto": "Os Documentos Foram Finalizados E Validados. Seguiremos Agora Para Registro Na Plataforma Para Análise E Publicação.",
+          "data": "2026-09-23",
+          "origem": "plano"
+        }
+      ]
+    },
+    {
+      "mes": 5,
+      "ano": 2026,
+      "mes_referencia": 10,
+      "registros": []
+    },
+    {
+      "mes": 6,
+      "ano": 2026,
+      "mes_referencia": 11,
+      "registros": []
+    },
+    {
+      "mes": 7,
+      "ano": 2026,
+      "mes_referencia": 12,
+      "registros": []
+    },
+    {
+      "mes": 8,
+      "ano": 2027,
+      "mes_referencia": 1,
+      "registros": []
+    }
+  ],
+  "registros_acompanhamento": [
+    {
+      "texto": "Os Documentos Foram Finalizados E Validados. Seguiremos Agora Para Registro Na Plataforma Para Análise E Publicação.",
+      "data": "2026-09-23",
+      "origem": "plano",
+      "cd_acao": null
+    }
+  ],
+  "indicadores": [],
+  "registro": {
+    "pontos_criticos": null,
+    "fatores_sucesso": null,
+    "itens_fora_escopo": null,
+    "atualizado_por": null,
+    "atualizado_em": null
+  },
+  "pode_editar": false
+}

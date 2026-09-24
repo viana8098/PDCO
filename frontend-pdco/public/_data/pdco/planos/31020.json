@@ -5,7 +5,7 @@
     "status": "Em Andamento",
     "area_codigo": "100",
     "area_nome": "2.2.2 Estratégia Organizacional",
-    "responsavel": "Responsável 11",
+    "responsavel": "Responsável 13",
     "arquetipos_culturais": "Implantação Dos Critérios De Priorizações Das Iniciativas Estratégicas Com Foco Em Sustentabilidade",
     "resultados_esperados": null,
     "data_inicio": "2026-07-01",
@@ -30,7 +30,7 @@
       "prazo_inicial": "2026-07-01",
       "prazo_final": "2026-07-03",
       "data_conclusao": "2026-07-08",
-      "responsavel": "Responsável 11"
+      "responsavel": "Responsável 13"
     },
     {
       "cd_acao": "31022",
@@ -40,7 +40,7 @@
       "prazo_inicial": "2026-07-06",
       "prazo_final": "2026-07-10",
       "data_conclusao": "2026-08-07",
-      "responsavel": "Responsável 11"
+      "responsavel": "Responsável 13"
     },
     {
       "cd_acao": "31023",
@@ -50,7 +50,7 @@
       "prazo_inicial": "2026-07-13",
       "prazo_final": "2026-07-17",
       "data_conclusao": "2026-08-07",
-      "responsavel": "Responsável 11"
+      "responsavel": "Responsável 13"
     },
     {
       "cd_acao": "31024",
@@ -60,7 +60,7 @@
       "prazo_inicial": "2026-07-15",
       "prazo_final": "2026-07-21",
       "data_conclusao": "2026-08-07",
-      "responsavel": "Responsável 11"
+      "responsavel": "Responsável 13"
     },
     {
       "cd_acao": "31025",
@@ -70,7 +70,7 @@
       "prazo_inicial": "2026-07-22",
       "prazo_final": "2026-07-31",
       "data_conclusao": null,
-      "responsavel": "Responsável 11"
+      "responsavel": "Responsável 13"
     },
     {
       "cd_acao": "31027",
@@ -80,7 +80,7 @@
       "prazo_inicial": "2026-08-03",
       "prazo_final": "2026-08-14",
       "data_conclusao": null,
-      "responsavel": "Responsável 11"
+      "responsavel": "Responsável 13"
     },
     {
       "cd_acao": "31028",
@@ -90,7 +90,7 @@
       "prazo_inicial": "2026-08-17",
       "prazo_final": "2026-08-19",
       "data_conclusao": null,
-      "responsavel": "Responsável 11"
+      "responsavel": "Responsável 13"
     },
     {
       "cd_acao": "31029",
@@ -100,7 +100,7 @@
       "prazo_inicial": "2026-07-22",
       "prazo_final": "2026-07-31",
       "data_conclusao": "2026-08-10",
-      "responsavel": "Responsável 24"
+      "responsavel": "Responsável 34"
     }
   ],
   "acompanhamento": [

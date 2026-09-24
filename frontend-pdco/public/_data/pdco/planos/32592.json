@@ -5,7 +5,7 @@
     "status": "Em Andamento",
     "area_codigo": "19",
     "area_nome": "2.1.1.3 Suprimentos",
-    "responsavel": "Responsável 18",
+    "responsavel": "Responsável 25",
     "arquetipos_culturais": "Pdco - Suprimentos | Implantar A Estratégia De Aquisições",
     "resultados_esperados": "Antecipar As Necessidades De Aquisição, Transformar O Planejamento De Consumo Em Carteira Estratégica De Trabalho E Ampliar A Cobertura Contratual Das Categorias Prioritárias, Reduzindo Compras Pontuais, Urgências, Retrabalho E Riscos De Desabastecimento.",
     "data_inicio": "2026-08-26",
@@ -30,7 +30,7 @@
       "prazo_inicial": "2026-08-26",
       "prazo_final": "2026-09-14",
       "data_conclusao": "2026-09-04",
-      "responsavel": "Responsável 18"
+      "responsavel": "Responsável 25"
     },
     {
       "cd_acao": "32730",
@@ -40,7 +40,7 @@
       "prazo_inicial": "2026-09-01",
       "prazo_final": "2026-09-11",
       "data_conclusao": "2026-09-14",
-      "responsavel": "Responsável 18"
+      "responsavel": "Responsável 25"
     },
     {
       "cd_acao": "32731",
@@ -50,7 +50,7 @@
       "prazo_inicial": "2026-09-14",
       "prazo_final": "2026-09-30",
       "data_conclusao": null,
-      "responsavel": "Responsável 18"
+      "responsavel": "Responsável 25"
     },
     {
       "cd_acao": "32732",
@@ -60,7 +60,7 @@
       "prazo_inicial": "2026-09-25",
       "prazo_final": "2026-09-30",
       "data_conclusao": null,
-      "responsavel": "Responsável 18"
+      "responsavel": "Responsável 25"
     },
     {
       "cd_acao": "32733",
@@ -70,7 +70,7 @@
       "prazo_inicial": "2026-10-01",
       "prazo_final": "2026-11-30",
       "data_conclusao": null,
-      "responsavel": "Responsável 18"
+      "responsavel": "Responsável 25"
     },
     {
       "cd_acao": "32734",
@@ -80,7 +80,7 @@
       "prazo_inicial": "2026-12-01",
       "prazo_final": "2026-12-18",
       "data_conclusao": null,
-      "responsavel": "Responsável 18"
+      "responsavel": "Responsável 25"
     }
   ],
   "acompanhamento": [

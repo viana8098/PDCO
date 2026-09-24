@@ -5,7 +5,7 @@
     "status": "Em Andamento",
     "area_codigo": "31",
     "area_nome": "2.3.2 Educação Profissional",
-    "responsavel": "Responsável 03",
+    "responsavel": "Responsável 04",
     "arquetipos_culturais": "Priorização Estratégica Por Impacto Em Resultado",
     "resultados_esperados": "Os Planos De Ação Da Educação Profissional Concentram Esforço Em Aspectos Qualitativos E De Eficácia, Enquanto Indicadores Críticos — Sustentabilidade Financeira (meta Ep: -30,33%), Resultado Orçamentário E Custo — Têm Baixa Cobertura Tática. O Grupo Identificou \"visão De Retrovisor\" Como Padrão Recorrente. Este Ritual Vira A Chave Para O Prospectivo E Cria Cultura De Dono Do Resultado Financeiro.",
     "data_inicio": "2026-07-01",
@@ -30,7 +30,7 @@
       "prazo_inicial": "2026-07-01",
       "prazo_final": "2026-07-30",
       "data_conclusao": "2026-09-18",
-      "responsavel": "Responsável 03"
+      "responsavel": "Responsável 04"
     },
     {
       "cd_acao": "32716",
@@ -40,7 +40,7 @@
       "prazo_inicial": "2026-07-01",
       "prazo_final": "2026-08-31",
       "data_conclusao": null,
-      "responsavel": "Responsável 10"
+      "responsavel": "Responsável 11"
     },
     {
       "cd_acao": "32717",
@@ -50,7 +50,7 @@
       "prazo_inicial": "2026-09-09",
       "prazo_final": "2027-04-16",
       "data_conclusao": null,
-      "responsavel": "Responsável 23"
+      "responsavel": "Responsável 32"
     },
     {
       "cd_acao": "32718",
@@ -60,7 +60,7 @@
       "prazo_inicial": "2027-04-19",
       "prazo_final": "2027-04-30",
       "data_conclusao": null,
-      "responsavel": "Responsável 03"
+      "responsavel": "Responsável 04"
     }
   ],
   "acompanhamento": [

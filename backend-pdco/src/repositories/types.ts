@@ -7,7 +7,7 @@ import type { PlanoComAcoes } from '../schemas';
 export interface Cache {
   planos: Map<string, PlanoComAcoes>;
   acompanhamentos: Map<string, import('../schemas').AcompanhamentoBruto[]>;
-  /** Dia (yyyy-mm-dd) da última carga do dw por trás deste cache; nulo se não deu pra saber. */
+  /** Última carga (`dt_carga`) do dw por trás deste cache, yyyy-mm-ddTHH:mm:ss como no banco; nulo se não deu pra saber. */
   atualizadoEm: string | null;
 }
 

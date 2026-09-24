@@ -1,0 +1,136 @@
+{
+  "plano": {
+    "cd_planoacao": "32783",
+    "subtipo": "P.a. Pdco Tático  - Área 2026",
+    "status": "Em Andamento",
+    "area_codigo": "22",
+    "area_nome": "2.5.1 Segurança E Saúde",
+    "responsavel": "Responsável 28",
+    "arquetipos_culturais": "Consolidar Os Pdcos De Todas As Frentes De Atuação Da Linha De Negócios De Ssi E Desdobrar Em Única Estratégia Liderada Pela Linha De Negócio.",
+    "resultados_esperados": "Frente A Identificação Da Sinergia Entre Os Pdcos Realizados Nas Frentes Operacionais De Ssi Foi Solicitado Pela Diretoria De Ssi Que Fosse Consolidado Uma Estratégia Somente Que Englobasse Toda A Operação De Ssi.",
+    "data_inicio": "2026-09-23",
+    "data_fim": "2027-12-31",
+    "execucao": 0,
+    "resumo_acoes": {
+      "total": 5,
+      "concluidas": 0,
+      "atrasadas": 0
+    },
+    "resumo_acompanhamentos": {
+      "total": 0,
+      "ultimo": null
+    }
+  },
+  "acoes": [
+    {
+      "cd_acao": "32882",
+      "nome": "Formalização Da Missão Do Negócio Ssi E Implantação Da Matriz Raci Dos Macroprocessos Ssi X Unidades",
+      "descricao": "Definição De Clareza De Papéis, Responsabilização E Autonomia Das Unidades.",
+      "status": "Em Andamento",
+      "prazo_inicial": "2026-09-23",
+      "prazo_final": "2026-10-02",
+      "data_conclusao": null,
+      "responsavel": "Responsável 28"
+    },
+    {
+      "cd_acao": "32883",
+      "nome": "Implantação Da Matriz De Maturidade Por Processo (m1, M2, M3 E M4)",
+      "descricao": "Promover O Aprendizado Contínuo E Desenvolvimento De Autonomia Por Processo",
+      "status": "Em Andamento",
+      "prazo_inicial": "2026-10-01",
+      "prazo_final": "2026-10-31",
+      "data_conclusao": null,
+      "responsavel": "Responsável 28"
+    },
+    {
+      "cd_acao": "32884",
+      "nome": "Ritual Consultivo \"o Que Você Recomenda?\" Nas Interações Com As Unidades",
+      "descricao": "Promover A Relação De Ajuda Sem Assistencialismo",
+      "status": "Em Andamento",
+      "prazo_inicial": "2026-10-02",
+      "prazo_final": "2026-10-02",
+      "data_conclusao": null,
+      "responsavel": "Responsável 28"
+    },
+    {
+      "cd_acao": "32885",
+      "nome": "Ritual Mensal De Avaliação De Maturidade Dos Processos",
+      "descricao": "Promover A Melhoria Contínua E Protagonismo Na Execução Dos Processos",
+      "status": "Em Andamento",
+      "prazo_inicial": "2026-10-01",
+      "prazo_final": "2026-10-01",
+      "data_conclusao": null,
+      "responsavel": "Responsável 28"
+    },
+    {
+      "cd_acao": "32886",
+      "nome": "Certificação De Maturidade Dos Processos (m1 → M4)",
+      "descricao": "Promover Reconhecimento Da Evolução E Da Autonomia Operacional",
+      "status": "Em Andamento",
+      "prazo_inicial": "2027-01-01",
+      "prazo_final": "2027-12-31",
+      "data_conclusao": null,
+      "responsavel": "Responsável 28"
+    }
+  ],
+  "acompanhamento": [
+    {
+      "mes": 1,
+      "ano": 2026,
+      "mes_referencia": 9,
+      "registros": []
+    },
+    {
+      "mes": 2,
+      "ano": 2026,
+      "mes_referencia": 10,
+      "registros": []
+    },
+    {
+      "mes": 3,
+      "ano": 2026,
+      "mes_referencia": 11,
+      "registros": []
+    },
+    {
+      "mes": 4,
+      "ano": 2026,
+      "mes_referencia": 12,
+      "registros": []
+    },
+    {
+      "mes": 5,
+      "ano": 2027,
+      "mes_referencia": 1,
+      "registros": []
+    },
+    {
+      "mes": 6,
+      "ano": 2027,
+      "mes_referencia": 2,
+      "registros": []
+    },
+    {
+      "mes": 7,
+      "ano": 2027,
+      "mes_referencia": 3,
+      "registros": []
+    },
+    {
+      "mes": 8,
+      "ano": 2027,
+      "mes_referencia": 4,
+      "registros": []
+    }
+  ],
+  "registros_acompanhamento": [],
+  "indicadores": [],
+  "registro": {
+    "pontos_criticos": null,
+    "fatores_sucesso": null,
+    "itens_fora_escopo": null,
+    "atualizado_por": null,
+    "atualizado_em": null
+  },
+  "pode_editar": false
+}
