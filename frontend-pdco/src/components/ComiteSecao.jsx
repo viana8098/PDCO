@@ -1,8 +1,8 @@
-import { useEffect, useState } from 'react'
+import { useEffect, useRef, useState } from 'react'
 import { SearchableSelect } from './SearchableSelect'
 import { useFiltroPersistente } from '../lib/filtrosPersistentes'
 import { COMITE_AMOSTRA } from '../lib/comiteAmostra'
-import { adicionarComiteSimulado, useComitesSimulados } from '../lib/comiteSimulacao'
+import { adicionarComiteSimulado, editarComiteSimulado, useComitesSimulados, useEdicoesSimuladas } from '../lib/comiteSimulacao'
 
 const CRITERIOS = [
     { chave: 'lider', texto: 'O líder responsável esteve presente e participou do encontro?' },
@@ -35,7 +35,9 @@ const ROTULO_RESPOSTA = Object.fromEntries(RESPOSTAS.map((r) => [r.valor, r.rotu
 export function ComiteSecao({ administrador, opcoesArea, carregandoFiltros }) {
     const [areaNome, setAreaNome] = useFiltroPersistente('comite:area', '')
     const simulados = useComitesSimulados(areaNome)
-    const historicoBruto = [...simulados, ...COMITE_AMOSTRA]
+    const edicoes = useEdicoesSimuladas()
+    // Um comitê editado nesta sessão aparece na versão editada (vale também pros de amostra, que são fixos).
+    const historicoBruto = [...simulados, ...COMITE_AMOSTRA].map((c) => edicoes.get(c.cd_comite) ?? c)
     const historico = administrador ? historicoBruto : historicoBruto.map((c) => ({ ...c, checklist: null, diario_bordo: null }))
 
     const [data, setData] = useState('')
@@ -44,35 +46,58 @@ export function ComiteSecao({ administrador, opcoesArea, carregandoFiltros }) {
     const [consideracoes, setConsideracoes] = useState('')
     const [checklist, setChecklist] = useState(CHECKLIST_VAZIO)
     const [diarioBordo, setDiarioBordo] = useState('')
-    const [salvo, setSalvo] = useState(false)
+    // Texto de sucesso do último "Salvar" ('' = nada a mostrar).
+    const [salvo, setSalvo] = useState('')
+    // Comitê que está sendo editado (o registro inteiro), ou null quando o formulário é de um novo registro.
+    const [editando, setEditando] = useState(null)
+    const formularioRef = useRef(null)
 
-    // Trocar de área limpa o formulário: evita "salvar" um rascunho de uma área na área errada.
-    useEffect(() => {
+    function limparFormulario() {
         setData('')
         setOcorreu(null)
         setMotivo('')
         setConsideracoes('')
         setChecklist(CHECKLIST_VAZIO)
         setDiarioBordo('')
-        setSalvo(false)
+        setEditando(null)
+    }
+
+    // Trocar de área limpa o formulário (e cancela uma edição): evita "salvar" um rascunho na área errada.
+    useEffect(() => {
+        limparFormulario()
+        setSalvo('')
     }, [areaNome])
+
+    /** Leva os dados de um comitê já registrado pro formulário (todos os campos de conteúdo; a área não muda). */
+    function iniciarEdicao(comite) {
+        setEditando(comite)
+        setData(comite.data ?? '')
+        setOcorreu(comite.ocorreu)
+        setMotivo(comite.motivo_nao_ocorreu ?? '')
+        setConsideracoes(comite.consideracoes ?? '')
+        setChecklist({ ...CHECKLIST_VAZIO, ...(comite.checklist ?? {}) })
+        setDiarioBordo(comite.diario_bordo ?? '')
+        setSalvo('')
+        formularioRef.current?.scrollIntoView({ behavior: 'smooth', block: 'start' })
+    }
 
     const podeSalvar = !!areaNome && !!data && (ocorreu === false ? motivo.trim() !== '' : ocorreu === true)
 
     function handleSalvar() {
         if (!podeSalvar) return
-        const registro =
+        const conteudo =
             ocorreu === false
-                ? { cd_comite: `sim-${Date.now()}`, data, ocorreu: false, motivo_nao_ocorreu: motivo, simulado: true }
-                : { cd_comite: `sim-${Date.now()}`, data, ocorreu: true, consideracoes, checklist, diario_bordo: diarioBordo.trim() || null, simulado: true }
-        adicionarComiteSimulado(areaNome, registro)
-        setSalvo(true)
-        setData('')
-        setOcorreu(null)
-        setMotivo('')
-        setConsideracoes('')
-        setChecklist(CHECKLIST_VAZIO)
-        setDiarioBordo('')
+                ? { data, ocorreu: false, motivo_nao_ocorreu: motivo, consideracoes: null, checklist: null, diario_bordo: null }
+                : { data, ocorreu: true, motivo_nao_ocorreu: null, consideracoes, checklist, diario_bordo: diarioBordo.trim() || null }
+
+        if (editando) {
+            editarComiteSimulado(editando.cd_comite, { ...editando, ...conteudo, alterado_por: 'simulação', alterado_em: new Date().toISOString() })
+            setSalvo('Comitê atualizado.')
+        } else {
+            adicionarComiteSimulado(areaNome, { cd_comite: `sim-${Date.now()}`, ...conteudo, simulado: true })
+            setSalvo('Comitê registrado.')
+        }
+        limparFormulario()
     }
 
     return (
@@ -111,9 +136,13 @@ export function ComiteSecao({ administrador, opcoesArea, carregandoFiltros }) {
                     )}
 
                     {administrador && (
-                        <section className="pdco-panel">
+                        <section className="pdco-panel" ref={formularioRef}>
                             <div className="pdco-panel-header">
-                                <p className="pdco-kicker">Simular novo registro — {areaNome}</p>
+                                <p className="pdco-kicker">
+                                    {editando
+                                        ? `Simulando edição — ${areaNome} · comitê de ${formatarData(editando.data)}`
+                                        : `Simular novo registro — ${areaNome}`}
+                                </p>
                                 <h2 className="pdco-panel-title">Comitê da Cultura</h2>
                             </div>
 
@@ -210,9 +239,14 @@ export function ComiteSecao({ administrador, opcoesArea, carregandoFiltros }) {
 
                                 <div className="pdco-registro-rodape">
                                     <button type="button" className="pdco-save-button" disabled={!podeSalvar} onClick={handleSalvar}>
-                                        Salvar comitê (simulação)
+                                        {editando ? 'Salvar alterações (simulação)' : 'Salvar comitê (simulação)'}
                                     </button>
-                                    {salvo && <span className="pdco-registro-sucesso">Registrado na simulação — veja no histórico abaixo.</span>}
+                                    {editando && (
+                                        <button type="button" className="pdco-cancel-button" onClick={limparFormulario}>
+                                            Cancelar edição
+                                        </button>
+                                    )}
+                                    {salvo && <span className="pdco-registro-sucesso">{salvo} Veja no histórico abaixo (simulação).</span>}
                                 </div>
                             </div>
                         </section>
@@ -230,7 +264,12 @@ export function ComiteSecao({ administrador, opcoesArea, carregandoFiltros }) {
 
                         <div className="pdco-comite-historico">
                             {historico.map((c) => (
-                                <ComiteHistoricoItem key={c.cd_comite} comite={c} />
+                                <ComiteHistoricoItem
+                                    key={c.cd_comite}
+                                    comite={c}
+                                    emEdicao={editando?.cd_comite === c.cd_comite}
+                                    onEditar={administrador ? () => iniciarEdicao(c) : null}
+                                />
                             ))}
                         </div>
                     </section>
@@ -245,13 +284,21 @@ function formatarData(iso) {
     return `${iso.slice(8, 10)}/${iso.slice(5, 7)}/${iso.slice(0, 4)}`
 }
 
-/** Um item do histórico — mesma lógica condicional do formulário: só motivo, ou só considerações + checklist. */
-function ComiteHistoricoItem({ comite }) {
+/**
+ * Um item do histórico — mesma lógica condicional do formulário: só motivo, ou só considerações + checklist.
+ * `onEditar` só vem para administrador (é ele quem edita); sem ele, o item é só leitura.
+ */
+function ComiteHistoricoItem({ comite, emEdicao = false, onEditar = null }) {
     return (
-        <div className="pdco-comite-item">
+        <div className={`pdco-comite-item ${emEdicao ? 'pdco-comite-item-editando' : ''}`}>
             <div className="pdco-comite-item-cabeca">
                 <span className="pdco-comite-item-data">{formatarData(comite.data)}</span>
                 <span className="pdco-comite-item-selos">
+                    {onEditar && (
+                        <button type="button" className="pdco-comite-item-editar" onClick={onEditar} disabled={emEdicao}>
+                            {emEdicao ? 'Editando…' : 'Editar'}
+                        </button>
+                    )}
                     {comite.simulado && <span className="pdco-comite-item-selo-simulado">Simulação</span>}
                     <span className={`pdco-comite-item-status ${comite.ocorreu ? 'pdco-comite-item-ocorreu' : 'pdco-comite-item-nao-ocorreu'}`}>
                         {comite.ocorreu ? 'Ocorreu' : 'Não ocorreu'}
@@ -288,6 +335,10 @@ function ComiteHistoricoItem({ comite }) {
                         </p>
                     )}
                 </>
+            )}
+
+            {comite.alterado_em && (
+                <p className="pdco-registro-rodape-info">Editado (simulação) em {formatarData(comite.alterado_em.slice(0, 10))}</p>
             )}
         </div>
     )
