@@ -10,6 +10,9 @@ let registrosPorArea = new Map()
 // Edições por `cd_comite` — vale pros registros simulados E pros de amostra (que são constantes e não
 // podem ser mexidos): o histórico troca o original pela versão editada na hora de montar a lista.
 let edicoes = new Map()
+// `cd_comite` dos comitês "excluídos" nesta sessão — também vale pros de amostra, que são constantes: o histórico
+// só deixa de mostrá-los. Um Set novo a cada exclusão (mesmo motivo do Map acima).
+let exclusoes = new Set()
 const ouvintes = new Set()
 // Referência estável pra área sem nenhum registro ainda — devolver `[]` novo a cada
 // chamada faria o useSyncExternalStore achar que o snapshot mudou toda hora (loop infinito).
@@ -34,6 +37,12 @@ export function editarComiteSimulado(cdComite, registro) {
     avisar()
 }
 
+/** "Exclui" um comitê (simulado ou de amostra) só nesta aba: some do histórico até recarregar a página. */
+export function excluirComiteSimulado(cdComite) {
+    exclusoes = new Set(exclusoes).add(cdComite)
+    avisar()
+}
+
 /** Registros simulados de uma área (vazio se ninguém "salvou" nada ainda nesta sessão). */
 export function useComitesSimulados(area) {
     return useSyncExternalStore(assinar, () => registrosPorArea.get(area) ?? VAZIO)
@@ -42,4 +51,9 @@ export function useComitesSimulados(area) {
 /** Edições feitas nesta sessão, por `cd_comite`. */
 export function useEdicoesSimuladas() {
     return useSyncExternalStore(assinar, () => edicoes)
+}
+
+/** `cd_comite` dos comitês excluídos nesta sessão. */
+export function useExclusoesSimuladas() {
+    return useSyncExternalStore(assinar, () => exclusoes)
 }

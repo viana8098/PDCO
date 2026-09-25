@@ -2,7 +2,14 @@ import { useEffect, useRef, useState } from 'react'
 import { SearchableSelect } from './SearchableSelect'
 import { useFiltroPersistente } from '../lib/filtrosPersistentes'
 import { COMITE_AMOSTRA } from '../lib/comiteAmostra'
-import { adicionarComiteSimulado, editarComiteSimulado, useComitesSimulados, useEdicoesSimuladas } from '../lib/comiteSimulacao'
+import {
+    adicionarComiteSimulado,
+    editarComiteSimulado,
+    excluirComiteSimulado,
+    useComitesSimulados,
+    useEdicoesSimuladas,
+    useExclusoesSimuladas,
+} from '../lib/comiteSimulacao'
 
 const CRITERIOS = [
     { chave: 'lider', texto: 'O líder responsável esteve presente e participou do encontro?' },
@@ -36,8 +43,10 @@ export function ComiteSecao({ administrador, opcoesArea, carregandoFiltros }) {
     const [areaNome, setAreaNome] = useFiltroPersistente('comite:area', '')
     const simulados = useComitesSimulados(areaNome)
     const edicoes = useEdicoesSimuladas()
-    // Um comitê editado nesta sessão aparece na versão editada (vale também pros de amostra, que são fixos).
-    const historicoBruto = [...simulados, ...COMITE_AMOSTRA].map((c) => edicoes.get(c.cd_comite) ?? c)
+    const exclusoes = useExclusoesSimuladas()
+    // Um comitê editado nesta sessão aparece na versão editada e um excluído deixa de aparecer (vale também pros
+    // de amostra, que são fixos).
+    const historicoBruto = [...simulados, ...COMITE_AMOSTRA].filter((c) => !exclusoes.has(c.cd_comite)).map((c) => edicoes.get(c.cd_comite) ?? c)
     const historico = administrador ? historicoBruto : historicoBruto.map((c) => ({ ...c, checklist: null, diario_bordo: null }))
 
     const [data, setData] = useState('')
@@ -48,6 +57,8 @@ export function ComiteSecao({ administrador, opcoesArea, carregandoFiltros }) {
     const [diarioBordo, setDiarioBordo] = useState('')
     // Texto de sucesso do último "Salvar" ('' = nada a mostrar).
     const [salvo, setSalvo] = useState('')
+    // Texto de sucesso da última exclusão, mostrado no histórico ('' = nada a mostrar).
+    const [excluido, setExcluido] = useState('')
     // Comitê que está sendo editado (o registro inteiro), ou null quando o formulário é de um novo registro.
     const [editando, setEditando] = useState(null)
     const formularioRef = useRef(null)
@@ -66,6 +77,7 @@ export function ComiteSecao({ administrador, opcoesArea, carregandoFiltros }) {
     useEffect(() => {
         limparFormulario()
         setSalvo('')
+        setExcluido('')
     }, [areaNome])
 
     /** Leva os dados de um comitê já registrado pro formulário (todos os campos de conteúdo; a área não muda). */
@@ -83,8 +95,18 @@ export function ComiteSecao({ administrador, opcoesArea, carregandoFiltros }) {
 
     const podeSalvar = !!areaNome && !!data && (ocorreu === false ? motivo.trim() !== '' : ocorreu === true)
 
+    /** "Exclui" um comitê só nesta aba (a confirmação já foi dada no item). */
+    function handleExcluir(comite) {
+        excluirComiteSimulado(comite.cd_comite)
+        // Se era o registro aberto no formulário, o rascunho perde o sentido.
+        if (editando?.cd_comite === comite.cd_comite) limparFormulario()
+        setSalvo('')
+        setExcluido(`Comitê de ${formatarData(comite.data)} excluído (simulação).`)
+    }
+
     function handleSalvar() {
         if (!podeSalvar) return
+        setExcluido('')
         const conteudo =
             ocorreu === false
                 ? { data, ocorreu: false, motivo_nao_ocorreu: motivo, consideracoes: null, checklist: null, diario_bordo: null }
@@ -262,16 +284,27 @@ export function ComiteSecao({ administrador, opcoesArea, carregandoFiltros }) {
                             </p>
                         </div>
 
-                        <div className="pdco-comite-historico">
-                            {historico.map((c) => (
-                                <ComiteHistoricoItem
-                                    key={c.cd_comite}
-                                    comite={c}
-                                    emEdicao={editando?.cd_comite === c.cd_comite}
-                                    onEditar={administrador ? () => iniciarEdicao(c) : null}
-                                />
-                            ))}
-                        </div>
+                        {excluido && (
+                            <p className="pdco-registro-sucesso" role="status">
+                                {excluido}
+                            </p>
+                        )}
+
+                        {historico.length === 0 ? (
+                            <p className="pdco-vazio">Nenhum comitê registrado ainda para esta área.</p>
+                        ) : (
+                            <div className="pdco-comite-historico">
+                                {historico.map((c) => (
+                                    <ComiteHistoricoItem
+                                        key={c.cd_comite}
+                                        comite={c}
+                                        emEdicao={editando?.cd_comite === c.cd_comite}
+                                        onEditar={administrador ? () => iniciarEdicao(c) : null}
+                                        onExcluir={administrador ? () => handleExcluir(c) : null}
+                                    />
+                                ))}
+                            </div>
+                        )}
                     </section>
                 </>
             )}
@@ -286,9 +319,12 @@ function formatarData(iso) {
 
 /**
  * Um item do histórico — mesma lógica condicional do formulário: só motivo, ou só considerações + checklist.
- * `onEditar` só vem para administrador (é ele quem edita); sem ele, o item é só leitura.
+ * `onEditar` e `onExcluir` só vêm para administrador; sem eles, o item é só leitura. Excluir pede confirmação
+ * aqui mesmo (mesma tela do app corporativo, onde apaga de verdade — aqui é só na memória da aba).
  */
-function ComiteHistoricoItem({ comite, emEdicao = false, onEditar = null }) {
+function ComiteHistoricoItem({ comite, emEdicao = false, onEditar = null, onExcluir = null }) {
+    const [confirmando, setConfirmando] = useState(false)
+
     return (
         <div className={`pdco-comite-item ${emEdicao ? 'pdco-comite-item-editando' : ''}`}>
             <div className="pdco-comite-item-cabeca">
@@ -299,12 +335,31 @@ function ComiteHistoricoItem({ comite, emEdicao = false, onEditar = null }) {
                             {emEdicao ? 'Editando…' : 'Editar'}
                         </button>
                     )}
+                    {onExcluir && (
+                        <button type="button" className="pdco-comite-item-excluir" onClick={() => setConfirmando(true)} disabled={confirmando}>
+                            Excluir
+                        </button>
+                    )}
                     {comite.simulado && <span className="pdco-comite-item-selo-simulado">Simulação</span>}
                     <span className={`pdco-comite-item-status ${comite.ocorreu ? 'pdco-comite-item-ocorreu' : 'pdco-comite-item-nao-ocorreu'}`}>
                         {comite.ocorreu ? 'Ocorreu' : 'Não ocorreu'}
                     </span>
                 </span>
             </div>
+
+            {confirmando && (
+                <div className="pdco-comite-item-confirma" role="group" aria-label="Confirmar exclusão do comitê">
+                    <p>Excluir o comitê de {formatarData(comite.data)}? (Simulação: só some nesta aba, até recarregar a página.)</p>
+                    <div className="pdco-comite-item-confirma-acoes">
+                        <button type="button" className="pdco-comite-item-confirmar" onClick={onExcluir}>
+                            Sim, excluir
+                        </button>
+                        <button type="button" className="pdco-cancel-button" onClick={() => setConfirmando(false)}>
+                            Cancelar
+                        </button>
+                    </div>
+                </div>
+            )}
 
             {!comite.ocorreu ? (
                 <p className="pdco-comite-item-texto">

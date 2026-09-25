@@ -1475,6 +1475,61 @@ body {
   border-color: rgba(167, 216, 255, 0.5);
   background: rgba(167, 216, 255, 0.05);
 }
+/* "Excluir" (só administrador): mesmo formato do "Editar", em vermelho, com confirmação no próprio item. */
+.pdco-app .pdco-comite-item-excluir {
+  background: transparent;
+  color: var(--red);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-pill);
+  padding: 3px 12px;
+  font-size: 11px;
+  font-weight: 600;
+  font-family: inherit;
+  cursor: pointer;
+  transition: background-color 0.15s ease, border-color 0.15s ease;
+}
+.pdco-app .pdco-comite-item-excluir:hover:not(:disabled) {
+  background: rgba(248, 113, 113, 0.1);
+  border-color: var(--red);
+}
+.pdco-app .pdco-comite-item-excluir:disabled {
+  color: var(--text-muted);
+  cursor: default;
+}
+.pdco-app .pdco-comite-item-confirma {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin: 8px 0;
+  padding: 10px 12px;
+  border: 1px solid var(--red);
+  border-radius: var(--radius-btn);
+  background: rgba(248, 113, 113, 0.07);
+  font-size: 12.5px;
+}
+.pdco-app .pdco-comite-item-confirma-acoes {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+.pdco-app .pdco-comite-item-confirma .pdco-estado {
+  text-align: left;
+}
+.pdco-app .pdco-comite-item-confirmar {
+  background: var(--red);
+  color: #2b0a0a;
+  border: 1px solid var(--red);
+  border-radius: var(--radius-btn);
+  padding: 9px 14px;
+  font-size: 12px;
+  font-weight: 700;
+  font-family: inherit;
+  cursor: pointer;
+}
+.pdco-app .pdco-comite-item-confirmar:disabled {
+  opacity: 0.6;
+  cursor: default;
+}
 
 /* ------------------------------- Comitê da Cultura ----------------------------- */
 /* Alternado com "Todos os planos" via toggle em Minha Área — mesmo espaçamento vertical do pdco-page. */
