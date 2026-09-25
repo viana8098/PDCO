@@ -254,7 +254,6 @@ export function ComiteSecao({ administrador, opcoesArea, carregandoFiltros }) {
                                                 onChange={(e) => setDiarioBordo(e.target.value)}
                                                 placeholder="Anotações livres do administrador sobre este comitê."
                                             />
-                                            <span className="pdco-registro-dica">Campo restrito: só administradores veem o diário de bordo.</span>
                                         </div>
                                     </>
                                 )}
