@@ -122,7 +122,7 @@ export function calcRag(plano, quadrantesAcompanhamento) {
         motivos.push('Sem acompanhamento recente (>60 dias)')
         acompanhamento(`Último registro ${quando}`, -P.acompanhamentoAntigo)
       } else {
-        motivos.push('Acompanhamento recente registrado')
+        // Acompanhamento em dia não entra no resumo dos motivos (só o que pesa contra); o passo a passo do status mostra.
         acompanhamento(`Último registro ${quando}`, 0)
       }
     }
