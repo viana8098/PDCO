@@ -50,8 +50,8 @@ export default function PlanoDetail() {
     const diagnostico = ehEstrategico ? DIAGNOSTICO_CULTURA_ORGANIZACIONAL : obterRcfDaArea(plano.area_nome)
     const tituloDiagnostico = ehEstrategico ? 'Diagnóstico da Cultura Organizacional' : 'Diagnóstico da Subcultura'
     const cor = RAG_COLOR[rag.nivel]
-    const totalAcompanhamentos = acompanhamento.reduce((s, q) => s + q.registros.length, 0)
-    // A aba lista só os acompanhamentos do plano (ds_acompanhamentoplanoacao): a contagem acompanha a tabela.
+    // Só os acompanhamentos do PLANO (ds_acompanhamentoplanoacao), não os das ações: é o que a aba lista e o
+    // quadrinho "Acompanh." mostra, então os dois números sempre batem.
     const totalAcompanhamentosDoPlano = acompanhamento.reduce((s, q) => s + q.registros.filter((r) => r.origem === 'plano').length, 0)
 
     const abas = [
@@ -91,7 +91,7 @@ export default function PlanoDetail() {
                             <MiniStat label="Concluídas" valor={rag.concluidas} total={rag.total} />
                             <MiniStat label="Atrasadas" valor={rag.atrasadas} perigo={rag.atrasadas > 0} />
                             <MiniStat label="Execução" valor={plano.execucao === null ? '—' : Math.round(plano.execucao * 100)} sufixo="%" />
-                            <MiniStat label="Acompanh." valor={totalAcompanhamentos} />
+                            <MiniStat label="Acompanh." valor={totalAcompanhamentosDoPlano} />
                         </div>
                         <p className="pdco-rag-motivos">{rag.motivos.join(' · ')}</p>
                     </div>
